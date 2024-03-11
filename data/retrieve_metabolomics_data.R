@@ -18,34 +18,34 @@ source("R_functions/google_drive_functions.R")
 # files = drive_ls(q=query, shared_drive = "Ingalls Lab", recursive = TRUE)
 
 
-# Copy OBi1 metabolomics data -----
+# Copy OBi1 Metabolomics data from Google Drive -----
 ## mzml data -----
 ### dissolved HILIC Neg mzml-----
-export_folder <- here("data","raw", "metabolomics", "obi1", "dissolved", "HILIC_negative_mzml")
+export_folder <- here("data","raw", "metabolomics", "obi1", "dissolved", "mzml", "HILIC_negative_mzml")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "17c1AaWndGr4TH_aZZH10_N4ytxnBp9A1"
 drive_download_daughters(gfolder, export_folder)
 
 ### dissolved HILIC Pos mzml-----
-export_folder <-  here("data","raw", "metabolomics", "obi1", "dissolved", "HILIC_positive_mzml")
+export_folder <-  here("data","raw", "metabolomics", "obi1", "dissolved", "mzml", "HILIC_positive_mzml")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "17btbYSFASS6FuCfTp_3B9c12Jv2SUnka"
 drive_download_daughters(gfolder, export_folder)
 
 ### particulate HILIC Neg mzml-----
-export_folder <-here("data","raw", "metabolomics", "obi1", "particulate", "HILIC_negative_mzml")
+export_folder <-here("data","raw", "metabolomics", "obi1", "particulate",  "mzml", "HILIC_negative_mzml")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "11mQ30CtXReGwuTZdyq0NMEb8kX6471G4"
 drive_download_daughters(gfolder, export_folder)
 
 ### particulate HILIC Pos mzml-----
-export_folder <- here("data","raw", "metabolomics", "obi1", "particulate", "HILIC_positive_mzml")
+export_folder <- here("data","raw", "metabolomics", "obi1", "particulate",  "mzml", "HILIC_positive_mzml")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "11gy9fnvy9l5gQ0RY9JUlKEXyZA-ml3yc"
 drive_download_daughters(gfolder, export_folder)
 
 ### particulate RP mzml-----
-export_folder <- here("data","raw", "metabolomics", "obi1", "particulate", "RP_positive_mzml")
+export_folder <- here("data","raw", "metabolomics", "obi1", "particulate",  "mzml", "RP_positive_mzml")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "1-DUbiFRF7rD7XVO2ST6duSO7NuLMGkdR"
 drive_download_daughters(gfolder, export_folder, refresh_mzml)
@@ -63,4 +63,33 @@ drive_download_daughters(gfolder, export_folder)
 export_folder <- here("data","raw", "metabolomics", "obi1",  "particulate", "skyline")
 dir.create(export_folder, showWarnings = FALSE)
 gfolder <- "1-EO6dbIP3gb661-HhKfdHxber4IwqwEf"
+drive_download_daughters(gfolder, export_folder)
+
+## msdial and associated files ------
+### dissolved HILIC Neg -----
+export_folder <- here("data","raw", "metabolomics", "obi1",  "dissolved", "msdial", "HILIC_negative")
+dir.create(export_folder, showWarnings = FALSE)
+gfolder <- "1ZNoFGayGlipvys00VtF9uE74bXH4SHyJ"
+drive_download_daughters(gfolder, export_folder)
+
+### dissolved HILIC Pos -----
+export_folder <- here("data","raw", "metabolomics", "obi1",  "dissolved", "msdial", "HILIC_positive")
+dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
+gfolder <- "1O4VYXDmKtVpy90qeTktv8wV1DO2WeGdG"
+drive_download_daughters(gfolder, export_folder)
+
+### particulate HILIC Neg -----
+export_folder <- here("data","raw", "metabolomics", "obi1",  "particulate", "msdial", "HILIC_negative")
+dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
+gfolder <- "1rg16L01jW2FHSGzd6_PHNB_kzgpFZ58J"
+drive_download_daughters(gfolder, export_folder)
+### particulate HILIC Pos -----
+export_folder <- here("data","raw", "metabolomics", "obi1",  "particulate", "msdial", "HILIC_positive")
+dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
+gfolder <- "1rKMrjGk_5KBoip1hDViwcKPJ5vaMbSDt"
+drive_download_daughters(gfolder, export_folder)
+### particulate RP -----
+export_folder <- here("data","raw", "metabolomics", "obi1",  "particulate", "msdial", "RP_positive")
+dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
+gfolder <- "1nJzw3bUZ1XNuKvNK89wyKPPn"
 drive_download_daughters(gfolder, export_folder)

@@ -6,17 +6,16 @@ This project uses `renv` for package management.  After cloning the github repos
 
 ## Data Retrieval
 **Work in progress not yet functional**
-Much of the data needed are not hosted on this github due to sizes of data.  To retrieve data and populate data folders, run `source("data/retrieve_data.R")`. *Note that this script is a bit slow to fully download all the data*. If you already have all the data, this can be skipped.  If the script is run and you already have all the data, no worries!  It will skip over data you already have downloaded.
+
+Much of the data needed are not hosted on this github due to sizes of data.  To retrieve raw data for data analysis, you will need to populate data folders using scripts in the data folder. See **data/README.md** for more information.
 
 ## Repository Organiziation
 
 ### **data/raw**
 Raw data files (unedited as much as possible).  
-See **data/raw/README.md** for more information.
 
 ### **data/intermediate**
 Intermediate data products. 
-See **data/intermediate/README.md** for more information.
 
 ### **R_functions**
 R functions used across multiple scripts.  Separated into logical separate .R scripts and documented using Roxygen documentation.  
