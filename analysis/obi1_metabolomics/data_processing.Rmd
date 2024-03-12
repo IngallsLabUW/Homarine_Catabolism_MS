@@ -19,9 +19,8 @@ remove(list = ls())
 
 # BMIS targeted data
 Perform BMIS normalization on HILIC particulate and dissolved samples
-Reran on 8/15/22, 8/18/22, 9/7/22
-```{r}
-source(here("01_targeted/0102_targeted_BMIS.R"))
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0102_targeted_BMIS.R"))
 remove(list = ls())
 ```
 
