@@ -1,32 +1,21 @@
-# _____________________________________________________________________________
-#       Copyright 2022, Integral Consulting Inc. All rights reserved.        #
-# _____________________________________________________________________________
-#
-# _____________________________________________________________________________
-#  0104_Combine_Tidy.R
-# _____________________________________________________________________________
-# PURPOSE:
-#  Combine particulate, dissolved data
-#
-#
-# PROJECT INFORMATION:
-#   Name:
-#   Number: C3352
-#
-# HISTORY:
-# 	 Date		        Remarks
-# _____________________________________________________________________________
-# 	 20220526       Started script
-#
+# Purpose:  Combine particulate, dissolved data for targeted data
+
+# History:
+# Date	     Remarks
+# 20240312   K Heal transferring script from Obi1 specific repo to general repo
+# 20220526   K Heal started script
 
 # PACKAGES ----
 library(tidyverse)
 library(here)
 
 # Read in file  -----
-dat_diss_filename <- "01_targeted/data_intermediate/BMISd_HILIC_Dissolved_postDissBlk.csv"
-dat_part_filename <- "01_targeted/data_intermediate/BMISd_HILIC_Particulate.csv"
-sample_key_filename <- "raw_input/sample_key.csv"
+qc_data_loc <- here("data", "intermediate", "metabolomics", "obi1", "targeted")
+meta_data_loc <- here("data", "raw", "metabolomics", "obi1")
+
+dat_diss_filename <- here(qc_data_loc, "BMISd_HILIC_Dissolved_postDissBlk.csv")
+dat_part_filename <- here(qc_data_loc, "BMISd_HILIC_Particulate.csv")
+sample_key_filename <- here(meta_data_loc, "sample_key.csv")
 
 dat_diss <- read_csv(dat_diss_filename, show_col_types = FALSE)
 dat_part <- read_csv(dat_part_filename, show_col_types = FALSE)
@@ -55,6 +44,6 @@ dat_combined_wide <- dat_combined2 %>%
               values_from = adjusted_area)
 
 # Write out long and wide to share
-write_csv(dat_combined2, "01_targeted/data_intermediate/combined_tidy_dat_long.csv")
-write_csv(dat_combined_wide, "01_targeted/data_intermediate/combined_tidy_dat_wide.csv")
+write_csv(dat_combined2, here(qc_data_loc, "combined_tidy_dat_long.csv"))
+write_csv(dat_combined_wide, here(qc_data_loc, "combined_tidy_dat_wide.csv"))
 

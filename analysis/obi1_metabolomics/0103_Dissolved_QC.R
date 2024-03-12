@@ -1,30 +1,18 @@
-# _____________________________________________________________________________
-#       Copyright 2022, Integral Consulting Inc. All rights reserved.        #
-# _____________________________________________________________________________
-#
-# _____________________________________________________________________________
-#  0103_Dissolved_QC.R
-# _____________________________________________________________________________
-# PURPOSE:
-#  Perform post-BMIS QC on dissolved sampls
-#
-#
-# PROJECT INFORMATION:
-#   Name:
-#   Number: C3352
-#
-# HISTORY:
-# 	 Date		        Remarks
-# _____________________________________________________________________________
-# 	 20220505       Using this as a guide: https://github.com/jssacks/CX_SPE_Method/blob/main/R_Code/EX_CX_HILIC_Blk_QC.R per J. Sacks' suggestion
-#
+# Purpose: Perform post-BMIS QC on dissolved sampls
+
+# History:
+# Date	     Remarks
+# 20240312   K Heal transferring script from Obi1 specific repo to general repo
+# 20220505      Using this as a guide: https://github.com/jssacks/CX_SPE_Method/blob/main/R_Code/EX_CX_HILIC_Blk_QC.R per J. Sacks' suggestion
 
 # PACKAGES ----
 library(tidyverse)
 library(here)
 
+qc_data_loc <- here("data", "intermediate", "metabolomics", "obi1", "targeted")
+
 # Read in file  -----
-dat_filename <- "01_targeted/data_intermediate/BMISd_HILIC_Dissolved.csv"
+dat_filename <- here(qc_data_loc, "BMISd_HILIC_Dissolved.csv")
 
 dat <- read_csv(dat_filename, show_col_types = FALSE)
 
@@ -50,6 +38,7 @@ dat_wdissblanks <- dat %>%
          QC_area = ifelse(QC_area<blk_lod, NA, QC_area))
 
 # Write out results -----
-write_csv(dat_wdissblanks, "01_targeted/data_intermediate/BMISd_HILIC_Dissolved_postDissBlk.csv")
+write_csv(dat_wdissblanks, here(qc_data_loc, "BMISd_HILIC_Dissolved_postDissBlk.csv"))
+print("Completed post BMIC QC of dissolved samples")
 
 

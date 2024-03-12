@@ -9,49 +9,32 @@ library(here)
 print(here())
 ```
 
+# TARGETED DATA PROCESSING
 
-# Initial quality control of targeted data
+## QC of targeted data
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 # QC on all HILIC pos, HILIC neg, particulate and dissolved
 source(here("analysis", "obi1_metabolomics", "0101_targeted_QC.R"))
 remove(list = ls())
 ```
 
-# BMIS targeted data
+## BMIS targeted data
 Perform BMIS normalization on HILIC particulate and dissolved samples
+Also performs post-BMIS QC of targetted dissolved data
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0102_targeted_BMIS.R"))
 remove(list = ls())
-```
-
-# post-BMIS QC of targetted dissolved data
-Calculate batch-specific LODs for each analyte that made it through QC in dissolved.  Edit BMISd results if LOD > area for a specific compound
-Reran on 8/15/22, 8/18/22, 9/7/22
-```{r}
-source("01_targeted/0103_Dissolved_QC.R")
+source(here("analysis", "obi1_metabolomics", "0103_Dissolved_QC.R"))
 remove(list = ls())
 ```
 
-# Post-QC combine and tidy data
-Reran on 8/15/22, 8/18/22, 9/7/22
-```{r}
-source("01_targeted/0104_Combine_Tidy.R")
+## Combine and tidy data
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0104_Combine_Tidy.R"))
 remove(list = ls())
 ```
 
-# Normalizing Obi1 by median fold change to explore 
-Ran on 9/7/22
-```{r}
-#source("01_targeted/0105_Obi1_set1Part_norm.R")
-#remove(list = ls())
-```
-
-# Making basic plots of the dissolved data to explore
-Ran on 9/7/22
-```{r}
-#source("01_targeted/0106_Obi1_set1Diss.R")
-#remove(list = ls())
-```
+# UNTARGETED DATA PROCESSING
 
 
 
