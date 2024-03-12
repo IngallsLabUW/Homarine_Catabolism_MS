@@ -11,6 +11,8 @@ source(here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessi
 
 # Set location of skyline files here
 outer_file_loc <- here("data", "raw", "metabolomics", "obi1")
+save_dir <- here("data", "intermediate", "metabolomics", "obi1", "targeted")
+dir.create(save_dir, recursive = TRUE, showWarnings = FALSE)
 
 # Fill in blanks with 0s for dissolved data ----
 ## HILIC Neg -----
@@ -21,7 +23,8 @@ dat_filename = here(
   "HILIC_Neg_Dissolved_OscarSosaBacteria.csv"
 )
 
-dat <- read_csv(dat_filename) %>%
+dat <- read_csv(dat_filename,
+                show_col_types = FALSE) %>%
   mutate(Area = ifelse(
     str_detect(`Replicate Name`, "Blk") & Area == 0,
     "Test",
@@ -29,16 +32,15 @@ dat <- read_csv(dat_filename) %>%
       )
     )
 write_csv(dat, here(
-  "raw_input",
+  outer_file_loc,
   "dissolved",
   "skyline",
   "HILIC_Neg_Dissolved_OscarSosaBacteria_zerod.csv"
 ))
 
-# Fill in blanks with 0s for dissolved data ----
 ## HILIC Pos -----
 dat_filename = here(
-  "raw_input",
+    outer_file_loc,
   "dissolved",
   "skyline",
   "HILIC_Pos_Dissolved_OscarSosaBacteria.csv"
@@ -51,17 +53,18 @@ dat <- read_csv(dat_filename) %>%
   )
   )
 write_csv(dat,  here(
-  "raw_input",
+    outer_file_loc,
   "dissolved",
   "skyline",
   "HILIC_Pos_Dissolved_OscarSosaBacteria_zerod.csv"
 ))
 
 
-# QC on Dissolved, HILIC Neg -----
+# QC ----
+## Dissolved, HILIC Neg -----
 QE_QC(
   dat_filename = here(
-    "raw_input",
+     outer_file_loc,
     "dissolved",
     "skyline",
     "HILIC_Neg_Dissolved_OscarSosaBacteria_zerod.csv"
@@ -74,15 +77,14 @@ QE_QC(
   rt_flex = 2.5,
   blank_ratio_max = 3,
   fileout = here(
-    "01_targeted",
-    "data_intermediate",
+     save_dir,
     "QCd_HILIC_Neg_Dissolved.csv"
   )
 )
-# QC on Dissolved, HILIC Pos -----
+## Dissolved, HILIC Pos -----
 QE_QC(
   dat_filename = here(
-    "raw_input",
+     outer_file_loc,
     "dissolved",
     "skyline",
     "HILIC_Pos_Dissolved_OscarSosaBacteria.csv"
@@ -95,16 +97,15 @@ QE_QC(
   rt_flex = 2.5,
   blank_ratio_max = 3,
   fileout = here(
-    "01_targeted",
-    "data_intermediate",
+      save_dir,
     "QCd_HILIC_Pos_Dissolved.csv"
   )
 )
 
-# QC on Particulate, HILIC Neg -----
+## Particulate, HILIC Neg -----
 QE_QC(
   dat_filename = here(
-    "raw_input",
+      outer_file_loc,
     "particulate",
     "skyline",
     "HILIC_Neg_Particulate_OscarSosaBacteria.csv"
@@ -117,16 +118,15 @@ QE_QC(
   rt_flex = 2.5,
   blank_ratio_max = 3,
   fileout = here(
-    "01_targeted",
-    "data_intermediate",
+      save_dir,
     "QCd_HILIC_Neg_Particulate.csv"
   )
 )
 
-# QC on Particulate, HILIC Pos -----
+## Particulate, HILIC Pos -----
 QE_QC(
   dat_filename = here(
-    "raw_input",
+      outer_file_loc,
     "particulate",
     "skyline",
     "HILIC_Pos_Particulate_OscarSosaBacteria.csv"
@@ -139,8 +139,7 @@ QE_QC(
   rt_flex = 2.5,
   blank_ratio_max = 3,
   fileout = here(
-    "01_targeted",
-    "data_intermediate",
+    save_dir,
     "QCd_HILIC_Pos_Particulate.csv"
   )
 )

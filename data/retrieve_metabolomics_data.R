@@ -8,7 +8,6 @@ library(tidyverse)
 source("R_functions/google_drive_functions.R")
 
 
-
 # Functions to help get the folder ID needed for the drive_download_daughters_function
 # dir = drive_find(
 #   pattern='OscarSosa_Bacteria',
