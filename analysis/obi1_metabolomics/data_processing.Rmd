@@ -35,6 +35,26 @@ remove(list = ls())
 ```
 
 # UNTARGETED DATA PROCESSING
+## Dereplicate adducts from the MSdial output
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+# QC on all HILIC pos, HILIC neg, particulate and dissolved
+source(here("analysis", "obi1_metabolomics", "0201_MF_dereplication.R"))
+remove(list = ls())
+```
+
+## BMIS untargeted data
+Perform BMIS normalization on HILIC particulate and dissolved samples
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0202_untargeted_BMIS.R"))
+
+remove(list = ls())
+```
+
+## Combine and tidy data
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0203_Combine_Tidy.R"))
+remove(list = ls())
+```
 
 
 

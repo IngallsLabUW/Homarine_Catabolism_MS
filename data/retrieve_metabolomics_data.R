@@ -90,7 +90,7 @@ drive_download_daughters(gfolder, export_folder)
 ### particulate RP -----
 export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "msdial", "RP_positive")
 dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
-gfolder <- "1nJzw3bUZ1XNuKvNK89wyKPPn"
+gfolder <- "1nJzw3bUZ1XNuKvNK89wyKPPn-ezzpRfA"
 drive_download_daughters(gfolder, export_folder)
 
 # internal standards and sample keys -----
