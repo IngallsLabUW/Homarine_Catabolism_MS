@@ -1,31 +1,28 @@
-#
-# Copyright: Copyright 2022, Integral Consulting Inc. All rights reserved.
-#
-# Purpose:
-#
-# Project Information:
-#   Name:
-#   Number:
-#
-# History:
-# Date	     Remarks
-# YYYY-MM-DD
-#
+# PURPOSE: combine and tidy the untargeted data with the targeted data
+# 20240313  KRH moving from Obi1-specific repo
 
 # PACKAGES & SPECIAL FUNCTIONS ----
 library(tidyverse)
-library(integral)
 library(janitor)
 library(viridis)
 library(broom)
 library(coin)
+library(here)
 
+# SET FILE LOCATIONS  -----
+output_loc <- here("data", "intermediate", "metabolomics", "obi1")
 
 # Read in files  -----
-dat_target_filename <-
-  "01_targeted/data_intermediate/combined_tidy_dat_long.csv"
-dat_nontarget_filename <-
-  "02_untargeted/intermediates/combined_tidy_dat_long.csv"
+dat_target_filename <- here(
+    output_loc,
+    "targeted",
+    "combined_tidy_dat_long.csv"
+)
+dat_nontarget_filename <-here(
+    output_loc,
+    "untargeted",
+    "combined_tidy_dat_long.csv"
+)
 
 dat_target <- read_csv(dat_target_filename, show_col_types = FALSE)
 dat_nontarget <-
@@ -153,5 +150,5 @@ dat_MF_2 <- dat_cmb2 %>%
   distinct()
 
 # WRITE DATA -----
-write_csv(dat_cmb2, "04_combined/intermediates/combined_long_dat_scaled.csv")
-write_csv(dat_MF_2, "04_combined/intermediates/combined_MF_info.csv")
+write_csv(dat_cmb2, here(output_loc, "combined_long_dat_scaled.csv"))
+write_csv(dat_MF_2, here(output_loc, "combined_MF_info.csv"))

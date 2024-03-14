@@ -37,7 +37,7 @@ dat2 <- dereplicate_MFs(
   drop_tags = c("DDA", "_Blk_"),
   RT_tol = 0.3, # minutes to allow for possible adduct/isotope
   cor_tol = 0.85, # minimum correlation coefficient for considering if adduct/iso
-  add_ppm_tol = 10, # adduct mass tolerance (in ppm)
+  add_ppm_tol = 20, # adduct mass tolerance (in ppm)
   adduct_file = adduct_list_filename,
   date_tag = "211202"
 )

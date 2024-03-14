@@ -1,28 +1,18 @@
-#
-# Copyright: Copyright 2022, Integral Consulting Inc. All rights reserved.
-#
-# Purpose:
-#
-# Project Information:
-#   Name:
-#   Number:
-#
-# History:
-# Date	     Remarks
-# YYYY-MM-DD
-#
+#PURPOSE: To generate basic plots for the combined Obi1 Metabolomics data
 
 # PACKAGES & SPECIAL FUNCTIONS ----
 library(tidyverse)
-library(integral)
 library(RColorBrewer)
 library(htmlwidgets)
 library(plotly)
+library(here)
+
+# Set file locs ------
+data_dir <- here("data", "intermediate", "metabolomics", "obi1")
 
 # Read in files  -----
-dat_long_filename <- "04_combined/intermediates/combined_long_dat_scaled.csv"
-dat_MF_filename <- "04_combined/intermediates/combined_MF_info.csv"
-
+dat_long_filename <- here(data_dir, "combined_long_dat_scaled.csv")
+dat_MF_filename <- here(data_dir, "combined_MF_info.csv")
 
 dat_long <- read_csv(dat_long_filename, show_col_types = FALSE)
 dat_MF <-
@@ -97,6 +87,7 @@ dat_plot <- dat_tab2 %>%
   ))
 
 
+
 ## Two way plots -----
 g_h <- ggplot(
   data = dat_plot,
@@ -117,9 +108,36 @@ g_h <- ggplot(
     x = "Log10(Mean peak area), across all treatments",
     y = "Log2(Fold change), of +homarine treatment"
   ) +
-  ic_ggtheme()
+    theme_bw()
 
 g_h_interactive <- ggplotly(g_h)
+
+g_h2 <- ggplot(
+    data = dat_plot,
+    aes(
+        x = RT,
+        y = mz,
+        fill = color_label,
+        label = plot_label,
+        shape = shape_label
+    ),
+    color = "black"
+) +
+    geom_point(size = 2) +
+    scale_shape_manual(values = c(22, 21)) +
+    scale_fill_brewer(type = "div", palette = "RdBu") +
+    labs(
+        title = "Particulate Samples only",
+        x = "RT",
+        y = "mz"
+    ) +
+    theme_bw()
+
+g_h2_interactive <- ggplotly(g_h2)
+
+
+
+
 
 # SAVE OUTPUTS -----
 ggsave("04_combined/intermediates/FCvsMeanArea.pdf", plot = g_h, height = 6, width = 8, units = "in")

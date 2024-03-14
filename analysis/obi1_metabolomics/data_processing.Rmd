@@ -28,7 +28,7 @@ source(here("analysis", "obi1_metabolomics", "0103_Dissolved_QC.R"))
 remove(list = ls())
 ```
 
-## Combine and tidy data
+## Combine and tidy targeted data
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0104_Combine_Tidy.R"))
 remove(list = ls())
@@ -49,12 +49,18 @@ source(here("analysis", "obi1_metabolomics", "0202_untargeted_BMIS.R"))
 remove(list = ls())
 ```
 
-## Combine and tidy data
+## Combine and tidy untargeted data
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0203_Combine_Tidy.R"))
 remove(list = ls())
 ```
 
+# COMBINE TARGETED WITH UNTARGETED
+## Dereplicate adducts from the MSdial output
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0301_Combine_Tidy_TU.R"))
+remove(list = ls())
+```
 
 
 
