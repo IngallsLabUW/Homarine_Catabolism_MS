@@ -37,7 +37,7 @@ dat_nontarget <-
 dat_cmb <- dat_target %>%
   mutate(dat_type = "targeted") %>%
   bind_rows(dat_nontarget %>%
-              mutate(dat_type = "nontargeted")) %>%
+    mutate(dat_type = "nontargeted")) %>%
   filter(sample_set == "OBi1_set2") %>%
   filter(sample_fraction == "Particulate")
 
@@ -50,14 +50,16 @@ dat_fc <- dat_cmb %>%
   summarise(mean_area = mean(adjusted_area, rm.na = T)) %>%
   ungroup() %>%
   group_by(mass_feature, sample_fraction) %>%
-  summarise(fc_hNH4 = mean_area[treatment == "Glucose + NH4 + Homarine"] /
-              mean_area[treatment == "Glucose + NH4"],
-            fc_h = mean_area[treatment == "Homarine"] / mean_area[treatment == "Glucose + NH4"]) %>%
+  summarise(
+    fc_hNH4 = mean_area[treatment == "Glucose + NH4 + Homarine"] /
+      mean_area[treatment == "Glucose + NH4"],
+    fc_h = mean_area[treatment == "Homarine"] / mean_area[treatment == "Glucose + NH4"]
+  ) %>%
   ungroup()
 
 scaler_h <- dat_fc %>%
   group_by(sample_fraction) %>%
-  mutate(diff_from_med_h = abs(fc_h-median(fc_h, na.rm = T))) %>%
+  mutate(diff_from_med_h = abs(fc_h - median(fc_h, na.rm = T))) %>%
   filter(diff_from_med_h == min(diff_from_med_h, na.rm = T)) %>%
   ungroup() %>%
   head(1) %>%
@@ -65,8 +67,8 @@ scaler_h <- dat_fc %>%
 
 scaler_hNH4 <- dat_fc %>%
   group_by(sample_fraction) %>%
-  mutate(diff_from_med_hNH4 = abs(fc_hNH4-median(fc_hNH4, na.rm = T))) %>%
-  filter(diff_from_med_hNH4 == min(diff_from_med_hNH4, na.rm = T))%>%
+  mutate(diff_from_med_hNH4 = abs(fc_hNH4 - median(fc_hNH4, na.rm = T))) %>%
+  filter(diff_from_med_hNH4 == min(diff_from_med_hNH4, na.rm = T)) %>%
   ungroup() %>%
   head(1) %>%
   pull(fc_hNH4)
@@ -74,18 +76,18 @@ scaler_hNH4 <- dat_fc %>%
 ## scale data ----
 dat_cmb2 <- dat_cmb %>%
   mutate(scaled_area = case_when(
-    treatment == "Homarine" ~ adjusted_area/scaler_h,
-    treatment == "Glucose + NH4 + Homarine" ~ adjusted_area/scaler_hNH4,
-    treatment == "Glucose + NH4"  ~ adjusted_area
+    treatment == "Homarine" ~ adjusted_area / scaler_h,
+    treatment == "Glucose + NH4 + Homarine" ~ adjusted_area / scaler_hNH4,
+    treatment == "Glucose + NH4" ~ adjusted_area
   ))
 
 
 ## summarize abundance features ----
 high_homarine_compounds <- dat_cmb2 %>%
-  filter(!is.na(scaled_area))%>%
+  filter(!is.na(scaled_area)) %>%
   filter(treatment != "Glucose + NH4 + Homarine") %>%
   group_by(mass_feature) %>%
-  mutate(area_rank = rank(desc(scaled_area)))%>%
+  mutate(area_rank = rank(desc(scaled_area))) %>%
   ungroup() %>%
   group_by(mass_feature, treatment) %>%
   summarise(area_rank_sum = sum(area_rank)) %>%
@@ -94,10 +96,10 @@ high_homarine_compounds <- dat_cmb2 %>%
   pull(mass_feature)
 
 high_homarine_NH4_compounds <- dat_cmb2 %>%
-  filter(!is.na(scaled_area))%>%
+  filter(!is.na(scaled_area)) %>%
   filter(treatment != "Homarine") %>%
   group_by(mass_feature) %>%
-  mutate(area_rank = rank(desc(scaled_area)))%>%
+  mutate(area_rank = rank(desc(scaled_area))) %>%
   ungroup() %>%
   group_by(mass_feature, treatment) %>%
   summarise(area_rank_sum = sum(area_rank)) %>%
@@ -106,10 +108,10 @@ high_homarine_NH4_compounds <- dat_cmb2 %>%
   pull(mass_feature)
 
 low_homarine_compounds <- dat_cmb2 %>%
-  filter(!is.na(scaled_area))%>%
+  filter(!is.na(scaled_area)) %>%
   filter(treatment != "Glucose + NH4 + Homarine") %>%
   group_by(mass_feature) %>%
-  mutate(area_rank = rank(desc(scaled_area)))%>%
+  mutate(area_rank = rank(desc(scaled_area))) %>%
   ungroup() %>%
   group_by(mass_feature, treatment) %>%
   summarise(area_rank_sum = sum(area_rank)) %>%
@@ -118,10 +120,10 @@ low_homarine_compounds <- dat_cmb2 %>%
   pull(mass_feature)
 
 low_homarine_NH4_compounds <- dat_cmb2 %>%
-  filter(!is.na(scaled_area))%>%
+  filter(!is.na(scaled_area)) %>%
   filter(treatment != "Homarine") %>%
   group_by(mass_feature) %>%
-  mutate(area_rank = rank(desc(scaled_area)))%>%
+  mutate(area_rank = rank(desc(scaled_area))) %>%
   ungroup() %>%
   group_by(mass_feature, treatment) %>%
   summarise(area_rank_sum = sum(area_rank)) %>%
@@ -133,17 +135,21 @@ high_both_compounds <- high_homarine_compounds[high_homarine_compounds %in% high
 low_both_compounds <- low_homarine_compounds[low_homarine_compounds %in% low_homarine_NH4_compounds]
 
 dat_cmb2 <- dat_cmb2 %>%
-  mutate(high_homarine_compound = mass_feature %in% high_homarine_compounds,
-         low_homarine_compound = mass_feature %in% low_homarine_compounds,
-         high_homarine_NH4_compound = mass_feature %in% high_homarine_NH4_compounds,
-         low_homarine_NH4_compound = mass_feature %in% low_homarine_NH4_compounds,
-         high_both_compound = mass_feature %in% high_both_compounds,
-         low_both_compounds = mass_feature %in% low_both_compounds)
+  mutate(
+    high_homarine_compound = mass_feature %in% high_homarine_compounds,
+    low_homarine_compound = mass_feature %in% low_homarine_compounds,
+    high_homarine_NH4_compound = mass_feature %in% high_homarine_NH4_compounds,
+    low_homarine_NH4_compound = mass_feature %in% low_homarine_NH4_compounds,
+    high_both_compound = mass_feature %in% high_both_compounds,
+    low_both_compounds = mass_feature %in% low_both_compounds
+  )
 
 ## make intermediate of MF info -----
 dat_MF_2 <- dat_cmb2 %>%
-  select(mass_feature, sample_fraction, sample_set, dat_type, RT, mz, MS2,
-         add_annotation, high_homarine_compound:low_both_compounds) %>%
+  select(
+    mass_feature, sample_fraction, sample_set, dat_type, RT, mz, MS2,
+    add_annotation, high_homarine_compound:low_both_compounds
+  ) %>%
   distinct()
 
 # WRITE DATA -----

@@ -236,9 +236,10 @@ BMIS <-
             select(MIS, replicate_name, is_area),
           by = c("replicate_name", "MIS")
         ) %>%
-        left_join(is_means %>%
-          rename(MIS = mass_feature),
-        by = c("date", "MIS")
+        left_join(
+          is_means %>%
+            rename(MIS = mass_feature),
+          by = c("date", "MIS")
         ) %>%
         mutate(adjusted_area = QC_area / is_area * ave)
     }
@@ -273,13 +274,14 @@ BMIS <-
       group_by(mass_feature, MIS) %>%
       summarise(RSD_ofPoo = mean(RSD_ofPoo_IND, na.rm = TRUE))
 
-    poodat <- poodat %>% left_join(poodat %>%
-      group_by(mass_feature) %>%
-      summarise(
-        poo_picked_is =
-          unique(MIS)[which.min(RSD_ofPoo)][1]
-      ),
-    by = "mass_feature"
+    poodat <- poodat %>% left_join(
+      poodat %>%
+        group_by(mass_feature) %>%
+        summarise(
+          poo_picked_is =
+            unique(MIS)[which.min(RSD_ofPoo)][1]
+        ),
+      by = "mass_feature"
     )
 
     # Get the starting point of the RSD (Orig_RSD), calculate the change in the RSD, say if the MIS is acceptable----
@@ -309,7 +311,7 @@ BMIS <-
       mutate(FinalRSD = RSD_ofPoo)
     Try <- newpoodat %>% filter(FinalBMIS != "Inj_vol")
     QuickReport <- paste0(
-      round(length(Try$mass_feature) / length(newpoodat$mass_feature), digits = 3)*100,
+      round(length(Try$mass_feature) / length(newpoodat$mass_feature), digits = 3) * 100,
       " % of MFs  picked a BMIS. RSD improvement cutoff = ",
       cut_off1,
       ".  RSD minimum cutoff = ",
@@ -380,105 +382,105 @@ ms1_search <-
            blank_flag,
            meta_data_file,
            ppm_flex = 5) {
+    ## get config data ----
+    cmps_to_search <- read_csv(
+      search_compound_filename,
+      show_col_types = FALSE
+    )
+    files <- list.files(folder_to_search, pattern = ".mzML") %>%
+      str_subset(paste0("(", sample_flag, ")|(", blank_flag, ")"))
+    meta_dat <- read_csv(
+      meta_data_file,
+      show_col_types = FALSE
+    ) %>%
+      mutate(
+        filename = paste0(replicate_name, ".mzML")
+      )
 
-## get config data ----
-cmps_to_search <- read_csv(
-  search_compound_filename,
-  show_col_types = FALSE
-)
-files <- list.files(folder_to_search, pattern = ".mzML") %>%
-  str_subset(paste0("(", sample_flag, ")|(", blank_flag, ")"))
-meta_dat <- read_csv(
-  meta_data_file,
-  show_col_types = FALSE
-) %>%
-  mutate(
-    filename = paste0(replicate_name, ".mzML")
-  )
+    ## get ms1 data ----
+    print("Grabbing MS1 data from files")
+    ms1data <- grabMSdata(
+      files = paste0(folder_to_search, "/", files),
+      grab_what = c("MS1")
+    )
 
-## get ms1 data ----
-print("Grabbing MS1 data from files")
-ms1data <- grabMSdata(
-  files = paste0(folder_to_search, "/", files),
-  grab_what = c("MS1")
-)
+    # prep figure ------
+    pdf(out_file_name,
+      width = 11,
+      height = 8
+    )
 
-# prep figure ------
-pdf(out_file_name,
-    width = 11,
-    height = 8
-)
+    # make each compound plot ----
+    for (i in 1:length(cmps_to_search$compound_name)) {
+      compound_name <- cmps_to_search$compound_name[i]
+      if (ion_mode == "negative") {
+        mz_oi <- cmps_to_search$mz_neg[i]
+      } else if (ion_mode == "positive") {
+        mz_oi <- cmps_to_search$mz_pos[i]
+      }
 
-# make each compound plot ----
-for (i in 1:length(cmps_to_search$compound_name)) {
-  compound_name <- cmps_to_search$compound_name[i]
-  if (ion_mode == "negative") {
-    mz_oi <- cmps_to_search$mz_neg[i]
-  } else if (ion_mode == "positive") {
-    mz_oi <- cmps_to_search$mz_pos[i]
+      print(paste("Plotting", compound_name))
+
+      rts <- ms1data$MS1 %>%
+        select(rt, filename) %>%
+        distinct()
+
+      ms1dat_toplot <- ms1data$MS1 %>%
+        filter(mz %between% pmppm(mz_oi, ppm_flex)) %>%
+        group_by(rt, filename) %>%
+        summarise(int = sum(int)) %>%
+        ungroup() %>%
+        right_join(rts, by = c("rt", "filename")) %>%
+        mutate(
+          int = ifelse(is.na(int), 0, int),
+          target_mass = mz_oi
+        ) %>%
+        ungroup() %>%
+        left_join(
+          meta_dat %>%
+            select(filename, treatment),
+          by = "filename"
+        ) %>%
+        mutate(treatment = ifelse(str_detect(filename, blank_flag), "Blank", treatment))
+
+      ms1dat_toplot <- ms1dat_toplot %>%
+        arrange(rt, filename) %>%
+        group_by(filename) %>%
+        # if median of 3 = 0, only one had a signal, replace with 0
+        mutate(int_roll = rollapply(int, 3, median, align = "right", fill = 0)) %>%
+        mutate(int = ifelse(int_roll == 0, 0, int)) %>%
+        ungroup()
+
+
+      ## construct plot -----
+      g <- ggplot(
+        data = ms1dat_toplot,
+        aes(
+          x = rt,
+          y = int_roll,
+          group = filename
+        )
+      ) +
+        geom_line() +
+        facet_wrap(
+          facets = vars(treatment),
+          ncol = 1,
+          # scale = "free_y",
+          strip.position = "right"
+        ) +
+        labs(
+          title = paste0(compound_name, ", ppm = ", ppm_flex),
+          subtitle = paste0("mass = ", round(mz_oi, digits = 4)),
+          y = "Intensity",
+          x = "Retention time, (min)"
+        ) +
+        theme_bw() +
+        theme(
+          strip.background = element_blank(),
+          panel.spacing = unit(0, "lines")
+        )
+      plot(g) %>% suppressWarnings()
+    }
+
+    dev.off()
   }
-
-  print(paste("Plotting", compound_name))
-
-  rts <- ms1data$MS1 %>%
-    select(rt, filename) %>%
-    distinct()
-
-  ms1dat_toplot <- ms1data$MS1 %>%
-    filter(mz %between% pmppm(mz_oi, ppm_flex)) %>%
-    group_by(rt, filename) %>%
-    summarise(int = sum(int)) %>%
-    ungroup() %>%
-    right_join(rts, by = c("rt", "filename")) %>%
-    mutate(
-      int = ifelse(is.na(int), 0, int),
-      target_mass = mz_oi
-    ) %>%
-    ungroup() %>%
-    left_join(meta_dat %>%
-                select(filename, treatment),
-              by = "filename"
-    ) %>%
-    mutate(treatment = ifelse(str_detect(filename, blank_flag), "Blank", treatment))
-
-  ms1dat_toplot <- ms1dat_toplot %>%
-    arrange(rt, filename) %>%
-    group_by(filename) %>%
-    # if median of 3 = 0, only one had a signal, replace with 0
-    mutate(int_roll = rollapply(int, 3, median, align = "right", fill = 0)) %>%
-    mutate(int = ifelse(int_roll == 0, 0, int)) %>%
-    ungroup()
-
-
-  ## construct plot -----
-  g <- ggplot(
-    data = ms1dat_toplot,
-    aes(
-      x = rt,
-      y = int_roll,
-      group = filename
-    )
-  ) +
-    geom_line() +
-    facet_wrap(
-      facets = vars(treatment),
-      ncol = 1,
-      # scale = "free_y",
-      strip.position = "right"
-    ) +
-    labs(
-      title = paste0(compound_name, ", ppm = ", ppm_flex),
-      subtitle = paste0("mass = ", round(mz_oi, digits = 4)),
-      y = "Intensity",
-      x = "Retention time, (min)"
-    ) +
-    theme_bw() +
-    theme(
-      strip.background = element_blank(),
-      panel.spacing = unit(0, "lines")
-    )
-  plot(g) %>% suppressWarnings()
-}
-
-dev.off()
-}

@@ -49,3 +49,6 @@ data/raw
 
 #Eliminating weird DSStore
 .DS_Store
+
+#KRH personal notes
+krh_notes.txt

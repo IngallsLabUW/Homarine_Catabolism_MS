@@ -23,14 +23,15 @@ dir.create(bmis_checks_loc, recursive = TRUE, showWarnings = FALSE)
 ## Perform BMIS ----
 BMIS_results <- BMIS(
   sample_key = here(
-      meta_data_loc,
-      "sample_key.csv"
+    meta_data_loc,
+    "sample_key.csv"
   ),
   is_names_file = here(
-      meta_data_loc,
-      "is_names_particulate.csv"),
+    meta_data_loc,
+    "is_names_particulate.csv"
+  ),
   dat_pos_file = here(
-     qc_data_loc,
+    qc_data_loc,
     "QCd_HILIC_Pos_Particulate.csv"
   ),
   dat_neg_file = here(
@@ -51,46 +52,58 @@ BMIS_results <- BMIS(
 )
 ## Save output ----
 ### Internal standard reps -----
-ggsave(here(
-    bmis_checks_loc, "HILIC_Particulate_ISreps.pdf") ,
-       BMIS_results[[1]],
-       width = 15, height = 8, units = "in")
+ggsave(
+  here(
+    bmis_checks_loc, "HILIC_Particulate_ISreps.pdf"
+  ),
+  BMIS_results[[1]],
+  width = 15, height = 8, units = "in"
+)
 
 ### Quick report----
-writeLines(BMIS_results[[2]],
-           here(
-               bmis_checks_loc,"HILIC_Particulate_BMISSummary.txt"))
+writeLines(
+  BMIS_results[[2]],
+  here(
+    bmis_checks_loc, "HILIC_Particulate_BMISSummary.txt"
+  )
+)
 
 ### Internal standard reps----
-ggsave(here(
-    bmis_checks_loc, "HILIC_Particulate_ISvIScheck.pdf"),
-       BMIS_results[[3]],
-       width = 10, height = 8, units = "in")
+ggsave(
+  here(
+    bmis_checks_loc, "HILIC_Particulate_ISvIScheck.pdf"
+  ),
+  BMIS_results[[3]],
+  width = 10, height = 8, units = "in"
+)
 
 ### BMIS output----
-write_csv(BMIS_results[[4]],
-          here(qc_data_loc, "BMISd_HILIC_Particulate.csv"))
+write_csv(
+  BMIS_results[[4]],
+  here(qc_data_loc, "BMISd_HILIC_Particulate.csv")
+)
 print("BMIS complete on HILIC particulate")
 
 
 # BMIS on HILIC dissolved ------
 ## Perform BMIS ----
 BMIS_results <- BMIS(
-    sample_key = here(
-        meta_data_loc,
-        "sample_key.csv"
-    ),
-    is_names_file = here(
-        meta_data_loc,
-        "is_names_dissolved.csv"),
-    dat_pos_file = here(
-        qc_data_loc,
-        "QCd_HILIC_Pos_Dissolved.csv"
-    ),
-    dat_neg_file = here(
-        qc_data_loc,
-        "QCd_HILIC_Neg_Dissolved.csv"
-    ),
+  sample_key = here(
+    meta_data_loc,
+    "sample_key.csv"
+  ),
+  is_names_file = here(
+    meta_data_loc,
+    "is_names_dissolved.csv"
+  ),
+  dat_pos_file = here(
+    qc_data_loc,
+    "QCd_HILIC_Pos_Dissolved.csv"
+  ),
+  dat_neg_file = here(
+    qc_data_loc,
+    "QCd_HILIC_Neg_Dissolved.csv"
+  ),
   cut_off1 = 0.2,
   cut_off2 = 0.1,
   smps_to_dump = c(),
@@ -99,32 +112,37 @@ BMIS_results <- BMIS(
 ## Save output ----
 ## Save internal standard reps ----
 ggsave(
-    here(
-        bmis_checks_loc,
-        "HILIC_Dissolved_ISreps.pdf"
-    ),
-       BMIS_results[[1]],
-       width = 15, height = 8, units = "in")
+  here(
+    bmis_checks_loc,
+    "HILIC_Dissolved_ISreps.pdf"
+  ),
+  BMIS_results[[1]],
+  width = 15, height = 8, units = "in"
+)
 
 ### Quick report-----
-writeLines(BMIS_results[[2]],
-           here(
-               bmis_checks_loc,
-               "HILIC_Dissolved_BMISSummary.txt"
-           ))
+writeLines(
+  BMIS_results[[2]],
+  here(
+    bmis_checks_loc,
+    "HILIC_Dissolved_BMISSummary.txt"
+  )
+)
 
 
 ### Internal standard reps-----
 ggsave(
-    here(
-        bmis_checks_loc,
-        "HILIC_Dissolved_ISvIScheck.pdf"
-    ),
-       BMIS_results[[3]],
-       width = 10, height = 8, units = "in")
+  here(
+    bmis_checks_loc,
+    "HILIC_Dissolved_ISvIScheck.pdf"
+  ),
+  BMIS_results[[3]],
+  width = 10, height = 8, units = "in"
+)
 
 ### BMIS output-----
-write_csv(BMIS_results[[4]],
-          here(qc_data_loc, "BMISd_HILIC_Dissolved.csv"))
+write_csv(
+  BMIS_results[[4]],
+  here(qc_data_loc, "BMISd_HILIC_Dissolved.csv")
+)
 print("BMIS complete on HILIC dissolved")
-

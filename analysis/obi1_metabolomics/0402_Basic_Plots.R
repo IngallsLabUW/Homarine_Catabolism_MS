@@ -89,7 +89,8 @@ dat_plot <- dat_tab2 %>%
         "No change",
         "Low in single homarine treatment",
         "Low in both homarine treatments"
-        ))) %>%
+      )
+    )) %>%
   mutate(shape_label = case_when(
     str_detect(mass_feature, "HILIC") ~ "untargeted",
     TRUE ~ "targeted"
@@ -101,27 +102,26 @@ g_h <- ggplot(
   data = dat_plot,
   aes(
     x = log10(mean_overall),
-    y =log2(fc_h),
+    y = log2(fc_h),
     fill = color_label,
     label = plot_label,
     shape = shape_label
-    ),
+  ),
   color = "black"
-  ) +
+) +
   geom_point(size = 2) +
-  scale_shape_manual(values = c(22,21))+
+  scale_shape_manual(values = c(22, 21)) +
   scale_fill_brewer(type = "div", palette = "RdBu") +
   labs(
     title = "Particulate Samples only",
     x = "Log10(Mean peak area), across all treatments",
     y = "Log2(Fold change), of +homarine treatment"
-    )+
+  ) +
   ic_ggtheme()
 
 g_h_interactive <- ggplotly(g_h)
 
 # SAVE OUTPUTS -----
 ggsave("04_combined/intermediates/FCvsMeanArea.pdf", plot = g_h, height = 6, width = 8, units = "in")
-saveWidget(g_h_interactive , "04_combined/intermediates/FCvsMeanArea.html")
+saveWidget(g_h_interactive, "04_combined/intermediates/FCvsMeanArea.html")
 ic_write_csv_wlog(dat_tab2, "04_combined/intermediates/summary_MF_table.csv")
-

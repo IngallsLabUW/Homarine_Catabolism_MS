@@ -16,7 +16,7 @@ dir.create(save_dir, recursive = TRUE, showWarnings = FALSE)
 
 # Fill in blanks with 0s for dissolved data ----
 ## HILIC Neg -----
-dat_filename = here(
+dat_filename <- here(
   outer_file_loc,
   "dissolved",
   "skyline",
@@ -24,13 +24,13 @@ dat_filename = here(
 )
 
 dat <- read_csv(dat_filename,
-                show_col_types = FALSE) %>%
+  show_col_types = FALSE
+) %>%
   mutate(Area = ifelse(
     str_detect(`Replicate Name`, "Blk") & Area == 0,
     "Test",
     Area
-      )
-    )
+  ))
 write_csv(dat, here(
   outer_file_loc,
   "dissolved",
@@ -39,8 +39,8 @@ write_csv(dat, here(
 ))
 
 ## HILIC Pos -----
-dat_filename = here(
-    outer_file_loc,
+dat_filename <- here(
+  outer_file_loc,
   "dissolved",
   "skyline",
   "HILIC_Pos_Dissolved_OscarSosaBacteria.csv"
@@ -50,10 +50,9 @@ dat <- read_csv(dat_filename) %>%
     str_detect(`Replicate Name`, "Blk") & Area == 0,
     "Test",
     Area
-  )
-  )
-write_csv(dat,  here(
-    outer_file_loc,
+  ))
+write_csv(dat, here(
+  outer_file_loc,
   "dissolved",
   "skyline",
   "HILIC_Pos_Dissolved_OscarSosaBacteria_zerod.csv"
@@ -64,7 +63,7 @@ write_csv(dat,  here(
 ## Dissolved, HILIC Neg -----
 QE_QC(
   dat_filename = here(
-     outer_file_loc,
+    outer_file_loc,
     "dissolved",
     "skyline",
     "HILIC_Neg_Dissolved_OscarSosaBacteria_zerod.csv"
@@ -77,14 +76,14 @@ QE_QC(
   rt_flex = 2.5,
   blank_ratio_max = 3,
   fileout = here(
-     save_dir,
+    save_dir,
     "QCd_HILIC_Neg_Dissolved.csv"
   )
 )
 ## Dissolved, HILIC Pos -----
 QE_QC(
   dat_filename = here(
-     outer_file_loc,
+    outer_file_loc,
     "dissolved",
     "skyline",
     "HILIC_Pos_Dissolved_OscarSosaBacteria.csv"
@@ -97,7 +96,7 @@ QE_QC(
   rt_flex = 2.5,
   blank_ratio_max = 3,
   fileout = here(
-      save_dir,
+    save_dir,
     "QCd_HILIC_Pos_Dissolved.csv"
   )
 )
@@ -105,7 +104,7 @@ QE_QC(
 ## Particulate, HILIC Neg -----
 QE_QC(
   dat_filename = here(
-      outer_file_loc,
+    outer_file_loc,
     "particulate",
     "skyline",
     "HILIC_Neg_Particulate_OscarSosaBacteria.csv"
@@ -118,7 +117,7 @@ QE_QC(
   rt_flex = 2.5,
   blank_ratio_max = 3,
   fileout = here(
-      save_dir,
+    save_dir,
     "QCd_HILIC_Neg_Particulate.csv"
   )
 )
@@ -126,7 +125,7 @@ QE_QC(
 ## Particulate, HILIC Pos -----
 QE_QC(
   dat_filename = here(
-      outer_file_loc,
+    outer_file_loc,
     "particulate",
     "skyline",
     "HILIC_Pos_Particulate_OscarSosaBacteria.csv"

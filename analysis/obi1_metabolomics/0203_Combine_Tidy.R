@@ -43,16 +43,20 @@ dat_combined <- dat_part %>%
   select(mass_feature, replicate_name, adjusted_area) %>%
   mutate(sample_fraction = "Particulate") %>%
   bind_rows(dat_diss %>%
-              select(mass_feature, replicate_name, adjusted_area) %>%
-              mutate(sample_fraction = "Dissolved"))
+    select(mass_feature, replicate_name, adjusted_area) %>%
+    mutate(sample_fraction = "Dissolved"))
 
 ## Add meta data ---
 dat_combined2 <- dat_combined %>%
-  left_join(sample_key %>%
-              select(replicate_name,
-                     sample_set,
-                     treatment),
-            by = "replicate_name") %>%
+  left_join(
+    sample_key %>%
+      select(
+        replicate_name,
+        sample_set,
+        treatment
+      ),
+    by = "replicate_name"
+  ) %>%
   filter(!is.na(treatment))
 
 ## Add MF info ----
@@ -60,17 +64,19 @@ dat_combined3 <- dat_part_MF %>%
   select(ID:add_annotation) %>%
   mutate(sample_fraction = "Particulate") %>%
   bind_rows(dat_diss_MF %>%
-              select(ID:add_annotation) %>%
-              mutate(sample_fraction = "Dissolved")) %>%
+    select(ID:add_annotation) %>%
+    mutate(sample_fraction = "Dissolved")) %>%
   rename(mass_feature = ID) %>%
   filter(mass_feature %in% dat_combined2$mass_feature) %>%
   right_join(dat_combined2)
 
 
 dat_combined_wide <- dat_combined2 %>%
-  pivot_wider(id_cols = c('replicate_name', 'sample_set', 'treatment','sample_fraction'),
-              names_from = mass_feature,
-              values_from = adjusted_area)
+  pivot_wider(
+    id_cols = c("replicate_name", "sample_set", "treatment", "sample_fraction"),
+    names_from = mass_feature,
+    values_from = adjusted_area
+  )
 
 
 # Add MF info -----

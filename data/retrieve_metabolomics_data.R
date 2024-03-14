@@ -9,10 +9,11 @@ source("R_functions/google_drive_functions.R")
 
 
 # Functions to help get the folder ID needed for the drive_download_daughters_function
-dir = drive_find(
-  pattern='OscarSosa_Bacteria',
-  type='folder',
-  shared_drive = "Ingalls Lab")
+dir <- drive_find(
+  pattern = "OscarSosa_Bacteria",
+  type = "folder",
+  shared_drive = "Ingalls Lab"
+)
 # query = paste('"', dir$id, '"',  ' in parents', sep='')
 # files = drive_ls(q=query, shared_drive = "Ingalls Lab", recursive = TRUE)
 
@@ -111,5 +112,5 @@ is_particulate_dat <- read_csv(here("data", "raw", "metabolomics", "obi1", "part
 ## grab sample key -----
 gfile <- drive_get(as_id("1KL7-kJOZrlDtV5wToq_ejkLNtBiGNC5Y"), shared_drive = "Ingalls Lab")
 drive_download(gfile,
-               path = here("data", "raw", "metabolomics", "obi1", "sample_key.csv"))
-
+  path = here("data", "raw", "metabolomics", "obi1", "sample_key.csv")
+)

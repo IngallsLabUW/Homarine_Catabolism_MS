@@ -27,8 +27,8 @@ drive_download_daughters <- function(gfolder_id, folder_export, overwrite = F) {
   for (i in seq_along(files$name)) {
     print(paste(i, "of", length(files$name)))
     try(drive_download(files[i, ],
-                       path = here(folder_export, files$name[i]),
-                       overwrite = overwrite
+      path = here(folder_export, files$name[i]),
+      overwrite = overwrite
     ))
   }
 }

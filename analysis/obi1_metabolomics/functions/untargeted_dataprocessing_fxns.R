@@ -20,36 +20,40 @@ flattenCorrMatrix <- function(cormat, pmat) {
   data.frame(
     ID_1 = rownames(cormat)[row(cormat)[ut]],
     ID_2 = rownames(cormat)[col(cormat)[ut]],
-    cor  =(cormat)[ut],
+    cor = (cormat)[ut],
     p = pmat[ut]
   )
 }
 
 
 # Define function to read in MS-DIAL Data----
-#mode should be the analytical fraction ("HILICPos", "HILICNeg", or "RP")
+# mode should be the analytical fraction ("HILICPos", "HILICNeg", or "RP")
 
 MSDIAL_read <- function(file1, Mode) {
   dat_out <- read_delim(file1,
-             "\t", escape_double = FALSE, trim_ws = TRUE,  skip = 4,
-             show_col_types = FALSE,
-             name_repair = "unique_quiet")%>%
+    "\t",
+    escape_double = FALSE, trim_ws = TRUE, skip = 4,
+    show_col_types = FALSE,
+    name_repair = "unique_quiet"
+  ) %>%
     mutate(Column = Mode) %>%
     mutate("ID" = as.character(`Alignment ID`)) %>%
-    rename("RT" = `Average Rt(min)`,
-           'mz' = `Average Mz`,
-           "MS2_bool" = `MS/MS assigned`,
-           "MS2" = `MS/MS spectrum`,
-           "Name" = `Metabolite name`,
-           "Adduct" = `Adduct type`,
-           "Note" = `Post curation result`,
-           "Fill" = `Fill %`,
-           "Ref_RT" = `Reference RT`,
-           "Ref_mz" = `Reference m/z`,
-           "RT_matched" = `RT matched`,
-           "mz_matched" = `m/z matched`,
-           "MS2_matched" = `MS/MS matched`,
-           "SN_ave" = `S/N average`) %>%
+    rename(
+      "RT" = `Average Rt(min)`,
+      "mz" = `Average Mz`,
+      "MS2_bool" = `MS/MS assigned`,
+      "MS2" = `MS/MS spectrum`,
+      "Name" = `Metabolite name`,
+      "Adduct" = `Adduct type`,
+      "Note" = `Post curation result`,
+      "Fill" = `Fill %`,
+      "Ref_RT" = `Reference RT`,
+      "Ref_mz" = `Reference m/z`,
+      "RT_matched" = `RT matched`,
+      "mz_matched" = `m/z matched`,
+      "MS2_matched" = `MS/MS matched`,
+      "SN_ave" = `S/N average`
+    ) %>%
     select(ID, everything()) %>%
     select(-`Alignment ID`)
   return(dat_out)
@@ -64,23 +68,27 @@ find_adducts <- function(ID_num, dataset, adduct_list, RT_ad_tol, adduct.error.p
 
   MF.limits <- dataset %>%
     filter(ID == ID_num) %>%
-    mutate(RT_low = RT - RT_ad_tol,
-           RT_high = RT + RT_ad_tol)
-  ad.limits <- cbind(MF.limits, adduct_list)%>%
-    mutate(adduct.mass = ((mz) - (1.007276*polarity))/abs(Charge) + Mass.change,
-           adduct.mass.high = adduct.mass+(adduct.error.ppm/10^6)*adduct.mass,
-           adduct.mass.low = adduct.mass-(adduct.error.ppm/10^6)*adduct.mass) %>%
+    mutate(
+      RT_low = RT - RT_ad_tol,
+      RT_high = RT + RT_ad_tol
+    )
+  ad.limits <- cbind(MF.limits, adduct_list) %>%
+    mutate(
+      adduct.mass = ((mz) - (1.007276 * polarity)) / abs(Charge) + Mass.change,
+      adduct.mass.high = adduct.mass + (adduct.error.ppm / 10^6) * adduct.mass,
+      adduct.mass.low = adduct.mass - (adduct.error.ppm / 10^6) * adduct.mass
+    ) %>%
     mutate(merge.key = "x") %>%
     select(merge.key, Ion, RT_low, RT_high, adduct.mass.low, adduct.mass.high, adduct.mass, ad.polarity) %>%
     rename("polarity" = ad.polarity)
-  ad.detect <- full_join(dataset.2, ad.limits, by = c("polarity", "merge.key"))%>%
-    select(!merge.key)%>%
+  ad.detect <- full_join(dataset.2, ad.limits, by = c("polarity", "merge.key")) %>%
+    select(!merge.key) %>%
     rowwise() %>%
-    filter(RT >= RT_low & RT <= RT_high)%>%
+    filter(RT >= RT_low & RT <= RT_high) %>%
     filter(mz >= adduct.mass.low & mz <= adduct.mass.high) %>%
     rename("adduct.ID" = ID) %>%
     mutate(ID = ID_num) %>%
-    mutate(ad.ppm = abs((adduct.mass-mz)/adduct.mass*10^6))
+    mutate(ad.ppm = abs((adduct.mass - mz) / adduct.mass * 10^6))
   return(ad.detect)
 }
 
@@ -95,22 +103,21 @@ dereplicate_MFs <- function(
     comment_tag = "m",
     sample_tag = "2112",
     drop_tags = c("DDA", "_Blk_"),
-    RT_tol = 0.2, #minutes to allow for possible adduct/isotope
-    cor_tol = 0.95,  # minimum correlation coefficient for considering if adduct/iso
+    RT_tol = 0.2, # minutes to allow for possible adduct/isotope
+    cor_tol = 0.95, # minimum correlation coefficient for considering if adduct/iso
     add_ppm_tol = 20, # adduct mass tolerance (in ppm)
     adduct_file = "raw_input/KHeal_adduct_list.csv",
-    date_tag = ""
-) {
+    date_tag = "") {
   # GET POLARITIES
   if (str_detect(dat_type_1, "Pos")) {
-    polarity_1 = 1
+    polarity_1 <- 1
   } else {
-    polarity_1 = -1
+    polarity_1 <- -1
   }
   if (str_detect(dat_type_2, "Pos")) {
-    polarity_2 = 1
+    polarity_2 <- 1
   } else {
-    polarity_2 = -1
+    polarity_2 <- -1
   }
 
 
@@ -131,7 +138,7 @@ dereplicate_MFs <- function(
   # FIND CORRELATED MFs ----
   ## Combine dat1 and dat2 ----
   if (is.na(dat_filename2)) {
-    dat_cmb <- dat_1%>%
+    dat_cmb <- dat_1 %>%
       mutate(ID = paste0(Column, "_", ID))
   } else {
     dat_cmb <- dat_1 %>%
@@ -143,30 +150,32 @@ dereplicate_MFs <- function(
   # remove blanks and DDA
   dat_m <- dat_cmb %>%
     select(ID, contains(sample_tag)) %>%
-    select(-c(matches(paste(drop_tags, collapse = "|"))))%>%
+    select(-c(matches(paste(drop_tags, collapse = "|")))) %>%
     as.matrix()
   row.names(dat_m) <- dat_m[, 1]
   dat_m <- dat_m[, -1]
   ## Perform and clean up correlation results ----
   corr_results <- rcorr(t(dat_m), type = c("pearson"))
   dat_corr <- flattenCorrMatrix(corr_results$r, corr_results$P) %>%
-    left_join(dat_cmb %>%
-                select(ID, RT, mz, polarity) %>%
-                rename(
-                  RT_1 = RT,
-                  mz_1 = mz,
-                  polarity_1 = polarity
-                ),
-              by = c("ID_1" = "ID")
+    left_join(
+      dat_cmb %>%
+        select(ID, RT, mz, polarity) %>%
+        rename(
+          RT_1 = RT,
+          mz_1 = mz,
+          polarity_1 = polarity
+        ),
+      by = c("ID_1" = "ID")
     ) %>%
-    left_join(dat_cmb %>%
-                select(ID, RT, mz, polarity) %>%
-                rename(
-                  RT_2 = RT,
-                  mz_2 = mz,
-                  polarity_2 = polarity
-                ),
-              by = c("ID_2" = "ID")
+    left_join(
+      dat_cmb %>%
+        select(ID, RT, mz, polarity) %>%
+        rename(
+          RT_2 = RT,
+          mz_2 = mz,
+          polarity_2 = polarity
+        ),
+      by = c("ID_2" = "ID")
     ) %>%
     mutate(
       RT_diff = abs(RT_1 - RT_2),
@@ -188,7 +197,7 @@ dereplicate_MFs <- function(
   for (i in 1:length(list_vcorr)) {
     comp.ID <- unique(list_vcorr[[i]]$ID_1)
     ID.dat <- list_vcorr[[i]] %>%
-      select(ID_2, mz_2, RT_2, polarity_2)  %>%
+      select(ID_2, mz_2, RT_2, polarity_2) %>%
       rename(
         ID = ID_2,
         mz = mz_2,
@@ -197,15 +206,15 @@ dereplicate_MFs <- function(
       ) %>%
       distinct() %>%
       bind_rows(list_vcorr[[i]] %>%
-                  select(ID_1, mz_1, RT_1, polarity_1) %>%
-                  rename(
-                    ID = ID_1,
-                    mz = mz_1,
-                    RT = RT_1,
-                    polarity = polarity_1
-                  ) %>%
-                  filter(polarity == unique(list_vcorr[[i]]$polarity_1)) %>%
-                  distinct())
+        select(ID_1, mz_1, RT_1, polarity_1) %>%
+        rename(
+          ID = ID_1,
+          mz = mz_1,
+          RT = RT_1,
+          polarity = polarity_1
+        ) %>%
+        filter(polarity == unique(list_vcorr[[i]]$polarity_1)) %>%
+        distinct())
     # this function asks for each compound - if this is M+H or M-H, do we see any matching adducts or isotopes?
     adduct.out <- find_adducts(
       comp.ID,
@@ -216,7 +225,7 @@ dereplicate_MFs <- function(
     )
     if (length(adduct.out$adduct.ID) > 1) {
       found_adducts <- bind_rows(found_adducts, adduct.out)
-#      print(paste0(as.character(i), " found an adduct!"))
+      #      print(paste0(as.character(i), " found an adduct!"))
     }
   }
   # CLEAN UP ANNOATIONS ------
@@ -277,7 +286,8 @@ BMIS_MSdialoutput <-
            is_to_dump = c()) {
     # Import data -----
     dat1 <- read_csv(dat1_filename,
-                     show_col_types = FALSE)
+      show_col_types = FALSE
+    )
     sample_key_all <- read_csv(sample_key, show_col_types = FALSE)
 
 
@@ -300,8 +310,9 @@ BMIS_MSdialoutput <-
     # prep is data ----
     is_names <- read_csv(
       is_names_filename,
-      show_col_types = FALSE)
-    if (is.na(is_dat2_filename)){
+      show_col_types = FALSE
+    )
+    if (is.na(is_dat2_filename)) {
       is_dat <- read_csv(
         is_dat1_filename,
         show_col_types = FALSE
@@ -312,15 +323,14 @@ BMIS_MSdialoutput <-
         show_col_types = FALSE
       ) %>%
         bind_rows(read_csv(is_dat2_filename,
-                           show_col_types = FALSE
+          show_col_types = FALSE
         ))
     }
-    browser()
     is_dat <- is_dat %>%
-      clean_names()    %>%
+      clean_names() %>%
       rename(mass_feature = precursor_ion_name) %>%
-      filter(mass_feature %in% is_names$is_name)    %>%
-      filter(replicate_name %in% dat$replicate_name)    %>%
+      filter(mass_feature %in% is_names$is_name) %>%
+      filter(replicate_name %in% dat$replicate_name) %>%
       mutate(area = as.numeric(area)) %>%
       suppressWarnings() %>%
       select(replicate_name, mass_feature, area) %>%
@@ -358,7 +368,7 @@ BMIS_MSdialoutput <-
       ggtitle("IS Raw Areas")
 
     dat <- dat %>%
-      mutate(QC_area = area) %>% #TODO - add in some QC
+      mutate(QC_area = area) %>% # TODO - add in some QC
       select(replicate_name, mass_feature, area, QC_area) %>%
       mutate(date = str_extract(replicate_name, "^\\d*"))
     is_dat <- is_dat %>%
@@ -373,11 +383,10 @@ BMIS_MSdialoutput <-
 
     # Normalize to each internal Standard----
     split_dat <- list()
-    browser()
     for (i in 1:length(unique(is_dat$mass_feature))) {
       split_dat[[i]] <-
         bind_rows(is_dat %>%
-                    mutate(QC_area = area), dat) %>%
+          mutate(QC_area = area), dat) %>%
         mutate(MIS = unique(is_dat$mass_feature)[i]) %>%
         left_join(
           is_dat %>%
@@ -385,9 +394,10 @@ BMIS_MSdialoutput <-
             select(MIS, replicate_name, is_area),
           by = c("replicate_name", "MIS")
         ) %>%
-        left_join(is_means %>%
-                    rename(MIS = mass_feature),
-                  by = c("date", "MIS")
+        left_join(
+          is_means %>%
+            rename(MIS = mass_feature),
+          by = c("date", "MIS")
         ) %>%
         mutate(adjusted_area = QC_area / is_area * ave)
     }
@@ -415,19 +425,20 @@ BMIS_MSdialoutput <-
       filter(type == "Poo") %>%
       group_by(samp_id, mass_feature, MIS) %>%
       summarise(RSD_ofPoo_IND = sd(adjusted_area,
-                                   na.rm = TRUE
+        na.rm = TRUE
       ) / mean(adjusted_area, na.rm = TRUE), .groups = "drop") %>%
       mutate(RSD_ofPoo_IND = ifelse(RSD_ofPoo_IND == "NaN", NA, RSD_ofPoo_IND)) %>%
       group_by(mass_feature, MIS) %>%
       summarise(RSD_ofPoo = mean(RSD_ofPoo_IND, na.rm = TRUE))
 
-    poodat <- poodat %>% left_join(poodat %>%
-                                     group_by(mass_feature) %>%
-                                     summarise(
-                                       poo_picked_is =
-                                         unique(MIS)[which.min(RSD_ofPoo)][1]
-                                     ),
-                                   by = "mass_feature"
+    poodat <- poodat %>% left_join(
+      poodat %>%
+        group_by(mass_feature) %>%
+        summarise(
+          poo_picked_is =
+            unique(MIS)[which.min(RSD_ofPoo)][1]
+        ),
+      by = "mass_feature"
     )
 
     # Get the starting point of the RSD (Orig_RSD), calculate the change in the RSD, say if the MIS is acceptable----
@@ -442,80 +453,80 @@ BMIS_MSdialoutput <-
       mutate(del_RSD = (Orig_RSD - RSD_ofPoo)) %>%
       mutate(percent_change = del_RSD / Orig_RSD) %>%
       mutate(accept_MIS = (percent_change > cut_off1 &
-                             Orig_RSD > cut_off2))
+        Orig_RSD > cut_off2))
 
 
 
-# Change the BMIS to "Inj_vol" if the BMIS is not an acceptable -----
-# Adds a column that has the BMIS, not just Poo.picked.IS
-# Changes the finalBMIS to inject_volume if its no good
-fixedpoodat <- poodat %>%
-  filter(MIS == poo_picked_is) %>%
-  mutate(FinalBMIS = ifelse((accept_MIS == "FALSE"), "Inj_vol", poo_picked_is))
-newpoodat <-
-  poodat %>%
-  left_join(fixedpoodat %>% select(mass_feature, FinalBMIS), by = c("mass_feature")) %>%
-  filter(MIS == FinalBMIS) %>%
-  mutate(FinalRSD = RSD_ofPoo)
-Try <- newpoodat %>% filter(FinalBMIS != "Inj_vol")
-QuickReport <- paste0(
-  round(length(Try$mass_feature) / length(newpoodat$mass_feature), digits = 3)*100,
-  " % of MFs  picked a BMIS. RSD improvement cutoff = ",
-  cut_off1,
-  ".  RSD minimum cutoff = ",
-  cut_off2
-)
+    # Change the BMIS to "Inj_vol" if the BMIS is not an acceptable -----
+    # Adds a column that has the BMIS, not just Poo.picked.IS
+    # Changes the finalBMIS to inject_volume if its no good
+    fixedpoodat <- poodat %>%
+      filter(MIS == poo_picked_is) %>%
+      mutate(FinalBMIS = ifelse((accept_MIS == "FALSE"), "Inj_vol", poo_picked_is))
+    newpoodat <-
+      poodat %>%
+      left_join(fixedpoodat %>% select(mass_feature, FinalBMIS), by = c("mass_feature")) %>%
+      filter(MIS == FinalBMIS) %>%
+      mutate(FinalRSD = RSD_ofPoo)
+    Try <- newpoodat %>% filter(FinalBMIS != "Inj_vol")
+    QuickReport <- paste0(
+      round(length(Try$mass_feature) / length(newpoodat$mass_feature), digits = 3) * 100,
+      " % of MFs  picked a BMIS. RSD improvement cutoff = ",
+      cut_off1,
+      ".  RSD minimum cutoff = ",
+      cut_off2
+    )
 
-# Evaluate the results of your BMIS cutoff-----
-IS_toISdat <- dat_norm %>%
-  filter(mass_feature %in% is_dat$mass_feature) %>%
-  select(mass_feature, MIS, adjusted_area, type) %>%
-  filter(type == "Smp") %>%
-  group_by(mass_feature, MIS) %>%
-  summarise(RSD_ofSmp = sd(adjusted_area) / mean(adjusted_area)) %>%
-  left_join(
-    poodat %>% select(mass_feature, MIS, RSD_ofPoo, accept_MIS),
-    by = c("mass_feature", "MIS")
-  )
+    # Evaluate the results of your BMIS cutoff-----
+    IS_toISdat <- dat_norm %>%
+      filter(mass_feature %in% is_dat$mass_feature) %>%
+      select(mass_feature, MIS, adjusted_area, type) %>%
+      filter(type == "Smp") %>%
+      group_by(mass_feature, MIS) %>%
+      summarise(RSD_ofSmp = sd(adjusted_area) / mean(adjusted_area)) %>%
+      left_join(
+        poodat %>% select(mass_feature, MIS, RSD_ofPoo, accept_MIS),
+        by = c("mass_feature", "MIS")
+      )
 
-injectONlY_toPlot <- IS_toISdat %>%
-  filter(MIS == "Inj_vol")
+    injectONlY_toPlot <- IS_toISdat %>%
+      filter(MIS == "Inj_vol")
 
 
-ISTest_plot <- ggplot() +
-  geom_point(
-    dat = IS_toISdat,
-    shape = 21,
-    color = "black",
-    size = 2,
-    aes(x = RSD_ofPoo, y = RSD_ofSmp, fill = accept_MIS)
-  ) +
-  scale_fill_manual(values = c("white", "dark gray")) +
-  geom_point(
-    dat = injectONlY_toPlot,
-    aes(x = RSD_ofPoo, y = RSD_ofSmp),
-    size = 3
-  ) +
-  facet_wrap(~mass_feature) +
-  theme_bw()
+    ISTest_plot <- ggplot() +
+      geom_point(
+        dat = IS_toISdat,
+        shape = 21,
+        color = "black",
+        size = 2,
+        aes(x = RSD_ofPoo, y = RSD_ofSmp, fill = accept_MIS)
+      ) +
+      scale_fill_manual(values = c("white", "dark gray")) +
+      geom_point(
+        dat = injectONlY_toPlot,
+        aes(x = RSD_ofPoo, y = RSD_ofSmp),
+        size = 3
+      ) +
+      facet_wrap(~mass_feature) +
+      theme_bw()
 
-# Get all the data back - and keep only the MF-MIS match set for the BMIS----
-# Add a column to the longdat that has important information from the FullDat_fixed,
-# then only return data that is normalized via B-MIS normalization
-BMIS_normalizedData <-
-  newpoodat %>%
-  select(mass_feature, FinalBMIS, Orig_RSD, FinalRSD) %>%
-  left_join(dat_norm %>% rename(FinalBMIS = MIS), by = c("mass_feature", "FinalBMIS")) %>%
-  unique() %>%
-  filter(!mass_feature %in% is_dat$mass_feature)
+    # Get all the data back - and keep only the MF-MIS match set for the BMIS----
+    # Add a column to the longdat that has important information from the FullDat_fixed,
+    # then only return data that is normalized via B-MIS normalization
+    BMIS_normalizedData <-
+      newpoodat %>%
+      select(mass_feature, FinalBMIS, Orig_RSD, FinalRSD) %>%
+      left_join(dat_norm %>% rename(FinalBMIS = MIS), by = c("mass_feature", "FinalBMIS")) %>%
+      unique() %>%
+      filter(!mass_feature %in% is_dat$mass_feature)
 
-BMISlist <-
-  list(
-    IS_inspectPlot,
-    QuickReport,
-    ISTest_plot,
-    BMIS_normalizedData
-  )
+    BMISlist <-
+      list(
+        IS_inspectPlot,
+        QuickReport,
+        ISTest_plot,
+        BMIS_normalizedData
+      )
 
-return(BMISlist)
+    return(BMISlist)
   }
