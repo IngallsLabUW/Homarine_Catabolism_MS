@@ -23,11 +23,16 @@ sample_key <- read_csv(sample_key_filename, show_col_types = FALSE)
 
 # Combine all data ----
 dat_combined <- dat_part %>%
-  select(mass_feature, replicate_name, adjusted_area) %>%
+  select(mass_feature, replicate_name, adjusted_area, fraction) %>%
   mutate(sample_fraction = "Particulate") %>%
   bind_rows(dat_diss %>%
-    select(mass_feature, replicate_name, adjusted_area) %>%
-    mutate(sample_fraction = "Dissolved"))
+    select(mass_feature, replicate_name, adjusted_area, fraction) %>%
+    mutate(sample_fraction = "Dissolved")) %>%
+    mutate(z = case_when(
+        str_detect(fraction, "Neg") ~ -1,
+        str_detect(fraction, "Pos") ~ 1
+    )) %>%
+    select(-fraction)
 
 # Add meta data ---
 dat_combined2 <- dat_combined %>%
@@ -42,7 +47,17 @@ dat_combined2 <- dat_combined %>%
   ) %>%
   filter(!is.na(treatment))
 
-dat_combined_wide <- dat_combined2 %>%
+# Add mf data to long data
+mf_data <- read_csv(
+    here(qc_data_loc, "mf_info.csv"),
+    show_col_types = FALSE
+)
+dat_combined3 <- dat_combined2 %>%
+    left_join(mf_data) %>%
+    filter(mass_feature != "GMP, 15N5")
+
+# pivot wider
+dat_combined_wide <- dat_combined3 %>%
   pivot_wider(
     id_cols = c("replicate_name", "sample_set", "treatment", "sample_fraction"),
     names_from = mass_feature,
@@ -50,5 +65,5 @@ dat_combined_wide <- dat_combined2 %>%
   )
 
 # Write out long and wide to share
-write_csv(dat_combined2, here(qc_data_loc, "combined_tidy_dat_long.csv"))
+write_csv(dat_combined3, here(qc_data_loc, "combined_tidy_dat_long.csv"))
 write_csv(dat_combined_wide, here(qc_data_loc, "combined_tidy_dat_wide.csv"))

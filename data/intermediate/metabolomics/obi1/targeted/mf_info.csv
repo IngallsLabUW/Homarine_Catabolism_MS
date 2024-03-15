@@ -1,0 +1,397 @@
+mass_feature,retention_time,mz,z,sample_fraction
+(3-Carboxypropyl)trimethylammonium,10.028478260869566,146.118104,1,Dissolved
+(3-Carboxypropyl)trimethylammonium,9.861,146.118104,1,Particulate
+"(R)-2,3-Dihydroxypropane-1-sulfonate",7.915151515151515,155.001422,-1,Dissolved
+"(R)-2,3-Dihydroxypropane-1-sulfonate",9.47125,155.001422,-1,Particulate
+1-Propanesulfonate,2.5647727272727274,123.011592,-1,Dissolved
+1-Propanesulfonate,2.452,123.011592,-1,Particulate
+"2,3-Pyridinedicarboxylic acid",11.729333333333333,168.029684,1,Dissolved
+"2,3-Pyridinedicarboxylic acid",11.922857142857143,168.029684,1,Particulate
+"2,5-Dihydroxybenzoic acid",3.520909090909091,153.018785,-1,Dissolved
+"2,5-Dihydroxybenzoic acid",3.6614285714285715,153.018785,-1,Particulate
+2-Heptyl-3-hydroxy-quinolone,1.7252173913043478,260.165054,1,Dissolved
+2-Heptyl-3-hydroxy-quinolone,2.367272727272727,260.165054,1,Particulate
+2-Hydroxy-4-(methylthio)butyric acid,2.3304347826086955,149.027242,-1,Dissolved
+2-Hydroxy-4-(methylthio)butyric acid,2.271923076923077,149.027242,-1,Particulate
+2-Ketoglutaric acid,12.073260869565217,145.0137,-1,Dissolved
+2-Ketoglutaric acid,12.235641025641026,145.0137,-1,Particulate
+2-O-alpha-D-Glucosylglycerol,9.840217391304348,255.107995,1,Dissolved
+2-O-alpha-D-Glucosylglycerol,9.984285714285715,255.107995,1,Particulate
+2-keto-4-methylthiobutyric acid,2.2866666666666666,147.011592,-1,Dissolved
+2-keto-4-methylthiobutyric acid,2.121,147.011592,-1,Particulate
+"3',5'-Cyclic AMP",6.3125,328.044698,-1,Dissolved
+"3',5'-Cyclic AMP",5.281818181818182,328.044698,-1,Particulate
+"3',5'-Cyclic GMP",9.58,344.039613,-1,Dissolved
+"3',5'-Cyclic GMP",10.162857142857142,344.039613,-1,Particulate
+"3',5'-Cyclic diGMP",14.004999999999999,689.087051,-1,Dissolved
+"3',5'-Cyclic diGMP",14.063333333333333,689.087051,-1,Particulate
+3-Phosphoglycerate,13.815,184.985118,-1,Dissolved
+3-Phosphoglycerate,13.781052631578948,184.985118,-1,Particulate
+"3-Sulfolactate, 13C3",12.68,171.9913,-1,Dissolved
+"3-Sulfolactate, 13C3",13.420540540540541,171.9913,-1,Particulate
+3-Sulfopyruvic acid,14.23390243902439,166.965037,-1,Dissolved
+3-Sulfopyruvic acid,14.256666666666666,166.965037,-1,Particulate
+4-Aminobutyric acid,11.253,104.071154,1,Dissolved
+4-Aminobutyric acid,11.445121951219512,104.071154,1,Particulate
+5-Hydroxyectoine,11.0978,159.076968,1,Dissolved
+5-Hydroxyectoine,11.052926829268293,159.076968,1,Particulate
+5-Methylcytosine,5.349347826086957,126.066737,1,Dissolved
+5-Methylcytosine,5.3983783783783785,126.066737,1,Particulate
+5-Oxoproline,6.829565217391305,128.034768,-1,Dissolved
+5-Oxoproline,6.756153846153846,128.034768,-1,Particulate
+"AMP, 15N5",10.902173913043478,NA,-1,Dissolved
+"AMP, 15N5",10.994285714285715,NA,-1,Particulate
+Acetylcholine,13.1525,146.118104,1,Dissolved
+Acetylcholine,13.271081081081082,146.118104,1,Particulate
+Acetylglycine,7.888913043478261,116.034769,-1,Dissolved
+Acetylglycine,7.58264705882353,116.034769,-1,Particulate
+Adenine,4.7874,136.06232,1,Dissolved
+Adenine,4.814390243902439,136.06232,1,Particulate
+Adenosine,4.470512820512821,268.10458,1,Dissolved
+Adenosine,4.619230769230769,268.10458,1,Particulate
+Adenosine diphosphate,12.4925,426.021596,-1,Dissolved
+Adenosine diphosphate,12.52939393939394,426.021596,-1,Particulate
+Adenosine monophosphate,10.775,346.055262,-1,Dissolved
+Adenosine monophosphate,10.98764705882353,346.055262,-1,Particulate
+Adenosine triphosphate,13.5625,505.987929,-1,Dissolved
+Adenosine triphosphate,13.638571428571428,505.987929,-1,Particulate
+Allantoin,9.4825,157.036165,-1,Dissolved
+Allantoin,9.860833333333332,157.036165,-1,Particulate
+Allopurinol,4.32,135.030686,-1,Dissolved
+Allopurinol,4.3664,135.030686,-1,Particulate
+Amino Propanesulfonic Acid,11.557500000000001,NA,-1,Dissolved
+Amino Propanesulfonic Acid,11.398095238095237,NA,-1,Particulate
+Anserine,9.211428571428572,241.130066,1,Dissolved
+Anserine,9.298333333333334,241.130066,1,Particulate
+Arsenobetaine,7.176363636363636,179.005326,1,Dissolved
+Arsenobetaine,7.275161290322581,179.005326,1,Particulate
+"Arsenobetaine, 13C2",7.256666666666667,181.0114,1,Dissolved
+"Arsenobetaine, 13C2",7.315405405405405,181.0114,1,Particulate
+Betonicine,8.532173913043477,160.097369,1,Dissolved
+Betonicine,8.508648648648649,160.097369,1,Particulate
+Butyrylcarnitine,4.3919565217391305,232.154884,1,Dissolved
+Butyrylcarnitine,4.3325000000000005,232.154884,1,Particulate
+Butyrylglycine,2.727878787878788,144.066069,-1,Dissolved
+Butyrylglycine,2.805,144.066069,-1,Particulate
+Carnitine,9.7044,162.113019,1,Dissolved
+Carnitine,9.923414634146342,162.113019,1,Particulate
+Carnosine,10.4346875,227.114416,1,Dissolved
+Carnosine,10.961818181818181,227.114416,1,Particulate
+Chitobiose,9.734,425.177138,1,Dissolved
+Chitobiose,9.833333333333334,425.177138,1,Particulate
+Choline,15.2444,104.107539,1,Dissolved
+Choline,16.017560975609754,104.107539,1,Particulate
+Choline sulfate,7.186829268292683,184.064354,1,Dissolved
+Choline sulfate,6.932307692307693,184.064354,1,Particulate
+Citric acid,15.212307692307693,191.01918,-1,Dissolved
+Citric acid,14.36439024390244,191.01918,-1,Particulate
+Citrulline,11.8564,176.103517,1,Dissolved
+Citrulline,11.736341463414634,176.103517,1,Particulate
+Creatine,10.964583333333334,132.077302,1,Dissolved
+Creatine,11.293243243243243,132.077302,1,Particulate
+Creatinine,5.068478260869565,114.066737,1,Dissolved
+Creatinine,5.7254054054054055,114.066737,1,Particulate
+"Cys-Gly, oxidized",10.877142857142857,355.074605,1,Dissolved
+"Cys-Gly, oxidized",11.0434375,355.074605,1,Particulate
+Cytidine,8.398,244.093347,1,Dissolved
+Cytidine,8.232222222222223,244.093347,1,Particulate
+Cytosine,7.052173913043478,112.051087,1,Dissolved
+Cytosine,7.006410256410256,112.051087,1,Particulate
+"Cytosine, 13C2, 15N3",7.032391304347826,117.0489,1,Dissolved
+"Cytosine, 13C2, 15N3",7.068648648648648,117.0489,1,Particulate
+D-Fructose 6-phosphate,12.746,259.021897,-1,Dissolved
+D-Fructose 6-phosphate,12.804473684210526,259.021897,-1,Particulate
+D-Gluconic acid,10.256304347826086,195.05048,-1,Dissolved
+D-Gluconic acid,10.554358974358975,195.05048,-1,Particulate
+D-Glucose 1-phosphate,12.705555555555556,259.021897,-1,Dissolved
+D-Glucose 1-phosphate,12.794210526315789,259.021897,-1,Particulate
+D-Glucose 6-phosphate,13.4575,259.021897,-1,Dissolved
+D-Glucose 6-phosphate,13.406842105263157,259.021897,-1,Particulate
+D-Ribose 5-phosphate,11.15913043478261,229.011333,-1,Dissolved
+D-Ribose 5-phosphate,12.554444444444444,229.011333,-1,Particulate
+"DL-Alanine, 2H3",10.712391304347825,NA,1,Dissolved
+"DL-Alanine, 2H3",10.676216216216217,NA,1,Particulate
+"DL-Histidine, 15N",10.877916666666668,NA,1,Dissolved
+"DL-Histidine, 15N",10.693333333333333,NA,1,Particulate
+"DL-Proline, 2H7",9.055,NA,1,Dissolved
+"DL-Proline, 2H7",9.083783783783783,NA,1,Particulate
+"DL-Valine, 2H8",8.312391304347827,NA,1,Dissolved
+"DL-Valine, 2H8",8.402432432432432,NA,1,Particulate
+Deoxyadenosine,3.2161290322580647,252.109665,1,Dissolved
+Deoxyadenosine,3.644615384615385,252.109665,1,Particulate
+Dihydroxyacetone phosphate,12.718125,168.990203,-1,Dissolved
+Dihydroxyacetone phosphate,12.240540540540541,168.990203,-1,Particulate
+Dimethylglycine,8.414,104.071154,1,Dissolved
+Dimethylglycine,8.295365853658536,104.071154,1,Particulate
+Dimethylsulfonioacetate,8.514186046511627,121.032327,1,Dissolved
+Dimethylsulfonioacetate,8.517142857142858,121.032327,1,Particulate
+Dimethylsulfoniopropionate,9.708484848484849,135.047977,1,Dissolved
+Dimethylsulfoniopropionate,9.780625,135.047977,1,Particulate
+Ectoine,9.472,143.082053,1,Dissolved
+Ectoine,9.476585365853659,143.082053,1,Particulate
+Ergothioneine,11.257575757575758,230.096324,1,Dissolved
+Ergothioneine,10.9725,230.096324,1,Particulate
+Ethanesulfonic acid,3.703913043478261,108.995942,-1,Dissolved
+Ethanesulfonic acid,3.9673333333333334,108.995942,-1,Particulate
+Ethanolamine,14.601521739130435,62.060589,1,Dissolved
+Ethanolamine,14.26,62.060589,1,Particulate
+Ethyl dihydroxybenzoate,2.1193478260869565,181.050085,-1,Dissolved
+Ethyl dihydroxybenzoate,2.0055882352941174,181.050085,-1,Particulate
+Flavin adenine dinucleotide,8.458,784.149317,-1,Dissolved
+Flavin adenine dinucleotide,8.986,784.149317,-1,Particulate
+Fumaric acid,12.6432,115.003135,-1,Dissolved
+Fumaric acid,12.670243902439024,115.003135,-1,Particulate
+"GMP, 15N5",14.301666666666666,NA,-1,Dissolved
+"GMP, 15N5",13.358235294117646,NA,-1,Particulate
+Glucosamine,10.157391304347826,180.087199,1,Dissolved
+Glucosamine,10.47974358974359,180.087199,1,Particulate
+Glutamylphenylalanine,9.205277777777777,295.129398,1,Dissolved
+Glutamylphenylalanine,8.658846153846154,295.129398,1,Particulate
+Glutathione,11.1225,308.091634,1,Dissolved
+Glutathione,11.472222222222221,308.091634,1,Particulate
+Glutathione disulfide,14.035,613.159793,1,Dissolved
+Glutathione disulfide,13.994736842105263,613.159793,1,Particulate
+Glycerophosphocholine,11.024222222222223,258.110652,1,Dissolved
+Glycerophosphocholine,10.929354838709678,258.110652,1,Particulate
+Glycerophosphoric acid,12.4425,171.005853,-1,Dissolved
+Glycerophosphoric acid,11.953888888888889,171.005853,-1,Particulate
+Glycine,11.511521739130435,76.039854,1,Dissolved
+Glycine,11.424615384615384,76.039854,1,Particulate
+Glycine betaine,7.42875,118.086804,1,Dissolved
+Glycine betaine,7.518974358974359,118.086804,1,Particulate
+"Glycine betaine, 13C5, 15N",7.428913043478261,124.1006,1,Dissolved
+"Glycine betaine, 13C5, 15N",7.473243243243243,124.1006,1,Particulate
+Gonyol,10.804782608695652,179.074191,1,Dissolved
+Gonyol,10.694411764705881,179.074191,1,Particulate
+Guanine,8.369375,152.057235,1,Dissolved
+Guanine,8.42609756097561,152.057235,1,Particulate
+"Guanine, 13C, 15N2",8.371304347826086,155.0547,1,Dissolved
+"Guanine, 13C, 15N2",8.436216216216216,155.0547,1,Particulate
+Guanosine,8.994285714285715,284.099495,1,Dissolved
+Guanosine,9.14638888888889,284.099495,1,Particulate
+Guanosine monophosphate,13.627142857142857,362.050178,-1,Dissolved
+Guanosine monophosphate,13.346,362.050178,-1,Particulate
+Guanosine triphosphate,15.82,521.982844,-1,Dissolved
+Guanosine triphosphate,15.96125,521.982844,-1,Particulate
+Homarine,5.60375,138.055503,1,Dissolved
+Homarine,5.65051282051282,138.055503,1,Particulate
+"Homarine, 2H3",5.604347826086957,141.0743,1,Dissolved
+"Homarine, 2H3",5.662162162162162,141.0743,1,Particulate
+Homocysteine thiolactone,2.3440000000000003,118.032661,1,Dissolved
+Homocysteine thiolactone,2.6816666666666666,118.032661,1,Particulate
+Hordenine,3.335,166.123189,1,Dissolved
+Hordenine,3.401891891891892,166.123189,1,Particulate
+Hydroxyisoleucine,8.340208333333333,148.097369,1,Dissolved
+Hydroxyisoleucine,8.403783783783783,148.097369,1,Particulate
+Hydroxyproline,10.6328,132.066069,1,Dissolved
+Hydroxyproline,10.611515151515151,132.066069,1,Particulate
+Hypotaurine,11.105714285714285,110.027576,1,Dissolved
+Hypotaurine,10.624,110.027576,1,Particulate
+Hypoxanthine,6.588863636363636,137.046336,1,Dissolved
+Hypoxanthine,6.345121951219512,137.046336,1,Particulate
+Inosine,7.5344444444444445,267.072946,-1,Dissolved
+Inosine,7.668888888888889,267.072946,-1,Particulate
+Isethionic acid,6.749347826086956,124.990857,-1,Dissolved
+Isethionic acid,6.63974358974359,124.990857,-1,Particulate
+"Isethionic acid, 13C2",7.41,126.9981,-1,Dissolved
+"Isethionic acid, 13C2",6.664324324324324,126.9981,-1,Particulate
+Isocitric acid,15.419090909090908,191.01918,-1,Dissolved
+Isocitric acid,14.492926829268292,191.01918,-1,Particulate
+L-Alanine,10.679,90.055504,1,Dissolved
+L-Alanine,10.64,90.055504,1,Particulate
+L-Arginine,19.674130434782608,175.119501,1,Dissolved
+L-Arginine,18.96891891891892,175.119501,1,Particulate
+L-Arginosuccinic acid,13.205,291.13046,1,Dissolved
+L-Arginosuccinic acid,13.131388888888889,291.13046,1,Particulate
+L-Asparagine,10.760217391304348,133.061318,1,Dissolved
+L-Asparagine,10.649117647058823,133.061318,1,Particulate
+L-Aspartic acid,11.626739130434782,134.045334,1,Dissolved
+L-Aspartic acid,11.692564102564102,134.045334,1,Particulate
+L-Cystathionine,12.795714285714286,223.075255,1,Dissolved
+L-Cystathionine,12.431612903225806,223.075255,1,Particulate
+L-Cysteic acid,12.004,167.996671,-1,Dissolved
+L-Cysteic acid,12.147941176470589,167.996671,-1,Particulate
+"L-Cysteic acid, 2H3",12.052391304347825,171.0161,-1,Dissolved
+"L-Cysteic acid, 2H3",12.147297297297298,171.0161,-1,Particulate
+L-Cysteinesulfinic acid,10.818333333333333,152.001756,-1,Dissolved
+L-Cysteinesulfinic acid,10.998750000000001,152.001756,-1,Particulate
+L-Cystine,12.619565217391305,241.031677,1,Dissolved
+L-Cystine,11.817567567567568,241.031677,1,Particulate
+L-Glutamic acid,11.320625,148.060984,1,Dissolved
+L-Glutamic acid,11.39051282051282,148.060984,1,Particulate
+L-Glutamine,10.828958333333333,147.076968,1,Dissolved
+L-Glutamine,10.754102564102563,147.076968,1,Particulate
+L-Histidine,10.858,156.077302,1,Dissolved
+L-Histidine,10.715853658536586,156.077302,1,Particulate
+L-Homocystine,12.028214285714286,269.062977,1,Dissolved
+L-Homocystine,11.701538461538462,269.062977,1,Particulate
+L-Homoserine,10.94875,120.066069,1,Dissolved
+L-Homoserine,10.786923076923078,120.066069,1,Particulate
+L-Hydroxylysine,16.5225,163.108268,1,Dissolved
+L-Hydroxylysine,16.655714285714286,163.108268,1,Particulate
+L-Isoleucine,7.0147916666666665,132.102454,1,Dissolved
+L-Isoleucine,6.644871794871795,132.102454,1,Particulate
+"L-Isoleucine, 15N",7.185652173913043,133.0989,1,Dissolved
+"L-Isoleucine, 15N",7.125135135135135,133.0989,1,Particulate
+L-Leucine,6.998541666666667,132.102454,1,Dissolved
+L-Leucine,6.658974358974359,132.102454,1,Particulate
+L-Lysine,17.837272727272726,147.113353,1,Dissolved
+L-Lysine,18.184146341463414,147.113353,1,Particulate
+L-Methionine,6.8575,150.058876,1,Dissolved
+L-Methionine,6.917368421052632,150.058876,1,Particulate
+L-Methionine S-oxide,8.959782608695653,166.053791,1,Dissolved
+L-Methionine S-oxide,9.1659375,166.053791,1,Particulate
+"L-Methionine, 2H3",7.8648,153.0771,1,Dissolved
+"L-Methionine, 2H3",6.96,153.0771,1,Particulate
+L-Ornithine,16.746,133.097703,1,Dissolved
+L-Ornithine,16.070243902439024,133.097703,1,Particulate
+L-Proline,9.0236,116.071154,1,Dissolved
+L-Proline,9.041538461538462,116.071154,1,Particulate
+L-Serine,11.251875,106.050419,1,Dissolved
+L-Serine,11.126153846153846,106.050419,1,Particulate
+L-Threonine,9.8925,120.066069,1,Dissolved
+L-Threonine,9.921282051282052,120.066069,1,Particulate
+L-Tyrosine,8.728222222222222,182.081719,1,Dissolved
+L-Tyrosine,8.965384615384615,182.081719,1,Particulate
+L-Valine,8.234375,118.086804,1,Dissolved
+L-Valine,8.35051282051282,118.086804,1,Particulate
+Lipoic acid,2.0909999999999997,205.035699,-1,Dissolved
+Lipoic acid,1.8875,205.035699,-1,Particulate
+Malic acid,12.6714,133.0137,-1,Dissolved
+Malic acid,12.687560975609756,133.0137,-1,Particulate
+Melamine,6.939375,127.073219,1,Dissolved
+Melamine,6.848780487804878,127.073219,1,Particulate
+Methylphosphonic acid,10.785384615384615,94.989808,-1,Dissolved
+Methylphosphonic acid,10.5175,94.989808,-1,Particulate
+Muramic acid,10.784705882352942,252.108329,1,Dissolved
+Muramic acid,10.478333333333333,252.108329,1,Particulate
+N-Acetyl-D-glucosamine,8.52,222.097764,1,Dissolved
+N-Acetyl-D-glucosamine,8.307567567567567,222.097764,1,Particulate
+N-Acetyl-L-glutamic acid,11.665625,188.055899,-1,Dissolved
+N-Acetyl-L-glutamic acid,11.25,188.055899,-1,Particulate
+N-Acetylmuramic acid,3.647608695652174,294.118894,1,Dissolved
+N-Acetylmuramic acid,7.090588235294118,294.118894,1,Particulate
+N-Acetyltaurine,3.610909090909091,166.017406,-1,Dissolved
+N-Acetyltaurine,4.4075,166.017406,-1,Particulate
+N-Methyltaurine,7.2555555555555555,140.038141,1,Dissolved
+N-Methyltaurine,6.717142857142857,140.038141,1,Particulate
+"N6,N6,N6-Trimethyl-L-lysine",16.68111111111111,189.160303,1,Dissolved
+"N6,N6,N6-Trimethyl-L-lysine",16.362105263157893,189.160303,1,Particulate
+N6-Acetyl-L-lysine,9.6638,189.123918,1,Dissolved
+N6-Acetyl-L-lysine,9.905,189.123918,1,Particulate
+N6-Methyladenine,3.5217391304347827,150.07797,1,Dissolved
+N6-Methyladenine,3.42325,150.07797,1,Particulate
+NAD,10.982857142857142,662.101304,-1,Dissolved
+NAD,11.105555555555556,662.101304,-1,Particulate
+NADH,11.03,664.116954,-1,Dissolved
+NADH,10.895,664.116954,-1,Particulate
+NADP,13.344999999999999,742.067637,-1,Dissolved
+NADP,13.618275862068966,742.067637,-1,Particulate
+NADPH,13.64125,744.083287,-1,Dissolved
+NADPH,14.064761904761905,744.083287,-1,Particulate
+O-Acetyl-L-serine,5.9714285714285715,148.060984,1,Dissolved
+O-Acetyl-L-serine,5.583333333333333,148.060984,1,Particulate
+O-Acetylcarnitine,7.2825,204.123584,1,Dissolved
+O-Acetylcarnitine,7.3149999999999995,204.123584,1,Particulate
+O-Methylmalonyl-L-carnitine,9.628780487804878,262.129063,1,Dissolved
+O-Methylmalonyl-L-carnitine,9.585238095238095,262.129063,1,Particulate
+O-Propionylcarnitine,5.694523809523809,218.139234,1,Dissolved
+O-Propionylcarnitine,5.7282758620689656,218.139234,1,Particulate
+O-Succinylhomoserine,9.90090909090909,220.082112,1,Dissolved
+O-Succinylhomoserine,10.204666666666666,220.082112,1,Particulate
+Ophthalmic acid,10.52375,290.135212,1,Dissolved
+Ophthalmic acid,10.628333333333334,290.135212,1,Particulate
+Orotic acid,6.3809756097560975,155.009283,-1,Dissolved
+Orotic acid,6.32,155.009283,-1,Particulate
+Oxalic acid,13.9068,88.987485,-1,Dissolved
+Oxalic acid,13.846829268292684,88.987485,-1,Particulate
+Phosphocholine,12.097058823529412,184.073869,1,Dissolved
+Phosphocholine,12.142941176470588,184.073869,1,Particulate
+Phosphoenolpyruvic acid,13.812,166.974553,-1,Dissolved
+Phosphoenolpyruvic acid,14.251470588235295,166.974553,-1,Particulate
+Pipecolic acid,8.79191489361702,130.086804,1,Dissolved
+Pipecolic acid,9.00972972972973,130.086804,1,Particulate
+Proline betaine,6.715416666666667,144.102454,1,Dissolved
+Proline betaine,6.763170731707317,144.102454,1,Particulate
+Propionylglycine,5.502631578947368,130.050419,-1,Dissolved
+Propionylglycine,5.007352941176471,130.050419,-1,Particulate
+Riboflavin-5-phosphate,9.120967741935484,457.112444,1,Dissolved
+Riboflavin-5-phosphate,9.05888888888889,457.112444,1,Particulate
+Salicylic acid,1.9228,137.02387,-1,Dissolved
+Salicylic acid,1.9739024390243902,137.02387,-1,Particulate
+Sarcosine,10.1302,90.055504,1,Dissolved
+Sarcosine,10.054878048780488,90.055504,1,Particulate
+Shikimic acid,10.7928,173.045,-1,Dissolved
+Shikimic acid,10.829268292682926,173.045,-1,Particulate
+Sodium 2-mercaptoethanesulfonate,2.6021739130434782,140.968013,-1,Dissolved
+Sodium 2-mercaptoethanesulfonate,2.8483333333333336,140.968013,-1,Particulate
+Succinic acid,12.0326,117.018785,-1,Dissolved
+Succinic acid,12.095853658536585,117.018785,-1,Particulate
+"Succinic acid, 2H4",12.02891304347826,121.0444,-1,Dissolved
+"Succinic acid, 2H4",12.091891891891892,121.0444,-1,Particulate
+Succinic semialdehyde,6.412045454545455,101.02387,-1,Dissolved
+Succinic semialdehyde,4.028648648648649,101.02387,-1,Particulate
+Succinylglycine,12.09,176.055899,1,Dissolved
+Succinylglycine,11.89,176.055899,1,Particulate
+Sucrose,11.6252,341.10839,-1,Dissolved
+Sucrose,11.723658536585367,341.10839,-1,Particulate
+"Sucrose, 13C",12.41891304347826,NA,-1,Dissolved
+"Sucrose, 13C",11.545135135135135,NA,-1,Particulate
+Sulfanilic acid,7.148148148148148,172.006841,-1,Dissolved
+Sulfanilic acid,7.0588461538461535,172.006841,-1,Particulate
+Sulfoacetic acid,13.9242,138.970122,-1,Dissolved
+Sulfoacetic acid,13.811219512195121,138.970122,-1,Particulate
+"Sulfoacetic acid, 13C2",13.663076923076924,140.9774,-1,Dissolved
+"Sulfoacetic acid, 13C2",13.833243243243244,140.9774,-1,Particulate
+Sulfolactic Acid,13.401224489795919,NA,-1,Dissolved
+Sulfolactic Acid,13.48235294117647,NA,-1,Particulate
+Taurine,10.637692307692307,124.006841,-1,Dissolved
+Taurine,9.835652173913044,124.006841,-1,Particulate
+"Taurine, 2H4",9.83125,128.0325,-1,Dissolved
+"Taurine, 2H4",9.99108108108108,128.0325,-1,Particulate
+Taurocyamine,11.868333333333334,168.044287,1,Dissolved
+Taurocyamine,12.13625,168.044287,1,Particulate
+Thiamine diphosphate,13.1125,425.044974,1,Dissolved
+Thiamine diphosphate,12.327352941176471,425.044974,1,Particulate
+Thiamine monophosphate,10.888,345.078641,1,Dissolved
+Thiamine monophosphate,11.351666666666667,345.078641,1,Particulate
+Threonic acid,8.570869565217391,135.02935,-1,Dissolved
+Threonic acid,9.2725,135.02935,-1,Particulate
+Thymidine,3.1955555555555555,241.082448,-1,Dissolved
+Thymidine,2.8680555555555554,241.082448,-1,Particulate
+Thymine,2.9872727272727273,125.035103,-1,Dissolved
+Thymine,2.852682926829268,125.035103,-1,Particulate
+"Thymine, 2H4",3.0082608695652175,129.0602,-1,Dissolved
+"Thymine, 2H4",3.014864864864865,129.0602,-1,Particulate
+Trehalose,11.650434782608695,341.10839,-1,Dissolved
+Trehalose,12.414864864864866,341.10839,-1,Particulate
+"Trehalose, 13C",12.41891304347826,NA,-1,Dissolved
+"Trehalose, 13C",12.373513513513513,NA,-1,Particulate
+Trigonelline,8.0972,138.055503,1,Dissolved
+Trigonelline,8.238157894736842,138.055503,1,Particulate
+Trimethylamine,6.6072,60.081324,1,Dissolved
+Trimethylamine,5.9171875,60.081324,1,Particulate
+Trimethylamine N-oxide,6.883414634146342,76.076239,1,Dissolved
+Trimethylamine N-oxide,6.94051282051282,76.076239,1,Particulate
+Turicine,8.603913043478261,160.097369,1,Dissolved
+Turicine,8.510487804878048,160.097369,1,Particulate
+UDP-N-acetylglucosamine,12.33,606.073753,-1,Dissolved
+UDP-N-acetylglucosamine,12.20888888888889,606.073753,-1,Particulate
+UDP-glucose,13.138333333333334,565.047204,-1,Dissolved
+UDP-glucose,13.110833333333334,565.047204,-1,Particulate
+Uracil,3.8484444444444446,111.019453,-1,Dissolved
+Uracil,3.8384615384615386,111.019453,-1,Particulate
+Urea,6.001,61.040188,1,Dissolved
+Urea,5.97390243902439,61.040188,1,Particulate
+Uridine,5.661428571428571,243.061713,-1,Dissolved
+Uridine,5.886666666666667,243.061713,-1,Particulate
+Urocanic acid,7.6552173913043475,137.035103,-1,Dissolved
+Urocanic acid,8.1,137.035103,-1,Particulate
+beta-Alanine,11.449583333333333,90.055504,1,Dissolved
+beta-Alanine,11.39,90.055504,1,Particulate
+beta-Alaninebetaine,9.476739130434783,132.102454,1,Dissolved
+beta-Alaninebetaine,9.597567567567568,132.102454,1,Particulate
+beta-Glutamic acid,10.910625,148.060984,1,Dissolved
+beta-Glutamic acid,11.797317073170731,148.060984,1,Particulate
+cis-Aconitic acid,14.403548387096775,173.008615,-1,Dissolved
+cis-Aconitic acid,14.534615384615385,173.008615,-1,Particulate

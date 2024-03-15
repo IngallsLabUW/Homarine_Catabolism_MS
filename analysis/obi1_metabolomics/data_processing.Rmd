@@ -62,5 +62,9 @@ source(here("analysis", "obi1_metabolomics", "0301_Combine_Tidy_TU.R"))
 remove(list = ls())
 ```
 
-
-
+# PLOTTING
+## Fold Change particualte plots
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0401_Plot_FC_particulate.R"))
+remove(list = ls())
+```

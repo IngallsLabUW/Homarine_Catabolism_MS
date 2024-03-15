@@ -10,7 +10,7 @@ source(here("analysis", "obi1_metabolomics", "functions", "untargeted_dataproces
 
 # SET FILE LOCS ----
 meta_data_loc <- here("data", "raw", "metabolomics", "obi1")
-adduct_list_filename <- here("data", "raw", "metabolomics", "adduct_list.csv")
+adduct_list_filename <- here("data", "raw", "metabolomics", "adduct_list_expanded.csv")
 output_loc <- here("data", "intermediate", "metabolomics", "obi1", "untargeted")
 
 # HILIC, particulate ------
@@ -47,7 +47,7 @@ write_csv(dat2, here(output_loc, "HILICparticulate_wide_adducts.csv"))
 cat(
   "HILIC particulate:",
   round(sum(!is.na(dat2$add_annotation)) / length(dat2$add_annotation), digits = 2) * 100,
-  "% of features marked as adduct or associated with an adduct.\n"
+  "% of features associated with adduct group.\n"
 )
 
 # RP, particulate -----
@@ -76,10 +76,10 @@ dat3 <- dereplicate_MFs(
 ## Save output ----
 write_csv(dat3, here(output_loc, "RPparticulate_wide_adducts.csv"))
 cat(
-  "PR particulate:",
+  "RP particulate:",
   round(sum(!is.na(dat3$add_annotation)) / length(dat3$add_annotation), digits = 2) * 100,
-  "% of features marked as adduct or associated with an adduct.\n"
-)
+  "% of features associated with adduct group.\n"
+  )
 
 # HILIC, dissolved ----
 ## Find adducts, clean up output -----
@@ -115,5 +115,5 @@ write_csv(dat4, here(output_loc, "HILICdissolved_wide_adducts.csv"))
 cat(
   "HILIC dissolved:",
   round(sum(!is.na(dat4$add_annotation)) / length(dat4$add_annotation), digits = 2) * 100,
-  "% of features marked as adduct or associated with an adduct.\n"
-)
+  "% of features associated with adduct group.\n"
+  )

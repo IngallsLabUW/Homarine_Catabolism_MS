@@ -14,6 +14,39 @@
 
 # PACKAGES & SPECIAL FUNCTIONS ----
 library(tidyverse)
+library(Rdisop)
+
+get_monomz <- function(adduct_formula) {
+    tryCatch(
+        getMolecule(adduct_formula)$exactmass,
+        error = function(e) {
+            return(0)
+        }
+    )
+}
+
+
+expand_adduct_list <- function (adduct_list){
+adduct_list_mod <- adduct_list %>%
+    mutate(
+        ms = ifelse(
+            str_detect(adduct, "\\dM"),
+                str_extract(adduct, "\\dM") %>%
+                str_replace("M", ""),
+            "1") %>%
+            as.numeric(),
+    ) %>%
+    mutate(
+        adduct_mass_add = sapply(adduct_form_add, function(x) get_monomz(x)),
+        adduct_mass_sub = sapply(adduct_form_subtract, function(x) get_monomz(x))
+        ) %>%
+    distinct(adduct_mass_add, adduct_mass_sub, ms, charge, .keep_all = TRUE) %>%
+    mutate(adduct = paste0("[", adduct, "]", abs(charge)) %>%
+               str_replace_all("]1$", "]") %>%
+               paste0(ad.polarity %>% str_replace("1", "")))
+
+return(adduct_list_mod)
+}
 
 flattenCorrMatrix <- function(cormat, pmat) {
   ut <- upper.tri(cormat)
@@ -62,28 +95,32 @@ MSDIAL_read <- function(file1, Mode) {
 
 # Adduct, isotope, and pos/neg match finder function-----
 ### adduct finding function
-find_adducts <- function(ID_num, dataset, adduct_list, RT_ad_tol, adduct.error.ppm) {
+find_adducts <- function(
+        ID_num, dataset, adduct_list, RT_ad_tol, adduct.error.ppm
+        ) {
   dataset.2 <- dataset %>%
     mutate(merge.key = "x")
-if (ID_num == "HILICPos_84") {browser()}
   MF.limits <- dataset %>%
     filter(ID == ID_num) %>%
     mutate(
       RT_low = RT - RT_ad_tol,
-      RT_high = RT + RT_ad_tol
+      RT_high = RT + RT_ad_tol,
+      nm_theroetical = mz + 1.007825035 * -1*polarity + 0.00054858*polarity
     )
-  ad.limits <- cbind(MF.limits, adduct_list) %>%
+  ad_limits <- cbind(MF.limits, adduct_list) %>%
+      mutate(
+          adduct.mass = (nm_theroetical*ms + adduct_mass_add - adduct_mass_sub)/abs(charge) + 0.00054858*-1*polarity) %>%
     mutate(
-      adduct.mass = ((mz) - (1.007276 * polarity)) / abs(Charge) + Mass.change,
       adduct.mass.high = adduct.mass + (adduct.error.ppm / 10^6) * adduct.mass,
       adduct.mass.low = adduct.mass - (adduct.error.ppm / 10^6) * adduct.mass
     ) %>%
-    mutate(merge.key = "x") %>%
-    select(merge.key, Ion, RT_low, RT_high, adduct.mass.low, adduct.mass.high, adduct.mass, ad.polarity) %>%
+    mutate(merge.key = "x")%>%
+    select(merge.key, nm_theroetical, adduct, RT_low, RT_high, adduct.mass.low, adduct.mass.high, adduct.mass, ad.polarity) %>%
     rename("polarity" = ad.polarity)
-  ad.detect <- full_join(dataset.2, ad.limits, by = c("polarity", "merge.key")) %>%
+
+  ad.detect <- full_join(dataset.2, ad_limits, by = c("polarity", "merge.key"), relationship = "many-to-many") %>%
     select(!merge.key) %>%
-    rowwise() %>%
+    rowwise()  %>%
     filter(RT >= RT_low & RT <= RT_high) %>%
     filter(mz >= adduct.mass.low & mz <= adduct.mass.high) %>%
     rename("adduct.ID" = ID) %>%
@@ -94,7 +131,6 @@ if (ID_num == "HILICPos_84") {browser()}
 
 
 # WRAPPER Dereplication function ------
-
 dereplicate_MFs <- function(
     dat_filename1,
     dat_type_1,
@@ -106,7 +142,7 @@ dereplicate_MFs <- function(
     RT_tol = 0.2, # minutes to allow for possible adduct/isotope
     cor_tol = 0.95, # minimum correlation coefficient for considering if adduct/iso
     add_ppm_tol = 20, # adduct mass tolerance (in ppm)
-    adduct_file = "raw_input/KHeal_adduct_list.csv",
+    adduct_file = "",
     date_tag = "") {
   # GET POLARITIES
   if (str_detect(dat_type_1, "Pos")) {
@@ -120,9 +156,9 @@ dereplicate_MFs <- function(
     polarity_2 <- -1
   }
 
-
   # LOAD DATA   ----
   dat_adducts <- read_csv(adduct_file, show_col_types = FALSE) %>%
+    mutate(polarity = ifelse(str_detect(charge, "-"), -1, 1)) %>%
     rename(ad.polarity = polarity)
   dat_1 <- MSDIAL_read(dat_filename1, dat_type_1) %>%
     # keep only good peaks
@@ -194,6 +230,8 @@ dereplicate_MFs <- function(
   # Loop around list (or map, eventually)
   found_adducts <- tibble()
   message(paste0("Searching over ", length(list_vcorr), " groups of MFs"))
+  dat_adducts <- expand_adduct_list(dat_adducts)
+
   for (i in 1:length(list_vcorr)) {
     comp.ID <- unique(list_vcorr[[i]]$ID_1)
     ID.dat <- list_vcorr[[i]] %>%
@@ -225,47 +263,67 @@ dereplicate_MFs <- function(
     )
     if (length(adduct.out$adduct.ID) > 1) {
       found_adducts <- bind_rows(found_adducts, adduct.out)
-      #      print(paste0(as.character(i), " found an adduct!"))
     }
   }
   # CLEAN UP ANNOATIONS ------
   ## Get summary of IDs that are adducts ------
+  library(igraph)
+  adduct_pairwise <- found_adducts %>%
+    select(adduct.ID, ID)
+  my_net <- graph_from_data_frame(adduct_pairwise, directed = FALSE)
+  my_comps_df <- data.frame(
+      adduct.ID = names(V(my_net)),
+      membership = components(my_net)$membership
+  )
+
+  write_csv(adduct_pairwise, "test_adduct_pairwise.csv")
+
   found_adducts2 <- found_adducts %>%
-    mutate(ad.ppm = abs(ad.ppm)) %>%
-    group_by(adduct.ID, ID) %>%
-    filter(ad.ppm == min(ad.ppm)) %>%
-    select(ID, adduct.ID, mz, RT, ad.ppm, Ion) %>%
-    distinct()
+      left_join(my_comps_df)
 
-  adduct_summary <- found_adducts2 %>%
-    filter(ad.ppm != 0) %>%
-    group_by(adduct.ID) %>%
-    filter(ad.ppm == min(ad.ppm)) %>%
-    rename(
-      psued_ID = ID,
-      ID = adduct.ID
-    ) %>%
-    mutate(add_annotation = paste0(Ion, " of ", psued_ID))
+  # For each membership and nm_theoretical, count the number of unique adducts found and pull out the most likely root adduct
+  adduct_roots <- found_adducts2 %>%
+      select(membership, nm_theroetical, adduct.ID, ID) %>%
+      distinct() %>%
+      group_by(membership, nm_theroetical) %>%
+      mutate(n_adducts = n_distinct(adduct.ID))%>%
+      ungroup() %>%
+      select(-adduct.ID) %>%
+      group_by(membership) %>%
+      filter(n_adducts == max(n_adducts)) %>%
+      filter(row_number() == 1) %>%
+      distinct()
 
-  adduct_summary2 <- adduct_summary %>%
-    group_by(ID) %>%
-    summarise(add_annotation = paste0(add_annotation, collapse = " or "))
+  detected_adducts <- found_adducts2 %>%
+      select(adduct.ID, membership) %>%
+      distinct() %>%
+      left_join(adduct_roots) %>%
+      rename(psued_ID = ID) %>%
+      filter(adduct.ID != psued_ID) %>%
+      rename(
+          ID = adduct.ID
+      )%>%
+      mutate(add_annotation = paste0("in adduct group of ", psued_ID)) %>%
+      select(-n_adducts)
 
   ## Get summary of IDs that are psuedo molecular ions ------
   pseudos <- found_adducts2 %>%
-    filter(ad.ppm == 0) %>%
-    filter(ID %in% adduct_summary$psued_ID) %>%
-    mutate(add_annotation = Ion) %>%
-    ungroup() %>%
-    select(ID, add_annotation)
+    filter(adduct.ID %in% adduct_roots$ID) %>%
+      filter(adduct.ID == ID)%>%
+      rename(psued_ID = ID)%>%
+     rename(
+          ID = adduct.ID
+     )  %>%
+    mutate(add_annotation = adduct) %>%
+      select(ID, membership, nm_theroetical, psued_ID, add_annotation)
 
 
   ## Add to dataframe -----
   dat_cmb2 <- dat_cmb %>%
-    left_join(adduct_summary2, by = "ID") %>%
-    rows_update(pseudos, by = "ID") %>%
-    select(ID, RT, mz, MS2, add_annotation, starts_with(date_tag))
-
+    left_join(bind_rows(detected_adducts,pseudos), by = "ID") %>%
+    select(ID, RT, mz, MS2, add_annotation, psued_ID, membership, nm_theroetical,starts_with(date_tag)) %>%
+      rename(pseudo_ID = psued_ID,
+             adduct_group_ID = membership)
 
   return(dat_cmb2)
 }
@@ -294,7 +352,7 @@ BMIS_MSdialoutput <-
     # pivot MSdial data ----
     dat <- dat1 %>%
       pivot_longer(
-        -c(ID, RT, mz, MS2, add_annotation),
+        -c(ID, RT, mz, MS2, add_annotation, pseudo_ID, adduct_group_ID, nm_theroetical),
         names_to = "replicate_name", values_to = "area"
       ) %>%
       filter(!is.na(area)) %>%

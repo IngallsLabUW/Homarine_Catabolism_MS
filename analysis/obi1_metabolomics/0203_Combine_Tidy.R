@@ -53,15 +53,14 @@ dat_combined2 <- dat_combined %>%
 
 ## Add MF info ----
 dat_combined3 <- dat_part_MF %>%
-  select(ID:add_annotation) %>%
+  select(ID:nm_theroetical) %>%
   mutate(sample_fraction = "Particulate") %>%
   bind_rows(dat_diss_MF %>%
-    select(ID:add_annotation) %>%
+    select(ID:nm_theroetical) %>%
     mutate(sample_fraction = "Dissolved")) %>%
   rename(mass_feature = ID) %>%
-  filter(mass_feature %in% dat_combined2$mass_feature) %>%
-  right_join(dat_combined2)
-
+  semi_join(dat_combined2, by = join_by(mass_feature, sample_fraction)) %>%
+    right_join(dat_combined2)
 
 dat_combined_wide <- dat_combined2 %>%
   pivot_wider(

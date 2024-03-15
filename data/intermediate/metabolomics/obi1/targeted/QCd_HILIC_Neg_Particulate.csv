@@ -1,4 +1,4 @@
-Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexibility: 2.5 minutes. Blank can be this fraction of a sample: 3. S/N ratio: 4. Parts per million flexibility: 6. Processed on: 2024-03-11 16:39:29.551543. 
+Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexibility: 2.5 minutes. Blank can be this fraction of a sample: 3. S/N ratio: 4. Parts per million flexibility: 6. Processed on: 2024-03-15 11:43:29.982526. 
 "","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","flags","QC_area"
 "1","211202_Std_4uMStdsMix1InH2O_1","2-Hydroxy-4-(methylthio)butyric acid",2.26,168689024,1029971,54902000,-2.9,"",168689024
 "2","211202_Std_4uMStdsMix1InH2O_2","2-Hydroxy-4-(methylthio)butyric acid",2.24,335455840,3207102,111067736,-1.9,"",335455840

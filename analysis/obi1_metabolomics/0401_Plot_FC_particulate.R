@@ -9,6 +9,7 @@ library(here)
 
 # Set file locs ------
 data_dir <- here("data", "intermediate", "metabolomics", "obi1")
+figure_dir <- here("figures", "exploratory",  "metabolomics", "obi1")
 
 # Read in files  -----
 dat_long_filename <- here(data_dir, "combined_long_dat_scaled.csv")
@@ -86,11 +87,13 @@ dat_plot <- dat_tab2 %>%
     TRUE ~ "targeted"
   ))
 
-
+# Subset to only mass features that we can get pseudomolecular formula for
+dat_plot_psuedos_only <- dat_plot %>%
+    filter(!str_detect(mass_feature, "HILIC") | !is.na(add_annotation))
 
 ## Two way plots -----
 g_h <- ggplot(
-  data = dat_plot,
+  data = dat_plot_psuedos_only,
   aes(
     x = log10(mean_overall),
     y = log2(fc_h),
@@ -112,34 +115,8 @@ g_h <- ggplot(
 
 g_h_interactive <- ggplotly(g_h)
 
-g_h2 <- ggplot(
-    data = dat_plot,
-    aes(
-        x = RT,
-        y = mz,
-        fill = color_label,
-        label = plot_label,
-        shape = shape_label
-    ),
-    color = "black"
-) +
-    geom_point(size = 2) +
-    scale_shape_manual(values = c(22, 21)) +
-    scale_fill_brewer(type = "div", palette = "RdBu") +
-    labs(
-        title = "Particulate Samples only",
-        x = "RT",
-        y = "mz"
-    ) +
-    theme_bw()
-
-g_h2_interactive <- ggplotly(g_h2)
-
-
-
-
 
 # SAVE OUTPUTS -----
-ggsave("04_combined/intermediates/FCvsMeanArea.pdf", plot = g_h, height = 6, width = 8, units = "in")
-saveWidget(g_h_interactive, "04_combined/intermediates/FCvsMeanArea.html")
-ic_write_csv_wlog(dat_tab2, "04_combined/intermediates/summary_MF_table.csv")
+ggsave(here(figure_dir, "FCvsMeanArea_particulate_pseudos.pdf"), plot = g_h, height = 6, width = 8, units = "in")
+saveWidget(g_h_interactive, here(figure_dir,"FCvsMeanArea_particulate_pseudos.html"))
+write_csv(dat_tab2, here(data_dir, "summary_MF_table.csv"))
