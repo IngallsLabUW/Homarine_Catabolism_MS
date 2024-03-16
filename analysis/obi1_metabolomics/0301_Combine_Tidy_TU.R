@@ -14,24 +14,24 @@ output_loc <- here("data", "intermediate", "metabolomics", "obi1")
 
 # Read in files  -----
 dat_target_filename <- here(
-    output_loc,
-    "targeted",
-    "combined_tidy_dat_long.csv"
+  output_loc,
+  "targeted",
+  "combined_tidy_dat_long.csv"
 )
-dat_nontarget_filename <-here(
-    output_loc,
-    "untargeted",
-    "combined_tidy_dat_long.csv"
+dat_nontarget_filename <- here(
+  output_loc,
+  "untargeted",
+  "combined_tidy_dat_long.csv"
 )
 
 dat_target <- read_csv(dat_target_filename, show_col_types = FALSE) %>%
-    rename(RT = retention_time)
+  rename(RT = retention_time)
 dat_nontarget <-
   read_csv(dat_nontarget_filename, show_col_types = FALSE) %>%
-    mutate(z = case_when(
-      grepl("Pos", mass_feature) ~ 1,
-      grepl("Neg", mass_feature) ~ -1
-    ))
+  mutate(z = case_when(
+    grepl("Pos", mass_feature) ~ 1,
+    grepl("Neg", mass_feature) ~ -1
+  ))
 
 # MUNGE DATA ----
 ## Combine data -----
@@ -46,7 +46,7 @@ dat_cmb <- dat_target %>%
 dat_fc <- dat_cmb %>%
   group_by(mass_feature, treatment, sample_fraction) %>%
   summarise(mean_area = mean(adjusted_area, rm.na = T)) %>%
-  ungroup()%>%
+  ungroup() %>%
   group_by(mass_feature, sample_fraction) %>%
   summarise(
     fc_hNH4 = mean_area[treatment == "Glucose + NH4 + Homarine"] /
@@ -149,7 +149,7 @@ dat_MF_2 <- dat_cmb2 %>%
     add_annotation, high_homarine_compound:low_both_compounds
   ) %>%
   distinct() %>%
-    mutate(row_id = row_number())
+  mutate(row_id = row_number())
 dat_cmb2 <- dat_cmb2 %>%
   left_join(dat_MF_2)
 
@@ -160,46 +160,52 @@ target_MFs <- dat_MF_2 %>%
   filter(dat_type == "targeted")
 untarget_MFs <- dat_MF_2 %>%
   filter(dat_type == "nontargeted")
-names_to_change = list()
+names_to_change <- list()
 to_drop <- c()
 for (i in 1:nrow(target_MFs)) {
   # for each targeted MF
-    target_oi <- target_MFs[i,]
-    # filter untarget_MF for mz within 0.01 of target_oi mz and RT within 0.1 of target_oi RT
-    untarget_oi <- untarget_MFs %>%
-      filter(
-        abs(mz - target_oi$mz) < 0.005,
-        abs(RT - target_oi$RT) < 0.25,
-        z == target_oi$z,
-        sample_fraction == target_oi$sample_fraction
+  target_oi <- target_MFs[i, ]
+  # filter untarget_MF for mz within 0.01 of target_oi mz and RT within 0.1 of target_oi RT
+  untarget_oi <- untarget_MFs %>%
+    filter(
+      abs(mz - target_oi$mz) < 0.005,
+      abs(RT - target_oi$RT) < 0.25,
+      z == target_oi$z,
+      sample_fraction == target_oi$sample_fraction
+    )
+  # if there is a match, drop the untargeted MF
+  if (nrow(untarget_oi) > 0) {
+    untarget_oi <- untarget_oi %>%
+      mutate(
+        mass_feature = target_oi$mass_feature,
+        dat_type = "targeted"
       )
-    # if there is a match, drop the untargeted MF
-    if (nrow(untarget_oi) > 0) {
-        untarget_oi <- untarget_oi %>%
-            mutate(mass_feature = target_oi$mass_feature,
-                   dat_type = "targeted")
-        names_to_change[[i]] <- untarget_oi
-        to_drop <- c(to_drop, target_oi$row_id)
-    }
+    names_to_change[[i]] <- untarget_oi
+    to_drop <- c(to_drop, target_oi$row_id)
+  }
 }
 
 # drop untargeted MFs that are dereplicated
 new_names <- bind_rows(names_to_change) %>%
-    group_by(row_id) %>%
-    filter(row_number() == 1)
+  group_by(row_id) %>%
+  filter(row_number() == 1)
 dat_MF_update <- dat_MF_2 %>%
-    filter(!(row_id %in% to_drop)) %>%
-    filter(!(row_id %in% new_names$row_id)) %>%
-    bind_rows(new_names)
+  filter(!(row_id %in% to_drop)) %>%
+  filter(!(row_id %in% new_names$row_id)) %>%
+  bind_rows(new_names)
 dat_cmb3 <- dat_cmb2 %>%
-    filter(!(row_id %in% to_drop))%>%
-    left_join(new_names %>%
-                  select(mass_feature, row_id, dat_type) %>%
-                  rename(new_mass_feature = mass_feature,
-                         new_dat_type = dat_type)) %>%
-    mutate(mass_feature = ifelse(!is.na(new_mass_feature), new_mass_feature, mass_feature),
-           dat_type = ifelse(!is.na(new_dat_type), new_dat_type, dat_type)) %>%
-    select(-new_mass_feature, -new_dat_type)
+  filter(!(row_id %in% to_drop)) %>%
+  left_join(new_names %>%
+    select(mass_feature, row_id, dat_type) %>%
+    rename(
+      new_mass_feature = mass_feature,
+      new_dat_type = dat_type
+    )) %>%
+  mutate(
+    mass_feature = ifelse(!is.na(new_mass_feature), new_mass_feature, mass_feature),
+    dat_type = ifelse(!is.na(new_dat_type), new_dat_type, dat_type)
+  ) %>%
+  select(-new_mass_feature, -new_dat_type)
 
 # WRITE DATA -----
 write_csv(dat_cmb3, here(output_loc, "combined_long_dat_scaled.csv"))

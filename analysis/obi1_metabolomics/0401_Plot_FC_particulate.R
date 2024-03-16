@@ -1,4 +1,4 @@
-#PURPOSE: To generate basic plots for the combined Obi1 Metabolomics data
+# PURPOSE: To generate basic plots for the combined Obi1 Metabolomics data
 
 # PACKAGES & SPECIAL FUNCTIONS ----
 library(tidyverse)
@@ -9,7 +9,7 @@ library(here)
 
 # Set file locs ------
 data_dir <- here("data", "intermediate", "metabolomics", "obi1")
-figure_dir <- here("figures", "exploratory",  "metabolomics", "obi1")
+figure_dir <- here("figures", "exploratory", "metabolomics", "obi1")
 
 # Read in files  -----
 dat_long_filename <- here(data_dir, "combined_long_dat_scaled.csv")
@@ -89,7 +89,7 @@ dat_plot <- dat_tab2 %>%
 
 # Subset to only mass features that we can get pseudomolecular formula for
 dat_plot_psuedos_only <- dat_plot %>%
-    filter(!str_detect(mass_feature, "HILIC") | !is.na(add_annotation))
+  filter(!str_detect(mass_feature, "HILIC") | !is.na(add_annotation))
 
 ## Two way plots -----
 g_h <- ggplot(
@@ -111,12 +111,12 @@ g_h <- ggplot(
     x = "Log10(Mean peak area), across all treatments",
     y = "Log2(Fold change), of +homarine treatment"
   ) +
-    theme_bw()
+  theme_bw()
 
 g_h_interactive <- ggplotly(g_h)
 
 
 # SAVE OUTPUTS -----
 ggsave(here(figure_dir, "FCvsMeanArea_particulate_pseudos.pdf"), plot = g_h, height = 6, width = 8, units = "in")
-saveWidget(g_h_interactive, here(figure_dir,"FCvsMeanArea_particulate_pseudos.html"))
+saveWidget(g_h_interactive, here(figure_dir, "FCvsMeanArea_particulate_pseudos.html"))
 write_csv(dat_tab2, here(data_dir, "summary_MF_table.csv"))

@@ -63,8 +63,15 @@ remove(list = ls())
 ```
 
 # PLOTTING
-## Fold Change particualte plots
+## Fold change particulate plots
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0401_Plot_FC_particulate.R"))
 remove(list = ls())
 ```
+
+## Chromatograms
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0402_plot_chromatograms.R"))
+remove(list = ls())
+```
+
