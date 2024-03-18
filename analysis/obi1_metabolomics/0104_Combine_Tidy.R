@@ -28,11 +28,11 @@ dat_combined <- dat_part %>%
   bind_rows(dat_diss %>%
     select(mass_feature, replicate_name, adjusted_area, fraction) %>%
     mutate(sample_fraction = "Dissolved")) %>%
-    mutate(z = case_when(
-        str_detect(fraction, "Neg") ~ -1,
-        str_detect(fraction, "Pos") ~ 1
-    )) %>%
-    select(-fraction)
+  mutate(z = case_when(
+    str_detect(fraction, "Neg") ~ -1,
+    str_detect(fraction, "Pos") ~ 1
+  )) %>%
+  select(-fraction)
 
 # Add meta data ---
 dat_combined2 <- dat_combined %>%
@@ -49,12 +49,12 @@ dat_combined2 <- dat_combined %>%
 
 # Add mf data to long data
 mf_data <- read_csv(
-    here(qc_data_loc, "mf_info.csv"),
-    show_col_types = FALSE
+  here(qc_data_loc, "mf_info.csv"),
+  show_col_types = FALSE
 )
 dat_combined3 <- dat_combined2 %>%
-    left_join(mf_data) %>%
-    filter(mass_feature != "GMP, 15N5")
+  left_join(mf_data) %>%
+  filter(mass_feature != "GMP, 15N5")
 
 # pivot wider
 dat_combined_wide <- dat_combined3 %>%

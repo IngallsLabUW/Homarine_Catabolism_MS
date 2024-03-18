@@ -60,7 +60,7 @@ dat_combined3 <- dat_part_MF %>%
     mutate(sample_fraction = "Dissolved")) %>%
   rename(mass_feature = ID) %>%
   semi_join(dat_combined2, by = join_by(mass_feature, sample_fraction)) %>%
-    right_join(dat_combined2)
+  right_join(dat_combined2)
 
 dat_combined_wide <- dat_combined2 %>%
   pivot_wider(
