@@ -79,7 +79,7 @@ cat(
   "RP particulate:",
   round(sum(!is.na(dat3$add_annotation)) / length(dat3$add_annotation), digits = 2) * 100,
   "% of features associated with adduct group.\n"
-  )
+)
 
 # HILIC, dissolved ----
 ## Find adducts, clean up output -----
@@ -116,4 +116,4 @@ cat(
   "HILIC dissolved:",
   round(sum(!is.na(dat4$add_annotation)) / length(dat4$add_annotation), digits = 2) * 100,
   "% of features associated with adduct group.\n"
-  )
+)
