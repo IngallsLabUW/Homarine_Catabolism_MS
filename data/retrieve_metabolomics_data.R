@@ -9,11 +9,11 @@ source("R_functions/google_drive_functions.R")
 
 
 # Functions to help get the folder ID needed for the drive_download_daughters_function
-dir <- drive_find(
-  pattern = "OscarSosa_Bacteria",
-  type = "folder",
-  shared_drive = "Ingalls Lab"
-)
+# dir <- drive_find(
+#   pattern = "OscarSosa_Bacteria",
+#   type = "folder",
+#   shared_drive = "Ingalls Lab"
+# )
 # query = paste('"', dir$id, '"',  ' in parents', sep='')
 # files = drive_ls(q=query, shared_drive = "Ingalls Lab", recursive = TRUE)
 
