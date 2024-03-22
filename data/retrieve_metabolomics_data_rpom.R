@@ -110,8 +110,8 @@ drive_download_daughters(gfolder, export_folder)
 #     janitor::clean_names() %>%
 #     write_csv(here("data", "raw", "metabolomics", "obi1", "is_names_particulate.csv"))
 #
-# ## grab sample key -----
-# gfile <- drive_get(as_id("1KL7-kJOZrlDtV5wToq_ejkLNtBiGNC5Y"), shared_drive = "Ingalls Lab")
-# drive_download(gfile,
-#                path = here("data", "raw", "metabolomics", "obi1", "sample_key.csv")
-# )
+## grab sample key -----
+gfile <- drive_get(as_id("1SA7k39VYqolvPaP6PhydZxK6Qz70f8AxxBXJP9befhw"), shared_drive = "Ingalls Lab")
+drive_download(gfile,
+               path = here("data", "raw", "metabolomics", "rpom", "SampleList_EpicFate_Particulate.csv"))
+
