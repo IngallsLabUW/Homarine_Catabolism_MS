@@ -3,6 +3,7 @@ library(tidyverse)
 library(here)
 library(patchwork)
 library(ggrepel)
+source(here("analysis", "obi1_metabolomics", "functions", "plotting.R"))
 
 # GET FILES ------
 ## Set dirs ------
@@ -53,64 +54,16 @@ if (mf_info$z == 1) {
 }
 all_ms_files <- list.files(here(raw_dat_dir, data_subdir))
 msdata_files <- here(raw_dat_dir, data_subdir, all_ms_files[all_ms_files %in% samples_oi$filename])
-dda_files <- here(raw_dat_dir, data_subdir, all_ms_files[str_detect(all_ms_files, "_DDA")])
+dda_files <- here(raw_dat_dir, data_subdir, all_ms_files[str_detect(all_ms_files, "(_DDA)|(240319)")])
 msdata <- grabMSdata(files = msdata_files, grab_what = c("MS1"))
 
-rt_dat <- msdata$MS1 %>% select(rt, filename) %>% distinct() %>%
-    filter(rt %between% c(mf_info$RT-2.5, mf_info$RT+2.5))
-ms1_data <- msdata$MS1[mz %between% pmppm(mf_info$mz, 20) & rt %between%c(mf_info$RT-3, mf_info$RT+3)] %>%
-    full_join(rt_dat, by = join_by(rt, filename)) %>%
-    left_join(samples_oi %>%
-                  select(filename, treatment),
-              by = join_by(filename)) %>%
-    mutate(int = ifelse(is.na(int), 0, int))
-
-g_ms1 <- ggplot(ms1_data) +
-    geom_line(aes(x = rt, y = int, group  = filename)) +
-    facet_wrap(~treatment, ncol = 3) +
-    theme_bw() +
-    theme(legend.position = "none") +
-    geom_vline("vline", xintercept = mf_info$RT, linetype = "dashed") +
-    scale_y_continuous(expand = c(0, NA)) +
-    labs(y = "Intensity",
-         x = "Retention Time (min)")
+g_ms1 <- plot_EIC(ms1data = msdata$MS1, m_z = mf_info$mz, r_t = mf_info$RT, samples_oi = samples_oi)
 
 msdata_dda <- grabMSdata(files = dda_files, grab_what = c("MS2"))
-ms2data <-  msdata_dda$MS2[premz %between% pmppm(mf_info$mz, 50) & rt %between%c(mf_info$RT-1, mf_info$RT+1)] %>%
-    mutate(mz_round = round(fragmz, digits = 3)) %>%
-    group_by(mz_round) %>%
-    summarise(int = sum(int)) %>%
-    ungroup() %>%
-    mutate(int_norm = int/max(int)) %>%
-    filter(int_norm > 0.01)
+ms2data <- pull_ms2_data(msdata_dda$MS2, m_z = mf_info$mz, r_t = mf_info$RT)
+
 if (nrow(ms2data) > 0) {
-  g_ms2 <- ggplot(ms2data) +
-      geom_segment(
-          aes(
-              x = mz_round,
-              xend = mz_round,
-              y = 0,
-              yend = int_norm
-              ),
-          alpha = 0.5,
-          ) +
-      geom_text_repel(
-          aes(
-              x = mz_round,
-              y = int_norm,
-              label = mz_round
-              ),
-          nudge_y = 0.05,
-          size = 2.5
-          ) +
-      theme_bw()+
-      labs(
-           y = NULL,
-           x = "m/z") +
-      scale_y_continuous(expand = c(0, NA),
-                         limits = c(0, 1.07)) +
-      theme(axis.text.y = element_blank(),
-            axis.ticks.y = element_blank())
+  g_ms2 <- plot_spectrum (ms2data)
   g_save <- g_ms1 +
       g_ms2 +
       plot_layout(ncol = 2, widths = c(3, 1)) +
