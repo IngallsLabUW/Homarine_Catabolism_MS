@@ -22,40 +22,40 @@ dat_long <- read_csv(dat_long_filename, show_col_types = FALSE)
 
 ## Set mf_oi ------
 mf_oi <- c( #THESE ARE ION FORMULAS, NOT MOLECULAR FORMULAS
-    "C7H8NO3",
-    "C6H8NO2",
-    "C6H11NO2",
-    "C7H12NO3",
-    "C6H8NO3",
-    "C6H10NO3",
+    #"C7H8NO3",
+    #"C6H8NO2",
+    #"C6H11NO2",
+    #"C7H12NO3",
+    #"C6H8NO3",
+    #"C6H10NO3",  #insource
     "C6H10NO4",
     "C6H8NO4",
-    "C6H8NO3",
-    "C7H9NO5Na"
+    "C6H8NO3"
+    #"C7H9NO5Na"
 )
 rt_oi <- c(
-    3,
-    9.6,
-    10.6,
-    8,
+    #3,
+    #9.6,
+    #10.6,
+    #8,
+    #11.9,
+    #9.6,
     11.9,
-    9.6,
-    11.9,
     3,
-    11,
-    10
+    11
+    #10
 )
 z_oi <- c(
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
+    #1,
+    #1,
+    #1,
+    #1,
+    #1,
+    #1,
     1,
     -1,
-    -1,
-    1
+    -1
+    #1
 )
 
 samples_oi <- sample_key %>%
@@ -83,7 +83,7 @@ for (i in 1:length(mf_oi)){
     }
     all_ms_files <- list.files(here(raw_dat_dir, data_subdir))
     msdata_files <- here(raw_dat_dir, data_subdir, all_ms_files[all_ms_files %in% samples_oi$filename])
-    dda_files <- here(raw_dat_dir, data_subdir, all_ms_files[str_detect(all_ms_files, "_DDA")])
+    dda_files <- here(raw_dat_dir, data_subdir, all_ms_files[str_detect(all_ms_files, "(_DDA)|(240319)")])
     msdata <- grabMSdata(files = msdata_files, grab_what = c("MS1"))
 
     g_ms1 <- plot_EIC(ms1data = msdata$MS1, m_z = mz_oi_i, r_t = rt_oi_i, samples_oi = samples_oi)
@@ -92,7 +92,7 @@ for (i in 1:length(mf_oi)){
     }
 
     msdata_dda <- grabMSdata(files = dda_files, grab_what = c("MS2"))
-    ms2data <- pull_ms2_data(msdata_dda$MS2, m_z = mz_oi_i, r_t = rt_oi_i)
+    ms2data <- pull_ms2_data(msdata_dda$MS2, m_z = mz_oi_i, r_t = rt_oi_i, rt_buffer = 2)
 
     if (nrow(ms2data) > 0) {
         g_ms2 <- plot_spectrum (ms2data)
@@ -122,7 +122,7 @@ for (i in 1:length(mf_oi)){
                     ", RT: ",
                     round(rt_oi_i, digits = 2),
                     " min, z: ",
-                    rt_oi_i
+                    z_oi_i
                 )
             )
 

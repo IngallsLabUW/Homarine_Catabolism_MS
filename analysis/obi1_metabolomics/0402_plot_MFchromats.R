@@ -54,7 +54,7 @@ if (mf_info$z == 1) {
 }
 all_ms_files <- list.files(here(raw_dat_dir, data_subdir))
 msdata_files <- here(raw_dat_dir, data_subdir, all_ms_files[all_ms_files %in% samples_oi$filename])
-dda_files <- here(raw_dat_dir, data_subdir, all_ms_files[str_detect(all_ms_files, "_DDA")])
+dda_files <- here(raw_dat_dir, data_subdir, all_ms_files[str_detect(all_ms_files, "(_DDA)|(240319)")])
 msdata <- grabMSdata(files = msdata_files, grab_what = c("MS1"))
 
 g_ms1 <- plot_EIC(ms1data = msdata$MS1, m_z = mf_info$mz, r_t = mf_info$RT, samples_oi = samples_oi)
