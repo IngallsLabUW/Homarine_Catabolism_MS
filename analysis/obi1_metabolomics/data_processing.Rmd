@@ -71,7 +71,7 @@ remove(list = ls())
 
 ## Chromatograms
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
-source(here("analysis", "obi1_metabolomics", "0402_plot_chromatograms.R"))
+source(here("analysis", "obi1_metabolomics", "0402_plot_MFchromats.R"))
 remove(list = ls())
 ```
 
