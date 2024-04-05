@@ -24,6 +24,7 @@ dat_MF <-
 ## Set mf_oi ------
 mf_oi <- c(
     "Homarine",
+    "HILICNeg_40", #iodine
     "HILICPos_148", # n-methyl glutamine
     "HILICPos_192", # unknown, but likely C7H9NO5 by mass and iso patt
     "HILICPos_29", # unknown
