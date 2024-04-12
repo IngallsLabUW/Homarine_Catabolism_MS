@@ -9,11 +9,11 @@ source("R_functions/google_drive_functions.R")
 
 
 # Functions to help get the folder ID needed for the drive_download_daughters_function
-dir <- drive_find(
-  pattern = "OscarSosa_Bacteria",
-  type = "folder",
-  shared_drive = "Ingalls Lab"
-)
+# dir <- drive_find(
+#   pattern = "OscarSosa_Bacteria",
+#   type = "folder",
+#   shared_drive = "Ingalls Lab"
+# )
 # query = paste('"', dir$id, '"',  ' in parents', sep='')
 # files = drive_ls(q=query, shared_drive = "Ingalls Lab", recursive = TRUE)
 
@@ -38,10 +38,22 @@ dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "11mQ30CtXReGwuTZdyq0NMEb8kX6471G4"
 drive_download_daughters(gfolder, export_folder)
 
+### particulate HILIC Neg mzml DDA reruns-----
+export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "mzml", "HILIC_negative_mzml")
+dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
+gfolder <- "1KDjgjVne-BqnPZofA6XhdWgXWbx_zz-a"
+drive_download_daughters(gfolder, export_folder)
+
 ### particulate HILIC Pos mzml-----
 export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "mzml", "HILIC_positive_mzml")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "11gy9fnvy9l5gQ0RY9JUlKEXyZA-ml3yc"
+drive_download_daughters(gfolder, export_folder)
+
+### particulate HILIC Pos mzml-----
+export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "mzml", "HILIC_positive_mzml")
+dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
+gfolder <- "1eRACKjkdeGMFwP9SLV52SfZfoIQtw0PA"
 drive_download_daughters(gfolder, export_folder)
 
 ### particulate RP mzml-----
