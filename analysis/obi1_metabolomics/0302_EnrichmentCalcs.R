@@ -14,32 +14,14 @@ meta_data_dir <- here("data", "intermediate", "metabolomics")
 output_loc <- here("data", "intermediate", "metabolomics", "obi1")
 
 # Read in files  -----
-dat_target_filename <- here(
+dat_long_filename <- here(
   output_loc,
-  "targeted",
-  "combined_tidy_dat_long.csv"
+  "combined_long_dat.csv"
 )
-dat_nontarget_filename <- here(
-  output_loc,
-  "untargeted",
-  "combined_tidy_dat_long.csv"
-)
-
-dat_target <- read_csv(dat_target_filename, show_col_types = FALSE) %>%
-  rename(RT = retention_time)
-dat_nontarget <-
-  read_csv(dat_nontarget_filename, show_col_types = FALSE) %>%
-  mutate(z = case_when(
-    grepl("Pos", mass_feature) ~ 1,
-    grepl("Neg", mass_feature) ~ -1
-  ))
 
 # MUNGE DATA ----
 ## Combine data -----
-dat_cmb <- dat_target %>%
-  mutate(dat_type = "targeted") %>%
-  bind_rows(dat_nontarget %>%
-    mutate(dat_type = "nontargeted")) %>%
+dat_cmb <- read_csv(dat_long_filename, show_col_types = FALSE) %>%
   filter(sample_set == "OBi1_set2")
 
 # If adjusted_area is NA, replace it with 1/50 of the minimum adjusted_area for that mass_feature
@@ -139,10 +121,10 @@ core_outliers <- core_outlier_tests %>%
 # pull core metabs in which less than 10% of the values are outliers
 core_metabs_quality <- core_outliers %>%
     filter(outlier_f_hNH4 < 0.1 & outlier_f_h < 0.1) %>%
-    filter(!is.na(core_metab)) %>%
-    pull(core_metab)
+    filter(!is.na(core_metab))
+write_csv(core_metabs_quality, here(output_loc, "core_metabs_quality.csv"))
 
 ## Remove core metabolites with high outlier rates ------
 dat_enrich4 <- dat_enrich3 %>%
-    filter(core_metab %in% core_metabs_quality)
+    filter(core_metab %in% core_metabs_quality$core_metab)
 write_csv(dat_enrich4, here(output_loc, "enrichment_results.csv"))

@@ -24,13 +24,12 @@ dat_enrichment_results <-
 # GET LIST OF PSEUDOS OR TARGETED ------
 pseudos <- dat_MF %>%
   filter(!str_detect(mass_feature, "HILIC") | !is.na(add_annotation)) %>%
-  pull(mass_feature)
+  select(mass_feature, sample_fraction)
 
 
 # SUMMARY TABLES------
 dat_enrich_summary <- dat_enrichment_results %>%
-    filter(mass_feature %in% pseudos) %>%
-    filter(sample_fraction == "Particulate") %>%
+    inner_join(pseudos, by = c("mass_feature", "sample_fraction")) %>%
   group_by(mass_feature, sample_fraction) %>%
     summarise(
       pvalue_h = median(ttest_p_h),
@@ -49,13 +48,14 @@ g4 <- ggplot(
     aes(
         x = log2(ave_h),
         y = log2(ave_hNH4),
-        text = plot_label
+        #text = plot_label,
+        color = sample_fraction
     )
 ) +
-    geom_point(color = "red") +
+    geom_point() +
     gghighlight(pvalue_h < 0.05 & log2(ave_h) > 0,
                 use_direct_label = FALSE) +
-    geom_text_repel(aes(label = plot_label), colour = "black", size = 2.5)+
+    #geom_text_repel(aes(label = plot_label), colour = "black", size = 2.5)+
     theme_bw() +
     labs(
         x = "Median enrichment factor in homarine treatment (log2)",
