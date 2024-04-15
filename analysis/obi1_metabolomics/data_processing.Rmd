@@ -72,7 +72,7 @@ source(here("analysis", "obi1_metabolomics", "0203_Combine_Tidy.R"))
 remove(list = ls())
 ```
 
-# COMBINE TARGETED WITH UNTARGETED
+# COMBINED ANALYSES
 ## Dereplicate adducts from the MSdial output
 Sources the combined and tidied targeted and untargeted data from here("data", "intermediate", "metabolomics", "obi1", "targeted") and here("data", "intermediate", "metabolomics", "obi1", "untargeted")
 Also dereplicates the combined data so there are no targeted compounds in the untargeted data
@@ -92,7 +92,11 @@ remove(list = ls())
 ```
 
 # PLOTTING
-## Fold change particulate plots
+## Enrichment / fold change plots
+Sources data from here("data", "intermediate", "metabolomics", "obi1")
+Plots enrichment and fold change plots
+Writes out the plots into here("figures", "exploratory", "metabolomics", "obi1")
+Saves tables of summary statistics into here("data", "intermediate", "metabolomics", "obi1")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0401_Plot_FC_particulate.R"))
 remove(list = ls())

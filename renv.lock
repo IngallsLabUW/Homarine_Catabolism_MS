@@ -719,6 +719,23 @@
       ],
       "Hash": "15e9634c0fcd294799e9b2e929ed1b86"
     },
+    "gghighlight": {
+      "Package": "gghighlight",
+      "Version": "0.4.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "dplyr",
+        "ggplot2",
+        "ggrepel",
+        "lifecycle",
+        "purrr",
+        "rlang",
+        "tibble"
+      ],
+      "Hash": "a8f51a6b707d802a73bcb8920e368a06"
+    },
     "ggplot2": {
       "Package": "ggplot2",
       "Version": "3.5.0",
