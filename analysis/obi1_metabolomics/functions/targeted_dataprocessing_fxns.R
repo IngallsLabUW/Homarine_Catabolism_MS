@@ -35,10 +35,10 @@ QE_QC <- function(dat_filename,
     show_col_types = FALSE
   )
 
-  ## Clean up column types-----
+    ## Clean up column types-----
   dat_og <- dat %>%
     clean_names() %>%
-    select(-protein_name, -protein) %>%
+    select(-any_of(c("protein_name", "protein"))) %>%
     mutate_at(
       c(
         "retention_time",
@@ -73,7 +73,7 @@ QE_QC <- function(dat_filename,
     "rt_flag", NA
     ))
 
-  ## Get area of blanks-----
+    ## Get area of blanks-----
   dat_area_blanks <- dat_og %>%
     filter(str_detect(replicate_name, blank_flag)) %>%
     select(precursor_ion_name, area) %>%
