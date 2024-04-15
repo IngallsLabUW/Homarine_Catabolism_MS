@@ -145,4 +145,4 @@ core_metabs_quality <- core_outliers %>%
 ## Remove core metabolites with high outlier rates ------
 dat_enrich4 <- dat_enrich3 %>%
     filter(core_metab %in% core_metabs_quality)
-write_csv(dat_enrich4, here(output_loc, "enrichment_results_data_particulate.csv"))
+write_csv(dat_enrich4, here(output_loc, "enrichment_results.csv"))
