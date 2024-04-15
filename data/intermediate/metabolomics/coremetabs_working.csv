@@ -1,0 +1,21 @@
+﻿core_metabolites_fMsystem,open_ocean_CXC_dissolved,in top 18 mSystems,Obi1
+Adenine,,,No change
+Adenosine,,,No change
+Adenosine monophosphate,,,No change
+L-Arginine,,Y,No change
+Asparagine,Y,,ND (high blank)
+Citrulline,Y,,No change
+L-Cysteic acid,,,No change
+Cytosine,Y,,No change
+Deoxyadenosine,,,No change
+L-Glutamic acid,Y,Y,High in homarine treatments
+Glutathione disulfide,,,High in one homarine treatment
+Guanosine,,,No change
+L-Homoserine,Y,,High in homarine treatments
+L-Lysine,Y,,No change
+Phenylalanine,Y,,ND (RP not integrated on Skyline)
+L-Proline,Y,Y,No change
+L-Serine,Y,,No change
+Tryptophan,,,ND (RP not integrated on Skyline)
+L-Tyrosine,Y,Y,High in homarine treatments
+UDP-glucosamine,,,
