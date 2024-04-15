@@ -44,11 +44,12 @@ dat_cmb <- dat_target %>%
 
 # If adjusted_area is NA, replace it with 1/50 of the minimum adjusted_area for that mass_feature
 dat_cmb <- dat_cmb %>%
-    group_by(mass_feature, sample_fraction) %>%
+    group_by(mass_feature, sample_fraction, dat_type) %>%
     # If all NA, drop from dataframe
     filter(!all(is.na(adjusted_area))) %>%
     mutate(adjusted_area = ifelse(is.na(adjusted_area), 0.02*min(adjusted_area, na.rm = TRUE), adjusted_area)) %>%
-    ungroup()
+    ungroup() %>%
+    mutate(replicate_name_short = str_remove(replicate_name, "^\\d\\d\\d\\d\\d\\d_"))
 
 
 ## Pull out core metab ------
@@ -58,90 +59,90 @@ core_metabs <- read_csv(
     "coremetabs_working.csv"
 ), show_col_types = FALSE) %>%
     filter(core_metabolites_fMsystem %in% dat_cmb$mass_feature) %>%
-    # Drop citrulline
-#    filter(core_metabolites_fMsystem != "Citrulline") %>%
     pull(core_metabolites_fMsystem)
 
 
+## Calculate metabolite / core area for each compound x sample-----
+# Keep cores and enrichments separate so we can test for trends in core metabolites
 dat_enrich_list <- list()
 dat_core_list <- list()
 for (i in 1:length(core_metabs)) {
     dat_core_list[[i]] <- dat_cmb %>%
         filter(mass_feature == core_metabs[i]) %>%
+        filter(sample_fraction == "Particulate") %>%
         mutate(core_metab = core_metabs[i]) %>%
         rename(core_adjusted_area = adjusted_area) %>%
-        select(replicate_name, sample_fraction,core_metab, core_adjusted_area)
+        select(replicate_name_short, core_metab, core_adjusted_area)
 
     dat_enrich_list[[i]] <- dat_cmb %>%
         filter(mass_feature != core_metabs[i]) %>%
-        left_join(dat_core_list[[i]], by = c("replicate_name", "sample_fraction")) %>%
+        left_join(dat_core_list[[i]], by = c("replicate_name_short")) %>%
         mutate(scaled_area = adjusted_area/core_adjusted_area)
 }
+dat_enrich <- bind_rows(dat_enrich_list) %>%
+    filter(!is.na(core_metab))
 
-dat_enrich <- bind_rows(dat_enrich_list)
-dat_core <- bind_rows(dat_core_list)
+
+## Calculate per-sample ttest and mann-whitney test for each compound x core_metab combo ------
+dat_enrich_h_tests <- dat_enrich %>%
+    select(mass_feature, core_metab, scaled_area, treatment, sample_fraction) %>%
+    filter(treatment %in% c("Glucose + NH4", "Homarine")) %>%
+    group_by(mass_feature, core_metab, sample_fraction) %>%
+    summarise(ttest_p_h = t.test(scaled_area ~ treatment, paired = FALSE)$p.value,
+              p_value_mannwhitney_h = wilcox.test(scaled_area ~ treatment)$p.value)
+
+dat_enrich_hNH4_tests <- dat_enrich %>%
+    select(mass_feature, core_metab, scaled_area, treatment, sample_fraction) %>%
+    filter(treatment %in% c("Glucose + NH4 + Homarine", "Glucose + NH4")) %>%
+    group_by(mass_feature, core_metab, sample_fraction) %>%
+    summarise(ttest_p_hNH4 = t.test(scaled_area ~ treatment, paired = FALSE)$p.value,
+              p_value_mannwhitney_hNH4 = wilcox.test(scaled_area ~ treatment)$p.value)
+dat_enrich_tests <- left_join(dat_enrich_h_tests, dat_enrich_hNH4_tests, by = c("mass_feature", "core_metab", "sample_fraction"))
 
 
-## Calculate fold changes and select median fold change for scaling ------
-dat_enrich2 <- dat_enrich %>%
-    group_by(mass_feature, treatment, sample_fraction, core_metab) %>%
-    summarise(mean_scaled_area = mean(scaled_area, rm.na = T)) %>%
-    ungroup()
-
-dat_enrich3 <- dat_enrich2 %>%
-    group_by(mass_feature, sample_fraction, core_metab) %>%
+## Calculate fold changes for each compound x core_metab combo  ------
+dat_enrich3 <- dat_enrich %>%
+    group_by(mass_feature, treatment, sample_fraction, dat_type, core_metab) %>%
+    summarise(mean_scaled_area = mean(scaled_area, rm.na = T),
+              mean_adjusted_area = mean(adjusted_area, rm.na = T)) %>%
+    ungroup() %>%
+    group_by(mass_feature, core_metab, sample_fraction) %>%
     summarise(enrich_hNH4_fc = mean_scaled_area[treatment == "Glucose + NH4 + Homarine"] /  mean_scaled_area[treatment == "Glucose + NH4"],
-              enrich_h = mean_scaled_area[treatment == "Homarine"] / mean_scaled_area[treatment == "Glucose + NH4"]) %>%
-    pivot_longer(cols = c("enrich_hNH4_fc", "enrich_h"), names_to = "treatment", values_to = "enrichment")
+              enrich_h_fc = mean_scaled_area[treatment == "Homarine"] / mean_scaled_area[treatment == "Glucose + NH4"])%>%
+    ungroup() %>%
+    left_join(dat_enrich_tests, by = c("mass_feature", "core_metab", "sample_fraction"))
 
-# get order of mass_features by median enrichment
-dat_enrich3 %>%
-    filter(sample_fraction == "Particulate") %>%
-    group_by(mass_feature) %>%
-    summarise(median_enrichment = median(enrichment, na.rm = T)) %>%
-    arrange(median_enrichment) %>%
-    pull(mass_feature) %>%
-    unique() -> mass_feature_order
-# set order of mass_features
-dat_enrich3$mass_feature <- factor(dat_enrich3$mass_feature, levels = mass_feature_order)
+## Test for outliers among core metabolites ------
+core_outlier_tests <- list()
+for (i in 1:length(unique(dat_enrich3$mass_feature))){
+    # test if any of the core_metab values are outliers for the fold change
+    core_outlier_tests[[i]] <- dat_enrich3 %>%
+        filter(mass_feature == unique(dat_enrich3$mass_feature)[i]) %>%
+        # Calculate the grubb's test for outliers
+        mutate(outlier_hNH4 =
+                   ifelse(
+                       abs(enrich_hNH4_fc - mean(enrich_hNH4_fc)) > 2*sd(enrich_hNH4_fc),
+                       TRUE, FALSE),
+               outlier_h =
+                   ifelse(
+                       abs(enrich_h_fc - mean(enrich_h_fc)) > 2*sd(enrich_h_fc),
+                       TRUE, FALSE)
+        )
 
-dat_enrich_summary <- dat_enrich3 %>%
-    group_by(mass_feature, sample_fraction, treatment) %>%
-    summarise(median_enrichment = median(enrichment, na.rm = T),
-              mean_enrichment = mean(enrichment, na.rm = T),
-              sd_enrichment = sd(enrichment, na.rm = T),
-              n = sum(!is.na(enrichment))) %>%
+}
+core_outlier_tests <- bind_rows(core_outlier_tests)
+core_outliers <- core_outlier_tests %>%
+    group_by(core_metab) %>%
+    summarise(outlier_f_hNH4 = sum(outlier_hNH4, na.rm = T)/n(),
+              outlier_f_h = sum(outlier_h,  na.rm = T)/n()) %>%
     ungroup()
+# pull core metabs in which less than 10% of the values are outliers
+core_metabs_quality <- core_outliers %>%
+    filter(outlier_f_hNH4 < 0.1 & outlier_f_h < 0.1) %>%
+    filter(!is.na(core_metab)) %>%
+    pull(core_metab)
 
-# Plot boxplots of enrichment ------
-g <- ggplot(
-    dat_enrich_summary %>%
-        filter(sample_fraction == "Particulate") %>%
-        filter(!(mass_feature %>% str_detect("HILIC"))),
-    aes(
-        x = mass_feature,
-        y = log2(median_enrichment),
-        color = treatment,
-        )) +
-    geom_segment(
-        aes( y = log2(median_enrichment- sd_enrichment),
-            yend = log2(median_enrichment + sd_enrichment))
-    ) +
-    geom_point(size = 1) +
-    coord_flip() +
-    theme_minimal() +
-    theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-    labs(y = "Median enrichment compared to control (log2)", x = "Mass feature")
-g
-
-c2 <geom_point()c2 <- ggplot(data = dat3cul, aes(factor(Identification), intracell_conc_umolCL/1000)) +
-    geom_boxplot(outlier.size = 0.3, lwd = 0.3) +
-    scale_y_log10(breaks = c(0.00001,  0.001,  0.1, 10, 1000), labels = function(x) sprintf("%g", x))+
-    coord_flip() +
-    theme(axis.title.y=element_blank(),
-          axis.text.y = element_blank(),
-          axis.text.x = element_text (size = 5),
-          axis.title.x= element_text (size = 6, margin = margin(t = 5, r = 0, b = 0, l = 0)),
-          panel.grid.major.y = element_line(colour="lightgrey", size = rel(0.2)),
-          plot.margin = unit(c(0,0,0,0), "mm"))+
-    labs(y = "mmol C / L \nintracellcular concentrations")
+## Remove core metabolites with high outlier rates ------
+dat_enrich4 <- dat_enrich3 %>%
+    filter(core_metab %in% core_metabs_quality)
+write_csv(dat_enrich4, here(output_loc, "enrichment_results_data_particulate.csv"))
