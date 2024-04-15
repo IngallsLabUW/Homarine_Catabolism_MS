@@ -9,11 +9,11 @@ source("R_functions/google_drive_functions.R")
 
 
 # Functions to help get the folder ID needed for the drive_download_daughters_function
-dir <- drive_find(
-    pattern = "EPIC",
-    type = "folder",
-    shared_drive = "Ingalls Lab"
-)
+#dir <- drive_find(
+#    pattern = "EPIC",
+#    type = "folder",
+#    shared_drive = "Ingalls Lab"
+#)
 # query = paste('"', dir$id, '"',  ' in parents', sep='')
 # files = drive_ls(q=query, shared_drive = "Ingalls Lab", recursive = TRUE)
 
@@ -44,47 +44,12 @@ gfolder <- "1dENq4VdLRXw-FNZO0bI1M-xScOTLpKeS"
 drive_download_daughters(gfolder, export_folder)
 
 
-# ### particulate RP mzml-----
-# export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "mzml", "RP_positive_mzml")
-# dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
-# gfolder <- "1-DUbiFRF7rD7XVO2ST6duSO7NuLMGkdR"
-# drive_download_daughters(gfolder, export_folder, refresh_mzml)
-
 # skyline and associated files ------
 ## particulate and dissolved skyline and associated  files-----
 export_folder <- here("data", "raw", "metabolomics", "rpom", "skyline")
 dir.create(export_folder, showWarnings = FALSE)
 gfolder <- "1engPa64gpbKFOhTYUNpTwPTZlknVFbZP"
 drive_download_daughters(gfolder, export_folder)
-
-# ## msdial and associated files ------
-# ### dissolved HILIC Neg -----
-# export_folder <- here("data", "raw", "metabolomics", "obi1", "dissolved", "msdial", "HILIC_negative")
-# dir.create(export_folder, showWarnings = FALSE)
-# gfolder <- "1ZNoFGayGlipvys00VtF9uE74bXH4SHyJ"
-# drive_download_daughters(gfolder, export_folder)
-#
-# ### dissolved HILIC Pos -----
-# export_folder <- here("data", "raw", "metabolomics", "obi1", "dissolved", "msdial", "HILIC_positive")
-# dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
-# gfolder <- "1O4VYXDmKtVpy90qeTktv8wV1DO2WeGdG"
-# drive_download_daughters(gfolder, export_folder)
-#
-# ### particulate HILIC Neg -----
-# export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "msdial", "HILIC_negative")
-# dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
-# gfolder <- "1rg16L01jW2FHSGzd6_PHNB_kzgpFZ58J"
-# drive_download_daughters(gfolder, export_folder)
-# ### particulate HILIC Pos -----
-# export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "msdial", "HILIC_positive")
-# dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
-# gfolder <- "1rKMrjGk_5KBoip1hDViwcKPJ5vaMbSDt"
-# drive_download_daughters(gfolder, export_folder)
-# ### particulate RP -----
-# export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "msdial", "RP_positive")
-# dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
-# gfolder <- "1nJzw3bUZ1XNuKvNK89wyKPPn-ezzpRfA"
-# drive_download_daughters(gfolder, export_folder)
 
 ## internal standards and sample keys -----
 ## clean up the internal standards -----

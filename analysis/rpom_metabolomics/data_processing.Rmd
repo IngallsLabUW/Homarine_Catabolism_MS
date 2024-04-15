@@ -1,0 +1,21 @@
+---
+title: "Rpom Metabolomics Data analysis"
+author: "Katherine Heal"
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+library(here)
+print(here())
+```
+
+# TARGETED DATA PROCESSING
+## QC of targeted data
+Uses `QE_QC` function from here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R")
+Sources the raw Skyline files from here("data", "raw", "metabolomics", "obi1")
+Writes out QC outputs into here("data", "intermediate", "metabolomics", "obi1", "targeted")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+# QC on all HILIC pos, HILIC neg, particulate and dissolved
+source(here("analysis", "obi1_metabolomics", "0101_targeted_QC.R"))
+remove(list = ls())
+```
