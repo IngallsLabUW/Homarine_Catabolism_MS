@@ -16,6 +16,17 @@ Sources the raw Skyline files from here("data", "raw", "metabolomics", "rpom")
 Writes out QC outputs into here("data", "intermediate", "metabolomics", "rpom", "targeted")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 # QC on all HILIC pos, HILIC neg, particulate and dissolved
-source(here("analysis", "obi1_metabolomics", "0101_targeted_QC.R"))
+source(here("analysis", "rpom_metabolomics", "0101_targeted_QC.R"))
+remove(list = ls())
+```
+
+
+## BMIS untargeted data
+Perform BMIS normalization on HILIC particulate and dissolved samples
+Uses `BMIS` function from here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R")
+Sources the dereplicated data from here("data", "intermediate", "metabolomics", "rpom", "targeted")
+Writes out the BMISd data into here("data", "intermediate", "metabolomics", "rpom", "targeted")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "rpom_metabolomics", "0102_targeted_BMIS.R"))
 remove(list = ls())
 ```
