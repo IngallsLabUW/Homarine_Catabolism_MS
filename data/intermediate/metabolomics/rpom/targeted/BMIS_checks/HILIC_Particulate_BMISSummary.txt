@@ -1,1 +1,1 @@
-62.2 % of MFs  picked a BMIS. RSD improvement cutoff = 0.2.  RSD minimum cutoff = 0.1
+57.4 % of MFs  picked a BMIS. RSD improvement cutoff = 0.2.  RSD minimum cutoff = 0.1

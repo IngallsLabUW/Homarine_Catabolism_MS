@@ -28,7 +28,7 @@ QE_QC(
   ppm_flex = 6,
   area_min = 40000,
   rt_flex = 2.5,
-  blank_ratio_max = 3,
+  blank_ratio_max = 2,
   fileout = here(
     save_dir,
     "QCd_HILIC_Neg.csv"
@@ -47,7 +47,7 @@ QE_QC(
   ppm_flex = 6,
   area_min = 40000,
   rt_flex = 2.5,
-  blank_ratio_max = 3,
+  blank_ratio_max = 2,
   fileout = here(
     save_dir,
     "QCd_HILIC_Pos.csv"

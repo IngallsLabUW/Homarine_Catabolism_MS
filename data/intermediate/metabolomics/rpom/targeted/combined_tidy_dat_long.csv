@@ -1,0 +1,352 @@
+mass_feature,replicate_name,adjusted_area,sample_fraction,z,treatment,retention_time,mz
+Adenine,240304_Smp_WT_Gluc_A,268398144,Particulate,1,Glucose,5.21125,136.06232
+Adenine,240304_Smp_WT_Gluc_B,331428288,Particulate,1,Glucose,5.21125,136.06232
+Adenine,240304_Smp_WT_Gluc_C,348708256,Particulate,1,Glucose,5.21125,136.06232
+Adenine,240304_Smp_WT_Hom_A,252513392,Particulate,1,Homarine,5.21125,136.06232
+Adenine,240304_Smp_WT_Hom_B,316708608,Particulate,1,Homarine,5.21125,136.06232
+Adenine,240304_Smp_WT_Hom_C,399876192,Particulate,1,Homarine,5.21125,136.06232
+Adenine,240304_Smp_WT_Mix_A,371462944,Particulate,1,Glucose and homarine,5.21125,136.06232
+Adenine,240304_Smp_WT_Mix_B,264919872,Particulate,1,Glucose and homarine,5.21125,136.06232
+Adenine,240304_Smp_WT_Mix_C,274700544,Particulate,1,Glucose and homarine,5.21125,136.06232
+Adenosine,240304_Smp_WT_Gluc_A,405240288,Particulate,1,Glucose,5.018817204301075,268.10458
+Adenosine,240304_Smp_WT_Gluc_B,1726118016,Particulate,1,Glucose,5.018817204301075,268.10458
+Adenosine,240304_Smp_WT_Gluc_C,1082590464,Particulate,1,Glucose,5.018817204301075,268.10458
+Adenosine,240304_Smp_WT_Hom_A,2047241856,Particulate,1,Homarine,5.018817204301075,268.10458
+Adenosine,240304_Smp_WT_Hom_B,3062314752,Particulate,1,Homarine,5.018817204301075,268.10458
+Adenosine,240304_Smp_WT_Hom_C,3952735488,Particulate,1,Homarine,5.018817204301075,268.10458
+Adenosine,240304_Smp_WT_Mix_A,1123663360,Particulate,1,Glucose and homarine,5.018817204301075,268.10458
+Adenosine,240304_Smp_WT_Mix_B,335708096,Particulate,1,Glucose and homarine,5.018817204301075,268.10458
+Adenosine,240304_Smp_WT_Mix_C,590821312,Particulate,1,Glucose and homarine,5.018817204301075,268.10458
+Adenosine monophosphate,240304_Smp_WT_Gluc_A,20090742,Particulate,-1,Glucose,NA,NA
+Adenosine monophosphate,240304_Smp_WT_Gluc_B,14239261,Particulate,-1,Glucose,NA,NA
+Adenosine monophosphate,240304_Smp_WT_Gluc_C,11471041,Particulate,-1,Glucose,NA,NA
+Adenosine monophosphate,240304_Smp_WT_Hom_A,2801874,Particulate,-1,Homarine,NA,NA
+Adenosine monophosphate,240304_Smp_WT_Hom_B,5700532,Particulate,-1,Homarine,NA,NA
+Adenosine monophosphate,240304_Smp_WT_Hom_C,7214492,Particulate,-1,Homarine,NA,NA
+Adenosine monophosphate,240304_Smp_WT_Mix_A,36323468,Particulate,-1,Glucose and homarine,NA,NA
+Adenosine monophosphate,240304_Smp_WT_Mix_B,18507058,Particulate,-1,Glucose and homarine,NA,NA
+Adenosine monophosphate,240304_Smp_WT_Mix_C,17599358,Particulate,-1,Glucose and homarine,NA,NA
+Citrulline,240304_Smp_WT_Gluc_A,NA,Particulate,1,Glucose,12.180340909090908,176.103517
+Citrulline,240304_Smp_WT_Gluc_B,16878774.157675993,Particulate,1,Glucose,12.180340909090908,176.103517
+Citrulline,240304_Smp_WT_Gluc_C,NA,Particulate,1,Glucose,12.180340909090908,176.103517
+Citrulline,240304_Smp_WT_Hom_A,14752308.52265526,Particulate,1,Homarine,12.180340909090908,176.103517
+Citrulline,240304_Smp_WT_Hom_B,18474021.72058666,Particulate,1,Homarine,12.180340909090908,176.103517
+Citrulline,240304_Smp_WT_Hom_C,19061836.60496808,Particulate,1,Homarine,12.180340909090908,176.103517
+Citrulline,240304_Smp_WT_Mix_A,8217069.858717619,Particulate,1,Glucose and homarine,12.180340909090908,176.103517
+Citrulline,240304_Smp_WT_Mix_B,16448019.098145172,Particulate,1,Glucose and homarine,12.180340909090908,176.103517
+Citrulline,240304_Smp_WT_Mix_C,14817970.02331401,Particulate,1,Glucose and homarine,12.180340909090908,176.103517
+Cytosine,240304_Smp_WT_Gluc_A,42035326.24940832,Particulate,1,Glucose,7.556818181818182,112.051087
+Cytosine,240304_Smp_WT_Gluc_B,27161777.661089875,Particulate,1,Glucose,7.556818181818182,112.051087
+Cytosine,240304_Smp_WT_Gluc_C,27988876.987314068,Particulate,1,Glucose,7.556818181818182,112.051087
+Cytosine,240304_Smp_WT_Hom_A,11973058.558555055,Particulate,1,Homarine,7.556818181818182,112.051087
+Cytosine,240304_Smp_WT_Hom_B,14281281.130139103,Particulate,1,Homarine,7.556818181818182,112.051087
+Cytosine,240304_Smp_WT_Hom_C,16327665.405712385,Particulate,1,Homarine,7.556818181818182,112.051087
+Cytosine,240304_Smp_WT_Mix_A,36543324.89419853,Particulate,1,Glucose and homarine,7.556818181818182,112.051087
+Cytosine,240304_Smp_WT_Mix_B,31171384.97286026,Particulate,1,Glucose and homarine,7.556818181818182,112.051087
+Cytosine,240304_Smp_WT_Mix_C,39360993.961116746,Particulate,1,Glucose and homarine,7.556818181818182,112.051087
+Deoxyadenosine,240304_Smp_WT_Gluc_A,8355317,Particulate,1,Glucose,3.751,252.109665
+Deoxyadenosine,240304_Smp_WT_Gluc_B,29855266,Particulate,1,Glucose,3.751,252.109665
+Deoxyadenosine,240304_Smp_WT_Gluc_C,19332334,Particulate,1,Glucose,3.751,252.109665
+Deoxyadenosine,240304_Smp_WT_Hom_A,18920866,Particulate,1,Homarine,3.751,252.109665
+Deoxyadenosine,240304_Smp_WT_Hom_B,42082012,Particulate,1,Homarine,3.751,252.109665
+Deoxyadenosine,240304_Smp_WT_Hom_C,49193192,Particulate,1,Homarine,3.751,252.109665
+Deoxyadenosine,240304_Smp_WT_Mix_A,21511496,Particulate,1,Glucose and homarine,3.751,252.109665
+Deoxyadenosine,240304_Smp_WT_Mix_B,7318782,Particulate,1,Glucose and homarine,3.751,252.109665
+Deoxyadenosine,240304_Smp_WT_Mix_C,15172290,Particulate,1,Glucose and homarine,3.751,252.109665
+Glutathione disulfide,240304_Smp_WT_Gluc_A,61916104,Particulate,1,Glucose,14.090526315789472,613.159793
+Glutathione disulfide,240304_Smp_WT_Gluc_B,27843994,Particulate,1,Glucose,14.090526315789472,613.159793
+Glutathione disulfide,240304_Smp_WT_Gluc_C,34688796,Particulate,1,Glucose,14.090526315789472,613.159793
+Glutathione disulfide,240304_Smp_WT_Hom_A,12343380,Particulate,1,Homarine,14.090526315789472,613.159793
+Glutathione disulfide,240304_Smp_WT_Hom_B,11552900,Particulate,1,Homarine,14.090526315789472,613.159793
+Glutathione disulfide,240304_Smp_WT_Hom_C,13298436,Particulate,1,Homarine,14.090526315789472,613.159793
+Glutathione disulfide,240304_Smp_WT_Mix_A,13952863,Particulate,1,Glucose and homarine,14.090526315789472,613.159793
+Glutathione disulfide,240304_Smp_WT_Mix_B,NA,Particulate,1,Glucose and homarine,14.090526315789472,613.159793
+Glutathione disulfide,240304_Smp_WT_Mix_C,17898136,Particulate,1,Glucose and homarine,14.090526315789472,613.159793
+Guanosine,240304_Smp_WT_Gluc_A,3727388,Particulate,1,Glucose,9.522923076923076,284.099495
+Guanosine,240304_Smp_WT_Gluc_B,14662301,Particulate,1,Glucose,9.522923076923076,284.099495
+Guanosine,240304_Smp_WT_Gluc_C,10010976,Particulate,1,Glucose,9.522923076923076,284.099495
+Guanosine,240304_Smp_WT_Hom_A,12715829,Particulate,1,Homarine,9.522923076923076,284.099495
+Guanosine,240304_Smp_WT_Hom_B,24977812,Particulate,1,Homarine,9.522923076923076,284.099495
+Guanosine,240304_Smp_WT_Hom_C,32561568,Particulate,1,Homarine,9.522923076923076,284.099495
+Guanosine,240304_Smp_WT_Mix_A,8229156,Particulate,1,Glucose and homarine,9.522923076923076,284.099495
+Guanosine,240304_Smp_WT_Mix_B,1717073,Particulate,1,Glucose and homarine,9.522923076923076,284.099495
+Guanosine,240304_Smp_WT_Mix_C,2764537,Particulate,1,Glucose and homarine,9.522923076923076,284.099495
+L-Arginine,240304_Smp_WT_Gluc_A,400928552.6281133,Particulate,1,Glucose,20.551704545454545,175.119501
+L-Arginine,240304_Smp_WT_Gluc_B,394876177.50675446,Particulate,1,Glucose,20.551704545454545,175.119501
+L-Arginine,240304_Smp_WT_Gluc_C,399140950.2817123,Particulate,1,Glucose,20.551704545454545,175.119501
+L-Arginine,240304_Smp_WT_Hom_A,34200828.869831614,Particulate,1,Homarine,20.551704545454545,175.119501
+L-Arginine,240304_Smp_WT_Hom_B,77014177.34496465,Particulate,1,Homarine,20.551704545454545,175.119501
+L-Arginine,240304_Smp_WT_Hom_C,50302266.18824117,Particulate,1,Homarine,20.551704545454545,175.119501
+L-Arginine,240304_Smp_WT_Mix_A,263804548.39271075,Particulate,1,Glucose and homarine,20.551704545454545,175.119501
+L-Arginine,240304_Smp_WT_Mix_B,184536313.35673425,Particulate,1,Glucose and homarine,20.551704545454545,175.119501
+L-Arginine,240304_Smp_WT_Mix_C,239464942.18987983,Particulate,1,Glucose and homarine,20.551704545454545,175.119501
+L-Cysteic acid,240304_Smp_WT_Gluc_A,1131705.524143994,Particulate,-1,Glucose,NA,NA
+L-Cysteic acid,240304_Smp_WT_Gluc_B,1371088.7404849117,Particulate,-1,Glucose,NA,NA
+L-Cysteic acid,240304_Smp_WT_Gluc_C,1382786.1494302154,Particulate,-1,Glucose,NA,NA
+L-Cysteic acid,240304_Smp_WT_Hom_A,7810925.328974666,Particulate,-1,Homarine,NA,NA
+L-Cysteic acid,240304_Smp_WT_Hom_B,10520689.731484398,Particulate,-1,Homarine,NA,NA
+L-Cysteic acid,240304_Smp_WT_Hom_C,7164223.785134096,Particulate,-1,Homarine,NA,NA
+L-Cysteic acid,240304_Smp_WT_Mix_A,799173.6866874871,Particulate,-1,Glucose and homarine,NA,NA
+L-Cysteic acid,240304_Smp_WT_Mix_B,370870.9839723693,Particulate,-1,Glucose and homarine,NA,NA
+L-Cysteic acid,240304_Smp_WT_Mix_C,576731.9643619533,Particulate,-1,Glucose and homarine,NA,NA
+L-Glutamic acid,240304_Smp_WT_Gluc_A,16335013103.73699,Particulate,1,Glucose,11.61590909090909,148.060984
+L-Glutamic acid,240304_Smp_WT_Gluc_B,13511970270.289598,Particulate,1,Glucose,11.61590909090909,148.060984
+L-Glutamic acid,240304_Smp_WT_Gluc_C,15735102773.831274,Particulate,1,Glucose,11.61590909090909,148.060984
+L-Glutamic acid,240304_Smp_WT_Hom_A,5134044127.120537,Particulate,1,Homarine,11.61590909090909,148.060984
+L-Glutamic acid,240304_Smp_WT_Hom_B,7615908649.528803,Particulate,1,Homarine,11.61590909090909,148.060984
+L-Glutamic acid,240304_Smp_WT_Hom_C,7682866121.053586,Particulate,1,Homarine,11.61590909090909,148.060984
+L-Glutamic acid,240304_Smp_WT_Mix_A,14539633204.01555,Particulate,1,Glucose and homarine,11.61590909090909,148.060984
+L-Glutamic acid,240304_Smp_WT_Mix_B,11659488993.513147,Particulate,1,Glucose and homarine,11.61590909090909,148.060984
+L-Glutamic acid,240304_Smp_WT_Mix_C,14181992436.525192,Particulate,1,Glucose and homarine,11.61590909090909,148.060984
+L-Homoserine,240304_Smp_WT_Gluc_A,4401614,Particulate,1,Glucose,11.212197802197805,120.066069
+L-Homoserine,240304_Smp_WT_Gluc_B,NA,Particulate,1,Glucose,11.212197802197805,120.066069
+L-Homoserine,240304_Smp_WT_Gluc_C,NA,Particulate,1,Glucose,11.212197802197805,120.066069
+L-Homoserine,240304_Smp_WT_Hom_A,NA,Particulate,1,Homarine,11.212197802197805,120.066069
+L-Homoserine,240304_Smp_WT_Hom_B,3859286,Particulate,1,Homarine,11.212197802197805,120.066069
+L-Homoserine,240304_Smp_WT_Hom_C,5098823,Particulate,1,Homarine,11.212197802197805,120.066069
+L-Homoserine,240304_Smp_WT_Mix_A,6067948,Particulate,1,Glucose and homarine,11.212197802197805,120.066069
+L-Homoserine,240304_Smp_WT_Mix_B,6048667,Particulate,1,Glucose and homarine,11.212197802197805,120.066069
+L-Homoserine,240304_Smp_WT_Mix_C,4724139,Particulate,1,Glucose and homarine,11.212197802197805,120.066069
+L-Lysine,240304_Smp_WT_Gluc_A,48061320.67356071,Particulate,1,Glucose,19.61,147.113353
+L-Lysine,240304_Smp_WT_Gluc_B,39055583.47941644,Particulate,1,Glucose,19.61,147.113353
+L-Lysine,240304_Smp_WT_Gluc_C,31155554.408299457,Particulate,1,Glucose,19.61,147.113353
+L-Lysine,240304_Smp_WT_Hom_A,2637391.6336665987,Particulate,1,Homarine,19.61,147.113353
+L-Lysine,240304_Smp_WT_Hom_B,7243342.517599266,Particulate,1,Homarine,19.61,147.113353
+L-Lysine,240304_Smp_WT_Hom_C,3682881.236219349,Particulate,1,Homarine,19.61,147.113353
+L-Lysine,240304_Smp_WT_Mix_A,24230717.78766854,Particulate,1,Glucose and homarine,19.61,147.113353
+L-Lysine,240304_Smp_WT_Mix_B,20278417.99001114,Particulate,1,Glucose and homarine,19.61,147.113353
+L-Lysine,240304_Smp_WT_Mix_C,25843261.129678413,Particulate,1,Glucose and homarine,19.61,147.113353
+L-Phenylalanine,240304_Smp_WT_Gluc_A,71119628.95597236,Particulate,1,Glucose,5.370533333333333,NA
+L-Phenylalanine,240304_Smp_WT_Gluc_B,136872424.1321154,Particulate,1,Glucose,5.370533333333333,NA
+L-Phenylalanine,240304_Smp_WT_Gluc_C,165253677.6617225,Particulate,1,Glucose,5.370533333333333,NA
+L-Phenylalanine,240304_Smp_WT_Hom_A,65256448.7631224,Particulate,1,Homarine,5.370533333333333,NA
+L-Phenylalanine,240304_Smp_WT_Hom_B,177650794.82994786,Particulate,1,Homarine,5.370533333333333,NA
+L-Phenylalanine,240304_Smp_WT_Hom_C,123798367.32158992,Particulate,1,Homarine,5.370533333333333,NA
+L-Phenylalanine,240304_Smp_WT_Mix_A,219501265.90115315,Particulate,1,Glucose and homarine,5.370533333333333,NA
+L-Phenylalanine,240304_Smp_WT_Mix_B,232803162.94282,Particulate,1,Glucose and homarine,5.370533333333333,NA
+L-Phenylalanine,240304_Smp_WT_Mix_C,381568550.1062452,Particulate,1,Glucose and homarine,5.370533333333333,NA
+L-Proline,240304_Smp_WT_Gluc_A,178917792,Particulate,1,Glucose,9.46625,116.071154
+L-Proline,240304_Smp_WT_Gluc_B,149035216,Particulate,1,Glucose,9.46625,116.071154
+L-Proline,240304_Smp_WT_Gluc_C,178752144,Particulate,1,Glucose,9.46625,116.071154
+L-Proline,240304_Smp_WT_Hom_A,27283098,Particulate,1,Homarine,9.46625,116.071154
+L-Proline,240304_Smp_WT_Hom_B,89747168,Particulate,1,Homarine,9.46625,116.071154
+L-Proline,240304_Smp_WT_Hom_C,71818504,Particulate,1,Homarine,9.46625,116.071154
+L-Proline,240304_Smp_WT_Mix_A,331793568,Particulate,1,Glucose and homarine,9.46625,116.071154
+L-Proline,240304_Smp_WT_Mix_B,279292416,Particulate,1,Glucose and homarine,9.46625,116.071154
+L-Proline,240304_Smp_WT_Mix_C,303104448,Particulate,1,Glucose and homarine,9.46625,116.071154
+L-Serine,240304_Smp_WT_Gluc_A,18690480.81337063,Particulate,1,Glucose,11.546136363636364,106.050419
+L-Serine,240304_Smp_WT_Gluc_B,18666458.39956294,Particulate,1,Glucose,11.546136363636364,106.050419
+L-Serine,240304_Smp_WT_Gluc_C,12426889.08531454,Particulate,1,Glucose,11.546136363636364,106.050419
+L-Serine,240304_Smp_WT_Hom_A,21272177.427107394,Particulate,1,Homarine,11.546136363636364,106.050419
+L-Serine,240304_Smp_WT_Hom_B,28591489.609022994,Particulate,1,Homarine,11.546136363636364,106.050419
+L-Serine,240304_Smp_WT_Hom_C,27476614.45048603,Particulate,1,Homarine,11.546136363636364,106.050419
+L-Serine,240304_Smp_WT_Mix_A,20085320.544300064,Particulate,1,Glucose and homarine,11.546136363636364,106.050419
+L-Serine,240304_Smp_WT_Mix_B,11598147.544905812,Particulate,1,Glucose and homarine,11.546136363636364,106.050419
+L-Serine,240304_Smp_WT_Mix_C,9167286.120760716,Particulate,1,Glucose and homarine,11.546136363636364,106.050419
+L-Tryptophan,240304_Smp_WT_Gluc_A,7062583.203853015,Particulate,1,Glucose,8.05913043478261,NA
+L-Tryptophan,240304_Smp_WT_Gluc_B,14011073.54612236,Particulate,1,Glucose,8.05913043478261,NA
+L-Tryptophan,240304_Smp_WT_Gluc_C,13843862.032921376,Particulate,1,Glucose,8.05913043478261,NA
+L-Tryptophan,240304_Smp_WT_Hom_A,2537768.0345535967,Particulate,1,Homarine,8.05913043478261,NA
+L-Tryptophan,240304_Smp_WT_Hom_B,9652940.286260637,Particulate,1,Homarine,8.05913043478261,NA
+L-Tryptophan,240304_Smp_WT_Hom_C,5842547.25948018,Particulate,1,Homarine,8.05913043478261,NA
+L-Tryptophan,240304_Smp_WT_Mix_A,15105296.35157753,Particulate,1,Glucose and homarine,8.05913043478261,NA
+L-Tryptophan,240304_Smp_WT_Mix_B,9215261.282271558,Particulate,1,Glucose and homarine,8.05913043478261,NA
+L-Tryptophan,240304_Smp_WT_Mix_C,13886294.282648174,Particulate,1,Glucose and homarine,8.05913043478261,NA
+L-Tyrosine,240304_Smp_WT_Gluc_A,12772316,Particulate,1,Glucose,9.104941176470588,182.081719
+L-Tyrosine,240304_Smp_WT_Gluc_B,27962848,Particulate,1,Glucose,9.104941176470588,182.081719
+L-Tyrosine,240304_Smp_WT_Gluc_C,35907244,Particulate,1,Glucose,9.104941176470588,182.081719
+L-Tyrosine,240304_Smp_WT_Hom_A,2826169,Particulate,1,Homarine,9.104941176470588,182.081719
+L-Tyrosine,240304_Smp_WT_Hom_B,9091571,Particulate,1,Homarine,9.104941176470588,182.081719
+L-Tyrosine,240304_Smp_WT_Hom_C,6320690,Particulate,1,Homarine,9.104941176470588,182.081719
+L-Tyrosine,240304_Smp_WT_Mix_A,30667754,Particulate,1,Glucose and homarine,9.104941176470588,182.081719
+L-Tyrosine,240304_Smp_WT_Mix_B,29108094,Particulate,1,Glucose and homarine,9.104941176470588,182.081719
+L-Tyrosine,240304_Smp_WT_Mix_C,32470154,Particulate,1,Glucose and homarine,9.104941176470588,182.081719
+N-Methyl-L-glutamic acid,240304_Smp_WT_Gluc_A,7207761.134537759,Particulate,1,Glucose,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240304_Smp_WT_Gluc_B,10297272.468904978,Particulate,1,Glucose,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240304_Smp_WT_Gluc_C,7253999.220426752,Particulate,1,Glucose,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240304_Smp_WT_Hom_A,2266989911.593236,Particulate,1,Homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240304_Smp_WT_Hom_B,827557520.2249491,Particulate,1,Homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240304_Smp_WT_Hom_C,938084940.912204,Particulate,1,Homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240304_Smp_WT_Mix_A,61711036.798029646,Particulate,1,Glucose and homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240304_Smp_WT_Mix_B,39574800.368202254,Particulate,1,Glucose and homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240304_Smp_WT_Mix_C,28719822.41386492,Particulate,1,Glucose and homarine,9.8590625,162.076634
+UDP-N-acetylglucosamine,240304_Smp_WT_Gluc_A,592217.7783098231,Particulate,-1,Glucose,NA,NA
+UDP-N-acetylglucosamine,240304_Smp_WT_Gluc_B,NA,Particulate,-1,Glucose,NA,NA
+UDP-N-acetylglucosamine,240304_Smp_WT_Gluc_C,NA,Particulate,-1,Glucose,NA,NA
+UDP-N-acetylglucosamine,240304_Smp_WT_Hom_A,282794.01540625346,Particulate,-1,Homarine,NA,NA
+UDP-N-acetylglucosamine,240304_Smp_WT_Hom_B,60974.762119312865,Particulate,-1,Homarine,NA,NA
+UDP-N-acetylglucosamine,240304_Smp_WT_Hom_C,264545.0196504919,Particulate,-1,Homarine,NA,NA
+UDP-N-acetylglucosamine,240304_Smp_WT_Mix_A,833954.7916970555,Particulate,-1,Glucose and homarine,NA,NA
+UDP-N-acetylglucosamine,240304_Smp_WT_Mix_B,538944.2406105516,Particulate,-1,Glucose and homarine,NA,NA
+UDP-N-acetylglucosamine,240304_Smp_WT_Mix_C,NA,Particulate,-1,Glucose and homarine,NA,NA
+n-methyl glutamine,240304_Smp_WT_Gluc_A,45535897.89695957,Particulate,1,Glucose,9.330689655172414,NA
+n-methyl glutamine,240304_Smp_WT_Gluc_B,42935012.94959641,Particulate,1,Glucose,9.330689655172414,NA
+n-methyl glutamine,240304_Smp_WT_Gluc_C,41666731.65208709,Particulate,1,Glucose,9.330689655172414,NA
+n-methyl glutamine,240304_Smp_WT_Hom_A,12965771763.14661,Particulate,1,Homarine,9.330689655172414,NA
+n-methyl glutamine,240304_Smp_WT_Hom_B,9000238211.705801,Particulate,1,Homarine,9.330689655172414,NA
+n-methyl glutamine,240304_Smp_WT_Hom_C,11636671059.974651,Particulate,1,Homarine,9.330689655172414,NA
+n-methyl glutamine,240304_Smp_WT_Mix_A,19115524.32237398,Particulate,1,Glucose and homarine,9.330689655172414,NA
+n-methyl glutamine,240304_Smp_WT_Mix_B,13093566.202310031,Particulate,1,Glucose and homarine,9.330689655172414,NA
+n-methyl glutamine,240304_Smp_WT_Mix_C,3913205.109958442,Particulate,1,Glucose and homarine,9.330689655172414,NA
+unknown_C6H9NO3_2_neg,240304_Smp_WT_Gluc_A,NA,Particulate,-1,Glucose,NA,NA
+unknown_C6H9NO3_2_neg,240304_Smp_WT_Gluc_B,NA,Particulate,-1,Glucose,NA,NA
+unknown_C6H9NO3_2_neg,240304_Smp_WT_Gluc_C,NA,Particulate,-1,Glucose,NA,NA
+unknown_C6H9NO3_2_neg,240304_Smp_WT_Hom_A,46684040,Particulate,-1,Homarine,NA,NA
+unknown_C6H9NO3_2_neg,240304_Smp_WT_Hom_B,78728584,Particulate,-1,Homarine,NA,NA
+unknown_C6H9NO3_2_neg,240304_Smp_WT_Hom_C,73454040,Particulate,-1,Homarine,NA,NA
+unknown_C6H9NO3_2_neg,240304_Smp_WT_Mix_A,123434368,Particulate,-1,Glucose and homarine,NA,NA
+unknown_C6H9NO3_2_neg,240304_Smp_WT_Mix_B,117657768,Particulate,-1,Glucose and homarine,NA,NA
+unknown_C6H9NO3_2_neg,240304_Smp_WT_Mix_C,137508528,Particulate,-1,Glucose and homarine,NA,NA
+unknown_C6H9NO3_3_neg,240304_Smp_WT_Gluc_A,NA,Particulate,-1,Glucose,NA,NA
+unknown_C6H9NO3_3_neg,240304_Smp_WT_Gluc_B,NA,Particulate,-1,Glucose,NA,NA
+unknown_C6H9NO3_3_neg,240304_Smp_WT_Gluc_C,NA,Particulate,-1,Glucose,NA,NA
+unknown_C6H9NO3_3_neg,240304_Smp_WT_Hom_A,10189437,Particulate,-1,Homarine,NA,NA
+unknown_C6H9NO3_3_neg,240304_Smp_WT_Hom_B,18731394,Particulate,-1,Homarine,NA,NA
+unknown_C6H9NO3_3_neg,240304_Smp_WT_Hom_C,15125035,Particulate,-1,Homarine,NA,NA
+unknown_C6H9NO3_3_neg,240304_Smp_WT_Mix_A,31937100,Particulate,-1,Glucose and homarine,NA,NA
+unknown_C6H9NO3_3_neg,240304_Smp_WT_Mix_B,28957830,Particulate,-1,Glucose and homarine,NA,NA
+unknown_C6H9NO3_3_neg,240304_Smp_WT_Mix_C,32326562,Particulate,-1,Glucose and homarine,NA,NA
+unknown_C6H9NO4_neg,240304_Smp_WT_Gluc_A,NA,Particulate,-1,Glucose,NA,NA
+unknown_C6H9NO4_neg,240304_Smp_WT_Gluc_B,NA,Particulate,-1,Glucose,NA,NA
+unknown_C6H9NO4_neg,240304_Smp_WT_Gluc_C,NA,Particulate,-1,Glucose,NA,NA
+unknown_C6H9NO4_neg,240304_Smp_WT_Hom_A,50190140,Particulate,-1,Homarine,NA,NA
+unknown_C6H9NO4_neg,240304_Smp_WT_Hom_B,67352856,Particulate,-1,Homarine,NA,NA
+unknown_C6H9NO4_neg,240304_Smp_WT_Hom_C,70612288,Particulate,-1,Homarine,NA,NA
+unknown_C6H9NO4_neg,240304_Smp_WT_Mix_A,184623648,Particulate,-1,Glucose and homarine,NA,NA
+unknown_C6H9NO4_neg,240304_Smp_WT_Mix_B,174661728,Particulate,-1,Glucose and homarine,NA,NA
+unknown_C6H9NO4_neg,240304_Smp_WT_Mix_C,186651680,Particulate,-1,Glucose and homarine,NA,NA
+unknown_C6H9NO4_pos,240304_Smp_WT_Gluc_A,NA,Particulate,1,Glucose,12.011129032258063,NA
+unknown_C6H9NO4_pos,240304_Smp_WT_Gluc_B,NA,Particulate,1,Glucose,12.011129032258063,NA
+unknown_C6H9NO4_pos,240304_Smp_WT_Gluc_C,NA,Particulate,1,Glucose,12.011129032258063,NA
+unknown_C6H9NO4_pos,240304_Smp_WT_Hom_A,7166969,Particulate,1,Homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240304_Smp_WT_Hom_B,9956505,Particulate,1,Homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240304_Smp_WT_Hom_C,10045141,Particulate,1,Homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240304_Smp_WT_Mix_A,22635430,Particulate,1,Glucose and homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240304_Smp_WT_Mix_B,18437732,Particulate,1,Glucose and homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240304_Smp_WT_Mix_C,17755928,Particulate,1,Glucose and homarine,12.011129032258063,NA
+unknown_C7H9NO5_pos,240304_Smp_WT_Gluc_A,304455,Particulate,1,Glucose,12.039090909090907,NA
+unknown_C7H9NO5_pos,240304_Smp_WT_Gluc_B,424479,Particulate,1,Glucose,12.039090909090907,NA
+unknown_C7H9NO5_pos,240304_Smp_WT_Gluc_C,1118400,Particulate,1,Glucose,12.039090909090907,NA
+unknown_C7H9NO5_pos,240304_Smp_WT_Hom_A,12770341,Particulate,1,Homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240304_Smp_WT_Hom_B,18065004,Particulate,1,Homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240304_Smp_WT_Hom_C,18634704,Particulate,1,Homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240304_Smp_WT_Mix_A,37702220,Particulate,1,Glucose and homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240304_Smp_WT_Mix_B,32546556,Particulate,1,Glucose and homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240304_Smp_WT_Mix_C,33415964,Particulate,1,Glucose and homarine,12.039090909090907,NA
+Adenosine,240327_Smp_WT_Gluc_A,7570216,Dissolved,1,Glucose,5.018817204301075,268.10458
+Adenosine,240327_Smp_WT_Gluc_B,94138760,Dissolved,1,Glucose,5.018817204301075,268.10458
+Adenosine,240327_Smp_WT_Gluc_C,82437424,Dissolved,1,Glucose,5.018817204301075,268.10458
+Adenosine,240327_Smp_WT_Hom_A,13929835,Dissolved,1,Homarine,5.018817204301075,268.10458
+Adenosine,240327_Smp_WT_Hom_B,23697298,Dissolved,1,Homarine,5.018817204301075,268.10458
+Adenosine,240327_Smp_WT_Hom_C,32762456,Dissolved,1,Homarine,5.018817204301075,268.10458
+Adenosine,240327_Smp_WT_Mix_A,NA,Dissolved,1,Glucose and homarine,5.018817204301075,268.10458
+Adenosine,240327_Smp_WT_Mix_B,15491803,Dissolved,1,Glucose and homarine,5.018817204301075,268.10458
+Adenosine,240327_Smp_WT_Mix_C,11657274,Dissolved,1,Glucose and homarine,5.018817204301075,268.10458
+Homarine,240327_Smp_WT_Gluc_A,59361009664,Dissolved,1,Glucose,6.224352941176471,138.055503
+Homarine,240327_Smp_WT_Gluc_B,NA,Dissolved,1,Glucose,6.224352941176471,138.055503
+Homarine,240327_Smp_WT_Gluc_C,NA,Dissolved,1,Glucose,6.224352941176471,138.055503
+Homarine,240327_Smp_WT_Hom_A,100060110848,Dissolved,1,Homarine,6.224352941176471,138.055503
+Homarine,240327_Smp_WT_Hom_B,NA,Dissolved,1,Homarine,6.224352941176471,138.055503
+Homarine,240327_Smp_WT_Hom_C,NA,Dissolved,1,Homarine,6.224352941176471,138.055503
+Homarine,240327_Smp_WT_Mix_A,NA,Dissolved,1,Glucose and homarine,6.224352941176471,138.055503
+Homarine,240327_Smp_WT_Mix_B,NA,Dissolved,1,Glucose and homarine,6.224352941176471,138.055503
+Homarine,240327_Smp_WT_Mix_C,NA,Dissolved,1,Glucose and homarine,6.224352941176471,138.055503
+L-Cysteic acid,240327_Smp_WT_Gluc_A,NA,Dissolved,-1,Glucose,NA,NA
+L-Cysteic acid,240327_Smp_WT_Gluc_B,NA,Dissolved,-1,Glucose,NA,NA
+L-Cysteic acid,240327_Smp_WT_Gluc_C,545134,Dissolved,-1,Glucose,NA,NA
+L-Cysteic acid,240327_Smp_WT_Hom_A,1096812,Dissolved,-1,Homarine,NA,NA
+L-Cysteic acid,240327_Smp_WT_Hom_B,343950,Dissolved,-1,Homarine,NA,NA
+L-Cysteic acid,240327_Smp_WT_Hom_C,1257061,Dissolved,-1,Homarine,NA,NA
+L-Cysteic acid,240327_Smp_WT_Mix_A,1941900,Dissolved,-1,Glucose and homarine,NA,NA
+L-Cysteic acid,240327_Smp_WT_Mix_B,2918575,Dissolved,-1,Glucose and homarine,NA,NA
+L-Cysteic acid,240327_Smp_WT_Mix_C,3661297,Dissolved,-1,Glucose and homarine,NA,NA
+L-Glutamic acid,240327_Smp_WT_Gluc_A,1646820795.789288,Dissolved,1,Glucose,11.61590909090909,148.060984
+L-Glutamic acid,240327_Smp_WT_Gluc_B,948646575.347584,Dissolved,1,Glucose,11.61590909090909,148.060984
+L-Glutamic acid,240327_Smp_WT_Gluc_C,2051961625.0765665,Dissolved,1,Glucose,11.61590909090909,148.060984
+L-Glutamic acid,240327_Smp_WT_Hom_A,292038890.54730177,Dissolved,1,Homarine,11.61590909090909,148.060984
+L-Glutamic acid,240327_Smp_WT_Hom_B,353115859.201295,Dissolved,1,Homarine,11.61590909090909,148.060984
+L-Glutamic acid,240327_Smp_WT_Hom_C,291297956.6042436,Dissolved,1,Homarine,11.61590909090909,148.060984
+L-Glutamic acid,240327_Smp_WT_Mix_A,310974355.0795946,Dissolved,1,Glucose and homarine,11.61590909090909,148.060984
+L-Glutamic acid,240327_Smp_WT_Mix_B,232001025.2847827,Dissolved,1,Glucose and homarine,11.61590909090909,148.060984
+L-Glutamic acid,240327_Smp_WT_Mix_C,266000483.8583044,Dissolved,1,Glucose and homarine,11.61590909090909,148.060984
+L-Homoserine,240327_Smp_WT_Gluc_A,NA,Dissolved,1,Glucose,11.212197802197805,120.066069
+L-Homoserine,240327_Smp_WT_Gluc_B,4441234,Dissolved,1,Glucose,11.212197802197805,120.066069
+L-Homoserine,240327_Smp_WT_Gluc_C,NA,Dissolved,1,Glucose,11.212197802197805,120.066069
+L-Homoserine,240327_Smp_WT_Hom_A,NA,Dissolved,1,Homarine,11.212197802197805,120.066069
+L-Homoserine,240327_Smp_WT_Hom_B,4229038,Dissolved,1,Homarine,11.212197802197805,120.066069
+L-Homoserine,240327_Smp_WT_Hom_C,NA,Dissolved,1,Homarine,11.212197802197805,120.066069
+L-Homoserine,240327_Smp_WT_Mix_A,4729919,Dissolved,1,Glucose and homarine,11.212197802197805,120.066069
+L-Homoserine,240327_Smp_WT_Mix_B,NA,Dissolved,1,Glucose and homarine,11.212197802197805,120.066069
+L-Homoserine,240327_Smp_WT_Mix_C,NA,Dissolved,1,Glucose and homarine,11.212197802197805,120.066069
+L-Lysine,240327_Smp_WT_Gluc_A,NA,Dissolved,1,Glucose,19.61,147.113353
+L-Lysine,240327_Smp_WT_Gluc_B,456060.09425352706,Dissolved,1,Glucose,19.61,147.113353
+L-Lysine,240327_Smp_WT_Gluc_C,2698028.0049496153,Dissolved,1,Glucose,19.61,147.113353
+L-Lysine,240327_Smp_WT_Hom_A,739966.6049070334,Dissolved,1,Homarine,19.61,147.113353
+L-Lysine,240327_Smp_WT_Hom_B,NA,Dissolved,1,Homarine,19.61,147.113353
+L-Lysine,240327_Smp_WT_Hom_C,368569.0825467665,Dissolved,1,Homarine,19.61,147.113353
+L-Lysine,240327_Smp_WT_Mix_A,492758.75664232817,Dissolved,1,Glucose and homarine,19.61,147.113353
+L-Lysine,240327_Smp_WT_Mix_B,NA,Dissolved,1,Glucose and homarine,19.61,147.113353
+L-Lysine,240327_Smp_WT_Mix_C,NA,Dissolved,1,Glucose and homarine,19.61,147.113353
+L-Phenylalanine,240327_Smp_WT_Gluc_A,NA,Dissolved,1,Glucose,5.370533333333333,NA
+L-Phenylalanine,240327_Smp_WT_Gluc_B,15811751.276820851,Dissolved,1,Glucose,5.370533333333333,NA
+L-Phenylalanine,240327_Smp_WT_Gluc_C,13453414.38948588,Dissolved,1,Glucose,5.370533333333333,NA
+L-Phenylalanine,240327_Smp_WT_Hom_A,19839097.557686456,Dissolved,1,Homarine,5.370533333333333,NA
+L-Phenylalanine,240327_Smp_WT_Hom_B,17623392.915170565,Dissolved,1,Homarine,5.370533333333333,NA
+L-Phenylalanine,240327_Smp_WT_Hom_C,26927308.46607368,Dissolved,1,Homarine,5.370533333333333,NA
+L-Phenylalanine,240327_Smp_WT_Mix_A,20271795.69785716,Dissolved,1,Glucose and homarine,5.370533333333333,NA
+L-Phenylalanine,240327_Smp_WT_Mix_B,30372598.71848397,Dissolved,1,Glucose and homarine,5.370533333333333,NA
+L-Phenylalanine,240327_Smp_WT_Mix_C,27349219.08534999,Dissolved,1,Glucose and homarine,5.370533333333333,NA
+L-Serine,240327_Smp_WT_Gluc_A,NA,Dissolved,1,Glucose,11.546136363636364,106.050419
+L-Serine,240327_Smp_WT_Gluc_B,NA,Dissolved,1,Glucose,11.546136363636364,106.050419
+L-Serine,240327_Smp_WT_Gluc_C,NA,Dissolved,1,Glucose,11.546136363636364,106.050419
+L-Serine,240327_Smp_WT_Hom_A,53871839.486818545,Dissolved,1,Homarine,11.546136363636364,106.050419
+L-Serine,240327_Smp_WT_Hom_B,48648703.182308845,Dissolved,1,Homarine,11.546136363636364,106.050419
+L-Serine,240327_Smp_WT_Hom_C,70748185.59283234,Dissolved,1,Homarine,11.546136363636364,106.050419
+L-Serine,240327_Smp_WT_Mix_A,NA,Dissolved,1,Glucose and homarine,11.546136363636364,106.050419
+L-Serine,240327_Smp_WT_Mix_B,7821104.224772382,Dissolved,1,Glucose and homarine,11.546136363636364,106.050419
+L-Serine,240327_Smp_WT_Mix_C,NA,Dissolved,1,Glucose and homarine,11.546136363636364,106.050419
+N-Methyl-L-glutamic acid,240327_Smp_WT_Gluc_A,NA,Dissolved,1,Glucose,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240327_Smp_WT_Gluc_B,NA,Dissolved,1,Glucose,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240327_Smp_WT_Gluc_C,NA,Dissolved,1,Glucose,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240327_Smp_WT_Hom_A,1377720320,Dissolved,1,Homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240327_Smp_WT_Hom_B,271189696,Dissolved,1,Homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240327_Smp_WT_Hom_C,283571744,Dissolved,1,Homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240327_Smp_WT_Mix_A,13361676,Dissolved,1,Glucose and homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240327_Smp_WT_Mix_B,21421622,Dissolved,1,Glucose and homarine,9.8590625,162.076634
+N-Methyl-L-glutamic acid,240327_Smp_WT_Mix_C,19826808,Dissolved,1,Glucose and homarine,9.8590625,162.076634
+"Nitrate, 15N",240327_Smp_WT_Gluc_A,NA,Dissolved,-1,Glucose,NA,NA
+"Nitrate, 15N",240327_Smp_WT_Gluc_B,NA,Dissolved,-1,Glucose,NA,NA
+"Nitrate, 15N",240327_Smp_WT_Gluc_C,NA,Dissolved,-1,Glucose,NA,NA
+"Nitrate, 15N",240327_Smp_WT_Hom_A,NA,Dissolved,-1,Homarine,NA,NA
+"Nitrate, 15N",240327_Smp_WT_Hom_B,NA,Dissolved,-1,Homarine,NA,NA
+"Nitrate, 15N",240327_Smp_WT_Hom_C,NA,Dissolved,-1,Homarine,NA,NA
+"Nitrate, 15N",240327_Smp_WT_Mix_A,NA,Dissolved,-1,Glucose and homarine,NA,NA
+"Nitrate, 15N",240327_Smp_WT_Mix_B,NA,Dissolved,-1,Glucose and homarine,NA,NA
+"Nitrate, 15N",240327_Smp_WT_Mix_C,NA,Dissolved,-1,Glucose and homarine,NA,NA
+n-methyl glutamine,240327_Smp_WT_Gluc_A,6893714,Dissolved,1,Glucose,9.330689655172414,NA
+n-methyl glutamine,240327_Smp_WT_Gluc_B,NA,Dissolved,1,Glucose,9.330689655172414,NA
+n-methyl glutamine,240327_Smp_WT_Gluc_C,9837801,Dissolved,1,Glucose,9.330689655172414,NA
+n-methyl glutamine,240327_Smp_WT_Hom_A,725322688,Dissolved,1,Homarine,9.330689655172414,NA
+n-methyl glutamine,240327_Smp_WT_Hom_B,1075632384,Dissolved,1,Homarine,9.330689655172414,NA
+n-methyl glutamine,240327_Smp_WT_Hom_C,1316573184,Dissolved,1,Homarine,9.330689655172414,NA
+n-methyl glutamine,240327_Smp_WT_Mix_A,47378380,Dissolved,1,Glucose and homarine,9.330689655172414,NA
+n-methyl glutamine,240327_Smp_WT_Mix_B,68873640,Dissolved,1,Glucose and homarine,9.330689655172414,NA
+n-methyl glutamine,240327_Smp_WT_Mix_C,66908152,Dissolved,1,Glucose and homarine,9.330689655172414,NA
+unknown_C6H9NO4_pos,240327_Smp_WT_Gluc_A,NA,Dissolved,1,Glucose,12.011129032258063,NA
+unknown_C6H9NO4_pos,240327_Smp_WT_Gluc_B,NA,Dissolved,1,Glucose,12.011129032258063,NA
+unknown_C6H9NO4_pos,240327_Smp_WT_Gluc_C,188260.36064819945,Dissolved,1,Glucose,12.011129032258063,NA
+unknown_C6H9NO4_pos,240327_Smp_WT_Hom_A,1393792.295295783,Dissolved,1,Homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240327_Smp_WT_Hom_B,1803847.2726720988,Dissolved,1,Homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240327_Smp_WT_Hom_C,1029281.5898027448,Dissolved,1,Homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240327_Smp_WT_Mix_A,351598.2223792941,Dissolved,1,Glucose and homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240327_Smp_WT_Mix_B,294331.5873332444,Dissolved,1,Glucose and homarine,12.011129032258063,NA
+unknown_C6H9NO4_pos,240327_Smp_WT_Mix_C,527909.3891753154,Dissolved,1,Glucose and homarine,12.011129032258063,NA
+unknown_C7H9NO5_pos,240327_Smp_WT_Gluc_A,NA,Dissolved,1,Glucose,12.039090909090907,NA
+unknown_C7H9NO5_pos,240327_Smp_WT_Gluc_B,NA,Dissolved,1,Glucose,12.039090909090907,NA
+unknown_C7H9NO5_pos,240327_Smp_WT_Gluc_C,NA,Dissolved,1,Glucose,12.039090909090907,NA
+unknown_C7H9NO5_pos,240327_Smp_WT_Hom_A,1979783.76633742,Dissolved,1,Homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240327_Smp_WT_Hom_B,1717333.542533762,Dissolved,1,Homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240327_Smp_WT_Hom_C,1549010.5407294345,Dissolved,1,Homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240327_Smp_WT_Mix_A,219644.40795841863,Dissolved,1,Glucose and homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240327_Smp_WT_Mix_B,151399.64662571176,Dissolved,1,Glucose and homarine,12.039090909090907,NA
+unknown_C7H9NO5_pos,240327_Smp_WT_Mix_C,540319.6358306085,Dissolved,1,Glucose and homarine,12.039090909090907,NA
