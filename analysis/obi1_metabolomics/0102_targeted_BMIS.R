@@ -12,28 +12,19 @@ library(here)
 source(here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R"))
 
 # SET FILE LOCS ----
-meta_data_loc <- here("data", "raw", "metabolomics", "rpom")
-qc_data_loc <- here("data", "intermediate", "metabolomics", "rpom", "targeted")
+meta_data_loc <- here("data", "raw", "metabolomics", "obi1")
+qc_data_loc <- here("data", "intermediate", "metabolomics", "obi1", "targeted")
 bmis_checks_loc <- here(qc_data_loc, "BMIS_checks")
 
 # MAKE DIR FOR BMIS CHECKS
 dir.create(bmis_checks_loc, recursive = TRUE, showWarnings = FALSE)
-
-# GET LISTS OF DISSOLVED/POSITIVE REPLICATES
-sample_key <- read_csv(here(meta_data_loc, "SampleList_EpicFate.csv"), show_col_types = FALSE)
-samps_dissolved <- sample_key %>%
-  filter(str_detect(sample_fraction, "dissolved")) %>%
-  pull(replicate_name)
-samps_positive <- sample_key %>%
-  filter(str_detect(sample_fraction, "particulate")) %>%
-  pull(replicate_name)
 
 # BMIS on HILIC particulate ------
 ## Perform BMIS ----
 BMIS_results <- BMIS(
   sample_key = here(
     meta_data_loc,
-    "SampleList_EpicFate.csv"
+    "sample_key.csv"
   ),
   is_names_file = here(
     meta_data_loc,
@@ -41,19 +32,24 @@ BMIS_results <- BMIS(
   ),
   dat_pos_file = here(
     qc_data_loc,
-    "QCd_HILIC_Pos.csv"
+    "QCd_HILIC_Pos_Particulate.csv"
   ),
   dat_neg_file = here(
     qc_data_loc,
-    "QCd_HILIC_Neg.csv"
+    "QCd_HILIC_Neg_Particulate.csv"
   ),
   cut_off1 = 0.2,
   cut_off2 = 0.1,
-  smps_to_dump = samps_dissolved,
-  is_to_dump = c()
+  smps_to_dump = c(
+    "211202_Poo_TruePooBacteria_DDApos20",
+    "211202_Poo_TruePooBacteria_DDApos35",
+    "211202_Poo_TruePooBacteria_DDApos50",
+    "211202_Poo_TruePooBacteria_DDAneg20",
+    "211202_Poo_TruePooBacteria_DDAneg35",
+    "211202_Poo_TruePooBacteria_DDAneg50"
+  ),
+  is_to_dump = c("AMP, 15N5", "GMP, 15N5", "Succinic acid, 2H4", "Sulfoacetic acid, 13C2")
 )
-
-
 ## Save output ----
 ### Internal standard reps -----
 ggsave(
@@ -94,7 +90,7 @@ print("BMIS complete on HILIC particulate")
 BMIS_results <- BMIS(
   sample_key = here(
     meta_data_loc,
-    "SampleList_EpicFate.csv"
+    "sample_key.csv"
   ),
   is_names_file = here(
     meta_data_loc,
@@ -102,18 +98,17 @@ BMIS_results <- BMIS(
   ),
   dat_pos_file = here(
     qc_data_loc,
-    "QCd_HILIC_Pos.csv"
+    "QCd_HILIC_Pos_Dissolved.csv"
   ),
   dat_neg_file = here(
     qc_data_loc,
-    "QCd_HILIC_Neg.csv"
+    "QCd_HILIC_Neg_Dissolved.csv"
   ),
   cut_off1 = 0.2,
   cut_off2 = 0.1,
-  smps_to_dump = samps_positive,
-  is_to_dump = c("L-Methionine, 2H3", "Homarine, 2H3")
+  smps_to_dump = c(),
+  is_to_dump = c()
 )
-
 ## Save output ----
 ## Save internal standard reps ----
 ggsave(

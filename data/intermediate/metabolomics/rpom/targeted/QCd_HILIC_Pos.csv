@@ -1,4 +1,4 @@
-Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexibility: 2.5 minutes. Blank can be this fraction of a sample: 3. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-04-15 16:22:18.227517. 
+Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexibility: 2.5 minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-04-15 17:21:05.378927. 
 "","molecule_list_name","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","molecule_list","flags","QC_area"
 "1","Pos_Standards","240304_Std_4uMStdsMix1InH2O_1","Homarine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "2","Pos_Standards","240304_Std_4uMStdsMix1InH2O_2","Homarine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
@@ -250,7 +250,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "248","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half1","n-methyl glutamine",9.32,138114240,3155777,8998499,-0.5,"Pos_Standards","",138114240
 "249","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half2","n-methyl glutamine",9.11,125793960,3182233,8514457,-0.6,"Pos_Standards","",125793960
 "250","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half3","n-methyl glutamine",8.94,145312288,5372231,9329133,-0.5,"Pos_Standards","",145312288
-"251","Pos_Standards","240327_Smp_ASW_A","n-methyl glutamine",9.2,3125426,17522,149376,0.4,"Pos_Standards","blank_flag",NA
+"251","Pos_Standards","240327_Smp_ASW_A","n-methyl glutamine",9.2,3125426,17522,149376,0.4,"Pos_Standards","",3125426
 "252","Pos_Standards","240327_Smp_ASW_B","n-methyl glutamine",9.34,831222,602911,69018,-0.4,"Pos_Standards","sn_flag, blank_flag",NA
 "253","Pos_Standards","240327_Smp_ASW_C","n-methyl glutamine",9.12,1406363,15565,104228,0.4,"Pos_Standards","blank_flag",NA
 "254","Pos_Standards","240327_Smp_Ctrl_A1","n-methyl glutamine",8.92,44384784,927647,2609379,-0.7,"Pos_Standards","",44384784
@@ -259,7 +259,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "257","Pos_Standards","240327_Smp_Ctrl_B2","n-methyl glutamine",9.13,1339320,0,78544,0.6,"Pos_Standards","blank_flag",NA
 "258","Pos_Standards","240327_Smp_Ctrl_B3","n-methyl glutamine",9.29,463095,0,52282,1.3,"Pos_Standards","blank_flag",NA
 "259","Pos_Standards","240327_Smp_Ctrl_C1","n-methyl glutamine",9.35,335655,0,56089,0.5,"Pos_Standards","blank_flag",NA
-"260","Pos_Standards","240327_Smp_Ctrl_C2","n-methyl glutamine",9.39,3853463,0,311145,-0.1,"Pos_Standards","blank_flag",NA
+"260","Pos_Standards","240327_Smp_Ctrl_C2","n-methyl glutamine",9.39,3853463,0,311145,-0.1,"Pos_Standards","",3853463
 "261","Pos_Standards","240327_Smp_Ctrl_C3","n-methyl glutamine",9.46,435191,0,85129,0.9,"Pos_Standards","blank_flag",NA
 "262","Pos_Standards","240327_Smp_Gluc_16_A","n-methyl glutamine",9.23,1659195,0,140985,0.2,"Pos_Standards","blank_flag",NA
 "263","Pos_Standards","240327_Smp_Gluc_16_B","n-methyl glutamine",9.23,759720,5327,47664,0.5,"Pos_Standards","blank_flag",NA
@@ -280,7 +280,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "278","Pos_Standards","240327_Smp_MQBlk4_B","n-methyl glutamine",8.92,1521499,13147,127808,0.4,"Pos_Standards","blank_flag",NA
 "279","Pos_Standards","240327_Smp_MQBlk4_C","n-methyl glutamine",8.44,1172768,421058,68441,0.8,"Pos_Standards","sn_flag, blank_flag",NA
 "280","Pos_Standards","240327_Smp_WT_Gluc_A","n-methyl glutamine",9.12,6893714,86225,344733,-0.7,"Pos_Standards","",6893714
-"281","Pos_Standards","240327_Smp_WT_Gluc_B","n-methyl glutamine",9.01,3952532,1873300,261104,-0.4,"Pos_Standards","sn_flag, blank_flag",NA
+"281","Pos_Standards","240327_Smp_WT_Gluc_B","n-methyl glutamine",9.01,3952532,1873300,261104,-0.4,"Pos_Standards","sn_flag, ",NA
 "282","Pos_Standards","240327_Smp_WT_Gluc_C","n-methyl glutamine",8.94,9837801,530734,589163,-0.7,"Pos_Standards","",9837801
 "283","Pos_Standards","240327_Smp_WT_Hom_A","n-methyl glutamine",9.2,725322688,11303658,45105000,-0.6,"Pos_Standards","",725322688
 "284","Pos_Standards","240327_Smp_WT_Hom_B","n-methyl glutamine",9.39,1075632384,17037048,68634320,-0.5,"Pos_Standards","",1075632384
@@ -488,8 +488,8 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "486","Pos_Standards","240304_Std_4uMStdsMix2InH2O_2","Adenine",4.97,689662592,39651980,19588442,-3.1,"Pos_Standards","",689662592
 "487","Pos_Standards","240304_Std_4uMStdsMix2InMatrix_1","Adenine",5.03,722207488,35036016,19610480,-1.8,"Pos_Standards","",722207488
 "488","Pos_Standards","240304_Std_4uMStdsMix2InMatrix_2","Adenine",4.98,787776256,49259500,21968024,-3.1,"Pos_Standards","",787776256
-"489","Pos_Standards","240304_Std_H2OinMatrix_1","Adenine",5.1,128834512,12418123,4242037,-2.7,"Pos_Standards","blank_flag",NA
-"490","Pos_Standards","240304_Std_H2OinMatrix_2","Adenine",5.11,140186432,11598947,4556702,-2.9,"Pos_Standards","blank_flag",NA
+"489","Pos_Standards","240304_Std_H2OinMatrix_1","Adenine",5.1,128834512,12418123,4242037,-2.7,"Pos_Standards","",128834512
+"490","Pos_Standards","240304_Std_H2OinMatrix_2","Adenine",5.11,140186432,11598947,4556702,-2.9,"Pos_Standards","",140186432
 "491","Pos_Standards","240304_Poo_EpicFate_Full1","Adenine",5.06,193009152,20232138,6538046,-2.2,"Pos_Standards","",193009152
 "492","Pos_Standards","240304_Poo_EpicFate_Full2","Adenine",5.05,221870336,5964484,7215605,-3,"Pos_Standards","",221870336
 "493","Pos_Standards","240304_Poo_EpicFate_Full3","Adenine",5.08,223720256,12036916,7530791,-2.3,"Pos_Standards","",223720256
@@ -507,8 +507,8 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "505","Pos_Standards","240304_Smp_Gluc_16_B","Adenine",5.11,196512432,4043512,6907909,-3,"Pos_Standards","",196512432
 "506","Pos_Standards","240304_Smp_Gluc_16_C","Adenine",5.06,237252672,922211,6907120,-2.5,"Pos_Standards","",237252672
 "507","Pos_Standards","240304_Smp_Hom_16_A","Adenine",5.03,277327584,16491504,8321406,-2.9,"Pos_Standards","",277327584
-"508","Pos_Standards","240304_Smp_Hom_16_B","Adenine",5.01,145776944,11387806,4429159,-2,"Pos_Standards","blank_flag",NA
-"509","Pos_Standards","240304_Smp_Hom_16_C","Adenine",4.97,159484480,0,4439777,-2.4,"Pos_Standards","blank_flag",NA
+"508","Pos_Standards","240304_Smp_Hom_16_B","Adenine",5.01,145776944,11387806,4429159,-2,"Pos_Standards","",145776944
+"509","Pos_Standards","240304_Smp_Hom_16_C","Adenine",4.97,159484480,0,4439777,-2.4,"Pos_Standards","",159484480
 "510","Pos_Standards","240304_Smp_WT_BLK_Gluc_C","Adenine",5.05,98607688,0,2713814,-2.8,"Pos_Standards","blank_flag",NA
 "511","Pos_Standards","240304_Smp_WT_BLK_Hom_A","Adenine",5.03,39056492,0,923847,-2.6,"Pos_Standards","blank_flag",NA
 "512","Pos_Standards","240304_Smp_WT_BLK_Hom_B","Adenine",5.05,78473360,0,2103739,-2.8,"Pos_Standards","blank_flag",NA
@@ -541,7 +541,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "539","Pos_Standards","240327_Smp_ASW_A","Adenine",5.36,23554776,5863825,887362,-3.1,"Pos_Standards","blank_flag",NA
 "540","Pos_Standards","240327_Smp_ASW_B","Adenine",5.36,22445254,4008613,902780,-2.7,"Pos_Standards","blank_flag",NA
 "541","Pos_Standards","240327_Smp_ASW_C","Adenine",5.38,20426434,2761758,828921,-2.8,"Pos_Standards","blank_flag",NA
-"542","Pos_Standards","240327_Smp_Ctrl_A1","Adenine",5.32,175638752,7490295,7280872,-3.7,"Pos_Standards","blank_flag",NA
+"542","Pos_Standards","240327_Smp_Ctrl_A1","Adenine",5.32,175638752,7490295,7280872,-3.7,"Pos_Standards","",175638752
 "543","Pos_Standards","240327_Smp_Ctrl_A2","Adenine",5.25,4616845,4313598,213201,-2.7,"Pos_Standards","sn_flag, blank_flag",NA
 "544","Pos_Standards","240327_Smp_Ctrl_B1","Adenine",5.29,64830224,0,2683208,-3.4,"Pos_Standards","blank_flag",NA
 "545","Pos_Standards","240327_Smp_Ctrl_B2","Adenine",5.3,97124968,0,4151109,-3.5,"Pos_Standards","blank_flag",NA
@@ -559,11 +559,11 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "557","Pos_Standards","240327_Smp_MQBlk1_B","Adenine",5.3,11677637,4097858,510072,-2.5,"Pos_Standards","sn_flag, blank_flag",NA
 "558","Pos_Standards","240327_Smp_MQBlk1_C","Adenine",5.39,7962036,4115216,340320,-3,"Pos_Standards","sn_flag, blank_flag",NA
 "559","Pos_Standards","240327_Smp_MQBlk2_A","Adenine",5.3,91808504,4635985,3928674,-3.1,"Pos_Standards","blank_flag",NA
-"560","Pos_Standards","240327_Smp_MQBlk2_B","Adenine",5.37,140635536,9783134,6215829,-3,"Pos_Standards","blank_flag",NA
+"560","Pos_Standards","240327_Smp_MQBlk2_B","Adenine",5.37,140635536,9783134,6215829,-3,"Pos_Standards","",140635536
 "561","Pos_Standards","240327_Smp_MQBlk2_C","Adenine",5.4,72387904,7680630,3061907,-2.7,"Pos_Standards","blank_flag",NA
 "562","Pos_Standards","240327_Smp_MQBlk3_A","Adenine",5.36,58379228,5232483,2490931,-3.2,"Pos_Standards","blank_flag",NA
 "563","Pos_Standards","240327_Smp_MQBlk3_B","Adenine",5.31,51316840,6535935,2179199,-2.9,"Pos_Standards","blank_flag",NA
-"564","Pos_Standards","240327_Smp_MQBlk3_C","Adenine",5.3,179202480,7882721,7476974,-2.7,"Pos_Standards","blank_flag",NA
+"564","Pos_Standards","240327_Smp_MQBlk3_C","Adenine",5.3,179202480,7882721,7476974,-2.7,"Pos_Standards","",179202480
 "565","Pos_Standards","240327_Smp_MQBlk4_A","Adenine",5.36,60706228,4047453,2478007,-3.1,"Pos_Standards","blank_flag",NA
 "566","Pos_Standards","240327_Smp_MQBlk4_B","Adenine",5.27,34201916,4034768,1444695,-2.5,"Pos_Standards","blank_flag",NA
 "567","Pos_Standards","240327_Smp_MQBlk4_C","Adenine",5.27,29141370,5112469,1272218,-2.5,"Pos_Standards","blank_flag",NA
@@ -572,10 +572,10 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "570","Pos_Standards","240327_Smp_WT_Gluc_C","Adenine",5.33,54592884,7084165,2329347,-3.4,"Pos_Standards","blank_flag",NA
 "571","Pos_Standards","240327_Smp_WT_Hom_A","Adenine",5.32,65274768,0,2584583,-3.3,"Pos_Standards","blank_flag",NA
 "572","Pos_Standards","240327_Smp_WT_Hom_B","Adenine",5.36,96738088,5133021,4189687,-2.6,"Pos_Standards","blank_flag",NA
-"573","Pos_Standards","240327_Smp_WT_Hom_C","Adenine",5.28,137915360,8085332,5340424,-3,"Pos_Standards","blank_flag",NA
+"573","Pos_Standards","240327_Smp_WT_Hom_C","Adenine",5.28,137915360,8085332,5340424,-3,"Pos_Standards","",137915360
 "574","Pos_Standards","240327_Smp_WT_Mix_A","Adenine",5.3,112405648,4003461,4762445,-2.7,"Pos_Standards","blank_flag",NA
 "575","Pos_Standards","240327_Smp_WT_Mix_B","Adenine",5.33,341016608,5280498,13612778,-3.3,"Pos_Standards","",341016608
-"576","Pos_Standards","240327_Smp_WT_Mix_C","Adenine",5.32,185218768,5226557,7795833,-3.3,"Pos_Standards","blank_flag",NA
+"576","Pos_Standards","240327_Smp_WT_Mix_C","Adenine",5.32,185218768,5226557,7795833,-3.3,"Pos_Standards","",185218768
 "577","Pos_Standards","240304_Std_4uMStdsMix1InH2O_1","Adenosine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "578","Pos_Standards","240304_Std_4uMStdsMix1InH2O_2","Adenosine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "579","Pos_Standards","240304_Std_4uMStdsMix1InMatrix_1","Adenosine",4.86,593384384,3545493,20690118,-1.1,"Pos_Standards","",593384384
@@ -619,7 +619,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "617","Pos_Standards","240304_Smp_WT_Mix_B","Adenosine",4.93,335708096,0,10645869,-2.3,"Pos_Standards","",335708096
 "618","Pos_Standards","240304_Smp_WT_Mix_C","Adenosine",4.92,590821312,7519779,18519136,-1.6,"Pos_Standards","",590821312
 "619","Pos_Standards","240327_Std_4uMStdsMix1InH2O_1","Adenosine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
-"620","Pos_Standards","240327_Std_4uMStdsMix1InH2O_2","Adenosine",5.04,3935689,0,183074,-2,"Pos_Standards","blank_flag",NA
+"620","Pos_Standards","240327_Std_4uMStdsMix1InH2O_2","Adenosine",5.04,3935689,0,183074,-2,"Pos_Standards","",3935689
 "621","Pos_Standards","240327_Std_4uMStdsMix1InMatrix_1","Adenosine",5.04,19334862,0,630300,-1.8,"Pos_Standards","",19334862
 "622","Pos_Standards","240327_Std_4uMStdsMix1InMatrix_2","Adenosine",5.16,14303174,0,559229,-2.1,"Pos_Standards","",14303174
 "623","Pos_Standards","240327_Std_4uMStdsMix2InH2O_1","Adenosine",5.12,5918845952,75233344,157396784,-1.8,"Pos_Standards","",5918845952
@@ -636,7 +636,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "634","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half3","Adenosine",5.17,10162965,0,339613,-2.3,"Pos_Standards","",10162965
 "635","Pos_Standards","240327_Smp_ASW_A","Adenosine",5.13,6410869,0,188508,-1.8,"Pos_Standards","",6410869
 "636","Pos_Standards","240327_Smp_ASW_B","Adenosine",5,1142632,0,51428,-2.4,"Pos_Standards","blank_flag",NA
-"637","Pos_Standards","240327_Smp_ASW_C","Adenosine",5.03,3669927,0,152868,-1.5,"Pos_Standards","blank_flag",NA
+"637","Pos_Standards","240327_Smp_ASW_C","Adenosine",5.03,3669927,0,152868,-1.5,"Pos_Standards","",3669927
 "638","Pos_Standards","240327_Smp_Ctrl_A1","Adenosine",5.11,25891518,0,807442,-2.4,"Pos_Standards","",25891518
 "639","Pos_Standards","240327_Smp_Ctrl_A2","Adenosine",5.14,187387,0,19504,-2.1,"Pos_Standards","blank_flag",NA
 "640","Pos_Standards","240327_Smp_Ctrl_B1","Adenosine",5.22,2831437,0,102682,-2.1,"Pos_Standards","blank_flag",NA
@@ -656,10 +656,10 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "654","Pos_Standards","240327_Smp_MQBlk1_C","Adenosine",5.2,223822,0,24896,-1.2,"Pos_Standards","blank_flag",NA
 "655","Pos_Standards","240327_Smp_MQBlk2_A","Adenosine",5.09,2380444,0,92659,-2.7,"Pos_Standards","blank_flag",NA
 "656","Pos_Standards","240327_Smp_MQBlk2_B","Adenosine",5.26,1693723,0,65204,-2.4,"Pos_Standards","blank_flag",NA
-"657","Pos_Standards","240327_Smp_MQBlk2_C","Adenosine",5.18,3665650,0,132367,-2.3,"Pos_Standards","blank_flag",NA
+"657","Pos_Standards","240327_Smp_MQBlk2_C","Adenosine",5.18,3665650,0,132367,-2.3,"Pos_Standards","",3665650
 "658","Pos_Standards","240327_Smp_MQBlk3_A","Adenosine",5.14,407242,0,26959,-1.8,"Pos_Standards","blank_flag",NA
 "659","Pos_Standards","240327_Smp_MQBlk3_B","Adenosine",4.79,141351,0,22250,-1.1,"Pos_Standards","blank_flag",NA
-"660","Pos_Standards","240327_Smp_MQBlk3_C","Adenosine",5.17,4412662,0,148337,-2.4,"Pos_Standards","blank_flag",NA
+"660","Pos_Standards","240327_Smp_MQBlk3_C","Adenosine",5.17,4412662,0,148337,-2.4,"Pos_Standards","",4412662
 "661","Pos_Standards","240327_Smp_MQBlk4_A","Adenosine",5.17,5466128,0,194716,-2.3,"Pos_Standards","",5466128
 "662","Pos_Standards","240327_Smp_MQBlk4_B","Adenosine",5.22,231692,0,29887,-1.5,"Pos_Standards","blank_flag",NA
 "663","Pos_Standards","240327_Smp_MQBlk4_C","Adenosine",4.69,118787,0,18012,-0.9,"Pos_Standards","blank_flag",NA
@@ -693,7 +693,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "691","Pos_Standards","240304_Smp_ASW_Blk_A","L-Arginine",20.71,13491469,1502646,307695,-2.3,"Pos_Standards","",13491469
 "692","Pos_Standards","240304_Smp_ASW_C","L-Arginine",20.59,23245020,189160,692866,-1.6,"Pos_Standards","",23245020
 "693","Pos_Standards","240304_Smp_Ctrl_A1","L-Arginine",20.58,13539919,118499,297619,-1.7,"Pos_Standards","",13539919
-"694","Pos_Standards","240304_Smp_Ctrl_B3","L-Arginine",20.67,8254046,684736,191709,-1.8,"Pos_Standards","blank_flag",NA
+"694","Pos_Standards","240304_Smp_Ctrl_B3","L-Arginine",20.67,8254046,684736,191709,-1.8,"Pos_Standards","",8254046
 "695","Pos_Standards","240304_Smp_Ctrl_C2","L-Arginine",20.76,12669603,327101,269791,-1.8,"Pos_Standards","",12669603
 "696","Pos_Standards","240304_Smp_Gluc_16_A","L-Arginine",20.57,12951987,937661,371204,-2,"Pos_Standards","",12951987
 "697","Pos_Standards","240304_Smp_Gluc_16_B","L-Arginine",20.56,205603728,4927570,6007708,-2.2,"Pos_Standards","",205603728
@@ -704,7 +704,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "702","Pos_Standards","240304_Smp_WT_BLK_Gluc_C","L-Arginine",20.51,22155024,0,625443,-1.9,"Pos_Standards","",22155024
 "703","Pos_Standards","240304_Smp_WT_BLK_Hom_A","L-Arginine",20.58,17790352,171644,436127,-1.9,"Pos_Standards","",17790352
 "704","Pos_Standards","240304_Smp_WT_BLK_Hom_B","L-Arginine",20.51,15222393,172357,412098,-1.9,"Pos_Standards","",15222393
-"705","Pos_Standards","240304_Smp_WT_BLK_Mix_A","L-Arginine",20.71,6315030,102885,179147,-1.9,"Pos_Standards","blank_flag",NA
+"705","Pos_Standards","240304_Smp_WT_BLK_Mix_A","L-Arginine",20.71,6315030,102885,179147,-1.9,"Pos_Standards","",6315030
 "706","Pos_Standards","240304_Smp_WT_Gluc_A","L-Arginine",20.51,347557952,9438081,10475562,-2.1,"Pos_Standards","",347557952
 "707","Pos_Standards","240304_Smp_WT_Gluc_B","L-Arginine",20.59,182032192,0,5520644,-1.7,"Pos_Standards","",182032192
 "708","Pos_Standards","240304_Smp_WT_Gluc_C","L-Arginine",20.52,491393056,4120281,13921506,-2.3,"Pos_Standards","",491393056
@@ -732,16 +732,16 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "730","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half3","L-Arginine",20.65,5377034,128605,105114,-2.8,"Pos_Standards","blank_flag",NA
 "731","Pos_Standards","240327_Smp_ASW_A","L-Arginine",20.52,1625927,0,49181,-1.9,"Pos_Standards","blank_flag",NA
 "732","Pos_Standards","240327_Smp_ASW_B","L-Arginine",20.5,2064142,0,57440,-1.5,"Pos_Standards","blank_flag",NA
-"733","Pos_Standards","240327_Smp_ASW_C","L-Arginine",20.71,6656582,51782,136852,-2.2,"Pos_Standards","blank_flag",NA
+"733","Pos_Standards","240327_Smp_ASW_C","L-Arginine",20.71,6656582,51782,136852,-2.2,"Pos_Standards","",6656582
 "734","Pos_Standards","240327_Smp_Ctrl_A1","L-Arginine",20.69,4736991,1725884,129754,-3.1,"Pos_Standards","sn_flag, blank_flag",NA
-"735","Pos_Standards","240327_Smp_Ctrl_A2","L-Arginine",20.57,7119657,181478,134600,-2.6,"Pos_Standards","blank_flag",NA
+"735","Pos_Standards","240327_Smp_Ctrl_A2","L-Arginine",20.57,7119657,181478,134600,-2.6,"Pos_Standards","",7119657
 "736","Pos_Standards","240327_Smp_Ctrl_B1","L-Arginine",20.71,3601570,968280,90357,-3,"Pos_Standards","blank_flag",NA
 "737","Pos_Standards","240327_Smp_Ctrl_B2","L-Arginine",20.48,2507912,0,71294,-2.7,"Pos_Standards","blank_flag",NA
-"738","Pos_Standards","240327_Smp_Ctrl_B3","L-Arginine",20.66,8515573,3040471,234280,-2,"Pos_Standards","sn_flag, blank_flag",NA
+"738","Pos_Standards","240327_Smp_Ctrl_B3","L-Arginine",20.66,8515573,3040471,234280,-2,"Pos_Standards","sn_flag, ",NA
 "739","Pos_Standards","240327_Smp_Ctrl_C1","L-Arginine",20.49,2728170,263869,79709,-1.9,"Pos_Standards","blank_flag",NA
 "740","Pos_Standards","240327_Smp_Ctrl_C2","L-Arginine",20.65,1720167,0,49622,-2.2,"Pos_Standards","blank_flag",NA
-"741","Pos_Standards","240327_Smp_Ctrl_C3","L-Arginine",20.42,6072937,158924,156282,-2,"Pos_Standards","blank_flag",NA
-"742","Pos_Standards","240327_Smp_Gluc_16_A","L-Arginine",20.57,6749321,95672,142169,-2.2,"Pos_Standards","blank_flag",NA
+"741","Pos_Standards","240327_Smp_Ctrl_C3","L-Arginine",20.42,6072937,158924,156282,-2,"Pos_Standards","",6072937
+"742","Pos_Standards","240327_Smp_Gluc_16_A","L-Arginine",20.57,6749321,95672,142169,-2.2,"Pos_Standards","",6749321
 "743","Pos_Standards","240327_Smp_Gluc_16_B","L-Arginine",20.61,1313733,2027,49283,-1.1,"Pos_Standards","blank_flag",NA
 "744","Pos_Standards","240327_Smp_Gluc_16_C","L-Arginine",20.44,755030,1334946,40554,-1.7,"Pos_Standards","sn_flag, blank_flag",NA
 "745","Pos_Standards","240327_Smp_Hom_16_A","L-Arginine",20.57,5767521,22130,143199,-2.2,"Pos_Standards","blank_flag",NA
@@ -761,8 +761,8 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "759","Pos_Standards","240327_Smp_MQBlk4_C","L-Arginine",20.68,4912705,73377,102544,-1.8,"Pos_Standards","blank_flag",NA
 "760","Pos_Standards","240327_Smp_WT_Gluc_A","L-Arginine",20.6,2979077,203940,68393,-1.9,"Pos_Standards","blank_flag",NA
 "761","Pos_Standards","240327_Smp_WT_Gluc_B","L-Arginine",20.65,2739041,116922,80575,-2.8,"Pos_Standards","blank_flag",NA
-"762","Pos_Standards","240327_Smp_WT_Gluc_C","L-Arginine",20.66,6514771,75593,135022,-3.2,"Pos_Standards","blank_flag",NA
-"763","Pos_Standards","240327_Smp_WT_Hom_A","L-Arginine",20.61,6261018,107219,148958,-2.9,"Pos_Standards","blank_flag",NA
+"762","Pos_Standards","240327_Smp_WT_Gluc_C","L-Arginine",20.66,6514771,75593,135022,-3.2,"Pos_Standards","",6514771
+"763","Pos_Standards","240327_Smp_WT_Hom_A","L-Arginine",20.61,6261018,107219,148958,-2.9,"Pos_Standards","",6261018
 "764","Pos_Standards","240327_Smp_WT_Hom_B","L-Arginine",20.39,2066280,193759,69792,-0.6,"Pos_Standards","blank_flag",NA
 "765","Pos_Standards","240327_Smp_WT_Hom_C","L-Arginine",20.65,1833407,0,52111,-1,"Pos_Standards","blank_flag",NA
 "766","Pos_Standards","240327_Smp_WT_Mix_A","L-Arginine",20.53,3967556,27609,88454,-1.7,"Pos_Standards","blank_flag",NA
@@ -777,9 +777,9 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "775","Pos_Standards","240304_Std_4uMStdsMix2InMatrix_1","L-Asparagine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "776","Pos_Standards","240304_Std_4uMStdsMix2InMatrix_2","L-Asparagine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "777","Pos_Standards","240304_Std_H2OinMatrix_1","L-Asparagine",11.35,880483,1401846,77644,-2.6,"Pos_Standards","sn_flag, blank_flag",NA
-"778","Pos_Standards","240304_Std_H2OinMatrix_2","L-Asparagine",10.9,4035293,0,178244,-2.8,"Pos_Standards","blank_flag",NA
+"778","Pos_Standards","240304_Std_H2OinMatrix_2","L-Asparagine",10.9,4035293,0,178244,-2.8,"Pos_Standards","",4035293
 "779","Pos_Standards","240304_Poo_EpicFate_Full1","L-Asparagine",11.36,2948484,0,210522,-2.3,"Pos_Standards","blank_flag",NA
-"780","Pos_Standards","240304_Poo_EpicFate_Full2","L-Asparagine",11.12,4042139,0,247307,-2.7,"Pos_Standards","blank_flag",NA
+"780","Pos_Standards","240304_Poo_EpicFate_Full2","L-Asparagine",11.12,4042139,0,247307,-2.7,"Pos_Standards","",4042139
 "781","Pos_Standards","240304_Poo_EpicFate_Full3","L-Asparagine",11.09,3162832,0,241213,-2,"Pos_Standards","blank_flag",NA
 "782","Pos_Standards","240304_Poo_EpicFate_Half1","L-Asparagine",11.43,1616052,0,119097,-1.8,"Pos_Standards","blank_flag",NA
 "783","Pos_Standards","240304_Poo_EpicFate_Half2","L-Asparagine",11.12,1658761,405838,126236,-2.6,"Pos_Standards","blank_flag",NA
@@ -803,13 +803,13 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "801","Pos_Standards","240304_Smp_WT_BLK_Mix_A","L-Asparagine",11.2,1625403,72758,56253,-2.3,"Pos_Standards","blank_flag",NA
 "802","Pos_Standards","240304_Smp_WT_Gluc_A","L-Asparagine",11.21,5246068,0,376207,-2.3,"Pos_Standards","",5246068
 "803","Pos_Standards","240304_Smp_WT_Gluc_B","L-Asparagine",11.05,6587652,0,439607,-2,"Pos_Standards","",6587652
-"804","Pos_Standards","240304_Smp_WT_Gluc_C","L-Asparagine",11.17,4401472,0,341883,-2.7,"Pos_Standards","blank_flag",NA
+"804","Pos_Standards","240304_Smp_WT_Gluc_C","L-Asparagine",11.17,4401472,0,341883,-2.7,"Pos_Standards","",4401472
 "805","Pos_Standards","240304_Smp_WT_Hom_A","L-Asparagine",11.31,3249177,0,186436,-2.1,"Pos_Standards","blank_flag",NA
 "806","Pos_Standards","240304_Smp_WT_Hom_B","L-Asparagine",11.08,5358813,0,356345,-2.3,"Pos_Standards","",5358813
-"807","Pos_Standards","240304_Smp_WT_Hom_C","L-Asparagine",11.25,3757484,0,227615,-2,"Pos_Standards","blank_flag",NA
+"807","Pos_Standards","240304_Smp_WT_Hom_C","L-Asparagine",11.25,3757484,0,227615,-2,"Pos_Standards","",3757484
 "808","Pos_Standards","240304_Smp_WT_Mix_A","L-Asparagine",11.15,7482463,1449943,647854,-2.7,"Pos_Standards","",7482463
-"809","Pos_Standards","240304_Smp_WT_Mix_B","L-Asparagine",11.25,4068994,0,279582,-2.4,"Pos_Standards","blank_flag",NA
-"810","Pos_Standards","240304_Smp_WT_Mix_C","L-Asparagine",11.13,4907655,0,323933,-1.9,"Pos_Standards","blank_flag",NA
+"809","Pos_Standards","240304_Smp_WT_Mix_B","L-Asparagine",11.25,4068994,0,279582,-2.4,"Pos_Standards","",4068994
+"810","Pos_Standards","240304_Smp_WT_Mix_C","L-Asparagine",11.13,4907655,0,323933,-1.9,"Pos_Standards","",4907655
 "811","Pos_Standards","240327_Std_4uMStdsMix1InH2O_1","L-Asparagine",11.21,109672568,3987375,3576710,-3,"Pos_Standards","",109672568
 "812","Pos_Standards","240327_Std_4uMStdsMix1InH2O_2","L-Asparagine",10.44,159722400,5200495,5106645,-2.7,"Pos_Standards","",159722400
 "813","Pos_Standards","240327_Std_4uMStdsMix1InMatrix_1","L-Asparagine",11.17,86859056,908343,3856934,-3.1,"Pos_Standards","",86859056
@@ -829,7 +829,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "827","Pos_Standards","240327_Smp_ASW_A","L-Asparagine",10.71,2478809,228293,91633,-2.7,"Pos_Standards","blank_flag",NA
 "828","Pos_Standards","240327_Smp_ASW_B","L-Asparagine",10.88,506219,1557049,151381,-2.2,"Pos_Standards","sn_flag, blank_flag",NA
 "829","Pos_Standards","240327_Smp_ASW_C","L-Asparagine",10.87,1182971,1817977,72458,-2.4,"Pos_Standards","sn_flag, blank_flag",NA
-"830","Pos_Standards","240327_Smp_Ctrl_A1","L-Asparagine",10.63,3413036,2200889,105391,-3.3,"Pos_Standards","sn_flag, blank_flag",NA
+"830","Pos_Standards","240327_Smp_Ctrl_A1","L-Asparagine",10.63,3413036,2200889,105391,-3.3,"Pos_Standards","sn_flag, ",NA
 "831","Pos_Standards","240327_Smp_Ctrl_A2","L-Asparagine",10.45,2508380,2933483,93504,-2.9,"Pos_Standards","sn_flag, blank_flag",NA
 "832","Pos_Standards","240327_Smp_Ctrl_B1","L-Asparagine",10.81,1935664,2785664,67023,-3.1,"Pos_Standards","sn_flag, blank_flag",NA
 "833","Pos_Standards","240327_Smp_Ctrl_B2","L-Asparagine",10.93,1762298,2931362,68180,-3.1,"Pos_Standards","sn_flag, blank_flag",NA
@@ -874,12 +874,12 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "872","Pos_Standards","240304_Std_4uMStdsMix2InMatrix_2","Citrulline",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "873","Pos_Standards","240304_Std_H2OinMatrix_1","Citrulline",12.22,4800741,0,370413,-2,"Pos_Standards","blank_flag",NA
 "874","Pos_Standards","240304_Std_H2OinMatrix_2","Citrulline",12.04,14343144,0,978596,-2.4,"Pos_Standards","",14343144
-"875","Pos_Standards","240304_Poo_EpicFate_Full1","Citrulline",12.25,9320245,312706,713526,-1.6,"Pos_Standards","blank_flag",NA
+"875","Pos_Standards","240304_Poo_EpicFate_Full1","Citrulline",12.25,9320245,312706,713526,-1.6,"Pos_Standards","",9320245
 "876","Pos_Standards","240304_Poo_EpicFate_Full2","Citrulline",12.14,16315020,0,1226354,-2.1,"Pos_Standards","",16315020
 "877","Pos_Standards","240304_Poo_EpicFate_Full3","Citrulline",12.09,19970132,876373,1459778,-1.6,"Pos_Standards","",19970132
 "878","Pos_Standards","240304_Poo_EpicFate_Half1","Citrulline",12.25,4664357,0,371554,-1.8,"Pos_Standards","blank_flag",NA
 "879","Pos_Standards","240304_Poo_EpicFate_Half2","Citrulline",12.15,7806433,0,513702,-2.2,"Pos_Standards","blank_flag",NA
-"880","Pos_Standards","240304_Poo_EpicFate_Half3","Citrulline",12.13,9327083,0,661563,-1.9,"Pos_Standards","blank_flag",NA
+"880","Pos_Standards","240304_Poo_EpicFate_Half3","Citrulline",12.13,9327083,0,661563,-1.9,"Pos_Standards","",9327083
 "881","Pos_Standards","240304_Smp_ASW_A","Citrulline",12.17,2130230,897579,105380,-1.7,"Pos_Standards","sn_flag, blank_flag",NA
 "882","Pos_Standards","240304_Smp_ASW_B","Citrulline",12.23,3487196,0,136215,-1.5,"Pos_Standards","blank_flag",NA
 "883","Pos_Standards","240304_Smp_ASW_Blk_A","Citrulline",12.13,2800046,0,83198,-2.5,"Pos_Standards","blank_flag",NA
@@ -900,10 +900,10 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "898","Pos_Standards","240304_Smp_WT_Gluc_A","Citrulline",12.19,3625188,0,214278,-2.1,"Pos_Standards","blank_flag",NA
 "899","Pos_Standards","240304_Smp_WT_Gluc_B","Citrulline",12.12,16761126,93662,1264150,-1.8,"Pos_Standards","",16761126
 "900","Pos_Standards","240304_Smp_WT_Gluc_C","Citrulline",12.11,6566280,0,346998,-2.5,"Pos_Standards","blank_flag",NA
-"901","Pos_Standards","240304_Smp_WT_Hom_A","Citrulline",12.22,9550499,98062,738001,-1.5,"Pos_Standards","blank_flag",NA
+"901","Pos_Standards","240304_Smp_WT_Hom_A","Citrulline",12.22,9550499,98062,738001,-1.5,"Pos_Standards","",9550499
 "902","Pos_Standards","240304_Smp_WT_Hom_B","Citrulline",12.13,21872626,93638,1703302,-2,"Pos_Standards","",21872626
 "903","Pos_Standards","240304_Smp_WT_Hom_C","Citrulline",12.2,15697725,0,1163590,-1.6,"Pos_Standards","",15697725
-"904","Pos_Standards","240304_Smp_WT_Mix_A","Citrulline",12.12,10246495,0,646586,-2.4,"Pos_Standards","blank_flag",NA
+"904","Pos_Standards","240304_Smp_WT_Mix_A","Citrulline",12.12,10246495,0,646586,-2.4,"Pos_Standards","",10246495
 "905","Pos_Standards","240304_Smp_WT_Mix_B","Citrulline",12.16,18138808,0,1415825,-2,"Pos_Standards","",18138808
 "906","Pos_Standards","240304_Smp_WT_Mix_C","Citrulline",12.1,20168254,1064996,1463458,-1.6,"Pos_Standards","",20168254
 "907","Pos_Standards","240327_Std_4uMStdsMix1InH2O_1","Citrulline",12.3,812415168,14585022,52427648,-2.8,"Pos_Standards","",812415168
@@ -918,17 +918,17 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "916","Pos_Standards","240327_Std_H2OinMatrix_2","Citrulline",12.18,3495076,1611789,173457,-2.3,"Pos_Standards","sn_flag, blank_flag",NA
 "917","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full1","Citrulline",12.25,4232513,0,257000,-2.5,"Pos_Standards","blank_flag",NA
 "918","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full2","Citrulline",12.17,7452732,782787,457515,-3,"Pos_Standards","blank_flag",NA
-"919","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full3","Citrulline",12.06,9322621,0,454589,-2.9,"Pos_Standards","blank_flag",NA
+"919","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full3","Citrulline",12.06,9322621,0,454589,-2.9,"Pos_Standards","",9322621
 "920","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half1","Citrulline",12.28,3309291,0,175506,-3.1,"Pos_Standards","blank_flag",NA
 "921","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half2","Citrulline",12.18,4061291,295665,185518,-3,"Pos_Standards","blank_flag",NA
 "922","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half3","Citrulline",12.11,4453842,29196,195495,-3,"Pos_Standards","blank_flag",NA
 "923","Pos_Standards","240327_Smp_ASW_A","Citrulline",12.14,2858479,224859,99292,-2.6,"Pos_Standards","blank_flag",NA
 "924","Pos_Standards","240327_Smp_ASW_B","Citrulline",12.16,4778389,0,278662,-2.4,"Pos_Standards","blank_flag",NA
-"925","Pos_Standards","240327_Smp_ASW_C","Citrulline",12.16,10648934,1702592,875677,-2.5,"Pos_Standards","blank_flag",NA
+"925","Pos_Standards","240327_Smp_ASW_C","Citrulline",12.16,10648934,1702592,875677,-2.5,"Pos_Standards","",10648934
 "926","Pos_Standards","240327_Smp_Ctrl_A1","Citrulline",12.13,5894759,0,219833,-3.3,"Pos_Standards","blank_flag",NA
 "927","Pos_Standards","240327_Smp_Ctrl_A2","Citrulline",12.1,15609599,0,741338,-2.6,"Pos_Standards","",15609599
 "928","Pos_Standards","240327_Smp_Ctrl_B1","Citrulline",12.07,6897326,0,256395,-3,"Pos_Standards","blank_flag",NA
-"929","Pos_Standards","240327_Smp_Ctrl_B2","Citrulline",12.15,8470714,0,410842,-2.9,"Pos_Standards","blank_flag",NA
+"929","Pos_Standards","240327_Smp_Ctrl_B2","Citrulline",12.15,8470714,0,410842,-2.9,"Pos_Standards","",8470714
 "930","Pos_Standards","240327_Smp_Ctrl_B3","Citrulline",12.18,6012076,0,250901,-2.1,"Pos_Standards","blank_flag",NA
 "931","Pos_Standards","240327_Smp_Ctrl_C1","Citrulline",12.16,12150883,175008,600870,-3.1,"Pos_Standards","",12150883
 "932","Pos_Standards","240327_Smp_Ctrl_C2","Citrulline",12.33,3036532,0,131565,-2.8,"Pos_Standards","blank_flag",NA
@@ -938,7 +938,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "936","Pos_Standards","240327_Smp_Gluc_16_C","Citrulline",12.24,13402778,0,944382,-2.2,"Pos_Standards","",13402778
 "937","Pos_Standards","240327_Smp_Hom_16_A","Citrulline",12.23,4233674,1272116,272430,-2.1,"Pos_Standards","blank_flag",NA
 "938","Pos_Standards","240327_Smp_Hom_16_B","Citrulline",12.14,7581873,699884,355729,-2.8,"Pos_Standards","blank_flag",NA
-"939","Pos_Standards","240327_Smp_Hom_16_C","Citrulline",12.18,9319448,1134692,863942,-3,"Pos_Standards","blank_flag",NA
+"939","Pos_Standards","240327_Smp_Hom_16_C","Citrulline",12.18,9319448,1134692,863942,-3,"Pos_Standards","",9319448
 "940","Pos_Standards","240327_Smp_MQBlk1_A","Citrulline",12.23,4351661,1696036,252051,-2.9,"Pos_Standards","sn_flag, blank_flag",NA
 "941","Pos_Standards","240327_Smp_MQBlk1_B","Citrulline",12.31,5507705,5369,264496,-2.1,"Pos_Standards","blank_flag",NA
 "942","Pos_Standards","240327_Smp_MQBlk1_C","Citrulline",12.28,5145895,0,222118,-2.7,"Pos_Standards","blank_flag",NA
@@ -953,10 +953,10 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "951","Pos_Standards","240327_Smp_MQBlk4_C","Citrulline",12.11,4819559,0,194770,-2,"Pos_Standards","blank_flag",NA
 "952","Pos_Standards","240327_Smp_WT_Gluc_A","Citrulline",12.2,4389010,15628,184745,-2.7,"Pos_Standards","blank_flag",NA
 "953","Pos_Standards","240327_Smp_WT_Gluc_B","Citrulline",12.18,6016634,266616,282097,-3,"Pos_Standards","blank_flag",NA
-"954","Pos_Standards","240327_Smp_WT_Gluc_C","Citrulline",12.1,8349320,0,318141,-3.3,"Pos_Standards","blank_flag",NA
+"954","Pos_Standards","240327_Smp_WT_Gluc_C","Citrulline",12.1,8349320,0,318141,-3.3,"Pos_Standards","",8349320
 "955","Pos_Standards","240327_Smp_WT_Hom_A","Citrulline",12.26,5437412,1202649,322783,-3.2,"Pos_Standards","blank_flag",NA
 "956","Pos_Standards","240327_Smp_WT_Hom_B","Citrulline",12.33,5105900,0,244468,-2.1,"Pos_Standards","blank_flag",NA
-"957","Pos_Standards","240327_Smp_WT_Hom_C","Citrulline",12.16,8045535,60277,334932,-2.5,"Pos_Standards","blank_flag",NA
+"957","Pos_Standards","240327_Smp_WT_Hom_C","Citrulline",12.16,8045535,60277,334932,-2.5,"Pos_Standards","",8045535
 "958","Pos_Standards","240327_Smp_WT_Mix_A","Citrulline",12.27,6274504,0,249881,-2.1,"Pos_Standards","blank_flag",NA
 "959","Pos_Standards","240327_Smp_WT_Mix_B","Citrulline",12.17,5186742,588960,212172,-2.7,"Pos_Standards","blank_flag",NA
 "960","Pos_Standards","240327_Smp_WT_Mix_C","Citrulline",12.24,6972332,0,282994,-2.5,"Pos_Standards","blank_flag",NA
@@ -976,8 +976,8 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "974","Pos_Standards","240304_Poo_EpicFate_Half1","Cytosine",7.4,10214560,5025467,678561,-0.7,"Pos_Standards","sn_flag, ",NA
 "975","Pos_Standards","240304_Poo_EpicFate_Half2","Cytosine",7.46,12363008,6435711,757671,-1.3,"Pos_Standards","sn_flag, ",NA
 "976","Pos_Standards","240304_Poo_EpicFate_Half3","Cytosine",7.41,11673166,6053012,813319,-1.5,"Pos_Standards","sn_flag, ",NA
-"977","Pos_Standards","240304_Smp_ASW_A","Cytosine",7.46,7196113,3506363,569462,-0.6,"Pos_Standards","sn_flag, blank_flag",NA
-"978","Pos_Standards","240304_Smp_ASW_B","Cytosine",7.41,6258874,4536215,592886,-0.7,"Pos_Standards","sn_flag, blank_flag",NA
+"977","Pos_Standards","240304_Smp_ASW_A","Cytosine",7.46,7196113,3506363,569462,-0.6,"Pos_Standards","sn_flag, ",NA
+"978","Pos_Standards","240304_Smp_ASW_B","Cytosine",7.41,6258874,4536215,592886,-0.7,"Pos_Standards","sn_flag, ",NA
 "979","Pos_Standards","240304_Smp_ASW_Blk_A","Cytosine",7.43,3156267,5297255,325673,-1.5,"Pos_Standards","sn_flag, blank_flag",NA
 "980","Pos_Standards","240304_Smp_ASW_C","Cytosine",7.4,1686989,5410236,198863,-0.8,"Pos_Standards","sn_flag, blank_flag",NA
 "981","Pos_Standards","240304_Smp_Ctrl_A1","Cytosine",7.37,4313352,5994001,321864,-1,"Pos_Standards","sn_flag, blank_flag",NA
@@ -1022,17 +1022,17 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1020","Pos_Standards","240327_Smp_ASW_B","Cytosine",7.75,1246859,2334128,251785,-1.6,"Pos_Standards","sn_flag, blank_flag",NA
 "1021","Pos_Standards","240327_Smp_ASW_C","Cytosine",7.72,3447733,1074926,191281,-1.6,"Pos_Standards","blank_flag",NA
 "1022","Pos_Standards","240327_Smp_Ctrl_A1","Cytosine",7.62,3816262,3953524,247013,-2.2,"Pos_Standards","sn_flag, blank_flag",NA
-"1023","Pos_Standards","240327_Smp_Ctrl_A2","Cytosine",7.59,5553916,3082164,308243,-1.8,"Pos_Standards","sn_flag, blank_flag",NA
+"1023","Pos_Standards","240327_Smp_Ctrl_A2","Cytosine",7.59,5553916,3082164,308243,-1.8,"Pos_Standards","sn_flag, ",NA
 "1024","Pos_Standards","240327_Smp_Ctrl_B1","Cytosine",7.64,4352261,3967541,244352,-1.9,"Pos_Standards","sn_flag, blank_flag",NA
 "1025","Pos_Standards","240327_Smp_Ctrl_B2","Cytosine",7.7,3331818,4096067,336996,-2.3,"Pos_Standards","sn_flag, blank_flag",NA
-"1026","Pos_Standards","240327_Smp_Ctrl_B3","Cytosine",7.61,6438595,3915793,495555,-1.3,"Pos_Standards","sn_flag, blank_flag",NA
+"1026","Pos_Standards","240327_Smp_Ctrl_B3","Cytosine",7.61,6438595,3915793,495555,-1.3,"Pos_Standards","sn_flag, ",NA
 "1027","Pos_Standards","240327_Smp_Ctrl_C1","Cytosine",7.6,3529241,3011476,224784,-2,"Pos_Standards","sn_flag, blank_flag",NA
 "1028","Pos_Standards","240327_Smp_Ctrl_C2","Cytosine",7.57,2799478,4268377,190173,-1.4,"Pos_Standards","sn_flag, blank_flag",NA
 "1029","Pos_Standards","240327_Smp_Ctrl_C3","Cytosine",7.65,2304400,3067996,215253,-1.6,"Pos_Standards","sn_flag, blank_flag",NA
 "1030","Pos_Standards","240327_Smp_Gluc_16_A","Cytosine",7.67,1228442,1980172,84362,-1.9,"Pos_Standards","sn_flag, blank_flag",NA
 "1031","Pos_Standards","240327_Smp_Gluc_16_B","Cytosine",7.65,1197700,3834756,124236,-1.8,"Pos_Standards","sn_flag, blank_flag",NA
-"1032","Pos_Standards","240327_Smp_Gluc_16_C","Cytosine",7.71,5669953,4134237,368522,-1.9,"Pos_Standards","sn_flag, blank_flag",NA
-"1033","Pos_Standards","240327_Smp_Hom_16_A","Cytosine",7.7,6086747,2621558,307024,-1.8,"Pos_Standards","sn_flag, blank_flag",NA
+"1032","Pos_Standards","240327_Smp_Gluc_16_C","Cytosine",7.71,5669953,4134237,368522,-1.9,"Pos_Standards","sn_flag, ",NA
+"1033","Pos_Standards","240327_Smp_Hom_16_A","Cytosine",7.7,6086747,2621558,307024,-1.8,"Pos_Standards","sn_flag, ",NA
 "1034","Pos_Standards","240327_Smp_Hom_16_B","Cytosine",7.65,2486048,3745805,454565,-1.8,"Pos_Standards","sn_flag, blank_flag",NA
 "1035","Pos_Standards","240327_Smp_Hom_16_C","Cytosine",7.64,3112183,2977011,227823,-2.4,"Pos_Standards","sn_flag, blank_flag",NA
 "1036","Pos_Standards","240327_Smp_MQBlk1_A","Cytosine",7.65,1928680,3693050,155656,-2,"Pos_Standards","sn_flag, blank_flag",NA
@@ -1088,7 +1088,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1086","Pos_Standards","240304_Smp_WT_BLK_Gluc_C","Deoxyadenosine",3.75,6570255,0,209882,-1.7,"Pos_Standards","",6570255
 "1087","Pos_Standards","240304_Smp_WT_BLK_Hom_A","Deoxyadenosine",3.61,2819691,0,104956,-1.3,"Pos_Standards","",2819691
 "1088","Pos_Standards","240304_Smp_WT_BLK_Hom_B","Deoxyadenosine",3.72,6934687,0,235808,-1.9,"Pos_Standards","",6934687
-"1089","Pos_Standards","240304_Smp_WT_BLK_Mix_A","Deoxyadenosine",3.62,235865,0,82625,-1.4,"Pos_Standards","blank_flag",NA
+"1089","Pos_Standards","240304_Smp_WT_BLK_Mix_A","Deoxyadenosine",3.62,235865,0,82625,-1.4,"Pos_Standards","",235865
 "1090","Pos_Standards","240304_Smp_WT_Gluc_A","Deoxyadenosine",3.69,8355317,0,234997,-1.6,"Pos_Standards","",8355317
 "1091","Pos_Standards","240304_Smp_WT_Gluc_B","Deoxyadenosine",3.75,29855266,0,911414,-1.7,"Pos_Standards","",29855266
 "1092","Pos_Standards","240304_Smp_WT_Gluc_C","Deoxyadenosine",3.76,19332334,0,564535,-1.8,"Pos_Standards","",19332334
@@ -1172,9 +1172,9 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1170","Pos_Standards","240304_Smp_ASW_B","L-Glutamic acid",11.74,2396112128,42681820,189996640,-2.2,"Pos_Standards","",2396112128
 "1171","Pos_Standards","240304_Smp_ASW_Blk_A","L-Glutamic acid",11.54,102696248,6660704,7578631,-3,"Pos_Standards","",102696248
 "1172","Pos_Standards","240304_Smp_ASW_C","L-Glutamic acid",11.7,1367297536,26972480,117637408,-2.9,"Pos_Standards","",1367297536
-"1173","Pos_Standards","240304_Smp_Ctrl_A1","L-Glutamic acid",11.57,16651383,4882824,349992,-2.2,"Pos_Standards","blank_flag",NA
+"1173","Pos_Standards","240304_Smp_Ctrl_A1","L-Glutamic acid",11.57,16651383,4882824,349992,-2.2,"Pos_Standards","",16651383
 "1174","Pos_Standards","240304_Smp_Ctrl_B3","L-Glutamic acid",11.68,8326560,3444359,218622,-2.3,"Pos_Standards","sn_flag, blank_flag",NA
-"1175","Pos_Standards","240304_Smp_Ctrl_C2","L-Glutamic acid",11.27,14795721,4750698,304674,-2.7,"Pos_Standards","blank_flag",NA
+"1175","Pos_Standards","240304_Smp_Ctrl_C2","L-Glutamic acid",11.27,14795721,4750698,304674,-2.7,"Pos_Standards","",14795721
 "1176","Pos_Standards","240304_Smp_Gluc_16_A","L-Glutamic acid",11.67,4574547968,53967968,345536224,-2.9,"Pos_Standards","",4574547968
 "1177","Pos_Standards","240304_Smp_Gluc_16_B","L-Glutamic acid",11.62,14481180672,148272288,896645184,-3.1,"Pos_Standards","",14481180672
 "1178","Pos_Standards","240304_Smp_Gluc_16_C","L-Glutamic acid",11.56,9449177088,84563848,570862016,-2.7,"Pos_Standards","",9449177088
@@ -1220,7 +1220,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1218","Pos_Standards","240327_Smp_Ctrl_B3","L-Glutamic acid",11.51,22128896,3923769,993232,-2.4,"Pos_Standards","",22128896
 "1219","Pos_Standards","240327_Smp_Ctrl_C1","L-Glutamic acid",11.7,6174498,1294607,229021,-3.4,"Pos_Standards","blank_flag",NA
 "1220","Pos_Standards","240327_Smp_Ctrl_C2","L-Glutamic acid",11.89,4725077,599199,181501,-3.2,"Pos_Standards","blank_flag",NA
-"1221","Pos_Standards","240327_Smp_Ctrl_C3","L-Glutamic acid",11.76,14397460,1827867,520613,-2.5,"Pos_Standards","blank_flag",NA
+"1221","Pos_Standards","240327_Smp_Ctrl_C3","L-Glutamic acid",11.76,14397460,1827867,520613,-2.5,"Pos_Standards","",14397460
 "1222","Pos_Standards","240327_Smp_Gluc_16_A","L-Glutamic acid",11.63,362507168,13426310,22640274,-3.1,"Pos_Standards","",362507168
 "1223","Pos_Standards","240327_Smp_Gluc_16_B","L-Glutamic acid",11.74,111662136,3125887,4462846,-2.9,"Pos_Standards","",111662136
 "1224","Pos_Standards","240327_Smp_Gluc_16_C","L-Glutamic acid",11.8,1371796992,20501004,92160688,-2.9,"Pos_Standards","",1371796992
@@ -1236,7 +1236,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1234","Pos_Standards","240327_Smp_MQBlk3_A","L-Glutamic acid",11.58,3376530,1351474,81532,-3,"Pos_Standards","sn_flag, blank_flag",NA
 "1235","Pos_Standards","240327_Smp_MQBlk3_B","L-Glutamic acid",11.52,4254235,77101,119004,-3,"Pos_Standards","blank_flag",NA
 "1236","Pos_Standards","240327_Smp_MQBlk3_C","L-Glutamic acid",11.19,6663450,2965522,165349,-3.5,"Pos_Standards","sn_flag, blank_flag",NA
-"1237","Pos_Standards","240327_Smp_MQBlk4_A","L-Glutamic acid",11.72,15157835,1850163,495424,-2.9,"Pos_Standards","blank_flag",NA
+"1237","Pos_Standards","240327_Smp_MQBlk4_A","L-Glutamic acid",11.72,15157835,1850163,495424,-2.9,"Pos_Standards","",15157835
 "1238","Pos_Standards","240327_Smp_MQBlk4_B","L-Glutamic acid",11.1,3329949,3154881,133790,-3.4,"Pos_Standards","sn_flag, blank_flag",NA
 "1239","Pos_Standards","240327_Smp_MQBlk4_C","L-Glutamic acid",11.32,4592003,3781478,123816,-2.7,"Pos_Standards","sn_flag, blank_flag",NA
 "1240","Pos_Standards","240327_Smp_WT_Gluc_A","L-Glutamic acid",11.64,1782588416,18898696,63969096,-3.5,"Pos_Standards","",1782588416
@@ -1427,7 +1427,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1425","Pos_Standards","240327_Smp_MQBlk2_C","Guanosine",9.38,0,0,0,NA,"Pos_Standards","areamin_flag, blank_flag",NA
 "1426","Pos_Standards","240327_Smp_MQBlk3_A","Guanosine",9.37,0,0,0,NA,"Pos_Standards","areamin_flag, blank_flag",NA
 "1427","Pos_Standards","240327_Smp_MQBlk3_B","Guanosine",9.35,0,0,0,NA,"Pos_Standards","areamin_flag, blank_flag",NA
-"1428","Pos_Standards","240327_Smp_MQBlk3_C","Guanosine",9.36,1115,0,933,-1.9,"Pos_Standards","areamin_flag, blank_flag",NA
+"1428","Pos_Standards","240327_Smp_MQBlk3_C","Guanosine",9.36,1115,0,933,-1.9,"Pos_Standards","areamin_flag, ",NA
 "1429","Pos_Standards","240327_Smp_MQBlk4_A","Guanosine",9.45,0,0,0,NA,"Pos_Standards","areamin_flag, blank_flag",NA
 "1430","Pos_Standards","240327_Smp_MQBlk4_B","Guanosine",9.36,0,0,0,NA,"Pos_Standards","areamin_flag, blank_flag",NA
 "1431","Pos_Standards","240327_Smp_MQBlk4_C","Guanosine",9.42,3649,0,1672,-3,"Pos_Standards","areamin_flag, ",NA
@@ -1451,8 +1451,8 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1449","Pos_Standards","240304_Std_H2OinMatrix_1","L-Homoserine",11.54,1951215,0,112017,-1.9,"Pos_Standards","blank_flag",NA
 "1450","Pos_Standards","240304_Std_H2OinMatrix_2","L-Homoserine",11.09,2726667,0,231864,-2.4,"Pos_Standards","blank_flag",NA
 "1451","Pos_Standards","240304_Poo_EpicFate_Full1","L-Homoserine",11.34,974391,2702755,142744,-1.8,"Pos_Standards","sn_flag, blank_flag",NA
-"1452","Pos_Standards","240304_Poo_EpicFate_Full2","L-Homoserine",11.25,4469356,0,227652,-2.2,"Pos_Standards","blank_flag",NA
-"1453","Pos_Standards","240304_Poo_EpicFate_Full3","L-Homoserine",11.16,3542275,0,289367,-1.5,"Pos_Standards","blank_flag",NA
+"1452","Pos_Standards","240304_Poo_EpicFate_Full2","L-Homoserine",11.25,4469356,0,227652,-2.2,"Pos_Standards","",4469356
+"1453","Pos_Standards","240304_Poo_EpicFate_Full3","L-Homoserine",11.16,3542275,0,289367,-1.5,"Pos_Standards","",3542275
 "1454","Pos_Standards","240304_Poo_EpicFate_Half1","L-Homoserine",11.39,2252981,0,117859,-1.3,"Pos_Standards","blank_flag",NA
 "1455","Pos_Standards","240304_Poo_EpicFate_Half2","L-Homoserine",11.25,1534052,676565,109612,-2.3,"Pos_Standards","sn_flag, blank_flag",NA
 "1456","Pos_Standards","240304_Poo_EpicFate_Half3","L-Homoserine",11.1,2456530,0,156026,-1.7,"Pos_Standards","blank_flag",NA
@@ -1473,15 +1473,15 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1471","Pos_Standards","240304_Smp_WT_BLK_Hom_A","L-Homoserine",11.3,243513,2102596,30640,-1.9,"Pos_Standards","sn_flag, blank_flag",NA
 "1472","Pos_Standards","240304_Smp_WT_BLK_Hom_B","L-Homoserine",11.24,1683562,1019243,162824,-2,"Pos_Standards","sn_flag, blank_flag",NA
 "1473","Pos_Standards","240304_Smp_WT_BLK_Mix_A","L-Homoserine",11.53,315678,1154409,24757,-2.1,"Pos_Standards","sn_flag, blank_flag",NA
-"1474","Pos_Standards","240304_Smp_WT_Gluc_A","L-Homoserine",11.29,4401614,0,293265,-2,"Pos_Standards","blank_flag",NA
+"1474","Pos_Standards","240304_Smp_WT_Gluc_A","L-Homoserine",11.29,4401614,0,293265,-2,"Pos_Standards","",4401614
 "1475","Pos_Standards","240304_Smp_WT_Gluc_B","L-Homoserine",11.21,1460340,1851291,156571,-1.9,"Pos_Standards","sn_flag, blank_flag",NA
 "1476","Pos_Standards","240304_Smp_WT_Gluc_C","L-Homoserine",11.23,2940067,1411420,293339,-2.2,"Pos_Standards","sn_flag, blank_flag",NA
 "1477","Pos_Standards","240304_Smp_WT_Hom_A","L-Homoserine",11.29,3128248,0,203191,-1.6,"Pos_Standards","blank_flag",NA
-"1478","Pos_Standards","240304_Smp_WT_Hom_B","L-Homoserine",11.21,3859286,0,311040,-1.8,"Pos_Standards","blank_flag",NA
-"1479","Pos_Standards","240304_Smp_WT_Hom_C","L-Homoserine",11.26,5098823,0,373609,-1.7,"Pos_Standards","blank_flag",NA
+"1478","Pos_Standards","240304_Smp_WT_Hom_B","L-Homoserine",11.21,3859286,0,311040,-1.8,"Pos_Standards","",3859286
+"1479","Pos_Standards","240304_Smp_WT_Hom_C","L-Homoserine",11.26,5098823,0,373609,-1.7,"Pos_Standards","",5098823
 "1480","Pos_Standards","240304_Smp_WT_Mix_A","L-Homoserine",11.2,6067948,0,464623,-2,"Pos_Standards","",6067948
 "1481","Pos_Standards","240304_Smp_WT_Mix_B","L-Homoserine",11.27,6048667,0,397918,-2.1,"Pos_Standards","",6048667
-"1482","Pos_Standards","240304_Smp_WT_Mix_C","L-Homoserine",11.21,4724139,0,343125,-1.5,"Pos_Standards","blank_flag",NA
+"1482","Pos_Standards","240304_Smp_WT_Mix_C","L-Homoserine",11.21,4724139,0,343125,-1.5,"Pos_Standards","",4724139
 "1483","Pos_Standards","240327_Std_4uMStdsMix1InH2O_1","L-Homoserine",11.27,10108587,3800149,596111,-2.2,"Pos_Standards","sn_flag, ",NA
 "1484","Pos_Standards","240327_Std_4uMStdsMix1InH2O_2","L-Homoserine",11.09,16606118,0,726055,-2.2,"Pos_Standards","",16606118
 "1485","Pos_Standards","240327_Std_4uMStdsMix1InMatrix_1","L-Homoserine",11.26,8153484,3712946,569535,-2.3,"Pos_Standards","sn_flag, ",NA
@@ -1490,11 +1490,11 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1488","Pos_Standards","240327_Std_4uMStdsMix2InH2O_2","L-Homoserine",11.09,341142656,18225896,20319668,-2,"Pos_Standards","",341142656
 "1489","Pos_Standards","240327_Std_4uMStdsMix2InMatrix_1","L-Homoserine",11.31,401253056,10775589,20933292,-2.4,"Pos_Standards","",401253056
 "1490","Pos_Standards","240327_Std_4uMStdsMix2InMatrix_2","L-Homoserine",10.93,624731968,8456754,31024278,-2.9,"Pos_Standards","",624731968
-"1491","Pos_Standards","240327_Std_H2OinMatrix_1","L-Homoserine",11.43,3589281,234782,132649,-2.4,"Pos_Standards","blank_flag",NA
+"1491","Pos_Standards","240327_Std_H2OinMatrix_1","L-Homoserine",11.43,3589281,234782,132649,-2.4,"Pos_Standards","",3589281
 "1492","Pos_Standards","240327_Std_H2OinMatrix_2","L-Homoserine",11.14,1161876,1388092,72067,-1.9,"Pos_Standards","sn_flag, blank_flag",NA
-"1493","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full1","L-Homoserine",11.26,3534438,0,132621,-2,"Pos_Standards","blank_flag",NA
+"1493","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full1","L-Homoserine",11.26,3534438,0,132621,-2,"Pos_Standards","",3534438
 "1494","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full2","L-Homoserine",11.2,3143774,996590,179745,-2.9,"Pos_Standards","blank_flag",NA
-"1495","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full3","L-Homoserine",11.07,3813520,1034665,204761,-2.6,"Pos_Standards","blank_flag",NA
+"1495","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full3","L-Homoserine",11.07,3813520,1034665,204761,-2.6,"Pos_Standards","",3813520
 "1496","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half1","L-Homoserine",11.2,392173,1617281,35198,-2.1,"Pos_Standards","sn_flag, blank_flag",NA
 "1497","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half2","L-Homoserine",11.21,1117033,313440,76265,-2.9,"Pos_Standards","blank_flag",NA
 "1498","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half3","L-Homoserine",11.02,1341716,824197,85145,-2.8,"Pos_Standards","sn_flag, blank_flag",NA
@@ -1505,21 +1505,21 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1503","Pos_Standards","240327_Smp_Ctrl_A2","L-Homoserine",10.62,2380507,1399151,72401,-2.2,"Pos_Standards","sn_flag, blank_flag",NA
 "1504","Pos_Standards","240327_Smp_Ctrl_B1","L-Homoserine",11.03,2180610,2001556,115446,-2.9,"Pos_Standards","sn_flag, blank_flag",NA
 "1505","Pos_Standards","240327_Smp_Ctrl_B2","L-Homoserine",11.15,3284883,0,164450,-2.7,"Pos_Standards","blank_flag",NA
-"1506","Pos_Standards","240327_Smp_Ctrl_B3","L-Homoserine",11.09,3496886,541016,151601,-1.8,"Pos_Standards","blank_flag",NA
+"1506","Pos_Standards","240327_Smp_Ctrl_B3","L-Homoserine",11.09,3496886,541016,151601,-1.8,"Pos_Standards","",3496886
 "1507","Pos_Standards","240327_Smp_Ctrl_C1","L-Homoserine",11.33,672758,1282184,40768,-2.3,"Pos_Standards","sn_flag, blank_flag",NA
 "1508","Pos_Standards","240327_Smp_Ctrl_C2","L-Homoserine",11.4,2669030,0,148498,-2.5,"Pos_Standards","blank_flag",NA
 "1509","Pos_Standards","240327_Smp_Ctrl_C3","L-Homoserine",11.32,1762783,1041498,107021,-1.9,"Pos_Standards","sn_flag, blank_flag",NA
 "1510","Pos_Standards","240327_Smp_Gluc_16_A","L-Homoserine",11.16,2729890,266903,165279,-2.3,"Pos_Standards","blank_flag",NA
 "1511","Pos_Standards","240327_Smp_Gluc_16_B","L-Homoserine",11.33,2211787,0,80687,-2.2,"Pos_Standards","blank_flag",NA
-"1512","Pos_Standards","240327_Smp_Gluc_16_C","L-Homoserine",11.28,4489514,0,213187,-2.1,"Pos_Standards","blank_flag",NA
-"1513","Pos_Standards","240327_Smp_Hom_16_A","L-Homoserine",11.24,4887320,1462859,259128,-2.3,"Pos_Standards","blank_flag",NA
+"1512","Pos_Standards","240327_Smp_Gluc_16_C","L-Homoserine",11.28,4489514,0,213187,-2.1,"Pos_Standards","",4489514
+"1513","Pos_Standards","240327_Smp_Hom_16_A","L-Homoserine",11.24,4887320,1462859,259128,-2.3,"Pos_Standards","",4887320
 "1514","Pos_Standards","240327_Smp_Hom_16_B","L-Homoserine",11.07,1797384,642784,128566,-2.5,"Pos_Standards","sn_flag, blank_flag",NA
-"1515","Pos_Standards","240327_Smp_Hom_16_C","L-Homoserine",11.15,3552776,768628,240899,-2.8,"Pos_Standards","blank_flag",NA
+"1515","Pos_Standards","240327_Smp_Hom_16_C","L-Homoserine",11.15,3552776,768628,240899,-2.8,"Pos_Standards","",3552776
 "1516","Pos_Standards","240327_Smp_MQBlk1_A","L-Homoserine",11.09,1080417,1097424,47134,-2.7,"Pos_Standards","sn_flag, blank_flag",NA
 "1517","Pos_Standards","240327_Smp_MQBlk1_B","L-Homoserine",11.36,2747094,830361,86314,-2.3,"Pos_Standards","blank_flag",NA
 "1518","Pos_Standards","240327_Smp_MQBlk1_C","L-Homoserine",11.38,1691228,1216667,77943,-2.4,"Pos_Standards","sn_flag, blank_flag",NA
 "1519","Pos_Standards","240327_Smp_MQBlk2_A","L-Homoserine",11.23,1340974,1265643,63713,-2.6,"Pos_Standards","sn_flag, blank_flag",NA
-"1520","Pos_Standards","240327_Smp_MQBlk2_B","L-Homoserine",11.3,3605349,210101,142056,-2.5,"Pos_Standards","blank_flag",NA
+"1520","Pos_Standards","240327_Smp_MQBlk2_B","L-Homoserine",11.3,3605349,210101,142056,-2.5,"Pos_Standards","",3605349
 "1521","Pos_Standards","240327_Smp_MQBlk2_C","L-Homoserine",11.1,842188,846760,55217,-2.1,"Pos_Standards","sn_flag, blank_flag",NA
 "1522","Pos_Standards","240327_Smp_MQBlk3_A","L-Homoserine",11.42,1535741,703850,59512,-2.3,"Pos_Standards","sn_flag, blank_flag",NA
 "1523","Pos_Standards","240327_Smp_MQBlk3_B","L-Homoserine",11.27,1629823,1497175,60544,-2.5,"Pos_Standards","sn_flag, blank_flag",NA
@@ -1528,13 +1528,13 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1526","Pos_Standards","240327_Smp_MQBlk4_B","L-Homoserine",10.94,1919693,97786,72705,-2.1,"Pos_Standards","blank_flag",NA
 "1527","Pos_Standards","240327_Smp_MQBlk4_C","L-Homoserine",11.21,1241506,3865,71824,-1.8,"Pos_Standards","blank_flag",NA
 "1528","Pos_Standards","240327_Smp_WT_Gluc_A","L-Homoserine",11.23,2139025,2227599,100366,-2.9,"Pos_Standards","sn_flag, blank_flag",NA
-"1529","Pos_Standards","240327_Smp_WT_Gluc_B","L-Homoserine",11.21,4441234,303771,148557,-2.8,"Pos_Standards","blank_flag",NA
+"1529","Pos_Standards","240327_Smp_WT_Gluc_B","L-Homoserine",11.21,4441234,303771,148557,-2.8,"Pos_Standards","",4441234
 "1530","Pos_Standards","240327_Smp_WT_Gluc_C","L-Homoserine",11.05,1854464,1639508,108628,-3,"Pos_Standards","sn_flag, blank_flag",NA
-"1531","Pos_Standards","240327_Smp_WT_Hom_A","L-Homoserine",11.28,3951932,1593162,151499,-2.5,"Pos_Standards","sn_flag, blank_flag",NA
-"1532","Pos_Standards","240327_Smp_WT_Hom_B","L-Homoserine",11.22,4229038,1221370,158864,-1.9,"Pos_Standards","blank_flag",NA
-"1533","Pos_Standards","240327_Smp_WT_Hom_C","L-Homoserine",11.17,4647799,2355050,220884,-2.4,"Pos_Standards","sn_flag, blank_flag",NA
-"1534","Pos_Standards","240327_Smp_WT_Mix_A","L-Homoserine",11.21,4729919,0,147083,-1.9,"Pos_Standards","blank_flag",NA
-"1535","Pos_Standards","240327_Smp_WT_Mix_B","L-Homoserine",11.13,4714151,1703085,173058,-2.8,"Pos_Standards","sn_flag, blank_flag",NA
+"1531","Pos_Standards","240327_Smp_WT_Hom_A","L-Homoserine",11.28,3951932,1593162,151499,-2.5,"Pos_Standards","sn_flag, ",NA
+"1532","Pos_Standards","240327_Smp_WT_Hom_B","L-Homoserine",11.22,4229038,1221370,158864,-1.9,"Pos_Standards","",4229038
+"1533","Pos_Standards","240327_Smp_WT_Hom_C","L-Homoserine",11.17,4647799,2355050,220884,-2.4,"Pos_Standards","sn_flag, ",NA
+"1534","Pos_Standards","240327_Smp_WT_Mix_A","L-Homoserine",11.21,4729919,0,147083,-1.9,"Pos_Standards","",4729919
+"1535","Pos_Standards","240327_Smp_WT_Mix_B","L-Homoserine",11.13,4714151,1703085,173058,-2.8,"Pos_Standards","sn_flag, ",NA
 "1536","Pos_Standards","240327_Smp_WT_Mix_C","L-Homoserine",11.29,2913556,2550745,130397,-2.4,"Pos_Standards","sn_flag, blank_flag",NA
 "1537","Pos_Standards","240304_Std_4uMStdsMix1InH2O_1","L-Lysine",19.58,40851500,0,1457896,-2.9,"Pos_Standards","",40851500
 "1538","Pos_Standards","240304_Std_4uMStdsMix1InH2O_2","L-Lysine",19.66,65807656,0,2205161,-3.1,"Pos_Standards","",65807656
@@ -1598,13 +1598,13 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1596","Pos_Standards","240327_Smp_ASW_B","L-Lysine",20.12,242563,0,20669,-2.1,"Pos_Standards","blank_flag",NA
 "1597","Pos_Standards","240327_Smp_ASW_C","L-Lysine",19.73,1283731,0,36819,-2.6,"Pos_Standards","",1283731
 "1598","Pos_Standards","240327_Smp_Ctrl_A1","L-Lysine",19.82,690442,0,24534,-3.2,"Pos_Standards","",690442
-"1599","Pos_Standards","240327_Smp_Ctrl_A2","L-Lysine",19.89,410318,0,34231,-2.1,"Pos_Standards","blank_flag",NA
-"1600","Pos_Standards","240327_Smp_Ctrl_B1","L-Lysine",19.91,372527,0,24082,-2.7,"Pos_Standards","blank_flag",NA
+"1599","Pos_Standards","240327_Smp_Ctrl_A2","L-Lysine",19.89,410318,0,34231,-2.1,"Pos_Standards","",410318
+"1600","Pos_Standards","240327_Smp_Ctrl_B1","L-Lysine",19.91,372527,0,24082,-2.7,"Pos_Standards","",372527
 "1601","Pos_Standards","240327_Smp_Ctrl_B2","L-Lysine",19.85,190599,0,29161,-0.5,"Pos_Standards","blank_flag",NA
 "1602","Pos_Standards","240327_Smp_Ctrl_B3","L-Lysine",19.75,692812,0,27517,-2.3,"Pos_Standards","",692812
 "1603","Pos_Standards","240327_Smp_Ctrl_C1","L-Lysine",19.8,194010,0,25461,-1.9,"Pos_Standards","blank_flag",NA
 "1604","Pos_Standards","240327_Smp_Ctrl_C2","L-Lysine",19.66,91074,0,24264,-1.7,"Pos_Standards","blank_flag",NA
-"1605","Pos_Standards","240327_Smp_Ctrl_C3","L-Lysine",19.5,380051,0,28130,-2.1,"Pos_Standards","blank_flag",NA
+"1605","Pos_Standards","240327_Smp_Ctrl_C3","L-Lysine",19.5,380051,0,28130,-2.1,"Pos_Standards","",380051
 "1606","Pos_Standards","240327_Smp_Gluc_16_A","L-Lysine",19.81,912189,0,31755,-2,"Pos_Standards","",912189
 "1607","Pos_Standards","240327_Smp_Gluc_16_B","L-Lysine",19.99,92575,0,19317,-0.7,"Pos_Standards","blank_flag",NA
 "1608","Pos_Standards","240327_Smp_Gluc_16_C","L-Lysine",19.38,191312,0,30000,-1.6,"Pos_Standards","blank_flag",NA
@@ -1623,15 +1623,15 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1621","Pos_Standards","240327_Smp_MQBlk4_A","L-Lysine",19.53,178383,0,21825,-1.2,"Pos_Standards","blank_flag",NA
 "1622","Pos_Standards","240327_Smp_MQBlk4_B","L-Lysine",19.41,340933,0,18561,-2.2,"Pos_Standards","blank_flag",NA
 "1623","Pos_Standards","240327_Smp_MQBlk4_C","L-Lysine",19.49,550041,0,23678,-2,"Pos_Standards","",550041
-"1624","Pos_Standards","240327_Smp_WT_Gluc_A","L-Lysine",19.69,378644,0,27453,-2.4,"Pos_Standards","blank_flag",NA
+"1624","Pos_Standards","240327_Smp_WT_Gluc_A","L-Lysine",19.69,378644,0,27453,-2.4,"Pos_Standards","",378644
 "1625","Pos_Standards","240327_Smp_WT_Gluc_B","L-Lysine",19.64,558778,0,27235,-3.1,"Pos_Standards","",558778
 "1626","Pos_Standards","240327_Smp_WT_Gluc_C","L-Lysine",19.57,2733956,0,85329,-3.7,"Pos_Standards","",2733956
 "1627","Pos_Standards","240327_Smp_WT_Hom_A","L-Lysine",19.82,717658,0,30731,-3.3,"Pos_Standards","",717658
 "1628","Pos_Standards","240327_Smp_WT_Hom_B","L-Lysine",19.53,92535,0,26826,-1.3,"Pos_Standards","blank_flag",NA
-"1629","Pos_Standards","240327_Smp_WT_Hom_C","L-Lysine",19.61,400935,0,32490,-2.9,"Pos_Standards","blank_flag",NA
-"1630","Pos_Standards","240327_Smp_WT_Mix_A","L-Lysine",19.55,482788,0,23151,-2.2,"Pos_Standards","blank_flag",NA
+"1629","Pos_Standards","240327_Smp_WT_Hom_C","L-Lysine",19.61,400935,0,32490,-2.9,"Pos_Standards","",400935
+"1630","Pos_Standards","240327_Smp_WT_Mix_A","L-Lysine",19.55,482788,0,23151,-2.2,"Pos_Standards","",482788
 "1631","Pos_Standards","240327_Smp_WT_Mix_B","L-Lysine",19.72,204156,0,18845,-2.9,"Pos_Standards","blank_flag",NA
-"1632","Pos_Standards","240327_Smp_WT_Mix_C","L-Lysine",19.9,448073,0,24130,-2.3,"Pos_Standards","blank_flag",NA
+"1632","Pos_Standards","240327_Smp_WT_Mix_C","L-Lysine",19.9,448073,0,24130,-2.3,"Pos_Standards","",448073
 "1633","Pos_Standards","240304_Std_4uMStdsMix1InH2O_1","L-Phenylalanine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "1634","Pos_Standards","240304_Std_4uMStdsMix1InH2O_2","L-Phenylalanine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "1635","Pos_Standards","240304_Std_4uMStdsMix1InMatrix_1","L-Phenylalanine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
@@ -1693,13 +1693,13 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1691","Pos_Standards","240327_Smp_ASW_A","L-Phenylalanine",5.08,1566970,2102813,98954,-2.4,"Pos_Standards","sn_flag, blank_flag",NA
 "1692","Pos_Standards","240327_Smp_ASW_B","L-Phenylalanine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "1693","Pos_Standards","240327_Smp_ASW_C","L-Phenylalanine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
-"1694","Pos_Standards","240327_Smp_Ctrl_A1","L-Phenylalanine",4.69,4660222,3062895,289284,-3.1,"Pos_Standards","sn_flag, blank_flag",NA
+"1694","Pos_Standards","240327_Smp_Ctrl_A1","L-Phenylalanine",4.69,4660222,3062895,289284,-3.1,"Pos_Standards","sn_flag, ",NA
 "1695","Pos_Standards","240327_Smp_Ctrl_A2","L-Phenylalanine",4.71,1838990,2064941,140126,-3.3,"Pos_Standards","sn_flag, blank_flag",NA
 "1696","Pos_Standards","240327_Smp_Ctrl_B1","L-Phenylalanine",4.63,2125151,1874592,115170,-2.7,"Pos_Standards","sn_flag, blank_flag",NA
 "1697","Pos_Standards","240327_Smp_Ctrl_B2","L-Phenylalanine",4.92,3668830,2575169,210515,-2.9,"Pos_Standards","sn_flag, blank_flag",NA
 "1698","Pos_Standards","240327_Smp_Ctrl_B3","L-Phenylalanine",4.84,3978593,1945185,293620,-1.8,"Pos_Standards","sn_flag, blank_flag",NA
 "1699","Pos_Standards","240327_Smp_Ctrl_C1","L-Phenylalanine",4.92,2035188,2205437,95735,-3.2,"Pos_Standards","sn_flag, blank_flag",NA
-"1700","Pos_Standards","240327_Smp_Ctrl_C2","L-Phenylalanine",5.41,6659644,0,395541,-2.7,"Pos_Standards","blank_flag",NA
+"1700","Pos_Standards","240327_Smp_Ctrl_C2","L-Phenylalanine",5.41,6659644,0,395541,-2.7,"Pos_Standards","",6659644
 "1701","Pos_Standards","240327_Smp_Ctrl_C3","L-Phenylalanine",5.08,2665035,1350056,150369,-2.1,"Pos_Standards","sn_flag, blank_flag",NA
 "1702","Pos_Standards","240327_Smp_Gluc_16_A","L-Phenylalanine",6.4,11624178,6802111,221102,-3,"Pos_Standards","sn_flag, ",NA
 "1703","Pos_Standards","240327_Smp_Gluc_16_B","L-Phenylalanine",5.01,11903193,3489753,573142,-2.6,"Pos_Standards","",11903193
@@ -1751,11 +1751,11 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1749","Pos_Standards","240304_Smp_Ctrl_A1","L-Proline",9.4,2705958,1175808,142060,-1.1,"Pos_Standards","sn_flag, blank_flag",NA
 "1750","Pos_Standards","240304_Smp_Ctrl_B3","L-Proline",9.39,1475038,1532837,104613,-1.8,"Pos_Standards","sn_flag, blank_flag",NA
 "1751","Pos_Standards","240304_Smp_Ctrl_C2","L-Proline",9.41,3367154,2385866,185522,-1.4,"Pos_Standards","sn_flag, blank_flag",NA
-"1752","Pos_Standards","240304_Smp_Gluc_16_A","L-Proline",9.4,29275114,2501199,2092503,-2,"Pos_Standards","blank_flag",NA
+"1752","Pos_Standards","240304_Smp_Gluc_16_A","L-Proline",9.4,29275114,2501199,2092503,-2,"Pos_Standards","",29275114
 "1753","Pos_Standards","240304_Smp_Gluc_16_B","L-Proline",9.39,131477056,4642447,9268503,-1.8,"Pos_Standards","",131477056
 "1754","Pos_Standards","240304_Smp_Gluc_16_C","L-Proline",9.4,70270112,3902820,4938205,-2.1,"Pos_Standards","",70270112
-"1755","Pos_Standards","240304_Smp_Hom_16_A","L-Proline",9.36,38330556,9225431,2270172,-1.6,"Pos_Standards","blank_flag",NA
-"1756","Pos_Standards","240304_Smp_Hom_16_B","L-Proline",9.4,27818176,6833724,1608369,-1.4,"Pos_Standards","blank_flag",NA
+"1755","Pos_Standards","240304_Smp_Hom_16_A","L-Proline",9.36,38330556,9225431,2270172,-1.6,"Pos_Standards","",38330556
+"1756","Pos_Standards","240304_Smp_Hom_16_B","L-Proline",9.4,27818176,6833724,1608369,-1.4,"Pos_Standards","",27818176
 "1757","Pos_Standards","240304_Smp_Hom_16_C","L-Proline",9.4,17292720,4388320,975683,-1.2,"Pos_Standards","blank_flag",NA
 "1758","Pos_Standards","240304_Smp_WT_BLK_Gluc_C","L-Proline",9.39,17816004,202245,1095826,-1.4,"Pos_Standards","blank_flag",NA
 "1759","Pos_Standards","240304_Smp_WT_BLK_Hom_A","L-Proline",9.41,3515809,2066983,229504,-1.4,"Pos_Standards","sn_flag, blank_flag",NA
@@ -1764,7 +1764,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1762","Pos_Standards","240304_Smp_WT_Gluc_A","L-Proline",9.39,178917792,6334131,12618522,-1.5,"Pos_Standards","",178917792
 "1763","Pos_Standards","240304_Smp_WT_Gluc_B","L-Proline",9.41,149035216,4151033,10531504,-1.4,"Pos_Standards","",149035216
 "1764","Pos_Standards","240304_Smp_WT_Gluc_C","L-Proline",9.37,178752144,4888177,12461539,-1.9,"Pos_Standards","",178752144
-"1765","Pos_Standards","240304_Smp_WT_Hom_A","L-Proline",9.38,27283098,3741391,2144232,-1.2,"Pos_Standards","blank_flag",NA
+"1765","Pos_Standards","240304_Smp_WT_Hom_A","L-Proline",9.38,27283098,3741391,2144232,-1.2,"Pos_Standards","",27283098
 "1766","Pos_Standards","240304_Smp_WT_Hom_B","L-Proline",9.38,89747168,6148013,5658608,-1.9,"Pos_Standards","",89747168
 "1767","Pos_Standards","240304_Smp_WT_Hom_C","L-Proline",9.38,71818504,6293937,4266023,-1.2,"Pos_Standards","",71818504
 "1768","Pos_Standards","240304_Smp_WT_Mix_A","L-Proline",9.35,331793568,8998498,22801898,-1.9,"Pos_Standards","",331793568
@@ -1793,7 +1793,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1791","Pos_Standards","240327_Smp_Ctrl_A2","L-Proline",9.49,17649368,3484833,1274342,-2.4,"Pos_Standards","blank_flag",NA
 "1792","Pos_Standards","240327_Smp_Ctrl_B1","L-Proline",9.48,15816265,4404927,1115721,-2.1,"Pos_Standards","blank_flag",NA
 "1793","Pos_Standards","240327_Smp_Ctrl_B2","L-Proline",9.51,16404236,5051948,1170351,-2.2,"Pos_Standards","blank_flag",NA
-"1794","Pos_Standards","240327_Smp_Ctrl_B3","L-Proline",9.51,29577132,3987080,2227829,-1.9,"Pos_Standards","blank_flag",NA
+"1794","Pos_Standards","240327_Smp_Ctrl_B3","L-Proline",9.51,29577132,3987080,2227829,-1.9,"Pos_Standards","",29577132
 "1795","Pos_Standards","240327_Smp_Ctrl_C1","L-Proline",9.52,19409444,3220066,1639577,-2.7,"Pos_Standards","blank_flag",NA
 "1796","Pos_Standards","240327_Smp_Ctrl_C2","L-Proline",9.54,17373638,327297,1212294,-2.1,"Pos_Standards","blank_flag",NA
 "1797","Pos_Standards","240327_Smp_Ctrl_C3","L-Proline",9.52,15975039,2600605,1247457,-2.1,"Pos_Standards","blank_flag",NA
@@ -1820,7 +1820,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1818","Pos_Standards","240327_Smp_WT_Gluc_C","L-Proline",9.47,42471820,3589758,3107414,-2.4,"Pos_Standards","",42471820
 "1819","Pos_Standards","240327_Smp_WT_Hom_A","L-Proline",9.57,23851672,3644079,1909166,-1.9,"Pos_Standards","blank_flag",NA
 "1820","Pos_Standards","240327_Smp_WT_Hom_B","L-Proline",9.53,14383698,4469609,1139166,-2.2,"Pos_Standards","blank_flag",NA
-"1821","Pos_Standards","240327_Smp_WT_Hom_C","L-Proline",9.52,32078354,4656128,1995061,-2.2,"Pos_Standards","blank_flag",NA
+"1821","Pos_Standards","240327_Smp_WT_Hom_C","L-Proline",9.52,32078354,4656128,1995061,-2.2,"Pos_Standards","",32078354
 "1822","Pos_Standards","240327_Smp_WT_Mix_A","L-Proline",9.52,20057790,4162104,1425086,-2.2,"Pos_Standards","blank_flag",NA
 "1823","Pos_Standards","240327_Smp_WT_Mix_B","L-Proline",9.49,19453502,3609301,1366135,-2.1,"Pos_Standards","blank_flag",NA
 "1824","Pos_Standards","240327_Smp_WT_Mix_C","L-Proline",9.54,15487939,5126178,1066283,-1.7,"Pos_Standards","blank_flag",NA
@@ -1832,12 +1832,12 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1830","Pos_Standards","240304_Std_4uMStdsMix2InH2O_2","L-Serine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "1831","Pos_Standards","240304_Std_4uMStdsMix2InMatrix_1","L-Serine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "1832","Pos_Standards","240304_Std_4uMStdsMix2InMatrix_2","L-Serine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
-"1833","Pos_Standards","240304_Std_H2OinMatrix_1","L-Serine",11.72,13075815,196586,921077,-1.1,"Pos_Standards","blank_flag",NA
+"1833","Pos_Standards","240304_Std_H2OinMatrix_1","L-Serine",11.72,13075815,196586,921077,-1.1,"Pos_Standards","",13075815
 "1834","Pos_Standards","240304_Std_H2OinMatrix_2","L-Serine",11.43,19279946,0,967140,-1.1,"Pos_Standards","",19279946
 "1835","Pos_Standards","240304_Poo_EpicFate_Full1","L-Serine",11.8,19845560,0,1218751,-0.7,"Pos_Standards","",19845560
 "1836","Pos_Standards","240304_Poo_EpicFate_Full2","L-Serine",11.56,23807442,0,1115092,-1.1,"Pos_Standards","",23807442
 "1837","Pos_Standards","240304_Poo_EpicFate_Full3","L-Serine",11.51,25505524,0,1312086,-1,"Pos_Standards","",25505524
-"1838","Pos_Standards","240304_Poo_EpicFate_Half1","L-Serine",11.86,12255686,0,749699,-0.9,"Pos_Standards","blank_flag",NA
+"1838","Pos_Standards","240304_Poo_EpicFate_Half1","L-Serine",11.86,12255686,0,749699,-0.9,"Pos_Standards","",12255686
 "1839","Pos_Standards","240304_Poo_EpicFate_Half2","L-Serine",11.55,14542276,0,597252,-1.1,"Pos_Standards","",14542276
 "1840","Pos_Standards","240304_Poo_EpicFate_Half3","L-Serine",11.57,14136915,2692366,888104,-1.1,"Pos_Standards","",14136915
 "1841","Pos_Standards","240304_Smp_ASW_A","L-Serine",11.7,3538196,1996859,140395,-0.4,"Pos_Standards","sn_flag, blank_flag",NA
@@ -1852,10 +1852,10 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1850","Pos_Standards","240304_Smp_Gluc_16_C","L-Serine",11.57,54274244,0,2832884,-1.2,"Pos_Standards","",54274244
 "1851","Pos_Standards","240304_Smp_Hom_16_A","L-Serine",11.67,30370434,0,1558440,-0.9,"Pos_Standards","",30370434
 "1852","Pos_Standards","240304_Smp_Hom_16_B","L-Serine",11.67,30483334,0,1958155,-0.6,"Pos_Standards","",30483334
-"1853","Pos_Standards","240304_Smp_Hom_16_C","L-Serine",11.65,9149886,0,432698,-0.4,"Pos_Standards","blank_flag",NA
+"1853","Pos_Standards","240304_Smp_Hom_16_C","L-Serine",11.65,9149886,0,432698,-0.4,"Pos_Standards","",9149886
 "1854","Pos_Standards","240304_Smp_WT_BLK_Gluc_C","L-Serine",11.67,2589859,2048147,218809,-0.9,"Pos_Standards","sn_flag, blank_flag",NA
 "1855","Pos_Standards","240304_Smp_WT_BLK_Hom_A","L-Serine",11.72,6828681,2656533,366366,-0.9,"Pos_Standards","sn_flag, blank_flag",NA
-"1856","Pos_Standards","240304_Smp_WT_BLK_Hom_B","L-Serine",11.65,12821751,0,748246,-0.8,"Pos_Standards","blank_flag",NA
+"1856","Pos_Standards","240304_Smp_WT_BLK_Hom_B","L-Serine",11.65,12821751,0,748246,-0.8,"Pos_Standards","",12821751
 "1857","Pos_Standards","240304_Smp_WT_BLK_Mix_A","L-Serine",11.64,2882829,810731,89687,-0.8,"Pos_Standards","blank_flag",NA
 "1858","Pos_Standards","240304_Smp_WT_Gluc_A","L-Serine",11.68,19200262,0,1138659,-0.9,"Pos_Standards","",19200262
 "1859","Pos_Standards","240304_Smp_WT_Gluc_B","L-Serine",11.49,22353838,0,1541547,-0.9,"Pos_Standards","",22353838
@@ -1864,8 +1864,8 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1862","Pos_Standards","240304_Smp_WT_Hom_B","L-Serine",11.53,32541738,322921,1527472,-1.1,"Pos_Standards","",32541738
 "1863","Pos_Standards","240304_Smp_WT_Hom_C","L-Serine",11.7,27942186,0,1987413,-0.6,"Pos_Standards","",27942186
 "1864","Pos_Standards","240304_Smp_WT_Mix_A","L-Serine",11.58,22669638,0,1151639,-1.2,"Pos_Standards","",22669638
-"1865","Pos_Standards","240304_Smp_WT_Mix_B","L-Serine",11.67,12905418,296027,676384,-1.3,"Pos_Standards","blank_flag",NA
-"1866","Pos_Standards","240304_Smp_WT_Mix_C","L-Serine",11.54,10167947,2310779,697749,-0.5,"Pos_Standards","blank_flag",NA
+"1865","Pos_Standards","240304_Smp_WT_Mix_B","L-Serine",11.67,12905418,296027,676384,-1.3,"Pos_Standards","",12905418
+"1866","Pos_Standards","240304_Smp_WT_Mix_C","L-Serine",11.54,10167947,2310779,697749,-0.5,"Pos_Standards","",10167947
 "1867","Pos_Standards","240327_Std_4uMStdsMix1InH2O_1","L-Serine",11.69,89653248,0,3872108,-1.2,"Pos_Standards","",89653248
 "1868","Pos_Standards","240327_Std_4uMStdsMix1InH2O_2","L-Serine",11.38,120060616,747325,4709176,-1.3,"Pos_Standards","",120060616
 "1869","Pos_Standards","240327_Std_4uMStdsMix1InMatrix_1","L-Serine",11.6,74406056,0,4217272,-1.4,"Pos_Standards","",74406056
@@ -1876,8 +1876,8 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1874","Pos_Standards","240327_Std_4uMStdsMix2InMatrix_2","L-Serine",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "1875","Pos_Standards","240327_Std_H2OinMatrix_1","L-Serine",11.66,8648539,0,414767,-1.2,"Pos_Standards","blank_flag",NA
 "1876","Pos_Standards","240327_Std_H2OinMatrix_2","L-Serine",11.33,7735067,1753775,419668,-1.3,"Pos_Standards","blank_flag",NA
-"1877","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full1","L-Serine",11.6,8901813,0,499423,-1.7,"Pos_Standards","blank_flag",NA
-"1878","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full2","L-Serine",11.45,12433133,2077709,741358,-1.6,"Pos_Standards","blank_flag",NA
+"1877","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full1","L-Serine",11.6,8901813,0,499423,-1.7,"Pos_Standards","",8901813
+"1878","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full2","L-Serine",11.45,12433133,2077709,741358,-1.6,"Pos_Standards","",12433133
 "1879","Pos_Standards","240327_Poo_EpicFate-CXSPE_Full3","L-Serine",11.24,14732063,3288177,872398,-1.6,"Pos_Standards","",14732063
 "1880","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half1","L-Serine",11.65,3439179,1678324,189589,-1.8,"Pos_Standards","sn_flag, blank_flag",NA
 "1881","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half2","L-Serine",11.46,5323812,3082474,301908,-1.7,"Pos_Standards","sn_flag, blank_flag",NA
@@ -1885,7 +1885,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1883","Pos_Standards","240327_Smp_ASW_A","L-Serine",11.56,2593208,989085,87704,-1.1,"Pos_Standards","sn_flag, blank_flag",NA
 "1884","Pos_Standards","240327_Smp_ASW_B","L-Serine",11.52,2563107,1419853,156473,-1.7,"Pos_Standards","sn_flag, blank_flag",NA
 "1885","Pos_Standards","240327_Smp_ASW_C","L-Serine",11.34,7350019,2172811,524495,-1.5,"Pos_Standards","blank_flag",NA
-"1886","Pos_Standards","240327_Smp_Ctrl_A1","L-Serine",11.32,9105108,2530282,360445,-1.8,"Pos_Standards","blank_flag",NA
+"1886","Pos_Standards","240327_Smp_Ctrl_A1","L-Serine",11.32,9105108,2530282,360445,-1.8,"Pos_Standards","",9105108
 "1887","Pos_Standards","240327_Smp_Ctrl_A2","L-Serine",11.34,7522555,2108136,290061,-1.8,"Pos_Standards","blank_flag",NA
 "1888","Pos_Standards","240327_Smp_Ctrl_B1","L-Serine",11.35,7913295,1367183,263716,-1.6,"Pos_Standards","blank_flag",NA
 "1889","Pos_Standards","240327_Smp_Ctrl_B2","L-Serine",11.42,6219075,545245,270347,-1.5,"Pos_Standards","blank_flag",NA
@@ -1918,7 +1918,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1916","Pos_Standards","240327_Smp_WT_Hom_B","L-Serine",11.73,32283218,0,1228111,-1.6,"Pos_Standards","",32283218
 "1917","Pos_Standards","240327_Smp_WT_Hom_C","L-Serine",11.45,51790744,0,2053578,-1.8,"Pos_Standards","",51790744
 "1918","Pos_Standards","240327_Smp_WT_Mix_A","L-Serine",11.58,7682611,3082021,290828,-1.5,"Pos_Standards","sn_flag, blank_flag",NA
-"1919","Pos_Standards","240327_Smp_WT_Mix_B","L-Serine",11.43,11085287,1002001,445321,-1.7,"Pos_Standards","blank_flag",NA
+"1919","Pos_Standards","240327_Smp_WT_Mix_B","L-Serine",11.43,11085287,1002001,445321,-1.7,"Pos_Standards","",11085287
 "1920","Pos_Standards","240327_Smp_WT_Mix_C","L-Serine",11.48,8086261,2563515,269341,-1.1,"Pos_Standards","blank_flag",NA
 "1921","Pos_Standards","240304_Std_4uMStdsMix1InH2O_1","L-Tryptophan",NA,NA,NA,NA,NA,"Pos_Standards","",NA
 "1922","Pos_Standards","240304_Std_4uMStdsMix1InH2O_2","L-Tryptophan",NA,NA,NA,NA,NA,"Pos_Standards","",NA
@@ -2045,14 +2045,14 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2043","Pos_Standards","240304_Smp_Hom_16_A","L-Tyrosine",9.55,4571120,0,309520,-1.7,"Pos_Standards","",4571120
 "2044","Pos_Standards","240304_Smp_Hom_16_B","L-Tyrosine",9.6,2109872,0,185222,-1.4,"Pos_Standards","blank_flag",NA
 "2045","Pos_Standards","240304_Smp_Hom_16_C","L-Tyrosine",9.46,1640888,0,144787,-1.5,"Pos_Standards","blank_flag",NA
-"2046","Pos_Standards","240304_Smp_WT_BLK_Gluc_C","L-Tyrosine",9.56,2936698,0,166390,-1.9,"Pos_Standards","blank_flag",NA
+"2046","Pos_Standards","240304_Smp_WT_BLK_Gluc_C","L-Tyrosine",9.56,2936698,0,166390,-1.9,"Pos_Standards","",2936698
 "2047","Pos_Standards","240304_Smp_WT_BLK_Hom_A","L-Tyrosine",9.49,682526,0,60548,-1.4,"Pos_Standards","blank_flag",NA
 "2048","Pos_Standards","240304_Smp_WT_BLK_Hom_B","L-Tyrosine",9.45,778978,0,62590,-2.1,"Pos_Standards","blank_flag",NA
 "2049","Pos_Standards","240304_Smp_WT_BLK_Mix_A","L-Tyrosine",9.69,289980,0,28100,-0.9,"Pos_Standards","blank_flag",NA
 "2050","Pos_Standards","240304_Smp_WT_Gluc_A","L-Tyrosine",9.49,12772316,0,669062,-2,"Pos_Standards","",12772316
 "2051","Pos_Standards","240304_Smp_WT_Gluc_B","L-Tyrosine",9.44,27962848,247563,1210820,-1.7,"Pos_Standards","",27962848
 "2052","Pos_Standards","240304_Smp_WT_Gluc_C","L-Tyrosine",9.48,35907244,0,1626737,-2.3,"Pos_Standards","",35907244
-"2053","Pos_Standards","240304_Smp_WT_Hom_A","L-Tyrosine",9.54,2826169,0,200198,-1.5,"Pos_Standards","blank_flag",NA
+"2053","Pos_Standards","240304_Smp_WT_Hom_A","L-Tyrosine",9.54,2826169,0,200198,-1.5,"Pos_Standards","",2826169
 "2054","Pos_Standards","240304_Smp_WT_Hom_B","L-Tyrosine",9.37,9091571,0,562144,-1.9,"Pos_Standards","",9091571
 "2055","Pos_Standards","240304_Smp_WT_Hom_C","L-Tyrosine",9.54,6320690,0,422542,-1.5,"Pos_Standards","",6320690
 "2056","Pos_Standards","240304_Smp_WT_Mix_A","L-Tyrosine",9.45,30667754,1892753,1432911,-2.2,"Pos_Standards","",30667754
@@ -2076,9 +2076,9 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2074","Pos_Standards","240327_Poo_EpicFate-CXSPE_Half3","L-Tyrosine",8.6,1052712,0,69789,-2.9,"Pos_Standards","blank_flag",NA
 "2075","Pos_Standards","240327_Smp_ASW_A","L-Tyrosine",8.88,1093106,0,68879,-2.1,"Pos_Standards","blank_flag",NA
 "2076","Pos_Standards","240327_Smp_ASW_B","L-Tyrosine",9.07,602791,0,67799,-1.9,"Pos_Standards","blank_flag",NA
-"2077","Pos_Standards","240327_Smp_ASW_C","L-Tyrosine",8.89,2666553,0,204529,-2.2,"Pos_Standards","blank_flag",NA
-"2078","Pos_Standards","240327_Smp_Ctrl_A1","L-Tyrosine",8.62,2855574,0,186718,-3.1,"Pos_Standards","blank_flag",NA
-"2079","Pos_Standards","240327_Smp_Ctrl_A2","L-Tyrosine",8.67,2967871,0,181570,-2.7,"Pos_Standards","blank_flag",NA
+"2077","Pos_Standards","240327_Smp_ASW_C","L-Tyrosine",8.89,2666553,0,204529,-2.2,"Pos_Standards","",2666553
+"2078","Pos_Standards","240327_Smp_Ctrl_A1","L-Tyrosine",8.62,2855574,0,186718,-3.1,"Pos_Standards","",2855574
+"2079","Pos_Standards","240327_Smp_Ctrl_A2","L-Tyrosine",8.67,2967871,0,181570,-2.7,"Pos_Standards","",2967871
 "2080","Pos_Standards","240327_Smp_Ctrl_B1","L-Tyrosine",8.73,1276511,0,100972,-2.5,"Pos_Standards","blank_flag",NA
 "2081","Pos_Standards","240327_Smp_Ctrl_B2","L-Tyrosine",8.86,1325376,0,105228,-2.3,"Pos_Standards","blank_flag",NA
 "2082","Pos_Standards","240327_Smp_Ctrl_B3","L-Tyrosine",8.79,2420024,0,167062,-1.5,"Pos_Standards","blank_flag",NA
@@ -2101,11 +2101,11 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2099","Pos_Standards","240327_Smp_MQBlk3_B","L-Tyrosine",8.96,670593,5168,54870,-1.7,"Pos_Standards","blank_flag",NA
 "2100","Pos_Standards","240327_Smp_MQBlk3_C","L-Tyrosine",8.67,1134847,0,88256,-2.8,"Pos_Standards","blank_flag",NA
 "2101","Pos_Standards","240327_Smp_MQBlk4_A","L-Tyrosine",8.88,1004786,0,63627,-2.2,"Pos_Standards","blank_flag",NA
-"2102","Pos_Standards","240327_Smp_MQBlk4_B","L-Tyrosine",8.59,2705135,0,162151,-2.9,"Pos_Standards","blank_flag",NA
+"2102","Pos_Standards","240327_Smp_MQBlk4_B","L-Tyrosine",8.59,2705135,0,162151,-2.9,"Pos_Standards","",2705135
 "2103","Pos_Standards","240327_Smp_MQBlk4_C","L-Tyrosine",8.76,1277779,0,100250,-1.9,"Pos_Standards","blank_flag",NA
 "2104","Pos_Standards","240327_Smp_WT_Gluc_A","L-Tyrosine",8.75,1673399,0,125867,-2.6,"Pos_Standards","blank_flag",NA
-"2105","Pos_Standards","240327_Smp_WT_Gluc_B","L-Tyrosine",8.77,2734269,0,169576,-2.8,"Pos_Standards","blank_flag",NA
-"2106","Pos_Standards","240327_Smp_WT_Gluc_C","L-Tyrosine",8.65,3748959,0,230952,-3,"Pos_Standards","blank_flag",NA
+"2105","Pos_Standards","240327_Smp_WT_Gluc_B","L-Tyrosine",8.77,2734269,0,169576,-2.8,"Pos_Standards","",2734269
+"2106","Pos_Standards","240327_Smp_WT_Gluc_C","L-Tyrosine",8.65,3748959,0,230952,-3,"Pos_Standards","",3748959
 "2107","Pos_Standards","240327_Smp_WT_Hom_A","L-Tyrosine",8.96,1416143,0,121722,-3,"Pos_Standards","blank_flag",NA
 "2108","Pos_Standards","240327_Smp_WT_Hom_B","L-Tyrosine",9.17,646391,0,71208,-1.2,"Pos_Standards","blank_flag",NA
 "2109","Pos_Standards","240327_Smp_WT_Hom_C","L-Tyrosine",8.73,2232434,0,142676,-2,"Pos_Standards","blank_flag",NA
@@ -2314,7 +2314,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2312","Pos_InternalStandards","240304_Std_4uMStdsMix2InMatrix_2","Cytosine, 13C2, 15N3",7.42,413612896,3959167,26147436,-2.1,"Pos_InternalStandards","blank_flag",NA
 "2313","Pos_InternalStandards","240304_Std_H2OinMatrix_1","Cytosine, 13C2, 15N3",7.45,553241728,7209989,39759392,-1.8,"Pos_InternalStandards","blank_flag",NA
 "2314","Pos_InternalStandards","240304_Std_H2OinMatrix_2","Cytosine, 13C2, 15N3",7.4,572021568,5526976,38636280,-2.3,"Pos_InternalStandards","blank_flag",NA
-"2315","Pos_InternalStandards","240304_Poo_EpicFate_Full1","Cytosine, 13C2, 15N3",7.42,893444544,9362097,65874704,-2,"Pos_InternalStandards","blank_flag",NA
+"2315","Pos_InternalStandards","240304_Poo_EpicFate_Full1","Cytosine, 13C2, 15N3",7.42,893444544,9362097,65874704,-2,"Pos_InternalStandards","",893444544
 "2316","Pos_InternalStandards","240304_Poo_EpicFate_Full2","Cytosine, 13C2, 15N3",7.43,971758272,9071397,68526568,-2.2,"Pos_InternalStandards","",971758272
 "2317","Pos_InternalStandards","240304_Poo_EpicFate_Full3","Cytosine, 13C2, 15N3",7.43,1021225024,9681286,71274128,-1.4,"Pos_InternalStandards","",1021225024
 "2318","Pos_InternalStandards","240304_Poo_EpicFate_Half1","Cytosine, 13C2, 15N3",7.43,457498432,6095749,32499916,-1,"Pos_InternalStandards","blank_flag",NA
@@ -2323,28 +2323,28 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2321","Pos_InternalStandards","240304_Smp_ASW_A","Cytosine, 13C2, 15N3",7.4,999834048,11332017,70287960,-1.6,"Pos_InternalStandards","",999834048
 "2322","Pos_InternalStandards","240304_Smp_ASW_B","Cytosine, 13C2, 15N3",7.43,1033856512,9726858,72987392,-1.2,"Pos_InternalStandards","",1033856512
 "2323","Pos_InternalStandards","240304_Smp_ASW_Blk_A","Cytosine, 13C2, 15N3",7.45,1020874304,8158376,70416096,-1.9,"Pos_InternalStandards","",1020874304
-"2324","Pos_InternalStandards","240304_Smp_ASW_C","Cytosine, 13C2, 15N3",7.43,765559168,8160956,55367652,-1.5,"Pos_InternalStandards","blank_flag",NA
+"2324","Pos_InternalStandards","240304_Smp_ASW_C","Cytosine, 13C2, 15N3",7.43,765559168,8160956,55367652,-1.5,"Pos_InternalStandards","",765559168
 "2325","Pos_InternalStandards","240304_Smp_Ctrl_A1","Cytosine, 13C2, 15N3",7.43,1055271488,10539024,72631952,-1.5,"Pos_InternalStandards","",1055271488
-"2326","Pos_InternalStandards","240304_Smp_Ctrl_B3","Cytosine, 13C2, 15N3",7.45,907951680,8663950,63418368,-1.6,"Pos_InternalStandards","blank_flag",NA
+"2326","Pos_InternalStandards","240304_Smp_Ctrl_B3","Cytosine, 13C2, 15N3",7.45,907951680,8663950,63418368,-1.6,"Pos_InternalStandards","",907951680
 "2327","Pos_InternalStandards","240304_Smp_Ctrl_C2","Cytosine, 13C2, 15N3",7.43,1004175360,13584065,72555560,-1.7,"Pos_InternalStandards","",1004175360
-"2328","Pos_InternalStandards","240304_Smp_Gluc_16_A","Cytosine, 13C2, 15N3",7.45,864082496,7953436,61849116,-1.5,"Pos_InternalStandards","blank_flag",NA
+"2328","Pos_InternalStandards","240304_Smp_Gluc_16_A","Cytosine, 13C2, 15N3",7.45,864082496,7953436,61849116,-1.5,"Pos_InternalStandards","",864082496
 "2329","Pos_InternalStandards","240304_Smp_Gluc_16_B","Cytosine, 13C2, 15N3",7.42,1002063296,9060005,70365752,-2.1,"Pos_InternalStandards","",1002063296
 "2330","Pos_InternalStandards","240304_Smp_Gluc_16_C","Cytosine, 13C2, 15N3",7.43,1001427712,9860614,69490448,-2.3,"Pos_InternalStandards","",1001427712
 "2331","Pos_InternalStandards","240304_Smp_Hom_16_A","Cytosine, 13C2, 15N3",7.45,955165504,11119516,65628900,-1.9,"Pos_InternalStandards","",955165504
-"2332","Pos_InternalStandards","240304_Smp_Hom_16_B","Cytosine, 13C2, 15N3",7.45,940773120,9828757,66442868,-1.9,"Pos_InternalStandards","blank_flag",NA
+"2332","Pos_InternalStandards","240304_Smp_Hom_16_B","Cytosine, 13C2, 15N3",7.45,940773120,9828757,66442868,-1.9,"Pos_InternalStandards","",940773120
 "2333","Pos_InternalStandards","240304_Smp_Hom_16_C","Cytosine, 13C2, 15N3",7.43,979819520,10098508,68262264,-1.4,"Pos_InternalStandards","",979819520
-"2334","Pos_InternalStandards","240304_Smp_WT_BLK_Gluc_C","Cytosine, 13C2, 15N3",7.43,943401792,7781661,65599508,-1.7,"Pos_InternalStandards","blank_flag",NA
+"2334","Pos_InternalStandards","240304_Smp_WT_BLK_Gluc_C","Cytosine, 13C2, 15N3",7.43,943401792,7781661,65599508,-1.7,"Pos_InternalStandards","",943401792
 "2335","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_A","Cytosine, 13C2, 15N3",7.43,992028608,11869924,67831432,-1.6,"Pos_InternalStandards","",992028608
-"2336","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_B","Cytosine, 13C2, 15N3",7.46,855668544,8415657,57904964,-1.8,"Pos_InternalStandards","blank_flag",NA
-"2337","Pos_InternalStandards","240304_Smp_WT_BLK_Mix_A","Cytosine, 13C2, 15N3",7.43,831338432,9247610,59529188,-1.9,"Pos_InternalStandards","blank_flag",NA
-"2338","Pos_InternalStandards","240304_Smp_WT_Gluc_A","Cytosine, 13C2, 15N3",7.45,929640960,9401405,64163600,-1.9,"Pos_InternalStandards","blank_flag",NA
+"2336","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_B","Cytosine, 13C2, 15N3",7.46,855668544,8415657,57904964,-1.8,"Pos_InternalStandards","",855668544
+"2337","Pos_InternalStandards","240304_Smp_WT_BLK_Mix_A","Cytosine, 13C2, 15N3",7.43,831338432,9247610,59529188,-1.9,"Pos_InternalStandards","",831338432
+"2338","Pos_InternalStandards","240304_Smp_WT_Gluc_A","Cytosine, 13C2, 15N3",7.45,929640960,9401405,64163600,-1.9,"Pos_InternalStandards","",929640960
 "2339","Pos_InternalStandards","240304_Smp_WT_Gluc_B","Cytosine, 13C2, 15N3",7.42,1019677824,10248743,70256192,-1.6,"Pos_InternalStandards","",1019677824
 "2340","Pos_InternalStandards","240304_Smp_WT_Gluc_C","Cytosine, 13C2, 15N3",7.43,1033532672,10731103,72058072,-2.1,"Pos_InternalStandards","",1033532672
 "2341","Pos_InternalStandards","240304_Smp_WT_Hom_A","Cytosine, 13C2, 15N3",7.43,960563328,10244312,69439472,-1.4,"Pos_InternalStandards","",960563328
 "2342","Pos_InternalStandards","240304_Smp_WT_Hom_B","Cytosine, 13C2, 15N3",7.45,1007552960,8200025,69695240,-1.5,"Pos_InternalStandards","",1007552960
 "2343","Pos_InternalStandards","240304_Smp_WT_Hom_C","Cytosine, 13C2, 15N3",7.42,954467136,10076196,65785540,-1.5,"Pos_InternalStandards","",954467136
-"2344","Pos_InternalStandards","240304_Smp_WT_Mix_A","Cytosine, 13C2, 15N3",7.41,891994240,8567407,63872600,-2.1,"Pos_InternalStandards","blank_flag",NA
-"2345","Pos_InternalStandards","240304_Smp_WT_Mix_B","Cytosine, 13C2, 15N3",7.43,855744128,7567414,59174472,-1.7,"Pos_InternalStandards","blank_flag",NA
+"2344","Pos_InternalStandards","240304_Smp_WT_Mix_A","Cytosine, 13C2, 15N3",7.41,891994240,8567407,63872600,-2.1,"Pos_InternalStandards","",891994240
+"2345","Pos_InternalStandards","240304_Smp_WT_Mix_B","Cytosine, 13C2, 15N3",7.43,855744128,7567414,59174472,-1.7,"Pos_InternalStandards","",855744128
 "2346","Pos_InternalStandards","240304_Smp_WT_Mix_C","Cytosine, 13C2, 15N3",7.43,1037225344,13710111,73573688,-1.4,"Pos_InternalStandards","",1037225344
 "2347","Pos_InternalStandards","240327_Std_4uMStdsMix1InH2O_1","Cytosine, 13C2, 15N3",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
 "2348","Pos_InternalStandards","240327_Std_4uMStdsMix1InH2O_2","Cytosine, 13C2, 15N3",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
@@ -2506,38 +2506,38 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2504","Pos_InternalStandards","240304_Std_4uMStdsMix2InMatrix_2","Glycine betaine, 13C5, 15N",7.78,1349624960,19182658,89787672,-2,"Pos_InternalStandards","blank_flag",NA
 "2505","Pos_InternalStandards","240304_Std_H2OinMatrix_1","Glycine betaine, 13C5, 15N",7.8,1423193728,18080042,88803440,-1.5,"Pos_InternalStandards","blank_flag",NA
 "2506","Pos_InternalStandards","240304_Std_H2OinMatrix_2","Glycine betaine, 13C5, 15N",7.78,1400243328,15237573,89385448,-2.6,"Pos_InternalStandards","blank_flag",NA
-"2507","Pos_InternalStandards","240304_Poo_EpicFate_Full1","Glycine betaine, 13C5, 15N",7.79,2347829760,26355824,153363344,-1.9,"Pos_InternalStandards","blank_flag",NA
+"2507","Pos_InternalStandards","240304_Poo_EpicFate_Full1","Glycine betaine, 13C5, 15N",7.79,2347829760,26355824,153363344,-1.9,"Pos_InternalStandards","",2347829760
 "2508","Pos_InternalStandards","240304_Poo_EpicFate_Full2","Glycine betaine, 13C5, 15N",7.8,2178369536,16499761,128923576,-2,"Pos_InternalStandards","blank_flag",NA
-"2509","Pos_InternalStandards","240304_Poo_EpicFate_Full3","Glycine betaine, 13C5, 15N",7.78,2359968256,26231262,150198896,-2.3,"Pos_InternalStandards","blank_flag",NA
+"2509","Pos_InternalStandards","240304_Poo_EpicFate_Full3","Glycine betaine, 13C5, 15N",7.78,2359968256,26231262,150198896,-2.3,"Pos_InternalStandards","",2359968256
 "2510","Pos_InternalStandards","240304_Poo_EpicFate_Half1","Glycine betaine, 13C5, 15N",7.81,1231988736,15769751,73449768,-1.9,"Pos_InternalStandards","blank_flag",NA
 "2511","Pos_InternalStandards","240304_Poo_EpicFate_Half2","Glycine betaine, 13C5, 15N",7.78,1062851008,7900993,64156836,-2.1,"Pos_InternalStandards","blank_flag",NA
 "2512","Pos_InternalStandards","240304_Poo_EpicFate_Half3","Glycine betaine, 13C5, 15N",7.8,1185884928,11625458,78821488,-2.4,"Pos_InternalStandards","blank_flag",NA
 "2513","Pos_InternalStandards","240304_Smp_ASW_A","Glycine betaine, 13C5, 15N",7.81,2268518144,20594386,135452800,-1.5,"Pos_InternalStandards","blank_flag",NA
-"2514","Pos_InternalStandards","240304_Smp_ASW_B","Glycine betaine, 13C5, 15N",7.78,2582888448,26971964,157761952,-1.9,"Pos_InternalStandards","blank_flag",NA
-"2515","Pos_InternalStandards","240304_Smp_ASW_Blk_A","Glycine betaine, 13C5, 15N",7.8,2344420864,30899906,147718544,-2.6,"Pos_InternalStandards","blank_flag",NA
+"2514","Pos_InternalStandards","240304_Smp_ASW_B","Glycine betaine, 13C5, 15N",7.78,2582888448,26971964,157761952,-1.9,"Pos_InternalStandards","",2582888448
+"2515","Pos_InternalStandards","240304_Smp_ASW_Blk_A","Glycine betaine, 13C5, 15N",7.8,2344420864,30899906,147718544,-2.6,"Pos_InternalStandards","",2344420864
 "2516","Pos_InternalStandards","240304_Smp_ASW_C","Glycine betaine, 13C5, 15N",7.79,1859526400,23635666,118576048,-1.7,"Pos_InternalStandards","blank_flag",NA
-"2517","Pos_InternalStandards","240304_Smp_Ctrl_A1","Glycine betaine, 13C5, 15N",7.8,2414034432,21974866,143481824,-2.3,"Pos_InternalStandards","blank_flag",NA
-"2518","Pos_InternalStandards","240304_Smp_Ctrl_B3","Glycine betaine, 13C5, 15N",7.78,2366266880,23514872,142342752,-2.4,"Pos_InternalStandards","blank_flag",NA
+"2517","Pos_InternalStandards","240304_Smp_Ctrl_A1","Glycine betaine, 13C5, 15N",7.8,2414034432,21974866,143481824,-2.3,"Pos_InternalStandards","",2414034432
+"2518","Pos_InternalStandards","240304_Smp_Ctrl_B3","Glycine betaine, 13C5, 15N",7.78,2366266880,23514872,142342752,-2.4,"Pos_InternalStandards","",2366266880
 "2519","Pos_InternalStandards","240304_Smp_Ctrl_C2","Glycine betaine, 13C5, 15N",7.77,2246466816,18759052,134772496,-1.7,"Pos_InternalStandards","blank_flag",NA
-"2520","Pos_InternalStandards","240304_Smp_Gluc_16_A","Glycine betaine, 13C5, 15N",7.79,2453634816,26091792,150093456,-2.4,"Pos_InternalStandards","blank_flag",NA
-"2521","Pos_InternalStandards","240304_Smp_Gluc_16_B","Glycine betaine, 13C5, 15N",7.79,2401933312,24116462,149874784,-2.8,"Pos_InternalStandards","blank_flag",NA
+"2520","Pos_InternalStandards","240304_Smp_Gluc_16_A","Glycine betaine, 13C5, 15N",7.79,2453634816,26091792,150093456,-2.4,"Pos_InternalStandards","",2453634816
+"2521","Pos_InternalStandards","240304_Smp_Gluc_16_B","Glycine betaine, 13C5, 15N",7.79,2401933312,24116462,149874784,-2.8,"Pos_InternalStandards","",2401933312
 "2522","Pos_InternalStandards","240304_Smp_Gluc_16_C","Glycine betaine, 13C5, 15N",7.8,2198045696,15705651,135645424,-2.2,"Pos_InternalStandards","blank_flag",NA
-"2523","Pos_InternalStandards","240304_Smp_Hom_16_A","Glycine betaine, 13C5, 15N",7.81,2540212736,35344548,157430928,-2.7,"Pos_InternalStandards","blank_flag",NA
-"2524","Pos_InternalStandards","240304_Smp_Hom_16_B","Glycine betaine, 13C5, 15N",7.79,2368890112,23418118,144404640,-1.8,"Pos_InternalStandards","blank_flag",NA
-"2525","Pos_InternalStandards","240304_Smp_Hom_16_C","Glycine betaine, 13C5, 15N",7.78,2461775872,27784378,153964864,-2.1,"Pos_InternalStandards","blank_flag",NA
-"2526","Pos_InternalStandards","240304_Smp_WT_BLK_Gluc_C","Glycine betaine, 13C5, 15N",7.79,2531235072,28928012,157649488,-2.5,"Pos_InternalStandards","blank_flag",NA
-"2527","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_A","Glycine betaine, 13C5, 15N",7.8,2541713408,33868344,160442672,-2.3,"Pos_InternalStandards","blank_flag",NA
-"2528","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_B","Glycine betaine, 13C5, 15N",7.79,2374448896,28613024,146048464,-2.7,"Pos_InternalStandards","blank_flag",NA
-"2529","Pos_InternalStandards","240304_Smp_WT_BLK_Mix_A","Glycine betaine, 13C5, 15N",7.78,2398157824,33664048,150208992,-2.6,"Pos_InternalStandards","blank_flag",NA
-"2530","Pos_InternalStandards","240304_Smp_WT_Gluc_A","Glycine betaine, 13C5, 15N",7.79,2431155200,23112808,149193264,-2.5,"Pos_InternalStandards","blank_flag",NA
-"2531","Pos_InternalStandards","240304_Smp_WT_Gluc_B","Glycine betaine, 13C5, 15N",7.76,2497916160,27530458,149986128,-2.3,"Pos_InternalStandards","blank_flag",NA
+"2523","Pos_InternalStandards","240304_Smp_Hom_16_A","Glycine betaine, 13C5, 15N",7.81,2540212736,35344548,157430928,-2.7,"Pos_InternalStandards","",2540212736
+"2524","Pos_InternalStandards","240304_Smp_Hom_16_B","Glycine betaine, 13C5, 15N",7.79,2368890112,23418118,144404640,-1.8,"Pos_InternalStandards","",2368890112
+"2525","Pos_InternalStandards","240304_Smp_Hom_16_C","Glycine betaine, 13C5, 15N",7.78,2461775872,27784378,153964864,-2.1,"Pos_InternalStandards","",2461775872
+"2526","Pos_InternalStandards","240304_Smp_WT_BLK_Gluc_C","Glycine betaine, 13C5, 15N",7.79,2531235072,28928012,157649488,-2.5,"Pos_InternalStandards","",2531235072
+"2527","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_A","Glycine betaine, 13C5, 15N",7.8,2541713408,33868344,160442672,-2.3,"Pos_InternalStandards","",2541713408
+"2528","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_B","Glycine betaine, 13C5, 15N",7.79,2374448896,28613024,146048464,-2.7,"Pos_InternalStandards","",2374448896
+"2529","Pos_InternalStandards","240304_Smp_WT_BLK_Mix_A","Glycine betaine, 13C5, 15N",7.78,2398157824,33664048,150208992,-2.6,"Pos_InternalStandards","",2398157824
+"2530","Pos_InternalStandards","240304_Smp_WT_Gluc_A","Glycine betaine, 13C5, 15N",7.79,2431155200,23112808,149193264,-2.5,"Pos_InternalStandards","",2431155200
+"2531","Pos_InternalStandards","240304_Smp_WT_Gluc_B","Glycine betaine, 13C5, 15N",7.76,2497916160,27530458,149986128,-2.3,"Pos_InternalStandards","",2497916160
 "2532","Pos_InternalStandards","240304_Smp_WT_Gluc_C","Glycine betaine, 13C5, 15N",7.78,2247155712,23851310,134968864,-1.8,"Pos_InternalStandards","blank_flag",NA
-"2533","Pos_InternalStandards","240304_Smp_WT_Hom_A","Glycine betaine, 13C5, 15N",7.76,2483710464,27048606,151605312,-2.2,"Pos_InternalStandards","blank_flag",NA
-"2534","Pos_InternalStandards","240304_Smp_WT_Hom_B","Glycine betaine, 13C5, 15N",7.8,2347022336,23204160,144976496,-2.5,"Pos_InternalStandards","blank_flag",NA
-"2535","Pos_InternalStandards","240304_Smp_WT_Hom_C","Glycine betaine, 13C5, 15N",7.81,2485104384,31984506,153792608,-2.2,"Pos_InternalStandards","blank_flag",NA
+"2533","Pos_InternalStandards","240304_Smp_WT_Hom_A","Glycine betaine, 13C5, 15N",7.76,2483710464,27048606,151605312,-2.2,"Pos_InternalStandards","",2483710464
+"2534","Pos_InternalStandards","240304_Smp_WT_Hom_B","Glycine betaine, 13C5, 15N",7.8,2347022336,23204160,144976496,-2.5,"Pos_InternalStandards","",2347022336
+"2535","Pos_InternalStandards","240304_Smp_WT_Hom_C","Glycine betaine, 13C5, 15N",7.81,2485104384,31984506,153792608,-2.2,"Pos_InternalStandards","",2485104384
 "2536","Pos_InternalStandards","240304_Smp_WT_Mix_A","Glycine betaine, 13C5, 15N",7.76,2106514560,23819734,132210408,-1.8,"Pos_InternalStandards","blank_flag",NA
 "2537","Pos_InternalStandards","240304_Smp_WT_Mix_B","Glycine betaine, 13C5, 15N",7.78,2275763712,23248640,141209888,-2.6,"Pos_InternalStandards","blank_flag",NA
-"2538","Pos_InternalStandards","240304_Smp_WT_Mix_C","Glycine betaine, 13C5, 15N",7.78,2333748992,18682618,140924960,-2.2,"Pos_InternalStandards","blank_flag",NA
+"2538","Pos_InternalStandards","240304_Smp_WT_Mix_C","Glycine betaine, 13C5, 15N",7.78,2333748992,18682618,140924960,-2.2,"Pos_InternalStandards","",2333748992
 "2539","Pos_InternalStandards","240327_Std_4uMStdsMix1InH2O_1","Glycine betaine, 13C5, 15N",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
 "2540","Pos_InternalStandards","240327_Std_4uMStdsMix1InH2O_2","Glycine betaine, 13C5, 15N",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
 "2541","Pos_InternalStandards","240327_Std_4uMStdsMix1InMatrix_1","Glycine betaine, 13C5, 15N",8.03,819979264,8557026,53487652,-2,"Pos_InternalStandards","blank_flag",NA
@@ -2700,36 +2700,36 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2698","Pos_InternalStandards","240304_Std_H2OinMatrix_2","L-Isoleucine, 15N",7.33,74614064,128277,4388598,0.3,"Pos_InternalStandards","blank_flag",NA
 "2699","Pos_InternalStandards","240304_Poo_EpicFate_Full1","L-Isoleucine, 15N",7.75,69016744,0,5453208,1,"Pos_InternalStandards","blank_flag",NA
 "2700","Pos_InternalStandards","240304_Poo_EpicFate_Full2","L-Isoleucine, 15N",7.53,93444216,288899,6562405,0.7,"Pos_InternalStandards","blank_flag",NA
-"2701","Pos_InternalStandards","240304_Poo_EpicFate_Full3","L-Isoleucine, 15N",7.48,115885256,1151244,6564165,1,"Pos_InternalStandards","blank_flag",NA
+"2701","Pos_InternalStandards","240304_Poo_EpicFate_Full3","L-Isoleucine, 15N",7.48,115885256,1151244,6564165,1,"Pos_InternalStandards","",115885256
 "2702","Pos_InternalStandards","240304_Poo_EpicFate_Half1","L-Isoleucine, 15N",7.65,35041420,0,2166959,1.3,"Pos_InternalStandards","blank_flag",NA
 "2703","Pos_InternalStandards","240304_Poo_EpicFate_Half2","L-Isoleucine, 15N",7.51,49696284,0,2725622,0.6,"Pos_InternalStandards","blank_flag",NA
 "2704","Pos_InternalStandards","240304_Poo_EpicFate_Half3","L-Isoleucine, 15N",7.49,65767328,80871,3992137,0.8,"Pos_InternalStandards","blank_flag",NA
-"2705","Pos_InternalStandards","240304_Smp_ASW_A","L-Isoleucine, 15N",7.59,102995096,1331392,6266017,1.4,"Pos_InternalStandards","blank_flag",NA
-"2706","Pos_InternalStandards","240304_Smp_ASW_B","L-Isoleucine, 15N",7.6,106171136,0,8387505,1.4,"Pos_InternalStandards","blank_flag",NA
-"2707","Pos_InternalStandards","240304_Smp_ASW_Blk_A","L-Isoleucine, 15N",7.51,104588968,305470,5487210,0.5,"Pos_InternalStandards","blank_flag",NA
+"2705","Pos_InternalStandards","240304_Smp_ASW_A","L-Isoleucine, 15N",7.59,102995096,1331392,6266017,1.4,"Pos_InternalStandards","",102995096
+"2706","Pos_InternalStandards","240304_Smp_ASW_B","L-Isoleucine, 15N",7.6,106171136,0,8387505,1.4,"Pos_InternalStandards","",106171136
+"2707","Pos_InternalStandards","240304_Smp_ASW_Blk_A","L-Isoleucine, 15N",7.51,104588968,305470,5487210,0.5,"Pos_InternalStandards","",104588968
 "2708","Pos_InternalStandards","240304_Smp_ASW_C","L-Isoleucine, 15N",7.59,59250592,73997,3753052,1.5,"Pos_InternalStandards","blank_flag",NA
-"2709","Pos_InternalStandards","240304_Smp_Ctrl_A1","L-Isoleucine, 15N",7.51,114765696,359293,6416662,1,"Pos_InternalStandards","blank_flag",NA
+"2709","Pos_InternalStandards","240304_Smp_Ctrl_A1","L-Isoleucine, 15N",7.51,114765696,359293,6416662,1,"Pos_InternalStandards","",114765696
 "2710","Pos_InternalStandards","240304_Smp_Ctrl_B3","L-Isoleucine, 15N",7.56,88339688,0,5180130,0.8,"Pos_InternalStandards","blank_flag",NA
-"2711","Pos_InternalStandards","240304_Smp_Ctrl_C2","L-Isoleucine, 15N",7.48,107206128,1705478,6962553,1.3,"Pos_InternalStandards","blank_flag",NA
+"2711","Pos_InternalStandards","240304_Smp_Ctrl_C2","L-Isoleucine, 15N",7.48,107206128,1705478,6962553,1.3,"Pos_InternalStandards","",107206128
 "2712","Pos_InternalStandards","240304_Smp_Gluc_16_A","L-Isoleucine, 15N",7.62,74635368,236138,5131039,0.8,"Pos_InternalStandards","blank_flag",NA
 "2713","Pos_InternalStandards","240304_Smp_Gluc_16_B","L-Isoleucine, 15N",7.54,92032560,911061,5311593,0.5,"Pos_InternalStandards","blank_flag",NA
-"2714","Pos_InternalStandards","240304_Smp_Gluc_16_C","L-Isoleucine, 15N",7.53,103459616,1401864,6720321,0.8,"Pos_InternalStandards","blank_flag",NA
+"2714","Pos_InternalStandards","240304_Smp_Gluc_16_C","L-Isoleucine, 15N",7.53,103459616,1401864,6720321,0.8,"Pos_InternalStandards","",103459616
 "2715","Pos_InternalStandards","240304_Smp_Hom_16_A","L-Isoleucine, 15N",7.59,90023016,1399754,6593767,0.5,"Pos_InternalStandards","blank_flag",NA
 "2716","Pos_InternalStandards","240304_Smp_Hom_16_B","L-Isoleucine, 15N",7.59,75501432,0,4749811,1.3,"Pos_InternalStandards","blank_flag",NA
-"2717","Pos_InternalStandards","240304_Smp_Hom_16_C","L-Isoleucine, 15N",7.56,96899296,0,5785872,1,"Pos_InternalStandards","blank_flag",NA
+"2717","Pos_InternalStandards","240304_Smp_Hom_16_C","L-Isoleucine, 15N",7.56,96899296,0,5785872,1,"Pos_InternalStandards","",96899296
 "2718","Pos_InternalStandards","240304_Smp_WT_BLK_Gluc_C","L-Isoleucine, 15N",7.61,77301104,1196073,5239010,0.7,"Pos_InternalStandards","blank_flag",NA
-"2719","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_A","L-Isoleucine, 15N",7.62,99420288,1377615,7005431,0.8,"Pos_InternalStandards","blank_flag",NA
+"2719","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_A","L-Isoleucine, 15N",7.62,99420288,1377615,7005431,0.8,"Pos_InternalStandards","",99420288
 "2720","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_B","L-Isoleucine, 15N",7.64,82862776,2113382,7139649,0.5,"Pos_InternalStandards","blank_flag",NA
 "2721","Pos_InternalStandards","240304_Smp_WT_BLK_Mix_A","L-Isoleucine, 15N",7.6,82436968,494675,5030074,0.6,"Pos_InternalStandards","blank_flag",NA
 "2722","Pos_InternalStandards","240304_Smp_WT_Gluc_A","L-Isoleucine, 15N",7.57,80930208,493969,5291838,0.7,"Pos_InternalStandards","blank_flag",NA
-"2723","Pos_InternalStandards","240304_Smp_WT_Gluc_B","L-Isoleucine, 15N",7.49,113885328,1040293,6788423,0.9,"Pos_InternalStandards","blank_flag",NA
-"2724","Pos_InternalStandards","240304_Smp_WT_Gluc_C","L-Isoleucine, 15N",7.53,98125432,466600,6119500,0.9,"Pos_InternalStandards","blank_flag",NA
+"2723","Pos_InternalStandards","240304_Smp_WT_Gluc_B","L-Isoleucine, 15N",7.49,113885328,1040293,6788423,0.9,"Pos_InternalStandards","",113885328
+"2724","Pos_InternalStandards","240304_Smp_WT_Gluc_C","L-Isoleucine, 15N",7.53,98125432,466600,6119500,0.9,"Pos_InternalStandards","",98125432
 "2725","Pos_InternalStandards","240304_Smp_WT_Hom_A","L-Isoleucine, 15N",7.57,77615208,700342,4728303,1.1,"Pos_InternalStandards","blank_flag",NA
-"2726","Pos_InternalStandards","240304_Smp_WT_Hom_B","L-Isoleucine, 15N",7.51,105573544,978230,5936541,0.7,"Pos_InternalStandards","blank_flag",NA
+"2726","Pos_InternalStandards","240304_Smp_WT_Hom_B","L-Isoleucine, 15N",7.51,105573544,978230,5936541,0.7,"Pos_InternalStandards","",105573544
 "2727","Pos_InternalStandards","240304_Smp_WT_Hom_C","L-Isoleucine, 15N",7.59,79832448,304879,4798873,1,"Pos_InternalStandards","blank_flag",NA
 "2728","Pos_InternalStandards","240304_Smp_WT_Mix_A","L-Isoleucine, 15N",7.75,86815776,416691,4387943,1,"Pos_InternalStandards","blank_flag",NA
 "2729","Pos_InternalStandards","240304_Smp_WT_Mix_B","L-Isoleucine, 15N",7.72,79269792,201566,4193299,0.7,"Pos_InternalStandards","blank_flag",NA
-"2730","Pos_InternalStandards","240304_Smp_WT_Mix_C","L-Isoleucine, 15N",7.48,105805680,1568936,6088708,1.1,"Pos_InternalStandards","blank_flag",NA
+"2730","Pos_InternalStandards","240304_Smp_WT_Mix_C","L-Isoleucine, 15N",7.48,105805680,1568936,6088708,1.1,"Pos_InternalStandards","",105805680
 "2731","Pos_InternalStandards","240327_Std_4uMStdsMix1InH2O_1","L-Isoleucine, 15N",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
 "2732","Pos_InternalStandards","240327_Std_4uMStdsMix1InH2O_2","L-Isoleucine, 15N",7.26,1884042,0,169339,1.2,"Pos_InternalStandards","blank_flag",NA
 "2733","Pos_InternalStandards","240327_Std_4uMStdsMix1InMatrix_1","L-Isoleucine, 15N",7.58,23624594,0,1651236,0.4,"Pos_InternalStandards","blank_flag",NA
@@ -2801,7 +2801,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2799","Pos_InternalStandards","240304_Poo_EpicFate_Half2","Homarine, 2H3",6.06,5434144768,62113220,206362784,-3.3,"Pos_InternalStandards","blank_flag",NA
 "2800","Pos_InternalStandards","240304_Poo_EpicFate_Half3","Homarine, 2H3",6.06,5085004288,56465848,190224912,-2.7,"Pos_InternalStandards","blank_flag",NA
 "2801","Pos_InternalStandards","240304_Smp_ASW_A","Homarine, 2H3",6.07,10511997952,105473360,423505504,-2.5,"Pos_InternalStandards","blank_flag",NA
-"2802","Pos_InternalStandards","240304_Smp_ASW_B","Homarine, 2H3",6.06,11231973376,111018848,432561888,-2.3,"Pos_InternalStandards","blank_flag",NA
+"2802","Pos_InternalStandards","240304_Smp_ASW_B","Homarine, 2H3",6.06,11231973376,111018848,432561888,-2.3,"Pos_InternalStandards","",11231973376
 "2803","Pos_InternalStandards","240304_Smp_ASW_Blk_A","Homarine, 2H3",6.04,10340242432,108233000,406967328,-3.4,"Pos_InternalStandards","blank_flag",NA
 "2804","Pos_InternalStandards","240304_Smp_ASW_C","Homarine, 2H3",6.05,8271705600,105054544,352358656,-1.9,"Pos_InternalStandards","blank_flag",NA
 "2805","Pos_InternalStandards","240304_Smp_Ctrl_A1","Homarine, 2H3",6.05,10662353920,103530552,404055296,-2.7,"Pos_InternalStandards","blank_flag",NA
@@ -2810,20 +2810,20 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2808","Pos_InternalStandards","240304_Smp_Gluc_16_A","Homarine, 2H3",6.04,10734311424,105371864,405053408,-2.7,"Pos_InternalStandards","blank_flag",NA
 "2809","Pos_InternalStandards","240304_Smp_Gluc_16_B","Homarine, 2H3",6.06,10621608960,116241000,408171392,-3.1,"Pos_InternalStandards","blank_flag",NA
 "2810","Pos_InternalStandards","240304_Smp_Gluc_16_C","Homarine, 2H3",6.09,9629003776,99926328,370106496,-2.7,"Pos_InternalStandards","blank_flag",NA
-"2811","Pos_InternalStandards","240304_Smp_Hom_16_A","Homarine, 2H3",6.09,10851593216,124699432,414459552,-3,"Pos_InternalStandards","blank_flag",NA
+"2811","Pos_InternalStandards","240304_Smp_Hom_16_A","Homarine, 2H3",6.09,10851593216,124699432,414459552,-3,"Pos_InternalStandards","",10851593216
 "2812","Pos_InternalStandards","240304_Smp_Hom_16_B","Homarine, 2H3",6.09,9953723392,120106056,391793568,-2.3,"Pos_InternalStandards","blank_flag",NA
 "2813","Pos_InternalStandards","240304_Smp_Hom_16_C","Homarine, 2H3",6.05,10705921024,107554144,399098656,-2.7,"Pos_InternalStandards","blank_flag",NA
-"2814","Pos_InternalStandards","240304_Smp_WT_BLK_Gluc_C","Homarine, 2H3",6.07,10947570688,101708376,408025056,-2.9,"Pos_InternalStandards","blank_flag",NA
-"2815","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_A","Homarine, 2H3",6.09,11299936256,110922168,447130368,-2.9,"Pos_InternalStandards","blank_flag",NA
+"2814","Pos_InternalStandards","240304_Smp_WT_BLK_Gluc_C","Homarine, 2H3",6.07,10947570688,101708376,408025056,-2.9,"Pos_InternalStandards","",10947570688
+"2815","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_A","Homarine, 2H3",6.09,11299936256,110922168,447130368,-2.9,"Pos_InternalStandards","",11299936256
 "2816","Pos_InternalStandards","240304_Smp_WT_BLK_Hom_B","Homarine, 2H3",6.09,10519991296,96551240,404008576,-3.1,"Pos_InternalStandards","blank_flag",NA
 "2817","Pos_InternalStandards","240304_Smp_WT_BLK_Mix_A","Homarine, 2H3",6.05,10366485504,104599504,414660736,-3.1,"Pos_InternalStandards","blank_flag",NA
-"2818","Pos_InternalStandards","240304_Smp_WT_Gluc_A","Homarine, 2H3",6.09,10782796800,113939184,421634848,-3,"Pos_InternalStandards","blank_flag",NA
-"2819","Pos_InternalStandards","240304_Smp_WT_Gluc_B","Homarine, 2H3",6.06,10791227392,120197872,413141600,-2.9,"Pos_InternalStandards","blank_flag",NA
-"2820","Pos_InternalStandards","240304_Smp_WT_Gluc_C","Homarine, 2H3",6.06,11110443008,98048072,420796448,-3.2,"Pos_InternalStandards","blank_flag",NA
-"2821","Pos_InternalStandards","240304_Smp_WT_Hom_A","Homarine, 2H3",6.08,11411535872,90065440,441515584,-2.6,"Pos_InternalStandards","blank_flag",NA
+"2818","Pos_InternalStandards","240304_Smp_WT_Gluc_A","Homarine, 2H3",6.09,10782796800,113939184,421634848,-3,"Pos_InternalStandards","",10782796800
+"2819","Pos_InternalStandards","240304_Smp_WT_Gluc_B","Homarine, 2H3",6.06,10791227392,120197872,413141600,-2.9,"Pos_InternalStandards","",10791227392
+"2820","Pos_InternalStandards","240304_Smp_WT_Gluc_C","Homarine, 2H3",6.06,11110443008,98048072,420796448,-3.2,"Pos_InternalStandards","",11110443008
+"2821","Pos_InternalStandards","240304_Smp_WT_Hom_A","Homarine, 2H3",6.08,11411535872,90065440,441515584,-2.6,"Pos_InternalStandards","",11411535872
 "2822","Pos_InternalStandards","240304_Smp_WT_Hom_B","Homarine, 2H3",6.04,10127304704,86015200,380616992,-2.8,"Pos_InternalStandards","blank_flag",NA
-"2823","Pos_InternalStandards","240304_Smp_WT_Hom_C","Homarine, 2H3",6.08,10979457024,96826784,426106944,-2.7,"Pos_InternalStandards","blank_flag",NA
-"2824","Pos_InternalStandards","240304_Smp_WT_Mix_A","Homarine, 2H3",6.05,11049878528,132178328,433886624,-3.1,"Pos_InternalStandards","blank_flag",NA
+"2823","Pos_InternalStandards","240304_Smp_WT_Hom_C","Homarine, 2H3",6.08,10979457024,96826784,426106944,-2.7,"Pos_InternalStandards","",10979457024
+"2824","Pos_InternalStandards","240304_Smp_WT_Mix_A","Homarine, 2H3",6.05,11049878528,132178328,433886624,-3.1,"Pos_InternalStandards","",11049878528
 "2825","Pos_InternalStandards","240304_Smp_WT_Mix_B","Homarine, 2H3",6.03,10549578752,92637184,405983808,-3,"Pos_InternalStandards","blank_flag",NA
 "2826","Pos_InternalStandards","240304_Smp_WT_Mix_C","Homarine, 2H3",6.09,10131934208,126866640,385258304,-2.6,"Pos_InternalStandards","blank_flag",NA
 "2827","Pos_InternalStandards","240327_Std_4uMStdsMix1InH2O_1","Homarine, 2H3",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
@@ -2978,18 +2978,18 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "2976","Pos_InternalStandards","240327_Smp_WT_Mix_C","L-Methionine, 2H3",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
 "2977","Pos_InternalStandards","240304_Std_4uMStdsMix1InH2O_1","Guanine, 13C, 15N2",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
 "2978","Pos_InternalStandards","240304_Std_4uMStdsMix1InH2O_2","Guanine, 13C, 15N2",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
-"2979","Pos_InternalStandards","240304_Std_4uMStdsMix1InMatrix_1","Guanine, 13C, 15N2",8.78,579698496,7277840,39368488,-2.6,"Pos_InternalStandards","blank_flag",NA
+"2979","Pos_InternalStandards","240304_Std_4uMStdsMix1InMatrix_1","Guanine, 13C, 15N2",8.78,579698496,7277840,39368488,-2.6,"Pos_InternalStandards","",579698496
 "2980","Pos_InternalStandards","240304_Std_4uMStdsMix1InMatrix_2","Guanine, 13C, 15N2",8.75,733491136,8220487,52776096,-3.1,"Pos_InternalStandards","",733491136
 "2981","Pos_InternalStandards","240304_Std_4uMStdsMix2InH2O_1","Guanine, 13C, 15N2",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
 "2982","Pos_InternalStandards","240304_Std_4uMStdsMix2InH2O_2","Guanine, 13C, 15N2",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
-"2983","Pos_InternalStandards","240304_Std_4uMStdsMix2InMatrix_1","Guanine, 13C, 15N2",8.77,558874240,4907949,37528552,-2,"Pos_InternalStandards","blank_flag",NA
-"2984","Pos_InternalStandards","240304_Std_4uMStdsMix2InMatrix_2","Guanine, 13C, 15N2",8.75,599011968,5340941,42748596,-3.4,"Pos_InternalStandards","blank_flag",NA
+"2983","Pos_InternalStandards","240304_Std_4uMStdsMix2InMatrix_1","Guanine, 13C, 15N2",8.77,558874240,4907949,37528552,-2,"Pos_InternalStandards","",558874240
+"2984","Pos_InternalStandards","240304_Std_4uMStdsMix2InMatrix_2","Guanine, 13C, 15N2",8.75,599011968,5340941,42748596,-3.4,"Pos_InternalStandards","",599011968
 "2985","Pos_InternalStandards","240304_Std_H2OinMatrix_1","Guanine, 13C, 15N2",8.78,646596608,6986912,43061152,-3,"Pos_InternalStandards","",646596608
 "2986","Pos_InternalStandards","240304_Std_H2OinMatrix_2","Guanine, 13C, 15N2",8.73,625170816,6921477,44351652,-3.3,"Pos_InternalStandards","",625170816
 "2987","Pos_InternalStandards","240304_Poo_EpicFate_Full1","Guanine, 13C, 15N2",8.77,816988224,8259719,59922896,-2.5,"Pos_InternalStandards","",816988224
 "2988","Pos_InternalStandards","240304_Poo_EpicFate_Full2","Guanine, 13C, 15N2",8.78,1241491584,9608383,85604312,-3.3,"Pos_InternalStandards","",1241491584
 "2989","Pos_InternalStandards","240304_Poo_EpicFate_Full3","Guanine, 13C, 15N2",8.76,1274107392,14527345,94231136,-2.6,"Pos_InternalStandards","",1274107392
-"2990","Pos_InternalStandards","240304_Poo_EpicFate_Half1","Guanine, 13C, 15N2",8.75,500289760,5598299,33734788,-2.5,"Pos_InternalStandards","blank_flag",NA
+"2990","Pos_InternalStandards","240304_Poo_EpicFate_Half1","Guanine, 13C, 15N2",8.75,500289760,5598299,33734788,-2.5,"Pos_InternalStandards","",500289760
 "2991","Pos_InternalStandards","240304_Poo_EpicFate_Half2","Guanine, 13C, 15N2",8.78,668200512,10029573,49476592,-3.4,"Pos_InternalStandards","",668200512
 "2992","Pos_InternalStandards","240304_Poo_EpicFate_Half3","Guanine, 13C, 15N2",8.73,652151360,8916429,49180408,-2.6,"Pos_InternalStandards","",652151360
 "2993","Pos_InternalStandards","240304_Smp_ASW_A","Guanine, 13C, 15N2",8.74,1237662080,13991713,79490632,-2.6,"Pos_InternalStandards","",1237662080
@@ -3047,8 +3047,8 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "3045","Pos_InternalStandards","240327_Smp_Ctrl_C3","Guanine, 13C, 15N2",8.96,191702544,675484,14215940,-3,"Pos_InternalStandards","blank_flag",NA
 "3046","Pos_InternalStandards","240327_Smp_Gluc_16_A","Guanine, 13C, 15N2",8.99,237975504,2405795,18734862,-3.1,"Pos_InternalStandards","blank_flag",NA
 "3047","Pos_InternalStandards","240327_Smp_Gluc_16_B","Guanine, 13C, 15N2",8.98,135303072,1292171,9384078,-3.2,"Pos_InternalStandards","blank_flag",NA
-"3048","Pos_InternalStandards","240327_Smp_Gluc_16_C","Guanine, 13C, 15N2",9.01,435466944,5594152,30162016,-3,"Pos_InternalStandards","blank_flag",NA
-"3049","Pos_InternalStandards","240327_Smp_Hom_16_A","Guanine, 13C, 15N2",8.99,451767680,4659828,31855314,-2.7,"Pos_InternalStandards","blank_flag",NA
+"3048","Pos_InternalStandards","240327_Smp_Gluc_16_C","Guanine, 13C, 15N2",9.01,435466944,5594152,30162016,-3,"Pos_InternalStandards","",435466944
+"3049","Pos_InternalStandards","240327_Smp_Hom_16_A","Guanine, 13C, 15N2",8.99,451767680,4659828,31855314,-2.7,"Pos_InternalStandards","",451767680
 "3050","Pos_InternalStandards","240327_Smp_Hom_16_B","Guanine, 13C, 15N2",8.97,135729648,802348,8858316,-3.3,"Pos_InternalStandards","blank_flag",NA
 "3051","Pos_InternalStandards","240327_Smp_Hom_16_C","Guanine, 13C, 15N2",8.97,312598560,3967748,22105528,-3.8,"Pos_InternalStandards","blank_flag",NA
 "3052","Pos_InternalStandards","240327_Smp_MQBlk1_A","Guanine, 13C, 15N2",9,130104712,1107535,9333636,-3.6,"Pos_InternalStandards","blank_flag",NA
@@ -3085,7 +3085,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "3083","Pos_InternalStandards","240304_Poo_EpicFate_Full1","DL-Histidine, 15N",17.46,215533584,4794731,880114,0.6,"Pos_InternalStandards","",215533584
 "3084","Pos_InternalStandards","240304_Poo_EpicFate_Full2","DL-Histidine, 15N",17.94,437657568,12484694,1698877,0.1,"Pos_InternalStandards","",437657568
 "3085","Pos_InternalStandards","240304_Poo_EpicFate_Full3","DL-Histidine, 15N",17.75,496798688,0,1844373,0.6,"Pos_InternalStandards","",496798688
-"3086","Pos_InternalStandards","240304_Poo_EpicFate_Half1","DL-Histidine, 15N",17.95,106191928,0,428323,0.9,"Pos_InternalStandards","blank_flag",NA
+"3086","Pos_InternalStandards","240304_Poo_EpicFate_Half1","DL-Histidine, 15N",17.95,106191928,0,428323,0.9,"Pos_InternalStandards","",106191928
 "3087","Pos_InternalStandards","240304_Poo_EpicFate_Half2","DL-Histidine, 15N",18.02,225970320,0,873899,0,"Pos_InternalStandards","",225970320
 "3088","Pos_InternalStandards","240304_Poo_EpicFate_Half3","DL-Histidine, 15N",18.15,265595216,0,927329,0.5,"Pos_InternalStandards","",265595216
 "3089","Pos_InternalStandards","240304_Smp_ASW_A","DL-Histidine, 15N",18.04,465872800,10207898,1805453,0.6,"Pos_InternalStandards","",465872800
@@ -3126,7 +3126,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "3124","Pos_InternalStandards","240327_Std_H2OinMatrix_2","DL-Histidine, 15N",NA,NA,NA,NA,NA,"Pos_InternalStandards","",NA
 "3125","Pos_InternalStandards","240327_Poo_EpicFate-CXSPE_Full1","DL-Histidine, 15N",17.81,23992124,0,151954,-0.5,"Pos_InternalStandards","blank_flag",NA
 "3126","Pos_InternalStandards","240327_Poo_EpicFate-CXSPE_Full2","DL-Histidine, 15N",16.89,56585828,22005390,342509,-0.8,"Pos_InternalStandards","sn_flag, blank_flag",NA
-"3127","Pos_InternalStandards","240327_Poo_EpicFate-CXSPE_Full3","DL-Histidine, 15N",16.89,92219904,0,407254,-0.7,"Pos_InternalStandards","blank_flag",NA
+"3127","Pos_InternalStandards","240327_Poo_EpicFate-CXSPE_Full3","DL-Histidine, 15N",16.89,92219904,0,407254,-0.7,"Pos_InternalStandards","",92219904
 "3128","Pos_InternalStandards","240327_Poo_EpicFate-CXSPE_Half1","DL-Histidine, 15N",18.79,11427624,0,80324,-0.6,"Pos_InternalStandards","blank_flag",NA
 "3129","Pos_InternalStandards","240327_Poo_EpicFate-CXSPE_Half2","DL-Histidine, 15N",17.49,33897736,0,193643,-1.1,"Pos_InternalStandards","blank_flag",NA
 "3130","Pos_InternalStandards","240327_Poo_EpicFate-CXSPE_Half3","DL-Histidine, 15N",17.47,48775892,0,228843,-0.6,"Pos_InternalStandards","blank_flag",NA
@@ -3137,11 +3137,11 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "3135","Pos_InternalStandards","240327_Smp_Ctrl_A2","DL-Histidine, 15N",17.7,61389340,1839542,301667,-0.6,"Pos_InternalStandards","blank_flag",NA
 "3136","Pos_InternalStandards","240327_Smp_Ctrl_B1","DL-Histidine, 15N",17.09,65335016,65890,321472,-1.1,"Pos_InternalStandards","blank_flag",NA
 "3137","Pos_InternalStandards","240327_Smp_Ctrl_B2","DL-Histidine, 15N",16.62,75077128,73696,390977,-1.1,"Pos_InternalStandards","blank_flag",NA
-"3138","Pos_InternalStandards","240327_Smp_Ctrl_B3","DL-Histidine, 15N",16.66,105810472,147671,482882,-0.5,"Pos_InternalStandards","blank_flag",NA
+"3138","Pos_InternalStandards","240327_Smp_Ctrl_B3","DL-Histidine, 15N",16.66,105810472,147671,482882,-0.5,"Pos_InternalStandards","",105810472
 "3139","Pos_InternalStandards","240327_Smp_Ctrl_C1","DL-Histidine, 15N",16.41,42816596,16512035,317783,-1.6,"Pos_InternalStandards","sn_flag, blank_flag",NA
 "3140","Pos_InternalStandards","240327_Smp_Ctrl_C2","DL-Histidine, 15N",16.62,14333336,6219136,135601,-1.6,"Pos_InternalStandards","sn_flag, blank_flag",NA
 "3141","Pos_InternalStandards","240327_Smp_Ctrl_C3","DL-Histidine, 15N",16.49,83231824,7263798,444857,-0.9,"Pos_InternalStandards","blank_flag",NA
-"3142","Pos_InternalStandards","240327_Smp_Gluc_16_A","DL-Histidine, 15N",17.09,128645864,6249904,620234,-0.2,"Pos_InternalStandards","blank_flag",NA
+"3142","Pos_InternalStandards","240327_Smp_Gluc_16_A","DL-Histidine, 15N",17.09,128645864,6249904,620234,-0.2,"Pos_InternalStandards","",128645864
 "3143","Pos_InternalStandards","240327_Smp_Gluc_16_B","DL-Histidine, 15N",16.18,29753618,2114559,173904,-0.2,"Pos_InternalStandards","blank_flag",NA
 "3144","Pos_InternalStandards","240327_Smp_Gluc_16_C","DL-Histidine, 15N",17.15,58408572,737469,286828,-0.2,"Pos_InternalStandards","blank_flag",NA
 "3145","Pos_InternalStandards","240327_Smp_Hom_16_A","DL-Histidine, 15N",16.96,148192848,8291414,719989,-0.5,"Pos_InternalStandards","",148192848
@@ -3158,7 +3158,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "3156","Pos_InternalStandards","240327_Smp_MQBlk3_C","DL-Histidine, 15N",17.36,86465880,0,387334,-0.7,"Pos_InternalStandards","blank_flag",NA
 "3157","Pos_InternalStandards","240327_Smp_MQBlk4_A","DL-Histidine, 15N",16.73,72304224,3378266,354865,0,"Pos_InternalStandards","blank_flag",NA
 "3158","Pos_InternalStandards","240327_Smp_MQBlk4_B","DL-Histidine, 15N",16.81,66846320,5215732,328484,-0.8,"Pos_InternalStandards","blank_flag",NA
-"3159","Pos_InternalStandards","240327_Smp_MQBlk4_C","DL-Histidine, 15N",16.3,90691984,2740243,423172,0.2,"Pos_InternalStandards","blank_flag",NA
+"3159","Pos_InternalStandards","240327_Smp_MQBlk4_C","DL-Histidine, 15N",16.3,90691984,2740243,423172,0.2,"Pos_InternalStandards","",90691984
 "3160","Pos_InternalStandards","240327_Smp_WT_Gluc_A","DL-Histidine, 15N",16.88,37869912,0,185845,-0.4,"Pos_InternalStandards","blank_flag",NA
 "3161","Pos_InternalStandards","240327_Smp_WT_Gluc_B","DL-Histidine, 15N",16.82,50028536,1238120,262368,-1,"Pos_InternalStandards","blank_flag",NA
 "3162","Pos_InternalStandards","240327_Smp_WT_Gluc_C","DL-Histidine, 15N",16.65,74786760,3931692,352763,-1,"Pos_InternalStandards","blank_flag",NA

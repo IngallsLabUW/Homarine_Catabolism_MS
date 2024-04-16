@@ -1,9 +1,8 @@
-# Purpose: BMIS on all targeted datasets for the Obi1 Metabolomics
+# Purpose: BMIS on all targeted datasets for the Rpom Metabolomics
 
 # History:
 # Date	     Remarks
-# 20240311   K Heal transferring script from Obi1 specific repo to general repo
-# 20220420       Using this as a template: https://github.com/kheal/Gradients1_SemiTargeted3/blob/master/SourceCode/BMIS_QEHILIC.R and adapting for these data
+# 20240415   K Heal transferring script from Obi1 to Rpom specific repo to general repo
 
 
 # PACKAGES ----
@@ -12,12 +11,21 @@ library(here)
 source(here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R"))
 
 # SET FILE LOCS ----
-meta_data_loc <- here("data", "raw", "metabolomics", "obi1")
-qc_data_loc <- here("data", "intermediate", "metabolomics", "obi1", "targeted")
+meta_data_loc <- here("data", "raw", "metabolomics", "rpom")
+qc_data_loc <- here("data", "intermediate", "metabolomics", "rpom", "targeted")
 bmis_checks_loc <- here(qc_data_loc, "BMIS_checks")
 
 # MAKE DIR FOR BMIS CHECKS
 dir.create(bmis_checks_loc, recursive = TRUE, showWarnings = FALSE)
+
+# GET LISTS OF DISSOLVED/POSITIVE REPLICATES
+sample_key <- read_csv(here(meta_data_loc, "sample_key.csv"), show_col_types = FALSE)
+samps_dissolved <- sample_key %>%
+  filter(str_detect(sample_fraction, "dissolved")) %>%
+  pull(replicate_name)
+samps_positive <- sample_key %>%
+  filter(str_detect(sample_fraction, "particulate")) %>%
+  pull(replicate_name)
 
 # BMIS on HILIC particulate ------
 ## Perform BMIS ----
@@ -32,24 +40,19 @@ BMIS_results <- BMIS(
   ),
   dat_pos_file = here(
     qc_data_loc,
-    "QCd_HILIC_Pos_Particulate.csv"
+    "QCd_HILIC_Pos.csv"
   ),
   dat_neg_file = here(
     qc_data_loc,
-    "QCd_HILIC_Neg_Particulate.csv"
+    "QCd_HILIC_Neg.csv"
   ),
   cut_off1 = 0.2,
   cut_off2 = 0.1,
-  smps_to_dump = c(
-    "211202_Poo_TruePooBacteria_DDApos20",
-    "211202_Poo_TruePooBacteria_DDApos35",
-    "211202_Poo_TruePooBacteria_DDApos50",
-    "211202_Poo_TruePooBacteria_DDAneg20",
-    "211202_Poo_TruePooBacteria_DDAneg35",
-    "211202_Poo_TruePooBacteria_DDAneg50"
-  ),
-  is_to_dump = c("AMP, 15N5", "GMP, 15N5", "Succinic acid, 2H4", "Sulfoacetic acid, 13C2")
+  smps_to_dump = samps_dissolved,
+  is_to_dump = c()
 )
+
+
 ## Save output ----
 ### Internal standard reps -----
 ggsave(
@@ -98,17 +101,18 @@ BMIS_results <- BMIS(
   ),
   dat_pos_file = here(
     qc_data_loc,
-    "QCd_HILIC_Pos_Dissolved.csv"
+    "QCd_HILIC_Pos.csv"
   ),
   dat_neg_file = here(
     qc_data_loc,
-    "QCd_HILIC_Neg_Dissolved.csv"
+    "QCd_HILIC_Neg.csv"
   ),
   cut_off1 = 0.2,
   cut_off2 = 0.1,
-  smps_to_dump = c(),
-  is_to_dump = c()
+  smps_to_dump = samps_positive,
+  is_to_dump = c("L-Methionine, 2H3", "Homarine, 2H3")
 )
+
 ## Save output ----
 ## Save internal standard reps ----
 ggsave(

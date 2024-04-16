@@ -1,4 +1,4 @@
-Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexibility: 2.5 minutes. Blank can be this fraction of a sample: 3. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-04-15 16:22:18.091926. 
+Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexibility: 2.5 minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-04-15 17:21:05.28194. 
 "","molecule_list_name","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","molecule_list","flags","QC_area"
 "1","Neg_Standards","240304_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "2","Neg_Standards","240304_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
@@ -10,9 +10,9 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "8","Neg_Standards","240304_Std_4uMStdsMix2InMatrix_2","unknown_C6H9NO4_neg",3.38,26518824,0,633488,-1.4,"Neg_Standards","blank_flag",NA
 "9","Neg_Standards","240304_Std_H2OinMatrix_1","unknown_C6H9NO4_neg",3.84,33825392,0,1077174,-1.6,"Neg_Standards","blank_flag",NA
 "10","Neg_Standards","240304_Std_H2OinMatrix_2","unknown_C6H9NO4_neg",3.46,27581128,0,628341,-1.3,"Neg_Standards","blank_flag",NA
-"11","Neg_Standards","240304_Poo_EpicFate_Full1","unknown_C6H9NO4_neg",3.94,45113892,0,1410394,-1.6,"Neg_Standards","blank_flag",NA
-"12","Neg_Standards","240304_Poo_EpicFate_Full2","unknown_C6H9NO4_neg",3.6,46806348,0,1199444,-1.6,"Neg_Standards","blank_flag",NA
-"13","Neg_Standards","240304_Poo_EpicFate_Full3","unknown_C6H9NO4_neg",3.58,45482304,0,1120132,-1.2,"Neg_Standards","blank_flag",NA
+"11","Neg_Standards","240304_Poo_EpicFate_Full1","unknown_C6H9NO4_neg",3.94,45113892,0,1410394,-1.6,"Neg_Standards","",45113892
+"12","Neg_Standards","240304_Poo_EpicFate_Full2","unknown_C6H9NO4_neg",3.6,46806348,0,1199444,-1.6,"Neg_Standards","",46806348
+"13","Neg_Standards","240304_Poo_EpicFate_Full3","unknown_C6H9NO4_neg",3.58,45482304,0,1120132,-1.2,"Neg_Standards","",45482304
 "14","Neg_Standards","240304_Poo_EpicFate_Half1","unknown_C6H9NO4_neg",3.89,24717764,0,914106,-1.8,"Neg_Standards","blank_flag",NA
 "15","Neg_Standards","240304_Poo_EpicFate_Half2","unknown_C6H9NO4_neg",3.59,23808090,0,620644,-1.2,"Neg_Standards","blank_flag",NA
 "16","Neg_Standards","240304_Poo_EpicFate_Half3","unknown_C6H9NO4_neg",3.52,17867304,4341077,560716,-0.9,"Neg_Standards","blank_flag",NA
@@ -36,7 +36,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "34","Neg_Standards","240304_Smp_WT_Gluc_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "35","Neg_Standards","240304_Smp_WT_Gluc_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "36","Neg_Standards","240304_Smp_WT_Gluc_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
-"37","Neg_Standards","240304_Smp_WT_Hom_A","unknown_C6H9NO4_neg",3.77,50190140,0,1409258,-1.4,"Neg_Standards","blank_flag",NA
+"37","Neg_Standards","240304_Smp_WT_Hom_A","unknown_C6H9NO4_neg",3.77,50190140,0,1409258,-1.4,"Neg_Standards","",50190140
 "38","Neg_Standards","240304_Smp_WT_Hom_B","unknown_C6H9NO4_neg",3.52,67352856,0,1692746,-1.3,"Neg_Standards","",67352856
 "39","Neg_Standards","240304_Smp_WT_Hom_C","unknown_C6H9NO4_neg",3.78,70612288,0,1878731,-1.3,"Neg_Standards","",70612288
 "40","Neg_Standards","240304_Smp_WT_Mix_A","unknown_C6H9NO4_neg",3.67,184623648,0,4562523,-1.5,"Neg_Standards","",184623648
@@ -96,13 +96,13 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "94","Neg_Standards","240327_Smp_WT_Mix_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "95","Neg_Standards","240327_Smp_WT_Mix_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "96","Neg_Standards","240327_Smp_WT_Mix_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
-"97","Neg_Standards","240304_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO3_1_neg",9.92,36142708,0,2672580,-2,"Neg_Standards","blank_flag",NA
+"97","Neg_Standards","240304_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO3_1_neg",9.92,36142708,0,2672580,-2,"Neg_Standards","",36142708
 "98","Neg_Standards","240304_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO3_1_neg",9.46,54480252,0,3602837,-2,"Neg_Standards","",54480252
-"99","Neg_Standards","240304_Std_4uMStdsMix1InMatrix_1","unknown_C6H9NO3_1_neg",10.1,38936568,0,3749685,-2.1,"Neg_Standards","blank_flag",NA
-"100","Neg_Standards","240304_Std_4uMStdsMix1InMatrix_2","unknown_C6H9NO3_1_neg",9.69,48478128,971580,4149267,-1.8,"Neg_Standards","blank_flag",NA
-"101","Neg_Standards","240304_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_1_neg",9.87,43131668,0,2992891,-2,"Neg_Standards","blank_flag",NA
+"99","Neg_Standards","240304_Std_4uMStdsMix1InMatrix_1","unknown_C6H9NO3_1_neg",10.1,38936568,0,3749685,-2.1,"Neg_Standards","",38936568
+"100","Neg_Standards","240304_Std_4uMStdsMix1InMatrix_2","unknown_C6H9NO3_1_neg",9.69,48478128,971580,4149267,-1.8,"Neg_Standards","",48478128
+"101","Neg_Standards","240304_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_1_neg",9.87,43131668,0,2992891,-2,"Neg_Standards","",43131668
 "102","Neg_Standards","240304_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_1_neg",9.43,67860496,0,3817893,-2,"Neg_Standards","",67860496
-"103","Neg_Standards","240304_Std_4uMStdsMix2InMatrix_1","unknown_C6H9NO3_1_neg",10.14,42687432,0,3999227,-2.4,"Neg_Standards","blank_flag",NA
+"103","Neg_Standards","240304_Std_4uMStdsMix2InMatrix_1","unknown_C6H9NO3_1_neg",10.14,42687432,0,3999227,-2.4,"Neg_Standards","",42687432
 "104","Neg_Standards","240304_Std_4uMStdsMix2InMatrix_2","unknown_C6H9NO3_1_neg",9.67,69774576,1664688,6422917,-2,"Neg_Standards","",69774576
 "105","Neg_Standards","240304_Std_H2OinMatrix_1","unknown_C6H9NO3_1_neg",10.04,3719121,0,378341,-2.2,"Neg_Standards","blank_flag",NA
 "106","Neg_Standards","240304_Std_H2OinMatrix_2","unknown_C6H9NO3_1_neg",9.7,5236045,0,462313,-2,"Neg_Standards","blank_flag",NA
@@ -122,18 +122,18 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "120","Neg_Standards","240304_Smp_Gluc_16_A","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "121","Neg_Standards","240304_Smp_Gluc_16_B","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "122","Neg_Standards","240304_Smp_Gluc_16_C","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
-"123","Neg_Standards","240304_Smp_Hom_16_A","unknown_C6H9NO3_1_neg",10.03,40154908,0,6231992,-2.7,"Neg_Standards","blank_flag",NA
-"124","Neg_Standards","240304_Smp_Hom_16_B","unknown_C6H9NO3_1_neg",10.09,45351920,0,6581109,-2.2,"Neg_Standards","blank_flag",NA
+"123","Neg_Standards","240304_Smp_Hom_16_A","unknown_C6H9NO3_1_neg",10.03,40154908,0,6231992,-2.7,"Neg_Standards","",40154908
+"124","Neg_Standards","240304_Smp_Hom_16_B","unknown_C6H9NO3_1_neg",10.09,45351920,0,6581109,-2.2,"Neg_Standards","",45351920
 "125","Neg_Standards","240304_Smp_Hom_16_C","unknown_C6H9NO3_1_neg",10.05,8082951,0,1262075,-2.6,"Neg_Standards","blank_flag",NA
 "126","Neg_Standards","240304_Smp_WT_BLK_Gluc_C","unknown_C6H9NO3_1_neg",9.73,240449,0,39856,-1.6,"Neg_Standards","blank_flag",NA
 "127","Neg_Standards","240304_Smp_WT_BLK_Hom_A","unknown_C6H9NO3_1_neg",10.08,17175804,160456,2835304,-2.4,"Neg_Standards","blank_flag",NA
-"128","Neg_Standards","240304_Smp_WT_BLK_Hom_B","unknown_C6H9NO3_1_neg",10.05,47340704,0,6785476,-2.5,"Neg_Standards","blank_flag",NA
+"128","Neg_Standards","240304_Smp_WT_BLK_Hom_B","unknown_C6H9NO3_1_neg",10.05,47340704,0,6785476,-2.5,"Neg_Standards","",47340704
 "129","Neg_Standards","240304_Smp_WT_BLK_Mix_A","unknown_C6H9NO3_1_neg",9.75,0,0,0,NA,"Neg_Standards","areamin_flag, blank_flag",NA
 "130","Neg_Standards","240304_Smp_WT_Gluc_A","unknown_C6H9NO3_1_neg",10.06,353572,0,108730,-2.2,"Neg_Standards","blank_flag",NA
 "131","Neg_Standards","240304_Smp_WT_Gluc_B","unknown_C6H9NO3_1_neg",9.87,524746,0,99575,-3,"Neg_Standards","blank_flag",NA
 "132","Neg_Standards","240304_Smp_WT_Gluc_C","unknown_C6H9NO3_1_neg",10.03,356907,0,94311,-3,"Neg_Standards","blank_flag",NA
 "133","Neg_Standards","240304_Smp_WT_Hom_A","unknown_C6H9NO3_1_neg",10.08,76064000,1614813,10674303,-2.4,"Neg_Standards","",76064000
-"134","Neg_Standards","240304_Smp_WT_Hom_B","unknown_C6H9NO3_1_neg",9.89,33066556,0,3841970,-2.5,"Neg_Standards","blank_flag",NA
+"134","Neg_Standards","240304_Smp_WT_Hom_B","unknown_C6H9NO3_1_neg",9.89,33066556,0,3841970,-2.5,"Neg_Standards","",33066556
 "135","Neg_Standards","240304_Smp_WT_Hom_C","unknown_C6H9NO3_1_neg",10.02,26584686,0,4070292,-2.3,"Neg_Standards","blank_flag",NA
 "136","Neg_Standards","240304_Smp_WT_Mix_A","unknown_C6H9NO3_1_neg",10,2525890,0,369296,-2.1,"Neg_Standards","blank_flag",NA
 "137","Neg_Standards","240304_Smp_WT_Mix_B","unknown_C6H9NO3_1_neg",9.98,1341755,0,190266,-2.4,"Neg_Standards","blank_flag",NA
@@ -144,7 +144,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "142","Neg_Standards","240327_Std_4uMStdsMix1InMatrix_2","unknown_C6H9NO3_1_neg",9.46,62647928,198260,5342244,-2.9,"Neg_Standards","",62647928
 "143","Neg_Standards","240327_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_1_neg",9.87,49259292,0,3277501,-1.9,"Neg_Standards","",49259292
 "144","Neg_Standards","240327_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_1_neg",9.56,79049504,721104,5355021,-3.3,"Neg_Standards","",79049504
-"145","Neg_Standards","240327_Std_4uMStdsMix2InMatrix_1","unknown_C6H9NO3_1_neg",9.95,45008460,0,3384310,-2.4,"Neg_Standards","blank_flag",NA
+"145","Neg_Standards","240327_Std_4uMStdsMix2InMatrix_1","unknown_C6H9NO3_1_neg",9.95,45008460,0,3384310,-2.4,"Neg_Standards","",45008460
 "146","Neg_Standards","240327_Std_4uMStdsMix2InMatrix_2","unknown_C6H9NO3_1_neg",9.42,75338384,0,5383066,-2.7,"Neg_Standards","",75338384
 "147","Neg_Standards","240327_Std_H2OinMatrix_1","unknown_C6H9NO3_1_neg",9.95,569290,0,100007,-2,"Neg_Standards","blank_flag",NA
 "148","Neg_Standards","240327_Std_H2OinMatrix_2","unknown_C6H9NO3_1_neg",9.58,916540,0,179958,-3.4,"Neg_Standards","blank_flag",NA
@@ -186,7 +186,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "184","Neg_Standards","240327_Smp_WT_Gluc_A","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "185","Neg_Standards","240327_Smp_WT_Gluc_B","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "186","Neg_Standards","240327_Smp_WT_Gluc_C","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
-"187","Neg_Standards","240327_Smp_WT_Hom_A","unknown_C6H9NO3_1_neg",9.79,33614996,0,2751506,-3.7,"Neg_Standards","blank_flag",NA
+"187","Neg_Standards","240327_Smp_WT_Hom_A","unknown_C6H9NO3_1_neg",9.79,33614996,0,2751506,-3.7,"Neg_Standards","",33614996
 "188","Neg_Standards","240327_Smp_WT_Hom_B","unknown_C6H9NO3_1_neg",9.99,5028952,0,392535,-3.2,"Neg_Standards","blank_flag",NA
 "189","Neg_Standards","240327_Smp_WT_Hom_C","unknown_C6H9NO3_1_neg",9.65,5237285,0,419906,-3.1,"Neg_Standards","blank_flag",NA
 "190","Neg_Standards","240327_Smp_WT_Mix_A","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
@@ -205,8 +205,8 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "203","Neg_Standards","240304_Poo_EpicFate_Full1","unknown_C6H9NO3_2_neg",11.19,33829868,0,2636122,-2.8,"Neg_Standards","",33829868
 "204","Neg_Standards","240304_Poo_EpicFate_Full2","unknown_C6H9NO3_2_neg",10.92,32091594,0,2833663,-1.9,"Neg_Standards","",32091594
 "205","Neg_Standards","240304_Poo_EpicFate_Full3","unknown_C6H9NO3_2_neg",10.83,37297124,0,3015644,-2.5,"Neg_Standards","",37297124
-"206","Neg_Standards","240304_Poo_EpicFate_Half1","unknown_C6H9NO3_2_neg",11.24,17279706,0,1186391,-2.8,"Neg_Standards","blank_flag",NA
-"207","Neg_Standards","240304_Poo_EpicFate_Half2","unknown_C6H9NO3_2_neg",10.86,16614055,0,1155248,-2.1,"Neg_Standards","blank_flag",NA
+"206","Neg_Standards","240304_Poo_EpicFate_Half1","unknown_C6H9NO3_2_neg",11.24,17279706,0,1186391,-2.8,"Neg_Standards","",17279706
+"207","Neg_Standards","240304_Poo_EpicFate_Half2","unknown_C6H9NO3_2_neg",10.86,16614055,0,1155248,-2.1,"Neg_Standards","",16614055
 "208","Neg_Standards","240304_Poo_EpicFate_Half3","unknown_C6H9NO3_2_neg",10.77,20292506,0,1456740,-2.6,"Neg_Standards","",20292506
 "209","Neg_Standards","240304_Smp_ASW_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "210","Neg_Standards","240304_Smp_ASW_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
@@ -292,16 +292,16 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "290","Neg_Standards","240304_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "291","Neg_Standards","240304_Std_4uMStdsMix1InMatrix_1","unknown_C6H9NO3_3_neg",12.15,4429880,0,420773,-2.2,"Neg_Standards","",4429880
 "292","Neg_Standards","240304_Std_4uMStdsMix1InMatrix_2","unknown_C6H9NO3_3_neg",11.7,5143203,0,397412,-2.1,"Neg_Standards","",5143203
-"293","Neg_Standards","240304_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_3_neg",11.81,3698428,0,224888,-2.1,"Neg_Standards","blank_flag",NA
+"293","Neg_Standards","240304_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_3_neg",11.81,3698428,0,224888,-2.1,"Neg_Standards","",3698428
 "294","Neg_Standards","240304_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_3_neg",11.68,4192172,0,331987,-2,"Neg_Standards","",4192172
 "295","Neg_Standards","240304_Std_4uMStdsMix2InMatrix_1","unknown_C6H9NO3_3_neg",12.09,9003265,0,598935,-2.5,"Neg_Standards","",9003265
 "296","Neg_Standards","240304_Std_4uMStdsMix2InMatrix_2","unknown_C6H9NO3_3_neg",11.7,13789155,0,910509,-2.1,"Neg_Standards","",13789155
 "297","Neg_Standards","240304_Std_H2OinMatrix_1","unknown_C6H9NO3_3_neg",12.11,4591787,0,376459,-2.3,"Neg_Standards","",4591787
-"298","Neg_Standards","240304_Std_H2OinMatrix_2","unknown_C6H9NO3_3_neg",11.78,3732952,118721,289490,-1.9,"Neg_Standards","blank_flag",NA
+"298","Neg_Standards","240304_Std_H2OinMatrix_2","unknown_C6H9NO3_3_neg",11.78,3732952,118721,289490,-1.9,"Neg_Standards","",3732952
 "299","Neg_Standards","240304_Poo_EpicFate_Full1","unknown_C6H9NO3_3_neg",12.14,7537698,0,678514,-2.6,"Neg_Standards","",7537698
 "300","Neg_Standards","240304_Poo_EpicFate_Full2","unknown_C6H9NO3_3_neg",11.98,8405107,0,686868,-1.9,"Neg_Standards","",8405107
 "301","Neg_Standards","240304_Poo_EpicFate_Full3","unknown_C6H9NO3_3_neg",11.9,8868302,0,691018,-2.6,"Neg_Standards","",8868302
-"302","Neg_Standards","240304_Poo_EpicFate_Half1","unknown_C6H9NO3_3_neg",12.18,3887282,0,328136,-2.7,"Neg_Standards","blank_flag",NA
+"302","Neg_Standards","240304_Poo_EpicFate_Half1","unknown_C6H9NO3_3_neg",12.18,3887282,0,328136,-2.7,"Neg_Standards","",3887282
 "303","Neg_Standards","240304_Poo_EpicFate_Half2","unknown_C6H9NO3_3_neg",11.97,4188689,0,396590,-2.1,"Neg_Standards","",4188689
 "304","Neg_Standards","240304_Poo_EpicFate_Half3","unknown_C6H9NO3_3_neg",11.93,4057945,0,343939,-2.5,"Neg_Standards","",4057945
 "305","Neg_Standards","240304_Smp_ASW_A","unknown_C6H9NO3_3_neg",11.86,203068,0,64427,-0.8,"Neg_Standards","blank_flag",NA
@@ -319,7 +319,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "317","Neg_Standards","240304_Smp_Hom_16_C","unknown_C6H9NO3_3_neg",12.03,5765672,0,510545,-2.6,"Neg_Standards","",5765672
 "318","Neg_Standards","240304_Smp_WT_BLK_Gluc_C","unknown_C6H9NO3_3_neg",11.68,100852,0,55935,-1.8,"Neg_Standards","blank_flag",NA
 "319","Neg_Standards","240304_Smp_WT_BLK_Hom_A","unknown_C6H9NO3_3_neg",12.1,2227920,0,218779,-2.1,"Neg_Standards","blank_flag",NA
-"320","Neg_Standards","240304_Smp_WT_BLK_Hom_B","unknown_C6H9NO3_3_neg",12.02,2691745,0,290470,-2.7,"Neg_Standards","blank_flag",NA
+"320","Neg_Standards","240304_Smp_WT_BLK_Hom_B","unknown_C6H9NO3_3_neg",12.02,2691745,0,290470,-2.7,"Neg_Standards","",2691745
 "321","Neg_Standards","240304_Smp_WT_BLK_Mix_A","unknown_C6H9NO3_3_neg",11.95,322768,0,83899,-2.1,"Neg_Standards","blank_flag",NA
 "322","Neg_Standards","240304_Smp_WT_Gluc_A","unknown_C6H9NO3_3_neg",11.96,119913,0,108499,-2.1,"Neg_Standards","blank_flag",NA
 "323","Neg_Standards","240304_Smp_WT_Gluc_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
@@ -334,9 +334,9 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "332","Neg_Standards","240327_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "333","Neg_Standards","240327_Std_4uMStdsMix1InMatrix_1","unknown_C6H9NO3_3_neg",11.89,157114,0,89814,-1.8,"Neg_Standards","blank_flag",NA
 "334","Neg_Standards","240327_Std_4uMStdsMix1InMatrix_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
-"335","Neg_Standards","240327_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_3_neg",11.92,3716251,0,202027,-2.2,"Neg_Standards","blank_flag",NA
+"335","Neg_Standards","240327_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_3_neg",11.92,3716251,0,202027,-2.2,"Neg_Standards","",3716251
 "336","Neg_Standards","240327_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_3_neg",11.89,8253523,0,355827,-3.4,"Neg_Standards","",8253523
-"337","Neg_Standards","240327_Std_4uMStdsMix2InMatrix_1","unknown_C6H9NO3_3_neg",12.14,2795566,0,259637,-2.5,"Neg_Standards","blank_flag",NA
+"337","Neg_Standards","240327_Std_4uMStdsMix2InMatrix_1","unknown_C6H9NO3_3_neg",12.14,2795566,0,259637,-2.5,"Neg_Standards","",2795566
 "338","Neg_Standards","240327_Std_4uMStdsMix2InMatrix_2","unknown_C6H9NO3_3_neg",11.87,6418926,0,473403,-3,"Neg_Standards","",6418926
 "339","Neg_Standards","240327_Std_H2OinMatrix_1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "340","Neg_Standards","240327_Std_H2OinMatrix_2","unknown_C6H9NO3_3_neg",11.91,179121,0,67060,-2.2,"Neg_Standards","blank_flag",NA
@@ -413,7 +413,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "411","Neg_Standards","240304_Smp_Hom_16_A","Adenosine monophosphate",11.31,4129239,0,279331,0.6,"Neg_Standards","",4129239
 "412","Neg_Standards","240304_Smp_Hom_16_B","Adenosine monophosphate",11.29,4234754,0,293153,1.3,"Neg_Standards","",4234754
 "413","Neg_Standards","240304_Smp_Hom_16_C","Adenosine monophosphate",11.39,1445551,0,138051,1.6,"Neg_Standards","",1445551
-"414","Neg_Standards","240304_Smp_WT_BLK_Gluc_C","Adenosine monophosphate",11.22,244229,0,72238,1.2,"Neg_Standards","blank_flag",NA
+"414","Neg_Standards","240304_Smp_WT_BLK_Gluc_C","Adenosine monophosphate",11.22,244229,0,72238,1.2,"Neg_Standards","",244229
 "415","Neg_Standards","240304_Smp_WT_BLK_Hom_A","Adenosine monophosphate",10.66,0,0,0,NA,"Neg_Standards","areamin_flag, blank_flag",NA
 "416","Neg_Standards","240304_Smp_WT_BLK_Hom_B","Adenosine monophosphate",10.97,172506,0,51077,0.7,"Neg_Standards","blank_flag",NA
 "417","Neg_Standards","240304_Smp_WT_BLK_Mix_A","Adenosine monophosphate",10.5,0,0,0,NA,"Neg_Standards","areamin_flag, blank_flag",NA
@@ -488,7 +488,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "486","Neg_Standards","240304_Std_4uMStdsMix2InH2O_2","L-Cysteic acid",12.2,243836816,0,8293466,-1.1,"Neg_Standards","",243836816
 "487","Neg_Standards","240304_Std_4uMStdsMix2InMatrix_1","L-Cysteic acid",12.59,91678360,0,9392485,-1.6,"Neg_Standards","",91678360
 "488","Neg_Standards","240304_Std_4uMStdsMix2InMatrix_2","L-Cysteic acid",12.18,205862032,0,17543952,-1.2,"Neg_Standards","",205862032
-"489","Neg_Standards","240304_Std_H2OinMatrix_1","L-Cysteic acid",12.48,375608,0,104739,-0.4,"Neg_Standards","blank_flag",NA
+"489","Neg_Standards","240304_Std_H2OinMatrix_1","L-Cysteic acid",12.48,375608,0,104739,-0.4,"Neg_Standards","",375608
 "490","Neg_Standards","240304_Std_H2OinMatrix_2","L-Cysteic acid",12.22,1274763,0,212252,-1.2,"Neg_Standards","",1274763
 "491","Neg_Standards","240304_Poo_EpicFate_Full1","L-Cysteic acid",12.56,1055632,0,177902,-1.7,"Neg_Standards","",1055632
 "492","Neg_Standards","240304_Poo_EpicFate_Full2","L-Cysteic acid",12.32,1810840,0,219036,-1,"Neg_Standards","",1810840
@@ -571,7 +571,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "569","Neg_Standards","240327_Smp_WT_Gluc_B","L-Cysteic acid",12.42,105386,0,69279,-1.5,"Neg_Standards","blank_flag",NA
 "570","Neg_Standards","240327_Smp_WT_Gluc_C","L-Cysteic acid",12.4,545134,0,126561,-1.2,"Neg_Standards","",545134
 "571","Neg_Standards","240327_Smp_WT_Hom_A","L-Cysteic acid",12.47,1096812,0,153042,-1.5,"Neg_Standards","",1096812
-"572","Neg_Standards","240327_Smp_WT_Hom_B","L-Cysteic acid",12.67,343950,0,80605,-1.9,"Neg_Standards","blank_flag",NA
+"572","Neg_Standards","240327_Smp_WT_Hom_B","L-Cysteic acid",12.67,343950,0,80605,-1.9,"Neg_Standards","",343950
 "573","Neg_Standards","240327_Smp_WT_Hom_C","L-Cysteic acid",12.37,1257061,0,155420,-1.6,"Neg_Standards","",1257061
 "574","Neg_Standards","240327_Smp_WT_Mix_A","L-Cysteic acid",12.4,1941900,0,166418,-2.3,"Neg_Standards","",1941900
 "575","Neg_Standards","240327_Smp_WT_Mix_B","L-Cysteic acid",12.4,2918575,0,169004,-2.6,"Neg_Standards","",2918575
@@ -727,7 +727,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "725","Neg_InternalStandards","240327_Poo_EpicFate-CXSPE_Full1","Nitrate, 15N",5.47,1164943360,4186118,17776536,-1.3,"Neg_InternalStandards","",1164943360
 "726","Neg_InternalStandards","240327_Poo_EpicFate-CXSPE_Full2","Nitrate, 15N",5.41,1165680384,7838249,16163566,-1.1,"Neg_InternalStandards","",1165680384
 "727","Neg_InternalStandards","240327_Poo_EpicFate-CXSPE_Full3","Nitrate, 15N",5.23,1275567360,8113771,16472212,-1,"Neg_InternalStandards","",1275567360
-"728","Neg_InternalStandards","240327_Poo_EpicFate-CXSPE_Half1","Nitrate, 15N",5.05,633789184,0,13269046,-1,"Neg_InternalStandards","blank_flag",NA
+"728","Neg_InternalStandards","240327_Poo_EpicFate-CXSPE_Half1","Nitrate, 15N",5.05,633789184,0,13269046,-1,"Neg_InternalStandards","",633789184
 "729","Neg_InternalStandards","240327_Poo_EpicFate-CXSPE_Half2","Nitrate, 15N",4.86,675388608,4068455,13926170,-1.1,"Neg_InternalStandards","",675388608
 "730","Neg_InternalStandards","240327_Poo_EpicFate-CXSPE_Half3","Nitrate, 15N",4.77,687613184,1554454,12850967,-1.3,"Neg_InternalStandards","",687613184
 "731","Neg_InternalStandards","240327_Smp_ASW_A","Nitrate, 15N",4.54,157996688,1146698,7670685,-0.7,"Neg_InternalStandards","blank_flag",NA
@@ -747,7 +747,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "745","Neg_InternalStandards","240327_Smp_Hom_16_A","Nitrate, 15N",6.65,2989564416,0,20990768,-1.6,"Neg_InternalStandards","",2989564416
 "746","Neg_InternalStandards","240327_Smp_Hom_16_B","Nitrate, 15N",4.33,153965216,41544,7898471,-1.1,"Neg_InternalStandards","blank_flag",NA
 "747","Neg_InternalStandards","240327_Smp_Hom_16_C","Nitrate, 15N",6.26,2990995200,0,21070048,-1.1,"Neg_InternalStandards","",2990995200
-"748","Neg_InternalStandards","240327_Smp_MQBlk1_A","Nitrate, 15N",4.93,583053632,3715456,13144156,-0.9,"Neg_InternalStandards","blank_flag",NA
+"748","Neg_InternalStandards","240327_Smp_MQBlk1_A","Nitrate, 15N",4.93,583053632,3715456,13144156,-0.9,"Neg_InternalStandards","",583053632
 "749","Neg_InternalStandards","240327_Smp_MQBlk1_B","Nitrate, 15N",4.8,150308080,0,7450069,-1.8,"Neg_InternalStandards","blank_flag",NA
 "750","Neg_InternalStandards","240327_Smp_MQBlk1_C","Nitrate, 15N",4.77,129441312,0,6798845,-1.8,"Neg_InternalStandards","blank_flag",NA
 "751","Neg_InternalStandards","240327_Smp_MQBlk2_A","Nitrate, 15N",4.75,361511968,1590887,10717266,-1.5,"Neg_InternalStandards","blank_flag",NA
@@ -1025,7 +1025,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1023","Neg_InternalStandards","240327_Smp_Ctrl_A2","Taurine, 2H4",9.42,51482052,0,3220544,-5.2,"Neg_InternalStandards","blank_flag",NA
 "1024","Neg_InternalStandards","240327_Smp_Ctrl_B1","Taurine, 2H4",9.28,41364060,706952,2885303,-4.5,"Neg_InternalStandards","blank_flag",NA
 "1025","Neg_InternalStandards","240327_Smp_Ctrl_B2","Taurine, 2H4",9.57,37711764,0,2542967,-4.2,"Neg_InternalStandards","blank_flag",NA
-"1026","Neg_InternalStandards","240327_Smp_Ctrl_B3","Taurine, 2H4",9.45,64114584,90051,4338217,-5.6,"Neg_InternalStandards","blank_flag",NA
+"1026","Neg_InternalStandards","240327_Smp_Ctrl_B3","Taurine, 2H4",9.45,64114584,90051,4338217,-5.6,"Neg_InternalStandards","",64114584
 "1027","Neg_InternalStandards","240327_Smp_Ctrl_C1","Taurine, 2H4",9.7,46650668,115311,3022716,-5.1,"Neg_InternalStandards","blank_flag",NA
 "1028","Neg_InternalStandards","240327_Smp_Ctrl_C2","Taurine, 2H4",10.08,38529736,418744,2796168,-4.9,"Neg_InternalStandards","blank_flag",NA
 "1029","Neg_InternalStandards","240327_Smp_Ctrl_C3","Taurine, 2H4",9.81,52588724,0,3596908,-5.7,"Neg_InternalStandards","blank_flag",NA
@@ -1047,7 +1047,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1045","Neg_InternalStandards","240327_Smp_MQBlk4_A","Taurine, 2H4",9.66,53585888,0,3986067,-5.3,"Neg_InternalStandards","blank_flag",NA
 "1046","Neg_InternalStandards","240327_Smp_MQBlk4_B","Taurine, 2H4",9.25,52058400,378950,3254139,-5.1,"Neg_InternalStandards","blank_flag",NA
 "1047","Neg_InternalStandards","240327_Smp_MQBlk4_C","Taurine, 2H4",9.43,58345024,0,3818929,-5.3,"Neg_InternalStandards","blank_flag",NA
-"1048","Neg_InternalStandards","240327_Smp_WT_Gluc_A","Taurine, 2H4",9.6,61768432,89726,3728959,-6,"Neg_InternalStandards","blank_flag",NA
+"1048","Neg_InternalStandards","240327_Smp_WT_Gluc_A","Taurine, 2H4",9.6,61768432,89726,3728959,-6,"Neg_InternalStandards","",61768432
 "1049","Neg_InternalStandards","240327_Smp_WT_Gluc_B","Taurine, 2H4",9.54,40992068,382600,2454480,-4.3,"Neg_InternalStandards","blank_flag",NA
 "1050","Neg_InternalStandards","240327_Smp_WT_Gluc_C","Taurine, 2H4",9.37,40474908,67462,2828481,-4.6,"Neg_InternalStandards","blank_flag",NA
 "1051","Neg_InternalStandards","240327_Smp_WT_Hom_A","Taurine, 2H4",9.83,49016424,0,3216601,-5.8,"Neg_InternalStandards","blank_flag",NA
@@ -1309,7 +1309,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexib
 "1307","Neg_InternalStandards","240327_Smp_ASW_A","L-Cysteic acid, 2H3",12.54,25575656,0,1044287,-3.5,"Neg_InternalStandards","blank_flag",NA
 "1308","Neg_InternalStandards","240327_Smp_ASW_B","L-Cysteic acid, 2H3",12.56,22529514,0,2073994,-3.3,"Neg_InternalStandards","blank_flag",NA
 "1309","Neg_InternalStandards","240327_Smp_ASW_C","L-Cysteic acid, 2H3",12.44,36281532,0,2893083,-3.4,"Neg_InternalStandards","blank_flag",NA
-"1310","Neg_InternalStandards","240327_Smp_Ctrl_A1","L-Cysteic acid, 2H3",12.36,44446068,0,1764324,-4.4,"Neg_InternalStandards","blank_flag",NA
+"1310","Neg_InternalStandards","240327_Smp_Ctrl_A1","L-Cysteic acid, 2H3",12.36,44446068,0,1764324,-4.4,"Neg_InternalStandards","",44446068
 "1311","Neg_InternalStandards","240327_Smp_Ctrl_A2","L-Cysteic acid, 2H3",12.36,43685140,0,1592292,-4.4,"Neg_InternalStandards","blank_flag",NA
 "1312","Neg_InternalStandards","240327_Smp_Ctrl_B1","L-Cysteic acid, 2H3",12.35,42125696,0,1784278,-4.1,"Neg_InternalStandards","blank_flag",NA
 "1313","Neg_InternalStandards","240327_Smp_Ctrl_B2","L-Cysteic acid, 2H3",12.46,31848118,0,1610130,-4,"Neg_InternalStandards","blank_flag",NA

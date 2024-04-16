@@ -29,4 +29,15 @@ Writes out the BMISd data into here("data", "intermediate", "metabolomics", "rpo
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "rpom_metabolomics", "0102_targeted_BMIS.R"))
 remove(list = ls())
+source(here("analysis", "rpom_metabolomics", "0103_Dissolved_QC.R"))
+remove(list = ls())
+```
+
+
+## Combine and tidy targeted data
+Combines the BMISd targeted data from both HILIC particulate and dissolved samples and positive and negative
+Writes out the combined and tidied data into here("data", "intermediate", "metabolomics", "rpom", "targeted")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "rpom_metabolomics", "0104_Combine_Tidy.R"))
+remove(list = ls())
 ```

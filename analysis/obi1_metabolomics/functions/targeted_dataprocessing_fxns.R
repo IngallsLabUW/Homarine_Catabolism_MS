@@ -142,7 +142,6 @@ BMIS <-
     # Import data -----
     sample_key_all <- read_csv(sample_key, show_col_types = FALSE)
     is_names <- read_csv(is_names_file, show_col_types = FALSE)
-
     # Tidy up samp and pooled data -----
     dat_pos <-
       read_csv(dat_pos_file, skip = 1, show_col_types = FALSE) %>%
