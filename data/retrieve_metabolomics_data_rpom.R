@@ -16,6 +16,7 @@ source("R_functions/google_drive_functions.R")
 # )
 # query = paste('"', dir$id, '"',  ' in parents', sep='')
 # files = drive_ls(q=query, shared_drive = "Ingalls Lab", recursive = TRUE)
+# Folder location: https://drive.google.com/drive/u/1/folders/1engPa64gpbKFOhTYUNpTwPTZlknVFbZP
 
 # Copy RPom Metabolomics data from Google Drive -----
 ## mzml data -----

@@ -14,7 +14,7 @@ fig_dir <- here("figures", "exploratory", "metabolomics", "obi1", "chromats")
 
 
 ## Get data ------
-dat_long_filename <- here(data_dir, "combined_long_dat_scaled.csv")
+dat_long_filename <- here(data_dir, "combined_long_dat.csv")
 dat_MF_filename <- here(data_dir, "combined_MF_info.csv")
 sample_key <- read_csv(here(meta_data_dir, "sample_key.csv"), show_col_types = FALSE)
 dat_long <- read_csv(dat_long_filename, show_col_types = FALSE)
