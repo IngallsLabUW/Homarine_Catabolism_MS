@@ -12,7 +12,7 @@ source(here("analysis", "obi1_metabolomics", "functions", "plotting.R"))
 data_dir <- here("data", "intermediate", "metabolomics", "rpom")
 meta_data_dir <- here("data", "raw", "metabolomics", "rpom")
 raw_dat_dir <- here("data", "raw", "metabolomics", "rpom", "particulate", "mzml")
-fig_dir <- here("figures", "exploratory", "metabolomics", "rpom", "chromats")
+fig_dir <- here("figures", "exploratory", "metabolomics", "rpom", "chromats_krh")
 
 ## Get data ------
 # dat_long_filename <- here(data_dir, "combined_long_dat_scaled.csv")
@@ -22,52 +22,23 @@ sample_key <- read_csv(here(meta_data_dir, "sample_key.csv"), show_col_types = F
 
 ## Set mf_oi ------
 mf_oi <- c( #THESE ARE ION FORMULAS, NOT MOLECULAR FORMULAS
-    "C6H12NO3",
     "C7H8NO3",
-    "C6H8NO2",
-    "C6H11NO2",
-    "C7H12NO3",
-    "C6H8NO3",
-    "C6H10NO3",
-    "C6H10NO4",
-    "C6H8NO4",
-    "C6H8NO3",
-    "C7H9NO5Na"
+    "C7H6NO3"
     )
 rt_oi <- c(
-    9.7,
-    3,
-    9.6,
-    10.6,
-    8,
-    11.9,
-    9.6,
-    11.9,
-    3,
-    11,
-    10
+    5,
+    5
 )
 z_oi <- c(
     1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    -1,
-    -1,
-    1
+    -1
+
 )
 samples_oi <- sample_key %>%
     filter(
         # sample_fraction == "particulate",
         chromat == "HILIC",
-        treatment == "Homarine" | treatment == "Glucose" | treatment == "Glucose and homarine" | treatment == "Homarine blank"
-        |treatment == "Glucose blank" | treatment == "Glucose and homarine blank"
-        # sample_set == "OBi1_set2" | replicate_name == "211202_Blk_BlankTube_3",
-        # treatment == "Homarine" | treatment == "Glucose + NH4" | replicate_name == "211202_Blk_BlankTube_3"
+        treatment == "Homarine" | treatment == "Glucose" | treatment == "Glucose and homarine blank"
     ) %>%
     mutate(filename = paste0(replicate_name, ".mzML")) %>%
     mutate(treatment = ifelse(is.na(treatment), "Blank", treatment))
@@ -87,10 +58,7 @@ for (i in 1:length(mf_oi)){
     msdata_files <- here(raw_dat_dir, data_subdir, all_ms_files[all_ms_files %in% samples_oi$filename])
     dda_files <- here(raw_dat_dir, data_subdir, all_ms_files[str_detect(all_ms_files, "_DDA")])
     msdata <- grabMSdata(files = msdata_files, grab_what = c("MS1"))
-    g_ms1 <- plot_EIC(ms1data = msdata$MS1, m_z = mz_oi_i, r_t = rt_oi_i, samples_oi = samples_oi)
-    if (mf_oi_i == "C6H12NO3"){
-        g_ms1 <- plot_EIC(ms1data = msdata$MS1, m_z = mz_oi_i, r_t = rt_oi_i, rt_buffer = 10, samples_oi = samples_oi)
-    }
+    g_ms1 <- plot_EIC(ms1data = msdata$MS1, m_z = mz_oi_i, r_t = rt_oi_i, rt_buffer = 10, samples_oi = samples_oi)
     msdata_dda <- grabMSdata(files = dda_files, grab_what = c("MS2"))
     ms2data <- pull_ms2_data(msdata_dda$MS2, m_z = mz_oi_i, r_t = rt_oi_i)
     if (nrow(ms2data) > 0) {
@@ -109,7 +77,7 @@ for (i in 1:length(mf_oi)){
                     z_oi_i
                 )
             )
-        save_width <- 9
+        save_width <- 12
     } else {
         g_save <- g_ms1 +
             plot_annotation(
@@ -123,7 +91,7 @@ for (i in 1:length(mf_oi)){
                     rt_oi_i
                 )
             )
-        save_width <- 6
+        save_width <- 10
     }
     if (z_oi_i == 1) {
         ggsave(here(fig_dir, paste0(mf_oi_i, ".pdf")), g_save, width = save_width, height = 5)
