@@ -1,0 +1,122 @@
+Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 3. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-05-03 16:31:05.663296. 
+"","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","flags","QC_area"
+"1","220302_Poo_TruePooBacteria_Full1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"2","220302_Poo_TruePooBacteria_Full2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"3","220302_Poo_TruePooBacteria_Full3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"4","220302_Poo_TruePooBacteria_Half1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"5","220302_Poo_TruePooBacteria_Half2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"6","220302_Poo_TruePooBacteria_Half3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"7","220302_Smp_MQBlk1_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"8","220302_Smp_MQBlk1_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"9","220302_Smp_MQBlk1_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"10","220302_Smp_MQBlk2_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"11","220302_Smp_MQBlk2_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"12","220302_Smp_MQBlk2_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"13","220302_Smp_MQBlk3_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"14","220302_Smp_MQBlk3_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"15","220302_Smp_MQBlk3_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"16","220302_Smp_OBi1_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"17","220302_Smp_OBi1_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"18","220302_Smp_OBi1_3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"19","220302_Smp_OBi1_4","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"20","220302_Smp_OBi1_5","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"21","220302_Smp_OBi1_6","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"22","220302_Smp_OBi1_7","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"23","220302_Smp_OBi1_8","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"24","220302_Smp_OBi1_9","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"25","220302_Smp_SupernatBlk_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"26","220302_Smp_SupernatBlk_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"27","220302_Smp_SupernatBlk_3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"28","220302_Smp_SWBlk_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"29","220302_Smp_SWBlk_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"30","220302_Smp_SWBlk_3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"",NA
+"31","220302_Poo_TruePooBacteria_Full1","unknown_C6H9NO3_1_neg",9.73,4850215,0,494040,-1.5,"",4850215
+"32","220302_Poo_TruePooBacteria_Full2","unknown_C6H9NO3_1_neg",9.62,5309158,0,592919,-1.9,"",5309158
+"33","220302_Poo_TruePooBacteria_Full3","unknown_C6H9NO3_1_neg",9.26,6599932,0,654884,-1.3,"",6599932
+"34","220302_Poo_TruePooBacteria_Half1","unknown_C6H9NO3_1_neg",9.73,2410188,0,251231,-1.6,"",2410188
+"35","220302_Poo_TruePooBacteria_Half2","unknown_C6H9NO3_1_neg",9.58,2494072,0,273953,-1.6,"",2494072
+"36","220302_Poo_TruePooBacteria_Half3","unknown_C6H9NO3_1_neg",9.22,3224541,0,341846,-1.5,"",3224541
+"37","220302_Smp_MQBlk1_A","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"38","220302_Smp_MQBlk1_B","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"39","220302_Smp_MQBlk1_C","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"40","220302_Smp_MQBlk2_A","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"41","220302_Smp_MQBlk2_B","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"42","220302_Smp_MQBlk2_C","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"43","220302_Smp_MQBlk3_A","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"44","220302_Smp_MQBlk3_B","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"45","220302_Smp_MQBlk3_C","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"46","220302_Smp_OBi1_1","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"",NA
+"47","220302_Smp_OBi1_2","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"",NA
+"48","220302_Smp_OBi1_3","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"",NA
+"49","220302_Smp_OBi1_4","unknown_C6H9NO3_1_neg",9.64,2593576,0,299788,-1,"",2593576
+"50","220302_Smp_OBi1_5","unknown_C6H9NO3_1_neg",9.9,3269386,0,355012,-0.9,"",3269386
+"51","220302_Smp_OBi1_6","unknown_C6H9NO3_1_neg",9.62,2778968,0,265652,-1.4,"",2778968
+"52","220302_Smp_OBi1_7","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"",NA
+"53","220302_Smp_OBi1_8","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"",NA
+"54","220302_Smp_OBi1_9","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"",NA
+"55","220302_Smp_SupernatBlk_1","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"56","220302_Smp_SupernatBlk_2","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"57","220302_Smp_SupernatBlk_3","unknown_C6H9NO3_1_neg",9.92,36529,0,36930,0.1,"areamin_flag, ",NA
+"58","220302_Smp_SWBlk_1","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"59","220302_Smp_SWBlk_2","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"60","220302_Smp_SWBlk_3","unknown_C6H9NO3_1_neg",9.79,0,0,0,NA,"areamin_flag, ",NA
+"61","220302_Poo_TruePooBacteria_Full1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"62","220302_Poo_TruePooBacteria_Full2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"63","220302_Poo_TruePooBacteria_Full3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"64","220302_Poo_TruePooBacteria_Half1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"65","220302_Poo_TruePooBacteria_Half2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"66","220302_Poo_TruePooBacteria_Half3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"67","220302_Smp_MQBlk1_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"68","220302_Smp_MQBlk1_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"69","220302_Smp_MQBlk1_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"70","220302_Smp_MQBlk2_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"71","220302_Smp_MQBlk2_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"72","220302_Smp_MQBlk2_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"73","220302_Smp_MQBlk3_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"74","220302_Smp_MQBlk3_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"75","220302_Smp_MQBlk3_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"76","220302_Smp_OBi1_1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"77","220302_Smp_OBi1_2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"78","220302_Smp_OBi1_3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"79","220302_Smp_OBi1_4","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"80","220302_Smp_OBi1_5","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"81","220302_Smp_OBi1_6","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"82","220302_Smp_OBi1_7","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"83","220302_Smp_OBi1_8","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"84","220302_Smp_OBi1_9","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"85","220302_Smp_SupernatBlk_1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"86","220302_Smp_SupernatBlk_2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"87","220302_Smp_SupernatBlk_3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"88","220302_Smp_SWBlk_1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"89","220302_Smp_SWBlk_2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"90","220302_Smp_SWBlk_3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"",NA
+"91","220302_Poo_TruePooBacteria_Full1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"92","220302_Poo_TruePooBacteria_Full2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"93","220302_Poo_TruePooBacteria_Full3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"94","220302_Poo_TruePooBacteria_Half1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"95","220302_Poo_TruePooBacteria_Half2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"96","220302_Poo_TruePooBacteria_Half3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"97","220302_Smp_MQBlk1_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"98","220302_Smp_MQBlk1_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"99","220302_Smp_MQBlk1_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"100","220302_Smp_MQBlk2_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"101","220302_Smp_MQBlk2_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"102","220302_Smp_MQBlk2_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"103","220302_Smp_MQBlk3_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"104","220302_Smp_MQBlk3_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"105","220302_Smp_MQBlk3_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"106","220302_Smp_OBi1_1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"107","220302_Smp_OBi1_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"108","220302_Smp_OBi1_3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"109","220302_Smp_OBi1_4","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"110","220302_Smp_OBi1_5","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"111","220302_Smp_OBi1_6","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"112","220302_Smp_OBi1_7","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"113","220302_Smp_OBi1_8","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"114","220302_Smp_OBi1_9","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"115","220302_Smp_SupernatBlk_1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"116","220302_Smp_SupernatBlk_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"117","220302_Smp_SupernatBlk_3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"118","220302_Smp_SWBlk_1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"119","220302_Smp_SWBlk_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
+"120","220302_Smp_SWBlk_3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"",NA
