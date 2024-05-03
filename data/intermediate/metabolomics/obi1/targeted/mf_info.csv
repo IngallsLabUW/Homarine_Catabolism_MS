@@ -1,9 +1,9 @@
 mass_feature,retention_time,mz,z,sample_fraction
 (3-Carboxypropyl)trimethylammonium,10.028478260869566,146.118104,1,Dissolved
 (3-Carboxypropyl)trimethylammonium,9.861,146.118104,1,Particulate
-"(R)-2,3-Dihydroxypropane-1-sulfonate",7.915151515151515,155.001422,-1,Dissolved
+"(R)-2,3-Dihydroxypropane-1-sulfonate",8.003928571428572,155.001422,-1,Dissolved
 "(R)-2,3-Dihydroxypropane-1-sulfonate",9.47125,155.001422,-1,Particulate
-1-Propanesulfonate,2.5647727272727274,123.011592,-1,Dissolved
+1-Propanesulfonate,2.574390243902439,123.011592,-1,Dissolved
 1-Propanesulfonate,2.452,123.011592,-1,Particulate
 "2,3-Pyridinedicarboxylic acid",11.729333333333333,168.029684,1,Dissolved
 "2,3-Pyridinedicarboxylic acid",11.922857142857143,168.029684,1,Particulate
@@ -11,7 +11,7 @@ mass_feature,retention_time,mz,z,sample_fraction
 "2,5-Dihydroxybenzoic acid",3.6614285714285715,153.018785,-1,Particulate
 2-Heptyl-3-hydroxy-quinolone,1.7252173913043478,260.165054,1,Dissolved
 2-Heptyl-3-hydroxy-quinolone,2.367272727272727,260.165054,1,Particulate
-2-Hydroxy-4-(methylthio)butyric acid,2.3304347826086955,149.027242,-1,Dissolved
+2-Hydroxy-4-(methylthio)butyric acid,2.1926666666666668,149.027242,-1,Dissolved
 2-Hydroxy-4-(methylthio)butyric acid,2.271923076923077,149.027242,-1,Particulate
 2-Ketoglutaric acid,12.073260869565217,145.0137,-1,Dissolved
 2-Ketoglutaric acid,12.235641025641026,145.0137,-1,Particulate
@@ -29,7 +29,7 @@ mass_feature,retention_time,mz,z,sample_fraction
 3-Phosphoglycerate,13.781052631578948,184.985118,-1,Particulate
 "3-Sulfolactate, 13C3",12.68,171.9913,-1,Dissolved
 "3-Sulfolactate, 13C3",13.420540540540541,171.9913,-1,Particulate
-3-Sulfopyruvic acid,14.23390243902439,166.965037,-1,Dissolved
+3-Sulfopyruvic acid,14.263783783783785,166.965037,-1,Dissolved
 3-Sulfopyruvic acid,14.256666666666666,166.965037,-1,Particulate
 4-Aminobutyric acid,11.253,104.071154,1,Dissolved
 4-Aminobutyric acid,11.445121951219512,104.071154,1,Particulate
@@ -71,7 +71,7 @@ Betonicine,8.532173913043477,160.097369,1,Dissolved
 Betonicine,8.508648648648649,160.097369,1,Particulate
 Butyrylcarnitine,4.3919565217391305,232.154884,1,Dissolved
 Butyrylcarnitine,4.3325000000000005,232.154884,1,Particulate
-Butyrylglycine,2.727878787878788,144.066069,-1,Dissolved
+Butyrylglycine,2.7186666666666666,144.066069,-1,Dissolved
 Butyrylglycine,2.805,144.066069,-1,Particulate
 Carnitine,9.7044,162.113019,1,Dissolved
 Carnitine,9.923414634146342,162.113019,1,Particulate
@@ -83,7 +83,7 @@ Choline,15.2444,104.107539,1,Dissolved
 Choline,16.017560975609754,104.107539,1,Particulate
 Choline sulfate,7.186829268292683,184.064354,1,Dissolved
 Choline sulfate,6.932307692307693,184.064354,1,Particulate
-Citric acid,15.212307692307693,191.01918,-1,Dissolved
+Citric acid,15.202272727272728,191.01918,-1,Dissolved
 Citric acid,14.36439024390244,191.01918,-1,Particulate
 Citrulline,11.8564,176.103517,1,Dissolved
 Citrulline,11.736341463414634,176.103517,1,Particulate
@@ -209,7 +209,7 @@ L-Aspartic acid,11.626739130434782,134.045334,1,Dissolved
 L-Aspartic acid,11.692564102564102,134.045334,1,Particulate
 L-Cystathionine,12.795714285714286,223.075255,1,Dissolved
 L-Cystathionine,12.431612903225806,223.075255,1,Particulate
-L-Cysteic acid,12.004,167.996671,-1,Dissolved
+L-Cysteic acid,12.00027027027027,167.996671,-1,Dissolved
 L-Cysteic acid,12.147941176470589,167.996671,-1,Particulate
 "L-Cysteic acid, 2H3",12.052391304347825,171.0161,-1,Dissolved
 "L-Cysteic acid, 2H3",12.147297297297298,171.0161,-1,Particulate
@@ -301,7 +301,7 @@ O-Succinylhomoserine,9.90090909090909,220.082112,1,Dissolved
 O-Succinylhomoserine,10.204666666666666,220.082112,1,Particulate
 Ophthalmic acid,10.52375,290.135212,1,Dissolved
 Ophthalmic acid,10.628333333333334,290.135212,1,Particulate
-Orotic acid,6.3809756097560975,155.009283,-1,Dissolved
+Orotic acid,6.3625,155.009283,-1,Dissolved
 Orotic acid,6.32,155.009283,-1,Particulate
 Oxalic acid,13.9068,88.987485,-1,Dissolved
 Oxalic acid,13.846829268292684,88.987485,-1,Particulate
@@ -323,7 +323,7 @@ Sarcosine,10.1302,90.055504,1,Dissolved
 Sarcosine,10.054878048780488,90.055504,1,Particulate
 Shikimic acid,10.7928,173.045,-1,Dissolved
 Shikimic acid,10.829268292682926,173.045,-1,Particulate
-Sodium 2-mercaptoethanesulfonate,2.6021739130434782,140.968013,-1,Dissolved
+Sodium 2-mercaptoethanesulfonate,2.604,140.968013,-1,Dissolved
 Sodium 2-mercaptoethanesulfonate,2.8483333333333336,140.968013,-1,Particulate
 Succinic acid,12.0326,117.018785,-1,Dissolved
 Succinic acid,12.095853658536585,117.018785,-1,Particulate
@@ -393,5 +393,18 @@ beta-Alaninebetaine,9.476739130434783,132.102454,1,Dissolved
 beta-Alaninebetaine,9.597567567567568,132.102454,1,Particulate
 beta-Glutamic acid,10.910625,148.060984,1,Dissolved
 beta-Glutamic acid,11.797317073170731,148.060984,1,Particulate
-cis-Aconitic acid,14.403548387096775,173.008615,-1,Dissolved
+cis-Aconitic acid,14.421724137931035,173.008615,-1,Dissolved
 cis-Aconitic acid,14.534615384615385,173.008615,-1,Particulate
+n-methyl glutamic acid,9.566333333333333,162.0759,1,Dissolved
+n-methyl glutamic acid,9.873529411764705,162.0759,1,Particulate
+n-methyl glutamine,9.254333333333333,161.0921,1,Dissolved
+n-methyl glutamine,9.320555555555556,161.0921,1,Particulate
+unknown_C6H9NO3_1_neg,9.622,142.0504,-1,Dissolved
+unknown_C6H9NO3_1_neg,9.86111111111111,142.0504,-1,Particulate
+unknown_C6H9NO3_2_neg,10.886111111111111,142.0504,-1,Particulate
+unknown_C6H9NO3_3_neg,11.827222222222222,142.0504,-1,Particulate
+unknown_C6H9NO4_neg,3.582222222222222,158.0453,-1,Particulate
+unknown_C6H9NO4_pos,11.816666666666666,160.061,1,Particulate
+unknown_C6H9NO4_pos_early,3.5670588235294116,160.061,1,Particulate
+unknown_C7H11NO3_pos,7.9511111111111115,158.0817,1,Particulate
+unknown_C7H9NO5_pos,11.859333333333334,188.055899,1,Particulate

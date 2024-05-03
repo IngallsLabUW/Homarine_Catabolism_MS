@@ -44,7 +44,14 @@ dat_cmb <- bind_rows(rpom_dat, obi1_dat)
 mass_feature_oi <- c(
     "Homarine",
     "N-Methyl-L-glutamic acid",
-    "n-methyl glutamine"
+    "n-methyl glutamine",
+    "unknown_C6H9NO3_1_neg",
+    "unknown_C6H9NO3_2_neg",
+    "unknown_C6H9NO3_3_neg",
+    "unknown_C6H9NO4_neg",
+    "unknown_C6H9NO4_pos",
+    "unknown_C6H9NO4_pos_early",
+    "unknown_C7H9NO5_pos"
     )
 
 # Plot Homarine and core metabs' enrichments as an example
@@ -84,8 +91,11 @@ g <- ggplot() +
             y = log2(enrichment),
             x = treatment
         ),
+        size = 3,
         position = position_dodge2(width = 0.2, preserve = "single")) +
     facet_wrap(facets = vars(data_origin)) +
+    # use good colors for discrete variables
+    scale_color_brewer(palette = "Set1")+
     theme_bw()
 g
 
