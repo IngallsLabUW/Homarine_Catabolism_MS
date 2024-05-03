@@ -1,4 +1,4 @@
-# PURPOSE: combine and tidy the untargeted data with the targeted data
+# PURPOSE: calculate enrichment factors for the Obi1 samples
 # 20240313  KRH moving from Obi1-specific repo
 
 # PACKAGES & SPECIAL FUNCTIONS ----
@@ -118,6 +118,7 @@ core_outliers <- core_outlier_tests %>%
     summarise(outlier_f_hNH4 = sum(outlier_hNH4, na.rm = T)/n(),
               outlier_f_h = sum(outlier_h,  na.rm = T)/n()) %>%
     ungroup()
+
 # pull core metabs in which less than 10% of the values are outliers
 core_metabs_quality <- core_outliers %>%
     filter(outlier_f_hNH4 < 0.1 & outlier_f_h < 0.1) %>%
@@ -128,3 +129,23 @@ write_csv(core_metabs_quality, here(output_loc, "core_metabs_quality.csv"))
 dat_enrich4 <- dat_enrich3 %>%
     filter(core_metab %in% core_metabs_quality$core_metab)
 write_csv(dat_enrich4, here(output_loc, "enrichment_results.csv"))
+
+## Summarize enrichment results ------
+dat_enrich5 <- dat_enrich4 %>%
+    group_by(mass_feature, sample_fraction) %>%
+    summarise(
+        med_pvalue_h = median(ttest_p_h),
+        med_pvalue_hNH4 = median(ttest_p_hNH4),
+        med_fc_h = median(enrich_h_fc),
+        med_fc_hNH4 = median(enrich_hNH4_fc),
+        med_pvalue_cmb = med_pvalue_h*med_pvalue_hNH4
+    ) %>%
+    ungroup() %>%
+    mutate(
+        med_qvalue_h = p.adjust(med_pvalue_h, method = "fdr"),
+        med_qvalue_hNH4 = p.adjust(med_pvalue_hNH4, method = "fdr"),
+        med_qvalue_cmb = p.adjust(med_pvalue_cmb, method = "fdr")
+    ) %>%
+    mutate(core_metabolite = ifelse(mass_feature %in% core_metabs_quality$core_metab, "core", "non-core"))
+write_csv(dat_enrich5, here(output_loc, "enrichment_summary.csv"))
+

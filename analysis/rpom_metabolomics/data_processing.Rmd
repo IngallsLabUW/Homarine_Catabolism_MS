@@ -41,3 +41,6 @@ Writes out the combined and tidied data into here("data", "intermediate", "metab
 source(here("analysis", "rpom_metabolomics", "0104_Combine_Tidy.R"))
 remove(list = ls())
 ```
+
+
+## Perform Enrichment calculations

@@ -19,11 +19,12 @@ bmis_checks_loc <- here(qc_data_loc, "BMIS_checks")
 dir.create(bmis_checks_loc, recursive = TRUE, showWarnings = FALSE)
 
 # GET LISTS OF DISSOLVED/POSITIVE REPLICATES
+#TODO KRH: Rerun with updated sample key (need inject volume on all samples)
 sample_key <- read_csv(here(meta_data_loc, "sample_key.csv"), show_col_types = FALSE)
 samps_dissolved <- sample_key %>%
   filter(str_detect(sample_fraction, "dissolved")) %>%
   pull(replicate_name)
-samps_positive <- sample_key %>%
+samps_particulate <- sample_key %>%
   filter(str_detect(sample_fraction, "particulate")) %>%
   pull(replicate_name)
 
@@ -109,7 +110,7 @@ BMIS_results <- BMIS(
   ),
   cut_off1 = 0.2,
   cut_off2 = 0.1,
-  smps_to_dump = samps_positive,
+  smps_to_dump = samps_particulate,
   is_to_dump = c("L-Methionine, 2H3", "Homarine, 2H3")
 )
 

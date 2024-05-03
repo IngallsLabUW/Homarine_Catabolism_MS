@@ -22,8 +22,8 @@ QE_QC(
     "skyline",
     "HILIC_QE_NEG_EpicFate_HomarineCatabolism.csv"
   ),
-  std_flag <- "Std_4",
-  blank_flag <- "Smp_WT_BLK",
+  std_flag <- NA,
+  blank_flag <- "Crt_A",
   sn_min = 3,
   ppm_flex = 6,
   area_min = 40000,
@@ -41,8 +41,8 @@ QE_QC(
     "skyline",
     "HILIC_QE_POS_EpicFate_HomarineCatabolism.csv"
   ),
-  std_flag <- "Std_4",
-  blank_flag <- "MQBlk",
+  std_flag <- NA,
+  blank_flag <- "Crt_A",
   sn_min = 3,
   ppm_flex = 6,
   area_min = 40000,
