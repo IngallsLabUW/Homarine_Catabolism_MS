@@ -46,11 +46,7 @@ dat_combined2 <- dat_combined %>%
   filter(!is.na(treatment),
          !str_detect(treatment, "blank"),
          !str_detect(treatment, "media"),
-         !str_detect(treatment, "in ASW"),
-         !str_detect(treatment, "16 h"))
-
-unique(dat_combined2$treatment)
-
+         !str_detect(treatment, "in ASW"))
 
 # Add mf data to long data
 mf_data <- read_csv(

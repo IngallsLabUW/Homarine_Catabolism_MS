@@ -12,7 +12,6 @@
 #'
 #' @examples
 plot_EIC <- function(ms1data, m_z, r_t, samples_oi, mz_ppm = 5, rt_buffer = 2.5){
-
     rt_dat <- ms1data %>% select(rt, filename) %>% distinct() %>%
         filter(rt %between% c(r_t-rt_buffer, r_t+rt_buffer))
 
@@ -32,6 +31,28 @@ plot_EIC <- function(ms1data, m_z, r_t, samples_oi, mz_ppm = 5, rt_buffer = 2.5)
                              scale_y_continuous(expand = c(0, NA)) +
                              labs(y = "Intensity",
                                   x = "Retention Time (min)") )
+    return(g_ms1)
+}
+
+plot_EIC2 <- function(ms1data, m_z, r_t, samples_oi, mz_ppm = 5, rt_buffer = 2.5){
+    rt_dat <- ms1data %>% select(rt, filename) %>% distinct() %>%
+        filter(rt %between% c(r_t-rt_buffer, r_t+rt_buffer))
+
+    ms1_data <- ms1data[mz %between% pmppm(m_z, mz_ppm) & rt %between%c(r_t-rt_buffer, r_t+rt_buffer)] %>%
+        full_join(rt_dat, by = join_by(rt, filename)) %>%
+        left_join(samples_oi %>%
+                      select(filename, treatment_short, experiment),
+                  by = join_by(filename)) %>%
+        mutate(int = ifelse(is.na(int), 0, int))
+    suppressWarnings(g_ms1 <- ggplot(ms1_data) +
+                         geom_line(aes(x = rt, y = int, group  = filename, color = treatment_short)) +
+                         facet_wrap(~experiment, scales = "free_y") +
+                         theme_bw() +
+                         #theme(legend.position = "none") +
+                         #geom_vline("vline", xintercept = r_t, linetype = "dashed") +
+                         scale_y_continuous(expand = c(0, NA)) +
+                         labs(y = "Intensity",
+                              x = "Retention Time (min)") )
     return(g_ms1)
 }
 

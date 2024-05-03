@@ -82,8 +82,7 @@ g4 <- ggplot(
           legend.background = element_rect(fill = "white", colour = "black"),
           text = element_text(size = 7))
 
-g4
+plot(g4)
 
 # SAVE OUTPUTS -----
 ggsave(here(figure_dir, "EnrichmentFactors_scatter_psuedos.pdf"), plot = g4, height = 5, width = 6, units = "in")
-write_csv(dat_enrich_summary, here(data_dir, "MF_enrichment_summary.csv"))
