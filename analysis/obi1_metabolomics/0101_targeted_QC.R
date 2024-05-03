@@ -404,3 +404,25 @@ write_csv(mf_info_joined, here(
   save_dir,
   "mf_info.csv"
 ))
+
+# Combine the standard run and the intermediate run data
+## Dissolved, HILIC Neg -----
+qc_dat1 <- read_csv(
+    here(
+        save_dir,
+        "QCd_HILIC_Neg_Dissolved.csv"
+    )
+)
+qc_dat1_int <- read_csv(
+    here(
+        save_dir,
+        "QCd_HILIC_NEG_DissolvedObi1_Intermediates.csv"
+    )
+)
+qc_dat1 <- bind_rows(qc_dat1, qc_dat1_int)
+write_csv(qc_dat1, here(
+    save_dir,
+    "QCd_HILIC_Neg_Dissolved.csv"
+))
+
+
