@@ -168,17 +168,18 @@ BMIS <-
            cut_off1,
            cut_off2,
            smps_to_dump = c(),
-           is_to_dump = c()) {
+           is_to_dump = c(),
+           skip_lines = 1) {
     # Import data -----
     sample_key_all <- read_csv(sample_key, show_col_types = FALSE)
     is_names <- read_csv(is_names_file, show_col_types = FALSE)
     # Tidy up samp and pooled data -----
     dat_pos <-
-      read_csv(dat_pos_file, skip = 1, show_col_types = FALSE) %>%
+      read_csv(dat_pos_file, skip = skip_lines, show_col_types = FALSE) %>%
       mutate(fraction = "HILICPos")
     if (!is.na(dat_neg_file)) {
       dat_neg <-
-        read_csv(dat_neg_file, skip = 1, show_col_types = FALSE) %>%
+        read_csv(dat_neg_file, skip = skip_lines, show_col_types = FALSE) %>%
         mutate(fraction = "HILICNeg")
       dat <- bind_rows(dat_pos, dat_neg)
     } else {

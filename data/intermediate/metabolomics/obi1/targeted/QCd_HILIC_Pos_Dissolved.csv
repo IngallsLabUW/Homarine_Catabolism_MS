@@ -1,4 +1,4 @@
-Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexibility: 2.5 minutes. Blank can be this fraction of a sample: 3. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-05-03 16:40:59.597047. 
+Hello! Here are the QC parameters Minimum area for a real peak: 40000. RT flexibility: 2.5 minutes. Blank can be this fraction of a sample: 3. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-05-03 16:49:48.938523. 
 "","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","flags","QC_area"
 "1","220302_Std_4uMStdsMix1InH2O_1","(3-Carboxypropyl)trimethylammonium",9.83,4159621888,64578484,306221600,-3.1,"",4159621888
 "2","220302_Std_4uMStdsMix1InH2O_2","(3-Carboxypropyl)trimethylammonium",9.82,5854974464,94050208,418402880,-2,"",5854974464

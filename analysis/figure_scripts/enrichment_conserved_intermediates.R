@@ -42,9 +42,10 @@ dat_cmb <- bind_rows(rpom_dat, obi1_dat)
 
 # Pull out mass features of interest ------
 mass_feature_oi <- c(
-    "Homarine",
+    #"Homarine",
     "N-Methyl-L-glutamic acid",
     "n-methyl glutamine",
+    "n-methyl glutamic acid",
     "unknown_C6H9NO3_1_neg",
     "unknown_C6H9NO3_2_neg",
     "unknown_C6H9NO3_3_neg",
@@ -57,17 +58,31 @@ mass_feature_oi <- c(
 # Plot Homarine and core metabs' enrichments as an example
 dat_sub <- dat_cmb %>%
     filter((core_metabolite == "core" &
-                sample_fraction == "Particulate") | (mass_feature %in% mass_feature_oi)) %>%
-    select(mass_feature, core_metabolite, data_origin, sample_fraction, med_fc_h, med_fc_hNH4)
+                sample_fraction == "Particulate") | (mass_feature %in% mass_feature_oi))
+
 
 # pivot longer, use _h or _hNH4 as the suffix
 dat_long <- pivot_longer(
-    dat_sub,
+    dat_sub %>%
+        select(mass_feature, core_metabolite, data_origin, sample_fraction, med_fc_h, med_fc_hNH4),
     cols = contains("med_fc"),
     names_to = "treatment",
     values_to = "enrichment",
     names_pattern = "med_fc_(.*)"
 )
+
+dat_long2 <- pivot_longer(
+    dat_sub %>%
+        select(mass_feature, core_metabolite, data_origin, sample_fraction, med_pvalue_h, med_pvalue_hNH4),
+    cols = contains("med_pvalue"),
+    names_to = "treatment",
+    values_to = "q_value",
+    names_pattern = "med_pvalue_(.*)"
+)
+dat_long <- left_join(dat_long, dat_long2, by = c("mass_feature", "core_metabolite", "data_origin", "sample_fraction", "treatment")) %>%
+    # Rename "N-Methyl-L-glutamic acid" to "n-methyl glutamic acid"
+    mutate(mass_feature = ifelse(mass_feature == "N-Methyl-L-glutamic acid", "n-methyl glutamic acid", mass_feature)) %>%
+    mutate(p_value_flag = ifelse(q_value < 0.05, "significant", "not significant"))
 
 g <- ggplot() +
     geom_point(
@@ -99,3 +114,20 @@ g <- ggplot() +
     theme_bw()
 g
 
+# Make a tile plot, with y as mass_feature, x as treatment, and color as enrichment
+# use a color palette that is centered at 0 (grey for 0)
+g2 <- ggplot() +
+    geom_tile(
+        data = dat_long ,
+        aes(
+            fill = log2(enrichment),
+            y = mass_feature,
+            x = interaction(treatment, sample_fraction)
+        ),
+        color = "black",
+        width = 0.9,
+        height = 0.9) +
+    facet_wrap(facets = vars(data_origin)) +
+    scale_fill_viridis_c(option = "magma", na.value = "grey") +
+    theme_bw()
+g2
