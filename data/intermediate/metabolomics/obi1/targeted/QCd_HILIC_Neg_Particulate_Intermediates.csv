@@ -1,4 +1,4 @@
-Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 3. S/N ratio: 4. Parts per million flexibility: 6. Processed on: 2024-05-03 16:40:59.964688. 
+Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 3. S/N ratio: 4. Parts per million flexibility: 6. Processed on: 2024-05-03 16:49:49.132705. 
 "","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","flags","QC_area"
 "1","211202_Poo_TruePooBacteria_Full1","unknown_C6H9NO4_neg",3.69,17843162,0,549350,-1.8,"",17843162
 "2","211202_Poo_TruePooBacteria_Full2","unknown_C6H9NO4_neg",3.54,17026728,0,466127,-1.8,"",17026728

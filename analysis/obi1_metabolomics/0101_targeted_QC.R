@@ -406,23 +406,95 @@ write_csv(mf_info_joined, here(
 ))
 
 # Combine the standard run and the intermediate run data
-## Dissolved, HILIC Neg -----
+### Dissolved, HILIC Neg -----
 qc_dat1 <- read_csv(
     here(
         save_dir,
         "QCd_HILIC_Neg_Dissolved.csv"
-    )
+    ),
+    skip = 1,
+    show_col_types = FALSE
 )
 qc_dat1_int <- read_csv(
     here(
         save_dir,
-        "QCd_HILIC_NEG_DissolvedObi1_Intermediates.csv"
-    )
+        "QCd_HILIC_Neg_Dissolved_Intermediates.csv"
+    ),
+    skip = 1,
+    show_col_types = FALSE
 )
 qc_dat1 <- bind_rows(qc_dat1, qc_dat1_int)
 write_csv(qc_dat1, here(
     save_dir,
-    "QCd_HILIC_Neg_Dissolved.csv"
+    "QCd_HILIC_Neg_Dissolved_combined.csv"
 ))
 
+### Particulate, HILIC Neg -----
+qc_dat2 <- read_csv(
+    here(
+        save_dir,
+        "QCd_HILIC_Neg_Particulate.csv"
+    ),
+    skip = 1,
+    show_col_types = FALSE
+)
+qc_dat2_int <- read_csv(
+    here(
+        save_dir,
+        "QCd_HILIC_Neg_Particulate_Intermediates.csv"
+    ),
+    skip = 1,
+    show_col_types = FALSE
+)
+qc_dat2 <- bind_rows(qc_dat2, qc_dat2_int)
+write_csv(qc_dat2, here(
+    save_dir,
+    "QCd_HILIC_Neg_Particulate_combined.csv"
+))
+
+### Dissolved, HILIC Pos -----
+qc_dat3 <- read_csv(
+    here(
+        save_dir,
+        "QCd_HILIC_Pos_Dissolved.csv"
+    ),
+    skip = 1,
+    show_col_types = FALSE
+)
+qc_dat3_int <- read_csv(
+    here(
+        save_dir,
+        "QCd_HILIC_Pos_Dissolved_Intermediates.csv"
+    ),
+    skip = 1,
+    show_col_types = FALSE
+)
+qc_dat3 <- bind_rows(qc_dat3, qc_dat3_int)
+write_csv(qc_dat3, here(
+    save_dir,
+    "QCd_HILIC_Pos_Dissolved_combined.csv"
+))
+
+### Particulate, HILIC Pos -----
+qc_dat4 <- read_csv(
+    here(
+        save_dir,
+        "QCd_HILIC_Pos_Particulate.csv"
+    ),
+    skip = 1,
+    show_col_types = FALSE
+)
+qc_dat4_int <- read_csv(
+    here(
+        save_dir,
+        "QCd_HILIC_Pos_Particulate_Intermediates.csv"
+    ),
+    skip = 1,
+    show_col_types = FALSE
+)
+qc_dat4 <- bind_rows(qc_dat4, qc_dat4_int)
+write_csv(qc_dat4, here(
+    save_dir,
+    "QCd_HILIC_Pos_Particulate_combined.csv"
+))
 
