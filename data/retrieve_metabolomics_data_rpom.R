@@ -23,13 +23,13 @@ source("R_functions/google_drive_functions.R")
 ### dissolved HILIC Neg mzml-----
 export_folder <- here("data", "raw", "metabolomics", "rpom", "dissolved", "mzml", "HILIC_negative_mzml")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
-gfolder <- "1-2vr0a4QUVq72FjZCtL17TmPhIcqaX9W" # change this
+gfolder <- "1-2vr0a4QUVq72FjZCtL17TmPhIcqaX9W"
 drive_download_daughters(gfolder, export_folder)
 
 ### dissolved HILIC Pos mzml-----
 export_folder <- here("data", "raw", "metabolomics", "rpom", "dissolved", "mzml", "HILIC_positive_mzml")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
-gfolder <- "12091AHTwpfcNKBcEm0RG_keKf-gjzcYr" # change this
+gfolder <- "12091AHTwpfcNKBcEm0RG_keKf-gjzcYr"
 drive_download_daughters(gfolder, export_folder)
 
 ### particulate HILIC Neg mzml-----
