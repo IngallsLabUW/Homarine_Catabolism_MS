@@ -53,3 +53,48 @@ for (i in 1:length(raw_files)) {
     }
     convert_files(raw_file, outpath =  mzml_folder, msconvert_args = "polarity negative" , docker_args = c())
 }
+
+
+## mzml centroid data and skyline files -----
+
+### particulate HILIC Neg mzml and Skyline Files-----
+export_folder <- here("data", "raw", "metabolomics", "g4", "particulate", "mzml_skyline", "negative")
+dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
+gfolder <- "19yeehyg64AzgS2yCk8kU6_qs-i8DBEfQ"
+drive_download_daughters(gfolder, export_folder)
+
+### particulate HILIC Pos mzml and Skyline Files-----
+export_folder <- here("data", "raw", "metabolomics", "g4", "particulate", "mzml_skyline", "positive")
+dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
+gfolder <- "19yJ641-QL2j4urP95Ay7KfK3wnpVxqAH"
+drive_download_daughters(gfolder, export_folder)
+
+
+# skyline-associated files ------
+## associated  files-----
+export_folder <- here("data", "raw", "metabolomics", "g4", "particulate", "mzml_skyline")
+dir.create(export_folder, showWarnings = FALSE)
+gfolder <- "19wxbPPxBsWX_hRy8sddUqY41qH7d3PoZ"
+drive_download_daughters(gfolder, export_folder)
+
+## internal standards and sample keys -----
+## clean up the internal standards -----
+# from copied data and clean names for future use
+is_dissolved_dat <- read_csv(here("data", "raw", "metabolomics", "g4", "particulate", "mzml_skyline", "IS_names_dissolved.csv"),
+                             show_col_types = FALSE
+) %>%
+    janitor::clean_names() %>%
+    write_csv(here("data", "raw", "metabolomics", "g4", "is_names_dissolved.csv"))
+
+is_particulate_dat <- read_csv(here("data", "raw", "metabolomics", "g4", "particulate", "mzml_skyline", "IS_names_particulate.csv"),
+                               show_col_types = FALSE
+) %>%
+    janitor::clean_names() %>%
+    write_csv(here("data", "raw", "metabolomics", "g4", "is_names_particulate.csv"))
+
+## grab sample key -----
+gfile <- drive_get(as_id("1IGbDGnFbXG4DclC9ELjqfftIYaTytZfz"), shared_drive = "Ingalls Lab")
+drive_download(gfile,
+               path = here("data", "raw", "metabolomics", "g4", "sample_key.csv")
+)
+
