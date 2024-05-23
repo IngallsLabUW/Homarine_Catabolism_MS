@@ -7,6 +7,7 @@
 library(tidyverse)
 library(msconverteR)
 source("R_functions/google_drive_functions.R")
+mzml_convert = F
 
 
 # Functions to help get the folder ID needed for the drive_download_daughters_function
@@ -26,6 +27,7 @@ gfolder <- "1ED4NpEy1DhU875JyJq-tvgrdQeYw8CGy"
 drive_download_daughters(gfolder, export_folder)
 
 # Convert the .raw files to mzML -----
+if (mzml_convert) {
 get_pwiz_container()
 raw_files <- list.files(export_folder, pattern = ".raw$", full.names = TRUE)
 
@@ -53,17 +55,18 @@ for (i in 1:length(raw_files)) {
     }
     convert_files(raw_file, outpath =  mzml_folder, msconvert_args = "polarity negative" , docker_args = c())
 }
+}
 
 
-## mzml centroid data and skyline files -----
+# Copy .mzml centroided data and skyline files -----
 
-### particulate HILIC Neg mzml and Skyline Files-----
+## particulate HILIC Neg mzml and Skyline Files-----
 export_folder <- here("data", "raw", "metabolomics", "g4", "particulate", "mzml_skyline", "negative")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "19yeehyg64AzgS2yCk8kU6_qs-i8DBEfQ"
 drive_download_daughters(gfolder, export_folder)
 
-### particulate HILIC Pos mzml and Skyline Files-----
+## particulate HILIC Pos mzml and Skyline Files-----
 export_folder <- here("data", "raw", "metabolomics", "g4", "particulate", "mzml_skyline", "positive")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "19yJ641-QL2j4urP95Ay7KfK3wnpVxqAH"
