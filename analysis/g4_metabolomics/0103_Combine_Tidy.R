@@ -9,14 +9,12 @@ library(tidyverse)
 library(here)
 
 # Read in file  -----
-qc_data_loc <- here("data", "intermediate", "metabolomics", "rpom", "targeted")
-meta_data_loc <- here("data", "raw", "metabolomics", "rpom")
+qc_data_loc <- here("data", "intermediate", "metabolomics", "g4", "targeted")
+meta_data_loc <- here("data", "raw", "metabolomics", "g4")
 
-dat_diss_filename <- here(qc_data_loc, "BMISd_HILIC_Dissolved_postDissBlk.csv")
 dat_part_filename <- here(qc_data_loc, "BMISd_HILIC_Particulate.csv")
 sample_key_filename <- here(meta_data_loc, "sample_key.csv")
 
-dat_diss <- read_csv(dat_diss_filename, show_col_types = FALSE)
 dat_part <- read_csv(dat_part_filename, show_col_types = FALSE)
 sample_key <- read_csv(sample_key_filename, show_col_types = FALSE)
 
@@ -24,9 +22,6 @@ sample_key <- read_csv(sample_key_filename, show_col_types = FALSE)
 dat_combined <- dat_part %>%
   select(mass_feature, replicate_name, adjusted_area, fraction) %>%
   mutate(sample_fraction = "Particulate") %>%
-  bind_rows(dat_diss %>%
-    select(mass_feature, replicate_name, adjusted_area, fraction) %>%
-    mutate(sample_fraction = "Dissolved")) %>%
   mutate(z = case_when(
     str_detect(fraction, "Neg") ~ -1,
     str_detect(fraction, "Pos") ~ 1
@@ -54,12 +49,22 @@ mf_data <- read_csv(
   show_col_types = FALSE
 )
 dat_combined3 <- dat_combined2 %>%
-  left_join(mf_data)
+  left_join(mf_data, by = join_by(mass_feature, z)) %>%
+  mutate(timepoint = str_extract(replicate_name, "_t\\d+") %>%
+             str_replace("_t", "") %>%
+             as.numeric()) %>%
+    mutate(experiment_id = str_extract(replicate_name, "G4_\\d+")) %>%
+    mutate(treatment = case_when(
+        str_detect(replicate_name, "Poo") ~ NA_character_,
+      str_detect(treatment, "MethylHomFate") ~ "Homarine",
+      str_detect(treatment, "Control") ~ "Control"
+    ))
 
+glimpse(dat_combined3)
 # pivot wider
 dat_combined_wide <- dat_combined3 %>%
   pivot_wider(
-    id_cols = c("replicate_name", "treatment", "sample_fraction"),
+    id_cols = c("replicate_name", "treatment", "sample_fraction", "timepoint", "experiment_id"),
     names_from = mass_feature,
     values_from = adjusted_area
   )
