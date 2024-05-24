@@ -30,18 +30,22 @@ Writes out the BMISd data into here("data", "intermediate", "metabolomics", "g4"
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "g4_metabolomics", "0102_targeted_BMIS.R"))
 remove(list = ls())
-source(here("analysis", "g4_metabolomics", "0103_Dissolved_QC.R"))
-remove(list = ls())
 ```
 
 
 ## Combine and tidy targeted data
-Combines the BMISd targeted data from both HILIC particulate and dissolved samples and positive and negative
-Writes out the combined and tidied data into here("data", "intermediate", "metabolomics", "rpom", "targeted")
+Combines the BMISd targeted data from both HILIC particulate positive and negative
+Writes out the combined and tidied data into here("data", "intermediate", "metabolomics", "g4", "targeted")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
-source(here("analysis", "g4_metabolomics", "0104_Combine_Tidy.R"))
+source(here("analysis", "g4_metabolomics", "0103_Combine_Tidy.R"))
 remove(list = ls())
 ```
 
 
 ## Perform Enrichment calculations
+Calculates enrichment factors
+Writes out the calculated enrichment factors here("data", "intermediate", "metabolomics", "g4")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "g4_metabolomics", "0201_EnrichmentCalcs.R"))
+remove(list = ls())
+```
