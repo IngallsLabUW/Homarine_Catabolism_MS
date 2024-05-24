@@ -16,3 +16,10 @@ print(here())
 source(here("analysis", "obi1_metabolomics", "0401_Plot_FC_particulate.R"))
 remove(list = ls())
 ```
+
+# CHROMATOGRAMS OF FEATURES OF INTEREST
+## Plot of chromatograms for features of interest
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "figure_scripts", "chromats_new_compounds.R"))
+remove(list = ls())
+```
