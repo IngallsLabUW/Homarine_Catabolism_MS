@@ -32,11 +32,11 @@ BMIS_results <- BMIS(
   ),
   dat_pos_file = here(
     qc_data_loc,
-    "QCd_HILIC_Pos_Particulate.csv"
+    "QCd_HILIC_Pos_Particulate_combined.csv"
   ),
   dat_neg_file = here(
     qc_data_loc,
-    "QCd_HILIC_Neg_Particulate.csv"
+    "QCd_HILIC_Neg_Particulate_combined.csv"
   ),
   cut_off1 = 0.2,
   cut_off2 = 0.1,
@@ -48,7 +48,8 @@ BMIS_results <- BMIS(
     "211202_Poo_TruePooBacteria_DDAneg35",
     "211202_Poo_TruePooBacteria_DDAneg50"
   ),
-  is_to_dump = c("AMP, 15N5", "GMP, 15N5", "Succinic acid, 2H4", "Sulfoacetic acid, 13C2")
+  is_to_dump = c("AMP, 15N5", "GMP, 15N5", "Succinic acid, 2H4", "Sulfoacetic acid, 13C2"),
+  skip_lines = 0
 )
 ## Save output ----
 ### Internal standard reps -----
@@ -98,16 +99,17 @@ BMIS_results <- BMIS(
   ),
   dat_pos_file = here(
     qc_data_loc,
-    "QCd_HILIC_Pos_Dissolved.csv"
+    "QCd_HILIC_Pos_Dissolved_combined.csv"
   ),
   dat_neg_file = here(
     qc_data_loc,
-    "QCd_HILIC_Neg_Dissolved.csv"
+    "QCd_HILIC_Neg_Dissolved_combined.csv"
   ),
   cut_off1 = 0.2,
   cut_off2 = 0.1,
   smps_to_dump = c(),
-  is_to_dump = c()
+  is_to_dump = c(),
+  skip_lines = 0
 )
 ## Save output ----
 ## Save internal standard reps ----

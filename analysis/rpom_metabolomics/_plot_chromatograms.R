@@ -6,26 +6,26 @@ library(ggrepel)
 
 # GET FILES ------
 ## Set dirs ------
-data_dir <- here("data", "intermediate", "metabolomics", "obi1")
-meta_data_dir <- here("data", "raw", "metabolomics", "obi1")
-raw_dat_dir <- here("data", "raw", "metabolomics", "obi1", "particulate", "mzml")
+data_dir <- here("data", "intermediate", "metabolomics", "rpom")
+meta_data_dir <- here("data", "raw", "metabolomics", "rpom")
+raw_dat_dir <- here("data", "raw", "metabolomics", "rpom", "particulate", "mzml")
 fig_dir <- here("figures", "exploratory", "metabolomics", "obi1", "chromats")
 
 
 ## Get data ------
-dat_long_filename <- here(data_dir, "combined_long_dat_scaled.csv")
-dat_MF_filename <- here(data_dir, "combined_MF_info.csv")
-sample_key <- read_csv(here(meta_data_dir, "sample_key.csv"), show_col_types = FALSE)
-dat_long <- read_csv(dat_long_filename, show_col_types = FALSE)
-dat_MF <-
-  read_csv(dat_MF_filename, show_col_types = FALSE)
+# dat_long_filename <- here(data_dir, "combined_long_dat_scaled.csv")
+# dat_MF_filename <- here(data_dir, "combined_MF_info.csv")
+sample_key <- read_csv(here(meta_data_dir, "SampleList_EpicFate_Particulate.csv"), show_col_types = FALSE, col_names = TRUE)
+# dat_long <- read_csv(dat_long_filename, show_col_types = FALSE)
+# dat_MF <-
+#   read_csv(dat_MF_filename, show_col_types = FALSE)
 
 ## Set mf_oi ------
 mf_oi <- c(
     "Homarine",
-    "HILICPos_148", # n-methyl glutamine
-    "HILICPos_192", # unknown, but likely C7H9NO5 by mass and iso patt
-    "HILICPos_29", # unknown
+    # "HILICPos_148", # n-methyl glutamine
+    # "HILICPos_192", # unknown, but likely C7H9NO5 by mass and iso patt
+    # "HILICPos_29", # unknown
     "HILICPos_153" # n-methyl glutamic acid
     )
 bad_mf <- c("HILICNeg_123",  "HILICPos_180")
@@ -34,23 +34,29 @@ bad_mf <- c("HILICNeg_123",  "HILICPos_180")
 
 samples_oi <- sample_key %>%
   filter(
-    sample_fraction == "particulate",
+    # sample_fraction == "particulate",
     chromat == "HILIC",
-    sample_set == "OBi1_set2" | replicate_name == "211202_Blk_BlankTube_3",
-    treatment == "Homarine" | treatment == "Glucose + NH4" | replicate_name == "211202_Blk_BlankTube_3"
+    treatment == "Homarine" | treatment == "Glucose" | treatment == "Glucose and homarine" | treatment == "Homarine blank"
+    |treatment == "Glucose blank" | treatment == "Glucose and homarine blank"
+    # sample_set == "OBi1_set2" | replicate_name == "211202_Blk_BlankTube_3",
+    # treatment == "Homarine" | treatment == "Glucose + NH4" | replicate_name == "211202_Blk_BlankTube_3"
   ) %>%
     mutate(filename = paste0(replicate_name, ".mzML")) %>%
     mutate(treatment = ifelse(is.na(treatment), "Blank", treatment))
 
 # LOOP THROUGH EACH mf_oi_i-------
-for (mf_oi_i in mf_oi){
-mf_info <- dat_MF %>%
-  filter(mass_feature == mf_oi_i)
-if (mf_info$z == 1) {
-  data_subdir <- "HILIC_positive_mzml"
-} else {
-  data_subdir <- "HILIC_negative_mzml"
-}
+# for (mf_oi_i in mf_oi){
+# mf_info <- dat_MF %>%
+#   filter(mass_feature == mf_oi_i)
+# if (mf_info$z == 1) {
+#   data_subdir <- "HILIC_positive_mzml"
+# } else {
+#   data_subdir <- "HILIC_negative_mzml"
+# }
+
+data_subdir <- "HILIC_positive_mzml"
+
+# all_ms_files <- list.files(here(raw_dat_dir, data_subdir))
 all_ms_files <- list.files(here(raw_dat_dir, data_subdir))
 msdata_files <- here(raw_dat_dir, data_subdir, all_ms_files[all_ms_files %in% samples_oi$filename])
 dda_files <- here(raw_dat_dir, data_subdir, all_ms_files[str_detect(all_ms_files, "_DDA")])
@@ -144,7 +150,7 @@ if (nrow(ms2data) > 0) {
   save_width <- 6
 }
 ggsave(here(fig_dir, paste0(mf_oi_i, ".pdf")), g_save, width = save_width, height = 5)
-}
+
 
 #RDisop for isotope envelopes
 #plot(int ~ mz, type = "h", data = ms1_dat, ylab = "Intensity", xlab = "Fragment m/z")

@@ -1,0 +1,74 @@
+Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 3. S/N ratio: 4. Parts per million flexibility: 6. Processed on: 2024-05-03 16:49:49.132705. 
+"","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","flags","QC_area"
+"1","211202_Poo_TruePooBacteria_Full1","unknown_C6H9NO4_neg",3.69,17843162,0,549350,-1.8,"",17843162
+"2","211202_Poo_TruePooBacteria_Full2","unknown_C6H9NO4_neg",3.54,17026728,0,466127,-1.8,"",17026728
+"3","211202_Poo_TruePooBacteria_Full3","unknown_C6H9NO4_neg",3.42,17638764,0,470388,-0.1,"",17638764
+"4","211202_Poo_TruePooBacteria_Half1","unknown_C6H9NO4_neg",3.66,9725187,0,318460,-1.4,"",9725187
+"5","211202_Poo_TruePooBacteria_Half2","unknown_C6H9NO4_neg",3.47,9350649,0,270454,-2,"",9350649
+"6","211202_Poo_TruePooBacteria_Half3","unknown_C6H9NO4_neg",3.37,9181673,0,263798,-0.1,"",9181673
+"7","211202_Blk_BlankTube_1","unknown_C6H9NO4_neg",3.37,189925,54344,43455,2.2,"sn_flag, blank_flag",NA
+"8","211202_Blk_BlankTube_2","unknown_C6H9NO4_neg",3.53,97134,0,29343,3.3,"blank_flag",NA
+"9","211202_Blk_BlankTube_3","unknown_C6H9NO4_neg",3.41,157168,0,61262,5.7,"blank_flag",NA
+"10","211202_Smp_OBi1_1","unknown_C6H9NO4_neg",3.82,6563245,0,153972,-1.6,"",6563245
+"11","211202_Smp_OBi1_2","unknown_C6H9NO4_neg",3.82,7242454,0,182235,-1.1,"",7242454
+"12","211202_Smp_OBi1_3","unknown_C6H9NO4_neg",3.83,6261573,0,159323,-0.7,"",6261573
+"13","211202_Smp_OBi1_4","unknown_C6H9NO4_neg",3.59,71352080,0,2040190,-2.2,"",71352080
+"14","211202_Smp_OBi1_5","unknown_C6H9NO4_neg",3.56,61558092,0,1764973,-1.8,"",61558092
+"15","211202_Smp_OBi1_6","unknown_C6H9NO4_neg",3.6,148335376,0,4478413,-0.8,"",148335376
+"16","211202_Smp_OBi1_7","unknown_C6H9NO4_neg",3.63,5623021,0,143824,-0.9,"",5623021
+"17","211202_Smp_OBi1_8","unknown_C6H9NO4_neg",3.59,4483763,0,101680,-0.5,"",4483763
+"18","211202_Smp_OBi1_9","unknown_C6H9NO4_neg",3.58,4396465,0,139338,-0.2,"",4396465
+"19","211202_Poo_TruePooBacteria_Full1","unknown_C6H9NO3_1_neg",10.01,103746872,1213561,7653269,-2.7,"",103746872
+"20","211202_Poo_TruePooBacteria_Full2","unknown_C6H9NO3_1_neg",9.79,99681000,3204824,6884862,-2.9,"",99681000
+"21","211202_Poo_TruePooBacteria_Full3","unknown_C6H9NO3_1_neg",9.74,108125888,3148049,7415013,-1.4,"",108125888
+"22","211202_Poo_TruePooBacteria_Half1","unknown_C6H9NO3_1_neg",9.92,65886544,679186,5123598,-2.9,"",65886544
+"23","211202_Poo_TruePooBacteria_Half2","unknown_C6H9NO3_1_neg",9.69,64129952,4317716,4572604,-3.3,"",64129952
+"24","211202_Poo_TruePooBacteria_Half3","unknown_C6H9NO3_1_neg",9.62,72435752,3825270,5128570,-1.4,"",72435752
+"25","211202_Blk_BlankTube_1","unknown_C6H9NO3_1_neg",9.88,62833,0,13921,-1.4,"blank_flag",NA
+"26","211202_Blk_BlankTube_2","unknown_C6H9NO3_1_neg",9.84,775038,2169478,58293,-2.1,"sn_flag, blank_flag",NA
+"27","211202_Blk_BlankTube_3","unknown_C6H9NO3_1_neg",10,371889,742912,55025,-2.7,"sn_flag, blank_flag",NA
+"28","211202_Smp_OBi1_1","unknown_C6H9NO3_1_neg",9.91,456583,0,62303,-3.2,"blank_flag",NA
+"29","211202_Smp_OBi1_2","unknown_C6H9NO3_1_neg",9.86,537129,481717,48825,-1.9,"sn_flag, blank_flag",NA
+"30","211202_Smp_OBi1_3","unknown_C6H9NO3_1_neg",9.89,808302,0,57336,-2.6,"blank_flag",NA
+"31","211202_Smp_OBi1_4","unknown_C6H9NO3_1_neg",9.96,96812712,981335,11265227,-3.6,"",96812712
+"32","211202_Smp_OBi1_5","unknown_C6H9NO3_1_neg",9.89,89857232,1052834,7589727,-2.9,"",89857232
+"33","211202_Smp_OBi1_6","unknown_C6H9NO3_1_neg",9.95,103711160,1801093,11131185,-1.5,"",103711160
+"34","211202_Smp_OBi1_7","unknown_C6H9NO3_1_neg",9.87,1671354,491748,281469,-2.6,"sn_flag, ",NA
+"35","211202_Smp_OBi1_8","unknown_C6H9NO3_1_neg",9.84,1617816,0,224544,-2.5,"",1617816
+"36","211202_Smp_OBi1_9","unknown_C6H9NO3_1_neg",9.84,2106261,0,244178,-1.5,"",2106261
+"37","211202_Poo_TruePooBacteria_Full1","unknown_C6H9NO3_2_neg",11,9638570,7391574,756464,-2.8,"sn_flag, ",NA
+"38","211202_Poo_TruePooBacteria_Full2","unknown_C6H9NO3_2_neg",10.72,11179997,8905747,915231,-3.1,"sn_flag, ",NA
+"39","211202_Poo_TruePooBacteria_Full3","unknown_C6H9NO3_2_neg",10.65,10387312,7546849,880551,-1.4,"sn_flag, ",NA
+"40","211202_Poo_TruePooBacteria_Half1","unknown_C6H9NO3_2_neg",11.01,5229632,2014349,431664,-2.8,"sn_flag, ",NA
+"41","211202_Poo_TruePooBacteria_Half2","unknown_C6H9NO3_2_neg",10.72,4387045,6066308,414975,-3.1,"sn_flag, ",NA
+"42","211202_Poo_TruePooBacteria_Half3","unknown_C6H9NO3_2_neg",10.65,5308412,6372105,472830,-1.4,"sn_flag, ",NA
+"43","211202_Blk_BlankTube_1","unknown_C6H9NO3_2_neg",10.82,262454,0,23365,-2.9,"blank_flag",NA
+"44","211202_Blk_BlankTube_2","unknown_C6H9NO3_2_neg",10.98,395221,2855074,67005,-2.2,"sn_flag, blank_flag",NA
+"45","211202_Blk_BlankTube_3","unknown_C6H9NO3_2_neg",11.03,451498,1042319,33588,-2.6,"sn_flag, blank_flag",NA
+"46","211202_Smp_OBi1_1","unknown_C6H9NO3_2_neg",11.02,55249,0,23423,-4.1,"blank_flag",NA
+"47","211202_Smp_OBi1_2","unknown_C6H9NO3_2_neg",10.99,232231,440139,34017,-1.7,"sn_flag, blank_flag",NA
+"48","211202_Smp_OBi1_3","unknown_C6H9NO3_2_neg",11.11,83497,167124,12098,-2.4,"sn_flag, blank_flag",NA
+"49","211202_Smp_OBi1_4","unknown_C6H9NO3_2_neg",10.84,14396247,4214450,1501814,-3.6,"sn_flag, ",NA
+"50","211202_Smp_OBi1_5","unknown_C6H9NO3_2_neg",10.88,11678002,4731953,1207814,-2.9,"sn_flag, ",NA
+"51","211202_Smp_OBi1_6","unknown_C6H9NO3_2_neg",10.94,11585407,6582309,1215753,-1.7,"sn_flag, ",NA
+"52","211202_Smp_OBi1_7","unknown_C6H9NO3_2_neg",10.86,16999186,1207741,1740188,-2.8,"",16999186
+"53","211202_Smp_OBi1_8","unknown_C6H9NO3_2_neg",10.86,15879632,0,1656779,-2.7,"",15879632
+"54","211202_Smp_OBi1_9","unknown_C6H9NO3_2_neg",10.87,20878440,1121864,2045408,-1.6,"",20878440
+"55","211202_Poo_TruePooBacteria_Full1","unknown_C6H9NO3_3_neg",11.95,2969572,3168033,264077,-2.6,"sn_flag, ",NA
+"56","211202_Poo_TruePooBacteria_Full2","unknown_C6H9NO3_3_neg",11.76,3591697,6203358,254514,-2.9,"sn_flag, ",NA
+"57","211202_Poo_TruePooBacteria_Full3","unknown_C6H9NO3_3_neg",11.66,3809060,4206166,241154,-1,"sn_flag, ",NA
+"58","211202_Poo_TruePooBacteria_Half1","unknown_C6H9NO3_3_neg",11.95,2351423,923017,142406,-2.9,"sn_flag, ",NA
+"59","211202_Poo_TruePooBacteria_Half2","unknown_C6H9NO3_3_neg",11.56,1454554,6575344,308657,-3,"sn_flag, ",NA
+"60","211202_Poo_TruePooBacteria_Half3","unknown_C6H9NO3_3_neg",11.69,1187078,2487936,114436,-1.3,"sn_flag, ",NA
+"61","211202_Blk_BlankTube_1","unknown_C6H9NO3_3_neg",11.86,120357,0,23811,-1.6,"blank_flag",NA
+"62","211202_Blk_BlankTube_2","unknown_C6H9NO3_3_neg",11.88,237999,1054167,44051,-2.1,"sn_flag, blank_flag",NA
+"63","211202_Blk_BlankTube_3","unknown_C6H9NO3_3_neg",12.05,304832,734497,37994,-2.6,"sn_flag, blank_flag",NA
+"64","211202_Smp_OBi1_1","unknown_C6H9NO3_3_neg",11.69,322823,0,37685,-2.2,"blank_flag",NA
+"65","211202_Smp_OBi1_2","unknown_C6H9NO3_3_neg",12.11,548230,339786,61918,-1.8,"sn_flag, blank_flag",NA
+"66","211202_Smp_OBi1_3","unknown_C6H9NO3_3_neg",11.68,533191,0,34832,-1.9,"blank_flag",NA
+"67","211202_Smp_OBi1_4","unknown_C6H9NO3_3_neg",11.79,4493841,1402500,427184,-3.4,"sn_flag, ",NA
+"68","211202_Smp_OBi1_5","unknown_C6H9NO3_3_neg",11.86,4550052,1298227,368966,-2.8,"sn_flag, ",NA
+"69","211202_Smp_OBi1_6","unknown_C6H9NO3_3_neg",11.88,5907216,2163100,385869,-1.8,"sn_flag, ",NA
+"70","211202_Smp_OBi1_7","unknown_C6H9NO3_3_neg",11.83,6848693,1755693,554972,-2.7,"sn_flag, ",NA
+"71","211202_Smp_OBi1_8","unknown_C6H9NO3_3_neg",11.81,5615092,612742,511212,-2.3,"",5615092
+"72","211202_Smp_OBi1_9","unknown_C6H9NO3_3_neg",11.88,7926046,892265,588579,-1.6,"",7926046

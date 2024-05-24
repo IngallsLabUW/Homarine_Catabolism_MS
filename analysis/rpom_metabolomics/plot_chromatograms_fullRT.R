@@ -1,0 +1,101 @@
+library(RaMS)
+library(Rdisop)
+library(tidyverse)
+library(here)
+library(patchwork)
+library(ggrepel)
+source(here("analysis", "obi1_metabolomics", "functions", "plotting.R"))
+
+
+# GET FILES ------
+## Set dirs ------
+data_dir <- here("data", "intermediate", "metabolomics", "rpom")
+meta_data_dir <- here("data", "raw", "metabolomics", "rpom")
+raw_dat_dir <- here("data", "raw", "metabolomics", "rpom", "particulate", "mzml")
+fig_dir <- here("figures", "exploratory", "metabolomics", "rpom", "chromats_krh")
+
+## Get data ------
+# dat_long_filename <- here(data_dir, "combined_long_dat_scaled.csv")
+sample_key <- read_csv(here(meta_data_dir, "sample_key.csv"), show_col_types = FALSE, col_names = TRUE)
+# sample_key <- read_csv(here(meta_data_dir, "sample_key.csv"), show_col_types = FALSE)
+# dat_long <- read_csv(dat_long_filename, show_col_types = FALSE)
+
+## Set mf_oi ------
+mf_oi <- c( #THESE ARE ION FORMULAS, NOT MOLECULAR FORMULAS
+    "C7H8NO3",
+    "C7H6NO3"
+    )
+rt_oi <- c(
+    5,
+    5
+)
+z_oi <- c(
+    1,
+    -1
+
+)
+samples_oi <- sample_key %>%
+    filter(
+        # sample_fraction == "particulate",
+        chromat == "HILIC",
+        treatment == "Homarine" | treatment == "Glucose" | treatment == "Glucose and homarine blank"
+    ) %>%
+    mutate(filename = paste0(replicate_name, ".mzML")) %>%
+    mutate(treatment = ifelse(is.na(treatment), "Blank", treatment))
+
+# LOOP THROUGH EACH mf_oi_i-------
+for (i in 1:length(mf_oi)){
+    mf_oi_i <- mf_oi[i]
+    z_oi_i <- z_oi[i]
+    rt_oi_i <- rt_oi[i]
+    mz_oi_i <- getMolecule(mf_oi_i)$isotopes[[1]][1,1]
+    if (z_oi_i == 1) {
+        data_subdir <- "HILIC_positive_mzml"
+    } else {
+        data_subdir <- "HILIC_negative_mzml"
+    }
+    all_ms_files <- list.files(here(raw_dat_dir, data_subdir))
+    msdata_files <- here(raw_dat_dir, data_subdir, all_ms_files[all_ms_files %in% samples_oi$filename])
+    dda_files <- here(raw_dat_dir, data_subdir, all_ms_files[str_detect(all_ms_files, "_DDA")])
+    msdata <- grabMSdata(files = msdata_files, grab_what = c("MS1"))
+    g_ms1 <- plot_EIC(ms1data = msdata$MS1, m_z = mz_oi_i, r_t = rt_oi_i, rt_buffer = 10, samples_oi = samples_oi)
+    msdata_dda <- grabMSdata(files = dda_files, grab_what = c("MS2"))
+    ms2data <- pull_ms2_data(msdata_dda$MS2, m_z = mz_oi_i, r_t = rt_oi_i)
+    if (nrow(ms2data) > 0) {
+        g_ms2 <- plot_spectrum (ms2data)
+        g_save <- g_ms1 +
+            g_ms2 +
+            plot_layout(ncol = 2, widths = c(3, 1)) +
+            plot_annotation(
+                title = mf_oi_i,
+                caption = paste0(
+                    "m/z: ",
+                    round(mz_oi_i, digits = 4),
+                    ", RT: ",
+                    round(rt_oi_i, digits = 2),
+                    " min, z: ",
+                    z_oi_i
+                )
+            )
+        save_width <- 12
+    } else {
+        g_save <- g_ms1 +
+            plot_annotation(
+                title = mf_oi_i,
+                caption = paste0(
+                    "m/z: ",
+                    round(mz_oi_i, digits = 4),
+                    ", RT: ",
+                    round(rt_oi_i, digits = 2),
+                    " min, z: ",
+                    rt_oi_i
+                )
+            )
+        save_width <- 10
+    }
+    if (z_oi_i == 1) {
+        ggsave(here(fig_dir, paste0(mf_oi_i, ".pdf")), g_save, width = save_width, height = 5)
+    } else {
+        ggsave(here(fig_dir, paste0(mf_oi_i, "_neg", ".pdf")), g_save, width = save_width, height = 5)
+    }
+}

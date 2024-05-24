@@ -1,0 +1,25 @@
+---
+title: "Figure generation notebook for Homarine Catabolism project"
+author: "Katherine Heal"
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+library(here)
+print(here())
+```
+
+
+# OBI1 COMPARITIVE METABOLOMICS FIGURE
+## Plot of enrichment of metabolites in Obi1 under different conditions
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0401_Plot_FC_particulate.R"))
+remove(list = ls())
+```
+
+# CHROMATOGRAMS OF FEATURES OF INTEREST
+## Plot of chromatograms for features of interest
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "figure_scripts", "chromats_new_compounds.R"))
+remove(list = ls())
+```
