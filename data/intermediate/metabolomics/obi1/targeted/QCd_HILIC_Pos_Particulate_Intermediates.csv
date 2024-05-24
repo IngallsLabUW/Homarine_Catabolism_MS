@@ -1,0 +1,128 @@
+Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 3. S/N ratio: 4. Parts per million flexibility: 6. Processed on: 2024-05-03 16:49:49.314976. 
+"","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","flags","QC_area"
+"1","211202_Poo_TruePooBacteria_Full1","unknown_C6H9NO4_pos",11.96,745433,0,67181,-3.1,"",745433
+"2","211202_Poo_TruePooBacteria_Full2","unknown_C6H9NO4_pos",11.73,581492,0,54614,-3.4,"",581492
+"3","211202_Poo_TruePooBacteria_Full3","unknown_C6H9NO4_pos",11.7,555861,0,48965,-2,"",555861
+"4","211202_Poo_TruePooBacteria_Half1","unknown_C6H9NO4_pos",11.96,407809,0,34837,-3.6,"",407809
+"5","211202_Poo_TruePooBacteria_Half2","unknown_C6H9NO4_pos",11.75,315968,0,23839,-3.1,"",315968
+"6","211202_Poo_TruePooBacteria_Half3","unknown_C6H9NO4_pos",11.7,307488,0,25892,-1.9,"",307488
+"7","211202_Blk_BlankTube_1","unknown_C6H9NO4_pos",11.74,0,0,0,NA,"areamin_flag, ",NA
+"8","211202_Blk_BlankTube_2","unknown_C6H9NO4_pos",11.75,0,0,0,NA,"areamin_flag, ",NA
+"9","211202_Blk_BlankTube_3","unknown_C6H9NO4_pos",11.75,0,0,0,NA,"areamin_flag, ",NA
+"10","211202_Smp_OBi1_1","unknown_C6H9NO4_pos",NA,NA,NA,NA,NA,"",NA
+"11","211202_Smp_OBi1_2","unknown_C6H9NO4_pos",NA,NA,NA,NA,NA,"",NA
+"12","211202_Smp_OBi1_3","unknown_C6H9NO4_pos",NA,NA,NA,NA,NA,"",NA
+"13","211202_Smp_OBi1_4","unknown_C6H9NO4_pos",11.8,1353639,0,99964,-3.6,"",1353639
+"14","211202_Smp_OBi1_5","unknown_C6H9NO4_pos",11.82,1117511,0,82870,-3.7,"",1117511
+"15","211202_Smp_OBi1_6","unknown_C6H9NO4_pos",11.89,1413312,0,110538,-2.5,"",1413312
+"16","211202_Smp_OBi1_7","unknown_C6H9NO4_pos",11.84,1358252,0,120689,-3,"",1358252
+"17","211202_Smp_OBi1_8","unknown_C6H9NO4_pos",11.8,1228844,0,108071,-3.3,"",1228844
+"18","211202_Smp_OBi1_9","unknown_C6H9NO4_pos",11.85,1516427,0,138214,-2.2,"",1516427
+"19","211202_Poo_TruePooBacteria_Full1","n-methyl glutamine",9.32,309139168,6482577,19764328,0,"",309139168
+"20","211202_Poo_TruePooBacteria_Full2","n-methyl glutamine",9.19,361174240,9567334,23620832,0,"",361174240
+"21","211202_Poo_TruePooBacteria_Full3","n-methyl glutamine",9.21,401635584,6858948,23828704,0.5,"",401635584
+"22","211202_Poo_TruePooBacteria_Half1","n-methyl glutamine",9.26,308038656,6217307,19794714,-0.5,"",308038656
+"23","211202_Poo_TruePooBacteria_Half2","n-methyl glutamine",9.14,363758528,6642294,22078428,-0.4,"",363758528
+"24","211202_Poo_TruePooBacteria_Half3","n-methyl glutamine",9.09,391097120,7027720,23764720,0.7,"",391097120
+"25","211202_Blk_BlankTube_1","n-methyl glutamine",9.29,6202,0,3999,-0.1,"areamin_flag, blank_flag",NA
+"26","211202_Blk_BlankTube_2","n-methyl glutamine",9.3,141910,0,10795,0.8,"blank_flag",NA
+"27","211202_Blk_BlankTube_3","n-methyl glutamine",9.4,133450,0,9989,0.2,"blank_flag",NA
+"28","211202_Smp_OBi1_1","n-methyl glutamine",9.42,205738784,3032560,10958454,-0.8,"",205738784
+"29","211202_Smp_OBi1_2","n-methyl glutamine",9.42,187830800,2678723,8928654,1.4,"",187830800
+"30","211202_Smp_OBi1_3","n-methyl glutamine",9.5,184203520,2495207,10041820,-0.2,"",184203520
+"31","211202_Smp_OBi1_4","n-methyl glutamine",9.45,1152127232,20247146,68378960,-0.9,"",1152127232
+"32","211202_Smp_OBi1_5","n-methyl glutamine",9.35,1286245504,20905004,81107344,-0.5,"",1286245504
+"33","211202_Smp_OBi1_6","n-methyl glutamine",9.42,1239653248,21826598,81998952,0.5,"",1239653248
+"34","211202_Smp_OBi1_7","n-methyl glutamine",9.33,162435760,2651354,8253904,-0.1,"",162435760
+"35","211202_Smp_OBi1_8","n-methyl glutamine",9.37,156482368,2462484,8181415,-0.1,"",156482368
+"36","211202_Smp_OBi1_9","n-methyl glutamine",9.31,231387040,3737863,12995352,1,"",231387040
+"37","211202_Poo_TruePooBacteria_Full1","unknown_C7H9NO5_pos",11.94,1194592,0,119876,-2.2,"",1194592
+"38","211202_Poo_TruePooBacteria_Full2","unknown_C7H9NO5_pos",11.75,963558,0,90280,-2.5,"",963558
+"39","211202_Poo_TruePooBacteria_Full3","unknown_C7H9NO5_pos",11.72,940671,0,94426,-1.2,"",940671
+"40","211202_Poo_TruePooBacteria_Half1","unknown_C7H9NO5_pos",11.98,663258,0,64065,-2.7,"",663258
+"41","211202_Poo_TruePooBacteria_Half2","unknown_C7H9NO5_pos",11.77,508649,0,44362,-2.2,"",508649
+"42","211202_Poo_TruePooBacteria_Half3","unknown_C7H9NO5_pos",11.75,522511,0,40963,-1.1,"",522511
+"43","211202_Blk_BlankTube_1","unknown_C7H9NO5_pos",11.91,0,0,0,NA,"areamin_flag, ",NA
+"44","211202_Blk_BlankTube_2","unknown_C7H9NO5_pos",11.91,0,0,0,NA,"areamin_flag, ",NA
+"45","211202_Blk_BlankTube_3","unknown_C7H9NO5_pos",11.84,0,0,0,NA,"areamin_flag, ",NA
+"46","211202_Smp_OBi1_1","unknown_C7H9NO5_pos",12,50800,0,7925,-1.9,"",50800
+"47","211202_Smp_OBi1_2","unknown_C7H9NO5_pos",11.99,55672,0,7524,-0.8,"",55672
+"48","211202_Smp_OBi1_3","unknown_C7H9NO5_pos",11.98,35770,0,5919,-1.6,"areamin_flag, ",NA
+"49","211202_Smp_OBi1_4","unknown_C7H9NO5_pos",11.8,1820174,0,169277,-2.6,"",1820174
+"50","211202_Smp_OBi1_5","unknown_C7H9NO5_pos",11.85,1592173,0,151653,-2.7,"",1592173
+"51","211202_Smp_OBi1_6","unknown_C7H9NO5_pos",11.87,2005024,0,194442,-1.6,"",2005024
+"52","211202_Smp_OBi1_7","unknown_C7H9NO5_pos",11.84,2236520,5297,216269,-2.1,"",2236520
+"53","211202_Smp_OBi1_8","unknown_C7H9NO5_pos",11.8,1899302,0,183926,-2.3,"",1899302
+"54","211202_Smp_OBi1_9","unknown_C7H9NO5_pos",11.85,2618783,0,262943,-1.4,"",2618783
+"55","211202_Poo_TruePooBacteria_Full1","n-methyl glutamic acid",9.95,2291760896,22876354,194374784,0.1,"",2291760896
+"56","211202_Poo_TruePooBacteria_Full2","n-methyl glutamic acid",9.78,1887665792,22469600,165874688,0.5,"",1887665792
+"57","211202_Poo_TruePooBacteria_Full3","n-methyl glutamic acid",9.75,1730861312,23629348,157591280,1.5,"",1730861312
+"58","211202_Poo_TruePooBacteria_Half1","n-methyl glutamic acid",9.89,1353896320,18086820,115708056,0,"",1353896320
+"59","211202_Poo_TruePooBacteria_Half2","n-methyl glutamic acid",9.67,998125632,8910902,93783288,0.7,"",998125632
+"60","211202_Poo_TruePooBacteria_Half3","n-methyl glutamic acid",9.66,887356736,7554990,76898352,2.2,"",887356736
+"61","211202_Blk_BlankTube_1","n-methyl glutamic acid",9.68,0,0,0,NA,"areamin_flag, blank_flag",NA
+"62","211202_Blk_BlankTube_2","n-methyl glutamic acid",9.78,756449,0,59230,2.2,"blank_flag",NA
+"63","211202_Blk_BlankTube_3","n-methyl glutamic acid",9.99,1188142,0,155083,1.4,"blank_flag",NA
+"64","211202_Smp_OBi1_1","n-methyl glutamic acid",9.94,5439768,0,562906,1.1,"",5439768
+"65","211202_Smp_OBi1_2","n-methyl glutamic acid",9.91,4988485,0,590472,3.3,"",4988485
+"66","211202_Smp_OBi1_3","n-methyl glutamic acid",9.93,5036173,0,608884,1.4,"",5036173
+"67","211202_Smp_OBi1_4","n-methyl glutamic acid",9.98,1340750464,13838817,131346280,-0.4,"",1340750464
+"68","211202_Smp_OBi1_5","n-methyl glutamic acid",9.92,1596044160,19537298,153405232,0.2,"",1596044160
+"69","211202_Smp_OBi1_6","n-methyl glutamic acid",9.98,1757823744,19351438,178871184,1.2,"",1757823744
+"70","211202_Smp_OBi1_7","n-methyl glutamic acid",9.94,30422924,329883,3301230,1.7,"",30422924
+"71","211202_Smp_OBi1_8","n-methyl glutamic acid",9.89,29681590,0,3227979,1.4,"",29681590
+"72","211202_Smp_OBi1_9","n-methyl glutamic acid",9.89,40814564,123616,4387098,2.5,"",40814564
+"73","211202_Poo_TruePooBacteria_Full1","unknown_C7H11NO3_pos",7.9,972039,0,18597,-2.8,"blank_flag",NA
+"74","211202_Poo_TruePooBacteria_Full2","unknown_C7H11NO3_pos",7.98,608411,294926,15138,-2.4,"sn_flag, blank_flag",NA
+"75","211202_Poo_TruePooBacteria_Full3","unknown_C7H11NO3_pos",7.58,941837,0,18787,-1.6,"blank_flag",NA
+"76","211202_Poo_TruePooBacteria_Half1","unknown_C7H11NO3_pos",8,709915,0,13174,-2.9,"blank_flag",NA
+"77","211202_Poo_TruePooBacteria_Half2","unknown_C7H11NO3_pos",7.87,872959,0,11763,-2.6,"blank_flag",NA
+"78","211202_Poo_TruePooBacteria_Half3","unknown_C7H11NO3_pos",8.04,732189,0,11715,-1.6,"blank_flag",NA
+"79","211202_Blk_BlankTube_1","unknown_C7H11NO3_pos",8.56,398518,0,7827,-2.9,"blank_flag",NA
+"80","211202_Blk_BlankTube_2","unknown_C7H11NO3_pos",8.34,358018,0,8797,-2.4,"blank_flag",NA
+"81","211202_Blk_BlankTube_3","unknown_C7H11NO3_pos",7.35,371052,0,9881,-2.7,"blank_flag",NA
+"82","211202_Smp_OBi1_1","unknown_C7H11NO3_pos",8.19,893580,0,19986,-3.5,"blank_flag",NA
+"83","211202_Smp_OBi1_2","unknown_C7H11NO3_pos",7.96,1010891,0,17758,-1.8,"blank_flag",NA
+"84","211202_Smp_OBi1_3","unknown_C7H11NO3_pos",8.24,2238102,0,31524,-3,"",2238102
+"85","211202_Smp_OBi1_4","unknown_C7H11NO3_pos",8.47,799947,0,14618,-3.3,"blank_flag",NA
+"86","211202_Smp_OBi1_5","unknown_C7H11NO3_pos",7.5,656509,0,10974,-3.1,"blank_flag",NA
+"87","211202_Smp_OBi1_6","unknown_C7H11NO3_pos",8.29,1010466,0,16323,-2,"blank_flag",NA
+"88","211202_Smp_OBi1_7","unknown_C7H11NO3_pos",7.86,721774,0,14256,-2.8,"blank_flag",NA
+"89","211202_Smp_OBi1_8","unknown_C7H11NO3_pos",7.71,834418,0,14021,-2.7,"blank_flag",NA
+"90","211202_Smp_OBi1_9","unknown_C7H11NO3_pos",7.28,812725,0,16386,-1.8,"blank_flag",NA
+"91","211202_Poo_TruePooBacteria_Full1","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"92","211202_Poo_TruePooBacteria_Full2","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"93","211202_Poo_TruePooBacteria_Full3","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"94","211202_Poo_TruePooBacteria_Half1","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"95","211202_Poo_TruePooBacteria_Half2","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"96","211202_Poo_TruePooBacteria_Half3","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"97","211202_Blk_BlankTube_1","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"98","211202_Blk_BlankTube_2","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"99","211202_Blk_BlankTube_3","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"100","211202_Smp_OBi1_1","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"101","211202_Smp_OBi1_2","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"102","211202_Smp_OBi1_3","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"103","211202_Smp_OBi1_4","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"104","211202_Smp_OBi1_5","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"105","211202_Smp_OBi1_6","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"106","211202_Smp_OBi1_7","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"107","211202_Smp_OBi1_8","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"108","211202_Smp_OBi1_9","unknown_C6H11NO2_pos",NA,NA,NA,NA,NA,"",NA
+"109","211202_Poo_TruePooBacteria_Full1","unknown_C6H9NO4_pos_early",3.79,246353,0,10143,-2.3,"",246353
+"110","211202_Poo_TruePooBacteria_Full2","unknown_C6H9NO4_pos_early",3.48,136849,0,6656,-1.5,"",136849
+"111","211202_Poo_TruePooBacteria_Full3","unknown_C6H9NO4_pos_early",3.38,112738,0,5402,-0.3,"",112738
+"112","211202_Poo_TruePooBacteria_Half1","unknown_C6H9NO4_pos_early",3.45,92571,0,4970,-2.4,"",92571
+"113","211202_Poo_TruePooBacteria_Half2","unknown_C6H9NO4_pos_early",3.49,31265,0,4132,-1.8,"areamin_flag, ",NA
+"114","211202_Poo_TruePooBacteria_Half3","unknown_C6H9NO4_pos_early",3.26,13921,0,2919,0,"areamin_flag, ",NA
+"115","211202_Blk_BlankTube_1","unknown_C6H9NO4_pos_early",3.72,2304,0,1840,-0.6,"areamin_flag, blank_flag",NA
+"116","211202_Blk_BlankTube_2","unknown_C6H9NO4_pos_early",3.47,2266,0,1681,-0.9,"areamin_flag, blank_flag",NA
+"117","211202_Blk_BlankTube_3","unknown_C6H9NO4_pos_early",3.45,0,0,0,NA,"areamin_flag, blank_flag",NA
+"118","211202_Smp_OBi1_1","unknown_C6H9NO4_pos_early",3.82,74781,0,4287,1.7,"",74781
+"119","211202_Smp_OBi1_2","unknown_C6H9NO4_pos_early",3.75,61763,0,5467,0.3,"",61763
+"120","211202_Smp_OBi1_3","unknown_C6H9NO4_pos_early",3.63,94973,0,5304,2.7,"",94973
+"121","211202_Smp_OBi1_4","unknown_C6H9NO4_pos_early",3.57,668296,0,20304,-3.4,"",668296
+"122","211202_Smp_OBi1_5","unknown_C6H9NO4_pos_early",3.61,588487,0,19385,-3.3,"",588487
+"123","211202_Smp_OBi1_6","unknown_C6H9NO4_pos_early",3.56,1691646,0,48600,-2.2,"",1691646
+"124","211202_Smp_OBi1_7","unknown_C6H9NO4_pos_early",3.41,53285,0,3899,2.3,"",53285
+"125","211202_Smp_OBi1_8","unknown_C6H9NO4_pos_early",3.64,41121,0,3224,1.7,"",41121
+"126","211202_Smp_OBi1_9","unknown_C6H9NO4_pos_early",3.61,27651,0,4232,0.5,"areamin_flag, ",NA

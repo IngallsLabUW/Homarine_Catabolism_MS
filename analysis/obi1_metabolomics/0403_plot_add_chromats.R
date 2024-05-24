@@ -15,7 +15,7 @@ raw_dat_dir <- here("data", "raw", "metabolomics", "obi1", "particulate", "mzml"
 fig_dir <- here("figures", "exploratory", "metabolomics", "obi1", "chromats")
 
 ## Get data ------
-dat_long_filename <- here(data_dir, "combined_long_dat_scaled.csv")
+dat_long_filename <- here(data_dir, "combined_long_dat.csv")
 sample_key <- read_csv(here(meta_data_dir, "sample_key.csv"), show_col_types = FALSE)
 dat_long <- read_csv(dat_long_filename, show_col_types = FALSE)
 
@@ -30,7 +30,8 @@ mf_oi <- c( #THESE ARE ION FORMULAS, NOT MOLECULAR FORMULAS
     #"C6H10NO3",  #insource
     "C6H10NO4",
     "C6H8NO4",
-    "C6H8NO3"
+    "C6H8NO3",
+    "C6H14NO5"
     #"C7H9NO5Na"
 )
 rt_oi <- c(
@@ -42,7 +43,8 @@ rt_oi <- c(
     #9.6,
     11.9,
     3,
-    11
+    11,
+    10
     #10
 )
 z_oi <- c(
@@ -54,7 +56,8 @@ z_oi <- c(
     #1,
     1,
     -1,
-    -1
+    -1,
+    1
     #1
 )
 

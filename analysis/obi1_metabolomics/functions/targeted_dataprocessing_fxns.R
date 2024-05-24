@@ -34,11 +34,10 @@ QE_QC <- function(dat_filename,
   dat <- read_csv(dat_filename,
     show_col_types = FALSE
   )
-
-  ## Clean up column types-----
+    ## Clean up column types-----
   dat_og <- dat %>%
     clean_names() %>%
-    select(-protein_name, -protein) %>%
+    select(-any_of(c("protein_name", "protein"))) %>%
     mutate_at(
       c(
         "retention_time",
@@ -58,22 +57,24 @@ QE_QC <- function(dat_filename,
     mutate(areamin_flag = ifelse((area < area_min), "areamin_flag", NA))
 
   ## Get rts of standards----
-  dat_rt_stds <- dat_og %>%
-    filter(str_detect(replicate_name, std_flag)) %>%
-    select(precursor_ion_name, retention_time) %>%
-    group_by(precursor_ion_name) %>%
-    summarise(rt_std = mean((retention_time), na.rm = TRUE), .groups = "drop")
+  if (!is.na(std_flag)){
+      dat_rt_stds <- dat_og %>%
+        filter(str_detect(replicate_name, std_flag)) %>%
+        select(precursor_ion_name, retention_time) %>%
+        group_by(precursor_ion_name) %>%
+        summarise(rt_std = mean((retention_time), na.rm = TRUE), .groups = "drop")
 
-  ## Add rt flag----
-  dat_flag <- dat_flag %>%
-    left_join(dat_rt_stds, by = "precursor_ion_name") %>%
-    mutate(rt_flag = ifelse((abs(
-      retention_time - rt_std
-    ) > rt_flex),
-    "rt_flag", NA
-    ))
+      ## Add rt flag----
+      dat_flag <- dat_flag %>%
+        left_join(dat_rt_stds, by = "precursor_ion_name") %>%
+        mutate(rt_flag = ifelse((abs(
+          retention_time - rt_std
+        ) > rt_flex),
+        "rt_flag", NA
+        ))
+  }
 
-  ## Get area of blanks-----
+    ## Get area of blanks-----
   dat_area_blanks <- dat_og %>%
     filter(str_detect(replicate_name, blank_flag)) %>%
     select(precursor_ion_name, area) %>%
@@ -86,14 +87,25 @@ QE_QC <- function(dat_filename,
     mutate(blank_flag = ifelse(area / area_blank < blank_ratio_max, "blank_flag", NA))
 
   # Finally, combine all the flags and throw out any peak with a flag
-  dat_flag <- dat_flag %>%
-    mutate(flags = paste(sn_flag, ppm_flag, areamin_flag, rt_flag, blank_flag,
-      sep = ", "
-    )) %>%
-    mutate(flags = as.character(flags %>%
-      str_remove_all("NA, ") %>%
-      str_remove_all("NA"))) %>%
-    mutate(QC_area = ifelse(str_detect(flags, "flag"), NA, area))
+  if (!is.na(std_flag)){
+    dat_flag <- dat_flag %>%
+      mutate(flags = paste(sn_flag, ppm_flag, areamin_flag, rt_flag, blank_flag,
+        sep = ", "
+      )) %>%
+      mutate(flags = as.character(flags %>%
+        str_remove_all("NA, ") %>%
+        str_remove_all("NA"))) %>%
+      mutate(QC_area = ifelse(str_detect(flags, "flag"), NA, area))
+  } else {
+    dat_flag <- dat_flag %>%
+      mutate(flags = paste(sn_flag, ppm_flag, areamin_flag, blank_flag,
+        sep = ", "
+      )) %>%
+      mutate(flags = as.character(flags %>%
+        str_remove_all("NA, ") %>%
+        str_remove_all("NA"))) %>%
+      mutate(QC_area = ifelse(str_detect(flags, "flag"), NA, area))
+  }
 
   # Combine with cleaned up data ----
   dat_final <- dat_og %>%
@@ -104,23 +116,41 @@ QE_QC <- function(dat_filename,
     )
 
   # To write the file
-  comment_text <- paste0(
-    "Hello! Here are the QC parameters ",
-    "Minimum area for a real peak: ",
-    area_min,
-    ". ",
-    "RT flexibility: ",
-    rt_flex,
-    " minutes. Blank can be this fraction of a sample: ",
-    blank_ratio_max,
-    ". S/N ratio: ",
-    sn_min,
-    ". Parts per million flexibility: ",
-    ppm_flex,
-    ". Processed on: ",
-    Sys.time(),
-    ". "
-  )
+  if (!is.na(std_flag)){
+    comment_text <- paste0(
+      "Hello! Here are the QC parameters ",
+      "Minimum area for a real peak: ",
+      area_min,
+      ". ",
+      "RT flexibility: ",
+      rt_flex,
+      " minutes. Blank can be this fraction of a sample: ",
+      blank_ratio_max,
+      ". S/N ratio: ",
+      sn_min,
+      ". Parts per million flexibility: ",
+      ppm_flex,
+      ". Processed on: ",
+      Sys.time(),
+      ". "
+    )
+  } else {
+    comment_text <- paste0(
+      "Hello! Here are the QC parameters ",
+      "Minimum area for a real peak: ",
+      area_min,
+      ". ",
+      " minutes. Blank can be this fraction of a sample: ",
+      blank_ratio_max,
+      ". S/N ratio: ",
+      sn_min,
+      ". Parts per million flexibility: ",
+      ppm_flex,
+      ". Processed on: ",
+      Sys.time(),
+      ". "
+    )
+  }
   new_filename <- fileout
   con <- file(new_filename, open = "wt")
   writeLines(paste(comment_text), con)
@@ -138,18 +168,18 @@ BMIS <-
            cut_off1,
            cut_off2,
            smps_to_dump = c(),
-           is_to_dump = c()) {
+           is_to_dump = c(),
+           skip_lines = 1) {
     # Import data -----
     sample_key_all <- read_csv(sample_key, show_col_types = FALSE)
     is_names <- read_csv(is_names_file, show_col_types = FALSE)
-
     # Tidy up samp and pooled data -----
     dat_pos <-
-      read_csv(dat_pos_file, skip = 1, show_col_types = FALSE) %>%
+      read_csv(dat_pos_file, skip = skip_lines, show_col_types = FALSE) %>%
       mutate(fraction = "HILICPos")
     if (!is.na(dat_neg_file)) {
       dat_neg <-
-        read_csv(dat_neg_file, skip = 1, show_col_types = FALSE) %>%
+        read_csv(dat_neg_file, skip = skip_lines, show_col_types = FALSE) %>%
         mutate(fraction = "HILICNeg")
       dat <- bind_rows(dat_pos, dat_neg)
     } else {
@@ -163,7 +193,6 @@ BMIS <-
       mutate(area = as.numeric(area)) %>%
       filter(!(replicate_name %in% smps_to_dump)) %>%
       filter(!(precursor_ion_name %in% is_to_dump))
-
 
     # Tidy up internal standard data ----
     is_dat_full <- dat %>%

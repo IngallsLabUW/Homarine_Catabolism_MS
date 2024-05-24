@@ -12,6 +12,9 @@ print(here())
 # TARGETED DATA PROCESSING
 
 ## QC of targeted data
+Uses `QE_QC` function from here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R")
+Sources the raw Skyline files from here("data", "raw", "metabolomics", "obi1")
+Writes out QC outputs into here("data", "intermediate", "metabolomics", "obi1", "targeted")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 # QC on all HILIC pos, HILIC neg, particulate and dissolved
 source(here("analysis", "obi1_metabolomics", "0101_targeted_QC.R"))
@@ -19,8 +22,12 @@ remove(list = ls())
 ```
 
 ## BMIS targeted data
+Uses `BMIS` function from here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R")
 Perform BMIS normalization on HILIC particulate and dissolved samples
-Also performs post-BMIS QC of targetted dissolved data
+Also performs post-BMIS QC of targeted dissolved data
+Sources QCd data from here("data", "intermediate", "metabolomics", "obi1", "targeted")
+Writes BMIS checks into here("data", "intermediate", "metabolomics", "obi1", "targeted", "BMIS_checks")
+Writes out BMIS outputs into here("data", "intermediate", "metabolomics", "obi1", "targeted")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0102_targeted_BMIS.R"))
 remove(list = ls())
@@ -29,6 +36,8 @@ remove(list = ls())
 ```
 
 ## Combine and tidy targeted data
+Combines the BMISd targeted data from both HILIC particulate and dissolved samples and positive and negative
+Writes out the combined and tidied data into here("data", "intermediate", "metabolomics", "obi1", "targeted")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0104_Combine_Tidy.R"))
 remove(list = ls())
@@ -36,6 +45,9 @@ remove(list = ls())
 
 # UNTARGETED DATA PROCESSING
 ## Dereplicate adducts from the MSdial output
+Uses `dereplicate_MFs` function from here("analysis", "obi1_metabolomics", "functions", "untargeted_dataprocessing_fxns.R")
+Sources the MSdial output from here("data", "raw", "metabolomics", "obi1", "untargeted")
+Writes out the dereplicated data into here("data", "intermediate", "metabolomics", "obi1", "untargeted")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 # QC on all HILIC pos, HILIC neg, particulate and dissolved
 source(here("analysis", "obi1_metabolomics", "0201_MF_dereplication.R"))
@@ -44,26 +56,47 @@ remove(list = ls())
 
 ## BMIS untargeted data
 Perform BMIS normalization on HILIC particulate and dissolved samples
+Uses `BMIS_MSdialoutput` function from here("analysis", "obi1_metabolomics", "functions", "untargeted_dataprocessing_fxns.R")
+Sources the dereplicated data from here("data", "intermediate", "metabolomics", "obi1", "untargeted")
+Writes out the BMISd data into here("data", "intermediate", "metabolomics", "obi1", "untargeted")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0202_untargeted_BMIS.R"))
 remove(list = ls())
 ```
 
 ## Combine and tidy untargeted data
+Combines the BMISd untargeted data from both HILIC particulate and dissolved samples and positive and negative
+Writes out the combined and tidied data into here("data", "intermediate", "metabolomics", "obi1", "untargeted")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0203_Combine_Tidy.R"))
 remove(list = ls())
 ```
 
-# COMBINE TARGETED WITH UNTARGETED
+# COMBINED ANALYSES
 ## Dereplicate adducts from the MSdial output
+Sources the combined and tidied targeted and untargeted data from here("data", "intermediate", "metabolomics", "obi1", "targeted") and here("data", "intermediate", "metabolomics", "obi1", "untargeted")
+Also dereplicates the combined data so there are no targeted compounds in the untargeted data
+Writes out the dereplicated data into here("data", "intermediate", "metabolomics", "obi1")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0301_Combine_Tidy_TU.R"))
 remove(list = ls())
 ```
 
+## Do enrichment analysis
+Sources the combined and dereplicated data from here("data", "intermediate", "metabolomics", "obi1")
+Perform enrichment analysis on the data
+Writes out the enrichment analysis into here("data", "intermediate", "metabolomics", "obi1")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0302_EnrichmentCalcs.R"))
+remove(list = ls())
+```
+
 # PLOTTING
-## Fold change particulate plots
+## Enrichment / fold change plots
+Sources data from here("data", "intermediate", "metabolomics", "obi1")
+Plots enrichment and fold change plots
+Writes out the plots into here("figures", "exploratory", "metabolomics", "obi1")
+Saves tables of summary statistics into here("data", "intermediate", "metabolomics", "obi1")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
 source(here("analysis", "obi1_metabolomics", "0401_Plot_FC_particulate.R"))
 remove(list = ls())
