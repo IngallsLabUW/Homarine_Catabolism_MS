@@ -8,9 +8,11 @@ library(patchwork)
 library(scico)
 
 # SET FILE LOCATIONS  -----
+output_dir <- here("figures", "exploratory", "metabolomics")
 rpom_data_dir <- here("data", "intermediate", "metabolomics", "rpom")
 obi1_dat_dir <- here("data", "intermediate", "metabolomics", "obi1")
 g4_dat_dir <- here("data", "intermediate", "metabolomics", "g4")
+g5_dat_dir <- here("data", "intermediate", "metabolomics", "g5")
 
 # Read in files  -----
 rpom_dat <- read_csv(
@@ -40,10 +42,20 @@ g4_dat <- read_csv(
     mutate(
         data_origin = "g4"
 )
+g5_dat <- read_csv(
+    here(
+        g5_dat_dir,
+        "enrichment_summary.csv"
+    ), show_col_types = FALSE
+) %>%
+    mutate(
+        data_origin = "g5"
+)
 
 # Combine data -----
 dat_cmb <- bind_rows(rpom_dat, obi1_dat) %>%
-    bind_rows(g4_dat)
+    bind_rows(g4_dat) %>%
+    bind_rows(g5_dat)
 
 # Pull out mass features of interest ------
 mass_feature_oi <- c(
@@ -51,22 +63,31 @@ mass_feature_oi <- c(
     "N-Methyl-L-glutamic acid",
     "n-methyl glutamine",
     "n-methyl glutamine_D3",
+    "n-methyl glutamine_13C_15N",
     "n-methyl glutamic acid",
     "n-methyl glutamic acid_D3",
+    "n-methyl glutamic acid_13C_15N",
     "unknown_C6H9NO3_1_neg",
     "unknown_C6H9NO3_1_neg_D3",
+    "unknown_C6H9NO3_1_neg_13C_15N",
     "unknown_C6H9NO3_2_neg",
     "unknown_C6H9NO3_2_neg_D3",
+    "unknown_C6H9NO3_2_neg_13C_15N",
     "unknown_C6H9NO3_3_neg",
     "unknown_C6H9NO3_3_neg_D3",
+    "unknown_C6H9NO3_3_neg_13C_15N",
     "unknown_C6H9NO4_neg",
     "unknown_C6H9NO4_neg_D3",
+    "unknown_C6H9NO4_neg_13C_15N",
     "unknown_C6H9NO4_pos",
     "unknown_C6H9NO4_pos_D3",
+    "unknown_C6H9NO4_pos_13C_15N",
     "unknown_C6H9NO4_pos_early",
     "unknown_C6H9NO4_pos_early_D3",
+    "unknown_C6H9NO4_pos_early_13C_15N",
     "unknown_C7H9NO5_pos",
-    "unknown_C7H9NO5_pos_D3"
+    "unknown_C7H9NO5_pos_D3",
+    "unknown_C7H9NO5_pos_13C_15N"
     )
 
 # Pull out particulate data and the core metabolites
@@ -123,7 +144,7 @@ dat_long_plot <- dat_long %>%
 my_fill_scale <- scale_fill_scico(palette = 'vik',
                                 midpoint = 0,
                                 limits = c(-3.5, 10))
-g2 <- ggplot() +
+g_orgs <- ggplot() +
     geom_tile(
         data = dat_long_plot  %>%
             filter(data_origin %in% c("rpom", "obi1")),
@@ -138,9 +159,8 @@ g2 <- ggplot() +
     facet_wrap(facets = vars(data_origin)) +
     my_fill_scale +
     theme_bw()
-g2
 
-g3 <- ggplot() +
+g4 <- ggplot() +
     geom_tile(
         data = dat_long_plot  %>%
             filter(data_origin %in% c("g4")) %>%
@@ -162,11 +182,36 @@ g3 <- ggplot() +
     facet_wrap(facets = vars(experiment_id)) +
     my_fill_scale +
     theme_bw()
-g4 <- g2 + g3 +
+
+g5 <- ggplot() +
+    geom_tile(
+        data = dat_long_plot  %>%
+            filter(data_origin %in% c("g5")) %>%
+            filter(treatment == "h") %>%
+            filter(!(mass_feature %in% c(
+                "unknown_C6H9NO3_3_neg",
+                "unknown_C6H9NO3_1_neg",
+                "n-methyl glutamine",
+                "n-methyl glutamic acid"
+            ))),
+        aes(
+            fill = log2(enrichment),
+            y = mass_feature,
+            x = factor(timepoint)
+        ),
+        color = "black",
+        width = 0.9,
+        height = 0.9) +
+    facet_wrap(facets = vars(experiment_id)) +
+    my_fill_scale +
+    theme_bw()
+
+g_cmb <- g_orgs + g4 + g5 +
     plot_layout(
         guides = "collect",
         axis_title = "collect",
-        ncol = 2,
-        widths = c(1, 1)
+        ncol = 3,
+        widths = c(1, 1, 1.5)
     )
-g4
+ggsave(here(output_dir, "intermediates_tiles.pdf"), g_cmb, width = 16, height = 4)
+
