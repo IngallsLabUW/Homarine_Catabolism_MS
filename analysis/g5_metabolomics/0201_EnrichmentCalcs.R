@@ -1,4 +1,4 @@
-# PURPOSE: calculate enrichment factors for the G4 samples
+# PURPOSE: calculate enrichment factors for the G5 samples
 
 # PACKAGES & SPECIAL FUNCTIONS ----
 library(tidyverse)
@@ -10,7 +10,7 @@ library(here)
 
 # SET FILE LOCATIONS  -----
 meta_data_dir <- here("data", "intermediate", "metabolomics")
-output_loc <- here("data", "intermediate", "metabolomics", "g4")
+output_loc <- here("data", "intermediate", "metabolomics", "g5")
 
 # Read in files  -----
 dat_long_filename <- here(
@@ -31,8 +31,11 @@ dat_cmb <- dat_cmb %>%
     mutate(adjusted_area = ifelse(is.na(adjusted_area), 0.02*min(adjusted_area, na.rm = TRUE), adjusted_area)) %>%
     ungroup() %>%
     mutate(replicate_name_short = str_remove(replicate_name, "^\\d\\d\\d\\d\\d\\d_")) %>%
-    # drop core_metab of Glutathione disulfide
-    filter(mass_feature != "Glutathione disulfide") %>%
+    # drop problematic mass features
+    filter(!(mass_feature %in% c(
+        "L-Cysteic acid",
+        "UDP-N-acetylglucosamine", "L-Homoserine")
+        )) %>%
     # drop all _D2 mass features
     filter(!grepl("_D2", mass_feature))
 
@@ -67,9 +70,20 @@ for (i in 1:length(core_metabs)) {
 dat_enrich <- bind_rows(dat_enrich_list) %>%
     filter(!is.na(core_metab))
 
+# Pull out the Control samples
+dat_enrich_control <- dat_enrich %>%
+    filter(treatment == "Control") %>%
+    select(-timepoint) %>%
+    full_join(dat_enrich %>% select(timepoint, experiment_id) %>% distinct() %>%
+                  filter(!is.na(timepoint)), by = "experiment_id",
+              relationship = "many-to-many")
+dat_enrich_control_fix <- dat_enrich %>%
+    filter(treatment != "Control") %>%
+    bind_rows(dat_enrich_control)
+
+
 ## Calculate per-sample ttest and mann-whitney test for each compound x core_metab combo ------
-dat_enrich_h_tests <- dat_enrich %>%
-    filter(timepoint > 0 ) %>%
+dat_enrich_h_tests <- dat_enrich_control_fix %>%
     select(mass_feature, core_metab, scaled_area, treatment, experiment_id, timepoint, sample_fraction) %>%
     filter(treatment %in% c("Control", "Homarine")) %>%
     group_by(mass_feature, core_metab, sample_fraction, experiment_id, timepoint) %>%
@@ -77,14 +91,14 @@ dat_enrich_h_tests <- dat_enrich %>%
               p_value_mannwhitney_h = wilcox.test(scaled_area ~ treatment)$p.value)
 
 ## Calculate fold changes for each compound x core_metab x timepoint x experiment combo  ------
-dat_enrich3 <- dat_enrich %>%
+dat_enrich3 <- dat_enrich_control_fix %>%
     filter(!is.na(treatment)) %>%
     group_by(mass_feature, treatment, experiment_id, timepoint, sample_fraction, core_metab) %>%
     summarise(mean_scaled_area = mean(scaled_area, rm.na = T),
               mean_adjusted_area = mean(adjusted_area, rm.na = T)) %>%
     ungroup() %>%
     group_by(mass_feature, core_metab, sample_fraction, experiment_id, timepoint) %>%
-    reframe(enrich_h_fc = mean_scaled_area[treatment == "Homarine"] / mean_scaled_area[treatment == "Control"])%>%
+    reframe(enrich_h_fc = mean_scaled_area[treatment == "Homarine"] / mean_scaled_area[treatment == "Control"]) %>%
    # ungroup() %>%
     left_join(dat_enrich_h_tests, by = c("mass_feature", "core_metab", "sample_fraction", "experiment_id", "timepoint"))
 
