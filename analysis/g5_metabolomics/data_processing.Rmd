@@ -1,0 +1,51 @@
+---
+title: "Gradients 5 Metabolomics Data analysis (Homarine incubations only)"
+author: "Katherine Heal"
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+library(here)
+print(here())
+```
+
+# TARGETED DATA PROCESSING
+## QC of targeted data
+Uses `QE_QC` function from here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R")
+Sources the raw Skyline files from here("data", "raw", "metabolomics", "g5")
+Writes out QC outputs into here("data", "intermediate", "metabolomics", "g5", "targeted")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+# QC on all HILIC pos, HILIC neg, particulate and dissolved
+source(here("analysis", "g5_metabolomics", "0101_targeted_QC.R"))
+remove(list = ls())
+```
+
+
+## BMIS untargeted data
+Perform BMIS normalization on HILIC particulate samples.
+Note that very few internal standards were used, so this defaulted to using raw area for all mass features.  Leaving this in for completeness and to match format of other scripts.
+Uses `BMIS` function from here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R")
+Sources the data from here("data", "intermediate", "metabolomics", "g5", "targeted")
+Writes out the BMISd data into here("data", "intermediate", "metabolomics", "g5", "targeted")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "g5_metabolomics", "0102_targeted_BMIS.R"))
+remove(list = ls())
+```
+
+
+## Combine and tidy targeted data
+Combines the BMISd targeted data from both HILIC particulate positive and negative
+Writes out the combined and tidied data into here("data", "intermediate", "metabolomics", "g4", "targeted")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "g4_metabolomics", "0103_Combine_Tidy.R"))
+remove(list = ls())
+```
+
+
+## Perform Enrichment calculations
+Calculates enrichment factors
+Writes out the calculated enrichment factors here("data", "intermediate", "metabolomics", "g4")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "g4_metabolomics", "0201_EnrichmentCalcs.R"))
+remove(list = ls())
+```

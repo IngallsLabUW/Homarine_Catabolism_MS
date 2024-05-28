@@ -1,0 +1,1034 @@
+Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-05-28 10:41:23.314761. 
+"","molecule_list_name","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","molecule_list","flags","QC_area"
+"1","Neg_Standards","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"2","Neg_Standards","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"3","Neg_Standards","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"4","Neg_Standards","230717_Std_4uMStdsMix1InH2O_4","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"5","Neg_Standards","230717_Std_4uMStdsMix1InH2O_5","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"6","Neg_Standards","230717_Std_4uMStdsMix1InH2O_6","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"7","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"8","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"9","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"10","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_4","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"11","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_5","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"12","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_6","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"13","Neg_Standards","230717_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"14","Neg_Standards","230717_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"15","Neg_Standards","230717_Std_4uMStdsMix2InH2O_3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"16","Neg_Standards","230717_Std_4uMStdsMix2InH2O_4","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"17","Neg_Standards","230717_Std_4uMStdsMix2InH2O_5","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"18","Neg_Standards","230717_Std_4uMStdsMix2InH2O_6","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"19","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"20","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"21","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"22","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_4","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"23","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_5","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"24","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_6","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"25","Neg_Standards","230717_Std_H2OinMatrix1_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"26","Neg_Standards","230717_Std_H2OinMatrix1_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"27","Neg_Standards","230717_Std_H2OinMatrix1_3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"28","Neg_Standards","230717_Std_H2OinMatrix2_4","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"29","Neg_Standards","230717_Std_H2OinMatrix2_5","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"30","Neg_Standards","230717_Std_H2OinMatrix2_6","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"31","Neg_Standards","230717_Poo_G5-HomFate1_Full1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"32","Neg_Standards","230717_Poo_G5-HomFate1_Full2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"33","Neg_Standards","230717_Poo_G5-HomFate1_Full3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"34","Neg_Standards","230717_Poo_G5-HomFate1_Full4","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"35","Neg_Standards","230717_Poo_G5-HomFate1_Full5","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"36","Neg_Standards","230717_Poo_G5-HomFate1_Full6","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"37","Neg_Standards","230717_Poo_G5-HomFate1_Full7","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"38","Neg_Standards","230717_Poo_G5-HomFate2_Full1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"39","Neg_Standards","230717_Poo_G5-HomFate2_Full2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"40","Neg_Standards","230717_Poo_G5-HomFate2_Full3","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"41","Neg_Standards","230717_Poo_G5-HomFate2_Full4","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"42","Neg_Standards","230717_Poo_G5-HomFate2_Full5","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"43","Neg_Standards","230717_Poo_G5-HomFate2_Full6","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"44","Neg_Standards","230717_Poo_G5-HomFate2_Full7","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"45","Neg_Standards","230717_Smp_G5_Hom1_C_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"46","Neg_Standards","230717_Smp_G5_Hom1_C_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"47","Neg_Standards","230717_Smp_G5_Hom1_C_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"48","Neg_Standards","230717_Smp_G5_Hom1_T0_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"49","Neg_Standards","230717_Smp_G5_Hom1_T0_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"50","Neg_Standards","230717_Smp_G5_Hom1_T0_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"51","Neg_Standards","230717_Smp_G5_Hom1_T6_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"52","Neg_Standards","230717_Smp_G5_Hom1_T6_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"53","Neg_Standards","230717_Smp_G5_Hom1_T6_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"54","Neg_Standards","230717_Smp_G5_Hom1_T12_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"55","Neg_Standards","230717_Smp_G5_Hom1_T12_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"56","Neg_Standards","230717_Smp_G5_Hom1_T12_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"57","Neg_Standards","230717_Smp_G5_Hom1_T24_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"58","Neg_Standards","230717_Smp_G5_Hom1_T24_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"59","Neg_Standards","230717_Smp_G5_Hom1_T24_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"60","Neg_Standards","230717_Smp_G5_Hom1_T48_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"61","Neg_Standards","230717_Smp_G5_Hom1_T48_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"62","Neg_Standards","230717_Smp_G5_Hom1_T48_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"63","Neg_Standards","230717_Smp_G5_Hom1_T96_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"64","Neg_Standards","230717_Smp_G5_Hom1_T96_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"65","Neg_Standards","230717_Smp_G5_Hom1_T96_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"66","Neg_Standards","230717_Smp_G5_Hom2_C_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"67","Neg_Standards","230717_Smp_G5_Hom2_C_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"68","Neg_Standards","230717_Smp_G5_Hom2_C_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"69","Neg_Standards","230717_Smp_G5_Hom2_T0_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"70","Neg_Standards","230717_Smp_G5_Hom2_T0_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"71","Neg_Standards","230717_Smp_G5_Hom2_T0_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"72","Neg_Standards","230717_Smp_G5_Hom2_T6_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"73","Neg_Standards","230717_Smp_G5_Hom2_T6_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"74","Neg_Standards","230717_Smp_G5_Hom2_T6_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"75","Neg_Standards","230717_Smp_G5_Hom2_T12_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"76","Neg_Standards","230717_Smp_G5_Hom2_T12_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"77","Neg_Standards","230717_Smp_G5_Hom2_T12_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"78","Neg_Standards","230717_Smp_G5_Hom2_T24_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"79","Neg_Standards","230717_Smp_G5_Hom2_T24_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"80","Neg_Standards","230717_Smp_G5_Hom2_T24_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"81","Neg_Standards","230717_Smp_G5_Hom2_T48_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"82","Neg_Standards","230717_Smp_G5_Hom2_T48_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"83","Neg_Standards","230717_Smp_G5_Hom2_T48_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"84","Neg_Standards","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"85","Neg_Standards","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"86","Neg_Standards","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"87","Neg_Standards","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"88","Neg_Standards","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"89","Neg_Standards","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"90","Neg_Standards","230717_Std_4uMStdsMix1InH2O_4","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"91","Neg_Standards","230717_Std_4uMStdsMix1InH2O_5","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"92","Neg_Standards","230717_Std_4uMStdsMix1InH2O_6","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"93","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_1","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"94","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_2","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"95","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_3","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"96","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_4","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"97","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_5","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"98","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_6","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"99","Neg_Standards","230717_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"100","Neg_Standards","230717_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"101","Neg_Standards","230717_Std_4uMStdsMix2InH2O_3","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"102","Neg_Standards","230717_Std_4uMStdsMix2InH2O_4","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"103","Neg_Standards","230717_Std_4uMStdsMix2InH2O_5","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"104","Neg_Standards","230717_Std_4uMStdsMix2InH2O_6","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"105","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_1","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"106","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_2","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"107","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_3","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"108","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_4","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"109","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_5","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"110","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_6","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"111","Neg_Standards","230717_Std_H2OinMatrix1_1","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"112","Neg_Standards","230717_Std_H2OinMatrix1_2","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"113","Neg_Standards","230717_Std_H2OinMatrix1_3","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"114","Neg_Standards","230717_Std_H2OinMatrix2_4","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"115","Neg_Standards","230717_Std_H2OinMatrix2_5","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"116","Neg_Standards","230717_Std_H2OinMatrix2_6","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"117","Neg_Standards","230717_Poo_G5-HomFate1_Full1","unknown_C6H9NO3_1_neg",11.19,16085,0,8239,-1,"Neg_Standards","areamin_flag, ",NA
+"118","Neg_Standards","230717_Poo_G5-HomFate1_Full2","unknown_C6H9NO3_1_neg",11.09,14857,0,7197,-0.8,"Neg_Standards","areamin_flag, ",NA
+"119","Neg_Standards","230717_Poo_G5-HomFate1_Full3","unknown_C6H9NO3_1_neg",11.19,6554,0,4804,-0.8,"Neg_Standards","areamin_flag, ",NA
+"120","Neg_Standards","230717_Poo_G5-HomFate1_Full4","unknown_C6H9NO3_1_neg",11.01,6711,0,4816,-1.2,"Neg_Standards","areamin_flag, ",NA
+"121","Neg_Standards","230717_Poo_G5-HomFate1_Full5","unknown_C6H9NO3_1_neg",11.25,12475,0,11603,-0.3,"Neg_Standards","areamin_flag, ",NA
+"122","Neg_Standards","230717_Poo_G5-HomFate1_Full6","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"123","Neg_Standards","230717_Poo_G5-HomFate1_Full7","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"124","Neg_Standards","230717_Poo_G5-HomFate2_Full1","unknown_C6H9NO3_1_neg",11.15,30072,0,13079,-0.4,"Neg_Standards","areamin_flag, ",NA
+"125","Neg_Standards","230717_Poo_G5-HomFate2_Full2","unknown_C6H9NO3_1_neg",11.07,53737,0,17878,-2.3,"Neg_Standards","",53737
+"126","Neg_Standards","230717_Poo_G5-HomFate2_Full3","unknown_C6H9NO3_1_neg",11.1,22120,0,14939,-0.1,"Neg_Standards","areamin_flag, ",NA
+"127","Neg_Standards","230717_Poo_G5-HomFate2_Full4","unknown_C6H9NO3_1_neg",11.1,13898,0,14672,-0.1,"Neg_Standards","areamin_flag, ",NA
+"128","Neg_Standards","230717_Poo_G5-HomFate2_Full5","unknown_C6H9NO3_1_neg",11.06,27304,0,14888,-0.1,"Neg_Standards","areamin_flag, ",NA
+"129","Neg_Standards","230717_Poo_G5-HomFate2_Full6","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"130","Neg_Standards","230717_Poo_G5-HomFate2_Full7","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"131","Neg_Standards","230717_Smp_G5_Hom1_C_A","unknown_C6H9NO3_1_neg",11.19,39006,0,9884,-0.6,"Neg_Standards","areamin_flag, ",NA
+"132","Neg_Standards","230717_Smp_G5_Hom1_C_B","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"133","Neg_Standards","230717_Smp_G5_Hom1_C_C","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"134","Neg_Standards","230717_Smp_G5_Hom1_T0_A","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"135","Neg_Standards","230717_Smp_G5_Hom1_T0_B","unknown_C6H9NO3_1_neg",11.25,46357,0,11965,-1.5,"Neg_Standards","",46357
+"136","Neg_Standards","230717_Smp_G5_Hom1_T0_C","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"137","Neg_Standards","230717_Smp_G5_Hom1_T6_A","unknown_C6H9NO3_1_neg",11.17,8916,0,8257,0.5,"Neg_Standards","areamin_flag, ",NA
+"138","Neg_Standards","230717_Smp_G5_Hom1_T6_B","unknown_C6H9NO3_1_neg",11.19,16872,0,8198,-2.5,"Neg_Standards","areamin_flag, ",NA
+"139","Neg_Standards","230717_Smp_G5_Hom1_T6_C","unknown_C6H9NO3_1_neg",11,14007,0,14675,0,"Neg_Standards","areamin_flag, ",NA
+"140","Neg_Standards","230717_Smp_G5_Hom1_T12_A","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"141","Neg_Standards","230717_Smp_G5_Hom1_T12_B","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"142","Neg_Standards","230717_Smp_G5_Hom1_T12_C","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"143","Neg_Standards","230717_Smp_G5_Hom1_T24_A","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"144","Neg_Standards","230717_Smp_G5_Hom1_T24_B","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"145","Neg_Standards","230717_Smp_G5_Hom1_T24_C","unknown_C6H9NO3_1_neg",11.2,16760,0,8488,-1.9,"Neg_Standards","areamin_flag, ",NA
+"146","Neg_Standards","230717_Smp_G5_Hom1_T48_A","unknown_C6H9NO3_1_neg",11.22,6412,0,4174,-1.4,"Neg_Standards","areamin_flag, ",NA
+"147","Neg_Standards","230717_Smp_G5_Hom1_T48_B","unknown_C6H9NO3_1_neg",11.16,16421,0,7972,-0.6,"Neg_Standards","areamin_flag, ",NA
+"148","Neg_Standards","230717_Smp_G5_Hom1_T48_C","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"149","Neg_Standards","230717_Smp_G5_Hom1_T96_A","unknown_C6H9NO3_1_neg",11.16,25432,0,15045,-2.2,"Neg_Standards","areamin_flag, ",NA
+"150","Neg_Standards","230717_Smp_G5_Hom1_T96_B","unknown_C6H9NO3_1_neg",11.26,27483,0,7607,-0.8,"Neg_Standards","areamin_flag, ",NA
+"151","Neg_Standards","230717_Smp_G5_Hom1_T96_C","unknown_C6H9NO3_1_neg",11.12,14803,0,11125,-0.3,"Neg_Standards","areamin_flag, ",NA
+"152","Neg_Standards","230717_Smp_G5_Hom2_C_A","unknown_C6H9NO3_1_neg",11.09,14649,0,9903,-1.8,"Neg_Standards","areamin_flag, ",NA
+"153","Neg_Standards","230717_Smp_G5_Hom2_C_B","unknown_C6H9NO3_1_neg",11.07,45024,0,14638,-1.9,"Neg_Standards","",45024
+"154","Neg_Standards","230717_Smp_G5_Hom2_C_C","unknown_C6H9NO3_1_neg",11.07,51408,0,21989,-1.6,"Neg_Standards","",51408
+"155","Neg_Standards","230717_Smp_G5_Hom2_T0_A","unknown_C6H9NO3_1_neg",11.05,10435,0,7163,-1.3,"Neg_Standards","areamin_flag, ",NA
+"156","Neg_Standards","230717_Smp_G5_Hom2_T0_B","unknown_C6H9NO3_1_neg",11.08,13777,0,13006,-0.5,"Neg_Standards","areamin_flag, ",NA
+"157","Neg_Standards","230717_Smp_G5_Hom2_T0_C","unknown_C6H9NO3_1_neg",11.23,34026,0,11792,-2.5,"Neg_Standards","areamin_flag, ",NA
+"158","Neg_Standards","230717_Smp_G5_Hom2_T6_A","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"159","Neg_Standards","230717_Smp_G5_Hom2_T6_B","unknown_C6H9NO3_1_neg",10.96,44314,0,12755,-0.6,"Neg_Standards","",44314
+"160","Neg_Standards","230717_Smp_G5_Hom2_T6_C","unknown_C6H9NO3_1_neg",11.04,10061,0,8716,-1.4,"Neg_Standards","areamin_flag, ",NA
+"161","Neg_Standards","230717_Smp_G5_Hom2_T12_A","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"162","Neg_Standards","230717_Smp_G5_Hom2_T12_B","unknown_C6H9NO3_1_neg",11.07,21429,0,10740,-0.3,"Neg_Standards","areamin_flag, ",NA
+"163","Neg_Standards","230717_Smp_G5_Hom2_T12_C","unknown_C6H9NO3_1_neg",11.14,18740,0,9779,-2.4,"Neg_Standards","areamin_flag, ",NA
+"164","Neg_Standards","230717_Smp_G5_Hom2_T24_A","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"165","Neg_Standards","230717_Smp_G5_Hom2_T24_B","unknown_C6H9NO3_1_neg",11.02,37671,0,10123,-1.3,"Neg_Standards","areamin_flag, ",NA
+"166","Neg_Standards","230717_Smp_G5_Hom2_T24_C","unknown_C6H9NO3_1_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"167","Neg_Standards","230717_Smp_G5_Hom2_T48_A","unknown_C6H9NO3_1_neg",11.13,68446,0,13949,-1.4,"Neg_Standards","",68446
+"168","Neg_Standards","230717_Smp_G5_Hom2_T48_B","unknown_C6H9NO3_1_neg",11,12478,0,6967,-0.4,"Neg_Standards","areamin_flag, ",NA
+"169","Neg_Standards","230717_Smp_G5_Hom2_T48_C","unknown_C6H9NO3_1_neg",11.07,116580,0,17137,-2.3,"Neg_Standards","",116580
+"170","Neg_Standards","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO3_1_neg",11,78961,0,22806,-1.7,"Neg_Standards","",78961
+"171","Neg_Standards","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO3_1_neg",11.01,104420,0,28896,-1.7,"Neg_Standards","",104420
+"172","Neg_Standards","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO3_1_neg",11.1,51111,0,13780,-1.4,"Neg_Standards","",51111
+"173","Neg_Standards","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"174","Neg_Standards","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"175","Neg_Standards","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"176","Neg_Standards","230717_Std_4uMStdsMix1InH2O_4","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"177","Neg_Standards","230717_Std_4uMStdsMix1InH2O_5","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"178","Neg_Standards","230717_Std_4uMStdsMix1InH2O_6","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"179","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"180","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"181","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"182","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_4","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"183","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_5","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"184","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_6","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"185","Neg_Standards","230717_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"186","Neg_Standards","230717_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"187","Neg_Standards","230717_Std_4uMStdsMix2InH2O_3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"188","Neg_Standards","230717_Std_4uMStdsMix2InH2O_4","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"189","Neg_Standards","230717_Std_4uMStdsMix2InH2O_5","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"190","Neg_Standards","230717_Std_4uMStdsMix2InH2O_6","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"191","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"192","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"193","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"194","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_4","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"195","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_5","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"196","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_6","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"197","Neg_Standards","230717_Std_H2OinMatrix1_1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"198","Neg_Standards","230717_Std_H2OinMatrix1_2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"199","Neg_Standards","230717_Std_H2OinMatrix1_3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"200","Neg_Standards","230717_Std_H2OinMatrix2_4","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"201","Neg_Standards","230717_Std_H2OinMatrix2_5","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"202","Neg_Standards","230717_Std_H2OinMatrix2_6","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"203","Neg_Standards","230717_Poo_G5-HomFate1_Full1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"204","Neg_Standards","230717_Poo_G5-HomFate1_Full2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"205","Neg_Standards","230717_Poo_G5-HomFate1_Full3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"206","Neg_Standards","230717_Poo_G5-HomFate1_Full4","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"207","Neg_Standards","230717_Poo_G5-HomFate1_Full5","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"208","Neg_Standards","230717_Poo_G5-HomFate1_Full6","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"209","Neg_Standards","230717_Poo_G5-HomFate1_Full7","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"210","Neg_Standards","230717_Poo_G5-HomFate2_Full1","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"211","Neg_Standards","230717_Poo_G5-HomFate2_Full2","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"212","Neg_Standards","230717_Poo_G5-HomFate2_Full3","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"213","Neg_Standards","230717_Poo_G5-HomFate2_Full4","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"214","Neg_Standards","230717_Poo_G5-HomFate2_Full5","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"215","Neg_Standards","230717_Poo_G5-HomFate2_Full6","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"216","Neg_Standards","230717_Poo_G5-HomFate2_Full7","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"217","Neg_Standards","230717_Smp_G5_Hom1_C_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"218","Neg_Standards","230717_Smp_G5_Hom1_C_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"219","Neg_Standards","230717_Smp_G5_Hom1_C_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"220","Neg_Standards","230717_Smp_G5_Hom1_T0_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"221","Neg_Standards","230717_Smp_G5_Hom1_T0_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"222","Neg_Standards","230717_Smp_G5_Hom1_T0_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"223","Neg_Standards","230717_Smp_G5_Hom1_T6_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"224","Neg_Standards","230717_Smp_G5_Hom1_T6_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"225","Neg_Standards","230717_Smp_G5_Hom1_T6_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"226","Neg_Standards","230717_Smp_G5_Hom1_T12_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"227","Neg_Standards","230717_Smp_G5_Hom1_T12_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"228","Neg_Standards","230717_Smp_G5_Hom1_T12_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"229","Neg_Standards","230717_Smp_G5_Hom1_T24_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"230","Neg_Standards","230717_Smp_G5_Hom1_T24_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"231","Neg_Standards","230717_Smp_G5_Hom1_T24_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"232","Neg_Standards","230717_Smp_G5_Hom1_T48_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"233","Neg_Standards","230717_Smp_G5_Hom1_T48_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"234","Neg_Standards","230717_Smp_G5_Hom1_T48_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"235","Neg_Standards","230717_Smp_G5_Hom1_T96_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"236","Neg_Standards","230717_Smp_G5_Hom1_T96_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"237","Neg_Standards","230717_Smp_G5_Hom1_T96_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"238","Neg_Standards","230717_Smp_G5_Hom2_C_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"239","Neg_Standards","230717_Smp_G5_Hom2_C_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"240","Neg_Standards","230717_Smp_G5_Hom2_C_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"241","Neg_Standards","230717_Smp_G5_Hom2_T0_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"242","Neg_Standards","230717_Smp_G5_Hom2_T0_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"243","Neg_Standards","230717_Smp_G5_Hom2_T0_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"244","Neg_Standards","230717_Smp_G5_Hom2_T6_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"245","Neg_Standards","230717_Smp_G5_Hom2_T6_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"246","Neg_Standards","230717_Smp_G5_Hom2_T6_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"247","Neg_Standards","230717_Smp_G5_Hom2_T12_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"248","Neg_Standards","230717_Smp_G5_Hom2_T12_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"249","Neg_Standards","230717_Smp_G5_Hom2_T12_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"250","Neg_Standards","230717_Smp_G5_Hom2_T24_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"251","Neg_Standards","230717_Smp_G5_Hom2_T24_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"252","Neg_Standards","230717_Smp_G5_Hom2_T24_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"253","Neg_Standards","230717_Smp_G5_Hom2_T48_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"254","Neg_Standards","230717_Smp_G5_Hom2_T48_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"255","Neg_Standards","230717_Smp_G5_Hom2_T48_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"256","Neg_Standards","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"257","Neg_Standards","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"258","Neg_Standards","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO3_2_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"259","Neg_Standards","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"260","Neg_Standards","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"261","Neg_Standards","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"262","Neg_Standards","230717_Std_4uMStdsMix1InH2O_4","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"263","Neg_Standards","230717_Std_4uMStdsMix1InH2O_5","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"264","Neg_Standards","230717_Std_4uMStdsMix1InH2O_6","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"265","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"266","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"267","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"268","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_4","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"269","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_5","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"270","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_6","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"271","Neg_Standards","230717_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"272","Neg_Standards","230717_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"273","Neg_Standards","230717_Std_4uMStdsMix2InH2O_3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"274","Neg_Standards","230717_Std_4uMStdsMix2InH2O_4","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"275","Neg_Standards","230717_Std_4uMStdsMix2InH2O_5","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"276","Neg_Standards","230717_Std_4uMStdsMix2InH2O_6","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"277","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"278","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"279","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"280","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_4","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"281","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_5","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"282","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_6","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"283","Neg_Standards","230717_Std_H2OinMatrix1_1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"284","Neg_Standards","230717_Std_H2OinMatrix1_2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"285","Neg_Standards","230717_Std_H2OinMatrix1_3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"286","Neg_Standards","230717_Std_H2OinMatrix2_4","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"287","Neg_Standards","230717_Std_H2OinMatrix2_5","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"288","Neg_Standards","230717_Std_H2OinMatrix2_6","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"289","Neg_Standards","230717_Poo_G5-HomFate1_Full1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"290","Neg_Standards","230717_Poo_G5-HomFate1_Full2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"291","Neg_Standards","230717_Poo_G5-HomFate1_Full3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"292","Neg_Standards","230717_Poo_G5-HomFate1_Full4","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"293","Neg_Standards","230717_Poo_G5-HomFate1_Full5","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"294","Neg_Standards","230717_Poo_G5-HomFate1_Full6","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"295","Neg_Standards","230717_Poo_G5-HomFate1_Full7","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"296","Neg_Standards","230717_Poo_G5-HomFate2_Full1","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"297","Neg_Standards","230717_Poo_G5-HomFate2_Full2","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"298","Neg_Standards","230717_Poo_G5-HomFate2_Full3","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"299","Neg_Standards","230717_Poo_G5-HomFate2_Full4","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"300","Neg_Standards","230717_Poo_G5-HomFate2_Full5","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"301","Neg_Standards","230717_Poo_G5-HomFate2_Full6","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"302","Neg_Standards","230717_Poo_G5-HomFate2_Full7","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"303","Neg_Standards","230717_Smp_G5_Hom1_C_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"304","Neg_Standards","230717_Smp_G5_Hom1_C_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"305","Neg_Standards","230717_Smp_G5_Hom1_C_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"306","Neg_Standards","230717_Smp_G5_Hom1_T0_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"307","Neg_Standards","230717_Smp_G5_Hom1_T0_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"308","Neg_Standards","230717_Smp_G5_Hom1_T0_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"309","Neg_Standards","230717_Smp_G5_Hom1_T6_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"310","Neg_Standards","230717_Smp_G5_Hom1_T6_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"311","Neg_Standards","230717_Smp_G5_Hom1_T6_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"312","Neg_Standards","230717_Smp_G5_Hom1_T12_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"313","Neg_Standards","230717_Smp_G5_Hom1_T12_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"314","Neg_Standards","230717_Smp_G5_Hom1_T12_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"315","Neg_Standards","230717_Smp_G5_Hom1_T24_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"316","Neg_Standards","230717_Smp_G5_Hom1_T24_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"317","Neg_Standards","230717_Smp_G5_Hom1_T24_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"318","Neg_Standards","230717_Smp_G5_Hom1_T48_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"319","Neg_Standards","230717_Smp_G5_Hom1_T48_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"320","Neg_Standards","230717_Smp_G5_Hom1_T48_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"321","Neg_Standards","230717_Smp_G5_Hom1_T96_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"322","Neg_Standards","230717_Smp_G5_Hom1_T96_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"323","Neg_Standards","230717_Smp_G5_Hom1_T96_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"324","Neg_Standards","230717_Smp_G5_Hom2_C_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"325","Neg_Standards","230717_Smp_G5_Hom2_C_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"326","Neg_Standards","230717_Smp_G5_Hom2_C_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"327","Neg_Standards","230717_Smp_G5_Hom2_T0_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"328","Neg_Standards","230717_Smp_G5_Hom2_T0_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"329","Neg_Standards","230717_Smp_G5_Hom2_T0_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"330","Neg_Standards","230717_Smp_G5_Hom2_T6_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"331","Neg_Standards","230717_Smp_G5_Hom2_T6_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"332","Neg_Standards","230717_Smp_G5_Hom2_T6_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"333","Neg_Standards","230717_Smp_G5_Hom2_T12_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"334","Neg_Standards","230717_Smp_G5_Hom2_T12_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"335","Neg_Standards","230717_Smp_G5_Hom2_T12_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"336","Neg_Standards","230717_Smp_G5_Hom2_T24_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"337","Neg_Standards","230717_Smp_G5_Hom2_T24_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"338","Neg_Standards","230717_Smp_G5_Hom2_T24_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"339","Neg_Standards","230717_Smp_G5_Hom2_T48_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"340","Neg_Standards","230717_Smp_G5_Hom2_T48_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"341","Neg_Standards","230717_Smp_G5_Hom2_T48_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"342","Neg_Standards","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"343","Neg_Standards","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"344","Neg_Standards","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO3_3_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"345","Neg_Standards","230717_Std_4uMStdsMix1InH2O_1","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"346","Neg_Standards","230717_Std_4uMStdsMix1InH2O_2","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"347","Neg_Standards","230717_Std_4uMStdsMix1InH2O_3","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"348","Neg_Standards","230717_Std_4uMStdsMix1InH2O_4","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"349","Neg_Standards","230717_Std_4uMStdsMix1InH2O_5","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"350","Neg_Standards","230717_Std_4uMStdsMix1InH2O_6","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"351","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_1","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"352","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_2","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"353","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_3","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"354","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_4","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"355","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_5","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"356","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_6","Adenosine monophosphate",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"357","Neg_Standards","230717_Std_4uMStdsMix2InH2O_1","Adenosine monophosphate",12.16,21437482,0,1600173,2.2,"Neg_Standards","",21437482
+"358","Neg_Standards","230717_Std_4uMStdsMix2InH2O_2","Adenosine monophosphate",12.35,9263182,0,640191,2.6,"Neg_Standards","",9263182
+"359","Neg_Standards","230717_Std_4uMStdsMix2InH2O_3","Adenosine monophosphate",12.3,8988866,0,638945,2.6,"Neg_Standards","",8988866
+"360","Neg_Standards","230717_Std_4uMStdsMix2InH2O_4","Adenosine monophosphate",12.25,9067293,0,636991,2.5,"Neg_Standards","",9067293
+"361","Neg_Standards","230717_Std_4uMStdsMix2InH2O_5","Adenosine monophosphate",12.24,9242665,0,646908,2.1,"Neg_Standards","",9242665
+"362","Neg_Standards","230717_Std_4uMStdsMix2InH2O_6","Adenosine monophosphate",12.15,9983359,28154,788959,1.6,"Neg_Standards","",9983359
+"363","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_1","Adenosine monophosphate",12.24,10845830,0,749426,2.7,"Neg_Standards","",10845830
+"364","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_2","Adenosine monophosphate",12.39,7975418,0,544757,2.7,"Neg_Standards","",7975418
+"365","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_3","Adenosine monophosphate",12.35,8884505,0,590353,2.7,"Neg_Standards","",8884505
+"366","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_4","Adenosine monophosphate",12.33,10438090,0,630976,2.1,"Neg_Standards","",10438090
+"367","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_5","Adenosine monophosphate",12.27,11592432,0,704196,2.1,"Neg_Standards","",11592432
+"368","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_6","Adenosine monophosphate",12.19,12002644,0,657802,1.4,"Neg_Standards","",12002644
+"369","Neg_Standards","230717_Std_H2OinMatrix1_1","Adenosine monophosphate",12.22,878496,0,81233,2.5,"Neg_Standards","",878496
+"370","Neg_Standards","230717_Std_H2OinMatrix1_2","Adenosine monophosphate",12.38,159900,0,23347,2.2,"Neg_Standards","",159900
+"371","Neg_Standards","230717_Std_H2OinMatrix1_3","Adenosine monophosphate",12.35,76854,0,32354,1.4,"Neg_Standards","",76854
+"372","Neg_Standards","230717_Std_H2OinMatrix2_4","Adenosine monophosphate",12.4,995759,0,78076,2.4,"Neg_Standards","",995759
+"373","Neg_Standards","230717_Std_H2OinMatrix2_5","Adenosine monophosphate",12.28,1078840,0,88424,2.5,"Neg_Standards","",1078840
+"374","Neg_Standards","230717_Std_H2OinMatrix2_6","Adenosine monophosphate",12.21,752917,0,82206,1.5,"Neg_Standards","",752917
+"375","Neg_Standards","230717_Poo_G5-HomFate1_Full1","Adenosine monophosphate",12.3,758854,0,69381,2.4,"Neg_Standards","",758854
+"376","Neg_Standards","230717_Poo_G5-HomFate1_Full2","Adenosine monophosphate",12.45,1131663,0,89741,3,"Neg_Standards","",1131663
+"377","Neg_Standards","230717_Poo_G5-HomFate1_Full3","Adenosine monophosphate",12.4,849121,0,83492,2.8,"Neg_Standards","",849121
+"378","Neg_Standards","230717_Poo_G5-HomFate1_Full4","Adenosine monophosphate",12.48,600647,0,65488,3.3,"Neg_Standards","",600647
+"379","Neg_Standards","230717_Poo_G5-HomFate1_Full5","Adenosine monophosphate",12.48,117723,0,32337,2.6,"Neg_Standards","",117723
+"380","Neg_Standards","230717_Poo_G5-HomFate1_Full6","Adenosine monophosphate",12.51,235167,0,30603,2.2,"Neg_Standards","",235167
+"381","Neg_Standards","230717_Poo_G5-HomFate1_Full7","Adenosine monophosphate",12.34,371107,0,46097,1.8,"Neg_Standards","",371107
+"382","Neg_Standards","230717_Poo_G5-HomFate2_Full1","Adenosine monophosphate",12.35,1598323,0,105221,2.6,"Neg_Standards","",1598323
+"383","Neg_Standards","230717_Poo_G5-HomFate2_Full2","Adenosine monophosphate",12.26,1409316,0,124966,2.7,"Neg_Standards","",1409316
+"384","Neg_Standards","230717_Poo_G5-HomFate2_Full3","Adenosine monophosphate",12.34,1522602,0,111908,3.1,"Neg_Standards","",1522602
+"385","Neg_Standards","230717_Poo_G5-HomFate2_Full4","Adenosine monophosphate",12.35,1536543,0,131303,2.6,"Neg_Standards","",1536543
+"386","Neg_Standards","230717_Poo_G5-HomFate2_Full5","Adenosine monophosphate",12.36,1579852,0,121709,2.7,"Neg_Standards","",1579852
+"387","Neg_Standards","230717_Poo_G5-HomFate2_Full6","Adenosine monophosphate",12.32,1500457,0,119916,2,"Neg_Standards","",1500457
+"388","Neg_Standards","230717_Poo_G5-HomFate2_Full7","Adenosine monophosphate",12.23,1752018,0,125173,2.2,"Neg_Standards","",1752018
+"389","Neg_Standards","230717_Smp_G5_Hom1_C_A","Adenosine monophosphate",12.23,843725,0,91838,2.4,"Neg_Standards","",843725
+"390","Neg_Standards","230717_Smp_G5_Hom1_C_B","Adenosine monophosphate",12.42,95074,0,32490,2.5,"Neg_Standards","",95074
+"391","Neg_Standards","230717_Smp_G5_Hom1_C_C","Adenosine monophosphate",12.34,634077,0,59402,2.7,"Neg_Standards","",634077
+"392","Neg_Standards","230717_Smp_G5_Hom1_T0_A","Adenosine monophosphate",12.4,896386,0,74597,3,"Neg_Standards","",896386
+"393","Neg_Standards","230717_Smp_G5_Hom1_T0_B","Adenosine monophosphate",12.3,957616,0,84041,2.8,"Neg_Standards","",957616
+"394","Neg_Standards","230717_Smp_G5_Hom1_T0_C","Adenosine monophosphate",12.42,532492,0,56646,1.9,"Neg_Standards","",532492
+"395","Neg_Standards","230717_Smp_G5_Hom1_T6_A","Adenosine monophosphate",12.43,490400,0,50022,2.6,"Neg_Standards","",490400
+"396","Neg_Standards","230717_Smp_G5_Hom1_T6_B","Adenosine monophosphate",12.39,1111394,0,106686,2.4,"Neg_Standards","",1111394
+"397","Neg_Standards","230717_Smp_G5_Hom1_T6_C","Adenosine monophosphate",12.43,407081,0,61290,3.1,"Neg_Standards","",407081
+"398","Neg_Standards","230717_Smp_G5_Hom1_T12_A","Adenosine monophosphate",12.41,664149,0,63610,2.9,"Neg_Standards","",664149
+"399","Neg_Standards","230717_Smp_G5_Hom1_T12_B","Adenosine monophosphate",12.37,211301,0,39431,1.9,"Neg_Standards","",211301
+"400","Neg_Standards","230717_Smp_G5_Hom1_T12_C","Adenosine monophosphate",12.4,337916,0,42089,2.3,"Neg_Standards","",337916
+"401","Neg_Standards","230717_Smp_G5_Hom1_T24_A","Adenosine monophosphate",12.49,82716,0,17440,0.6,"Neg_Standards","",82716
+"402","Neg_Standards","230717_Smp_G5_Hom1_T24_B","Adenosine monophosphate",12.4,367615,0,47113,3,"Neg_Standards","",367615
+"403","Neg_Standards","230717_Smp_G5_Hom1_T24_C","Adenosine monophosphate",12.36,321590,0,48677,1.9,"Neg_Standards","",321590
+"404","Neg_Standards","230717_Smp_G5_Hom1_T48_A","Adenosine monophosphate",12.46,776156,0,71886,3,"Neg_Standards","",776156
+"405","Neg_Standards","230717_Smp_G5_Hom1_T48_B","Adenosine monophosphate",12.31,890979,0,71958,2.9,"Neg_Standards","",890979
+"406","Neg_Standards","230717_Smp_G5_Hom1_T48_C","Adenosine monophosphate",12.36,1334096,0,108659,2.6,"Neg_Standards","",1334096
+"407","Neg_Standards","230717_Smp_G5_Hom1_T96_A","Adenosine monophosphate",12.39,16392,0,9627,1.9,"Neg_Standards","areamin_flag, ",NA
+"408","Neg_Standards","230717_Smp_G5_Hom1_T96_B","Adenosine monophosphate",12.43,1097744,0,88270,3,"Neg_Standards","",1097744
+"409","Neg_Standards","230717_Smp_G5_Hom1_T96_C","Adenosine monophosphate",12.43,71344,0,27591,2.5,"Neg_Standards","",71344
+"410","Neg_Standards","230717_Smp_G5_Hom2_C_A","Adenosine monophosphate",12.35,1088316,0,81357,2,"Neg_Standards","",1088316
+"411","Neg_Standards","230717_Smp_G5_Hom2_C_B","Adenosine monophosphate",12.27,755451,0,62859,2.7,"Neg_Standards","",755451
+"412","Neg_Standards","230717_Smp_G5_Hom2_C_C","Adenosine monophosphate",12.32,1409411,0,94655,2.6,"Neg_Standards","",1409411
+"413","Neg_Standards","230717_Smp_G5_Hom2_T0_A","Adenosine monophosphate",12.33,1560699,0,122311,2.7,"Neg_Standards","",1560699
+"414","Neg_Standards","230717_Smp_G5_Hom2_T0_B","Adenosine monophosphate",12.3,1287911,0,119760,2.4,"Neg_Standards","",1287911
+"415","Neg_Standards","230717_Smp_G5_Hom2_T0_C","Adenosine monophosphate",12.26,766405,0,65621,2.8,"Neg_Standards","",766405
+"416","Neg_Standards","230717_Smp_G5_Hom2_T6_A","Adenosine monophosphate",12.31,1884523,0,130165,3.1,"Neg_Standards","",1884523
+"417","Neg_Standards","230717_Smp_G5_Hom2_T6_B","Adenosine monophosphate",12.34,1890647,0,154313,2.9,"Neg_Standards","",1890647
+"418","Neg_Standards","230717_Smp_G5_Hom2_T6_C","Adenosine monophosphate",12.26,1138983,0,102951,2.2,"Neg_Standards","",1138983
+"419","Neg_Standards","230717_Smp_G5_Hom2_T12_A","Adenosine monophosphate",12.3,2224707,0,164937,2.6,"Neg_Standards","",2224707
+"420","Neg_Standards","230717_Smp_G5_Hom2_T12_B","Adenosine monophosphate",12.27,1425375,0,111764,2.3,"Neg_Standards","",1425375
+"421","Neg_Standards","230717_Smp_G5_Hom2_T12_C","Adenosine monophosphate",12.23,1902480,0,141171,2.8,"Neg_Standards","",1902480
+"422","Neg_Standards","230717_Smp_G5_Hom2_T24_A","Adenosine monophosphate",12.21,1297220,0,131959,2.1,"Neg_Standards","",1297220
+"423","Neg_Standards","230717_Smp_G5_Hom2_T24_B","Adenosine monophosphate",12.27,1235196,0,98641,2.3,"Neg_Standards","",1235196
+"424","Neg_Standards","230717_Smp_G5_Hom2_T24_C","Adenosine monophosphate",12.34,1485017,0,106510,2.4,"Neg_Standards","",1485017
+"425","Neg_Standards","230717_Smp_G5_Hom2_T48_A","Adenosine monophosphate",12.36,1155080,0,106874,2.9,"Neg_Standards","",1155080
+"426","Neg_Standards","230717_Smp_G5_Hom2_T48_B","Adenosine monophosphate",12.26,115820,0,28468,1.6,"Neg_Standards","",115820
+"427","Neg_Standards","230717_Smp_G5_Hom2_T48_C","Adenosine monophosphate",12.34,1931734,0,146073,2.6,"Neg_Standards","",1931734
+"428","Neg_Standards","230717_Smp_G5_Hom2_T96_A","Adenosine monophosphate",12.26,2155610,0,137822,1.8,"Neg_Standards","",2155610
+"429","Neg_Standards","230717_Smp_G5_Hom2_T96_B","Adenosine monophosphate",12.32,3364630,0,222998,2.5,"Neg_Standards","",3364630
+"430","Neg_Standards","230717_Smp_G5_Hom2_T96_C","Adenosine monophosphate",12.35,6354439,0,364802,2.6,"Neg_Standards","",6354439
+"431","Neg_Standards","230717_Std_4uMStdsMix1InH2O_1","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"432","Neg_Standards","230717_Std_4uMStdsMix1InH2O_2","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"433","Neg_Standards","230717_Std_4uMStdsMix1InH2O_3","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"434","Neg_Standards","230717_Std_4uMStdsMix1InH2O_4","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"435","Neg_Standards","230717_Std_4uMStdsMix1InH2O_5","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"436","Neg_Standards","230717_Std_4uMStdsMix1InH2O_6","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"437","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_1","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"438","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_2","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"439","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_3","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"440","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_4","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"441","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_5","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"442","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_6","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"443","Neg_Standards","230717_Std_4uMStdsMix2InH2O_1","L-Cysteic acid",13.37,50407844,604167,5433907,-1.2,"Neg_Standards","",50407844
+"444","Neg_Standards","230717_Std_4uMStdsMix2InH2O_2","L-Cysteic acid",13.46,16438786,193562,1649312,-1,"Neg_Standards","",16438786
+"445","Neg_Standards","230717_Std_4uMStdsMix2InH2O_3","L-Cysteic acid",13.4,15295494,0,1498852,-0.7,"Neg_Standards","",15295494
+"446","Neg_Standards","230717_Std_4uMStdsMix2InH2O_4","L-Cysteic acid",13.38,15935435,0,1653752,-1,"Neg_Standards","",15935435
+"447","Neg_Standards","230717_Std_4uMStdsMix2InH2O_5","L-Cysteic acid",13.33,16446882,0,1616784,-1.2,"Neg_Standards","",16446882
+"448","Neg_Standards","230717_Std_4uMStdsMix2InH2O_6","L-Cysteic acid",13.28,19517084,0,1962623,-1.9,"Neg_Standards","",19517084
+"449","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_1","L-Cysteic acid",13.48,24423214,0,2279726,-0.8,"Neg_Standards","",24423214
+"450","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_2","L-Cysteic acid",13.52,13797426,0,1322945,-0.7,"Neg_Standards","",13797426
+"451","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_3","L-Cysteic acid",13.49,12784857,0,1212812,-0.9,"Neg_Standards","",12784857
+"452","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_4","L-Cysteic acid",13.46,12878169,0,1160071,-1,"Neg_Standards","",12878169
+"453","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_5","L-Cysteic acid",13.41,13879341,528822,1303950,-1.2,"Neg_Standards","",13879341
+"454","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_6","L-Cysteic acid",13.32,16231564,0,1432028,-2,"Neg_Standards","",16231564
+"455","Neg_Standards","230717_Std_H2OinMatrix1_1","L-Cysteic acid",13.48,311546,0,50613,0,"Neg_Standards","",311546
+"456","Neg_Standards","230717_Std_H2OinMatrix1_2","L-Cysteic acid",13.51,15116,0,13078,1.3,"Neg_Standards","areamin_flag, ",NA
+"457","Neg_Standards","230717_Std_H2OinMatrix1_3","L-Cysteic acid",13.49,27301,0,9451,0.2,"Neg_Standards","areamin_flag, ",NA
+"458","Neg_Standards","230717_Std_H2OinMatrix2_4","L-Cysteic acid",13.48,186882,0,32544,-1.1,"Neg_Standards","",186882
+"459","Neg_Standards","230717_Std_H2OinMatrix2_5","L-Cysteic acid",13.44,203893,0,42874,-1.1,"Neg_Standards","",203893
+"460","Neg_Standards","230717_Std_H2OinMatrix2_6","L-Cysteic acid",13.38,171140,0,28592,-1.5,"Neg_Standards","",171140
+"461","Neg_Standards","230717_Poo_G5-HomFate1_Full1","L-Cysteic acid",13.51,153365,0,31001,-0.4,"Neg_Standards","",153365
+"462","Neg_Standards","230717_Poo_G5-HomFate1_Full2","L-Cysteic acid",13.63,324457,0,41691,-0.2,"Neg_Standards","",324457
+"463","Neg_Standards","230717_Poo_G5-HomFate1_Full3","L-Cysteic acid",13.54,206427,0,33698,-0.4,"Neg_Standards","",206427
+"464","Neg_Standards","230717_Poo_G5-HomFate1_Full4","L-Cysteic acid",13.62,114788,0,27395,0.1,"Neg_Standards","",114788
+"465","Neg_Standards","230717_Poo_G5-HomFate1_Full5","L-Cysteic acid",13.62,24445,0,14810,-1.4,"Neg_Standards","areamin_flag, ",NA
+"466","Neg_Standards","230717_Poo_G5-HomFate1_Full6","L-Cysteic acid",13.6,105012,0,28935,-1,"Neg_Standards","",105012
+"467","Neg_Standards","230717_Poo_G5-HomFate1_Full7","L-Cysteic acid",13.47,82887,0,16677,-0.7,"Neg_Standards","",82887
+"468","Neg_Standards","230717_Poo_G5-HomFate2_Full1","L-Cysteic acid",13.51,326405,0,41933,-1.5,"Neg_Standards","",326405
+"469","Neg_Standards","230717_Poo_G5-HomFate2_Full2","L-Cysteic acid",13.48,209835,0,45068,-0.3,"Neg_Standards","",209835
+"470","Neg_Standards","230717_Poo_G5-HomFate2_Full3","L-Cysteic acid",13.45,289014,0,45612,-0.6,"Neg_Standards","",289014
+"471","Neg_Standards","230717_Poo_G5-HomFate2_Full4","L-Cysteic acid",13.45,289455,0,34185,-0.5,"Neg_Standards","",289455
+"472","Neg_Standards","230717_Poo_G5-HomFate2_Full5","L-Cysteic acid",13.46,309044,0,46006,-0.8,"Neg_Standards","",309044
+"473","Neg_Standards","230717_Poo_G5-HomFate2_Full6","L-Cysteic acid",13.46,201169,0,39481,-1.1,"Neg_Standards","",201169
+"474","Neg_Standards","230717_Poo_G5-HomFate2_Full7","L-Cysteic acid",13.44,416987,0,67522,-1.3,"Neg_Standards","",416987
+"475","Neg_Standards","230717_Smp_G5_Hom1_C_A","L-Cysteic acid",13.54,92008,0,30785,0.1,"Neg_Standards","",92008
+"476","Neg_Standards","230717_Smp_G5_Hom1_C_B","L-Cysteic acid",13.62,12024,0,8625,-0.3,"Neg_Standards","areamin_flag, ",NA
+"477","Neg_Standards","230717_Smp_G5_Hom1_C_C","L-Cysteic acid",13.53,73568,0,26119,-0.8,"Neg_Standards","",73568
+"478","Neg_Standards","230717_Smp_G5_Hom1_T0_A","L-Cysteic acid",13.62,96096,0,27358,-0.5,"Neg_Standards","",96096
+"479","Neg_Standards","230717_Smp_G5_Hom1_T0_B","L-Cysteic acid",13.54,158694,0,34888,-0.4,"Neg_Standards","",158694
+"480","Neg_Standards","230717_Smp_G5_Hom1_T0_C","L-Cysteic acid",13.57,18655,0,10488,-0.4,"Neg_Standards","areamin_flag, ",NA
+"481","Neg_Standards","230717_Smp_G5_Hom1_T6_A","L-Cysteic acid",13.56,39018,0,16061,-0.5,"Neg_Standards","areamin_flag, ",NA
+"482","Neg_Standards","230717_Smp_G5_Hom1_T6_B","L-Cysteic acid",13.51,41170,0,21086,0,"Neg_Standards","",41170
+"483","Neg_Standards","230717_Smp_G5_Hom1_T6_C","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"484","Neg_Standards","230717_Smp_G5_Hom1_T12_A","L-Cysteic acid",13.62,158853,0,24395,-0.5,"Neg_Standards","",158853
+"485","Neg_Standards","230717_Smp_G5_Hom1_T12_B","L-Cysteic acid",13.57,18031,0,15902,-0.3,"Neg_Standards","areamin_flag, ",NA
+"486","Neg_Standards","230717_Smp_G5_Hom1_T12_C","L-Cysteic acid",13.54,64062,0,26380,0.4,"Neg_Standards","",64062
+"487","Neg_Standards","230717_Smp_G5_Hom1_T24_A","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"488","Neg_Standards","230717_Smp_G5_Hom1_T24_B","L-Cysteic acid",13.49,13544,0,10711,0.4,"Neg_Standards","areamin_flag, ",NA
+"489","Neg_Standards","230717_Smp_G5_Hom1_T24_C","L-Cysteic acid",13.6,26289,0,22966,-0.7,"Neg_Standards","areamin_flag, ",NA
+"490","Neg_Standards","230717_Smp_G5_Hom1_T48_A","L-Cysteic acid",13.6,115626,0,29347,-0.1,"Neg_Standards","",115626
+"491","Neg_Standards","230717_Smp_G5_Hom1_T48_B","L-Cysteic acid",13.53,113242,0,20118,-0.4,"Neg_Standards","",113242
+"492","Neg_Standards","230717_Smp_G5_Hom1_T48_C","L-Cysteic acid",13.56,254467,0,49545,-0.7,"Neg_Standards","",254467
+"493","Neg_Standards","230717_Smp_G5_Hom1_T96_A","L-Cysteic acid",13.53,1114534,0,108192,-0.9,"Neg_Standards","",1114534
+"494","Neg_Standards","230717_Smp_G5_Hom1_T96_B","L-Cysteic acid",13.56,294432,0,47630,-0.5,"Neg_Standards","",294432
+"495","Neg_Standards","230717_Smp_G5_Hom1_T96_C","L-Cysteic acid",13.59,464419,0,51714,-0.3,"Neg_Standards","",464419
+"496","Neg_Standards","230717_Smp_G5_Hom2_C_A","L-Cysteic acid",13.4,86403,0,26781,0.1,"Neg_Standards","",86403
+"497","Neg_Standards","230717_Smp_G5_Hom2_C_B","L-Cysteic acid",13.5,71547,0,29071,-0.5,"Neg_Standards","",71547
+"498","Neg_Standards","230717_Smp_G5_Hom2_C_C","L-Cysteic acid",13.44,121373,0,31804,-0.4,"Neg_Standards","",121373
+"499","Neg_Standards","230717_Smp_G5_Hom2_T0_A","L-Cysteic acid",13.49,170108,0,33420,-1.1,"Neg_Standards","",170108
+"500","Neg_Standards","230717_Smp_G5_Hom2_T0_B","L-Cysteic acid",13.48,180906,0,37407,-1.3,"Neg_Standards","",180906
+"501","Neg_Standards","230717_Smp_G5_Hom2_T0_C","L-Cysteic acid",13.48,196854,0,36879,-0.3,"Neg_Standards","",196854
+"502","Neg_Standards","230717_Smp_G5_Hom2_T6_A","L-Cysteic acid",13.45,67225,0,24337,-0.4,"Neg_Standards","",67225
+"503","Neg_Standards","230717_Smp_G5_Hom2_T6_B","L-Cysteic acid",13.52,121341,0,30007,-0.2,"Neg_Standards","",121341
+"504","Neg_Standards","230717_Smp_G5_Hom2_T6_C","L-Cysteic acid",13.52,40126,0,12581,0.6,"Neg_Standards","",40126
+"505","Neg_Standards","230717_Smp_G5_Hom2_T12_A","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"506","Neg_Standards","230717_Smp_G5_Hom2_T12_B","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"507","Neg_Standards","230717_Smp_G5_Hom2_T12_C","L-Cysteic acid",13.47,63127,0,21846,-0.3,"Neg_Standards","",63127
+"508","Neg_Standards","230717_Smp_G5_Hom2_T24_A","L-Cysteic acid",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"509","Neg_Standards","230717_Smp_G5_Hom2_T24_B","L-Cysteic acid",13.4,150828,0,25493,-1.3,"Neg_Standards","",150828
+"510","Neg_Standards","230717_Smp_G5_Hom2_T24_C","L-Cysteic acid",13.54,105234,0,22943,-0.7,"Neg_Standards","",105234
+"511","Neg_Standards","230717_Smp_G5_Hom2_T48_A","L-Cysteic acid",13.5,276628,0,42368,-0.7,"Neg_Standards","",276628
+"512","Neg_Standards","230717_Smp_G5_Hom2_T48_B","L-Cysteic acid",13.46,16711,0,17437,0,"Neg_Standards","areamin_flag, ",NA
+"513","Neg_Standards","230717_Smp_G5_Hom2_T48_C","L-Cysteic acid",13.51,174649,0,27624,-1.4,"Neg_Standards","",174649
+"514","Neg_Standards","230717_Smp_G5_Hom2_T96_A","L-Cysteic acid",13.43,1347466,0,138244,-1.4,"Neg_Standards","",1347466
+"515","Neg_Standards","230717_Smp_G5_Hom2_T96_B","L-Cysteic acid",13.4,1463470,0,140199,-1.3,"Neg_Standards","",1463470
+"516","Neg_Standards","230717_Smp_G5_Hom2_T96_C","L-Cysteic acid",13.54,2134720,0,234587,-0.8,"Neg_Standards","",2134720
+"517","Neg_Standards","230717_Std_4uMStdsMix1InH2O_1","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"518","Neg_Standards","230717_Std_4uMStdsMix1InH2O_2","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"519","Neg_Standards","230717_Std_4uMStdsMix1InH2O_3","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"520","Neg_Standards","230717_Std_4uMStdsMix1InH2O_4","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"521","Neg_Standards","230717_Std_4uMStdsMix1InH2O_5","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"522","Neg_Standards","230717_Std_4uMStdsMix1InH2O_6","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"523","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_1","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"524","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_2","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"525","Neg_Standards","230717_Std_4uMStdsMix1InMatrix1_3","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"526","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_4","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"527","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_5","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"528","Neg_Standards","230717_Std_4uMStdsMix1InMatrix2_6","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"529","Neg_Standards","230717_Std_4uMStdsMix2InH2O_1","UDP-N-acetylglucosamine",13.24,17965558,0,1679045,1.6,"Neg_Standards","",17965558
+"530","Neg_Standards","230717_Std_4uMStdsMix2InH2O_2","UDP-N-acetylglucosamine",13.27,7461334,0,649512,1.6,"Neg_Standards","",7461334
+"531","Neg_Standards","230717_Std_4uMStdsMix2InH2O_3","UDP-N-acetylglucosamine",13.28,7337306,0,626704,2.1,"Neg_Standards","",7337306
+"532","Neg_Standards","230717_Std_4uMStdsMix2InH2O_4","UDP-N-acetylglucosamine",13.24,7482542,0,680333,1.8,"Neg_Standards","",7482542
+"533","Neg_Standards","230717_Std_4uMStdsMix2InH2O_5","UDP-N-acetylglucosamine",13.22,8214564,0,645237,1.6,"Neg_Standards","",8214564
+"534","Neg_Standards","230717_Std_4uMStdsMix2InH2O_6","UDP-N-acetylglucosamine",13.16,8447923,0,715252,1.1,"Neg_Standards","",8447923
+"535","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_1","UDP-N-acetylglucosamine",13.25,8411808,0,694956,1.8,"Neg_Standards","",8411808
+"536","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_2","UDP-N-acetylglucosamine",13.31,6291698,39729,586170,2,"Neg_Standards","",6291698
+"537","Neg_Standards","230717_Std_4uMStdsMix2InMatrix1_3","UDP-N-acetylglucosamine",13.27,7625079,0,695442,2.1,"Neg_Standards","",7625079
+"538","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_4","UDP-N-acetylglucosamine",13.3,7470280,0,681576,1.8,"Neg_Standards","",7470280
+"539","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_5","UDP-N-acetylglucosamine",13.27,8524846,0,736559,1.6,"Neg_Standards","",8524846
+"540","Neg_Standards","230717_Std_4uMStdsMix2InMatrix2_6","UDP-N-acetylglucosamine",13.18,8003214,0,727728,0.8,"Neg_Standards","",8003214
+"541","Neg_Standards","230717_Std_H2OinMatrix1_1","UDP-N-acetylglucosamine",13.21,19057,0,16553,0.1,"Neg_Standards","areamin_flag, ",NA
+"542","Neg_Standards","230717_Std_H2OinMatrix1_2","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"543","Neg_Standards","230717_Std_H2OinMatrix1_3","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"544","Neg_Standards","230717_Std_H2OinMatrix2_4","UDP-N-acetylglucosamine",13.31,25454,0,27096,4.8,"Neg_Standards","areamin_flag, ",NA
+"545","Neg_Standards","230717_Std_H2OinMatrix2_5","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"546","Neg_Standards","230717_Std_H2OinMatrix2_6","UDP-N-acetylglucosamine",13.2,18637,0,13940,-0.5,"Neg_Standards","areamin_flag, ",NA
+"547","Neg_Standards","230717_Poo_G5-HomFate1_Full1","UDP-N-acetylglucosamine",13.27,75587,0,16702,0.8,"Neg_Standards","",75587
+"548","Neg_Standards","230717_Poo_G5-HomFate1_Full2","UDP-N-acetylglucosamine",13.39,18559,0,17826,0.3,"Neg_Standards","areamin_flag, ",NA
+"549","Neg_Standards","230717_Poo_G5-HomFate1_Full3","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"550","Neg_Standards","230717_Poo_G5-HomFate1_Full4","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"551","Neg_Standards","230717_Poo_G5-HomFate1_Full5","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"552","Neg_Standards","230717_Poo_G5-HomFate1_Full6","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"553","Neg_Standards","230717_Poo_G5-HomFate1_Full7","UDP-N-acetylglucosamine",13.31,20909,0,13386,1.2,"Neg_Standards","areamin_flag, ",NA
+"554","Neg_Standards","230717_Poo_G5-HomFate2_Full1","UDP-N-acetylglucosamine",13.37,20172,0,19699,-0.8,"Neg_Standards","areamin_flag, ",NA
+"555","Neg_Standards","230717_Poo_G5-HomFate2_Full2","UDP-N-acetylglucosamine",13.27,47400,0,19229,2.1,"Neg_Standards","",47400
+"556","Neg_Standards","230717_Poo_G5-HomFate2_Full3","UDP-N-acetylglucosamine",13.3,77601,0,22526,1.4,"Neg_Standards","",77601
+"557","Neg_Standards","230717_Poo_G5-HomFate2_Full4","UDP-N-acetylglucosamine",13.27,30944,0,11676,1,"Neg_Standards","areamin_flag, ",NA
+"558","Neg_Standards","230717_Poo_G5-HomFate2_Full5","UDP-N-acetylglucosamine",13.21,41993,0,22922,1.4,"Neg_Standards","",41993
+"559","Neg_Standards","230717_Poo_G5-HomFate2_Full6","UDP-N-acetylglucosamine",13.28,19116,0,18030,0.3,"Neg_Standards","areamin_flag, ",NA
+"560","Neg_Standards","230717_Poo_G5-HomFate2_Full7","UDP-N-acetylglucosamine",13.26,63004,0,26060,-0.9,"Neg_Standards","",63004
+"561","Neg_Standards","230717_Smp_G5_Hom1_C_A","UDP-N-acetylglucosamine",13.33,76500,0,24064,1.7,"Neg_Standards","",76500
+"562","Neg_Standards","230717_Smp_G5_Hom1_C_B","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"563","Neg_Standards","230717_Smp_G5_Hom1_C_C","UDP-N-acetylglucosamine",13.31,56746,0,20447,1.1,"Neg_Standards","",56746
+"564","Neg_Standards","230717_Smp_G5_Hom1_T0_A","UDP-N-acetylglucosamine",13.42,19208,0,18279,2,"Neg_Standards","areamin_flag, ",NA
+"565","Neg_Standards","230717_Smp_G5_Hom1_T0_B","UDP-N-acetylglucosamine",13.3,47112,0,18994,0.3,"Neg_Standards","",47112
+"566","Neg_Standards","230717_Smp_G5_Hom1_T0_C","UDP-N-acetylglucosamine",13.39,22774,0,16844,0.2,"Neg_Standards","areamin_flag, ",NA
+"567","Neg_Standards","230717_Smp_G5_Hom1_T6_A","UDP-N-acetylglucosamine",13.27,15402,0,15872,2.2,"Neg_Standards","areamin_flag, ",NA
+"568","Neg_Standards","230717_Smp_G5_Hom1_T6_B","UDP-N-acetylglucosamine",13.3,147195,0,31677,1.4,"Neg_Standards","",147195
+"569","Neg_Standards","230717_Smp_G5_Hom1_T6_C","UDP-N-acetylglucosamine",13.3,22342,0,19628,-0.7,"Neg_Standards","areamin_flag, ",NA
+"570","Neg_Standards","230717_Smp_G5_Hom1_T12_A","UDP-N-acetylglucosamine",13.39,53507,0,22300,0.8,"Neg_Standards","",53507
+"571","Neg_Standards","230717_Smp_G5_Hom1_T12_B","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"572","Neg_Standards","230717_Smp_G5_Hom1_T12_C","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"573","Neg_Standards","230717_Smp_G5_Hom1_T24_A","UDP-N-acetylglucosamine",13.45,18621,0,11614,0.3,"Neg_Standards","areamin_flag, ",NA
+"574","Neg_Standards","230717_Smp_G5_Hom1_T24_B","UDP-N-acetylglucosamine",13.31,13955,0,12358,-1.8,"Neg_Standards","areamin_flag, ",NA
+"575","Neg_Standards","230717_Smp_G5_Hom1_T24_C","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"576","Neg_Standards","230717_Smp_G5_Hom1_T48_A","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"577","Neg_Standards","230717_Smp_G5_Hom1_T48_B","UDP-N-acetylglucosamine",13.36,20822,0,19559,0.6,"Neg_Standards","areamin_flag, ",NA
+"578","Neg_Standards","230717_Smp_G5_Hom1_T48_C","UDP-N-acetylglucosamine",13.38,63589,0,29686,3.1,"Neg_Standards","",63589
+"579","Neg_Standards","230717_Smp_G5_Hom1_T96_A","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"580","Neg_Standards","230717_Smp_G5_Hom1_T96_B","UDP-N-acetylglucosamine",13.32,18887,0,10736,0.2,"Neg_Standards","areamin_flag, ",NA
+"581","Neg_Standards","230717_Smp_G5_Hom1_T96_C","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"582","Neg_Standards","230717_Smp_G5_Hom2_C_A","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"583","Neg_Standards","230717_Smp_G5_Hom2_C_B","UDP-N-acetylglucosamine",13.33,17741,0,14381,5.4,"Neg_Standards","areamin_flag, ",NA
+"584","Neg_Standards","230717_Smp_G5_Hom2_C_C","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"585","Neg_Standards","230717_Smp_G5_Hom2_T0_A","UDP-N-acetylglucosamine",13.31,23376,0,15687,2.8,"Neg_Standards","areamin_flag, ",NA
+"586","Neg_Standards","230717_Smp_G5_Hom2_T0_B","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"587","Neg_Standards","230717_Smp_G5_Hom2_T0_C","UDP-N-acetylglucosamine",13.23,94854,0,21499,1.7,"Neg_Standards","",94854
+"588","Neg_Standards","230717_Smp_G5_Hom2_T6_A","UDP-N-acetylglucosamine",13.27,138807,0,26697,1,"Neg_Standards","",138807
+"589","Neg_Standards","230717_Smp_G5_Hom2_T6_B","UDP-N-acetylglucosamine",13.31,96917,0,30261,1.3,"Neg_Standards","",96917
+"590","Neg_Standards","230717_Smp_G5_Hom2_T6_C","UDP-N-acetylglucosamine",13.24,29538,0,17775,2.9,"Neg_Standards","areamin_flag, ",NA
+"591","Neg_Standards","230717_Smp_G5_Hom2_T12_A","UDP-N-acetylglucosamine",13.25,16192,0,9671,0.9,"Neg_Standards","areamin_flag, ",NA
+"592","Neg_Standards","230717_Smp_G5_Hom2_T12_B","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"593","Neg_Standards","230717_Smp_G5_Hom2_T12_C","UDP-N-acetylglucosamine",13.31,42052,0,22752,1.3,"Neg_Standards","",42052
+"594","Neg_Standards","230717_Smp_G5_Hom2_T24_A","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"595","Neg_Standards","230717_Smp_G5_Hom2_T24_B","UDP-N-acetylglucosamine",13.2,32746,0,24671,0.1,"Neg_Standards","areamin_flag, ",NA
+"596","Neg_Standards","230717_Smp_G5_Hom2_T24_C","UDP-N-acetylglucosamine",13.27,21618,0,18526,3.5,"Neg_Standards","areamin_flag, ",NA
+"597","Neg_Standards","230717_Smp_G5_Hom2_T48_A","UDP-N-acetylglucosamine",13.32,53823,0,18656,2.2,"Neg_Standards","",53823
+"598","Neg_Standards","230717_Smp_G5_Hom2_T48_B","UDP-N-acetylglucosamine",NA,NA,NA,NA,NA,"Neg_Standards","",NA
+"599","Neg_Standards","230717_Smp_G5_Hom2_T48_C","UDP-N-acetylglucosamine",13.27,83192,0,29593,3.3,"Neg_Standards","",83192
+"600","Neg_Standards","230717_Smp_G5_Hom2_T96_A","UDP-N-acetylglucosamine",13.21,206801,0,31750,1,"Neg_Standards","",206801
+"601","Neg_Standards","230717_Smp_G5_Hom2_T96_B","UDP-N-acetylglucosamine",13.24,260061,0,44716,1.7,"Neg_Standards","",260061
+"602","Neg_Standards","230717_Smp_G5_Hom2_T96_C","UDP-N-acetylglucosamine",13.38,276037,0,38170,1.3,"Neg_Standards","",276037
+"603","Neg_InternalStandards","230717_Std_4uMStdsMix1InH2O_1","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"604","Neg_InternalStandards","230717_Std_4uMStdsMix1InH2O_2","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"605","Neg_InternalStandards","230717_Std_4uMStdsMix1InH2O_3","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"606","Neg_InternalStandards","230717_Std_4uMStdsMix1InH2O_4","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"607","Neg_InternalStandards","230717_Std_4uMStdsMix1InH2O_5","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"608","Neg_InternalStandards","230717_Std_4uMStdsMix1InH2O_6","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"609","Neg_InternalStandards","230717_Std_4uMStdsMix1InMatrix1_1","Taurine, 2H4",11.76,9880402,0,931327,-7.4,"Neg_InternalStandards","ppm_flag, ",NA
+"610","Neg_InternalStandards","230717_Std_4uMStdsMix1InMatrix1_2","Taurine, 2H4",11.72,5503290,0,604194,-7.7,"Neg_InternalStandards","ppm_flag, ",NA
+"611","Neg_InternalStandards","230717_Std_4uMStdsMix1InMatrix1_3","Taurine, 2H4",11.63,5746392,0,600571,-7.8,"Neg_InternalStandards","ppm_flag, ",NA
+"612","Neg_InternalStandards","230717_Std_4uMStdsMix1InMatrix2_4","Taurine, 2H4",11.63,5055473,0,481657,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"613","Neg_InternalStandards","230717_Std_4uMStdsMix1InMatrix2_5","Taurine, 2H4",11.5,5398813,0,468624,-7.8,"Neg_InternalStandards","ppm_flag, ",NA
+"614","Neg_InternalStandards","230717_Std_4uMStdsMix1InMatrix2_6","Taurine, 2H4",11.39,4500149,0,441664,-8.5,"Neg_InternalStandards","ppm_flag, ",NA
+"615","Neg_InternalStandards","230717_Std_4uMStdsMix2InH2O_1","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"616","Neg_InternalStandards","230717_Std_4uMStdsMix2InH2O_2","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"617","Neg_InternalStandards","230717_Std_4uMStdsMix2InH2O_3","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"618","Neg_InternalStandards","230717_Std_4uMStdsMix2InH2O_4","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"619","Neg_InternalStandards","230717_Std_4uMStdsMix2InH2O_5","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"620","Neg_InternalStandards","230717_Std_4uMStdsMix2InH2O_6","Taurine, 2H4",NA,NA,NA,NA,NA,"Neg_InternalStandards","",NA
+"621","Neg_InternalStandards","230717_Std_4uMStdsMix2InMatrix1_1","Taurine, 2H4",11.8,6469065,0,593314,-7.3,"Neg_InternalStandards","ppm_flag, ",NA
+"622","Neg_InternalStandards","230717_Std_4uMStdsMix2InMatrix1_2","Taurine, 2H4",11.73,4227447,0,446810,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"623","Neg_InternalStandards","230717_Std_4uMStdsMix2InMatrix1_3","Taurine, 2H4",11.64,5424233,0,517635,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"624","Neg_InternalStandards","230717_Std_4uMStdsMix2InMatrix2_4","Taurine, 2H4",11.64,4865529,0,465507,-7.9,"Neg_InternalStandards","ppm_flag, ",NA
+"625","Neg_InternalStandards","230717_Std_4uMStdsMix2InMatrix2_5","Taurine, 2H4",11.49,4659995,0,405332,-7.8,"Neg_InternalStandards","ppm_flag, ",NA
+"626","Neg_InternalStandards","230717_Std_4uMStdsMix2InMatrix2_6","Taurine, 2H4",11.42,4064593,0,354448,-8.7,"Neg_InternalStandards","ppm_flag, ",NA
+"627","Neg_InternalStandards","230717_Std_H2OinMatrix1_1","Taurine, 2H4",11.81,12971760,0,1217703,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"628","Neg_InternalStandards","230717_Std_H2OinMatrix1_2","Taurine, 2H4",11.78,5925129,0,630325,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"629","Neg_InternalStandards","230717_Std_H2OinMatrix1_3","Taurine, 2H4",11.67,5769774,0,536846,-7.2,"Neg_InternalStandards","ppm_flag, ",NA
+"630","Neg_InternalStandards","230717_Std_H2OinMatrix2_4","Taurine, 2H4",11.64,6776903,0,656471,-7.9,"Neg_InternalStandards","ppm_flag, ",NA
+"631","Neg_InternalStandards","230717_Std_H2OinMatrix2_5","Taurine, 2H4",11.55,6683105,0,606250,-7.9,"Neg_InternalStandards","ppm_flag, ",NA
+"632","Neg_InternalStandards","230717_Std_H2OinMatrix2_6","Taurine, 2H4",11.39,5590522,0,563929,-8.5,"Neg_InternalStandards","ppm_flag, ",NA
+"633","Neg_InternalStandards","230717_Poo_G5-HomFate1_Full1","Taurine, 2H4",11.8,12717495,0,1137082,-7.7,"Neg_InternalStandards","ppm_flag, ",NA
+"634","Neg_InternalStandards","230717_Poo_G5-HomFate1_Full2","Taurine, 2H4",11.9,13446452,0,1182882,-7.4,"Neg_InternalStandards","ppm_flag, ",NA
+"635","Neg_InternalStandards","230717_Poo_G5-HomFate1_Full3","Taurine, 2H4",11.81,12679782,0,1202276,-7.4,"Neg_InternalStandards","ppm_flag, ",NA
+"636","Neg_InternalStandards","230717_Poo_G5-HomFate1_Full4","Taurine, 2H4",11.84,13897269,0,1226485,-7.2,"Neg_InternalStandards","ppm_flag, ",NA
+"637","Neg_InternalStandards","230717_Poo_G5-HomFate1_Full5","Taurine, 2H4",11.77,7524502,0,760511,-7.7,"Neg_InternalStandards","ppm_flag, ",NA
+"638","Neg_InternalStandards","230717_Poo_G5-HomFate1_Full6","Taurine, 2H4",11.81,7431199,0,703457,-7.3,"Neg_InternalStandards","ppm_flag, ",NA
+"639","Neg_InternalStandards","230717_Poo_G5-HomFate1_Full7","Taurine, 2H4",11.72,10592390,0,1004511,-7.9,"Neg_InternalStandards","ppm_flag, ",NA
+"640","Neg_InternalStandards","230717_Poo_G5-HomFate2_Full1","Taurine, 2H4",11.72,7685506,0,756219,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"641","Neg_InternalStandards","230717_Poo_G5-HomFate2_Full2","Taurine, 2H4",11.66,8438724,0,803474,-7.7,"Neg_InternalStandards","ppm_flag, ",NA
+"642","Neg_InternalStandards","230717_Poo_G5-HomFate2_Full3","Taurine, 2H4",11.62,8139980,0,781365,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"643","Neg_InternalStandards","230717_Poo_G5-HomFate2_Full4","Taurine, 2H4",11.64,7801286,0,795703,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"644","Neg_InternalStandards","230717_Poo_G5-HomFate2_Full5","Taurine, 2H4",11.63,7035353,0,721256,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"645","Neg_InternalStandards","230717_Poo_G5-HomFate2_Full6","Taurine, 2H4",11.66,7675537,0,774103,-8,"Neg_InternalStandards","ppm_flag, ",NA
+"646","Neg_InternalStandards","230717_Poo_G5-HomFate2_Full7","Taurine, 2H4",11.55,7922405,0,759593,-8.1,"Neg_InternalStandards","ppm_flag, ",NA
+"647","Neg_InternalStandards","230717_Smp_G5_Hom1_C_A","Taurine, 2H4",11.82,12864041,0,1163415,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"648","Neg_InternalStandards","230717_Smp_G5_Hom1_C_B","Taurine, 2H4",11.83,8299075,0,733712,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"649","Neg_InternalStandards","230717_Smp_G5_Hom1_C_C","Taurine, 2H4",11.84,14714117,0,1205873,-7.8,"Neg_InternalStandards","ppm_flag, ",NA
+"650","Neg_InternalStandards","230717_Smp_G5_Hom1_T0_A","Taurine, 2H4",11.81,14109441,0,1264721,-7.2,"Neg_InternalStandards","ppm_flag, ",NA
+"651","Neg_InternalStandards","230717_Smp_G5_Hom1_T0_B","Taurine, 2H4",11.87,15538558,0,1428517,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"652","Neg_InternalStandards","230717_Smp_G5_Hom1_T0_C","Taurine, 2H4",11.75,10887852,0,1048783,-8.1,"Neg_InternalStandards","ppm_flag, ",NA
+"653","Neg_InternalStandards","230717_Smp_G5_Hom1_T6_A","Taurine, 2H4",11.79,9134209,0,863011,-7.9,"Neg_InternalStandards","ppm_flag, ",NA
+"654","Neg_InternalStandards","230717_Smp_G5_Hom1_T6_B","Taurine, 2H4",11.78,14724446,0,1307791,-7.8,"Neg_InternalStandards","ppm_flag, ",NA
+"655","Neg_InternalStandards","230717_Smp_G5_Hom1_T6_C","Taurine, 2H4",11.75,8247438,0,823961,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"656","Neg_InternalStandards","230717_Smp_G5_Hom1_T12_A","Taurine, 2H4",11.93,13181537,0,882150,-7.4,"Neg_InternalStandards","ppm_flag, ",NA
+"657","Neg_InternalStandards","230717_Smp_G5_Hom1_T12_B","Taurine, 2H4",11.78,9024473,0,841209,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"658","Neg_InternalStandards","230717_Smp_G5_Hom1_T12_C","Taurine, 2H4",11.78,9758494,0,988838,-7.1,"Neg_InternalStandards","ppm_flag, ",NA
+"659","Neg_InternalStandards","230717_Smp_G5_Hom1_T24_A","Taurine, 2H4",11.78,9728164,0,955126,-7.9,"Neg_InternalStandards","ppm_flag, ",NA
+"660","Neg_InternalStandards","230717_Smp_G5_Hom1_T24_B","Taurine, 2H4",11.92,14159817,0,1123995,-7.4,"Neg_InternalStandards","ppm_flag, ",NA
+"661","Neg_InternalStandards","230717_Smp_G5_Hom1_T24_C","Taurine, 2H4",11.77,15168213,0,1392544,-7.7,"Neg_InternalStandards","ppm_flag, ",NA
+"662","Neg_InternalStandards","230717_Smp_G5_Hom1_T48_A","Taurine, 2H4",11.82,12185550,0,1163156,-7,"Neg_InternalStandards","ppm_flag, ",NA
+"663","Neg_InternalStandards","230717_Smp_G5_Hom1_T48_B","Taurine, 2H4",11.83,14209522,0,1303091,-7.7,"Neg_InternalStandards","ppm_flag, ",NA
+"664","Neg_InternalStandards","230717_Smp_G5_Hom1_T48_C","Taurine, 2H4",11.8,12205981,0,1180400,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"665","Neg_InternalStandards","230717_Smp_G5_Hom1_T96_A","Taurine, 2H4",11.75,9900535,0,979930,-7.4,"Neg_InternalStandards","ppm_flag, ",NA
+"666","Neg_InternalStandards","230717_Smp_G5_Hom1_T96_B","Taurine, 2H4",11.81,14637562,0,1312594,-7,"Neg_InternalStandards","ppm_flag, ",NA
+"667","Neg_InternalStandards","230717_Smp_G5_Hom1_T96_C","Taurine, 2H4",11.78,8052736,0,739531,-7.3,"Neg_InternalStandards","ppm_flag, ",NA
+"668","Neg_InternalStandards","230717_Smp_G5_Hom2_C_A","Taurine, 2H4",11.6,8012977,0,827453,-8.1,"Neg_InternalStandards","ppm_flag, ",NA
+"669","Neg_InternalStandards","230717_Smp_G5_Hom2_C_B","Taurine, 2H4",11.65,10360173,0,979874,-7.4,"Neg_InternalStandards","ppm_flag, ",NA
+"670","Neg_InternalStandards","230717_Smp_G5_Hom2_C_C","Taurine, 2H4",11.61,10480729,0,1054570,-7.7,"Neg_InternalStandards","ppm_flag, ",NA
+"671","Neg_InternalStandards","230717_Smp_G5_Hom2_T0_A","Taurine, 2H4",11.64,7170795,0,728889,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"672","Neg_InternalStandards","230717_Smp_G5_Hom2_T0_B","Taurine, 2H4",11.69,8151974,0,809944,-8.1,"Neg_InternalStandards","ppm_flag, ",NA
+"673","Neg_InternalStandards","230717_Smp_G5_Hom2_T0_C","Taurine, 2H4",11.66,10453698,0,971694,-7.7,"Neg_InternalStandards","ppm_flag, ",NA
+"674","Neg_InternalStandards","230717_Smp_G5_Hom2_T6_A","Taurine, 2H4",11.66,9199540,0,886647,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"675","Neg_InternalStandards","230717_Smp_G5_Hom2_T6_B","Taurine, 2H4",11.69,8768573,0,877094,-7.4,"Neg_InternalStandards","ppm_flag, ",NA
+"676","Neg_InternalStandards","230717_Smp_G5_Hom2_T6_C","Taurine, 2H4",11.55,8176880,0,812807,-8.1,"Neg_InternalStandards","ppm_flag, ",NA
+"677","Neg_InternalStandards","230717_Smp_G5_Hom2_T12_A","Taurine, 2H4",11.61,9897906,0,970637,-7.8,"Neg_InternalStandards","ppm_flag, ",NA
+"678","Neg_InternalStandards","230717_Smp_G5_Hom2_T12_B","Taurine, 2H4",11.63,9741330,0,982135,-7.9,"Neg_InternalStandards","ppm_flag, ",NA
+"679","Neg_InternalStandards","230717_Smp_G5_Hom2_T12_C","Taurine, 2H4",11.65,8607901,0,869280,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"680","Neg_InternalStandards","230717_Smp_G5_Hom2_T24_A","Taurine, 2H4",11.5,8555799,0,860153,-8,"Neg_InternalStandards","ppm_flag, ",NA
+"681","Neg_InternalStandards","230717_Smp_G5_Hom2_T24_B","Taurine, 2H4",11.52,8503264,0,790987,-7.9,"Neg_InternalStandards","ppm_flag, ",NA
+"682","Neg_InternalStandards","230717_Smp_G5_Hom2_T24_C","Taurine, 2H4",11.64,8446965,0,833729,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"683","Neg_InternalStandards","230717_Smp_G5_Hom2_T48_A","Taurine, 2H4",11.72,9736134,0,880139,-7.8,"Neg_InternalStandards","ppm_flag, ",NA
+"684","Neg_InternalStandards","230717_Smp_G5_Hom2_T48_B","Taurine, 2H4",11.61,8782585,0,874988,-7.6,"Neg_InternalStandards","ppm_flag, ",NA
+"685","Neg_InternalStandards","230717_Smp_G5_Hom2_T48_C","Taurine, 2H4",11.62,9642281,0,1035250,-7.8,"Neg_InternalStandards","ppm_flag, ",NA
+"686","Neg_InternalStandards","230717_Smp_G5_Hom2_T96_A","Taurine, 2H4",11.55,6504753,0,581999,-7.9,"Neg_InternalStandards","ppm_flag, ",NA
+"687","Neg_InternalStandards","230717_Smp_G5_Hom2_T96_B","Taurine, 2H4",11.57,8381182,0,824502,-8,"Neg_InternalStandards","ppm_flag, ",NA
+"688","Neg_InternalStandards","230717_Smp_G5_Hom2_T96_C","Taurine, 2H4",11.72,6037169,0,619873,-7.5,"Neg_InternalStandards","ppm_flag, ",NA
+"689","13C_15N","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"690","13C_15N","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"691","13C_15N","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"692","13C_15N","230717_Std_4uMStdsMix1InH2O_4","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"693","13C_15N","230717_Std_4uMStdsMix1InH2O_5","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"694","13C_15N","230717_Std_4uMStdsMix1InH2O_6","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"695","13C_15N","230717_Std_4uMStdsMix1InMatrix1_1","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"696","13C_15N","230717_Std_4uMStdsMix1InMatrix1_2","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"697","13C_15N","230717_Std_4uMStdsMix1InMatrix1_3","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"698","13C_15N","230717_Std_4uMStdsMix1InMatrix2_4","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"699","13C_15N","230717_Std_4uMStdsMix1InMatrix2_5","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"700","13C_15N","230717_Std_4uMStdsMix1InMatrix2_6","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"701","13C_15N","230717_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"702","13C_15N","230717_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"703","13C_15N","230717_Std_4uMStdsMix2InH2O_3","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"704","13C_15N","230717_Std_4uMStdsMix2InH2O_4","unknown_C6H9NO4_neg_13C_15N",4.38,18902,0,10492,-2.5,"13C_15N","areamin_flag, ",NA
+"705","13C_15N","230717_Std_4uMStdsMix2InH2O_5","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"706","13C_15N","230717_Std_4uMStdsMix2InH2O_6","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"707","13C_15N","230717_Std_4uMStdsMix2InMatrix1_1","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"708","13C_15N","230717_Std_4uMStdsMix2InMatrix1_2","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"709","13C_15N","230717_Std_4uMStdsMix2InMatrix1_3","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"710","13C_15N","230717_Std_4uMStdsMix2InMatrix2_4","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"711","13C_15N","230717_Std_4uMStdsMix2InMatrix2_5","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"712","13C_15N","230717_Std_4uMStdsMix2InMatrix2_6","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"713","13C_15N","230717_Std_H2OinMatrix1_1","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"714","13C_15N","230717_Std_H2OinMatrix1_2","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"715","13C_15N","230717_Std_H2OinMatrix1_3","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"716","13C_15N","230717_Std_H2OinMatrix2_4","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"717","13C_15N","230717_Std_H2OinMatrix2_5","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"718","13C_15N","230717_Std_H2OinMatrix2_6","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"719","13C_15N","230717_Poo_G5-HomFate1_Full1","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"720","13C_15N","230717_Poo_G5-HomFate1_Full2","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"721","13C_15N","230717_Poo_G5-HomFate1_Full3","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"722","13C_15N","230717_Poo_G5-HomFate1_Full4","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"723","13C_15N","230717_Poo_G5-HomFate1_Full5","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"724","13C_15N","230717_Poo_G5-HomFate1_Full6","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"725","13C_15N","230717_Poo_G5-HomFate1_Full7","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"726","13C_15N","230717_Poo_G5-HomFate2_Full1","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"727","13C_15N","230717_Poo_G5-HomFate2_Full2","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"728","13C_15N","230717_Poo_G5-HomFate2_Full3","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"729","13C_15N","230717_Poo_G5-HomFate2_Full4","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"730","13C_15N","230717_Poo_G5-HomFate2_Full5","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"731","13C_15N","230717_Poo_G5-HomFate2_Full6","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"732","13C_15N","230717_Poo_G5-HomFate2_Full7","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"733","13C_15N","230717_Smp_G5_Hom1_C_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"734","13C_15N","230717_Smp_G5_Hom1_C_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"735","13C_15N","230717_Smp_G5_Hom1_C_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"736","13C_15N","230717_Smp_G5_Hom1_T0_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"737","13C_15N","230717_Smp_G5_Hom1_T0_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"738","13C_15N","230717_Smp_G5_Hom1_T0_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"739","13C_15N","230717_Smp_G5_Hom1_T6_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"740","13C_15N","230717_Smp_G5_Hom1_T6_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"741","13C_15N","230717_Smp_G5_Hom1_T6_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"742","13C_15N","230717_Smp_G5_Hom1_T12_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"743","13C_15N","230717_Smp_G5_Hom1_T12_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"744","13C_15N","230717_Smp_G5_Hom1_T12_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"745","13C_15N","230717_Smp_G5_Hom1_T24_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"746","13C_15N","230717_Smp_G5_Hom1_T24_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"747","13C_15N","230717_Smp_G5_Hom1_T24_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"748","13C_15N","230717_Smp_G5_Hom1_T48_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"749","13C_15N","230717_Smp_G5_Hom1_T48_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"750","13C_15N","230717_Smp_G5_Hom1_T48_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"751","13C_15N","230717_Smp_G5_Hom1_T96_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"752","13C_15N","230717_Smp_G5_Hom1_T96_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"753","13C_15N","230717_Smp_G5_Hom1_T96_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"754","13C_15N","230717_Smp_G5_Hom2_C_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"755","13C_15N","230717_Smp_G5_Hom2_C_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"756","13C_15N","230717_Smp_G5_Hom2_C_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"757","13C_15N","230717_Smp_G5_Hom2_T0_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"758","13C_15N","230717_Smp_G5_Hom2_T0_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"759","13C_15N","230717_Smp_G5_Hom2_T0_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"760","13C_15N","230717_Smp_G5_Hom2_T6_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"761","13C_15N","230717_Smp_G5_Hom2_T6_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"762","13C_15N","230717_Smp_G5_Hom2_T6_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"763","13C_15N","230717_Smp_G5_Hom2_T12_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"764","13C_15N","230717_Smp_G5_Hom2_T12_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"765","13C_15N","230717_Smp_G5_Hom2_T12_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"766","13C_15N","230717_Smp_G5_Hom2_T24_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"767","13C_15N","230717_Smp_G5_Hom2_T24_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"768","13C_15N","230717_Smp_G5_Hom2_T24_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"769","13C_15N","230717_Smp_G5_Hom2_T48_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"770","13C_15N","230717_Smp_G5_Hom2_T48_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"771","13C_15N","230717_Smp_G5_Hom2_T48_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"772","13C_15N","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"773","13C_15N","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"774","13C_15N","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO4_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"775","13C_15N","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"776","13C_15N","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"777","13C_15N","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"778","13C_15N","230717_Std_4uMStdsMix1InH2O_4","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"779","13C_15N","230717_Std_4uMStdsMix1InH2O_5","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"780","13C_15N","230717_Std_4uMStdsMix1InH2O_6","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"781","13C_15N","230717_Std_4uMStdsMix1InMatrix1_1","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"782","13C_15N","230717_Std_4uMStdsMix1InMatrix1_2","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"783","13C_15N","230717_Std_4uMStdsMix1InMatrix1_3","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"784","13C_15N","230717_Std_4uMStdsMix1InMatrix2_4","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"785","13C_15N","230717_Std_4uMStdsMix1InMatrix2_5","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"786","13C_15N","230717_Std_4uMStdsMix1InMatrix2_6","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"787","13C_15N","230717_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"788","13C_15N","230717_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"789","13C_15N","230717_Std_4uMStdsMix2InH2O_3","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"790","13C_15N","230717_Std_4uMStdsMix2InH2O_4","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"791","13C_15N","230717_Std_4uMStdsMix2InH2O_5","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"792","13C_15N","230717_Std_4uMStdsMix2InH2O_6","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"793","13C_15N","230717_Std_4uMStdsMix2InMatrix1_1","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"794","13C_15N","230717_Std_4uMStdsMix2InMatrix1_2","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"795","13C_15N","230717_Std_4uMStdsMix2InMatrix1_3","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"796","13C_15N","230717_Std_4uMStdsMix2InMatrix2_4","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"797","13C_15N","230717_Std_4uMStdsMix2InMatrix2_5","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"798","13C_15N","230717_Std_4uMStdsMix2InMatrix2_6","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"799","13C_15N","230717_Std_H2OinMatrix1_1","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"800","13C_15N","230717_Std_H2OinMatrix1_2","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"801","13C_15N","230717_Std_H2OinMatrix1_3","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"802","13C_15N","230717_Std_H2OinMatrix2_4","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"803","13C_15N","230717_Std_H2OinMatrix2_5","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"804","13C_15N","230717_Std_H2OinMatrix2_6","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"805","13C_15N","230717_Poo_G5-HomFate1_Full1","unknown_C6H9NO3_1_neg_13C_15N",11.2,226357,0,28221,-2,"13C_15N","",226357
+"806","13C_15N","230717_Poo_G5-HomFate1_Full2","unknown_C6H9NO3_1_neg_13C_15N",11.24,240669,0,25895,-1.4,"13C_15N","",240669
+"807","13C_15N","230717_Poo_G5-HomFate1_Full3","unknown_C6H9NO3_1_neg_13C_15N",11.19,273308,0,37924,-1.5,"13C_15N","",273308
+"808","13C_15N","230717_Poo_G5-HomFate1_Full4","unknown_C6H9NO3_1_neg_13C_15N",11.2,221085,0,30783,-1.2,"13C_15N","",221085
+"809","13C_15N","230717_Poo_G5-HomFate1_Full5","unknown_C6H9NO3_1_neg_13C_15N",11.16,108590,0,21282,-1.3,"13C_15N","",108590
+"810","13C_15N","230717_Poo_G5-HomFate1_Full6","unknown_C6H9NO3_1_neg_13C_15N",11.2,135712,0,30164,-1.4,"13C_15N","",135712
+"811","13C_15N","230717_Poo_G5-HomFate1_Full7","unknown_C6H9NO3_1_neg_13C_15N",11.12,211200,0,37100,-2,"13C_15N","",211200
+"812","13C_15N","230717_Poo_G5-HomFate2_Full1","unknown_C6H9NO3_1_neg_13C_15N",11.12,184234,0,33677,-2,"13C_15N","",184234
+"813","13C_15N","230717_Poo_G5-HomFate2_Full2","unknown_C6H9NO3_1_neg_13C_15N",11.07,182034,0,38207,-1.6,"13C_15N","",182034
+"814","13C_15N","230717_Poo_G5-HomFate2_Full3","unknown_C6H9NO3_1_neg_13C_15N",11.07,227744,0,35166,-1.8,"13C_15N","",227744
+"815","13C_15N","230717_Poo_G5-HomFate2_Full4","unknown_C6H9NO3_1_neg_13C_15N",11.08,198679,0,34996,-1.7,"13C_15N","",198679
+"816","13C_15N","230717_Poo_G5-HomFate2_Full5","unknown_C6H9NO3_1_neg_13C_15N",11.07,119670,0,33612,-1.7,"13C_15N","",119670
+"817","13C_15N","230717_Poo_G5-HomFate2_Full6","unknown_C6H9NO3_1_neg_13C_15N",11.06,154327,0,28734,-2.5,"13C_15N","",154327
+"818","13C_15N","230717_Poo_G5-HomFate2_Full7","unknown_C6H9NO3_1_neg_13C_15N",11,273437,0,37882,-2.3,"13C_15N","",273437
+"819","13C_15N","230717_Smp_G5_Hom1_C_A","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"820","13C_15N","230717_Smp_G5_Hom1_C_B","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"821","13C_15N","230717_Smp_G5_Hom1_C_C","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"822","13C_15N","230717_Smp_G5_Hom1_T0_A","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"823","13C_15N","230717_Smp_G5_Hom1_T0_B","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"824","13C_15N","230717_Smp_G5_Hom1_T0_C","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"825","13C_15N","230717_Smp_G5_Hom1_T6_A","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"826","13C_15N","230717_Smp_G5_Hom1_T6_B","unknown_C6H9NO3_1_neg_13C_15N",11.11,17526,0,8562,-0.2,"13C_15N","areamin_flag, ",NA
+"827","13C_15N","230717_Smp_G5_Hom1_T6_C","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"828","13C_15N","230717_Smp_G5_Hom1_T12_A","unknown_C6H9NO3_1_neg_13C_15N",11.29,56522,0,12821,-1.2,"13C_15N","",56522
+"829","13C_15N","230717_Smp_G5_Hom1_T12_B","unknown_C6H9NO3_1_neg_13C_15N",11.17,28888,0,15740,-1,"13C_15N","areamin_flag, ",NA
+"830","13C_15N","230717_Smp_G5_Hom1_T12_C","unknown_C6H9NO3_1_neg_13C_15N",11.16,110722,0,18503,-2.2,"13C_15N","",110722
+"831","13C_15N","230717_Smp_G5_Hom1_T24_A","unknown_C6H9NO3_1_neg_13C_15N",11.2,167834,0,33924,-1.7,"13C_15N","",167834
+"832","13C_15N","230717_Smp_G5_Hom1_T24_B","unknown_C6H9NO3_1_neg_13C_15N",11.24,218406,0,25864,-1.6,"13C_15N","",218406
+"833","13C_15N","230717_Smp_G5_Hom1_T24_C","unknown_C6H9NO3_1_neg_13C_15N",11.13,255983,0,34086,-2,"13C_15N","",255983
+"834","13C_15N","230717_Smp_G5_Hom1_T48_A","unknown_C6H9NO3_1_neg_13C_15N",11.2,389706,0,49475,-1.1,"13C_15N","",389706
+"835","13C_15N","230717_Smp_G5_Hom1_T48_B","unknown_C6H9NO3_1_neg_13C_15N",11.17,451964,0,54673,-2,"13C_15N","",451964
+"836","13C_15N","230717_Smp_G5_Hom1_T48_C","unknown_C6H9NO3_1_neg_13C_15N",11.16,379862,0,49535,-1.5,"13C_15N","",379862
+"837","13C_15N","230717_Smp_G5_Hom1_T96_A","unknown_C6H9NO3_1_neg_13C_15N",11.14,694623,0,84968,-1.8,"13C_15N","",694623
+"838","13C_15N","230717_Smp_G5_Hom1_T96_B","unknown_C6H9NO3_1_neg_13C_15N",11.17,906804,0,102856,-1.1,"13C_15N","",906804
+"839","13C_15N","230717_Smp_G5_Hom1_T96_C","unknown_C6H9NO3_1_neg_13C_15N",11.17,895942,0,110774,-1.4,"13C_15N","",895942
+"840","13C_15N","230717_Smp_G5_Hom2_C_A","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"841","13C_15N","230717_Smp_G5_Hom2_C_B","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"842","13C_15N","230717_Smp_G5_Hom2_C_C","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"843","13C_15N","230717_Smp_G5_Hom2_T0_A","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"844","13C_15N","230717_Smp_G5_Hom2_T0_B","unknown_C6H9NO3_1_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"845","13C_15N","230717_Smp_G5_Hom2_T0_C","unknown_C6H9NO3_1_neg_13C_15N",11.07,9683,0,8552,-1.6,"13C_15N","areamin_flag, ",NA
+"846","13C_15N","230717_Smp_G5_Hom2_T6_A","unknown_C6H9NO3_1_neg_13C_15N",11.14,136807,0,24240,-1,"13C_15N","",136807
+"847","13C_15N","230717_Smp_G5_Hom2_T6_B","unknown_C6H9NO3_1_neg_13C_15N",11.12,77220,0,18542,-1.7,"13C_15N","",77220
+"848","13C_15N","230717_Smp_G5_Hom2_T6_C","unknown_C6H9NO3_1_neg_13C_15N",10.99,93029,0,18680,-1.9,"13C_15N","",93029
+"849","13C_15N","230717_Smp_G5_Hom2_T12_A","unknown_C6H9NO3_1_neg_13C_15N",11.05,42098,0,6805,-1.4,"13C_15N","",42098
+"850","13C_15N","230717_Smp_G5_Hom2_T12_B","unknown_C6H9NO3_1_neg_13C_15N",11.07,69499,0,19254,-0.5,"13C_15N","",69499
+"851","13C_15N","230717_Smp_G5_Hom2_T12_C","unknown_C6H9NO3_1_neg_13C_15N",11.11,141964,0,17246,-1.6,"13C_15N","",141964
+"852","13C_15N","230717_Smp_G5_Hom2_T24_A","unknown_C6H9NO3_1_neg_13C_15N",10.98,237245,0,36609,-2.3,"13C_15N","",237245
+"853","13C_15N","230717_Smp_G5_Hom2_T24_B","unknown_C6H9NO3_1_neg_13C_15N",11.01,666257,0,86214,-2.2,"13C_15N","",666257
+"854","13C_15N","230717_Smp_G5_Hom2_T24_C","unknown_C6H9NO3_1_neg_13C_15N",11.07,217626,0,40037,-1.6,"13C_15N","",217626
+"855","13C_15N","230717_Smp_G5_Hom2_T48_A","unknown_C6H9NO3_1_neg_13C_15N",11.13,580682,0,71624,-2,"13C_15N","",580682
+"856","13C_15N","230717_Smp_G5_Hom2_T48_B","unknown_C6H9NO3_1_neg_13C_15N",11.06,378188,0,51967,-1.5,"13C_15N","",378188
+"857","13C_15N","230717_Smp_G5_Hom2_T48_C","unknown_C6H9NO3_1_neg_13C_15N",11.07,1399255,0,182932,-2,"13C_15N","",1399255
+"858","13C_15N","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO3_1_neg_13C_15N",11.04,31269,0,17143,0.1,"13C_15N","areamin_flag, ",NA
+"859","13C_15N","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO3_1_neg_13C_15N",10.93,13440,0,8867,-0.2,"13C_15N","areamin_flag, ",NA
+"860","13C_15N","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO3_1_neg_13C_15N",11.17,11353,0,7947,-0.3,"13C_15N","areamin_flag, ",NA
+"861","13C_15N","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"862","13C_15N","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"863","13C_15N","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"864","13C_15N","230717_Std_4uMStdsMix1InH2O_4","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"865","13C_15N","230717_Std_4uMStdsMix1InH2O_5","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"866","13C_15N","230717_Std_4uMStdsMix1InH2O_6","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"867","13C_15N","230717_Std_4uMStdsMix1InMatrix1_1","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"868","13C_15N","230717_Std_4uMStdsMix1InMatrix1_2","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"869","13C_15N","230717_Std_4uMStdsMix1InMatrix1_3","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"870","13C_15N","230717_Std_4uMStdsMix1InMatrix2_4","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"871","13C_15N","230717_Std_4uMStdsMix1InMatrix2_5","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"872","13C_15N","230717_Std_4uMStdsMix1InMatrix2_6","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"873","13C_15N","230717_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"874","13C_15N","230717_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"875","13C_15N","230717_Std_4uMStdsMix2InH2O_3","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"876","13C_15N","230717_Std_4uMStdsMix2InH2O_4","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"877","13C_15N","230717_Std_4uMStdsMix2InH2O_5","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"878","13C_15N","230717_Std_4uMStdsMix2InH2O_6","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"879","13C_15N","230717_Std_4uMStdsMix2InMatrix1_1","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"880","13C_15N","230717_Std_4uMStdsMix2InMatrix1_2","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"881","13C_15N","230717_Std_4uMStdsMix2InMatrix1_3","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"882","13C_15N","230717_Std_4uMStdsMix2InMatrix2_4","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"883","13C_15N","230717_Std_4uMStdsMix2InMatrix2_5","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"884","13C_15N","230717_Std_4uMStdsMix2InMatrix2_6","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"885","13C_15N","230717_Std_H2OinMatrix1_1","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"886","13C_15N","230717_Std_H2OinMatrix1_2","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"887","13C_15N","230717_Std_H2OinMatrix1_3","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"888","13C_15N","230717_Std_H2OinMatrix2_4","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"889","13C_15N","230717_Std_H2OinMatrix2_5","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"890","13C_15N","230717_Std_H2OinMatrix2_6","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"891","13C_15N","230717_Poo_G5-HomFate1_Full1","unknown_C6H9NO3_2_neg_13C_15N",12.21,81316,0,23799,-1.6,"13C_15N","",81316
+"892","13C_15N","230717_Poo_G5-HomFate1_Full2","unknown_C6H9NO3_2_neg_13C_15N",12.27,97834,0,28524,-0.9,"13C_15N","",97834
+"893","13C_15N","230717_Poo_G5-HomFate1_Full3","unknown_C6H9NO3_2_neg_13C_15N",12.24,72205,0,21149,-0.4,"13C_15N","",72205
+"894","13C_15N","230717_Poo_G5-HomFate1_Full4","unknown_C6H9NO3_2_neg_13C_15N",12.24,55029,0,25222,-0.9,"13C_15N","",55029
+"895","13C_15N","230717_Poo_G5-HomFate1_Full5","unknown_C6H9NO3_2_neg_13C_15N",12.18,17434,0,15360,-0.4,"13C_15N","areamin_flag, ",NA
+"896","13C_15N","230717_Poo_G5-HomFate1_Full6","unknown_C6H9NO3_2_neg_13C_15N",12.23,13687,0,8997,0.2,"13C_15N","areamin_flag, ",NA
+"897","13C_15N","230717_Poo_G5-HomFate1_Full7","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"898","13C_15N","230717_Poo_G5-HomFate2_Full1","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"899","13C_15N","230717_Poo_G5-HomFate2_Full2","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"900","13C_15N","230717_Poo_G5-HomFate2_Full3","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"901","13C_15N","230717_Poo_G5-HomFate2_Full4","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"902","13C_15N","230717_Poo_G5-HomFate2_Full5","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"903","13C_15N","230717_Poo_G5-HomFate2_Full6","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"904","13C_15N","230717_Poo_G5-HomFate2_Full7","unknown_C6H9NO3_2_neg_13C_15N",12.04,13211,0,13884,0.2,"13C_15N","areamin_flag, ",NA
+"905","13C_15N","230717_Smp_G5_Hom1_C_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"906","13C_15N","230717_Smp_G5_Hom1_C_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"907","13C_15N","230717_Smp_G5_Hom1_C_C","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"908","13C_15N","230717_Smp_G5_Hom1_T0_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"909","13C_15N","230717_Smp_G5_Hom1_T0_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"910","13C_15N","230717_Smp_G5_Hom1_T0_C","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"911","13C_15N","230717_Smp_G5_Hom1_T6_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"912","13C_15N","230717_Smp_G5_Hom1_T6_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"913","13C_15N","230717_Smp_G5_Hom1_T6_C","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"914","13C_15N","230717_Smp_G5_Hom1_T12_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"915","13C_15N","230717_Smp_G5_Hom1_T12_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"916","13C_15N","230717_Smp_G5_Hom1_T12_C","unknown_C6H9NO3_2_neg_13C_15N",12.19,17772,0,11058,1.2,"13C_15N","areamin_flag, ",NA
+"917","13C_15N","230717_Smp_G5_Hom1_T24_A","unknown_C6H9NO3_2_neg_13C_15N",12.16,97985,0,23266,-2.2,"13C_15N","",97985
+"918","13C_15N","230717_Smp_G5_Hom1_T24_B","unknown_C6H9NO3_2_neg_13C_15N",12.18,288670,0,35357,-0.6,"13C_15N","",288670
+"919","13C_15N","230717_Smp_G5_Hom1_T24_C","unknown_C6H9NO3_2_neg_13C_15N",12.22,242557,0,46666,-1.5,"13C_15N","",242557
+"920","13C_15N","230717_Smp_G5_Hom1_T48_A","unknown_C6H9NO3_2_neg_13C_15N",12.2,284486,0,37788,-1.1,"13C_15N","",284486
+"921","13C_15N","230717_Smp_G5_Hom1_T48_B","unknown_C6H9NO3_2_neg_13C_15N",12.18,313854,0,41421,-1.2,"13C_15N","",313854
+"922","13C_15N","230717_Smp_G5_Hom1_T48_C","unknown_C6H9NO3_2_neg_13C_15N",12.19,311918,0,44885,-1,"13C_15N","",311918
+"923","13C_15N","230717_Smp_G5_Hom1_T96_A","unknown_C6H9NO3_2_neg_13C_15N",12.23,186109,0,34294,-1,"13C_15N","",186109
+"924","13C_15N","230717_Smp_G5_Hom1_T96_B","unknown_C6H9NO3_2_neg_13C_15N",12.22,166191,0,29688,-0.7,"13C_15N","",166191
+"925","13C_15N","230717_Smp_G5_Hom1_T96_C","unknown_C6H9NO3_2_neg_13C_15N",12.25,91993,0,22331,-0.5,"13C_15N","",91993
+"926","13C_15N","230717_Smp_G5_Hom2_C_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"927","13C_15N","230717_Smp_G5_Hom2_C_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"928","13C_15N","230717_Smp_G5_Hom2_C_C","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"929","13C_15N","230717_Smp_G5_Hom2_T0_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"930","13C_15N","230717_Smp_G5_Hom2_T0_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"931","13C_15N","230717_Smp_G5_Hom2_T0_C","unknown_C6H9NO3_2_neg_13C_15N",12.1,19689,0,14055,-0.8,"13C_15N","areamin_flag, ",NA
+"932","13C_15N","230717_Smp_G5_Hom2_T6_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"933","13C_15N","230717_Smp_G5_Hom2_T6_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"934","13C_15N","230717_Smp_G5_Hom2_T6_C","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"935","13C_15N","230717_Smp_G5_Hom2_T12_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"936","13C_15N","230717_Smp_G5_Hom2_T12_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"937","13C_15N","230717_Smp_G5_Hom2_T12_C","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"938","13C_15N","230717_Smp_G5_Hom2_T24_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"939","13C_15N","230717_Smp_G5_Hom2_T24_B","unknown_C6H9NO3_2_neg_13C_15N",12.04,394533,0,40133,-1.8,"13C_15N","",394533
+"940","13C_15N","230717_Smp_G5_Hom2_T24_C","unknown_C6H9NO3_2_neg_13C_15N",12.09,30024,0,22425,-1,"13C_15N","areamin_flag, ",NA
+"941","13C_15N","230717_Smp_G5_Hom2_T48_A","unknown_C6H9NO3_2_neg_13C_15N",12.19,158666,0,32847,-0.7,"13C_15N","",158666
+"942","13C_15N","230717_Smp_G5_Hom2_T48_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"943","13C_15N","230717_Smp_G5_Hom2_T48_C","unknown_C6H9NO3_2_neg_13C_15N",12.09,572793,0,62696,-1.4,"13C_15N","",572793
+"944","13C_15N","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"945","13C_15N","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"946","13C_15N","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO3_2_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"947","13C_15N","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"948","13C_15N","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"949","13C_15N","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"950","13C_15N","230717_Std_4uMStdsMix1InH2O_4","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"951","13C_15N","230717_Std_4uMStdsMix1InH2O_5","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"952","13C_15N","230717_Std_4uMStdsMix1InH2O_6","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"953","13C_15N","230717_Std_4uMStdsMix1InMatrix1_1","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"954","13C_15N","230717_Std_4uMStdsMix1InMatrix1_2","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"955","13C_15N","230717_Std_4uMStdsMix1InMatrix1_3","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"956","13C_15N","230717_Std_4uMStdsMix1InMatrix2_4","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"957","13C_15N","230717_Std_4uMStdsMix1InMatrix2_5","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"958","13C_15N","230717_Std_4uMStdsMix1InMatrix2_6","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"959","13C_15N","230717_Std_4uMStdsMix2InH2O_1","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"960","13C_15N","230717_Std_4uMStdsMix2InH2O_2","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"961","13C_15N","230717_Std_4uMStdsMix2InH2O_3","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"962","13C_15N","230717_Std_4uMStdsMix2InH2O_4","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"963","13C_15N","230717_Std_4uMStdsMix2InH2O_5","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"964","13C_15N","230717_Std_4uMStdsMix2InH2O_6","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"965","13C_15N","230717_Std_4uMStdsMix2InMatrix1_1","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"966","13C_15N","230717_Std_4uMStdsMix2InMatrix1_2","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"967","13C_15N","230717_Std_4uMStdsMix2InMatrix1_3","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"968","13C_15N","230717_Std_4uMStdsMix2InMatrix2_4","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"969","13C_15N","230717_Std_4uMStdsMix2InMatrix2_5","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"970","13C_15N","230717_Std_4uMStdsMix2InMatrix2_6","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"971","13C_15N","230717_Std_H2OinMatrix1_1","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"972","13C_15N","230717_Std_H2OinMatrix1_2","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"973","13C_15N","230717_Std_H2OinMatrix1_3","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"974","13C_15N","230717_Std_H2OinMatrix2_4","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"975","13C_15N","230717_Std_H2OinMatrix2_5","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"976","13C_15N","230717_Std_H2OinMatrix2_6","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"977","13C_15N","230717_Poo_G5-HomFate1_Full1","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"978","13C_15N","230717_Poo_G5-HomFate1_Full2","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"979","13C_15N","230717_Poo_G5-HomFate1_Full3","unknown_C6H9NO3_3_neg_13C_15N",13.03,20730,0,15716,-1.7,"13C_15N","areamin_flag, ",NA
+"980","13C_15N","230717_Poo_G5-HomFate1_Full4","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"981","13C_15N","230717_Poo_G5-HomFate1_Full5","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"982","13C_15N","230717_Poo_G5-HomFate1_Full6","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"983","13C_15N","230717_Poo_G5-HomFate1_Full7","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"984","13C_15N","230717_Poo_G5-HomFate2_Full1","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"985","13C_15N","230717_Poo_G5-HomFate2_Full2","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"986","13C_15N","230717_Poo_G5-HomFate2_Full3","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"987","13C_15N","230717_Poo_G5-HomFate2_Full4","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"988","13C_15N","230717_Poo_G5-HomFate2_Full5","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"989","13C_15N","230717_Poo_G5-HomFate2_Full6","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"990","13C_15N","230717_Poo_G5-HomFate2_Full7","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"991","13C_15N","230717_Smp_G5_Hom1_C_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"992","13C_15N","230717_Smp_G5_Hom1_C_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"993","13C_15N","230717_Smp_G5_Hom1_C_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"994","13C_15N","230717_Smp_G5_Hom1_T0_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"995","13C_15N","230717_Smp_G5_Hom1_T0_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"996","13C_15N","230717_Smp_G5_Hom1_T0_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"997","13C_15N","230717_Smp_G5_Hom1_T6_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"998","13C_15N","230717_Smp_G5_Hom1_T6_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"999","13C_15N","230717_Smp_G5_Hom1_T6_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1000","13C_15N","230717_Smp_G5_Hom1_T12_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1001","13C_15N","230717_Smp_G5_Hom1_T12_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1002","13C_15N","230717_Smp_G5_Hom1_T12_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1003","13C_15N","230717_Smp_G5_Hom1_T24_A","unknown_C6H9NO3_3_neg_13C_15N",13.01,12878,0,12636,-1.3,"13C_15N","areamin_flag, ",NA
+"1004","13C_15N","230717_Smp_G5_Hom1_T24_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1005","13C_15N","230717_Smp_G5_Hom1_T24_C","unknown_C6H9NO3_3_neg_13C_15N",13.06,14700,0,15082,-2.7,"13C_15N","areamin_flag, ",NA
+"1006","13C_15N","230717_Smp_G5_Hom1_T48_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1007","13C_15N","230717_Smp_G5_Hom1_T48_B","unknown_C6H9NO3_3_neg_13C_15N",13.09,30151,0,25909,-0.4,"13C_15N","areamin_flag, ",NA
+"1008","13C_15N","230717_Smp_G5_Hom1_T48_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1009","13C_15N","230717_Smp_G5_Hom1_T96_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1010","13C_15N","230717_Smp_G5_Hom1_T96_B","unknown_C6H9NO3_3_neg_13C_15N",13.07,14191,0,13147,-0.1,"13C_15N","areamin_flag, ",NA
+"1011","13C_15N","230717_Smp_G5_Hom1_T96_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1012","13C_15N","230717_Smp_G5_Hom2_C_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1013","13C_15N","230717_Smp_G5_Hom2_C_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1014","13C_15N","230717_Smp_G5_Hom2_C_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1015","13C_15N","230717_Smp_G5_Hom2_T0_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1016","13C_15N","230717_Smp_G5_Hom2_T0_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1017","13C_15N","230717_Smp_G5_Hom2_T0_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1018","13C_15N","230717_Smp_G5_Hom2_T6_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1019","13C_15N","230717_Smp_G5_Hom2_T6_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1020","13C_15N","230717_Smp_G5_Hom2_T6_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1021","13C_15N","230717_Smp_G5_Hom2_T12_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1022","13C_15N","230717_Smp_G5_Hom2_T12_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1023","13C_15N","230717_Smp_G5_Hom2_T12_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1024","13C_15N","230717_Smp_G5_Hom2_T24_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1025","13C_15N","230717_Smp_G5_Hom2_T24_B","unknown_C6H9NO3_3_neg_13C_15N",12.9,31012,0,15649,-2.1,"13C_15N","areamin_flag, ",NA
+"1026","13C_15N","230717_Smp_G5_Hom2_T24_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1027","13C_15N","230717_Smp_G5_Hom2_T48_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1028","13C_15N","230717_Smp_G5_Hom2_T48_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1029","13C_15N","230717_Smp_G5_Hom2_T48_C","unknown_C6H9NO3_3_neg_13C_15N",13,15714,0,15747,-2.3,"13C_15N","areamin_flag, ",NA
+"1030","13C_15N","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1031","13C_15N","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
+"1032","13C_15N","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO3_3_neg_13C_15N",NA,NA,NA,NA,NA,"13C_15N","",NA
