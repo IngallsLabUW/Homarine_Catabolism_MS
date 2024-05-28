@@ -11,8 +11,9 @@ library(here)
 source(here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R"))
 
 # SET FILE LOCS ----
-meta_data_loc <- here("data", "raw", "metabolomics", "g4")
-qc_data_loc <- here("data", "intermediate", "metabolomics", "g4", "targeted")
+meta_data_loc_g4 <- here("data", "raw", "metabolomics", "g4")
+meta_data_loc <- here("data", "raw", "metabolomics", "G5")
+qc_data_loc <- here("data", "intermediate", "metabolomics", "g5", "targeted")
 bmis_checks_loc <- here(qc_data_loc, "BMIS_checks")
 
 # MAKE DIR FOR BMIS CHECKS
@@ -35,7 +36,7 @@ BMIS_results <- BMIS(
     "sample_key.csv"
   ),
   is_names_file = here(
-    meta_data_loc,
+      meta_data_loc_g4,
     "is_names_particulate.csv"
   ),
   dat_pos_file = here(
