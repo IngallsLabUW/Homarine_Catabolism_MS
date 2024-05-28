@@ -1,16 +1,16 @@
-# Purpose:  Combine particulate, dissolved data for targeted data
+# Purpose:  Combine particulate data for targeted data
 
 # History:
 # Date	     Remarks
-# 20240415   K Heal started script for Rpom, using Obi1 as template
+# 20240415   K Heal started script for G5
 
 # PACKAGES ----
 library(tidyverse)
 library(here)
 
 # Read in file  -----
-qc_data_loc <- here("data", "intermediate", "metabolomics", "g4", "targeted")
-meta_data_loc <- here("data", "raw", "metabolomics", "g4")
+qc_data_loc <- here("data", "intermediate", "metabolomics", "g5", "targeted")
+meta_data_loc <- here("data", "raw", "metabolomics", "g5")
 
 dat_part_filename <- here(qc_data_loc, "BMISd_HILIC_Particulate.csv")
 sample_key_filename <- here(meta_data_loc, "sample_key.csv")
@@ -50,17 +50,17 @@ mf_data <- read_csv(
 )
 dat_combined3 <- dat_combined2 %>%
   left_join(mf_data, by = join_by(mass_feature, z)) %>%
-  mutate(timepoint = str_extract(replicate_name, "_t\\d+") %>%
-             str_replace("_t", "") %>%
+  mutate(timepoint = str_extract(replicate_name, "_T\\d+") %>%
+             str_replace("_T", "") %>%
              as.numeric()) %>%
-    mutate(experiment_id = str_extract(replicate_name, "G4_\\d+")) %>%
+    mutate(experiment_id = str_extract(replicate_name, "Hom\\d") %>%
+               str_replace("Hom", "G5")) %>%
     mutate(treatment = case_when(
         str_detect(replicate_name, "Poo") ~ NA_character_,
-      str_detect(treatment, "MethylHomFate") ~ "Homarine",
+      str_detect(treatment, "^T\\d+") ~ "Homarine",
       str_detect(treatment, "Control") ~ "Control"
     ))
 
-glimpse(dat_combined3)
 # pivot wider
 dat_combined_wide <- dat_combined3 %>%
   pivot_wider(
