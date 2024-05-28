@@ -37,7 +37,7 @@ remove(list = ls())
 Combines the BMISd targeted data from both HILIC particulate positive and negative
 Writes out the combined and tidied data into here("data", "intermediate", "metabolomics", "g4", "targeted")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
-source(here("analysis", "g4_metabolomics", "0103_Combine_Tidy.R"))
+source(here("analysis", "g5_metabolomics", "0103_Combine_Tidy.R"))
 remove(list = ls())
 ```
 
