@@ -1,21 +1,16 @@
-# PURPOSE: combine and tidy the untargeted data with the targeted data
-# 20240313  KRH moving from Obi1-specific repo
+# PURPOSE: make tile plots of the enrichment of core metabolites and conserved intermediates
+# 20240528  KRH Making a tile plot of the enrichment of core metabolites and conserved intermediates
 
 # PACKAGES & SPECIAL FUNCTIONS ----
 library(tidyverse)
-library(janitor)
-library(viridis)
-library(broom)
-library(coin)
 library(here)
-library(gghighlight)
-
-#TODO:
-# Figure out where rpom particulate homarine data are?
+library(patchwork)
+library(scico)
 
 # SET FILE LOCATIONS  -----
 rpom_data_dir <- here("data", "intermediate", "metabolomics", "rpom")
 obi1_dat_dir <- here("data", "intermediate", "metabolomics", "obi1")
+g4_dat_dir <- here("data", "intermediate", "metabolomics", "g4")
 
 # Read in files  -----
 rpom_dat <- read_csv(
@@ -36,98 +31,142 @@ obi1_dat <- read_csv(
     mutate(
         data_origin = "obi1"
 )
+g4_dat <- read_csv(
+    here(
+        g4_dat_dir,
+        "enrichment_summary.csv"
+    ), show_col_types = FALSE
+) %>%
+    mutate(
+        data_origin = "g4"
+)
 
 # Combine data -----
-dat_cmb <- bind_rows(rpom_dat, obi1_dat)
+dat_cmb <- bind_rows(rpom_dat, obi1_dat) %>%
+    bind_rows(g4_dat)
 
 # Pull out mass features of interest ------
 mass_feature_oi <- c(
     #"Homarine",
     "N-Methyl-L-glutamic acid",
     "n-methyl glutamine",
+    "n-methyl glutamine_D3",
     "n-methyl glutamic acid",
+    "n-methyl glutamic acid_D3",
     "unknown_C6H9NO3_1_neg",
+    "unknown_C6H9NO3_1_neg_D3",
     "unknown_C6H9NO3_2_neg",
+    "unknown_C6H9NO3_2_neg_D3",
     "unknown_C6H9NO3_3_neg",
+    "unknown_C6H9NO3_3_neg_D3",
     "unknown_C6H9NO4_neg",
+    "unknown_C6H9NO4_neg_D3",
     "unknown_C6H9NO4_pos",
+    "unknown_C6H9NO4_pos_D3",
     "unknown_C6H9NO4_pos_early",
-    "unknown_C7H9NO5_pos"
+    "unknown_C6H9NO4_pos_early_D3",
+    "unknown_C7H9NO5_pos",
+    "unknown_C7H9NO5_pos_D3"
     )
 
-# Plot Homarine and core metabs' enrichments as an example
+# Pull out particulate data and the core metabolites
 dat_sub <- dat_cmb %>%
     filter((core_metabolite == "core" &
-                sample_fraction == "Particulate") | (mass_feature %in% mass_feature_oi))
-
+                sample_fraction == "Particulate") | (mass_feature %in% mass_feature_oi)) %>%
+    filter(sample_fraction == "Particulate")
 
 # pivot longer, use _h or _hNH4 as the suffix
 dat_long <- pivot_longer(
     dat_sub %>%
-        select(mass_feature, core_metabolite, data_origin, sample_fraction, med_fc_h, med_fc_hNH4),
+        select(mass_feature, core_metabolite, data_origin, sample_fraction, med_fc_h, med_fc_hNH4, experiment_id, timepoint),
     cols = contains("med_fc"),
     names_to = "treatment",
     values_to = "enrichment",
     names_pattern = "med_fc_(.*)"
 )
 
+# Summarize the core metabolites' max and min values
+dat_long_core <- dat_long %>%
+    filter(core_metabolite == "core") %>%
+    group_by(data_origin, sample_fraction, treatment, experiment_id, timepoint) %>%
+    filter(!is.na(enrichment)) %>%
+        summarize(
+        core_median = median(enrichment, na.rm = TRUE),
+        core_min = min(enrichment, na.rm = TRUE),
+        core_max = max(enrichment, na.rm = TRUE)
+    ) %>%
+    pivot_longer(
+        cols = c(core_median, core_min, core_max),
+        names_to = "mass_feature",
+        values_to = "enrichment"
+    )
+
+# Summarize pvalues
 dat_long2 <- pivot_longer(
     dat_sub %>%
-        select(mass_feature, core_metabolite, data_origin, sample_fraction, med_pvalue_h, med_pvalue_hNH4),
+        select(mass_feature, core_metabolite, data_origin, sample_fraction, med_pvalue_h, med_pvalue_hNH4, experiment_id, timepoint),
     cols = contains("med_pvalue"),
     names_to = "treatment",
     values_to = "q_value",
     names_pattern = "med_pvalue_(.*)"
 )
-dat_long <- left_join(dat_long, dat_long2, by = c("mass_feature", "core_metabolite", "data_origin", "sample_fraction", "treatment")) %>%
-    # Rename "N-Methyl-L-glutamic acid" to "n-methyl glutamic acid"
-    mutate(mass_feature = ifelse(mass_feature == "N-Methyl-L-glutamic acid", "n-methyl glutamic acid", mass_feature)) %>%
-    mutate(p_value_flag = ifelse(q_value < 0.05, "significant", "not significant"))
 
-g <- ggplot() +
-    geom_point(
-        data = dat_long %>%
-            filter(core_metabolite == "core"),
-        aes(
-            shape = sample_fraction,
-            y = log2(enrichment),
-            x = treatment
-        ),
-        color = "grey",
-        alpha = 0.5,
-        width = 0.1,
-        position = position_dodge2(width = 0.1, preserve = "single")) +
-    geom_point(
-        data = dat_long %>%
-            filter(core_metabolite == "non-core"),
-        aes(
-            shape = sample_fraction,
-            color = mass_feature,
-            y = log2(enrichment),
-            x = treatment
-        ),
-        size = 3,
-        position = position_dodge2(width = 0.2, preserve = "single")) +
-    facet_wrap(facets = vars(data_origin)) +
-    # use good colors for discrete variables
-    scale_color_brewer(palette = "Set1")+
-    theme_bw()
-g
+dat_long_plot <- dat_long %>%
+    left_join(dat_long2, by = c("mass_feature", "core_metabolite", "data_origin", "sample_fraction", "treatment", "experiment_id", "timepoint")) %>%
+    mutate(mass_feature = ifelse(mass_feature == "N-Methyl-L-glutamic acid", "n-methyl glutamic acid", mass_feature)) %>%
+    mutate(p_value_flag = ifelse(q_value < 0.05, "significant", "not significant")) %>%
+    mutate(enrichment = ifelse(enrichment > 2^10, 2^10, enrichment)) %>%
+    filter(core_metabolite != "core") %>%
+    bind_rows(dat_long_core)
 
 # Make a tile plot, with y as mass_feature, x as treatment, and color as enrichment
-# use a color palette that is centered at 0 (grey for 0)
+my_fill_scale <- scale_fill_scico(palette = 'vik',
+                                midpoint = 0,
+                                limits = c(-3.5, 10))
 g2 <- ggplot() +
     geom_tile(
-        data = dat_long ,
+        data = dat_long_plot  %>%
+            filter(data_origin %in% c("rpom", "obi1")),
         aes(
             fill = log2(enrichment),
             y = mass_feature,
-            x = interaction(treatment, sample_fraction)
+            x = treatment
         ),
         color = "black",
         width = 0.9,
         height = 0.9) +
     facet_wrap(facets = vars(data_origin)) +
-    scale_fill_viridis_c(option = "magma", na.value = "grey") +
+    my_fill_scale +
     theme_bw()
 g2
+
+g3 <- ggplot() +
+    geom_tile(
+        data = dat_long_plot  %>%
+            filter(data_origin %in% c("g4")) %>%
+            filter(treatment == "h") %>%
+            filter(!(mass_feature %in% c(
+                "unknown_C6H9NO3_3_neg",
+                "unknown_C6H9NO3_1_neg",
+                "n-methyl glutamine",
+                "n-methyl glutamic acid"
+            ))),
+        aes(
+            fill = log2(enrichment),
+            y = mass_feature,
+            x = factor(timepoint)
+        ),
+        color = "black",
+        width = 0.9,
+        height = 0.9) +
+    facet_wrap(facets = vars(experiment_id)) +
+    my_fill_scale +
+    theme_bw()
+g4 <- g2 + g3 +
+    plot_layout(
+        guides = "collect",
+        axis_title = "collect",
+        ncol = 2,
+        widths = c(1, 1)
+    )
+g4
