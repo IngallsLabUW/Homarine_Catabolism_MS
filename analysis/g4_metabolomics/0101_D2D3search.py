@@ -4,10 +4,10 @@ sys.path.append("./")
 import numpy as np
 import pandas as pd
 from corems.mass_spectra.input.mzml import MZMLSpectraParser
-from corems.mass_spectra.output.export import Lipidomics_Export
 from pathlib import Path
 from scipy.spatial import KDTree
 from scipy import sparse
+from corems.mass_spectra.output.export import LCMSExport
 
 
 def instantiate_lcms_obj(file_in, verbose):
@@ -50,11 +50,17 @@ def set_params_on_lcms_obj(myLCMSobj, thresh):
     """
     ## persistent homology parameters
     myLCMSobj.parameters.lc_ms.peak_picking_method = "persistent homology"
-    myLCMSobj.parameters.lc_ms.ph_inten_min = myLCMSobj._ms_unprocessed[1].intensity.max()*thresh
-    myLCMSobj.parameters.lc_ms.ph_persis_min = myLCMSobj._ms_unprocessed[1].intensity.max()*thresh
+    myLCMSobj.parameters.lc_ms.ph_inten_min_rel = thresh*10
+    myLCMSobj.parameters.lc_ms.ph_persis_min_rel = thresh
     myLCMSobj.parameters.lc_ms.ph_smooth_it = 0
     myLCMSobj.parameters.lc_ms.mass_feature_cluster_mz_tolerance_rel = 5*10**-6
     myLCMSobj.parameters.lc_ms.mass_feature_cluster_rt_tolerance = 1
+    myLCMSobj.parameters.mass_spectrum.noise_threshold_method = "relative_abundance"
+    myLCMSobj.parameters.mass_spectrum.noise_threshold_min_relative_abundance = 1
+    myLCMSobj.parameters.mass_spectrum.noise_min_mz = 0
+    myLCMSobj.parameters.mass_spectrum.noise_max_mz = 2500
+    myLCMSobj.parameters.mass_spectrum.min_picking_mz = 0
+    myLCMSobj.parameters.mass_spectrum.max_picking_mz = 2500
 
 def signal_processing_lcms(myLCMSobj, verbose):
     """Signal processing for LCMS object.  
@@ -73,8 +79,9 @@ def signal_processing_lcms(myLCMSobj, verbose):
     None, processes the LCMS object    
     """
     # Find mass features, cluster, and integrate them.  Then annotate pairs of mass features that are c13 iso pairs.
-    myLCMSobj.find_mass_features(verbose = verbose) 
-    myLCMSobj.integrate_mass_features(drop_if_fail = True)
+    myLCMSobj.find_mass_features(verbose=False)
+    myLCMSobj.cluster_mass_features(verbose=False)
+    myLCMSobj.integrate_mass_features(drop_if_fail=True)
 
 def find_H_isos(myLCMSobj, D):
     """Find D2 pairs in the LCMS object.  
@@ -104,7 +111,7 @@ def find_H_isos(myLCMSobj, D):
     mf_df = mf_df.sort_values(by=['mz']).reset_index(drop=True).copy()
 
     mz_diff = 1.006276745946*D # D2 mass difference
-    tol = [mf_df['mz'].median()*myLCMSobj.parameters.lc_ms.mass_feature_cluster_mz_tolerance_rel , myLCMSobj.parameters.lc_ms.mass_feature_cluster_rt_tolerance*0.5]  # mz, in relative; scan_time in minutes
+    tol = [mf_df['mz'].median()*myLCMSobj.parameters.lc_ms.mass_feature_cluster_mz_tolerance_rel , myLCMSobj.parameters.lc_ms.mass_feature_cluster_rt_tolerance*0.1]  # mz, in relative; scan_time in minutes
 
     # Compute inter-feature distances
     distances = None
@@ -172,7 +179,7 @@ def find_H_isos(myLCMSobj, D):
             myLCMSobj.mass_features[iso].monoisotopic_mf_id = myLCMSobj.mass_features[parent].monoisotopic_mf_id
             if myLCMSobj.mass_features[iso].monoisotopic_mf_id is not None:
                 mass_diff = myLCMSobj.mass_features[iso].mz - myLCMSobj.mass_features[myLCMSobj.mass_features[iso].monoisotopic_mf_id].mz
-                myLCMSobj.mass_features[iso].isotopologue_type = "2H"+ str(int(round(mass_diff, 0)))
+                myLCMSobj.mass_features[iso].isotopologue_type = str(int(round(mass_diff, 0))) + "H2"
 
         # Drop the mono and iso from the pairs_iso_df
         pairs_iso_df = pairs_iso_df.drop(index = monos, errors = 'ignore') #Drop pairs where the parent is a child that is a child of a root
@@ -194,6 +201,11 @@ if __name__ == '__main__':
     for file_in, file_out in list(zip(files_list, out_paths_list)):
         print(f"Processing {file_in}")
         myLCMSobj = instantiate_lcms_obj(file_in, verbose = True)
+        # TODO KRH: Remove when ready to do full search
+        # For a test, subset ._ms_unprocessed on myLCMSobj to just the mass range we expect to see a signal
+        ms_culled = myLCMSobj._ms_unprocessed[1]
+        ms_culled = ms_culled[(ms_culled.mz>158) & (ms_culled.mz<166)]
+        myLCMSobj._ms_unprocessed[1] = ms_culled
         set_params_on_lcms_obj(myLCMSobj, thresh = 0.0001)
         signal_processing_lcms(myLCMSobj, verbose = True)
         find_H_isos(myLCMSobj, D = 2)
@@ -202,6 +214,12 @@ if __name__ == '__main__':
         # drop all mass features that have no monoisotopic_mf_id 
         mf_df = mf_df[mf_df['monoisotopic_mf_id'].notnull()]
         mf_df.to_csv(file_out.with_suffix('.csv'))
+
+        # Export the lcms object to an hdf5 file
+        exporter = LCMSExport(str(file_out), myLCMSobj)
+        exporter.to_hdf()
+        print("Exported to hdf5")
+
 
     # Run negative mode 
     file_dir = Path("data/raw/metabolomics/G4/D3_Homarine_Fate_Inc/mzML/negative")
