@@ -152,56 +152,38 @@ def find_H_isos(myLCMSobj, D = 2):
         else:
             distances = distances.multiply(sdm)
 
-        # Extract indices of within-tolerance points
-        distances = distances.tocoo()
-        pairs = np.stack((distances.row, distances.col), axis=1)  # C12 to C13 pairs
+    # Extract indices of within-tolerance points
+    distances = distances.tocoo()
+    pairs = np.stack((distances.row, distances.col), axis=1)  # C12 to C13 pairs
 
-        # Turn pairs (which are index of mf_df) into mf_id and then into two dataframes to join to mf_df
-        pairs_mf = pairs.copy()
-        pairs_mf[:, 0] = mf_df.iloc[pairs[:, 0]].mf_id.values
-        pairs_mf[:, 1] = mf_df.iloc[pairs[:, 1]].mf_id.values
+    # Turn pairs (which are index of mf_df) into mf_id and then into two dataframes to join to mf_df
+    pairs_mf = pairs.copy()
+    pairs_mf[:, 0] = mf_df.iloc[pairs[:, 0]].mf_id.values
+    pairs_mf[:, 1] = mf_df.iloc[pairs[:, 1]].mf_id.values
 
-        # Connect monoisotopic masses with isotopologes within mass_features
-        monos = np.setdiff1d(np.unique(pairs_mf[:, 0]), np.unique(pairs_mf[:, 1]))
-        #TODO KRH: FIX THIS HERE!
-        pairs_iso_df = pd.DataFrame(pairs_mf, columns=["parent", "child"])
-        pairs_iso_df = pairs_iso_df.set_index("parent", drop=False)
-        m1_isos = pairs_iso_df.loc[monos, "child"].unique()
-        for iso in m1_isos:
-            # Set monoisotopic_mf_id and isotopologue_type for isotopologues
-            parent = pairs_mf[pairs_mf[:, 1] == iso, 0]
-            if len(parent) > 1:
-                parent_time = [myLCMSobj.mass_features[p].retention_time for p in parent]
-                time_diff = [
-                    np.abs(myLCMSobj.mass_features[iso].retention_time - x)
-                    for x in parent_time
-                ]
-                parent = parent[np.argmin(time_diff)]
-            else:
-                parent = parent[0]
-            myLCMSobj.mass_features[iso].monoisotopic_mf_id = myLCMSobj.mass_features[
-                parent
-            ].monoisotopic_mf_id
+    # Connect monoisotopic masses with isotopologes within mass_features
+    #TODO KRH: FIX THIS HERE!
+    pairs_iso_df = pd.DataFrame(pairs_mf, columns=["parent", "child"])
+    # drop rows where child number is greater than parent number (indicates more D2 tha original), only if D = 2
+    if D == 2:
+        pairs_iso_df = pairs_iso_df[pairs_iso_df.child > pairs_iso_df.parent].copy()
+    # order by largest parent, then largest daughter
+    pairs_iso_df.sort_values(["child", "parent"], inplace=True, ascending=False)
+    pairs_iso_df = pairs_iso_df.set_index("parent", drop=False)
+    monos = np.setdiff1d(np.unique(pairs_iso_df.parent), np.unique(pairs_iso_df.child))
+
+    m1_isos = pairs_iso_df.loc[monos, "child"].unique()
+    for iso in m1_isos:
+        # Set monoisotopic_mf_id and isotopologue_type for isotopologues
+        parent = pairs_mf[pairs_mf[:, 1] == iso, 0].min()
+        # If the feature has no monoisotopic_mf_id, set it and the monoisotopic_mf_id of the isotopologue to the parent
+        if myLCMSobj.mass_features[iso].monoisotopic_mf_id is None:
+            myLCMSobj.mass_features[parent].monoisotopic_mf_id = parent
+            myLCMSobj.mass_features[iso].monoisotopic_mf_id = parent
             if myLCMSobj.mass_features[iso].monoisotopic_mf_id is not None:
-                mass_diff = (
-                    myLCMSobj.mass_features[iso].mz
-                    - myLCMSobj.mass_features[
-                        myLCMSobj.mass_features[iso].monoisotopic_mf_id
-                    ].mz
-                )
-                myLCMSobj.mass_features[iso].isotopologue_type = "2H" + str(
-                    int(round(mass_diff, 0))
-                )
+                myLCMSobj.mass_features[iso].isotopologue_type = "2H" + str(D)
 
-
-if __name__ == '__main__':
-
-    # Run positive mode 
-    file_dir = Path("data/raw/metabolomics/G4/D3_Homarine_Fate_Inc/mzML/positive")
-    out_dir = Path("data/raw/metabolomics/G4/D3_Homarine_Fate_Inc/d3_search_results/positive")
-    out_dir.mkdir(parents=True, exist_ok=True)
-    files_list = list(file_dir.glob("*.mzML"))
-    out_paths_list = [out_dir / f.stem for f in files_list]
+def run(files_list, out_files_list):
     for file_in, file_out in list(zip(files_list, out_paths_list)):
         print(f"Processing {file_in}")
         myLCMSobj = instantiate_lcms_obj(file_in, verbose = True)
@@ -213,12 +195,20 @@ if __name__ == '__main__':
         mf_df_og = myLCMSobj.mass_features_to_df().copy()
         mf_df_og.to_csv(out_dir / (file_out.stem + "_og.csv"))
 
-        # Now find D2 and D3 isotopologues
-        find_H_isos(myLCMSobj)
+        # Now find D2 isotopologues
+        find_H_isos(myLCMSobj, D = 2)
         # Write out the mass features to a csv with the D2 and D3 isotopologues
         mf_df = myLCMSobj.mass_features_to_df()
-        mf_df = mf_df[mf_df['monoisotopic_mf_id'].notnull()]
-        mf_df.to_csv(out_dir / (file_out.stem + "_2Hx.csv"))
+        # Drop rows where monoisotopic_mf_id is null
+        mf_df = mf_df[mf_df['monoisotopic_mf_id'].notnull()].copy()
+        mf_df.to_csv(out_dir / (file_out.stem + "_2H2.csv"))
+
+        # Now find D3 isotopologues
+        find_H_isos(myLCMSobj, D = 3)
+        # Write out the mass features to a csv with the D2 and D3 isotopologues
+        mf_df = myLCMSobj.mass_features_to_df()
+        mf_df = mf_df[mf_df['monoisotopic_mf_id'].notnull()].copy()
+        mf_df.to_csv(out_dir / (file_out.stem + "_2H3.csv"))
 
         # Add the ms1 spectrum to the LCMS object for the mono isotopic mass feature (associated with D2 or D3 mass feature) so we can plot them later
         mono_mf_ids = list(mf_df['monoisotopic_mf_id'].unique())
@@ -234,44 +224,28 @@ if __name__ == '__main__':
         exporter = LCMSExport(str(file_out), myLCMSobj)
         exporter.to_hdf(overwrite=True)
         print("Exported to hdf5")
+
+
+if __name__ == '__main__':
+
+    # Run positive mode 
+    file_dir = Path("data/raw/metabolomics/G4/D3_Homarine_Fate_Inc/mzML/positive")
+    out_dir = Path("data/intermediate/metabolomics/g4/d3d2_search_results/positive")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    files_list = list(file_dir.glob("*.mzML"))
+    files_list = [x for x in files_list if "G4_2_H_t48" in x.stem]
+    out_paths_list = [out_dir / f.stem for f in files_list]
+    run(files_list=files_list, out_files_list=out_paths_list)
+    
 
     # Run negative mode 
     file_dir = Path("data/raw/metabolomics/G4/D3_Homarine_Fate_Inc/mzML/negative")
-    out_dir = Path("data/raw/metabolomics/G4/D3_Homarine_Fate_Inc/d3_search_results/negative")
+    out_dir = Path("data/intermediate/metabolomics/g4/d3d2_search_results/negative")
     out_dir.mkdir(parents=True, exist_ok=True)
     files_list = list(file_dir.glob("*.mzML"))
+    files_list = [x for x in files_list if "G4_2_H_t48" in x.stem]
     out_paths_list = [out_dir / f.stem for f in files_list]
-    for file_in, file_out in list(zip(files_list, out_paths_list)):
-        print(f"Processing {file_in}")
-        myLCMSobj = instantiate_lcms_obj(file_in, verbose = True)
-        set_params_on_lcms_obj(myLCMSobj, thresh = 0.0001)
-        signal_processing_lcms(myLCMSobj, verbose = True)
-        myLCMSobj.find_c13_mass_features()
-        # Write out the original mass features to a csv
-        mf_df_og = myLCMSobj.mass_features_to_df().copy()
-        mf_df_og.to_csv(out_dir / (file_out.stem + "_og.csv"))
-
-        # Now find D2 and D3 isotopologues
-        find_H_isos(myLCMSobj)
-        # Write out the mass features to a csv with the D2 and D3 isotopologues
-        mf_df = myLCMSobj.mass_features_to_df()
-        mf_df = mf_df[mf_df['monoisotopic_mf_id'].notnull()]
-        mf_df.to_csv(out_dir / (file_out.stem + "_2Hx.csv"))
-
-        # Add the ms1 spectrum to the LCMS object for the mono isotopic mass feature (associated with D2 or D3 mass feature) so we can plot them later
-        mono_mf_ids = list(mf_df['monoisotopic_mf_id'].unique())
-        for mono_mf_id in mono_mf_ids:
-            mono_mf_scan = int(myLCMSobj.mass_features[mono_mf_id].apex_scan)
-            myLCMSobj.add_mass_spectra(
-                [mono_mf_scan], 
-                spectrum_mode="profile",
-                use_parser=False)
-            myLCMSobj.mass_features[mono_mf_id].mass_spectrum = myLCMSobj._ms[mono_mf_scan]
-        
-        # Export the lcms object to an hdf5 file
-        exporter = LCMSExport(str(file_out), myLCMSobj)
-        exporter.to_hdf(overwrite=True)
-        print("Exported to hdf5")
+    run(files_list=files_list, out_files_list=out_paths_list)
 
     print("Finished processing files")
 
