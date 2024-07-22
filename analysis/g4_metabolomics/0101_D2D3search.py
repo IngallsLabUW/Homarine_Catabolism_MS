@@ -193,7 +193,7 @@ def run(files_list, out_files_list):
         print(f"Processing {file_in}")
         myLCMSobj = instantiate_lcms_obj(file_in, verbose = True)
         print(f"Instantiated LCMS object from {file_in}")
-        set_params_on_lcms_obj(myLCMSobj, thresh = 0.0005)
+        set_params_on_lcms_obj(myLCMSobj, thresh = 0.00001)
         try:
             signal_processing_lcms(myLCMSobj, verbose = True)
         except:
