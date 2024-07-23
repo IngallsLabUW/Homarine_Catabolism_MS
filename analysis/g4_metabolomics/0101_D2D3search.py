@@ -184,8 +184,13 @@ def find_H_isos(myLCMSobj, D = 2):
             if myLCMSobj.mass_features[iso].monoisotopic_mf_id is not None:
                 myLCMSobj.mass_features[iso].isotopologue_type = "2H" + str(D)
 
-def run(files_list, out_files_list):
-    for file_in, file_out in list(zip(files_list, out_paths_list)):
+def run(files_list, out_dir, out_files_list, thresh = 0.00001):
+    # Record the threshold used for processing
+    with open(out_dir / "thresh_files.txt", "a") as f:
+        f.write("Files run at threshold " + str(thresh) + "\n")
+    
+    # Process the files
+    for file_in, file_out in list(zip(files_list, out_files_list)):
         csv_out = out_dir / (file_out.stem + "_isos.csv")
         if csv_out.exists():
             print(f"Skipping {file_out} because it already exists")
@@ -193,12 +198,14 @@ def run(files_list, out_files_list):
         print(f"Processing {file_in}")
         myLCMSobj = instantiate_lcms_obj(file_in, verbose = True)
         print(f"Instantiated LCMS object from {file_in}")
-        set_params_on_lcms_obj(myLCMSobj, thresh = 0.00001)
+        set_params_on_lcms_obj(myLCMSobj, thresh = thresh)
         try:
             signal_processing_lcms(myLCMSobj, verbose = True)
         except:
             print(f"Failed to process {file_in}")
             continue
+
+        print("Looking for isotopologues")
         myLCMSobj.find_c13_mass_features()
         
         # Now find D2 isotopologues
@@ -208,6 +215,7 @@ def run(files_list, out_files_list):
         find_H_isos(myLCMSobj, D = 3)
         # Write out the mass features to a csv with the D2 and D3 isotopologues
         mf_df = myLCMSobj.mass_features_to_df()
+        print(f"Writing out to {csv_out}")
         mf_df.to_csv(out_dir / (file_out.stem + "_isos.csv"))
 
         # Add the ms1 spectrum to the LCMS object for the mono isotopic mass feature (associated with D2 or D3 mass feature) so we can plot them later
@@ -227,6 +235,9 @@ def run(files_list, out_files_list):
         exporter.to_hdf(overwrite=True)
         print("Exported to hdf5")
 
+        # Add the file to the list of successfully processed files
+        with open(out_dir / "thresh_files.txt", "a") as f:
+            f.write(str(file_in) + "\n")
 
 if __name__ == '__main__':
 
@@ -237,7 +248,20 @@ if __name__ == '__main__':
     files_list = list(file_dir.glob("*.mzML"))
     files_list = [x for x in files_list if "_Smp_" in x.stem]
     out_paths_list = [out_dir / f.stem for f in files_list]
-    run(files_list=files_list, out_files_list=out_paths_list)
+
+    # Remove the out_dir / "thresh_files.txt" file
+    if (out_dir / "thresh_files.txt").exists():
+        (out_dir / "thresh_files.txt").unlink()
+
+    # First run with a low threshold
+    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.00005)
+
+    # Rerun at a higher threshold to process the files that failed
+    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.0001)
+
+        # Rerun at a higher threshold to process the files that failed
+    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.001)
+
     
 
     # Run negative mode 
@@ -247,7 +271,19 @@ if __name__ == '__main__':
     files_list = list(file_dir.glob("*.mzML"))
     files_list = [x for x in files_list if "_Smp_" in x.stem]
     out_paths_list = [out_dir / f.stem for f in files_list]
-    run(files_list=files_list, out_files_list=out_paths_list)
+
+    # Remove the out_dir / "thresh_files.txt" file
+    if (out_dir / "thresh_files.txt").exists():
+        (out_dir / "thresh_files.txt").unlink()
+
+    # First run with a low threshold
+    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.00005)
+
+    # Rerun at a higher threshold to process the files that failed
+    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.0001)
+
+        # Rerun at a higher threshold to process the files that failed
+    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.001)
 
     print("Finished processing files")
 
