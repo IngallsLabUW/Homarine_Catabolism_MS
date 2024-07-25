@@ -195,9 +195,12 @@ def run(files_list, out_dir, out_files_list, thresh = 0.00001):
         if csv_out.exists():
             print(f"Skipping {file_out} because it already exists")
             continue
+        # print current time
+        from datetime import datetime
+        print(datetime.now())
         print(f"Processing {file_in}")
         myLCMSobj = instantiate_lcms_obj(file_in, verbose = True)
-        print(f"Instantiated LCMS object from {file_in}")
+        print("Instantiated LCMS object")
         set_params_on_lcms_obj(myLCMSobj, thresh = thresh)
         try:
             signal_processing_lcms(myLCMSobj, verbose = True)
@@ -206,7 +209,7 @@ def run(files_list, out_dir, out_files_list, thresh = 0.00001):
             continue
 
         print("Looking for isotopologues")
-        myLCMSobj.find_c13_mass_features()
+        myLCMSobj.find_c13_mass_features(verbose = False)
         
         # Now find D2 isotopologues
         find_H_isos(myLCMSobj, D = 2)
@@ -218,22 +221,9 @@ def run(files_list, out_dir, out_files_list, thresh = 0.00001):
         print(f"Writing out to {csv_out}")
         mf_df.to_csv(out_dir / (file_out.stem + "_isos.csv"))
 
-        # Add the ms1 spectrum to the LCMS object for the mono isotopic mass feature (associated with D2 or D3 mass feature) so we can plot them later
-        mono_mf_ids = list(mf_df['monoisotopic_mf_id'].unique())
-        # Drop any NAs or None from the list
-        mono_mf_ids = [x for x in mono_mf_ids if x is not None]
-        for mono_mf_id in mono_mf_ids:
-            mono_mf_scan = int(myLCMSobj.mass_features[mono_mf_id].apex_scan)
-            myLCMSobj.add_mass_spectra(
-                [mono_mf_scan], 
-                spectrum_mode="profile",
-                use_parser=False)
-            myLCMSobj.mass_features[mono_mf_id].mass_spectrum = myLCMSobj._ms[mono_mf_scan]
-        
         # Export the lcms object to an hdf5 file
         exporter = LCMSExport(str(file_out), myLCMSobj)
         exporter.to_hdf(overwrite=True)
-        print("Exported to hdf5")
 
         # Add the file to the list of successfully processed files
         with open(out_dir / "thresh_files.txt", "a") as f:
@@ -254,15 +244,10 @@ if __name__ == '__main__':
         (out_dir / "thresh_files.txt").unlink()
 
     # First run with a low threshold
-    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.00005)
+    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.0005)
 
     # Rerun at a higher threshold to process the files that failed
-    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.0001)
-
-        # Rerun at a higher threshold to process the files that failed
     run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.001)
-
-    
 
     # Run negative mode 
     file_dir = Path("data/raw/metabolomics/G4/D3_Homarine_Fate_Inc/mzML/negative")
@@ -277,12 +262,9 @@ if __name__ == '__main__':
         (out_dir / "thresh_files.txt").unlink()
 
     # First run with a low threshold
-    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.00005)
+    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.0005)
 
     # Rerun at a higher threshold to process the files that failed
-    run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.0001)
-
-        # Rerun at a higher threshold to process the files that failed
     run(files_list=files_list, out_dir=out_dir, out_files_list=out_paths_list, thresh = 0.001)
 
     print("Finished processing files")
