@@ -49,3 +49,20 @@ Writes out the calculated enrichment factors here("data", "intermediate", "metab
 source(here("analysis", "g4_metabolomics", "0201_EnrichmentCalcs.R"))
 remove(list = ls())
 ```
+
+## Search for D2 and D3 isotopologues
+Searches for D2 and D3 isotopologues in the G4 samples (control and homarine treated only)
+Writes out the search results into here("data", "intermediate", "metabolomics", "g4", "d3d2_search_results")
+Run the following python script to search for D2 and D3 isotopologues:
+here("analysis", "g4_metabolomics", "0301_D2D3search.py").  Ask KRH for help setting this up if you are interested.  The supporting libraries are not all public as of yet (will be soon)
+
+
+## Summarize D2 and D3 search results
+Summarizes the D2 and D3 search results and annotates when possible
+Writes out the summarized results into here("data", "intermediate", "metabolomics", "g4")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "g4_metabolomics", "0302_summarize_D2D3results.R"))
+remove(list = ls())
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}
