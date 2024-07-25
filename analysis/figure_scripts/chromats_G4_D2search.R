@@ -259,6 +259,14 @@ g4_meta_data_dir <- here("data", "raw", "metabolomics", "G4")
 g4_raw_dat_dir <- here("data", "raw", "metabolomics", "G4", "particulate", "mzml_skyline")
 input_dir <- here("data", "intermediate", "metabolomics", "g4")
 
+## Read in data ------
+g4_detected_features <- read_csv(
+  here(
+    input_dir, "grouped_iso_results_matched.csv"
+  ),
+  show_col_types = FALSE
+)
+
 ## Read in sample keys and combine -------
 g4_sample_key <- read_csv(
   here(
@@ -303,6 +311,33 @@ ms1data <- grabMSdata(files = smps_to_plot, grab_what = c("MS1"))
 myColors <- brewer.pal(3, "Set1")
 names(myColors) <- levels(sample_key$treatment_short)
 colScale <- scale_colour_manual(name = "Treatment", values = myColors, drop = FALSE)
+
+## Prep compounds to plot ------
+# get unique compounds from g4_detected_features, grabbing name, mz, and rt
+compounds_to_plot <- g4_detected_features %>%
+  select(compound_name, mz_expected, rt_expected, mode) %>%
+  distinct()
+
+
+# Plot compounds ------
+i = 1
+for (i in 1:nrow(compounds_to_plot)) {
+  compound <- compounds_to_plot[i, ]
+  g <- plot_2H2_13C2(
+    mz_oi = compound$mz_expected,
+    rt_oi = compound$rt_expected,
+    name_oi = compound$compound_name,
+    ion_formula = "C7H8NO2")
+  ggsave(
+    here(output_dir, paste0(compound$compound_name, ".pdf")),
+    g,
+    width = 12,
+    height = 10,
+    units = "in",
+    dpi = 300)
+}
+
+
 
 
 ### Homarine ------
