@@ -54,3 +54,9 @@ data/raw
 
 #KRH personal notes
 krh_notes.txt
+
+# pycache
+__pycache__/
+
+# all folders that end in .corems and their content
+*.corems/
