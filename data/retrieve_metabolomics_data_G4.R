@@ -7,7 +7,7 @@
 library(tidyverse)
 library(msconverteR)
 source("R_functions/google_drive_functions.R")
-mzml_convert = F
+mzml_convert = T
 
 
 # Functions to help get the folder ID needed for the drive_download_daughters_function
@@ -19,7 +19,7 @@ mzml_convert = F
 # query = paste('"', dir$id, '"',  ' in parents', sep='')
 # files = drive_ls(q=query, shared_drive = "Ingalls Lab", recursive = TRUE)
 
-# Copy RPom Metabolomics data from Google Drive -----
+# Copy G4 Metabolomics data from Google Drive -----
 ## raw data -----
 export_folder <- here("data", "raw", "metabolomics", "G4", "D3_Homarine_Fate_Inc","raw")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)

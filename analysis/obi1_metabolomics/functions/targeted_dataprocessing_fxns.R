@@ -185,7 +185,6 @@ BMIS <-
     } else {
       dat <- dat_pos
     }
-
     # drop blanks, standards, bad IS, and bad samps
     dat <- dat %>%
       filter(!str_detect(replicate_name, "_Blk_")) %>%
@@ -385,7 +384,7 @@ BMIS <-
     # then only return data that is normalized via B-MIS normalization
     BMIS_normalizedData <-
       newpoodat %>%
-      select(mass_feature, FinalBMIS, Orig_RSD, FinalRSD) %>%
+      select(mass_feature, FinalBMIS, Orig_RSD, FinalRSD)    %>%
       left_join(dat_norm %>% rename(FinalBMIS = MIS), by = c("mass_feature", "FinalBMIS")) %>%
       unique() %>%
       filter(!mass_feature %in% is_dat$mass_feature)

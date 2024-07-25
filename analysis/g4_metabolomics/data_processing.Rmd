@@ -1,0 +1,68 @@
+---
+title: "Gradients 4 Metabolomics Data analysis"
+author: "Katherine Heal"
+date: "`r Sys.Date()`"
+---
+
+```{r setup, include=FALSE}
+library(here)
+print(here())
+```
+
+# TARGETED DATA PROCESSING
+## QC of targeted data
+Uses `QE_QC` function from here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R")
+Sources the raw Skyline files from here("data", "raw", "metabolomics", "rpom")
+Writes out QC outputs into here("data", "intermediate", "metabolomics", "rpom", "targeted")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+# QC on all HILIC pos, HILIC neg, particulate and dissolved
+source(here("analysis", "g4_metabolomics", "0101_targeted_QC.R"))
+remove(list = ls())
+```
+
+
+## BMIS untargeted data
+Perform BMIS normalization on HILIC particulate samples.
+Note that very few internal standards were used, so this defaulted to using raw area for all mass features.  Leaving this in for completeness and to match format of other scripts.
+Uses `BMIS` function from here("analysis", "obi1_metabolomics", "functions", "targeted_dataprocessing_fxns.R")
+Sources the data from here("data", "intermediate", "metabolomics", "g4", "targeted")
+Writes out the BMISd data into here("data", "intermediate", "metabolomics", "g4", "targeted")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "g4_metabolomics", "0102_targeted_BMIS.R"))
+remove(list = ls())
+```
+
+
+## Combine and tidy targeted data
+Combines the BMISd targeted data from both HILIC particulate positive and negative
+Writes out the combined and tidied data into here("data", "intermediate", "metabolomics", "g4", "targeted")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "g4_metabolomics", "0103_Combine_Tidy.R"))
+remove(list = ls())
+```
+
+
+## Perform Enrichment calculations
+Calculates enrichment factors
+Writes out the calculated enrichment factors here("data", "intermediate", "metabolomics", "g4")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "g4_metabolomics", "0201_EnrichmentCalcs.R"))
+remove(list = ls())
+```
+
+## Search for D2 and D3 isotopologues
+Searches for D2 and D3 isotopologues in the G4 samples (control and homarine treated only)
+Writes out the search results into here("data", "intermediate", "metabolomics", "g4", "d3d2_search_results")
+Run the following python script to search for D2 and D3 isotopologues:
+here("analysis", "g4_metabolomics", "0301_D2D3search.py").  Ask KRH for help setting this up if you are interested.  The supporting libraries are not all public as of yet (will be soon)
+
+
+## Summarize D2 and D3 search results
+Summarizes the D2 and D3 search results and annotates when possible
+Writes out the summarized results into here("data", "intermediate", "metabolomics", "g4")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "g4_metabolomics", "0302_summarize_D2D3results.R"))
+remove(list = ls())
+```
+
+```{r, message=FALSE, error=FALSE, warning=FALSE}

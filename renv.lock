@@ -1653,6 +1653,23 @@
       ],
       "Hash": "c19df082ba346b0ffa6f833e92de34d1"
     },
+    "scico": {
+      "Package": "scico",
+      "Version": "1.5.0.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "scico",
+      "RemoteUsername": "thomasp85",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "e94d08c334c8de7ba5dd0c405baeb578a5d2651c",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "scales"
+      ],
+      "Hash": "adc1cb00be4c0c13cf0862d673979a2e"
+    },
     "selectr": {
       "Package": "selectr",
       "Version": "0.4-2",
