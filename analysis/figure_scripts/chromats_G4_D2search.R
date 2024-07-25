@@ -257,6 +257,7 @@ plot_2H2_13C2 <- function(
 output_dir <- here("figures", "exploratory", "metabolomics", "combined_chromat_figs", "g4_chromats")
 g4_meta_data_dir <- here("data", "raw", "metabolomics", "G4")
 g4_raw_dat_dir <- here("data", "raw", "metabolomics", "G4", "particulate", "mzml_skyline")
+input_dir <- here("data", "intermediate", "metabolomics", "g4")
 
 ## Read in sample keys and combine -------
 g4_sample_key <- read_csv(

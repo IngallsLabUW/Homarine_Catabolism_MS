@@ -97,6 +97,7 @@ grouped_summary <- all_summary2 %>%
     mz_average = mean(mz),
     scan_time_average = mean(scan_time),
     intensity_average = mean(intensity),
+    samples = paste0(samp_name, collapse = ", ")
   ) %>%
   ungroup() %>%
   arrange(desc(n))
@@ -155,7 +156,7 @@ grouped_summary_matched <- grouped_summary2 %>%
             TRUE ~ compound_name
         )
     ) %>%
-    select(id, n, mode, mz_average, scan_time_average, isotopologue_type, compound_name, rt_expected, mz_expected)
+    select(id, n, mode, mz_average, scan_time_average, isotopologue_type, samples, compound_name, rt_expected, mz_expected)
 
 ## Save the results ----
 write_csv(grouped_summary_matched, here(output_dir, "grouped_iso_results_matched.csv"))
