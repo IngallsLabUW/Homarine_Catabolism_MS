@@ -133,7 +133,7 @@ ingalls_standards2 <- ingalls_standards %>%
             z == -1 ~ "negative"
         )
     ) %>%
-    select(compound_name, mz, rt_minute, mode) %>%
+    select(compound_name, mz, rt_minute, mode, ionization_form, empirical_formula) %>%
     rename(mz_expected = mz, rt_expected = rt_minute) %>%
     distinct()
 
@@ -156,7 +156,7 @@ grouped_summary_matched <- grouped_summary2 %>%
             TRUE ~ compound_name
         )
     ) %>%
-    select(id, n, mode, mz_average, scan_time_average, isotopologue_type, samples, compound_name, rt_expected, mz_expected)
+    select(id, n, mode, mz_average, scan_time_average, isotopologue_type, samples, compound_name, ionization_form, empirical_formula, rt_expected, mz_expected)
 
 ## Save the results ----
 write_csv(grouped_summary_matched, here(output_dir, "grouped_iso_results_matched.csv"))
