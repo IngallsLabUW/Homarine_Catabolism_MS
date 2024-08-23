@@ -91,6 +91,13 @@ source(here("analysis", "obi1_metabolomics", "0302_EnrichmentCalcs.R"))
 remove(list = ls())
 ```
 
+## Summary table
+Sources the combined and dereplicated data from here("data", "intermediate", "metabolomics", "obi1")
+Writes two summary tables here("tables")
+```{r, message=FALSE, error=FALSE, warning=FALSE}
+source(here("analysis", "obi1_metabolomics", "0303_SummaryTable.R"))
+```
+
 # PLOTTING
 ## Enrichment / fold change plots
 Sources data from here("data", "intermediate", "metabolomics", "obi1")

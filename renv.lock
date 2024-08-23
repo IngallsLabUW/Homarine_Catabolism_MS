@@ -1307,6 +1307,23 @@
       ],
       "Hash": "2a0dc8c6adfb6f032e4d4af82d258ab5"
     },
+    "openxlsx2": {
+      "Package": "openxlsx2",
+      "Version": "1.8",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "Rcpp",
+        "grDevices",
+        "magrittr",
+        "stringi",
+        "utils",
+        "zip"
+      ],
+      "Hash": "85689fab8522a648808227abcc3b1706"
+    },
     "patchwork": {
       "Package": "patchwork",
       "Version": "1.2.0",
@@ -2027,6 +2044,13 @@
       "Source": "Repository",
       "Repository": "RSPM",
       "Hash": "29240487a071f535f5e5d5a323b7afbd"
+    },
+    "zip": {
+      "Package": "zip",
+      "Version": "2.3.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "fcc4bd8e6da2d2011eb64a5e5cc685ab"
     },
     "zoo": {
       "Package": "zoo",

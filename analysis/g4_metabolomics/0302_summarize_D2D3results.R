@@ -94,9 +94,9 @@ grouped_summary <- all_summary2 %>%
     n = n(),
     n_homarine = sum(str_detect(treatment, "HomFate")),
     n_control = sum(str_detect(treatment, "Control_")),
-    mz_average = mean(mz),
-    scan_time_average = mean(scan_time),
-    intensity_average = mean(intensity),
+    mz_med = median(mz),
+    scan_time_med = median(scan_time),
+    intensity_med = median(intensity),
     samples = paste0(samp_name, collapse = ", ")
   ) %>%
   ungroup() %>%
@@ -111,8 +111,8 @@ grouped_summary2 <- grouped_summary %>%
 grouped_summary2 <- grouped_summary2 %>%
   mutate(
     monoisotopic_mass = case_when(
-      isotopologue_type == "2H2" ~ mz_average - (2.014101777844-1.007825031898)*2,
-      isotopologue_type == "2H3" ~ mz_average - (2.014101777844-1.007825031898)*3
+      isotopologue_type == "2H2" ~ mz_med - (2.014101777844-1.007825031898)*2,
+      isotopologue_type == "2H3" ~ mz_med - (2.014101777844-1.007825031898)*3
     )) %>%
     mutate(id = row_number())
 
@@ -143,9 +143,9 @@ grouped_summary_matched <- grouped_summary2 %>%
     left_join(ingalls_standards2, by = c("mode"), relationship = "many-to-many") %>%
     filter(
         abs(mz_expected - monoisotopic_mass) < 0.01,
-        abs(rt_expected - scan_time_average) < 1.5
+        abs(rt_expected - scan_time_med) < 1.5
     ) %>%
-    mutate(rt_diff = abs(rt_expected - scan_time_average)) %>%
+    mutate(rt_diff = abs(rt_expected - scan_time_med)) %>%
     group_by(id) %>%
     filter(rt_diff == min(rt_diff)) %>%
     ungroup() %>%
@@ -156,7 +156,7 @@ grouped_summary_matched <- grouped_summary2 %>%
             TRUE ~ compound_name
         )
     ) %>%
-    select(id, n, mode, mz_average, scan_time_average, isotopologue_type, samples, compound_name, ionization_form, empirical_formula, rt_expected, mz_expected)
+    select(id, n, mode, mz_med, scan_time_med, isotopologue_type, samples, compound_name, ionization_form, empirical_formula, rt_expected, mz_expected)
 
 ## Save the results ----
 write_csv(grouped_summary_matched, here(output_dir, "grouped_iso_results_matched.csv"))
