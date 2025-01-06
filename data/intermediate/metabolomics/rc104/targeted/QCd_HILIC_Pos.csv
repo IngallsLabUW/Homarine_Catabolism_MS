@@ -1,0 +1,1736 @@
+Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2025-01-06 10:33:18.288496. 
+"","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","flags","QC_area"
+"1","240926_Std_4uMStdsMix1InH2O-1_posDDA","Homarine",NA,NA,NA,NA,NA,"",NA
+"2","240926_Std_4uMStdsMix1InH2O-2_posDDA","Homarine",NA,NA,NA,NA,NA,"",NA
+"3","240926_Std_4uMStdsMix1InMatrix-1_posDDA","Homarine",6.12,3105076224,28770112,98693520,0,"",3105076224
+"4","240926_Std_4uMStdsMix1InMatrix-2_posDDA","Homarine",6.12,3307833088,36840128,103386960,-0.4,"",3307833088
+"5","240926_Std_4uMStdsMix2InH2O-1_posDDA","Homarine",6.17,6164189696,50520144,194848432,-1,"",6164189696
+"6","240926_Std_4uMStdsMix2InH2O-2_posDDA","Homarine",6.12,6715043840,45564576,210633888,-0.3,"",6715043840
+"7","240926_Std_4uMStdsMix2InMatrix-1_posDDA","Homarine",6.17,9107384320,94948824,290820768,-0.4,"",9107384320
+"8","240926_Std_4uMStdsMix2InMatrix-2_posDDA","Homarine",6.09,10374292480,110072984,324750016,-0.5,"",10374292480
+"9","240926_Std_H2OinMatrix1_posDDA","Homarine",6.19,3246471936,37679924,107836384,-0.8,"",3246471936
+"10","240926_Std_H2OinMatrix2_posDDA","Homarine",6.09,3614391296,43601828,115799680,-1.1,"",3614391296
+"11","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","Homarine",6.14,81107400,1746016,2557376,-0.5,"",81107400
+"12","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","Homarine",6.18,63984864,1296195,2100931,0,"",63984864
+"13","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","Homarine",6.12,58289184,1811609,1858044,-0.1,"",58289184
+"14","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","Homarine",6.14,224930592,3610661,7212742,-0.1,"",224930592
+"15","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","Homarine",6.15,247366784,3618943,8086866,-0.6,"",247366784
+"16","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","Homarine",6.12,240659424,4060555,7676639,-0.6,"",240659424
+"17","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","Homarine",6.15,219975984,2859102,7475211,-0.6,"",219975984
+"18","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","Homarine",6.17,178163472,3897534,6100250,0.3,"",178163472
+"19","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","Homarine",6.14,201491296,3234963,6321491,-0.2,"",201491296
+"20","240926_Poo_RC104_HomFate_Full1_posDDA","Homarine",6.17,5263763456,74098536,170612784,0.5,"",5263763456
+"21","240926_Poo_RC104_HomFate_Full2_posDDA","Homarine",6.19,5468095488,79757176,178254640,-1,"",5468095488
+"22","240926_Poo_RC104_HomFate_Full3_posDDA","Homarine",6.14,4681836032,69390024,153302192,-0.6,"",4681836032
+"23","240926_Poo_RC104_HomFate_Full4_posDDA","Homarine",6.14,5639201792,51330988,187472624,-0.6,"",5639201792
+"24","240926_Poo_RC104_HomFate_Full5_posDDA","Homarine",6.12,5934438400,79570616,196555856,-1.1,"",5934438400
+"25","240926_Smp_RC104_HomFate_Con_A_posDDA","Homarine",6.12,3334265600,33207724,105209960,-1,"",3334265600
+"26","240926_Smp_RC104_HomFate_Con_B_posDDA","Homarine",6.12,3186465280,34683792,100934008,-1.1,"",3186465280
+"27","240926_Smp_RC104_HomFate_Con_C_posDDA","Homarine",6.12,1925811200,21914252,59655112,-0.6,"",1925811200
+"28","240926_Smp_RC104_HomFate_T0_A_posDDA","Homarine",6.14,2935372544,25749038,91437464,-0.8,"",2935372544
+"29","240926_Smp_RC104_HomFate_T0_B_posDDA","Homarine",6.12,4581720064,40125148,141419360,-0.5,"",4581720064
+"30","240926_Smp_RC104_HomFate_T0_C_posDDA","Homarine",6.17,4649757184,51840960,149636224,-0.9,"",4649757184
+"31","240926_Smp_RC104_HomFate_T6_A_posDDA","Homarine",6.15,4438765568,57923836,146912416,0.3,"",4438765568
+"32","240926_Smp_RC104_HomFate_T6_B_posDDA","Homarine",6.17,1672967424,16014533,56128296,-0.6,"",1672967424
+"33","240926_Smp_RC104_HomFate_T6_C_posDDA","Homarine",6.15,4159005440,47614072,137026000,-0.3,"",4159005440
+"34","240926_Smp_RC104_HomFate_T12_A_posDDA","Homarine",6.15,3710355456,54011084,120190712,-0.6,"",3710355456
+"35","240926_Smp_RC104_HomFate_T12_B_posDDA","Homarine",6.12,2226615552,27116924,74881264,-0.4,"",2226615552
+"36","240926_Smp_RC104_HomFate_T12_C_posDDA","Homarine",6.17,5852463616,92857592,191317776,0.1,"",5852463616
+"37","240926_Smp_RC104_HomFate_T24_A_posDDA","Homarine",6.1,6030387200,96287656,191622048,-0.8,"",6030387200
+"38","240926_Smp_RC104_HomFate_T24_B_posDDA","Homarine",6.13,4711577088,46877376,149922512,0.1,"",4711577088
+"39","240926_Smp_RC104_HomFate_T24_C_posDDA","Homarine",6.15,8244518912,98774368,259523040,-0.2,"",8244518912
+"40","240926_Smp_RC104_HomFate_T48_A_posDDA","Homarine",6.19,5865862656,77404504,205719952,-0.4,"",5865862656
+"41","240926_Smp_RC104_HomFate_T48_B_posDDA","Homarine",6.14,10939744256,146206912,339633184,-1,"",10939744256
+"42","240926_Smp_RC104_HomFate_T48_C_posDDA","Homarine",6.17,9317761024,138219728,310845728,-0.7,"",9317761024
+"43","240926_Smp_RC104_HomFate_T96_A_posDDA","Homarine",6.19,16247639040,141496528,554400960,-1,"",16247639040
+"44","240926_Smp_RC104_HomFate_T96_B_posDDA","Homarine",6.14,21826738176,223717968,659320128,-1.7,"",21826738176
+"45","240926_Smp_RC104_HomFate_T96_C_posDDA","Homarine",6.15,22711207936,218038000,741673088,-1.6,"",22711207936
+"46","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","Homarine",6.12,3223553792,30415892,103956808,-1,"",3223553792
+"47","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","Homarine",6.14,3673685504,31588758,116214104,-1.2,"",3673685504
+"48","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","Homarine",6.14,3284597504,37983580,103286416,-0.8,"",3284597504
+"49","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","Homarine",6.14,3064916224,39854652,109550632,-1.2,"",3064916224
+"50","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","Homarine",6.19,3426914560,40385792,115795352,-1.4,"",3426914560
+"51","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","Homarine",6.09,3874660096,30347912,126225968,-1.3,"",3874660096
+"52","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C6H9NO4_pos",11.6,0,0,0,NA,"areamin_flag, ",NA
+"53","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C6H9NO4_pos",11.59,6685,0,0,-0.8,"areamin_flag, ",NA
+"54","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C6H9NO4_pos",12.03,38143,0,12629,-3.3,"areamin_flag, ",NA
+"55","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C6H9NO4_pos",11.59,33543,0,14474,-0.7,"areamin_flag, ",NA
+"56","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C6H9NO4_pos",11.6,0,0,0,NA,"areamin_flag, ",NA
+"57","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"58","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C6H9NO4_pos",11.98,36437,0,9671,-0.7,"areamin_flag, ",NA
+"59","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C6H9NO4_pos",11.62,16289,0,9009,-1.1,"areamin_flag, ",NA
+"60","240926_Std_H2OinMatrix1_posDDA","unknown_C6H9NO4_pos",11.6,0,0,0,NA,"areamin_flag, ",NA
+"61","240926_Std_H2OinMatrix2_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"62","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C6H9NO4_pos",12.21,10102,0,5388,5.9,"areamin_flag, ",NA
+"63","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"64","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"65","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"66","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C6H9NO4_pos",11.6,0,0,0,NA,"areamin_flag, ",NA
+"67","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C6H9NO4_pos",11.6,0,0,0,NA,"areamin_flag, ",NA
+"68","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C6H9NO4_pos",11.6,0,0,0,NA,"areamin_flag, ",NA
+"69","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C6H9NO4_pos",11.6,0,0,0,NA,"areamin_flag, ",NA
+"70","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"71","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C6H9NO4_pos",12.05,110121,0,12711,-2.2,"",110121
+"72","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"73","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C6H9NO4_pos",11.92,67032,0,16516,-2.9,"",67032
+"74","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C6H9NO4_pos",11.78,17416,0,9587,-3.5,"areamin_flag, ",NA
+"75","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C6H9NO4_pos",11.81,151133,0,23610,-2.8,"",151133
+"76","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C6H9NO4_pos",12.05,164498,0,16701,-4.1,"",164498
+"77","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C6H9NO4_pos",11.69,169366,0,17416,-3.9,"",169366
+"78","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C6H9NO4_pos",11.81,17508,0,11975,-4,"areamin_flag, ",NA
+"79","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C6H9NO4_pos",11.93,166445,0,24932,-1.5,"",166445
+"80","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C6H9NO4_pos",11.95,252502,0,21924,-2.9,"",252502
+"81","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C6H9NO4_pos",12,18148,0,6607,-2.4,"areamin_flag, ",NA
+"82","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C6H9NO4_pos",12,139908,0,23845,-2.7,"",139908
+"83","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C6H9NO4_pos",12.1,88315,0,11601,-3.2,"",88315
+"84","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C6H9NO4_pos",11.98,30881,0,6270,-1.4,"areamin_flag, ",NA
+"85","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C6H9NO4_pos",11.83,97977,0,17748,-3.8,"",97977
+"86","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C6H9NO4_pos",11.81,52403,0,10843,-1.4,"",52403
+"87","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C6H9NO4_pos",12.01,189556,0,19278,-2.3,"",189556
+"88","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C6H9NO4_pos",11.78,78336,0,11094,-3.6,"",78336
+"89","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C6H9NO4_pos",11.98,188227,0,19430,-3.5,"",188227
+"90","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C6H9NO4_pos",11.98,323488,0,24351,-3.1,"",323488
+"91","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C6H9NO4_pos",12.05,99433,0,17032,-2.9,"",99433
+"92","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C6H9NO4_pos",11.81,428908,0,26389,-4.2,"",428908
+"93","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C6H9NO4_pos",12.02,448619,0,34937,-3.7,"",448619
+"94","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C6H9NO4_pos",11.88,103125,0,23674,-2.9,"",103125
+"95","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C6H9NO4_pos",11.83,149851,0,21692,-3.8,"",149851
+"96","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C6H9NO4_pos",11.98,38597,0,13047,-2.3,"areamin_flag, ",NA
+"97","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"98","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C6H9NO4_pos",11.64,23137,0,14306,-0.5,"areamin_flag, ",NA
+"99","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"100","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"101","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"102","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C6H9NO4_pos",11.59,0,0,0,NA,"areamin_flag, ",NA
+"103","240926_Std_4uMStdsMix1InH2O-1_posDDA","n-methyl glutamine",9.04,4730770,0,308193,7.7,"ppm_flag, ",NA
+"104","240926_Std_4uMStdsMix1InH2O-2_posDDA","n-methyl glutamine",9.04,6493099,0,492749,8.4,"ppm_flag, ",NA
+"105","240926_Std_4uMStdsMix1InMatrix-1_posDDA","n-methyl glutamine",9.15,4682004,3354782,215981,4.7,"sn_flag, ",NA
+"106","240926_Std_4uMStdsMix1InMatrix-2_posDDA","n-methyl glutamine",8.99,7774821,2692165,429513,6,"sn_flag, ",NA
+"107","240926_Std_4uMStdsMix2InH2O-1_posDDA","n-methyl glutamine",8.8,0,0,0,NA,"areamin_flag, ",NA
+"108","240926_Std_4uMStdsMix2InH2O-2_posDDA","n-methyl glutamine",9.54,15729,0,6387,0,"areamin_flag, ",NA
+"109","240926_Std_4uMStdsMix2InMatrix-1_posDDA","n-methyl glutamine",9.53,3420547,728173,184227,-0.2,"",3420547
+"110","240926_Std_4uMStdsMix2InMatrix-2_posDDA","n-methyl glutamine",8.89,2617103,1559846,101900,-0.1,"sn_flag, ",NA
+"111","240926_Std_H2OinMatrix1_posDDA","n-methyl glutamine",9.54,3021530,1109949,176666,-1.1,"sn_flag, ",NA
+"112","240926_Std_H2OinMatrix2_posDDA","n-methyl glutamine",8.9,3311247,1131601,106278,-1.1,"sn_flag, ",NA
+"113","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","n-methyl glutamine",9.31,3667584,0,138851,-1.2,"",3667584
+"114","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","n-methyl glutamine",9.6,334800,0,14018,-0.5,"",334800
+"115","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","n-methyl glutamine",9.48,65955,0,11960,-0.7,"",65955
+"116","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","n-methyl glutamine",9.36,28296,0,7965,-0.1,"areamin_flag, ",NA
+"117","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","n-methyl glutamine",9.76,24984,64361,2884,-0.7,"sn_flag, areamin_flag, ",NA
+"118","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","n-methyl glutamine",9.18,107517,0,6907,-0.9,"",107517
+"119","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","n-methyl glutamine",9.37,227847,0,21198,-0.9,"",227847
+"120","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","n-methyl glutamine",8.87,312931,0,14096,0.1,"",312931
+"121","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","n-methyl glutamine",9.27,95675,0,10925,-0.6,"",95675
+"122","240926_Poo_RC104_HomFate_Full1_posDDA","n-methyl glutamine",9.55,4889844,2637718,238913,0.2,"sn_flag, ",NA
+"123","240926_Poo_RC104_HomFate_Full2_posDDA","n-methyl glutamine",9.52,5745415,129114,244284,-0.9,"",5745415
+"124","240926_Poo_RC104_HomFate_Full3_posDDA","n-methyl glutamine",9.41,5532234,1107788,201099,-0.8,"",5532234
+"125","240926_Poo_RC104_HomFate_Full4_posDDA","n-methyl glutamine",9.29,3431050,2814359,158724,-0.5,"sn_flag, ",NA
+"126","240926_Poo_RC104_HomFate_Full5_posDDA","n-methyl glutamine",9.15,3360759,2836325,137428,-1.1,"sn_flag, ",NA
+"127","240926_Smp_RC104_HomFate_Con_A_posDDA","n-methyl glutamine",9.41,10923832,1504597,455893,-0.9,"",10923832
+"128","240926_Smp_RC104_HomFate_Con_B_posDDA","n-methyl glutamine",9.21,11560118,742048,377776,-1.1,"",11560118
+"129","240926_Smp_RC104_HomFate_Con_C_posDDA","n-methyl glutamine",9.31,4103614,1072074,186963,-0.7,"",4103614
+"130","240926_Smp_RC104_HomFate_T0_A_posDDA","n-methyl glutamine",9.31,6726185,1649559,259229,-0.8,"",6726185
+"131","240926_Smp_RC104_HomFate_T0_B_posDDA","n-methyl glutamine",9.31,7047087,4230786,336602,-0.5,"sn_flag, ",NA
+"132","240926_Smp_RC104_HomFate_T0_C_posDDA","n-methyl glutamine",9.32,12285374,68355,443876,-0.8,"",12285374
+"133","240926_Smp_RC104_HomFate_T6_A_posDDA","n-methyl glutamine",9.56,6305914,3944886,369048,0.1,"sn_flag, ",NA
+"134","240926_Smp_RC104_HomFate_T6_B_posDDA","n-methyl glutamine",9.48,617757,1257864,29605,-0.9,"sn_flag, ",NA
+"135","240926_Smp_RC104_HomFate_T6_C_posDDA","n-methyl glutamine",9.49,4760998,1582422,205422,-0.6,"",4760998
+"136","240926_Smp_RC104_HomFate_T12_A_posDDA","n-methyl glutamine",9.35,4406367,1714626,190900,-0.7,"sn_flag, ",NA
+"137","240926_Smp_RC104_HomFate_T12_B_posDDA","n-methyl glutamine",9.12,633951,0,19437,-1.4,"",633951
+"138","240926_Smp_RC104_HomFate_T12_C_posDDA","n-methyl glutamine",9.55,7427369,4203313,387304,0.2,"sn_flag, ",NA
+"139","240926_Smp_RC104_HomFate_T24_A_posDDA","n-methyl glutamine",9.12,1358907,1849492,77545,-0.9,"sn_flag, ",NA
+"140","240926_Smp_RC104_HomFate_T24_B_posDDA","n-methyl glutamine",9.52,2062399,1746458,116688,-0.4,"sn_flag, ",NA
+"141","240926_Smp_RC104_HomFate_T24_C_posDDA","n-methyl glutamine",9.51,10585463,8110010,595348,-0.5,"sn_flag, ",NA
+"142","240926_Smp_RC104_HomFate_T48_A_posDDA","n-methyl glutamine",9.48,1483304,812118,43561,-0.3,"sn_flag, ",NA
+"143","240926_Smp_RC104_HomFate_T48_B_posDDA","n-methyl glutamine",9.21,4149738,4169793,160746,-0.9,"sn_flag, ",NA
+"144","240926_Smp_RC104_HomFate_T48_C_posDDA","n-methyl glutamine",9.5,6573820,5580165,302556,-0.9,"sn_flag, ",NA
+"145","240926_Smp_RC104_HomFate_T96_A_posDDA","n-methyl glutamine",9.41,24945624,3223154,794027,-0.7,"",24945624
+"146","240926_Smp_RC104_HomFate_T96_B_posDDA","n-methyl glutamine",9.24,5221804,4758953,210415,-1.1,"sn_flag, ",NA
+"147","240926_Smp_RC104_HomFate_T96_C_posDDA","n-methyl glutamine",9.32,7379761,6529972,223914,-1,"sn_flag, ",NA
+"148","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","n-methyl glutamine",9.79,231543,431847,24918,-1.2,"sn_flag, ",NA
+"149","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","n-methyl glutamine",9.79,54681,631072,14742,-1.6,"sn_flag, ",NA
+"150","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","n-methyl glutamine",9.44,548705,0,21078,-0.9,"",548705
+"151","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","n-methyl glutamine",9.75,720813,428683,33575,-1,"sn_flag, ",NA
+"152","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","n-methyl glutamine",9.77,313363,750705,33368,-1.6,"sn_flag, ",NA
+"153","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","n-methyl glutamine",9.79,947162,856254,63516,-1.3,"sn_flag, ",NA
+"154","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"155","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"156","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"157","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"158","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"159","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"160","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"161","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"162","240926_Std_H2OinMatrix1_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"163","240926_Std_H2OinMatrix2_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"164","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"165","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C7H9NO5_pos",12.11,9582,0,5557,-4.6,"areamin_flag, ",NA
+"166","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"167","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"168","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"169","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C7H9NO5_pos",12.38,14281,0,8096,-0.7,"areamin_flag, ",NA
+"170","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C7H9NO5_pos",12.07,15645,0,10817,-2.6,"areamin_flag, ",NA
+"171","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C7H9NO5_pos",12.2,13641,0,5536,-1,"areamin_flag, ",NA
+"172","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"173","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"174","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"175","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"176","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"177","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"178","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"179","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"180","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"181","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"182","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"183","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"184","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"185","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"186","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"187","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"188","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"189","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"190","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"191","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"192","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"193","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C7H9NO5_pos",12.4,52854,0,14063,-3.1,"",52854
+"194","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C7H9NO5_pos",11.86,0,0,0,NA,"areamin_flag, ",NA
+"195","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C7H9NO5_pos",12.31,237250,0,22565,-2.2,"",237250
+"196","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C7H9NO5_pos",12.73,16869,0,11323,-3,"areamin_flag, ",NA
+"197","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C7H9NO5_pos",12.59,81295,0,24699,-4.3,"",81295
+"198","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C7H9NO5_pos",12.62,17307,0,6669,-2.4,"areamin_flag, ",NA
+"199","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"200","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C7H9NO5_pos",12.02,16887,0,6345,-2.4,"areamin_flag, ",NA
+"201","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"202","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"203","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"204","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C7H9NO5_pos",11.85,0,0,0,NA,"areamin_flag, ",NA
+"205","240926_Std_4uMStdsMix1InH2O-1_posDDA","N-Methyl-L-glutamic acid",10.76,505396768,6271658,31092642,1.1,"",505396768
+"206","240926_Std_4uMStdsMix1InH2O-2_posDDA","N-Methyl-L-glutamic acid",10.08,612895552,5493805,47390356,1,"",612895552
+"207","240926_Std_4uMStdsMix1InMatrix-1_posDDA","N-Methyl-L-glutamic acid",10.88,410224640,8441230,24653924,0.9,"",410224640
+"208","240926_Std_4uMStdsMix1InMatrix-2_posDDA","N-Methyl-L-glutamic acid",10.65,482941120,7092555,19992044,0.9,"",482941120
+"209","240926_Std_4uMStdsMix2InH2O-1_posDDA","N-Methyl-L-glutamic acid",10.71,568745216,6941811,39655656,0.7,"",568745216
+"210","240926_Std_4uMStdsMix2InH2O-2_posDDA","N-Methyl-L-glutamic acid",10.03,808771520,7710563,61175072,0.5,"",808771520
+"211","240926_Std_4uMStdsMix2InMatrix-1_posDDA","N-Methyl-L-glutamic acid",10.9,384510112,5481733,22513762,1.1,"",384510112
+"212","240926_Std_4uMStdsMix2InMatrix-2_posDDA","N-Methyl-L-glutamic acid",10.65,419404096,746866,16846602,0.9,"",419404096
+"213","240926_Std_H2OinMatrix1_posDDA","N-Methyl-L-glutamic acid",10.88,11606063,735808,670288,0.4,"",11606063
+"214","240926_Std_H2OinMatrix2_posDDA","N-Methyl-L-glutamic acid",10.77,13946595,1235137,460813,-0.1,"",13946595
+"215","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","N-Methyl-L-glutamic acid",10.83,146383,213681,23609,0.3,"sn_flag, ",NA
+"216","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","N-Methyl-L-glutamic acid",10.36,91133,276496,11297,0.7,"sn_flag, ",NA
+"217","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","N-Methyl-L-glutamic acid",10.67,126008,0,21908,0.1,"",126008
+"218","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","N-Methyl-L-glutamic acid",10.98,648748,554769,30329,0.4,"sn_flag, ",NA
+"219","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","N-Methyl-L-glutamic acid",11.07,509455,727446,30200,-0.2,"sn_flag, ",NA
+"220","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","N-Methyl-L-glutamic acid",11.12,1051465,465657,44174,-0.2,"sn_flag, ",NA
+"221","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","N-Methyl-L-glutamic acid",11.26,982294,0,57592,0.2,"",982294
+"222","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","N-Methyl-L-glutamic acid",11.48,712717,150674,38376,1.1,"",712717
+"223","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","N-Methyl-L-glutamic acid",11.57,846919,0,46035,0.4,"",846919
+"224","240926_Poo_RC104_HomFate_Full1_posDDA","N-Methyl-L-glutamic acid",11.04,15633590,2672445,718795,1.4,"",15633590
+"225","240926_Poo_RC104_HomFate_Full2_posDDA","N-Methyl-L-glutamic acid",11.05,11933573,3049126,522938,0.1,"",11933573
+"226","240926_Poo_RC104_HomFate_Full3_posDDA","N-Methyl-L-glutamic acid",11.07,14663430,2725488,544190,0.6,"",14663430
+"227","240926_Poo_RC104_HomFate_Full4_posDDA","N-Methyl-L-glutamic acid",11.05,14177296,3835740,488210,0.5,"",14177296
+"228","240926_Poo_RC104_HomFate_Full5_posDDA","N-Methyl-L-glutamic acid",11.02,15639600,3465190,462241,-0.1,"",15639600
+"229","240926_Smp_RC104_HomFate_Con_A_posDDA","N-Methyl-L-glutamic acid",11,22891796,1239800,983630,0.3,"",22891796
+"230","240926_Smp_RC104_HomFate_Con_B_posDDA","N-Methyl-L-glutamic acid",10.81,23445922,721486,975466,0.2,"",23445922
+"231","240926_Smp_RC104_HomFate_Con_C_posDDA","N-Methyl-L-glutamic acid",10.86,14175991,2009754,693150,0.2,"",14175991
+"232","240926_Smp_RC104_HomFate_T0_A_posDDA","N-Methyl-L-glutamic acid",11.02,24828420,3853879,887094,0.3,"",24828420
+"233","240926_Smp_RC104_HomFate_T0_B_posDDA","N-Methyl-L-glutamic acid",10.88,36718128,2426868,1565038,0.7,"",36718128
+"234","240926_Smp_RC104_HomFate_T0_C_posDDA","N-Methyl-L-glutamic acid",11,22778976,1192718,929465,0.5,"",22778976
+"235","240926_Smp_RC104_HomFate_T6_A_posDDA","N-Methyl-L-glutamic acid",10.97,20235522,757819,991556,1.3,"",20235522
+"236","240926_Smp_RC104_HomFate_T6_B_posDDA","N-Methyl-L-glutamic acid",11.09,11306632,970552,344581,0.2,"",11306632
+"237","240926_Smp_RC104_HomFate_T6_C_posDDA","N-Methyl-L-glutamic acid",10.35,14444931,1960188,299876,0.6,"",14444931
+"238","240926_Smp_RC104_HomFate_T12_A_posDDA","N-Methyl-L-glutamic acid",10.93,27127190,0,821770,0.5,"",27127190
+"239","240926_Smp_RC104_HomFate_T12_B_posDDA","N-Methyl-L-glutamic acid",10.9,7205047,863055,319404,0.4,"",7205047
+"240","240926_Smp_RC104_HomFate_T12_C_posDDA","N-Methyl-L-glutamic acid",10.99,25348784,2412702,1136725,1.4,"",25348784
+"241","240926_Smp_RC104_HomFate_T24_A_posDDA","N-Methyl-L-glutamic acid",10.88,15847087,1383711,515256,0.2,"",15847087
+"242","240926_Smp_RC104_HomFate_T24_B_posDDA","N-Methyl-L-glutamic acid",10.92,22162646,917756,1010241,0.7,"",22162646
+"243","240926_Smp_RC104_HomFate_T24_C_posDDA","N-Methyl-L-glutamic acid",10.99,59112880,2269232,2651295,0.9,"",59112880
+"244","240926_Smp_RC104_HomFate_T48_A_posDDA","N-Methyl-L-glutamic acid",11.36,11727931,1804108,290147,0.4,"",11727931
+"245","240926_Smp_RC104_HomFate_T48_B_posDDA","N-Methyl-L-glutamic acid",11.02,51062928,6131314,1545257,-0.1,"",51062928
+"246","240926_Smp_RC104_HomFate_T48_C_posDDA","N-Methyl-L-glutamic acid",11.21,39438344,4386774,1456331,0.3,"",39438344
+"247","240926_Smp_RC104_HomFate_T96_A_posDDA","N-Methyl-L-glutamic acid",10.79,13627127,0,414525,0.5,"",13627127
+"248","240926_Smp_RC104_HomFate_T96_B_posDDA","N-Methyl-L-glutamic acid",11,20577740,2063160,703192,-0.3,"",20577740
+"249","240926_Smp_RC104_HomFate_T96_C_posDDA","N-Methyl-L-glutamic acid",11.14,11403732,2566605,333174,-0.1,"",11403732
+"250","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","N-Methyl-L-glutamic acid",10.5,16147409,0,341523,0.2,"",16147409
+"251","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","N-Methyl-L-glutamic acid",10.43,12463235,2284086,324482,-0.2,"",12463235
+"252","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","N-Methyl-L-glutamic acid",10.88,7326350,0,190701,0.2,"",7326350
+"253","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","N-Methyl-L-glutamic acid",11.38,21428386,3832058,699228,0,"",21428386
+"254","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","N-Methyl-L-glutamic acid",11.36,34155312,4422064,936086,-0.3,"",34155312
+"255","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","N-Methyl-L-glutamic acid",11.07,76056480,3056990,2368530,0.2,"",76056480
+"256","240926_Std_4uMStdsMix1InH2O-1_posDDA","Adenine",5.12,5102654464,126992664,174033040,-4.2,"",5102654464
+"257","240926_Std_4uMStdsMix1InH2O-2_posDDA","Adenine",5.13,5529093632,178499680,184903296,-5,"",5529093632
+"258","240926_Std_4uMStdsMix1InMatrix-1_posDDA","Adenine",5.16,5868634112,156346144,192151520,-4.2,"",5868634112
+"259","240926_Std_4uMStdsMix1InMatrix-2_posDDA","Adenine",5.15,6953360896,247539760,220432272,-4.7,"",6953360896
+"260","240926_Std_4uMStdsMix2InH2O-1_posDDA","Adenine",NA,NA,NA,NA,NA,"",NA
+"261","240926_Std_4uMStdsMix2InH2O-2_posDDA","Adenine",NA,NA,NA,NA,NA,"",NA
+"262","240926_Std_4uMStdsMix2InMatrix-1_posDDA","Adenine",5.14,660762816,30765714,18873434,-4.1,"",660762816
+"263","240926_Std_4uMStdsMix2InMatrix-2_posDDA","Adenine",5.12,813549056,24991778,22916170,-4.4,"",813549056
+"264","240926_Std_H2OinMatrix1_posDDA","Adenine",5.21,514220064,9753822,16767740,-4.6,"",514220064
+"265","240926_Std_H2OinMatrix2_posDDA","Adenine",5.17,619356224,15497397,21761886,-4.8,"",619356224
+"266","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","Adenine",5.17,4856320,1340964,137849,-4.5,"",4856320
+"267","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","Adenine",5.16,10082749,1913780,338025,-4,"",10082749
+"268","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","Adenine",5.15,15902928,2537338,515705,-4.2,"",15902928
+"269","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","Adenine",5.17,7142015,1826586,221870,-3.9,"",7142015
+"270","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","Adenine",5.14,13393436,1570419,434798,-4.6,"",13393436
+"271","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","Adenine",5.21,13570872,2389305,478641,-4.4,"",13570872
+"272","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","Adenine",5.14,22669526,89388,735829,-4.6,"",22669526
+"273","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","Adenine",5.23,27937078,2487490,895677,-3.5,"",27937078
+"274","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","Adenine",5.15,10790077,1972043,341627,-4.1,"",10790077
+"275","240926_Poo_RC104_HomFate_Full1_posDDA","Adenine",5.23,834174720,24582648,26689334,-3.4,"",834174720
+"276","240926_Poo_RC104_HomFate_Full2_posDDA","Adenine",5.19,742682048,19436488,24317334,-4.6,"",742682048
+"277","240926_Poo_RC104_HomFate_Full3_posDDA","Adenine",5.15,830397120,18557320,26680212,-4.6,"",830397120
+"278","240926_Poo_RC104_HomFate_Full4_posDDA","Adenine",5.19,807421440,21943264,27151670,-4.5,"",807421440
+"279","240926_Poo_RC104_HomFate_Full5_posDDA","Adenine",5.15,833632000,22959112,27406122,-4.9,"",833632000
+"280","240926_Smp_RC104_HomFate_Con_A_posDDA","Adenine",5.16,828414464,24628976,27071260,-4.7,"",828414464
+"281","240926_Smp_RC104_HomFate_Con_B_posDDA","Adenine",5.17,295846144,10728069,9750622,-4.5,"",295846144
+"282","240926_Smp_RC104_HomFate_Con_C_posDDA","Adenine",5.19,406546592,12315507,13646459,-4.5,"",406546592
+"283","240926_Smp_RC104_HomFate_T0_A_posDDA","Adenine",5.17,411181888,11917270,13712051,-4.5,"",411181888
+"284","240926_Smp_RC104_HomFate_T0_B_posDDA","Adenine",5.14,968990144,15481058,31890124,-4.2,"",968990144
+"285","240926_Smp_RC104_HomFate_T0_C_posDDA","Adenine",5.17,243125216,9066302,8208540,-4.4,"",243125216
+"286","240926_Smp_RC104_HomFate_T6_A_posDDA","Adenine",5.16,269796992,10498985,8862938,-3.6,"",269796992
+"287","240926_Smp_RC104_HomFate_T6_B_posDDA","Adenine",5.21,48041616,1583585,1565551,-4.3,"",48041616
+"288","240926_Smp_RC104_HomFate_T6_C_posDDA","Adenine",5.19,99898000,3482107,3270005,-3.9,"",99898000
+"289","240926_Smp_RC104_HomFate_T12_A_posDDA","Adenine",5.24,342686688,10657511,11256474,-4.4,"",342686688
+"290","240926_Smp_RC104_HomFate_T12_B_posDDA","Adenine",5.14,152346928,7211483,5061421,-4.3,"",152346928
+"291","240926_Smp_RC104_HomFate_T12_C_posDDA","Adenine",5.19,565503040,14896297,17990268,-3.8,"",565503040
+"292","240926_Smp_RC104_HomFate_T24_A_posDDA","Adenine",5.14,804003968,24149228,25738894,-4.6,"",804003968
+"293","240926_Smp_RC104_HomFate_T24_B_posDDA","Adenine",5.19,270455936,1946445,8882969,-3.8,"",270455936
+"294","240926_Smp_RC104_HomFate_T24_C_posDDA","Adenine",5.16,1884706048,44641124,61022416,-4.2,"",1884706048
+"295","240926_Smp_RC104_HomFate_T48_A_posDDA","Adenine",5.17,1062670464,22966550,35172280,-4.5,"",1062670464
+"296","240926_Smp_RC104_HomFate_T48_B_posDDA","Adenine",5.19,1443562496,46854904,47123832,-5,"",1443562496
+"297","240926_Smp_RC104_HomFate_T48_C_posDDA","Adenine",5.22,2628069120,55542452,85167104,-4.8,"",2628069120
+"298","240926_Smp_RC104_HomFate_T96_A_posDDA","Adenine",5.17,2697674752,45616492,89388272,-4.8,"",2697674752
+"299","240926_Smp_RC104_HomFate_T96_B_posDDA","Adenine",5.14,2232317952,38053868,71017400,-5.3,"",2232317952
+"300","240926_Smp_RC104_HomFate_T96_C_posDDA","Adenine",5.17,5164254208,77385064,170271808,-5.4,"",5164254208
+"301","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","Adenine",5.15,288346592,8612114,9252066,-4.4,"",288346592
+"302","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","Adenine",5.17,355590816,14678749,11496289,-4.7,"",355590816
+"303","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","Adenine",5.17,243383712,11773676,7860458,-4.5,"",243383712
+"304","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","Adenine",5.2,156286944,5732759,5511566,-4.5,"",156286944
+"305","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","Adenine",5.17,117994848,3899151,3964933,-4.7,"",117994848
+"306","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","Adenine",5.17,129178104,5718740,4212519,-4.5,"",129178104
+"307","240926_Std_4uMStdsMix1InH2O-1_posDDA","Adenosine",NA,NA,NA,NA,NA,"",NA
+"308","240926_Std_4uMStdsMix1InH2O-2_posDDA","Adenosine",NA,NA,NA,NA,NA,"",NA
+"309","240926_Std_4uMStdsMix1InMatrix-1_posDDA","Adenosine",4.88,64541676,26373,1728783,-2.6,"",64541676
+"310","240926_Std_4uMStdsMix1InMatrix-2_posDDA","Adenosine",4.81,68616328,0,1947864,-3,"",68616328
+"311","240926_Std_4uMStdsMix2InH2O-1_posDDA","Adenosine",4.95,1948596480,18789248,48650808,-3.7,"",1948596480
+"312","240926_Std_4uMStdsMix2InH2O-2_posDDA","Adenosine",4.87,1668557952,19603024,40165172,-3.1,"",1668557952
+"313","240926_Std_4uMStdsMix2InMatrix-1_posDDA","Adenosine",5.02,1699651840,19243492,40928344,-3.1,"",1699651840
+"314","240926_Std_4uMStdsMix2InMatrix-2_posDDA","Adenosine",4.86,1844624384,19168026,44973988,-3.4,"",1844624384
+"315","240926_Std_H2OinMatrix1_posDDA","Adenosine",4.98,72222064,0,1880428,-3.3,"",72222064
+"316","240926_Std_H2OinMatrix2_posDDA","Adenosine",4.91,83901168,0,2250412,-3.4,"",83901168
+"317","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","Adenosine",5.1,1470505,0,40893,-3.1,"",1470505
+"318","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","Adenosine",5.01,1106395,0,35283,-2.7,"",1106395
+"319","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","Adenosine",4.93,1156423,0,32077,-3.1,"",1156423
+"320","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","Adenosine",4.98,2495321,0,73204,-2.7,"",2495321
+"321","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","Adenosine",4.9,6136910,0,160640,-3.4,"",6136910
+"322","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","Adenosine",4.95,5679817,0,166498,-3.3,"",5679817
+"323","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","Adenosine",5.02,5094259,0,176925,-3.5,"",5094259
+"324","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","Adenosine",4.97,17752642,0,477706,-2.4,"",17752642
+"325","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","Adenosine",4.93,3887913,0,107352,-2.9,"",3887913
+"326","240926_Poo_RC104_HomFate_Full1_posDDA","Adenosine",4.94,114626176,0,2989950,-1.9,"",114626176
+"327","240926_Poo_RC104_HomFate_Full2_posDDA","Adenosine",4.91,98860032,958136,2541439,-3.2,"",98860032
+"328","240926_Poo_RC104_HomFate_Full3_posDDA","Adenosine",4.93,112364448,1151801,3000878,-3,"",112364448
+"329","240926_Poo_RC104_HomFate_Full4_posDDA","Adenosine",5,107072608,0,2646506,-3,"",107072608
+"330","240926_Poo_RC104_HomFate_Full5_posDDA","Adenosine",4.98,119515392,0,3195794,-3.5,"",119515392
+"331","240926_Smp_RC104_HomFate_Con_A_posDDA","Adenosine",5,166473088,1803903,4124519,-3.3,"",166473088
+"332","240926_Smp_RC104_HomFate_Con_B_posDDA","Adenosine",5,142824688,1634910,3682353,-3.3,"",142824688
+"333","240926_Smp_RC104_HomFate_Con_C_posDDA","Adenosine",4.95,81013544,1111192,2067477,-3.1,"",81013544
+"334","240926_Smp_RC104_HomFate_T0_A_posDDA","Adenosine",4.91,74691080,0,1878336,-3.1,"",74691080
+"335","240926_Smp_RC104_HomFate_T0_B_posDDA","Adenosine",4.95,99442192,517792,2444912,-2.8,"",99442192
+"336","240926_Smp_RC104_HomFate_T0_C_posDDA","Adenosine",4.96,71067720,0,1768780,-3.1,"",71067720
+"337","240926_Smp_RC104_HomFate_T6_A_posDDA","Adenosine",4.97,68458344,573538,1771641,-2.4,"",68458344
+"338","240926_Smp_RC104_HomFate_T6_B_posDDA","Adenosine",4.92,8199271,0,222141,-3.2,"",8199271
+"339","240926_Smp_RC104_HomFate_T6_C_posDDA","Adenosine",4.98,15688428,0,409089,-2.7,"",15688428
+"340","240926_Smp_RC104_HomFate_T12_A_posDDA","Adenosine",4.93,101402856,0,2559842,-3,"",101402856
+"341","240926_Smp_RC104_HomFate_T12_B_posDDA","Adenosine",4.93,82044360,0,1997790,-3,"",82044360
+"342","240926_Smp_RC104_HomFate_T12_C_posDDA","Adenosine",4.94,145093728,0,3723374,-2.5,"",145093728
+"343","240926_Smp_RC104_HomFate_T24_A_posDDA","Adenosine",4.98,193966288,0,5178493,-3.2,"",193966288
+"344","240926_Smp_RC104_HomFate_T24_B_posDDA","Adenosine",4.92,42568336,0,1062013,-2.5,"",42568336
+"345","240926_Smp_RC104_HomFate_T24_C_posDDA","Adenosine",4.99,280313888,0,7149142,-2.7,"",280313888
+"346","240926_Smp_RC104_HomFate_T48_A_posDDA","Adenosine",4.93,202571216,0,5442414,-3,"",202571216
+"347","240926_Smp_RC104_HomFate_T48_B_posDDA","Adenosine",5,470253344,0,12491556,-3.8,"",470253344
+"348","240926_Smp_RC104_HomFate_T48_C_posDDA","Adenosine",4.91,260249616,0,6959252,-3.2,"",260249616
+"349","240926_Smp_RC104_HomFate_T96_A_posDDA","Adenosine",4.93,156656752,0,4131906,-3.2,"",156656752
+"350","240926_Smp_RC104_HomFate_T96_B_posDDA","Adenosine",4.93,154836336,0,4399530,-3.8,"",154836336
+"351","240926_Smp_RC104_HomFate_T96_C_posDDA","Adenosine",4.95,253869440,3140629,7574722,-3.8,"",253869440
+"352","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","Adenosine",4.89,194129216,396656,5201255,-3.3,"",194129216
+"353","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","Adenosine",4.98,200400608,2299127,5443711,-3.4,"",200400608
+"354","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","Adenosine",4.94,152749488,1926506,4171055,-3.2,"",152749488
+"355","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","Adenosine",4.98,76315136,950301,2341433,-3.3,"",76315136
+"356","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","Adenosine",4.98,96508992,709693,2911751,-3.6,"",96508992
+"357","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","Adenosine",4.93,128400544,257068,3543729,-3.3,"",128400544
+"358","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Arginine",19.65,90530880,0,3056506,-2.9,"",90530880
+"359","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Arginine",19.92,66523216,0,2240450,-3.9,"",66523216
+"360","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Arginine",19.56,148773472,1655026,4509413,-3.2,"",148773472
+"361","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Arginine",19.82,111384672,0,3478009,-3.3,"",111384672
+"362","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Arginine",NA,NA,NA,NA,NA,"",NA
+"363","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Arginine",NA,NA,NA,NA,NA,"",NA
+"364","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Arginine",19.54,31816518,0,999154,-2.7,"",31816518
+"365","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Arginine",19.84,22028012,0,673590,-3.5,"",22028012
+"366","240926_Std_H2OinMatrix1_posDDA","L-Arginine",19.53,29050914,0,929063,-3.9,"",29050914
+"367","240926_Std_H2OinMatrix2_posDDA","L-Arginine",19.69,23848156,0,687756,-4.2,"",23848156
+"368","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Arginine",19.73,1581304,0,62924,-4,"",1581304
+"369","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Arginine",19.54,7889368,0,211032,-3.5,"",7889368
+"370","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Arginine",19.41,1671117,0,66892,-3.5,"",1671117
+"371","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Arginine",19.54,2140640,0,64404,-3.5,"",2140640
+"372","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Arginine",19.51,2922664,0,78376,-4.1,"",2922664
+"373","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Arginine",19.6,4792147,0,115954,-4,"",4792147
+"374","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Arginine",19.46,2229122,0,66827,-4.1,"",2229122
+"375","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Arginine",19.45,4481818,0,114818,-2.9,"",4481818
+"376","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Arginine",19.22,2236867,0,69106,-3.5,"",2236867
+"377","240926_Poo_RC104_HomFate_Full1_posDDA","L-Arginine",19.57,58073032,416717,1616046,-3,"",58073032
+"378","240926_Poo_RC104_HomFate_Full2_posDDA","L-Arginine",19.38,40399076,0,1045540,-3.9,"",40399076
+"379","240926_Poo_RC104_HomFate_Full3_posDDA","L-Arginine",19.49,41968604,0,987012,-3.6,"",41968604
+"380","240926_Poo_RC104_HomFate_Full4_posDDA","L-Arginine",19.58,37303836,0,974826,-3.6,"",37303836
+"381","240926_Poo_RC104_HomFate_Full5_posDDA","L-Arginine",19.53,38779120,0,926198,-4,"",38779120
+"382","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Arginine",19.44,31264798,0,772723,-3.8,"",31264798
+"383","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Arginine",19.64,22471122,0,615753,-3.7,"",22471122
+"384","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Arginine",19.54,14056305,0,403191,-3.9,"",14056305
+"385","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Arginine",19.45,21531446,0,494479,-3.7,"",21531446
+"386","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Arginine",19.62,37040824,0,975593,-3.3,"",37040824
+"387","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Arginine",19.46,18408434,0,490356,-3.9,"",18408434
+"388","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Arginine",19.59,49665096,411172,1488553,-2.8,"",49665096
+"389","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Arginine",19.4,15598582,0,375300,-4,"",15598582
+"390","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Arginine",19.41,28618906,34327,655812,-3.5,"",28618906
+"391","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Arginine",19.53,36408972,878729,934763,-3.8,"",36408972
+"392","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Arginine",19.52,17130984,0,456477,-3.7,"",17130984
+"393","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Arginine",19.5,105804864,0,2720457,-2.9,"",105804864
+"394","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Arginine",19.64,44072032,1992147,1099655,-3.8,"",44072032
+"395","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Arginine",19.52,46631720,0,1233768,-3.2,"",46631720
+"396","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Arginine",19.52,275810368,0,7124461,-3.3,"",275810368
+"397","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Arginine",19.42,44804652,0,949937,-3.7,"",44804652
+"398","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Arginine",19.64,97982080,0,2168617,-3.9,"",97982080
+"399","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Arginine",19.45,172885952,0,3764347,-3.7,"",172885952
+"400","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Arginine",19.39,97966048,0,2095734,-3.8,"",97966048
+"401","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Arginine",19.52,142818224,0,3062612,-4.2,"",142818224
+"402","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Arginine",19.55,125349104,0,2439215,-3.9,"",125349104
+"403","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Arginine",19.53,29207788,685741,673365,-3.8,"",29207788
+"404","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Arginine",19.4,35786688,0,811218,-4.2,"",35786688
+"405","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Arginine",19.54,25234098,0,679941,-4,"",25234098
+"406","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Arginine",19.45,16383587,0,311735,-3.9,"",16383587
+"407","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Arginine",19.36,23080364,0,447793,-4.2,"",23080364
+"408","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Arginine",19.46,24690430,0,516768,-4.2,"",24690430
+"409","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Asparagine",12.03,20033260,53165,1069383,-3.3,"",20033260
+"410","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Asparagine",11.4,32806752,8380,1199304,-4.4,"",32806752
+"411","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Asparagine",12.03,27246996,437043,1718899,-3.5,"",27246996
+"412","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Asparagine",11.55,37441112,0,2407409,-3.8,"",37441112
+"413","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Asparagine",NA,NA,NA,NA,NA,"",NA
+"414","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Asparagine",NA,NA,NA,NA,NA,"",NA
+"415","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Asparagine",12.05,3238323,0,175986,-3.4,"",3238323
+"416","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Asparagine",11.52,4326962,0,283221,-3.4,"",4326962
+"417","240926_Std_H2OinMatrix1_posDDA","L-Asparagine",12.03,3204563,0,207265,-4,"",3204563
+"418","240926_Std_H2OinMatrix2_posDDA","L-Asparagine",11.69,4116715,0,225540,-4.7,"",4116715
+"419","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Asparagine",11.81,600517,0,39700,-4,"",600517
+"420","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Asparagine",12.03,2358803,0,125191,-3.8,"",2358803
+"421","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Asparagine",12.09,589619,0,32045,-4,"",589619
+"422","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Asparagine",12.05,458563,0,26415,-4,"",458563
+"423","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Asparagine",12.05,676102,0,35434,-3.6,"",676102
+"424","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Asparagine",11.93,861974,0,45176,-4.5,"",861974
+"425","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Asparagine",11.74,948527,0,58973,-4.1,"",948527
+"426","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Asparagine",12.13,1434855,53852,67684,-3.3,"",1434855
+"427","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Asparagine",11.97,1008738,0,48332,-3.7,"",1008738
+"428","240926_Poo_RC104_HomFate_Full1_posDDA","L-Asparagine",12.05,5387403,100978,319826,-3.1,"",5387403
+"429","240926_Poo_RC104_HomFate_Full2_posDDA","L-Asparagine",12.02,4657862,0,223077,-4.2,"",4657862
+"430","240926_Poo_RC104_HomFate_Full3_posDDA","L-Asparagine",11.97,4733225,0,222392,-3.8,"",4733225
+"431","240926_Poo_RC104_HomFate_Full4_posDDA","L-Asparagine",11.9,5299607,0,262720,-4,"",5299607
+"432","240926_Poo_RC104_HomFate_Full5_posDDA","L-Asparagine",11.81,5619970,0,298727,-4.4,"",5619970
+"433","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Asparagine",12.03,3241724,0,165293,-4.2,"",3241724
+"434","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Asparagine",11.76,2920008,0,137516,-4,"",2920008
+"435","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Asparagine",11.83,2497653,0,106715,-4.1,"",2497653
+"436","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Asparagine",11.95,3706032,0,182097,-4,"",3706032
+"437","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Asparagine",11.86,4967825,0,257539,-3.8,"",4967825
+"438","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Asparagine",11.97,3412938,0,171087,-3.9,"",3412938
+"439","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Asparagine",12.05,6638667,0,384964,-3.2,"",6638667
+"440","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Asparagine",12.08,4216379,0,206287,-4.1,"",4216379
+"441","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Asparagine",12.15,5751145,0,262681,-3.7,"",5751145
+"442","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Asparagine",11.91,4888445,0,244462,-4.4,"",4888445
+"443","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Asparagine",11.95,2569660,0,152957,-4.1,"",2569660
+"444","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Asparagine",12.03,7262101,27786,384152,-3.3,"",7262101
+"445","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Asparagine",11.88,4664782,0,232482,-4.5,"",4664782
+"446","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Asparagine",12.03,5724035,0,243574,-4.4,"",5724035
+"447","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Asparagine",12.03,15593819,0,761811,-4.1,"",15593819
+"448","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Asparagine",12.05,4966474,0,199222,-3.8,"",4966474
+"449","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Asparagine",11.83,10156087,0,449755,-4.6,"",10156087
+"450","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Asparagine",12.02,12669571,0,601569,-4.2,"",12669571
+"451","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Asparagine",11.97,13280271,0,554241,-4,"",13280271
+"452","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Asparagine",11.88,20498868,0,773975,-4.6,"",20498868
+"453","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Asparagine",11.88,17753260,194565,785919,-4.5,"",17753260
+"454","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Asparagine",11.9,4727315,0,216347,-4.1,"",4727315
+"455","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Asparagine",11.83,5142213,0,263236,-4.5,"",5142213
+"456","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Asparagine",11.76,4603755,0,278293,-4.3,"",4603755
+"457","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Asparagine",11.92,2507822,0,179456,-4.7,"",2507822
+"458","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Asparagine",11.97,3480498,0,171788,-4.5,"",3480498
+"459","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Asparagine",11.85,4084326,0,192618,-4.4,"",4084326
+"460","240926_Std_4uMStdsMix1InH2O-1_posDDA","Citrulline",12.6,45878540,453800,2924891,-2.8,"",45878540
+"461","240926_Std_4uMStdsMix1InH2O-2_posDDA","Citrulline",12.28,60148808,603890,3468845,-3.5,"",60148808
+"462","240926_Std_4uMStdsMix1InMatrix-1_posDDA","Citrulline",12.58,66299304,1013869,4652905,-3,"",66299304
+"463","240926_Std_4uMStdsMix1InMatrix-2_posDDA","Citrulline",12.28,88025616,1121402,5891111,-3.1,"",88025616
+"464","240926_Std_4uMStdsMix2InH2O-1_posDDA","Citrulline",NA,NA,NA,NA,NA,"",NA
+"465","240926_Std_4uMStdsMix2InH2O-2_posDDA","Citrulline",NA,NA,NA,NA,NA,"",NA
+"466","240926_Std_4uMStdsMix2InMatrix-1_posDDA","Citrulline",12.56,3422233,0,224701,-2.9,"",3422233
+"467","240926_Std_4uMStdsMix2InMatrix-2_posDDA","Citrulline",12.28,3728401,0,269970,-3.2,"",3728401
+"468","240926_Std_H2OinMatrix1_posDDA","Citrulline",12.58,3377721,0,260016,-3.7,"",3377721
+"469","240926_Std_H2OinMatrix2_posDDA","Citrulline",12.35,4640263,0,295586,-4.1,"",4640263
+"470","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","Citrulline",12.43,2536894,0,159815,-4,"",2536894
+"471","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","Citrulline",12.59,13481025,26469,887513,-3.2,"",13481025
+"472","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","Citrulline",12.54,3276217,0,191850,-3.8,"",3276217
+"473","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","Citrulline",12.55,976496,0,66482,-3.6,"",976496
+"474","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","Citrulline",12.53,2369632,0,148905,-3.9,"",2369632
+"475","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","Citrulline",12.41,3218312,0,205363,-4.2,"",3218312
+"476","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","Citrulline",12.5,4301989,0,281343,-4.1,"",4301989
+"477","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","Citrulline",12.63,5039962,0,328131,-2.9,"",5039962
+"478","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","Citrulline",12.54,3408321,0,214705,-3.8,"",3408321
+"479","240926_Poo_RC104_HomFate_Full1_posDDA","Citrulline",12.56,6351206,0,451428,-2.6,"",6351206
+"480","240926_Poo_RC104_HomFate_Full2_posDDA","Citrulline",12.52,5139300,0,335794,-3.8,"",5139300
+"481","240926_Poo_RC104_HomFate_Full3_posDDA","Citrulline",12.52,5664774,0,371863,-3.5,"",5664774
+"482","240926_Poo_RC104_HomFate_Full4_posDDA","Citrulline",12.47,5240613,26426,323848,-3.6,"",5240613
+"483","240926_Poo_RC104_HomFate_Full5_posDDA","Citrulline",12.42,5712372,0,337651,-3.9,"",5712372
+"484","240926_Smp_RC104_HomFate_Con_A_posDDA","Citrulline",12.53,3562698,0,224958,-3.8,"",3562698
+"485","240926_Smp_RC104_HomFate_Con_B_posDDA","Citrulline",12.43,2786515,0,187750,-3.9,"",2786515
+"486","240926_Smp_RC104_HomFate_Con_C_posDDA","Citrulline",12.45,2128497,0,134580,-3.7,"",2128497
+"487","240926_Smp_RC104_HomFate_T0_A_posDDA","Citrulline",12.5,5609863,0,361261,-3.5,"",5609863
+"488","240926_Smp_RC104_HomFate_T0_B_posDDA","Citrulline",12.45,4523260,41498,276206,-3.4,"",4523260
+"489","240926_Smp_RC104_HomFate_T0_C_posDDA","Citrulline",12.56,3818637,0,235253,-3.7,"",3818637
+"490","240926_Smp_RC104_HomFate_T6_A_posDDA","Citrulline",12.58,13640088,114515,911518,-2.7,"",13640088
+"491","240926_Smp_RC104_HomFate_T6_B_posDDA","Citrulline",12.56,15725640,129707,1023515,-3.7,"",15725640
+"492","240926_Smp_RC104_HomFate_T6_C_posDDA","Citrulline",12.58,8919207,0,561582,-3.3,"",8919207
+"493","240926_Smp_RC104_HomFate_T12_A_posDDA","Citrulline",12.46,6212647,57849,389441,-3.6,"",6212647
+"494","240926_Smp_RC104_HomFate_T12_B_posDDA","Citrulline",12.48,3107490,0,230034,-3.6,"",3107490
+"495","240926_Smp_RC104_HomFate_T12_C_posDDA","Citrulline",12.58,6998211,0,457115,-2.5,"",6998211
+"496","240926_Smp_RC104_HomFate_T24_A_posDDA","Citrulline",12.38,3994547,0,252270,-3.6,"",3994547
+"497","240926_Smp_RC104_HomFate_T24_B_posDDA","Citrulline",12.54,5209240,0,350332,-3.2,"",5209240
+"498","240926_Smp_RC104_HomFate_T24_C_posDDA","Citrulline",12.54,10352401,76434,717814,-3,"",10352401
+"499","240926_Smp_RC104_HomFate_T48_A_posDDA","Citrulline",12.59,6753040,0,424759,-3.4,"",6753040
+"500","240926_Smp_RC104_HomFate_T48_B_posDDA","Citrulline",12.4,9243076,0,566240,-4.1,"",9243076
+"501","240926_Smp_RC104_HomFate_T48_C_posDDA","Citrulline",12.55,10622665,0,692262,-3.5,"",10622665
+"502","240926_Smp_RC104_HomFate_T96_A_posDDA","Citrulline",12.52,8590296,37891,562970,-3.5,"",8590296
+"503","240926_Smp_RC104_HomFate_T96_B_posDDA","Citrulline",12.4,5925123,0,395046,-4.3,"",5925123
+"504","240926_Smp_RC104_HomFate_T96_C_posDDA","Citrulline",12.43,10862579,0,721240,-4.3,"",10862579
+"505","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","Citrulline",12.45,5865712,0,347511,-4.1,"",5865712
+"506","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","Citrulline",12.31,4880215,0,321626,-4.2,"",4880215
+"507","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","Citrulline",12.37,4409790,0,292808,-3.8,"",4409790
+"508","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","Citrulline",12.46,6984591,0,480942,-3.9,"",6984591
+"509","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","Citrulline",12.42,11400503,0,710169,-4.3,"",11400503
+"510","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","Citrulline",12.35,6167644,0,370877,-4.1,"",6167644
+"511","240926_Std_4uMStdsMix1InH2O-1_posDDA","Cytosine",NA,NA,NA,NA,NA,"",NA
+"512","240926_Std_4uMStdsMix1InH2O-2_posDDA","Cytosine",NA,NA,NA,NA,NA,"",NA
+"513","240926_Std_4uMStdsMix1InMatrix-1_posDDA","Cytosine",7.52,47872412,0,1220277,-2.1,"",47872412
+"514","240926_Std_4uMStdsMix1InMatrix-2_posDDA","Cytosine",7.45,45147776,2136129,1181990,-2.3,"",45147776
+"515","240926_Std_4uMStdsMix2InH2O-1_posDDA","Cytosine",7.51,2743571200,23926320,130805216,-3.2,"",2743571200
+"516","240926_Std_4uMStdsMix2InH2O-2_posDDA","Cytosine",7.49,2417500160,15500084,114975216,-2.7,"",2417500160
+"517","240926_Std_4uMStdsMix2InMatrix-1_posDDA","Cytosine",7.54,2422696448,44356108,113314376,-2.7,"",2422696448
+"518","240926_Std_4uMStdsMix2InMatrix-2_posDDA","Cytosine",7.47,2454384896,44063492,113593976,-2.8,"",2454384896
+"519","240926_Std_H2OinMatrix1_posDDA","Cytosine",7.51,53153616,0,1512670,-2.8,"",53153616
+"520","240926_Std_H2OinMatrix2_posDDA","Cytosine",7.46,47884132,0,1300443,-3.1,"",47884132
+"521","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","Cytosine",7.48,2076221,2025282,49295,-3.2,"sn_flag, ",NA
+"522","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","Cytosine",7.51,3366370,1486698,153886,-2.6,"sn_flag, ",NA
+"523","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","Cytosine",7.45,2661214,1573373,100113,-2.7,"sn_flag, ",NA
+"524","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","Cytosine",7.52,3231019,1425401,97850,-2.6,"sn_flag, ",NA
+"525","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","Cytosine",7.48,10021916,1619810,532434,-3.3,"",10021916
+"526","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","Cytosine",7.56,6246870,1936111,284251,-3.2,"",6246870
+"527","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","Cytosine",7.51,7918553,906664,422522,-3.2,"",7918553
+"528","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","Cytosine",7.5,12116365,2004633,615958,-2.1,"",12116365
+"529","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","Cytosine",7.54,4451747,1495405,211733,-2.7,"sn_flag, ",NA
+"530","240926_Poo_RC104_HomFate_Full1_posDDA","Cytosine",7.5,80219904,0,2224637,-1.8,"",80219904
+"531","240926_Poo_RC104_HomFate_Full2_posDDA","Cytosine",7.5,72513664,0,2111271,-2.9,"",72513664
+"532","240926_Poo_RC104_HomFate_Full3_posDDA","Cytosine",7.49,69202080,0,1804566,-2.6,"",69202080
+"533","240926_Poo_RC104_HomFate_Full4_posDDA","Cytosine",7.52,77831752,709829,2083506,-2.8,"",77831752
+"534","240926_Poo_RC104_HomFate_Full5_posDDA","Cytosine",7.52,80935616,0,2289754,-3.2,"",80935616
+"535","240926_Smp_RC104_HomFate_Con_A_posDDA","Cytosine",7.49,94144488,2917234,2405533,-3,"",94144488
+"536","240926_Smp_RC104_HomFate_Con_B_posDDA","Cytosine",7.45,39746612,1776423,1023334,-3.1,"",39746612
+"537","240926_Smp_RC104_HomFate_Con_C_posDDA","Cytosine",7.48,57992500,2515506,2005290,-2.8,"",57992500
+"538","240926_Smp_RC104_HomFate_T0_A_posDDA","Cytosine",7.5,38399340,1398310,1129155,-2.8,"",38399340
+"539","240926_Smp_RC104_HomFate_T0_B_posDDA","Cytosine",7.17,52351268,452674,1369280,-2.6,"",52351268
+"540","240926_Smp_RC104_HomFate_T0_C_posDDA","Cytosine",7.16,33845668,0,935854,-3,"",33845668
+"541","240926_Smp_RC104_HomFate_T6_A_posDDA","Cytosine",7.49,57734380,0,1720345,-2,"",57734380
+"542","240926_Smp_RC104_HomFate_T6_B_posDDA","Cytosine",7.49,26608962,1857948,1050148,-2.9,"",26608962
+"543","240926_Smp_RC104_HomFate_T6_C_posDDA","Cytosine",7.51,41510296,0,1190908,-2.6,"",41510296
+"544","240926_Smp_RC104_HomFate_T12_A_posDDA","Cytosine",7.48,32997486,2722155,1086334,-2.8,"",32997486
+"545","240926_Smp_RC104_HomFate_T12_B_posDDA","Cytosine",7.5,51795176,2039312,1496171,-2.8,"",51795176
+"546","240926_Smp_RC104_HomFate_T12_C_posDDA","Cytosine",7.5,82841712,376190,2617258,-2,"",82841712
+"547","240926_Smp_RC104_HomFate_T24_A_posDDA","Cytosine",7.48,118419792,3085190,4220635,-3.1,"",118419792
+"548","240926_Smp_RC104_HomFate_T24_B_posDDA","Cytosine",7.5,50175928,3384390,1722931,-2.3,"",50175928
+"549","240926_Smp_RC104_HomFate_T24_C_posDDA","Cytosine",7.15,251967664,0,6595166,-2.2,"",251967664
+"550","240926_Smp_RC104_HomFate_T48_A_posDDA","Cytosine",7.52,225712880,6484926,10296267,-2.8,"",225712880
+"551","240926_Smp_RC104_HomFate_T48_B_posDDA","Cytosine",7.14,126251832,672999,3563393,-3.3,"",126251832
+"552","240926_Smp_RC104_HomFate_T48_C_posDDA","Cytosine",7.17,267473248,2126176,6821320,-2.9,"",267473248
+"553","240926_Smp_RC104_HomFate_T96_A_posDDA","Cytosine",7.21,92899440,0,2973855,-2.8,"",92899440
+"554","240926_Smp_RC104_HomFate_T96_B_posDDA","Cytosine",7.17,136378864,0,4221513,-3.4,"",136378864
+"555","240926_Smp_RC104_HomFate_T96_C_posDDA","Cytosine",7.17,148913600,0,4711054,-3.3,"",148913600
+"556","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","Cytosine",7.49,122127896,5731592,4965395,-3.3,"",122127896
+"557","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","Cytosine",7.48,123425808,7031976,4953927,-3.1,"",123425808
+"558","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","Cytosine",7.51,100235536,5952785,3694670,-2.9,"",100235536
+"559","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","Cytosine",7.51,68271736,4865614,3196793,-3,"",68271736
+"560","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","Cytosine",7.51,60346752,2504324,2324825,-3.4,"",60346752
+"561","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","Cytosine",7.14,41949424,1812257,1258496,-2.9,"",41949424
+"562","240926_Std_4uMStdsMix1InH2O-1_posDDA","Deoxyadenosine",3.8,2401868032,19029900,58955336,-2.8,"",2401868032
+"563","240926_Std_4uMStdsMix1InH2O-2_posDDA","Deoxyadenosine",3.78,2607792640,30384350,64164216,-3.7,"",2607792640
+"564","240926_Std_4uMStdsMix1InMatrix-1_posDDA","Deoxyadenosine",3.75,2612487680,27056740,64497696,-3,"",2612487680
+"565","240926_Std_4uMStdsMix1InMatrix-2_posDDA","Deoxyadenosine",3.8,3047795968,28808054,77215848,-3.4,"",3047795968
+"566","240926_Std_4uMStdsMix2InH2O-1_posDDA","Deoxyadenosine",NA,NA,NA,NA,NA,"",NA
+"567","240926_Std_4uMStdsMix2InH2O-2_posDDA","Deoxyadenosine",NA,NA,NA,NA,NA,"",NA
+"568","240926_Std_4uMStdsMix2InMatrix-1_posDDA","Deoxyadenosine",3.77,34334460,0,918549,-2.5,"",34334460
+"569","240926_Std_4uMStdsMix2InMatrix-2_posDDA","Deoxyadenosine",3.8,35231148,0,917101,-3.2,"",35231148
+"570","240926_Std_H2OinMatrix1_posDDA","Deoxyadenosine",3.78,31210778,0,813469,-3.4,"",31210778
+"571","240926_Std_H2OinMatrix2_posDDA","Deoxyadenosine",3.83,33179922,0,920936,-3.3,"",33179922
+"572","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","Deoxyadenosine",3.74,165888,0,13829,-4.9,"",165888
+"573","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","Deoxyadenosine",4.26,424738,0,14196,-3.1,"",424738
+"574","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","Deoxyadenosine",3.63,302408,0,15567,-4.9,"",302408
+"575","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","Deoxyadenosine",3.69,369406,0,13880,-5.4,"",369406
+"576","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","Deoxyadenosine",3.92,1376421,0,35999,-3.5,"",1376421
+"577","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","Deoxyadenosine",3.78,497035,0,18646,-3.3,"",497035
+"578","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","Deoxyadenosine",3.95,2497487,0,55530,-3.6,"",2497487
+"579","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","Deoxyadenosine",3.84,4710980,0,106467,-2.3,"",4710980
+"580","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","Deoxyadenosine",3.99,1334937,0,32640,-3.4,"",1334937
+"581","240926_Poo_RC104_HomFate_Full1_posDDA","Deoxyadenosine",3.79,48948308,0,1324595,-1.9,"",48948308
+"582","240926_Poo_RC104_HomFate_Full2_posDDA","Deoxyadenosine",3.81,45889372,224666,1265034,-3.4,"",45889372
+"583","240926_Poo_RC104_HomFate_Full3_posDDA","Deoxyadenosine",3.8,48858228,2109,1347785,-3,"",48858228
+"584","240926_Poo_RC104_HomFate_Full4_posDDA","Deoxyadenosine",3.77,46669796,36048,1287721,-3,"",46669796
+"585","240926_Poo_RC104_HomFate_Full5_posDDA","Deoxyadenosine",3.82,49787552,266575,1368483,-3.7,"",49787552
+"586","240926_Smp_RC104_HomFate_Con_A_posDDA","Deoxyadenosine",3.82,56932832,502871,1485751,-3.2,"",56932832
+"587","240926_Smp_RC104_HomFate_Con_B_posDDA","Deoxyadenosine",3.74,17484288,0,449186,-3.3,"",17484288
+"588","240926_Smp_RC104_HomFate_Con_C_posDDA","Deoxyadenosine",3.86,16346839,0,438211,-3.2,"",16346839
+"589","240926_Smp_RC104_HomFate_T0_A_posDDA","Deoxyadenosine",3.72,9762271,0,254328,-3.2,"",9762271
+"590","240926_Smp_RC104_HomFate_T0_B_posDDA","Deoxyadenosine",3.84,26827448,33009,726540,-3,"",26827448
+"591","240926_Smp_RC104_HomFate_T0_C_posDDA","Deoxyadenosine",3.87,5293435,0,153864,-3.3,"",5293435
+"592","240926_Smp_RC104_HomFate_T6_A_posDDA","Deoxyadenosine",3.8,9670068,0,255328,-2.6,"",9670068
+"593","240926_Smp_RC104_HomFate_T6_B_posDDA","Deoxyadenosine",3.84,1250989,0,31894,-3.3,"",1250989
+"594","240926_Smp_RC104_HomFate_T6_C_posDDA","Deoxyadenosine",3.97,1258495,0,35985,-3.4,"",1258495
+"595","240926_Smp_RC104_HomFate_T12_A_posDDA","Deoxyadenosine",3.73,9840207,0,259643,-3.3,"",9840207
+"596","240926_Smp_RC104_HomFate_T12_B_posDDA","Deoxyadenosine",3.86,7299677,0,188618,-3.2,"",7299677
+"597","240926_Smp_RC104_HomFate_T12_C_posDDA","Deoxyadenosine",3.79,21880432,0,598274,-2.5,"",21880432
+"598","240926_Smp_RC104_HomFate_T24_A_posDDA","Deoxyadenosine",3.81,60727400,15102,1594427,-3.2,"",60727400
+"599","240926_Smp_RC104_HomFate_T24_B_posDDA","Deoxyadenosine",3.76,15190359,0,414512,-2.6,"",15190359
+"600","240926_Smp_RC104_HomFate_T24_C_posDDA","Deoxyadenosine",3.82,269789632,3742263,7135198,-2.8,"",269789632
+"601","240926_Smp_RC104_HomFate_T48_A_posDDA","Deoxyadenosine",3.81,63392392,526672,1817849,-3.1,"",63392392
+"602","240926_Smp_RC104_HomFate_T48_B_posDDA","Deoxyadenosine",3.84,107223280,1397942,3099233,-3.6,"",107223280
+"603","240926_Smp_RC104_HomFate_T48_C_posDDA","Deoxyadenosine",3.79,286240288,2752619,7705134,-3.2,"",286240288
+"604","240926_Smp_RC104_HomFate_T96_A_posDDA","Deoxyadenosine",3.8,52479824,672555,1470950,-3.2,"",52479824
+"605","240926_Smp_RC104_HomFate_T96_B_posDDA","Deoxyadenosine",3.79,151710304,2221437,4119292,-3.9,"",151710304
+"606","240926_Smp_RC104_HomFate_T96_C_posDDA","Deoxyadenosine",3.8,127509800,561827,3627823,-3.8,"",127509800
+"607","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","Deoxyadenosine",3.75,24659774,41190,656040,-3.4,"",24659774
+"608","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","Deoxyadenosine",3.84,27660684,115622,742142,-3.6,"",27660684
+"609","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","Deoxyadenosine",3.83,27833050,91680,776986,-3.3,"",27833050
+"610","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","Deoxyadenosine",3.9,14871655,0,351931,-3.7,"",14871655
+"611","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","Deoxyadenosine",3.9,11239795,0,287058,-3.7,"",11239795
+"612","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","Deoxyadenosine",3.87,11103264,0,289034,-3.5,"",11103264
+"613","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Glutamic acid",12.38,33560760,0,2583481,-3.7,"",33560760
+"614","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Glutamic acid",11.87,47035436,233123,2619657,-4.4,"",47035436
+"615","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Glutamic acid",12.41,227405648,6294327,15867024,-3.9,"",227405648
+"616","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Glutamic acid",11.9,294364192,8199585,18467552,-3.8,"",294364192
+"617","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Glutamic acid",NA,NA,NA,NA,NA,"",NA
+"618","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Glutamic acid",NA,NA,NA,NA,NA,"",NA
+"619","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Glutamic acid",12.39,161927088,4682048,10646183,-3.7,"",161927088
+"620","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Glutamic acid",11.88,199134480,6141191,11699588,-3.9,"",199134480
+"621","240926_Std_H2OinMatrix1_posDDA","L-Glutamic acid",12.43,163650784,4040871,11308606,-4.5,"",163650784
+"622","240926_Std_H2OinMatrix2_posDDA","L-Glutamic acid",11.99,218934720,5741858,12218545,-5,"",218934720
+"623","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Glutamic acid",12.17,3448440,0,187178,-4.8,"",3448440
+"624","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Glutamic acid",12.37,7621165,52442,430822,-4.2,"",7621165
+"625","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Glutamic acid",12.23,2881496,0,142269,-4.5,"",2881496
+"626","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Glutamic acid",12.36,8878928,0,372857,-4.6,"",8878928
+"627","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Glutamic acid",12.38,8492352,0,441812,-4.9,"",8492352
+"628","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Glutamic acid",12.15,10396516,0,515243,-5.1,"",10396516
+"629","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Glutamic acid",12.22,11993828,0,591216,-4.9,"",11993828
+"630","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Glutamic acid",12.42,21257894,200570,1117210,-3.6,"",21257894
+"631","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Glutamic acid",12.33,8476820,0,404835,-4.6,"",8476820
+"632","240926_Poo_RC104_HomFate_Full1_posDDA","L-Glutamic acid",12.39,281450848,10532876,17799016,-3.7,"",281450848
+"633","240926_Poo_RC104_HomFate_Full2_posDDA","L-Glutamic acid",12.36,231877168,10251866,12230074,-4.7,"",231877168
+"634","240926_Poo_RC104_HomFate_Full3_posDDA","L-Glutamic acid",12.33,248616960,10986887,13013602,-4.5,"",248616960
+"635","240926_Poo_RC104_HomFate_Full4_posDDA","L-Glutamic acid",12.21,252339024,9878047,13597758,-4.6,"",252339024
+"636","240926_Poo_RC104_HomFate_Full5_posDDA","L-Glutamic acid",12.11,275116512,10318273,14013568,-5,"",275116512
+"637","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Glutamic acid",12.32,231116400,4525987,11458974,-4.8,"",231116400
+"638","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Glutamic acid",12.17,171324608,4518652,9819319,-4.7,"",171324608
+"639","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Glutamic acid",12.24,127739240,3055840,7089211,-4.5,"",127739240
+"640","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Glutamic acid",12.26,185533328,8108431,9838535,-4.4,"",185533328
+"641","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Glutamic acid",12.21,266533488,7780639,15909994,-4.3,"",266533488
+"642","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Glutamic acid",12.28,153850416,5215690,8762532,-4.6,"",153850416
+"643","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Glutamic acid",12.41,229827280,7618939,14392871,-3.7,"",229827280
+"644","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Glutamic acid",12.39,147431552,6737724,7491138,-4.7,"",147431552
+"645","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Glutamic acid",12.34,90356488,4316678,4484545,-4.2,"",90356488
+"646","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Glutamic acid",12.24,245893168,8716520,13566162,-4.4,"",245893168
+"647","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Glutamic acid",12.24,164541744,4585411,9273302,-4.6,"",164541744
+"648","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Glutamic acid",12.39,327687040,11555771,18152050,-3.6,"",327687040
+"649","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Glutamic acid",12.12,281486112,7249132,13758607,-4.6,"",281486112
+"650","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Glutamic acid",12.37,339122560,7357620,20438600,-4.1,"",339122560
+"651","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Glutamic acid",12.37,742921088,16869728,43830104,-4.1,"",742921088
+"652","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Glutamic acid",12.38,225579328,9783591,9909330,-4.3,"",225579328
+"653","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Glutamic acid",12.17,569914112,27534048,27812314,-5.2,"",569914112
+"654","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Glutamic acid",12.38,597241088,24477498,30018740,-4.6,"",597241088
+"655","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Glutamic acid",12.33,710672448,35276496,35486172,-4.5,"",710672448
+"656","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Glutamic acid",12.14,956347776,40391632,42073584,-5.3,"",956347776
+"657","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Glutamic acid",12.19,1000910848,54498312,45178536,-5.2,"",1000910848
+"658","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Glutamic acid",12.04,286497088,2265014,9260922,-4.8,"",286497088
+"659","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Glutamic acid",12,339895584,2651314,10329315,-4.9,"",339895584
+"660","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Glutamic acid",11.99,257086592,1808443,7852746,-4.6,"",257086592
+"661","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Glutamic acid",12.16,188247840,261183,6731967,-4.8,"",188247840
+"662","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Glutamic acid",12.16,208496528,2708665,7352277,-5.1,"",208496528
+"663","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Glutamic acid",12.07,280581248,380172,9575399,-5,"",280581248
+"664","240926_Std_4uMStdsMix1InH2O-1_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"665","240926_Std_4uMStdsMix1InH2O-2_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"666","240926_Std_4uMStdsMix1InMatrix-1_posDDA","Glutathione disulfide",14.62,1275268,0,76615,-1.5,"",1275268
+"667","240926_Std_4uMStdsMix1InMatrix-2_posDDA","Glutathione disulfide",14.2,491649,0,41176,-1.4,"",491649
+"668","240926_Std_4uMStdsMix2InH2O-1_posDDA","Glutathione disulfide",14.61,8898779,0,532192,-1.6,"",8898779
+"669","240926_Std_4uMStdsMix2InH2O-2_posDDA","Glutathione disulfide",14.28,3237619,0,177722,-1.6,"",3237619
+"670","240926_Std_4uMStdsMix2InMatrix-1_posDDA","Glutathione disulfide",14.6,5072683,0,336282,-1.2,"",5072683
+"671","240926_Std_4uMStdsMix2InMatrix-2_posDDA","Glutathione disulfide",14.2,2264870,0,103030,-1.6,"",2264870
+"672","240926_Std_H2OinMatrix1_posDDA","Glutathione disulfide",14.73,14915,0,6246,-3.2,"areamin_flag, ",NA
+"673","240926_Std_H2OinMatrix2_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"674","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","Glutathione disulfide",14.93,0,0,0,NA,"areamin_flag, ",NA
+"675","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","Glutathione disulfide",14.92,0,0,0,NA,"areamin_flag, ",NA
+"676","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","Glutathione disulfide",14.96,0,0,0,NA,"areamin_flag, ",NA
+"677","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","Glutathione disulfide",14.9,0,0,0,NA,"areamin_flag, ",NA
+"678","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","Glutathione disulfide",15.04,0,0,0,NA,"areamin_flag, ",NA
+"679","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","Glutathione disulfide",14.73,0,0,0,NA,"areamin_flag, ",NA
+"680","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","Glutathione disulfide",14.87,0,0,0,NA,"areamin_flag, ",NA
+"681","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","Glutathione disulfide",14.97,0,0,0,NA,"areamin_flag, ",NA
+"682","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","Glutathione disulfide",14.96,0,0,0,NA,"areamin_flag, ",NA
+"683","240926_Poo_RC104_HomFate_Full1_posDDA","Glutathione disulfide",14.87,0,0,0,NA,"areamin_flag, ",NA
+"684","240926_Poo_RC104_HomFate_Full2_posDDA","Glutathione disulfide",14.55,17786,0,11974,-3,"areamin_flag, ",NA
+"685","240926_Poo_RC104_HomFate_Full3_posDDA","Glutathione disulfide",15.31,16289,0,6690,1.4,"areamin_flag, ",NA
+"686","240926_Poo_RC104_HomFate_Full4_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"687","240926_Poo_RC104_HomFate_Full5_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"688","240926_Smp_RC104_HomFate_Con_A_posDDA","Glutathione disulfide",14.67,17859,0,10966,-2.8,"areamin_flag, ",NA
+"689","240926_Smp_RC104_HomFate_Con_B_posDDA","Glutathione disulfide",14.28,20942,0,7379,-2.4,"areamin_flag, ",NA
+"690","240926_Smp_RC104_HomFate_Con_C_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"691","240926_Smp_RC104_HomFate_T0_A_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"692","240926_Smp_RC104_HomFate_T0_B_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"693","240926_Smp_RC104_HomFate_T0_C_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"694","240926_Smp_RC104_HomFate_T6_A_posDDA","Glutathione disulfide",14.57,49723,0,12432,-0.8,"",49723
+"695","240926_Smp_RC104_HomFate_T6_B_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"696","240926_Smp_RC104_HomFate_T6_C_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"697","240926_Smp_RC104_HomFate_T12_A_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"698","240926_Smp_RC104_HomFate_T12_B_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"699","240926_Smp_RC104_HomFate_T12_C_posDDA","Glutathione disulfide",14.63,213815,0,20302,-1.1,"",213815
+"700","240926_Smp_RC104_HomFate_T24_A_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"701","240926_Smp_RC104_HomFate_T24_B_posDDA","Glutathione disulfide",14.58,9593,0,5706,-0.4,"areamin_flag, ",NA
+"702","240926_Smp_RC104_HomFate_T24_C_posDDA","Glutathione disulfide",14.56,130297,0,23319,-1.9,"",130297
+"703","240926_Smp_RC104_HomFate_T48_A_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"704","240926_Smp_RC104_HomFate_T48_B_posDDA","Glutathione disulfide",14.31,40483,0,8924,-2.1,"",40483
+"705","240926_Smp_RC104_HomFate_T48_C_posDDA","Glutathione disulfide",14.55,31794,0,14628,-0.1,"areamin_flag, ",NA
+"706","240926_Smp_RC104_HomFate_T96_A_posDDA","Glutathione disulfide",14.86,25501,0,11349,-1.2,"areamin_flag, ",NA
+"707","240926_Smp_RC104_HomFate_T96_B_posDDA","Glutathione disulfide",15.16,11754,0,5657,-2.5,"areamin_flag, ",NA
+"708","240926_Smp_RC104_HomFate_T96_C_posDDA","Glutathione disulfide",14.77,15226,0,10284,-3,"areamin_flag, ",NA
+"709","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"710","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"711","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"712","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"713","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"714","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","Glutathione disulfide",NA,NA,NA,NA,NA,"",NA
+"715","240926_Std_4uMStdsMix1InH2O-1_posDDA","Guanosine",NA,NA,NA,NA,NA,"",NA
+"716","240926_Std_4uMStdsMix1InH2O-2_posDDA","Guanosine",NA,NA,NA,NA,NA,"",NA
+"717","240926_Std_4uMStdsMix1InMatrix-1_posDDA","Guanosine",9.6,1582281,0,101844,-2.3,"",1582281
+"718","240926_Std_4uMStdsMix1InMatrix-2_posDDA","Guanosine",9.58,2190518,0,126654,-2.7,"",2190518
+"719","240926_Std_4uMStdsMix2InH2O-1_posDDA","Guanosine",9.54,172362896,1387903,9196717,-2.6,"",172362896
+"720","240926_Std_4uMStdsMix2InH2O-2_posDDA","Guanosine",9.51,129367184,0,6750231,-2.6,"",129367184
+"721","240926_Std_4uMStdsMix2InMatrix-1_posDDA","Guanosine",9.58,117500464,1260101,6226855,-2.4,"",117500464
+"722","240926_Std_4uMStdsMix2InMatrix-2_posDDA","Guanosine",9.53,108005952,1017006,5861558,-2.5,"",108005952
+"723","240926_Std_H2OinMatrix1_posDDA","Guanosine",9.54,1356499,0,77926,-3.1,"",1356499
+"724","240926_Std_H2OinMatrix2_posDDA","Guanosine",9.51,1596059,0,104565,-3.7,"",1596059
+"725","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","Guanosine",9.24,0,0,0,NA,"areamin_flag, ",NA
+"726","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","Guanosine",9.65,30826,0,7947,-2.5,"areamin_flag, ",NA
+"727","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","Guanosine",9.58,0,0,0,NA,"areamin_flag, ",NA
+"728","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","Guanosine",9.67,11813,0,4431,-1.6,"areamin_flag, ",NA
+"729","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","Guanosine",9.54,58565,0,11779,-3.3,"",58565
+"730","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","Guanosine",9.54,192583,0,16716,-3.9,"",192583
+"731","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","Guanosine",9.61,45653,0,8613,-1.5,"",45653
+"732","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","Guanosine",9.52,326879,0,20651,-2.1,"",326879
+"733","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","Guanosine",9.6,11867,0,6073,-0.5,"areamin_flag, ",NA
+"734","240926_Poo_RC104_HomFate_Full1_posDDA","Guanosine",9.52,2226876,0,120960,-1.9,"",2226876
+"735","240926_Poo_RC104_HomFate_Full2_posDDA","Guanosine",9.6,1894916,0,114084,-3.2,"",1894916
+"736","240926_Poo_RC104_HomFate_Full3_posDDA","Guanosine",9.63,1905161,0,104453,-3.1,"",1905161
+"737","240926_Poo_RC104_HomFate_Full4_posDDA","Guanosine",9.63,2639179,0,144215,-2.9,"",2639179
+"738","240926_Poo_RC104_HomFate_Full5_posDDA","Guanosine",9.55,3219792,0,191099,-3.4,"",3219792
+"739","240926_Smp_RC104_HomFate_Con_A_posDDA","Guanosine",9.56,2645665,0,147978,-3.3,"",2645665
+"740","240926_Smp_RC104_HomFate_Con_B_posDDA","Guanosine",9.64,2577996,0,145811,-3.2,"",2577996
+"741","240926_Smp_RC104_HomFate_Con_C_posDDA","Guanosine",9.6,1235959,0,78216,-2.9,"",1235959
+"742","240926_Smp_RC104_HomFate_T0_A_posDDA","Guanosine",9.62,896674,0,56298,-3.3,"",896674
+"743","240926_Smp_RC104_HomFate_T0_B_posDDA","Guanosine",9.6,1984764,0,105194,-2.9,"",1984764
+"744","240926_Smp_RC104_HomFate_T0_C_posDDA","Guanosine",9.58,1091710,0,79248,-3.1,"",1091710
+"745","240926_Smp_RC104_HomFate_T6_A_posDDA","Guanosine",9.56,1990898,0,122403,-2,"",1990898
+"746","240926_Smp_RC104_HomFate_T6_B_posDDA","Guanosine",9.53,563508,0,38092,-3,"",563508
+"747","240926_Smp_RC104_HomFate_T6_C_posDDA","Guanosine",9.61,904622,0,53710,-2.7,"",904622
+"748","240926_Smp_RC104_HomFate_T12_A_posDDA","Guanosine",9.59,1438451,0,86397,-3,"",1438451
+"749","240926_Smp_RC104_HomFate_T12_B_posDDA","Guanosine",9.62,1475371,0,88564,-3,"",1475371
+"750","240926_Smp_RC104_HomFate_T12_C_posDDA","Guanosine",9.57,3677574,0,207822,-2,"",3677574
+"751","240926_Smp_RC104_HomFate_T24_A_posDDA","Guanosine",9.55,5539573,0,334899,-3.1,"",5539573
+"752","240926_Smp_RC104_HomFate_T24_B_posDDA","Guanosine",9.62,2400863,0,132492,-2.6,"",2400863
+"753","240926_Smp_RC104_HomFate_T24_C_posDDA","Guanosine",9.55,21484618,0,1069290,-2.6,"",21484618
+"754","240926_Smp_RC104_HomFate_T48_A_posDDA","Guanosine",9.6,3497031,0,222263,-2.8,"",3497031
+"755","240926_Smp_RC104_HomFate_T48_B_posDDA","Guanosine",9.55,11835287,0,689236,-3.4,"",11835287
+"756","240926_Smp_RC104_HomFate_T48_C_posDDA","Guanosine",9.57,7152632,0,476309,-3.2,"",7152632
+"757","240926_Smp_RC104_HomFate_T96_A_posDDA","Guanosine",9.6,3053934,0,181171,-2.9,"",3053934
+"758","240926_Smp_RC104_HomFate_T96_B_posDDA","Guanosine",9.57,10925758,0,691012,-3.7,"",10925758
+"759","240926_Smp_RC104_HomFate_T96_C_posDDA","Guanosine",9.56,8206851,0,521725,-3.3,"",8206851
+"760","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","Guanosine",9.53,3225448,0,183945,-3.2,"",3225448
+"761","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","Guanosine",9.6,3686309,0,212944,-3.5,"",3686309
+"762","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","Guanosine",9.51,2605642,0,146753,-3.3,"",2605642
+"763","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","Guanosine",9.59,759614,0,54615,-3,"",759614
+"764","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","Guanosine",9.49,916670,0,60592,-3.6,"",916670
+"765","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","Guanosine",9.55,1733642,0,123204,-3.4,"",1733642
+"766","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Homoserine",NA,NA,NA,NA,NA,"",NA
+"767","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Homoserine",NA,NA,NA,NA,NA,"",NA
+"768","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Homoserine",11.76,8030862,926365,456610,-2.7,"",8030862
+"769","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Homoserine",11.47,12654894,1466909,713057,-2.7,"",12654894
+"770","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Homoserine",11.71,61783584,201986,3218164,-2.8,"",61783584
+"771","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Homoserine",11.33,90080144,216166,3473154,-3.2,"",90080144
+"772","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Homoserine",11.74,70515960,3156265,4526631,-2.7,"",70515960
+"773","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Homoserine",11.47,88066856,3597799,5391143,-2.9,"",88066856
+"774","240926_Std_H2OinMatrix1_posDDA","L-Homoserine",11.76,4001808,191170,280308,-3.2,"",4001808
+"775","240926_Std_H2OinMatrix2_posDDA","L-Homoserine",11.57,6323547,166808,356410,-4,"",6323547
+"776","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Homoserine",11.59,613306,0,41717,-3.7,"",613306
+"777","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Homoserine",11.62,654534,253309,39920,-3.1,"sn_flag, ",NA
+"778","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Homoserine",11.83,105765,0,19454,-2.5,"",105765
+"779","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Homoserine",11.71,93735,0,22422,-2.3,"",93735
+"780","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Homoserine",12.12,145293,0,16627,-3.1,"",145293
+"781","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Homoserine",12.12,143275,5449,17492,-2.8,"",143275
+"782","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Homoserine",12.31,107464,0,17240,-1.8,"",107464
+"783","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Homoserine",12.54,213947,0,16354,-1.8,"",213947
+"784","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Homoserine",12.49,25849,0,12409,-0.9,"areamin_flag, ",NA
+"785","240926_Poo_RC104_HomFate_Full1_posDDA","L-Homoserine",11.76,6543689,1014418,423892,-2.3,"",6543689
+"786","240926_Poo_RC104_HomFate_Full2_posDDA","L-Homoserine",11.76,4962346,595197,298668,-3.5,"",4962346
+"787","240926_Poo_RC104_HomFate_Full3_posDDA","L-Homoserine",11.71,6026239,355582,407215,-3.1,"",6026239
+"788","240926_Poo_RC104_HomFate_Full4_posDDA","L-Homoserine",11.69,5417062,489567,346001,-3.1,"",5417062
+"789","240926_Poo_RC104_HomFate_Full5_posDDA","L-Homoserine",11.71,5450914,49622,346819,-3.9,"",5450914
+"790","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Homoserine",11.76,6336433,3287,375121,-3.5,"",6336433
+"791","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Homoserine",11.59,4197646,156550,265231,-3.4,"",4197646
+"792","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Homoserine",11.64,4090230,36566,233989,-3.5,"",4090230
+"793","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Homoserine",11.71,5187977,43484,280810,-3.3,"",5187977
+"794","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Homoserine",11.64,7496378,675089,478442,-3.1,"",7496378
+"795","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Homoserine",11.71,4773560,52894,317675,-3,"",4773560
+"796","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Homoserine",11.74,19077056,1393191,1224992,-2.2,"",19077056
+"797","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Homoserine",11.76,5016232,538485,293959,-3.5,"",5016232
+"798","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Homoserine",11.76,16969282,1053235,975017,-3,"",16969282
+"799","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Homoserine",11.67,12660430,709584,845016,-3.2,"",12660430
+"800","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Homoserine",11.67,6776393,0,412283,-3.4,"",6776393
+"801","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Homoserine",11.76,21575730,1952222,1309328,-2.7,"",21575730
+"802","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Homoserine",11.64,4776402,535444,247275,-3.5,"",4776402
+"803","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Homoserine",11.72,4949253,144000,285341,-3.1,"",4949253
+"804","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Homoserine",11.77,13668226,1326476,822809,-2.7,"",13668226
+"805","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Homoserine",11.78,2126922,950975,155602,-3.3,"sn_flag, ",NA
+"806","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Homoserine",11.69,7338758,2153713,461413,-3.8,"",7338758
+"807","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Homoserine",11.74,10076362,1960522,632667,-3.4,"",10076362
+"808","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Homoserine",11.69,5271549,2126163,354919,-3.2,"sn_flag, ",NA
+"809","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Homoserine",11.52,5819197,1823897,395576,-3.9,"",5819197
+"810","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Homoserine",11.76,4371571,1391059,371126,-3.9,"",4371571
+"811","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Homoserine",11.62,1147788,0,71977,-3.3,"",1147788
+"812","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Homoserine",11.52,724629,808143,64917,-3.9,"sn_flag, ",NA
+"813","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Homoserine",11.54,564617,200016,46701,-3.4,"sn_flag, ",NA
+"814","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Homoserine",11.85,322030,0,46062,-3,"",322030
+"815","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Homoserine",11.59,2019636,0,158736,-4,"",2019636
+"816","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Homoserine",11.71,1302806,0,78470,-3.6,"",1302806
+"817","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Lysine",18.77,18156336,0,696727,-3.9,"",18156336
+"818","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Lysine",18.98,17153426,0,632408,-4.6,"",17153426
+"819","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Lysine",18.68,26572168,0,901684,-4,"",26572168
+"820","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Lysine",18.92,24013836,0,838728,-4.1,"",24013836
+"821","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Lysine",NA,NA,NA,NA,NA,"",NA
+"822","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Lysine",NA,NA,NA,NA,NA,"",NA
+"823","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Lysine",18.68,5149057,0,165323,-3.7,"",5149057
+"824","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Lysine",18.8,4520928,0,169982,-4.2,"",4520928
+"825","240926_Std_H2OinMatrix1_posDDA","L-Lysine",18.67,5005823,0,172739,-4.5,"",5005823
+"826","240926_Std_H2OinMatrix2_posDDA","L-Lysine",18.77,4295533,0,165983,-4.9,"",4295533
+"827","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Lysine",18.66,567748,0,26023,-4.4,"",567748
+"828","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Lysine",18.59,3415037,0,98401,-4.1,"",3415037
+"829","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Lysine",18.61,935003,0,39105,-4.3,"",935003
+"830","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Lysine",18.59,519548,0,26119,-3.8,"",519548
+"831","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Lysine",18.74,1186215,0,38219,-4.3,"",1186215
+"832","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Lysine",18.53,982826,0,27103,-4.4,"",982826
+"833","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Lysine",18.84,1239755,0,37767,-4.4,"",1239755
+"834","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Lysine",18.54,2332751,0,61462,-3.4,"",2332751
+"835","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Lysine",18.37,1301758,0,36557,-4,"",1301758
+"836","240926_Poo_RC104_HomFate_Full1_posDDA","L-Lysine",18.63,8525667,0,239777,-3.9,"",8525667
+"837","240926_Poo_RC104_HomFate_Full2_posDDA","L-Lysine",18.64,6728556,0,207431,-4.7,"",6728556
+"838","240926_Poo_RC104_HomFate_Full3_posDDA","L-Lysine",18.56,6795683,0,200948,-4.2,"",6795683
+"839","240926_Poo_RC104_HomFate_Full4_posDDA","L-Lysine",18.61,7589820,0,213674,-4.2,"",7589820
+"840","240926_Poo_RC104_HomFate_Full5_posDDA","L-Lysine",18.7,7373559,0,200037,-4.8,"",7373559
+"841","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Lysine",18.56,4924292,297452,156667,-4.5,"",4924292
+"842","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Lysine",18.78,4428010,0,148388,-4.4,"",4428010
+"843","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Lysine",18.73,3079624,0,86898,-4.6,"",3079624
+"844","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Lysine",18.62,4666290,0,138226,-4.4,"",4666290
+"845","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Lysine",18.76,5799325,0,195332,-4.2,"",5799325
+"846","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Lysine",18.75,3851332,0,126434,-4.5,"",3851332
+"847","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Lysine",18.65,8787672,0,275281,-3.6,"",8787672
+"848","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Lysine",18.51,5135056,0,139680,-4.8,"",5135056
+"849","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Lysine",18.6,6042681,0,163395,-4.3,"",6042681
+"850","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Lysine",18.72,5129846,0,164904,-4.5,"",5129846
+"851","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Lysine",18.64,3041199,0,99122,-4.2,"",3041199
+"852","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Lysine",18.61,12782263,0,362875,-3.7,"",12782263
+"853","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Lysine",18.62,7615735,0,216935,-4.6,"",7615735
+"854","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Lysine",18.63,5588177,0,160073,-4.2,"",5588177
+"855","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Lysine",18.64,29647472,0,844106,-4.1,"",29647472
+"856","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Lysine",18.64,8964242,0,215070,-4.4,"",8964242
+"857","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Lysine",18.66,15512556,519565,402367,-4.5,"",15512556
+"858","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Lysine",18.54,24685404,0,604123,-4.5,"",24685404
+"859","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Lysine",18.63,13048796,0,336007,-4.6,"",13048796
+"860","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Lysine",18.66,22599632,0,560844,-4.9,"",22599632
+"861","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Lysine",18.6,20585572,0,476537,-4.7,"",20585572
+"862","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Lysine",18.47,3948083,0,112343,-4.6,"",3948083
+"863","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Lysine",18.62,3676057,0,105447,-4.8,"",3676057
+"864","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Lysine",18.51,3150775,0,95116,-4.4,"",3150775
+"865","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Lysine",18.55,2794370,0,74426,-4.5,"",2794370
+"866","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Lysine",18.79,3852223,0,82214,-4.8,"",3852223
+"867","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Lysine",18.61,3383714,0,91791,-4.7,"",3383714
+"868","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Phenylalanine",NA,NA,NA,NA,NA,"",NA
+"869","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Phenylalanine",NA,NA,NA,NA,NA,"",NA
+"870","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Phenylalanine",6.77,47881964,0,1627771,-3.1,"",47881964
+"871","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Phenylalanine",5.69,80797704,0,1571311,-3.6,"",80797704
+"872","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Phenylalanine",NA,NA,NA,NA,NA,"",NA
+"873","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Phenylalanine",NA,NA,NA,NA,NA,"",NA
+"874","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Phenylalanine",6.8,39367832,0,1381108,-3.3,"",39367832
+"875","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Phenylalanine",5.57,78255872,0,1707299,-3.7,"",78255872
+"876","240926_Std_H2OinMatrix1_posDDA","L-Phenylalanine",6.82,42152236,1970036,1515204,-3.9,"",42152236
+"877","240926_Std_H2OinMatrix2_posDDA","L-Phenylalanine",5.83,81870376,3906870,1741556,-4.2,"",81870376
+"878","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Phenylalanine",6.36,6487331,1546148,158029,-4.1,"",6487331
+"879","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Phenylalanine",6.71,19520004,388759,613456,-3.5,"",19520004
+"880","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Phenylalanine",6.55,10827988,0,245394,-3.7,"",10827988
+"881","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Phenylalanine",6.69,2689043,1035480,87493,-3.6,"sn_flag, ",NA
+"882","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Phenylalanine",6.72,5841341,176016,186976,-4.3,"",5841341
+"883","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Phenylalanine",6.15,11850427,373526,218650,-4.1,"",11850427
+"884","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Phenylalanine",6.31,12714250,1246688,293454,-4.2,"",12714250
+"885","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Phenylalanine",6.82,14145179,510344,463659,-3.2,"",14145179
+"886","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Phenylalanine",6.64,13211377,0,330934,-3.7,"",13211377
+"887","240926_Poo_RC104_HomFate_Full1_posDDA","L-Phenylalanine",6.8,76492576,0,2396039,-2.7,"",76492576
+"888","240926_Poo_RC104_HomFate_Full2_posDDA","L-Phenylalanine",6.69,69464232,1075370,2086437,-4,"",69464232
+"889","240926_Poo_RC104_HomFate_Full3_posDDA","L-Phenylalanine",6.62,78206232,0,2272463,-3.8,"",78206232
+"890","240926_Poo_RC104_HomFate_Full4_posDDA","L-Phenylalanine",6.4,94149512,1371774,2480217,-3.7,"",94149512
+"891","240926_Poo_RC104_HomFate_Full5_posDDA","L-Phenylalanine",6.21,108441168,4292930,2492879,-4.2,"",108441168
+"892","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Phenylalanine",6.7,45602212,2731765,1407708,-3.8,"",45602212
+"893","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Phenylalanine",6.31,40277304,1969987,1000292,-4.1,"",40277304
+"894","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Phenylalanine",6.48,26031748,1074912,686638,-3.8,"",26031748
+"895","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Phenylalanine",6.53,44961772,863789,1187118,-3.7,"",44961772
+"896","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Phenylalanine",6.38,74610976,136234,1914539,-3.4,"",74610976
+"897","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Phenylalanine",6.57,32350602,0,850446,-4,"",32350602
+"898","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Phenylalanine",6.77,81386120,158296,2683783,-2.9,"",81386120
+"899","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Phenylalanine",6.7,42915668,260807,1336718,-3.8,"",42915668
+"900","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Phenylalanine",6.65,79076984,1063814,2426272,-3.6,"",79076984
+"901","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Phenylalanine",6.48,69693424,1877885,1828077,-3.8,"",69693424
+"902","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Phenylalanine",6.43,35349552,99167,881473,-3.8,"",35349552
+"903","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Phenylalanine",6.78,84216776,0,2643196,-2.9,"",84216776
+"904","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Phenylalanine",6.17,97480256,0,2133664,-4.1,"",97480256
+"905","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Phenylalanine",6.75,27673802,0,901313,-3.2,"",27673802
+"906","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Phenylalanine",6.73,235173584,242173,7527228,-3.3,"",235173584
+"907","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Phenylalanine",6.72,74389328,121993,2427613,-3.7,"",74389328
+"908","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Phenylalanine",6.24,214767232,0,4699124,-4.3,"",214767232
+"909","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Phenylalanine",6.67,308337536,3728220,10116311,-3.9,"",308337536
+"910","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Phenylalanine",6.59,108393320,0,3120554,-3.8,"",108393320
+"911","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Phenylalanine",6.24,349055104,3817664,7449454,-4.4,"",349055104
+"912","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Phenylalanine",6.29,261662816,0,5780281,-4.3,"",261662816
+"913","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Phenylalanine",6,46992276,0,959900,-4.1,"",46992276
+"914","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Phenylalanine",5.91,55044764,2271692,1088799,-4.3,"",55044764
+"915","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Phenylalanine",5.83,50800432,0,950810,-3.9,"",50800432
+"916","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Phenylalanine",6.09,29855316,1303630,669298,-4.2,"",29855316
+"917","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Phenylalanine",6.16,47517832,0,1032608,-4.4,"",47517832
+"918","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Phenylalanine",6.12,44735772,0,813108,-4.2,"",44735772
+"919","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Proline",9.56,626408448,7194432,39342772,-2.7,"",626408448
+"920","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Proline",9.47,836895872,7459898,48760412,-3.2,"",836895872
+"921","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Proline",9.56,1087214208,14790466,61202188,-2.7,"",1087214208
+"922","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Proline",9.51,794959744,8673786,42905604,-2.9,"",794959744
+"923","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Proline",NA,NA,NA,NA,NA,"",NA
+"924","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Proline",NA,NA,NA,NA,NA,"",NA
+"925","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Proline",9.56,326898912,5844429,18772640,-2.7,"",326898912
+"926","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Proline",9.48,216079696,5047367,12072882,-2.7,"",216079696
+"927","240926_Std_H2OinMatrix1_posDDA","L-Proline",9.59,313799200,6653288,17727032,-3.5,"",313799200
+"928","240926_Std_H2OinMatrix2_posDDA","L-Proline",9.51,230617344,5239783,12408225,-3.8,"",230617344
+"929","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Proline",9.52,28008112,1082130,1527524,-3.5,"",28008112
+"930","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Proline",9.58,111512800,2088397,6275153,-3.2,"",111512800
+"931","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Proline",9.53,37789124,1150180,2203272,-3.3,"",37789124
+"932","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Proline",9.55,27766790,1324002,1572440,-3,"",27766790
+"933","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Proline",9.59,55089588,1312606,3120422,-3.6,"",55089588
+"934","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Proline",9.52,58620856,1785355,3266771,-3.7,"",58620856
+"935","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Proline",9.54,81280088,2238471,4488454,-3.5,"",81280088
+"936","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Proline",9.6,129388840,3130067,7407070,-2.5,"",129388840
+"937","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Proline",9.55,82675544,1876599,4818800,-3.4,"",82675544
+"938","240926_Poo_RC104_HomFate_Full1_posDDA","L-Proline",9.57,549054144,5665548,30382206,-2.4,"",549054144
+"939","240926_Poo_RC104_HomFate_Full2_posDDA","L-Proline",9.57,463800576,5391155,26220926,-3.5,"",463800576
+"940","240926_Poo_RC104_HomFate_Full3_posDDA","L-Proline",9.55,499743488,5360998,28844304,-3.3,"",499743488
+"941","240926_Poo_RC104_HomFate_Full4_posDDA","L-Proline",9.53,442261568,5313651,23996974,-3.3,"",442261568
+"942","240926_Poo_RC104_HomFate_Full5_posDDA","L-Proline",9.51,402141600,6816670,21228530,-3.7,"",402141600
+"943","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Proline",9.56,329975168,5884651,18039744,-3.6,"",329975168
+"944","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Proline",9.5,301233632,5030790,16528501,-3.6,"",301233632
+"945","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Proline",9.52,216131696,4035511,12737765,-3.1,"",216131696
+"946","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Proline",9.52,401994240,4439832,22242774,-3.4,"",401994240
+"947","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Proline",9.52,455411264,6698591,23754416,-3.2,"",455411264
+"948","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Proline",9.53,357139200,6077066,19281270,-3.3,"",357139200
+"949","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Proline",9.56,525398848,8173400,29736354,-2.5,"",525398848
+"950","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Proline",9.56,316644128,3564312,17302160,-3.5,"",316644128
+"951","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Proline",9.59,474747456,7767981,25717938,-3.2,"",474747456
+"952","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Proline",9.54,397994496,5359419,22882342,-3.2,"",397994496
+"953","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Proline",9.52,234771024,3773501,13652223,-3.5,"",234771024
+"954","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Proline",9.57,647378752,10335512,35171476,-2.4,"",647378752
+"955","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Proline",9.5,424999648,7009940,23183654,-3.6,"",424999648
+"956","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Proline",9.55,458523456,7011166,25233962,-3,"",458523456
+"957","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Proline",9.55,970851648,16823778,49156916,-3.1,"",970851648
+"958","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Proline",9.55,460387072,4131458,25018952,-3.2,"",460387072
+"959","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Proline",9.55,778554112,13627767,41461028,-3.8,"",778554112
+"960","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Proline",9.57,1034918208,14442890,58484680,-3.5,"",1034918208
+"961","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Proline",9.58,1437732224,21585908,84572776,-3.5,"",1437732224
+"962","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Proline",9.52,1742752640,16782120,101886720,-4.1,"",1742752640
+"963","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Proline",9.54,1610709888,20015320,89028704,-3.8,"",1610709888
+"964","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Proline",9.51,737128832,10262118,40575928,-3.7,"",737128832
+"965","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Proline",9.52,788736320,11322727,43034468,-3.9,"",788736320
+"966","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Proline",9.49,517445760,8695984,28712226,-3.7,"",517445760
+"967","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Proline",9.56,583842944,4784424,30149076,-3.6,"",583842944
+"968","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Proline",9.54,577131520,9012669,31371726,-4.1,"",577131520
+"969","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Proline",9.53,569189568,7317262,31593078,-3.8,"",569189568
+"970","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Serine",12.31,14566592,0,860050,-1.6,"",14566592
+"971","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Serine",11.8,21892488,0,907722,-2.3,"",21892488
+"972","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Serine",12.34,26003664,661961,1852691,-1.9,"",26003664
+"973","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Serine",11.78,37569304,0,2063247,-1.7,"",37569304
+"974","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Serine",NA,NA,NA,NA,NA,"",NA
+"975","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Serine",NA,NA,NA,NA,NA,"",NA
+"976","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Serine",12.36,6280364,0,395834,-1.6,"",6280364
+"977","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Serine",11.81,8402950,0,498497,-1.9,"",8402950
+"978","240926_Std_H2OinMatrix1_posDDA","L-Serine",12.36,6528214,0,393691,-2.5,"",6528214
+"979","240926_Std_H2OinMatrix2_posDDA","L-Serine",11.95,9340782,0,505025,-2.9,"",9340782
+"980","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Serine",12.12,5845094,0,324343,-2.6,"",5845094
+"981","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Serine",12.32,28854898,748410,1617407,-2.1,"",28854898
+"982","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Serine",12.19,8438587,0,456001,-2.4,"",8438587
+"983","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Serine",12.33,2642287,0,132322,-2.4,"",2642287
+"984","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Serine",12.29,5629330,0,325096,-2.7,"",5629330
+"985","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Serine",12.15,5980852,0,330247,-3,"",5980852
+"986","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Serine",12.1,10183889,0,499878,-2.8,"",10183889
+"987","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Serine",12.37,13533406,0,780466,-1.6,"",13533406
+"988","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Serine",12.28,9892066,0,577716,-2.4,"",9892066
+"989","240926_Poo_RC104_HomFate_Full1_posDDA","L-Serine",12.37,12020350,146357,744747,-1.4,"",12020350
+"990","240926_Poo_RC104_HomFate_Full2_posDDA","L-Serine",12.33,9703347,0,518428,-2.5,"",9703347
+"991","240926_Poo_RC104_HomFate_Full3_posDDA","L-Serine",12.23,10591521,0,563270,-2.3,"",10591521
+"992","240926_Poo_RC104_HomFate_Full4_posDDA","L-Serine",12.14,10979502,0,628170,-2.4,"",10979502
+"993","240926_Poo_RC104_HomFate_Full5_posDDA","L-Serine",12.04,12274531,0,596621,-2.8,"",12274531
+"994","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Serine",12.32,3360378,0,173482,-2.5,"",3360378
+"995","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Serine",12.05,3272496,0,185184,-2.6,"",3272496
+"996","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Serine",12.21,3200228,0,188079,-2.5,"",3200228
+"997","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Serine",12.24,10361907,52739,554859,-2.3,"",10361907
+"998","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Serine",12.17,5572320,0,321279,-2.2,"",5572320
+"999","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Serine",12.28,5938972,0,309917,-2.5,"",5938972
+"1000","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Serine",12.32,19043234,214443,1196273,-1.5,"",19043234
+"1001","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Serine",12.32,29328824,779048,1608579,-2.5,"",29328824
+"1002","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Serine",12.29,18260200,0,928547,-2,"",18260200
+"1003","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Serine",12.19,7086851,0,393491,-2.3,"",7086851
+"1004","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Serine",12.14,3502884,0,203610,-2.3,"",3502884
+"1005","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Serine",12.34,7512285,0,386706,-1.4,"",7512285
+"1006","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Serine",12.07,5589081,0,260977,-2.4,"",5589081
+"1007","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Serine",12.32,4754384,0,262430,-1.9,"",4754384
+"1008","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Serine",12.32,13992740,544606,860205,-1.9,"",13992740
+"1009","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Serine",12.31,11156934,0,533545,-2.1,"",11156934
+"1010","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Serine",12.09,15402212,0,740394,-3,"",15402212
+"1011","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Serine",12.31,22258358,248197,1197190,-2.4,"",22258358
+"1012","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Serine",12.3,17292324,0,870443,-2.3,"",17292324
+"1013","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Serine",12.05,18214878,0,826715,-3.2,"",18214878
+"1014","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Serine",12.19,24793656,0,1155720,-2.8,"",24793656
+"1015","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Serine",12.07,5193134,0,209616,-2.7,"",5193134
+"1016","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Serine",12.05,4672197,0,235630,-2.8,"",4672197
+"1017","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Serine",11.9,4817594,0,256304,-2.5,"",4817594
+"1018","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Serine",12.11,8392501,0,385385,-2.7,"",8392501
+"1019","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Serine",12.18,13203970,0,534621,-3,"",13203970
+"1020","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Serine",12.14,6527844,0,296848,-2.9,"",6527844
+"1021","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Tryptophan",8.11,0,0,0,NA,"areamin_flag, ",NA
+"1022","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Tryptophan",8.12,0,0,0,NA,"areamin_flag, ",NA
+"1023","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Tryptophan",8.48,1867056,0,97914,-2.4,"",1867056
+"1024","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Tryptophan",7.94,2384052,0,110919,-2.7,"",2384052
+"1025","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Tryptophan",8.23,16647,0,6359,-0.2,"areamin_flag, ",NA
+"1026","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Tryptophan",8.12,0,0,0,NA,"areamin_flag, ",NA
+"1027","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Tryptophan",8.52,1559367,0,77228,-2.4,"",1559367
+"1028","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Tryptophan",7.97,2140738,0,97255,-2.7,"",2140738
+"1029","240926_Std_H2OinMatrix1_posDDA","L-Tryptophan",8.54,1810525,0,88588,-3,"",1810525
+"1030","240926_Std_H2OinMatrix2_posDDA","L-Tryptophan",8.15,2466923,0,89905,-3.4,"",2466923
+"1031","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Tryptophan",8.29,112450,0,14089,-2.5,"",112450
+"1032","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Tryptophan",8.63,209524,0,14053,-2.6,"",209524
+"1033","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Tryptophan",8.28,68911,0,8340,-2,"",68911
+"1034","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Tryptophan",8.12,0,0,0,NA,"areamin_flag, ",NA
+"1035","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Tryptophan",8.44,17709,0,8299,-0.8,"areamin_flag, ",NA
+"1036","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Tryptophan",8.44,170399,0,12206,-3.6,"",170399
+"1037","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Tryptophan",8.39,153488,0,12220,-2.5,"",153488
+"1038","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Tryptophan",8.49,310756,0,24261,-2.3,"",310756
+"1039","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Tryptophan",8.42,29104,0,8361,-1,"areamin_flag, ",NA
+"1040","240926_Poo_RC104_HomFate_Full1_posDDA","L-Tryptophan",8.44,3085049,0,136552,-2,"",3085049
+"1041","240926_Poo_RC104_HomFate_Full2_posDDA","L-Tryptophan",8.5,2759045,0,123878,-3.3,"",2759045
+"1042","240926_Poo_RC104_HomFate_Full3_posDDA","L-Tryptophan",8.46,2946717,0,138327,-3,"",2946717
+"1043","240926_Poo_RC104_HomFate_Full4_posDDA","L-Tryptophan",8.39,3327462,0,135603,-3.2,"",3327462
+"1044","240926_Poo_RC104_HomFate_Full5_posDDA","L-Tryptophan",8.23,3138543,329291,147407,-3.6,"",3138543
+"1045","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Tryptophan",8.48,2269853,0,98260,-3.3,"",2269853
+"1046","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Tryptophan",8.29,2481216,0,104432,-3.5,"",2481216
+"1047","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Tryptophan",8.36,1421996,0,65225,-2.9,"",1421996
+"1048","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Tryptophan",8.41,1940047,0,86504,-2.9,"",1940047
+"1049","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Tryptophan",8.36,3629708,0,165052,-3,"",3629708
+"1050","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Tryptophan",8.39,1225397,0,57614,-3.2,"",1225397
+"1051","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Tryptophan",8.5,4537787,0,194201,-2.2,"",4537787
+"1052","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Tryptophan",8.55,994926,0,47423,-3,"",994926
+"1053","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Tryptophan",8.49,811011,0,40816,-3.2,"",811011
+"1054","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Tryptophan",8.39,3095877,95073,142448,-3.1,"",3095877
+"1055","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Tryptophan",8.38,1692857,0,75077,-3.1,"",1692857
+"1056","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Tryptophan",8.54,5816447,0,281864,-2.1,"",5816447
+"1057","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Tryptophan",8.31,4112184,0,170905,-2.9,"",4112184
+"1058","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Tryptophan",8.46,1758581,0,77288,-2.2,"",1758581
+"1059","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Tryptophan",8.51,16297657,0,659023,-2.5,"",16297657
+"1060","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Tryptophan",8.52,3535653,0,143367,-2.4,"",3535653
+"1061","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Tryptophan",8.31,11049527,0,402295,-2.6,"",11049527
+"1062","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Tryptophan",8.48,15407719,0,614260,-2.4,"",15407719
+"1063","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Tryptophan",8.42,3509991,0,153799,-3.1,"",3509991
+"1064","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Tryptophan",8.33,9277409,0,356620,-3.7,"",9277409
+"1065","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Tryptophan",8.27,5834805,0,242955,-3.7,"",5834805
+"1066","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Tryptophan",8.18,2336887,0,92008,-3.5,"",2336887
+"1067","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Tryptophan",8.12,3225961,0,120885,-3.6,"",3225961
+"1068","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Tryptophan",8.17,2997477,0,115020,-3.4,"",2997477
+"1069","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Tryptophan",8.24,1584161,0,71632,-3.4,"",1584161
+"1070","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Tryptophan",8.19,2712130,0,111072,-4,"",2712130
+"1071","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Tryptophan",8.25,1809583,0,73347,-3.3,"",1809583
+"1072","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Tyrosine",9.87,68118800,701017,4175262,-2.5,"",68118800
+"1073","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Tyrosine",9.28,128738256,0,7661968,-3.2,"",128738256
+"1074","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Tyrosine",10.06,90578288,81867,3756806,-2.6,"",90578288
+"1075","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Tyrosine",9.63,130062896,53720,3343919,-2.8,"",130062896
+"1076","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Tyrosine",NA,NA,NA,NA,NA,"",NA
+"1077","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Tyrosine",NA,NA,NA,NA,NA,"",NA
+"1078","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Tyrosine",10.23,10481656,0,382730,-2.8,"",10481656
+"1079","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Tyrosine",9.6,13359158,0,260324,-2.8,"",13359158
+"1080","240926_Std_H2OinMatrix1_posDDA","L-Tyrosine",10.26,10244397,0,383656,-3.5,"",10244397
+"1081","240926_Std_H2OinMatrix2_posDDA","L-Tyrosine",10.18,13159513,0,284938,-3.9,"",13159513
+"1082","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Tyrosine",9.88,1705374,0,59585,-3.9,"",1705374
+"1083","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Tyrosine",10.04,6572176,0,285674,-3.3,"",6572176
+"1084","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Tyrosine",9.96,2482401,0,87046,-3.8,"",2482401
+"1085","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Tyrosine",10.26,732363,0,32834,-3.5,"",732363
+"1086","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Tyrosine",10.04,1390649,0,53498,-4,"",1390649
+"1087","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Tyrosine",9.99,2179651,0,67714,-3.8,"",2179651
+"1088","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Tyrosine",9.99,2617008,0,90024,-3.7,"",2617008
+"1089","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Tyrosine",10.1,4106572,0,191936,-2.7,"",4106572
+"1090","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Tyrosine",10.15,2509839,0,112375,-3.7,"",2509839
+"1091","240926_Poo_RC104_HomFate_Full1_posDDA","L-Tyrosine",10.08,18126948,0,708319,-2.2,"",18126948
+"1092","240926_Poo_RC104_HomFate_Full2_posDDA","L-Tyrosine",10.17,14820193,0,491869,-3.6,"",14820193
+"1093","240926_Poo_RC104_HomFate_Full3_posDDA","L-Tyrosine",10.22,15176483,0,519148,-3.4,"",15176483
+"1094","240926_Poo_RC104_HomFate_Full4_posDDA","L-Tyrosine",10.03,17232868,0,453911,-3.4,"",17232868
+"1095","240926_Poo_RC104_HomFate_Full5_posDDA","L-Tyrosine",10.17,19591578,0,518721,-3.9,"",19591578
+"1096","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Tyrosine",10.25,17004986,0,692540,-3.6,"",17004986
+"1097","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Tyrosine",10.26,16171970,0,508588,-3.8,"",16171970
+"1098","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Tyrosine",10.17,8928605,0,264007,-3.4,"",8928605
+"1099","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Tyrosine",10.21,18132440,0,653124,-3.5,"",18132440
+"1100","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Tyrosine",10.19,21175726,0,650003,-3.2,"",21175726
+"1101","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Tyrosine",10.29,11825397,0,378379,-3.5,"",11825397
+"1102","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Tyrosine",10.08,16610814,0,756979,-2.5,"",16610814
+"1103","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Tyrosine",10.04,12085627,0,499598,-3.7,"",12085627
+"1104","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Tyrosine",10.14,13608955,0,499236,-3.2,"",13608955
+"1105","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Tyrosine",10.07,10511611,0,338246,-3.4,"",10511611
+"1106","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Tyrosine",9.98,6508503,0,187065,-3.6,"",6508503
+"1107","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Tyrosine",10.05,20597748,0,972243,-2.5,"",20597748
+"1108","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Tyrosine",9.83,17874864,0,419974,-3.7,"",17874864
+"1109","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Tyrosine",10.03,11825271,0,387165,-2.8,"",11825271
+"1110","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Tyrosine",9.99,50900464,0,2173960,-2.9,"",50900464
+"1111","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Tyrosine",10.19,21429972,0,709221,-3.4,"",21429972
+"1112","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Tyrosine",10.24,52630184,0,1375913,-4,"",52630184
+"1113","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Tyrosine",10.24,65196152,146996,2248251,-3.4,"",65196152
+"1114","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Tyrosine",10.19,23295852,0,850629,-3.5,"",23295852
+"1115","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Tyrosine",10.21,46389096,0,1324018,-4.2,"",46389096
+"1116","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Tyrosine",10.11,34919560,0,989330,-3.9,"",34919560
+"1117","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Tyrosine",10.12,9426674,0,229211,-3.6,"",9426674
+"1118","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Tyrosine",10.17,8735740,0,204202,-4,"",8735740
+"1119","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Tyrosine",9.96,8331731,0,184511,-3.7,"",8331731
+"1120","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Tyrosine",10.1,6429208,0,178729,-3.6,"",6429208
+"1121","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Tyrosine",10.01,10243258,0,317626,-4.1,"",10243258
+"1122","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Tyrosine",10.01,7961302,0,197591,-3.9,"",7961302
+"1123","240926_Std_4uMStdsMix1InH2O-1_posDDA","L-Phenylalanine, 2H8",6.17,0,0,0,NA,"areamin_flag, ",NA
+"1124","240926_Std_4uMStdsMix1InH2O-2_posDDA","L-Phenylalanine, 2H8",6.16,0,0,0,NA,"areamin_flag, ",NA
+"1125","240926_Std_4uMStdsMix1InMatrix-1_posDDA","L-Phenylalanine, 2H8",6.84,4447085,0,174084,0,"",4447085
+"1126","240926_Std_4uMStdsMix1InMatrix-2_posDDA","L-Phenylalanine, 2H8",5.86,8051287,0,192756,-0.6,"",8051287
+"1127","240926_Std_4uMStdsMix2InH2O-1_posDDA","L-Phenylalanine, 2H8",6.17,0,0,0,NA,"areamin_flag, ",NA
+"1128","240926_Std_4uMStdsMix2InH2O-2_posDDA","L-Phenylalanine, 2H8",6.16,0,0,0,NA,"areamin_flag, ",NA
+"1129","240926_Std_4uMStdsMix2InMatrix-1_posDDA","L-Phenylalanine, 2H8",6.87,3425248,0,147519,-0.3,"",3425248
+"1130","240926_Std_4uMStdsMix2InMatrix-2_posDDA","L-Phenylalanine, 2H8",5.67,8083300,0,190302,-0.6,"",8083300
+"1131","240926_Std_H2OinMatrix1_posDDA","L-Phenylalanine, 2H8",6.93,4244593,0,158712,-0.8,"",4244593
+"1132","240926_Std_H2OinMatrix2_posDDA","L-Phenylalanine, 2H8",5.95,9347451,0,234859,-1.4,"",9347451
+"1133","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","L-Phenylalanine, 2H8",6.43,10621605,0,274882,-0.9,"",10621605
+"1134","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","L-Phenylalanine, 2H8",6.83,8178087,0,306745,-0.4,"",8178087
+"1135","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","L-Phenylalanine, 2H8",6.59,8909766,0,269696,-0.6,"",8909766
+"1136","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","L-Phenylalanine, 2H8",6.72,8831966,0,315054,-0.4,"",8831966
+"1137","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","L-Phenylalanine, 2H8",6.79,8176073,0,290354,-1.1,"",8176073
+"1138","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","L-Phenylalanine, 2H8",6.34,11596615,0,274833,-0.9,"",11596615
+"1139","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","L-Phenylalanine, 2H8",6.41,10577032,0,285130,-1.1,"",10577032
+"1140","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","L-Phenylalanine, 2H8",6.82,8045974,0,292983,0,"",8045974
+"1141","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","L-Phenylalanine, 2H8",6.73,8443683,0,284049,-0.5,"",8443683
+"1142","240926_Poo_RC104_HomFate_Full1_posDDA","L-Phenylalanine, 2H8",6.82,7718359,0,319015,0.4,"",7718359
+"1143","240926_Poo_RC104_HomFate_Full2_posDDA","L-Phenylalanine, 2H8",6.76,7215009,0,245342,-0.9,"",7215009
+"1144","240926_Poo_RC104_HomFate_Full3_posDDA","L-Phenylalanine, 2H8",6.73,7612527,0,280151,-0.7,"",7612527
+"1145","240926_Poo_RC104_HomFate_Full4_posDDA","L-Phenylalanine, 2H8",6.55,8383351,890549,262299,-0.6,"",8383351
+"1146","240926_Poo_RC104_HomFate_Full5_posDDA","L-Phenylalanine, 2H8",6.21,11163293,764846,281715,-1.2,"",11163293
+"1147","240926_Smp_RC104_HomFate_Con_A_posDDA","L-Phenylalanine, 2H8",6.72,9048665,0,322143,-0.7,"",9048665
+"1148","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Phenylalanine, 2H8",6.41,10956437,0,310445,-1,"",10956437
+"1149","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Phenylalanine, 2H8",6.57,9441359,0,289322,-0.7,"",9441359
+"1150","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Phenylalanine, 2H8",6.6,11629844,0,328448,-0.6,"",11629844
+"1151","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Phenylalanine, 2H8",6.48,10226525,0,289971,-0.4,"",10226525
+"1152","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Phenylalanine, 2H8",6.71,7983274,0,251511,-0.8,"",7983274
+"1153","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Phenylalanine, 2H8",6.84,7318358,0,279511,0.2,"",7318358
+"1154","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Phenylalanine, 2H8",6.82,7316115,352265,269984,-0.7,"",7316115
+"1155","240926_Smp_RC104_HomFate_T6_C_posDDA","L-Phenylalanine, 2H8",6.79,7998124,0,271769,-0.5,"",7998124
+"1156","240926_Smp_RC104_HomFate_T12_A_posDDA","L-Phenylalanine, 2H8",6.55,9434611,231994,305028,-0.8,"",9434611
+"1157","240926_Smp_RC104_HomFate_T12_B_posDDA","L-Phenylalanine, 2H8",6.48,9425063,0,284565,-0.6,"",9425063
+"1158","240926_Smp_RC104_HomFate_T12_C_posDDA","L-Phenylalanine, 2H8",6.82,7043746,0,263939,0.2,"",7043746
+"1159","240926_Smp_RC104_HomFate_T24_A_posDDA","L-Phenylalanine, 2H8",6.31,11998588,0,307794,-1.1,"",11998588
+"1160","240926_Smp_RC104_HomFate_T24_B_posDDA","L-Phenylalanine, 2H8",6.8,6872197,0,275917,-0.2,"",6872197
+"1161","240926_Smp_RC104_HomFate_T24_C_posDDA","L-Phenylalanine, 2H8",6.86,7038493,0,251100,-0.1,"",7038493
+"1162","240926_Smp_RC104_HomFate_T48_A_posDDA","L-Phenylalanine, 2H8",6.76,7732240,0,283879,-0.5,"",7732240
+"1163","240926_Smp_RC104_HomFate_T48_B_posDDA","L-Phenylalanine, 2H8",6.41,9109881,0,303868,-1.2,"",9109881
+"1164","240926_Smp_RC104_HomFate_T48_C_posDDA","L-Phenylalanine, 2H8",6.79,7471486,0,286447,-0.8,"",7471486
+"1165","240926_Smp_RC104_HomFate_T96_A_posDDA","L-Phenylalanine, 2H8",6.66,8286484,0,347171,-0.7,"",8286484
+"1166","240926_Smp_RC104_HomFate_T96_B_posDDA","L-Phenylalanine, 2H8",6.41,9830182,0,269079,-1.5,"",9830182
+"1167","240926_Smp_RC104_HomFate_T96_C_posDDA","L-Phenylalanine, 2H8",6.29,9874922,0,282059,-1.3,"",9874922
+"1168","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","L-Phenylalanine, 2H8",6.12,11607847,1307279,290706,-1.1,"",11607847
+"1169","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","L-Phenylalanine, 2H8",6.07,15750731,61644,350116,-1.2,"",15750731
+"1170","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","L-Phenylalanine, 2H8",5.97,14220611,0,298673,-0.9,"",14220611
+"1171","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","L-Phenylalanine, 2H8",6.16,12032040,0,280870,-1.2,"",12032040
+"1172","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","L-Phenylalanine, 2H8",6.23,12022504,0,286417,-1.4,"",12022504
+"1173","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","L-Phenylalanine, 2H8",6.17,12842779,0,258812,-1.1,"",12842779
+"1174","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C7H11NO3_pos",8.32,560451,27591,34346,-3.3,"",560451
+"1175","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C7H11NO3_pos",8.1,909063,0,41081,-3.6,"",909063
+"1176","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C7H11NO3_pos",9,5177515,1054596,155086,-3.1,"",5177515
+"1177","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C7H11NO3_pos",8.2,5689328,0,177778,-3.4,"",5689328
+"1178","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C7H11NO3_pos",8.51,227419,195321,15385,-3.5,"sn_flag, ",NA
+"1179","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C7H11NO3_pos",8.36,285754,4516,17099,-2.7,"",285754
+"1180","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C7H11NO3_pos",8.79,4521924,0,155385,-3,"",4521924
+"1181","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C7H11NO3_pos",8.32,4887934,0,120829,-3.2,"",4887934
+"1182","240926_Std_H2OinMatrix1_posDDA","unknown_C7H11NO3_pos",8.85,4143308,819771,147373,-3.8,"",4143308
+"1183","240926_Std_H2OinMatrix2_posDDA","unknown_C7H11NO3_pos",8.33,4693084,0,123411,-4.3,"",4693084
+"1184","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C7H11NO3_pos",8.45,132111,249326,12500,-4.4,"sn_flag, ",NA
+"1185","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C7H11NO3_pos",8.44,34316,226026,9625,-3.4,"sn_flag, areamin_flag, ",NA
+"1186","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C7H11NO3_pos",8.35,201178,382906,15292,-3.8,"sn_flag, ",NA
+"1187","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C7H11NO3_pos",8.1,703180,80258,29610,-3.1,"",703180
+"1188","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C7H11NO3_pos",8.44,286688,375213,16295,-4.3,"sn_flag, ",NA
+"1189","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C7H11NO3_pos",8.42,116649,162943,16379,-4.3,"sn_flag, ",NA
+"1190","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C7H11NO3_pos",8.46,286532,355623,24226,-4.2,"sn_flag, ",NA
+"1191","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C7H11NO3_pos",8.44,116553,223656,19959,-3.3,"sn_flag, ",NA
+"1192","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C7H11NO3_pos",8.2,194134,756185,9048,-3.7,"sn_flag, ",NA
+"1193","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C7H11NO3_pos",8.73,4363194,1866884,202362,-2.9,"sn_flag, ",NA
+"1194","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C7H11NO3_pos",8.74,5164570,25091,178331,-4,"",5164570
+"1195","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C7H11NO3_pos",8.73,5297025,255541,209116,-3.9,"",5297025
+"1196","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C7H11NO3_pos",8.61,4924779,0,193453,-3.7,"",4924779
+"1197","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C7H11NO3_pos",8.49,5633925,0,166939,-4.3,"",5633925
+"1198","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C7H11NO3_pos",8.72,15572181,0,550793,-3.9,"",15572181
+"1199","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C7H11NO3_pos",8.55,13581260,0,441823,-4.2,"",13581260
+"1200","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C7H11NO3_pos",8.67,7934705,1089314,303690,-3.7,"",7934705
+"1201","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C7H11NO3_pos",8.62,12872530,1619998,572668,-3.8,"",12872530
+"1202","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C7H11NO3_pos",8.57,16198074,0,560295,-3.6,"",16198074
+"1203","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C7H11NO3_pos",8.68,10798026,1080737,471405,-4,"",10798026
+"1204","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C7H11NO3_pos",8.76,10055262,1028743,483599,-3,"",10055262
+"1205","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C7H11NO3_pos",8.72,7387005,192889,269533,-3.8,"",7387005
+"1206","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C7H11NO3_pos",8.68,3203521,929111,109315,-3.7,"",3203521
+"1207","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C7H11NO3_pos",8.63,9720487,0,349964,-3.7,"",9720487
+"1208","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C7H11NO3_pos",8.57,3886200,368233,129739,-4,"",3886200
+"1209","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C7H11NO3_pos",8.8,6298864,0,235568,-2.9,"",6298864
+"1210","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C7H11NO3_pos",8.45,3410503,0,99768,-3.9,"",3410503
+"1211","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C7H11NO3_pos",8.75,2533641,1276426,114968,-3.3,"sn_flag, ",NA
+"1212","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C7H11NO3_pos",8.75,6550554,0,248911,-3.4,"",6550554
+"1213","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C7H11NO3_pos",8.74,864029,1076100,34842,-3.5,"sn_flag, ",NA
+"1214","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C7H11NO3_pos",8.48,3905723,0,142152,-4.2,"",3905723
+"1215","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C7H11NO3_pos",8.86,1691233,2459277,96559,-4,"sn_flag, ",NA
+"1216","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C7H11NO3_pos",8.7,2710061,1694945,140875,-3.9,"sn_flag, ",NA
+"1217","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C7H11NO3_pos",8.55,5955663,0,197001,-4.4,"",5955663
+"1218","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C7H11NO3_pos",8.56,8024912,0,240669,-4.4,"",8024912
+"1219","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C7H11NO3_pos",8.42,7230740,0,187512,-4,"",7230740
+"1220","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C7H11NO3_pos",8.38,4708247,0,126820,-4.1,"",4708247
+"1221","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C7H11NO3_pos",8.33,3593981,0,90156,-4.1,"",3593981
+"1222","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C7H11NO3_pos",8.57,10289798,0,258093,-4,"",10289798
+"1223","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C7H11NO3_pos",8.52,11403117,0,287156,-4.5,"",11403117
+"1224","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C7H11NO3_pos",8.49,15073860,0,491841,-3.9,"",15073860
+"1225","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C6H11NO2_pos",10.76,2024682,3008132,104752,-3.1,"sn_flag, ",NA
+"1226","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C6H11NO2_pos",10.69,496712,5662070,54148,-3.7,"sn_flag, ",NA
+"1227","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C6H11NO2_pos",11.16,1460683,1881287,64972,-3.2,"sn_flag, ",NA
+"1228","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C6H11NO2_pos",10.69,599172,2410287,40833,-3.4,"sn_flag, ",NA
+"1229","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C6H11NO2_pos",10.76,260769,2909018,28714,-3.6,"sn_flag, ",NA
+"1230","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C6H11NO2_pos",10.72,407691,3938449,45551,-3.7,"sn_flag, ",NA
+"1231","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C6H11NO2_pos",11.09,582068,2516563,35944,-3.1,"sn_flag, ",NA
+"1232","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C6H11NO2_pos",10.76,1551848,2980536,73418,-3.2,"sn_flag, ",NA
+"1233","240926_Std_H2OinMatrix1_posDDA","unknown_C6H11NO2_pos",11.05,530716,1068551,39697,-4,"sn_flag, ",NA
+"1234","240926_Std_H2OinMatrix2_posDDA","unknown_C6H11NO2_pos",10.93,1506585,23865,59724,-4.2,"",1506585
+"1235","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C6H11NO2_pos",11.07,215474,1245915,18322,-4.2,"sn_flag, ",NA
+"1236","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C6H11NO2_pos",10.89,747854,835136,28144,-3.8,"sn_flag, ",NA
+"1237","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C6H11NO2_pos",10.69,344052,2497248,24173,-4,"sn_flag, ",NA
+"1238","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C6H11NO2_pos",10.69,504115,959903,19189,-3.8,"sn_flag, ",NA
+"1239","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C6H11NO2_pos",10.83,74790,1228149,15881,-4.4,"sn_flag, ",NA
+"1240","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C6H11NO2_pos",11.02,311585,1061960,17557,-4.5,"sn_flag, ",NA
+"1241","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C6H11NO2_pos",11.12,254292,819411,19038,-4.5,"sn_flag, ",NA
+"1242","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C6H11NO2_pos",11.4,151851,1325775,20358,-3.4,"sn_flag, ",NA
+"1243","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C6H11NO2_pos",10.81,491920,2248890,38052,-3.8,"sn_flag, ",NA
+"1244","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C6H11NO2_pos",11.02,838871,1175303,51305,-3,"sn_flag, ",NA
+"1245","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C6H11NO2_pos",11.19,1107710,2442039,58283,-4.2,"sn_flag, ",NA
+"1246","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C6H11NO2_pos",11.17,541646,1176652,28963,-3.8,"sn_flag, ",NA
+"1247","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C6H11NO2_pos",11.07,1051541,2205610,58462,-3.8,"sn_flag, ",NA
+"1248","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C6H11NO2_pos",10.72,1276088,2800655,67136,-4.4,"sn_flag, ",NA
+"1249","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C6H11NO2_pos",10.92,1608038,1349931,72018,-4.1,"sn_flag, ",NA
+"1250","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C6H11NO2_pos",10.71,2358530,2740589,85224,-4.2,"sn_flag, ",NA
+"1251","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C6H11NO2_pos",10.86,1333955,2642252,76960,-4.1,"sn_flag, ",NA
+"1252","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C6H11NO2_pos",10.9,1363898,944302,62586,-4,"sn_flag, ",NA
+"1253","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C6H11NO2_pos",10.95,2838047,134899,118851,-3.7,"",2838047
+"1254","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C6H11NO2_pos",11.02,965788,3086060,50299,-3.9,"sn_flag, ",NA
+"1255","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C6H11NO2_pos",11.09,1586794,2128484,91214,-3.2,"sn_flag, ",NA
+"1256","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C6H11NO2_pos",11.04,915432,2864632,48619,-4.2,"sn_flag, ",NA
+"1257","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C6H11NO2_pos",10.78,458169,2664117,30441,-3.7,"sn_flag, ",NA
+"1258","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C6H11NO2_pos",11.05,1094548,1166310,56239,-3.8,"sn_flag, ",NA
+"1259","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C6H11NO2_pos",11.12,959637,2464528,54139,-3.8,"sn_flag, ",NA
+"1260","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C6H11NO2_pos",11.04,1938279,2147787,81197,-2.9,"sn_flag, ",NA
+"1261","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C6H11NO2_pos",11.02,627776,2965960,48512,-4.1,"sn_flag, ",NA
+"1262","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C6H11NO2_pos",11.07,1946279,1860003,80533,-3.7,"sn_flag, ",NA
+"1263","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C6H11NO2_pos",10.99,990431,1631295,58716,-3.5,"sn_flag, ",NA
+"1264","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C6H11NO2_pos",10.69,282909,1975529,29221,-3.9,"sn_flag, ",NA
+"1265","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C6H11NO2_pos",10.81,1320028,2653593,63521,-4.4,"sn_flag, ",NA
+"1266","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C6H11NO2_pos",11,554130,1419965,33458,-4.1,"sn_flag, ",NA
+"1267","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C6H11NO2_pos",11.26,1082293,528393,40841,-3.9,"sn_flag, ",NA
+"1268","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C6H11NO2_pos",10.83,1310263,2878482,55239,-4.5,"sn_flag, ",NA
+"1269","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C6H11NO2_pos",10.95,837535,954914,46393,-4.2,"sn_flag, ",NA
+"1270","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C6H11NO2_pos",11.1,353093,3354495,28596,-4.4,"sn_flag, ",NA
+"1271","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C6H11NO2_pos",10.86,187546,1460505,19053,-4.4,"sn_flag, ",NA
+"1272","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C6H11NO2_pos",10.84,1223956,2380277,50662,-4.1,"sn_flag, ",NA
+"1273","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C6H11NO2_pos",10.69,1180718,970937,48775,-4.3,"sn_flag, ",NA
+"1274","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C6H11NO2_pos",11.17,1069901,1478094,53053,-4.5,"sn_flag, ",NA
+"1275","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C6H11NO2_pos",11.14,983796,975014,52597,-4.2,"sn_flag, ",NA
+"1276","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C6H9NO4_pos_early",5.07,6465895,0,251100,4.8,"",6465895
+"1277","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C6H9NO4_pos_early",5.2,9774504,0,353037,3.8,"",9774504
+"1278","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C6H9NO4_pos_early",5.21,8314759,0,302189,4.8,"",8314759
+"1279","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C6H9NO4_pos_early",5.15,12013530,786334,464001,4.4,"",12013530
+"1280","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C6H9NO4_pos_early",5.05,1069452,0,40417,3.7,"",1069452
+"1281","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C6H9NO4_pos_early",4.98,1339707,0,47020,4.4,"",1339707
+"1282","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C6H9NO4_pos_early",5.12,1688407,0,52337,4.4,"",1688407
+"1283","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C6H9NO4_pos_early",4.93,2294349,0,64885,4.2,"",2294349
+"1284","240926_Std_H2OinMatrix1_posDDA","unknown_C6H9NO4_pos_early",5.07,624365,0,28756,3.9,"",624365
+"1285","240926_Std_H2OinMatrix2_posDDA","unknown_C6H9NO4_pos_early",5.1,1017446,0,49968,3.7,"",1017446
+"1286","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C6H9NO4_pos_early",4.67,6621,0,3568,-4.7,"areamin_flag, ",NA
+"1287","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C6H9NO4_pos_early",4.6,0,0,0,NA,"areamin_flag, ",NA
+"1288","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C6H9NO4_pos_early",4.6,0,0,0,NA,"areamin_flag, ",NA
+"1289","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C6H9NO4_pos_early",4.6,0,0,0,NA,"areamin_flag, ",NA
+"1290","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C6H9NO4_pos_early",4.59,0,0,0,NA,"areamin_flag, ",NA
+"1291","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C6H9NO4_pos_early",4.59,0,0,0,NA,"areamin_flag, ",NA
+"1292","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C6H9NO4_pos_early",4.59,0,0,0,NA,"areamin_flag, ",NA
+"1293","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C6H9NO4_pos_early",4.61,0,0,0,NA,"areamin_flag, ",NA
+"1294","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C6H9NO4_pos_early",5.83,7240,0,3717,-4.4,"areamin_flag, ",NA
+"1295","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C6H9NO4_pos_early",5.06,1049087,0,41112,5.3,"",1049087
+"1296","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C6H9NO4_pos_early",5.17,1181754,0,53044,4,"",1181754
+"1297","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C6H9NO4_pos_early",5.22,1084505,0,45621,4,"",1084505
+"1298","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C6H9NO4_pos_early",5.17,1211088,0,45702,4,"",1211088
+"1299","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C6H9NO4_pos_early",5.19,1370042,0,53118,3.5,"",1370042
+"1300","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C6H9NO4_pos_early",5.21,1161318,0,40242,3.9,"",1161318
+"1301","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C6H9NO4_pos_early",5.17,409722,0,19148,3.8,"",409722
+"1302","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C6H9NO4_pos_early",5.38,342994,0,17144,3.4,"",342994
+"1303","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C6H9NO4_pos_early",5.19,396338,0,14851,4,"",396338
+"1304","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C6H9NO4_pos_early",5.19,1441364,0,53780,4.5,"",1441364
+"1305","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C6H9NO4_pos_early",5.12,163806,0,13169,2.8,"",163806
+"1306","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C6H9NO4_pos_early",5.21,336371,0,17142,4.3,"",336371
+"1307","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C6H9NO4_pos_early",4.59,0,0,0,NA,"areamin_flag, ",NA
+"1308","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C6H9NO4_pos_early",5.09,23398,0,7828,2.6,"areamin_flag, ",NA
+"1309","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C6H9NO4_pos_early",5.24,412447,0,26049,4,"",412447
+"1310","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C6H9NO4_pos_early",5.05,85998,0,11457,3.1,"",85998
+"1311","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C6H9NO4_pos_early",5.28,752077,0,31139,4.9,"",752077
+"1312","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C6H9NO4_pos_early",5.22,1299168,0,48169,4.1,"",1299168
+"1313","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C6H9NO4_pos_early",5.09,356519,0,20793,4.6,"",356519
+"1314","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C6H9NO4_pos_early",5.13,3226476,0,114424,4.6,"",3226476
+"1315","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C6H9NO4_pos_early",5.24,1511915,0,65465,4.3,"",1511915
+"1316","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C6H9NO4_pos_early",5.07,2521368,0,95644,3.6,"",2521368
+"1317","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C6H9NO4_pos_early",5.17,4426528,0,161631,3.9,"",4426528
+"1318","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C6H9NO4_pos_early",5.17,3367956,0,144206,4,"",3367956
+"1319","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C6H9NO4_pos_early",5.14,4536166,0,158270,3.3,"",4536166
+"1320","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C6H9NO4_pos_early",5.24,10230666,0,358198,3.5,"",10230666
+"1321","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C6H9NO4_pos_early",5.1,277203,0,19400,3.8,"",277203
+"1322","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C6H9NO4_pos_early",5.22,588300,0,21883,3.8,"",588300
+"1323","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C6H9NO4_pos_early",5.13,418729,0,18147,4,"",418729
+"1324","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C6H9NO4_pos_early",5.05,102738,0,9573,2.7,"",102738
+"1325","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C6H9NO4_pos_early",5.17,134545,0,9079,2.7,"",134545
+"1326","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C6H9NO4_pos_early",5.1,139767,0,9893,3.5,"",139767
+"1327","240926_Std_4uMStdsMix1InH2O-1_posDDA","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
+"1328","240926_Std_4uMStdsMix1InH2O-2_posDDA","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
+"1329","240926_Std_4uMStdsMix1InMatrix-1_posDDA","homarine_13C_15N",6.2,2546998272,30778118,82536864,-0.4,"",2546998272
+"1330","240926_Std_4uMStdsMix1InMatrix-2_posDDA","homarine_13C_15N",6.12,2717248256,25700098,84845080,-0.7,"",2717248256
+"1331","240926_Std_4uMStdsMix2InH2O-1_posDDA","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
+"1332","240926_Std_4uMStdsMix2InH2O-2_posDDA","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
+"1333","240926_Std_4uMStdsMix2InMatrix-1_posDDA","homarine_13C_15N",6.17,2757013248,32791662,89792552,-0.5,"",2757013248
+"1334","240926_Std_4uMStdsMix2InMatrix-2_posDDA","homarine_13C_15N",6.07,3118193152,44815292,98223424,-0.6,"",3118193152
+"1335","240926_Std_H2OinMatrix1_posDDA","homarine_13C_15N",6.19,2671631872,28685850,88435376,-1.3,"",2671631872
+"1336","240926_Std_H2OinMatrix2_posDDA","homarine_13C_15N",6.09,2968468992,37259264,94916544,-1.6,"",2968468992
+"1337","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","homarine_13C_15N",6.14,96038976,910170,2932930,-0.7,"",96038976
+"1338","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","homarine_13C_15N",6.18,70878872,249764,2272804,-0.2,"",70878872
+"1339","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","homarine_13C_15N",6.12,86928424,637119,2803713,-0.3,"",86928424
+"1340","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","homarine_13C_15N",6.14,361531520,2879193,11618407,-0.4,"",361531520
+"1341","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","homarine_13C_15N",6.15,385504544,4670066,12224752,-1,"",385504544
+"1342","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","homarine_13C_15N",6.12,281363360,2727906,8911680,-0.9,"",281363360
+"1343","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","homarine_13C_15N",6.17,131610336,1508398,4480150,-0.8,"",131610336
+"1344","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","homarine_13C_15N",6.17,58367908,334931,2051075,0.2,"",58367908
+"1345","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","homarine_13C_15N",6.19,83404040,718279,2692751,-0.3,"",83404040
+"1346","240926_Poo_RC104_HomFate_Full1_posDDA","homarine_13C_15N",6.17,4391360512,34834788,140593504,0,"",4391360512
+"1347","240926_Poo_RC104_HomFate_Full2_posDDA","homarine_13C_15N",6.19,4587378176,34498244,149119632,-1.5,"",4587378176
+"1348","240926_Poo_RC104_HomFate_Full3_posDDA","homarine_13C_15N",6.14,3866348032,44759572,126934800,-1.1,"",3866348032
+"1349","240926_Poo_RC104_HomFate_Full4_posDDA","homarine_13C_15N",6.14,4673536000,36816344,158908512,-1.1,"",4673536000
+"1350","240926_Poo_RC104_HomFate_Full5_posDDA","homarine_13C_15N",6.12,4979685888,36240224,164148016,-1.6,"",4979685888
+"1351","240926_Smp_RC104_HomFate_Con_A_posDDA","homarine_13C_15N",6.1,468111,13672,34402,-0.6,"",468111
+"1352","240926_Smp_RC104_HomFate_Con_B_posDDA","homarine_13C_15N",6.1,1656955,0,63716,-0.9,"",1656955
+"1353","240926_Smp_RC104_HomFate_Con_C_posDDA","homarine_13C_15N",6.12,138020,0,10735,-0.5,"",138020
+"1354","240926_Smp_RC104_HomFate_T0_A_posDDA","homarine_13C_15N",6.14,193787232,1717953,6078702,-0.7,"",193787232
+"1355","240926_Smp_RC104_HomFate_T0_B_posDDA","homarine_13C_15N",6.14,385618400,4204873,12291105,-0.4,"",385618400
+"1356","240926_Smp_RC104_HomFate_T0_C_posDDA","homarine_13C_15N",6.14,378575008,4347774,12718960,-0.8,"",378575008
+"1357","240926_Smp_RC104_HomFate_T6_A_posDDA","homarine_13C_15N",6.15,5037727232,59033024,166993952,-0.3,"",5037727232
+"1358","240926_Smp_RC104_HomFate_T6_B_posDDA","homarine_13C_15N",6.17,2450482688,17948918,82219016,-1.3,"",2450482688
+"1359","240926_Smp_RC104_HomFate_T6_C_posDDA","homarine_13C_15N",6.15,5752175616,58293544,191134416,-1,"",5752175616
+"1360","240926_Smp_RC104_HomFate_T12_A_posDDA","homarine_13C_15N",6.15,5171395072,71641272,167750944,-1.3,"",5171395072
+"1361","240926_Smp_RC104_HomFate_T12_B_posDDA","homarine_13C_15N",6.12,4343264256,48171948,145273872,-1.2,"",4343264256
+"1362","240926_Smp_RC104_HomFate_T12_C_posDDA","homarine_13C_15N",6.17,7596877824,112373024,247767984,-0.6,"",7596877824
+"1363","240926_Smp_RC104_HomFate_T24_A_posDDA","homarine_13C_15N",6.1,11860980736,125441440,364264096,-1.7,"",11860980736
+"1364","240926_Smp_RC104_HomFate_T24_B_posDDA","homarine_13C_15N",6.17,11783908352,117727304,371239072,-0.9,"",11783908352
+"1365","240926_Smp_RC104_HomFate_T24_C_posDDA","homarine_13C_15N",6.15,12899290112,127465376,401134880,-0.9,"",12899290112
+"1366","240926_Smp_RC104_HomFate_T48_A_posDDA","homarine_13C_15N",6.19,12286804992,157599760,428447104,-1.3,"",12286804992
+"1367","240926_Smp_RC104_HomFate_T48_B_posDDA","homarine_13C_15N",6.14,16738979840,196527632,511631136,-1.9,"",16738979840
+"1368","240926_Smp_RC104_HomFate_T48_C_posDDA","homarine_13C_15N",6.17,11915720704,152600400,399540608,-1.4,"",11915720704
+"1369","240926_Smp_RC104_HomFate_T96_A_posDDA","homarine_13C_15N",6.19,5323034624,37009700,182948608,-1.2,"",5323034624
+"1370","240926_Smp_RC104_HomFate_T96_B_posDDA","homarine_13C_15N",6.14,4960471552,41428396,152222176,-1.8,"",4960471552
+"1371","240926_Smp_RC104_HomFate_T96_C_posDDA","homarine_13C_15N",6.15,4711018496,56331696,156736336,-1.6,"",4711018496
+"1372","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","homarine_13C_15N",6.14,643459712,8006904,21024128,-1.1,"",643459712
+"1373","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","homarine_13C_15N",6.14,705657920,9023677,23296878,-1.2,"",705657920
+"1374","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","homarine_13C_15N",6.16,501849952,6917172,15969538,-0.8,"",501849952
+"1375","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","homarine_13C_15N",6.21,3868375,0,132330,-1.2,"",3868375
+"1376","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","homarine_13C_15N",6.16,3609673,0,135182,-1.4,"",3609673
+"1377","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","homarine_13C_15N",6.05,127186,0,19018,-0.3,"",127186
+"1378","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C6H9NO4_pos_13C_15N",12.41,0,0,0,NA,"areamin_flag, ",NA
+"1379","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1380","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1381","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1382","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C6H9NO4_pos_13C_15N",12.41,0,0,0,NA,"areamin_flag, ",NA
+"1383","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1384","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1385","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1386","240926_Std_H2OinMatrix1_posDDA","unknown_C6H9NO4_pos_13C_15N",12.41,0,0,0,NA,"areamin_flag, ",NA
+"1387","240926_Std_H2OinMatrix2_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1388","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1389","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1390","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1391","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1392","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.41,0,0,0,NA,"areamin_flag, ",NA
+"1393","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.41,0,0,0,NA,"areamin_flag, ",NA
+"1394","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.41,0,0,0,NA,"areamin_flag, ",NA
+"1395","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1396","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1397","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1398","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1399","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1400","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1401","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1402","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1403","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1404","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1405","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1406","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1407","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1408","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1409","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1410","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.41,0,0,0,NA,"areamin_flag, ",NA
+"1411","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.41,0,0,0,NA,"areamin_flag, ",NA
+"1412","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1413","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1414","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.5,18760,0,11274,-3.8,"areamin_flag, ",NA
+"1415","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.73,57472,0,7525,-1.7,"",57472
+"1416","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.64,101073,0,12949,-3,"",101073
+"1417","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1418","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.5,70348,0,17073,-2.8,"",70348
+"1419","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.59,20910,0,8206,-3,"areamin_flag, ",NA
+"1420","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1421","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1422","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.41,0,0,0,NA,"areamin_flag, ",NA
+"1423","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1424","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1425","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1426","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1427","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C6H9NO4_pos_13C_15N",12.39,0,0,0,NA,"areamin_flag, ",NA
+"1428","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C6H9NO4_pos_13C_15N",12.4,0,0,0,NA,"areamin_flag, ",NA
+"1429","240926_Std_4uMStdsMix1InH2O-1_posDDA","n-methyl glutamine_13C_15N",9.87,0,0,0,NA,"areamin_flag, ",NA
+"1430","240926_Std_4uMStdsMix1InH2O-2_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1431","240926_Std_4uMStdsMix1InMatrix-1_posDDA","n-methyl glutamine_13C_15N",10.18,294718,0,61634,-0.2,"",294718
+"1432","240926_Std_4uMStdsMix1InMatrix-2_posDDA","n-methyl glutamine_13C_15N",9.98,46784,0,21394,-0.5,"",46784
+"1433","240926_Std_4uMStdsMix2InH2O-1_posDDA","n-methyl glutamine_13C_15N",9.87,0,0,0,NA,"areamin_flag, ",NA
+"1434","240926_Std_4uMStdsMix2InH2O-2_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1435","240926_Std_4uMStdsMix2InMatrix-1_posDDA","n-methyl glutamine_13C_15N",10.3,68206,0,30363,-0.5,"",68206
+"1436","240926_Std_4uMStdsMix2InMatrix-2_posDDA","n-methyl glutamine_13C_15N",10.05,49685,0,22270,0.1,"",49685
+"1437","240926_Std_H2OinMatrix1_posDDA","n-methyl glutamine_13C_15N",10.26,336823,0,47191,-0.7,"",336823
+"1438","240926_Std_H2OinMatrix2_posDDA","n-methyl glutamine_13C_15N",10.34,80118,0,19430,-0.9,"",80118
+"1439","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","n-methyl glutamine_13C_15N",9.88,0,0,0,NA,"areamin_flag, ",NA
+"1440","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","n-methyl glutamine_13C_15N",9.87,0,0,0,NA,"areamin_flag, ",NA
+"1441","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1442","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","n-methyl glutamine_13C_15N",9.88,0,0,0,NA,"areamin_flag, ",NA
+"1443","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","n-methyl glutamine_13C_15N",9.87,0,0,0,NA,"areamin_flag, ",NA
+"1444","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","n-methyl glutamine_13C_15N",9.87,0,0,0,NA,"areamin_flag, ",NA
+"1445","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","n-methyl glutamine_13C_15N",9.87,0,0,0,NA,"areamin_flag, ",NA
+"1446","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","n-methyl glutamine_13C_15N",9.88,0,0,0,NA,"areamin_flag, ",NA
+"1447","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1448","240926_Poo_RC104_HomFate_Full1_posDDA","n-methyl glutamine_13C_15N",10.17,518166,0,66378,0.2,"",518166
+"1449","240926_Poo_RC104_HomFate_Full2_posDDA","n-methyl glutamine_13C_15N",10.24,301785,0,48708,-0.4,"",301785
+"1450","240926_Poo_RC104_HomFate_Full3_posDDA","n-methyl glutamine_13C_15N",10.41,236987,0,28721,-0.4,"",236987
+"1451","240926_Poo_RC104_HomFate_Full4_posDDA","n-methyl glutamine_13C_15N",10.01,273142,0,40824,-0.2,"",273142
+"1452","240926_Poo_RC104_HomFate_Full5_posDDA","n-methyl glutamine_13C_15N",10.5,34518,0,21256,-1.3,"areamin_flag, ",NA
+"1453","240926_Smp_RC104_HomFate_Con_A_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1454","240926_Smp_RC104_HomFate_Con_B_posDDA","n-methyl glutamine_13C_15N",9.88,0,0,0,NA,"areamin_flag, ",NA
+"1455","240926_Smp_RC104_HomFate_Con_C_posDDA","n-methyl glutamine_13C_15N",9.88,0,0,0,NA,"areamin_flag, ",NA
+"1456","240926_Smp_RC104_HomFate_T0_A_posDDA","n-methyl glutamine_13C_15N",9.88,0,0,0,NA,"areamin_flag, ",NA
+"1457","240926_Smp_RC104_HomFate_T0_B_posDDA","n-methyl glutamine_13C_15N",9.88,0,0,0,NA,"areamin_flag, ",NA
+"1458","240926_Smp_RC104_HomFate_T0_C_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1459","240926_Smp_RC104_HomFate_T6_A_posDDA","n-methyl glutamine_13C_15N",10.3,261396,0,42472,0,"",261396
+"1460","240926_Smp_RC104_HomFate_T6_B_posDDA","n-methyl glutamine_13C_15N",10.2,285002,0,23879,-0.9,"",285002
+"1461","240926_Smp_RC104_HomFate_T6_C_posDDA","n-methyl glutamine_13C_15N",10.14,391441,0,33577,-0.6,"",391441
+"1462","240926_Smp_RC104_HomFate_T12_A_posDDA","n-methyl glutamine_13C_15N",10.28,788233,0,58633,-0.9,"",788233
+"1463","240926_Smp_RC104_HomFate_T12_B_posDDA","n-methyl glutamine_13C_15N",10.05,568550,0,33002,-0.9,"",568550
+"1464","240926_Smp_RC104_HomFate_T12_C_posDDA","n-methyl glutamine_13C_15N",10.15,1019863,0,76747,0.4,"",1019863
+"1465","240926_Smp_RC104_HomFate_T24_A_posDDA","n-methyl glutamine_13C_15N",9.95,3942288,0,131777,-1.2,"",3942288
+"1466","240926_Smp_RC104_HomFate_T24_B_posDDA","n-methyl glutamine_13C_15N",10.13,4947222,0,250514,-0.4,"",4947222
+"1467","240926_Smp_RC104_HomFate_T24_C_posDDA","n-methyl glutamine_13C_15N",10.16,4424420,0,219271,-0.2,"",4424420
+"1468","240926_Smp_RC104_HomFate_T48_A_posDDA","n-methyl glutamine_13C_15N",10.26,1563048,0,80104,-0.5,"",1563048
+"1469","240926_Smp_RC104_HomFate_T48_B_posDDA","n-methyl glutamine_13C_15N",10.21,1209343,0,130124,-1.3,"",1209343
+"1470","240926_Smp_RC104_HomFate_T48_C_posDDA","n-methyl glutamine_13C_15N",10.24,626060,0,55475,-0.8,"",626060
+"1471","240926_Smp_RC104_HomFate_T96_A_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1472","240926_Smp_RC104_HomFate_T96_B_posDDA","n-methyl glutamine_13C_15N",9.88,0,0,0,NA,"areamin_flag, ",NA
+"1473","240926_Smp_RC104_HomFate_T96_C_posDDA","n-methyl glutamine_13C_15N",9.87,0,0,0,NA,"areamin_flag, ",NA
+"1474","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","n-methyl glutamine_13C_15N",10.36,816955,0,43089,-0.9,"",816955
+"1475","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","n-methyl glutamine_13C_15N",9.95,923367,0,44291,-1.4,"",923367
+"1476","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","n-methyl glutamine_13C_15N",10.25,496469,0,32597,-0.9,"",496469
+"1477","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1478","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1479","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","n-methyl glutamine_13C_15N",9.89,0,0,0,NA,"areamin_flag, ",NA
+"1480","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C7H9NO5_pos_13C_15N",11.45,129772,0,24374,-4.4,"",129772
+"1481","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C7H9NO5_pos_13C_15N",11.21,121543,0,20346,-4.7,"",121543
+"1482","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C7H9NO5_pos_13C_15N",11.52,491918,0,39504,-6.6,"ppm_flag, ",NA
+"1483","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C7H9NO5_pos_13C_15N",11.21,708796,0,62713,-6.4,"ppm_flag, ",NA
+"1484","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,0,0,0,NA,"areamin_flag, ",NA
+"1485","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,548,0,0,-7.5,"ppm_flag, areamin_flag, ",NA
+"1486","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C7H9NO5_pos_13C_15N",11.48,113972,0,14412,-4.3,"",113972
+"1487","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C7H9NO5_pos_13C_15N",11.26,220319,0,26165,-6.2,"ppm_flag, ",NA
+"1488","240926_Std_H2OinMatrix1_posDDA","unknown_C7H9NO5_pos_13C_15N",11.52,185170,0,20539,-6.4,"ppm_flag, ",NA
+"1489","240926_Std_H2OinMatrix2_posDDA","unknown_C7H9NO5_pos_13C_15N",11.33,228991,0,29324,-6.7,"ppm_flag, ",NA
+"1490","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,0,0,0,NA,"areamin_flag, ",NA
+"1491","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.5,71739,0,14784,-6.5,"ppm_flag, ",NA
+"1492","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.43,16645,0,8191,-2.1,"areamin_flag, ",NA
+"1493","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,0,0,0,NA,"areamin_flag, ",NA
+"1494","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,0,0,0,NA,"areamin_flag, ",NA
+"1495","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,0,0,0,NA,"areamin_flag, ",NA
+"1496","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,0,0,0,NA,"areamin_flag, ",NA
+"1497","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,0,0,0,NA,"areamin_flag, ",NA
+"1498","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,0,0,0,NA,"areamin_flag, ",NA
+"1499","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C7H9NO5_pos_13C_15N",11.43,311481,0,33386,-6.2,"ppm_flag, ",NA
+"1500","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C7H9NO5_pos_13C_15N",11.45,311977,0,33202,-5.8,"",311977
+"1501","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C7H9NO5_pos_13C_15N",11.5,176486,0,31019,-5.2,"",176486
+"1502","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C7H9NO5_pos_13C_15N",11.47,346605,0,29223,-6.3,"ppm_flag, ",NA
+"1503","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C7H9NO5_pos_13C_15N",11.45,284039,0,30612,-6.6,"ppm_flag, ",NA
+"1504","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.45,150136,0,18721,-7.3,"ppm_flag, ",NA
+"1505","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.4,35545,0,13394,-6.5,"ppm_flag, areamin_flag, ",NA
+"1506","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.52,45896,0,11687,-2.8,"",45896
+"1507","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.52,121749,0,24321,-6.7,"ppm_flag, ",NA
+"1508","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.36,236566,0,31203,-6.5,"ppm_flag, ",NA
+"1509","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.5,213739,0,25345,-6.2,"ppm_flag, ",NA
+"1510","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.5,478418,0,37027,-6.1,"ppm_flag, ",NA
+"1511","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.55,256714,0,29425,-7.1,"ppm_flag, ",NA
+"1512","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.6,336272,0,35663,-5.6,"",336272
+"1513","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.48,266337,0,24888,-6.3,"ppm_flag, ",NA
+"1514","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.36,147917,0,22334,-4.9,"",147917
+"1515","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.45,255323,0,20991,-6.2,"ppm_flag, ",NA
+"1516","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.38,360262,0,22866,-6.3,"ppm_flag, ",NA
+"1517","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.43,55750,0,10158,-5.7,"",55750
+"1518","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.5,169054,0,17633,-7,"ppm_flag, ",NA
+"1519","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.64,64263,0,19060,-2.5,"",64263
+"1520","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.5,349280,0,38746,-6.8,"ppm_flag, ",NA
+"1521","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.62,515112,0,40985,-7.3,"ppm_flag, ",NA
+"1522","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.64,400497,0,38694,-6.7,"ppm_flag, ",NA
+"1523","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.5,1087904,0,84506,-7.5,"ppm_flag, ",NA
+"1524","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.64,226633,0,28137,-7.1,"ppm_flag, ",NA
+"1525","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.47,82568,0,21172,-7,"ppm_flag, ",NA
+"1526","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.5,134390,0,19614,-7.9,"ppm_flag, ",NA
+"1527","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.28,236617,0,25747,-5.4,"",236617
+"1528","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C7H9NO5_pos_13C_15N",11.19,0,0,0,NA,"areamin_flag, ",NA
+"1529","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C7H9NO5_pos_13C_15N",11.69,36516,0,16969,-2.4,"areamin_flag, ",NA
+"1530","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C7H9NO5_pos_13C_15N",11.45,70083,0,20089,-1.5,"",70083
+"1531","240926_Std_4uMStdsMix1InH2O-1_posDDA","n-methyl glutamic acid_13C_15N",10.59,0,0,0,NA,"areamin_flag, ",NA
+"1532","240926_Std_4uMStdsMix1InH2O-2_posDDA","n-methyl glutamic acid_13C_15N",10.58,0,0,0,NA,"areamin_flag, ",NA
+"1533","240926_Std_4uMStdsMix1InMatrix-1_posDDA","n-methyl glutamic acid_13C_15N",10.88,35995884,0,2250090,1,"",35995884
+"1534","240926_Std_4uMStdsMix1InMatrix-2_posDDA","n-methyl glutamic acid_13C_15N",10.65,33353986,0,1417986,0.8,"",33353986
+"1535","240926_Std_4uMStdsMix2InH2O-1_posDDA","n-methyl glutamic acid_13C_15N",10.59,0,0,0,NA,"areamin_flag, ",NA
+"1536","240926_Std_4uMStdsMix2InH2O-2_posDDA","n-methyl glutamic acid_13C_15N",10.58,0,0,0,NA,"areamin_flag, ",NA
+"1537","240926_Std_4uMStdsMix2InMatrix-1_posDDA","n-methyl glutamic acid_13C_15N",10.9,29970566,0,1789101,1.2,"",29970566
+"1538","240926_Std_4uMStdsMix2InMatrix-2_posDDA","n-methyl glutamic acid_13C_15N",10.62,29769206,0,1236491,0.9,"",29769206
+"1539","240926_Std_H2OinMatrix1_posDDA","n-methyl glutamic acid_13C_15N",10.9,30641022,0,1792609,0.3,"",30641022
+"1540","240926_Std_H2OinMatrix2_posDDA","n-methyl glutamic acid_13C_15N",10.74,30576808,0,1296291,-0.2,"",30576808
+"1541","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","n-methyl glutamic acid_13C_15N",10.83,11971,0,6432,0.5,"areamin_flag, ",NA
+"1542","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","n-methyl glutamic acid_13C_15N",11.06,149017,0,19849,0,"",149017
+"1543","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","n-methyl glutamic acid_13C_15N",10.91,32257,0,8122,0.1,"areamin_flag, ",NA
+"1544","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","n-methyl glutamic acid_13C_15N",10.93,167767,0,16718,0.4,"",167767
+"1545","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","n-methyl glutamic acid_13C_15N",11.05,70400,0,18193,-0.6,"",70400
+"1546","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","n-methyl glutamic acid_13C_15N",11.02,119474,0,14869,-0.1,"",119474
+"1547","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","n-methyl glutamic acid_13C_15N",10.59,0,0,0,NA,"areamin_flag, ",NA
+"1548","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","n-methyl glutamic acid_13C_15N",10.58,0,0,0,NA,"areamin_flag, ",NA
+"1549","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","n-methyl glutamic acid_13C_15N",10.57,0,0,0,NA,"areamin_flag, ",NA
+"1550","240926_Poo_RC104_HomFate_Full1_posDDA","n-methyl glutamic acid_13C_15N",11.04,42785300,0,2104774,1.4,"",42785300
+"1551","240926_Poo_RC104_HomFate_Full2_posDDA","n-methyl glutamic acid_13C_15N",11.09,34781484,0,1525891,0.1,"",34781484
+"1552","240926_Poo_RC104_HomFate_Full3_posDDA","n-methyl glutamic acid_13C_15N",11.07,38943612,0,1673025,0.5,"",38943612
+"1553","240926_Poo_RC104_HomFate_Full4_posDDA","n-methyl glutamic acid_13C_15N",11.02,39358704,0,1528246,0.4,"",39358704
+"1554","240926_Poo_RC104_HomFate_Full5_posDDA","n-methyl glutamic acid_13C_15N",11.02,39728104,0,1417456,-0.2,"",39728104
+"1555","240926_Smp_RC104_HomFate_Con_A_posDDA","n-methyl glutamic acid_13C_15N",10.59,0,0,0,NA,"areamin_flag, ",NA
+"1556","240926_Smp_RC104_HomFate_Con_B_posDDA","n-methyl glutamic acid_13C_15N",10.59,0,0,0,NA,"areamin_flag, ",NA
+"1557","240926_Smp_RC104_HomFate_Con_C_posDDA","n-methyl glutamic acid_13C_15N",10.59,0,0,0,NA,"areamin_flag, ",NA
+"1558","240926_Smp_RC104_HomFate_T0_A_posDDA","n-methyl glutamic acid_13C_15N",11.09,7936199,0,308295,0.3,"",7936199
+"1559","240926_Smp_RC104_HomFate_T0_B_posDDA","n-methyl glutamic acid_13C_15N",10.9,14628324,0,678493,0.5,"",14628324
+"1560","240926_Smp_RC104_HomFate_T0_C_posDDA","n-methyl glutamic acid_13C_15N",11,10014775,0,474669,0.4,"",10014775
+"1561","240926_Smp_RC104_HomFate_T6_A_posDDA","n-methyl glutamic acid_13C_15N",10.97,68711344,0,3463779,1.2,"",68711344
+"1562","240926_Smp_RC104_HomFate_T6_B_posDDA","n-methyl glutamic acid_13C_15N",11.12,40002576,0,1713475,0.1,"",40002576
+"1563","240926_Smp_RC104_HomFate_T6_C_posDDA","n-methyl glutamic acid_13C_15N",11.17,32658574,555476,1239764,0.7,"",32658574
+"1564","240926_Smp_RC104_HomFate_T12_A_posDDA","n-methyl glutamic acid_13C_15N",11,79071208,0,3119487,0.4,"",79071208
+"1565","240926_Smp_RC104_HomFate_T12_B_posDDA","n-methyl glutamic acid_13C_15N",10.93,64007064,0,2947972,0.2,"",64007064
+"1566","240926_Smp_RC104_HomFate_T12_C_posDDA","n-methyl glutamic acid_13C_15N",10.99,95112640,0,4549097,1.4,"",95112640
+"1567","240926_Smp_RC104_HomFate_T24_A_posDDA","n-methyl glutamic acid_13C_15N",10.9,129747792,0,4649129,0.1,"",129747792
+"1568","240926_Smp_RC104_HomFate_T24_B_posDDA","n-methyl glutamic acid_13C_15N",10.95,185618160,508190,8767767,0.6,"",185618160
+"1569","240926_Smp_RC104_HomFate_T24_C_posDDA","n-methyl glutamic acid_13C_15N",11.01,247868880,636668,11846769,0.7,"",247868880
+"1570","240926_Smp_RC104_HomFate_T48_A_posDDA","n-methyl glutamic acid_13C_15N",11.33,61898968,0,2277514,0.4,"",61898968
+"1571","240926_Smp_RC104_HomFate_T48_B_posDDA","n-methyl glutamic acid_13C_15N",11.07,136128832,0,4712605,-0.1,"",136128832
+"1572","240926_Smp_RC104_HomFate_T48_C_posDDA","n-methyl glutamic acid_13C_15N",11.19,81336024,0,3431441,0.2,"",81336024
+"1573","240926_Smp_RC104_HomFate_T96_A_posDDA","n-methyl glutamic acid_13C_15N",11.21,2036118,0,84208,0.5,"",2036118
+"1574","240926_Smp_RC104_HomFate_T96_B_posDDA","n-methyl glutamic acid_13C_15N",11,5461728,0,202450,-0.3,"",5461728
+"1575","240926_Smp_RC104_HomFate_T96_C_posDDA","n-methyl glutamic acid_13C_15N",11.33,3181033,0,101626,-0.1,"",3181033
+"1576","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","n-methyl glutamic acid_13C_15N",11,35919236,0,1132849,0.1,"",35919236
+"1577","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","n-methyl glutamic acid_13C_15N",10.98,44449416,0,1519166,-0.2,"",44449416
+"1578","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","n-methyl glutamic acid_13C_15N",10.91,28616936,0,974544,0.1,"",28616936
+"1579","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","n-methyl glutamic acid_13C_15N",10.58,0,0,0,NA,"areamin_flag, ",NA
+"1580","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","n-methyl glutamic acid_13C_15N",10.58,0,0,0,NA,"areamin_flag, ",NA
+"1581","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","n-methyl glutamic acid_13C_15N",10.57,0,0,0,NA,"areamin_flag, ",NA
+"1582","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C7H11NO3_pos_13C_15N",8.75,22313,0,13367,-2,"areamin_flag, ",NA
+"1583","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1584","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1585","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1586","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1587","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1588","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1589","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1590","240926_Std_H2OinMatrix1_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1591","240926_Std_H2OinMatrix2_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1592","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1593","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1594","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1595","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1596","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1597","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.11,714,0,326,6.3,"ppm_flag, areamin_flag, ",NA
+"1598","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1599","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1600","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1601","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1602","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1603","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1604","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1605","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1606","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1607","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1608","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1609","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1610","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1611","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1612","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1613","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1614","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1615","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1616","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1617","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1618","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1619","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1620","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1621","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1622","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1623","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1624","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1625","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1626","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1627","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1628","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.07,0,0,0,NA,"areamin_flag, ",NA
+"1629","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1630","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1631","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C7H11NO3_pos_13C_15N",8.08,0,0,0,NA,"areamin_flag, ",NA
+"1632","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C7H11NO3_pos_13C_15N",8.06,0,0,0,NA,"areamin_flag, ",NA
+"1633","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1634","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1635","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1636","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1637","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1638","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1639","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1640","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1641","240926_Std_H2OinMatrix1_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1642","240926_Std_H2OinMatrix2_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1643","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1644","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1645","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1646","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1647","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1648","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1649","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1650","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1651","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1652","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1653","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1654","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1655","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1656","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1657","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1658","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1659","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1660","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1661","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1662","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1663","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1664","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1665","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1666","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1667","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1668","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1669","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1670","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1671","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1672","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1673","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1674","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1675","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1676","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1677","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1678","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1679","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.33,0,0,0,NA,"areamin_flag, ",NA
+"1680","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1681","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1682","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C6H11NO2_pos_13C_15N",10.32,0,0,0,NA,"areamin_flag, ",NA
+"1683","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C6H11NO2_pos_13C_15N",10.31,0,0,0,NA,"areamin_flag, ",NA
+"1684","240926_Std_4uMStdsMix1InH2O-1_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.71,12435,0,5545,-5.8,"areamin_flag, ",NA
+"1685","240926_Std_4uMStdsMix1InH2O-2_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.4,0,0,0,NA,"areamin_flag, ",NA
+"1686","240926_Std_4uMStdsMix1InMatrix-1_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1687","240926_Std_4uMStdsMix1InMatrix-2_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.42,0,0,0,NA,"areamin_flag, ",NA
+"1688","240926_Std_4uMStdsMix2InH2O-1_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.4,0,0,0,NA,"areamin_flag, ",NA
+"1689","240926_Std_4uMStdsMix2InH2O-2_posDDA","unknown_C6H9NO4_pos_early_13C_15N",4.16,9731,0,4975,1.7,"areamin_flag, ",NA
+"1690","240926_Std_4uMStdsMix2InMatrix-1_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1691","240926_Std_4uMStdsMix2InMatrix-2_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.87,40062,0,14364,4.1,"",40062
+"1692","240926_Std_H2OinMatrix1_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.88,17906,0,6007,4.1,"areamin_flag, ",NA
+"1693","240926_Std_H2OinMatrix2_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.85,17373,0,6796,1.5,"areamin_flag, ",NA
+"1694","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1695","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",4.26,11345,0,6603,0.7,"areamin_flag, ",NA
+"1696","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.72,7604,0,4752,3.5,"areamin_flag, ",NA
+"1697","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1698","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.66,6885,0,2923,2.1,"areamin_flag, ",NA
+"1699","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.92,187609,0,12934,3.8,"",187609
+"1700","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",4.02,29855,0,7715,3.4,"areamin_flag, ",NA
+"1701","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.81,12389,0,5674,1.3,"areamin_flag, ",NA
+"1702","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.42,0,0,0,NA,"areamin_flag, ",NA
+"1703","240926_Poo_RC104_HomFate_Full1_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.84,17738,0,6427,5.8,"areamin_flag, ",NA
+"1704","240926_Poo_RC104_HomFate_Full2_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1705","240926_Poo_RC104_HomFate_Full3_posDDA","unknown_C6H9NO4_pos_early_13C_15N",4.18,7976,0,5205,5.5,"areamin_flag, ",NA
+"1706","240926_Poo_RC104_HomFate_Full4_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.91,8555,0,3174,2.7,"areamin_flag, ",NA
+"1707","240926_Poo_RC104_HomFate_Full5_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.58,8445,0,3197,1.6,"areamin_flag, ",NA
+"1708","240926_Smp_RC104_HomFate_Con_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.51,7589,0,3968,2.6,"areamin_flag, ",NA
+"1709","240926_Smp_RC104_HomFate_Con_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.72,7715,0,4065,1.2,"areamin_flag, ",NA
+"1710","240926_Smp_RC104_HomFate_Con_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.91,444542,0,23071,4.5,"",444542
+"1711","240926_Smp_RC104_HomFate_T0_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.79,64117,0,9634,3.8,"",64117
+"1712","240926_Smp_RC104_HomFate_T0_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.91,431453,0,25495,4.8,"",431453
+"1713","240926_Smp_RC104_HomFate_T0_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.72,8701,0,4384,1.4,"areamin_flag, ",NA
+"1714","240926_Smp_RC104_HomFate_T6_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1715","240926_Smp_RC104_HomFate_T6_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.99,32188,0,6276,2.2,"areamin_flag, ",NA
+"1716","240926_Smp_RC104_HomFate_T6_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",4.16,7291,0,3803,1.4,"areamin_flag, ",NA
+"1717","240926_Smp_RC104_HomFate_T12_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.4,0,0,0,NA,"areamin_flag, ",NA
+"1718","240926_Smp_RC104_HomFate_T12_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1719","240926_Smp_RC104_HomFate_T12_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",4.08,5717,0,2373,2.9,"areamin_flag, ",NA
+"1720","240926_Smp_RC104_HomFate_T24_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1721","240926_Smp_RC104_HomFate_T24_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.5,8119,0,3187,2.5,"areamin_flag, ",NA
+"1722","240926_Smp_RC104_HomFate_T24_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",4.4,9089,0,5553,0.7,"areamin_flag, ",NA
+"1723","240926_Smp_RC104_HomFate_T48_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1724","240926_Smp_RC104_HomFate_T48_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",4.07,8267,0,5578,5,"areamin_flag, ",NA
+"1725","240926_Smp_RC104_HomFate_T48_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1726","240926_Smp_RC104_HomFate_T96_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.42,0,0,0,NA,"areamin_flag, ",NA
+"1727","240926_Smp_RC104_HomFate_T96_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.41,0,0,0,NA,"areamin_flag, ",NA
+"1728","240926_Smp_RC104_HomFate_T96_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.85,11506,0,4980,3.9,"areamin_flag, ",NA
+"1729","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.49,6892,0,2946,3.2,"areamin_flag, ",NA
+"1730","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.76,8135,0,3064,3.6,"areamin_flag, ",NA
+"1731","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.4,13131,0,5790,5.3,"areamin_flag, ",NA
+"1732","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.97,80958,0,8537,2.9,"",80958
+"1733","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.8,76447,0,12469,3.6,"",76447
+"1734","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.65,34767,0,6877,2.2,"areamin_flag, ",NA
