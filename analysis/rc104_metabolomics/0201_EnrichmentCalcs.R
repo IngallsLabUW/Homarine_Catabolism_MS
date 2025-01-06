@@ -1,5 +1,4 @@
-#TODO: Change for RC104 anaylsis
-# PURPOSE: calculate enrichment factors for the G5 samples
+# PURPOSE: calculate enrichment factors for the rc104 samples
 
 # PACKAGES & SPECIAL FUNCTIONS ----
 library(tidyverse)
@@ -11,7 +10,7 @@ library(here)
 
 # SET FILE LOCATIONS  -----
 meta_data_dir <- here("data", "intermediate", "metabolomics")
-output_loc <- here("data", "intermediate", "metabolomics", "g5")
+output_loc <- here("data", "intermediate", "metabolomics", "rc104")
 
 # Read in files  -----
 dat_long_filename <- here(
