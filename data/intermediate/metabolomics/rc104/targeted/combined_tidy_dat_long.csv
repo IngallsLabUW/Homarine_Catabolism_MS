@@ -1,0 +1,715 @@
+mass_feature,replicate_name,adjusted_area,sample_fraction,z,treatment,sample_set,retention_time,mz,timepoint,experiment_id
+Adenine,240926_Smp_RC104_HomFate_Con_A_posDDA,828414464,Particulate,1,Control,homarine_fate_1,5.1702040816326535,136.06232,NA,NA
+Adenine,240926_Smp_RC104_HomFate_Con_B_posDDA,295846144,Particulate,1,Control,homarine_fate_1,5.1702040816326535,136.06232,NA,NA
+Adenine,240926_Smp_RC104_HomFate_Con_C_posDDA,406546592,Particulate,1,Control,homarine_fate_1,5.1702040816326535,136.06232,NA,NA
+Adenine,240926_Smp_RC104_HomFate_T0_A_posDDA,411181888,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,0,NA
+Adenine,240926_Smp_RC104_HomFate_T0_B_posDDA,968990144,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,0,NA
+Adenine,240926_Smp_RC104_HomFate_T0_C_posDDA,243125216,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,0,NA
+Adenine,240926_Smp_RC104_HomFate_T6_A_posDDA,269796992,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,6,NA
+Adenine,240926_Smp_RC104_HomFate_T6_B_posDDA,48041616,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,6,NA
+Adenine,240926_Smp_RC104_HomFate_T6_C_posDDA,99898000,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,6,NA
+Adenine,240926_Smp_RC104_HomFate_T12_A_posDDA,342686688,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,12,NA
+Adenine,240926_Smp_RC104_HomFate_T12_B_posDDA,152346928,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,12,NA
+Adenine,240926_Smp_RC104_HomFate_T12_C_posDDA,565503040,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,12,NA
+Adenine,240926_Smp_RC104_HomFate_T24_A_posDDA,804003968,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,24,NA
+Adenine,240926_Smp_RC104_HomFate_T24_B_posDDA,270455936,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,24,NA
+Adenine,240926_Smp_RC104_HomFate_T24_C_posDDA,1884706048,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,24,NA
+Adenine,240926_Smp_RC104_HomFate_T48_A_posDDA,1062670464,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,48,NA
+Adenine,240926_Smp_RC104_HomFate_T48_B_posDDA,1443562496,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,48,NA
+Adenine,240926_Smp_RC104_HomFate_T48_C_posDDA,2628069120,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,48,NA
+Adenine,240926_Smp_RC104_HomFate_T96_A_posDDA,2697674752,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,96,NA
+Adenine,240926_Smp_RC104_HomFate_T96_B_posDDA,2232317952,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,96,NA
+Adenine,240926_Smp_RC104_HomFate_T96_C_posDDA,5164254208,Particulate,1,Homarine,homarine_fate_1,5.1702040816326535,136.06232,96,NA
+Adenosine,240926_Smp_RC104_HomFate_Con_A_posDDA,166473088,Particulate,1,Control,homarine_fate_1,4.9491836734693875,268.10458,NA,NA
+Adenosine,240926_Smp_RC104_HomFate_Con_B_posDDA,142824688,Particulate,1,Control,homarine_fate_1,4.9491836734693875,268.10458,NA,NA
+Adenosine,240926_Smp_RC104_HomFate_Con_C_posDDA,81013544,Particulate,1,Control,homarine_fate_1,4.9491836734693875,268.10458,NA,NA
+Adenosine,240926_Smp_RC104_HomFate_T0_A_posDDA,74691080,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,0,NA
+Adenosine,240926_Smp_RC104_HomFate_T0_B_posDDA,99442192,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,0,NA
+Adenosine,240926_Smp_RC104_HomFate_T0_C_posDDA,71067720,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,0,NA
+Adenosine,240926_Smp_RC104_HomFate_T6_A_posDDA,68458344,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,6,NA
+Adenosine,240926_Smp_RC104_HomFate_T6_B_posDDA,8199271,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,6,NA
+Adenosine,240926_Smp_RC104_HomFate_T6_C_posDDA,15688428,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,6,NA
+Adenosine,240926_Smp_RC104_HomFate_T12_A_posDDA,101402856,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,12,NA
+Adenosine,240926_Smp_RC104_HomFate_T12_B_posDDA,82044360,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,12,NA
+Adenosine,240926_Smp_RC104_HomFate_T12_C_posDDA,145093728,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,12,NA
+Adenosine,240926_Smp_RC104_HomFate_T24_A_posDDA,193966288,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,24,NA
+Adenosine,240926_Smp_RC104_HomFate_T24_B_posDDA,42568336,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,24,NA
+Adenosine,240926_Smp_RC104_HomFate_T24_C_posDDA,280313888,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,24,NA
+Adenosine,240926_Smp_RC104_HomFate_T48_A_posDDA,202571216,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,48,NA
+Adenosine,240926_Smp_RC104_HomFate_T48_B_posDDA,470253344,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,48,NA
+Adenosine,240926_Smp_RC104_HomFate_T48_C_posDDA,260249616,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,48,NA
+Adenosine,240926_Smp_RC104_HomFate_T96_A_posDDA,156656752,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,96,NA
+Adenosine,240926_Smp_RC104_HomFate_T96_B_posDDA,154836336,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,96,NA
+Adenosine,240926_Smp_RC104_HomFate_T96_C_posDDA,253869440,Particulate,1,Homarine,homarine_fate_1,4.9491836734693875,268.10458,96,NA
+Citrulline,240926_Smp_RC104_HomFate_Con_A_posDDA,3562698,Particulate,1,Control,homarine_fate_1,12.481428571428571,176.103517,NA,NA
+Citrulline,240926_Smp_RC104_HomFate_Con_B_posDDA,2786515,Particulate,1,Control,homarine_fate_1,12.481428571428571,176.103517,NA,NA
+Citrulline,240926_Smp_RC104_HomFate_Con_C_posDDA,2128497,Particulate,1,Control,homarine_fate_1,12.481428571428571,176.103517,NA,NA
+Citrulline,240926_Smp_RC104_HomFate_T0_A_posDDA,5609863,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,0,NA
+Citrulline,240926_Smp_RC104_HomFate_T0_B_posDDA,4523260,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,0,NA
+Citrulline,240926_Smp_RC104_HomFate_T0_C_posDDA,3818637,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,0,NA
+Citrulline,240926_Smp_RC104_HomFate_T6_A_posDDA,13640088,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,6,NA
+Citrulline,240926_Smp_RC104_HomFate_T6_B_posDDA,15725640,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,6,NA
+Citrulline,240926_Smp_RC104_HomFate_T6_C_posDDA,8919207,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,6,NA
+Citrulline,240926_Smp_RC104_HomFate_T12_A_posDDA,6212647,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,12,NA
+Citrulline,240926_Smp_RC104_HomFate_T12_B_posDDA,3107490,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,12,NA
+Citrulline,240926_Smp_RC104_HomFate_T12_C_posDDA,6998211,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,12,NA
+Citrulline,240926_Smp_RC104_HomFate_T24_A_posDDA,3994547,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,24,NA
+Citrulline,240926_Smp_RC104_HomFate_T24_B_posDDA,5209240,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,24,NA
+Citrulline,240926_Smp_RC104_HomFate_T24_C_posDDA,10352401,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,24,NA
+Citrulline,240926_Smp_RC104_HomFate_T48_A_posDDA,6753040,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,48,NA
+Citrulline,240926_Smp_RC104_HomFate_T48_B_posDDA,9243076,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,48,NA
+Citrulline,240926_Smp_RC104_HomFate_T48_C_posDDA,10622665,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,48,NA
+Citrulline,240926_Smp_RC104_HomFate_T96_A_posDDA,8590296,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,96,NA
+Citrulline,240926_Smp_RC104_HomFate_T96_B_posDDA,5925123,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,96,NA
+Citrulline,240926_Smp_RC104_HomFate_T96_C_posDDA,10862579,Particulate,1,Homarine,homarine_fate_1,12.481428571428571,176.103517,96,NA
+Cytosine,240926_Smp_RC104_HomFate_Con_A_posDDA,94144488,Particulate,1,Control,homarine_fate_1,7.436734693877551,112.051087,NA,NA
+Cytosine,240926_Smp_RC104_HomFate_Con_B_posDDA,39746612,Particulate,1,Control,homarine_fate_1,7.436734693877551,112.051087,NA,NA
+Cytosine,240926_Smp_RC104_HomFate_Con_C_posDDA,57992500,Particulate,1,Control,homarine_fate_1,7.436734693877551,112.051087,NA,NA
+Cytosine,240926_Smp_RC104_HomFate_T0_A_posDDA,38399340,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,0,NA
+Cytosine,240926_Smp_RC104_HomFate_T0_B_posDDA,52351268,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,0,NA
+Cytosine,240926_Smp_RC104_HomFate_T0_C_posDDA,33845668,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,0,NA
+Cytosine,240926_Smp_RC104_HomFate_T6_A_posDDA,57734380,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,6,NA
+Cytosine,240926_Smp_RC104_HomFate_T6_B_posDDA,26608962,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,6,NA
+Cytosine,240926_Smp_RC104_HomFate_T6_C_posDDA,41510296,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,6,NA
+Cytosine,240926_Smp_RC104_HomFate_T12_A_posDDA,32997486,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,12,NA
+Cytosine,240926_Smp_RC104_HomFate_T12_B_posDDA,51795176,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,12,NA
+Cytosine,240926_Smp_RC104_HomFate_T12_C_posDDA,82841712,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,12,NA
+Cytosine,240926_Smp_RC104_HomFate_T24_A_posDDA,118419792,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,24,NA
+Cytosine,240926_Smp_RC104_HomFate_T24_B_posDDA,50175928,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,24,NA
+Cytosine,240926_Smp_RC104_HomFate_T24_C_posDDA,251967664,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,24,NA
+Cytosine,240926_Smp_RC104_HomFate_T48_A_posDDA,225712880,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,48,NA
+Cytosine,240926_Smp_RC104_HomFate_T48_B_posDDA,126251832,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,48,NA
+Cytosine,240926_Smp_RC104_HomFate_T48_C_posDDA,267473248,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,48,NA
+Cytosine,240926_Smp_RC104_HomFate_T96_A_posDDA,92899440,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,96,NA
+Cytosine,240926_Smp_RC104_HomFate_T96_B_posDDA,136378864,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,96,NA
+Cytosine,240926_Smp_RC104_HomFate_T96_C_posDDA,148913600,Particulate,1,Homarine,homarine_fate_1,7.436734693877551,112.051087,96,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_Con_A_posDDA,56932832,Particulate,1,Control,homarine_fate_1,3.821428571428571,252.109665,NA,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_Con_B_posDDA,17484288,Particulate,1,Control,homarine_fate_1,3.821428571428571,252.109665,NA,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_Con_C_posDDA,16346839,Particulate,1,Control,homarine_fate_1,3.821428571428571,252.109665,NA,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T0_A_posDDA,9762271,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,0,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T0_B_posDDA,26827448,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,0,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T0_C_posDDA,5293435,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,0,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T6_A_posDDA,9670068,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,6,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T6_B_posDDA,1250989,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,6,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T6_C_posDDA,1258495,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,6,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T12_A_posDDA,9840207,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,12,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T12_B_posDDA,7299677,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,12,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T12_C_posDDA,21880432,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,12,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T24_A_posDDA,60727400,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,24,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T24_B_posDDA,15190359,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,24,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T24_C_posDDA,269789632,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,24,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T48_A_posDDA,63392392,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,48,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T48_B_posDDA,107223280,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,48,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T48_C_posDDA,286240288,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,48,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T96_A_posDDA,52479824,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,96,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T96_B_posDDA,151710304,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,96,NA
+Deoxyadenosine,240926_Smp_RC104_HomFate_T96_C_posDDA,127509800,Particulate,1,Homarine,homarine_fate_1,3.821428571428571,252.109665,96,NA
+Guanosine,240926_Smp_RC104_HomFate_Con_A_posDDA,2801434.7412675135,Particulate,1,Control,homarine_fate_1,9.573829787234043,284.099495,NA,NA
+Guanosine,240926_Smp_RC104_HomFate_Con_B_posDDA,2254462.737257274,Particulate,1,Control,homarine_fate_1,9.573829787234043,284.099495,NA,NA
+Guanosine,240926_Smp_RC104_HomFate_Con_C_posDDA,1254295.086082665,Particulate,1,Control,homarine_fate_1,9.573829787234043,284.099495,NA,NA
+Guanosine,240926_Smp_RC104_HomFate_T0_A_posDDA,738738.7089111267,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,0,NA
+Guanosine,240926_Smp_RC104_HomFate_T0_B_posDDA,1859563.2631587344,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,0,NA
+Guanosine,240926_Smp_RC104_HomFate_T0_C_posDDA,1310256.7971445282,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,0,NA
+Guanosine,240926_Smp_RC104_HomFate_T6_A_posDDA,2606546.805902405,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,6,NA
+Guanosine,240926_Smp_RC104_HomFate_T6_B_posDDA,737988.7319066369,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,6,NA
+Guanosine,240926_Smp_RC104_HomFate_T6_C_posDDA,1083700.26752207,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,6,NA
+Guanosine,240926_Smp_RC104_HomFate_T12_A_posDDA,1460835.258125292,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,12,NA
+Guanosine,240926_Smp_RC104_HomFate_T12_B_posDDA,1499847.6570836152,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,12,NA
+Guanosine,240926_Smp_RC104_HomFate_T12_C_posDDA,5002509.26631063,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,12,NA
+Guanosine,240926_Smp_RC104_HomFate_T24_A_posDDA,4423604.762622863,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,24,NA
+Guanosine,240926_Smp_RC104_HomFate_T24_B_posDDA,3347356.3324783314,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,24,NA
+Guanosine,240926_Smp_RC104_HomFate_T24_C_posDDA,29246784.25245206,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,24,NA
+Guanosine,240926_Smp_RC104_HomFate_T48_A_posDDA,4333355.55632971,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,48,NA
+Guanosine,240926_Smp_RC104_HomFate_T48_B_posDDA,12447904.7956112,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,48,NA
+Guanosine,240926_Smp_RC104_HomFate_T48_C_posDDA,9172528.345631478,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,48,NA
+Guanosine,240926_Smp_RC104_HomFate_T96_A_posDDA,3531177.2605298804,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,96,NA
+Guanosine,240926_Smp_RC104_HomFate_T96_B_posDDA,10649278.539247513,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,96,NA
+Guanosine,240926_Smp_RC104_HomFate_T96_C_posDDA,7962932.65744876,Particulate,1,Homarine,homarine_fate_1,9.573829787234043,284.099495,96,NA
+Homarine,240926_Smp_RC104_HomFate_Con_A_posDDA,3334265600,Particulate,1,Control,homarine_fate_1,6.143265306122449,138.055503,NA,NA
+Homarine,240926_Smp_RC104_HomFate_Con_B_posDDA,3186465280,Particulate,1,Control,homarine_fate_1,6.143265306122449,138.055503,NA,NA
+Homarine,240926_Smp_RC104_HomFate_Con_C_posDDA,1925811200,Particulate,1,Control,homarine_fate_1,6.143265306122449,138.055503,NA,NA
+Homarine,240926_Smp_RC104_HomFate_T0_A_posDDA,2935372544,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,0,NA
+Homarine,240926_Smp_RC104_HomFate_T0_B_posDDA,4581720064,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,0,NA
+Homarine,240926_Smp_RC104_HomFate_T0_C_posDDA,4649757184,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,0,NA
+Homarine,240926_Smp_RC104_HomFate_T6_A_posDDA,4438765568,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,6,NA
+Homarine,240926_Smp_RC104_HomFate_T6_B_posDDA,1672967424,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,6,NA
+Homarine,240926_Smp_RC104_HomFate_T6_C_posDDA,4159005440,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,6,NA
+Homarine,240926_Smp_RC104_HomFate_T12_A_posDDA,3710355456,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,12,NA
+Homarine,240926_Smp_RC104_HomFate_T12_B_posDDA,2226615552,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,12,NA
+Homarine,240926_Smp_RC104_HomFate_T12_C_posDDA,5852463616,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,12,NA
+Homarine,240926_Smp_RC104_HomFate_T24_A_posDDA,6030387200,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,24,NA
+Homarine,240926_Smp_RC104_HomFate_T24_B_posDDA,4711577088,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,24,NA
+Homarine,240926_Smp_RC104_HomFate_T24_C_posDDA,8244518912,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,24,NA
+Homarine,240926_Smp_RC104_HomFate_T48_A_posDDA,5865862656,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,48,NA
+Homarine,240926_Smp_RC104_HomFate_T48_B_posDDA,10939744256,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,48,NA
+Homarine,240926_Smp_RC104_HomFate_T48_C_posDDA,9317761024,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,48,NA
+Homarine,240926_Smp_RC104_HomFate_T96_A_posDDA,16247639040,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,96,NA
+Homarine,240926_Smp_RC104_HomFate_T96_B_posDDA,21826738176,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,96,NA
+Homarine,240926_Smp_RC104_HomFate_T96_C_posDDA,22711207936,Particulate,1,Homarine,homarine_fate_1,6.143265306122449,138.055503,96,NA
+L-Arginine,240926_Smp_RC104_HomFate_Con_A_posDDA,31264798,Particulate,1,Control,homarine_fate_1,19.531632653061223,175.119501,NA,NA
+L-Arginine,240926_Smp_RC104_HomFate_Con_B_posDDA,22471122,Particulate,1,Control,homarine_fate_1,19.531632653061223,175.119501,NA,NA
+L-Arginine,240926_Smp_RC104_HomFate_Con_C_posDDA,14056305,Particulate,1,Control,homarine_fate_1,19.531632653061223,175.119501,NA,NA
+L-Arginine,240926_Smp_RC104_HomFate_T0_A_posDDA,21531446,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,0,NA
+L-Arginine,240926_Smp_RC104_HomFate_T0_B_posDDA,37040824,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,0,NA
+L-Arginine,240926_Smp_RC104_HomFate_T0_C_posDDA,18408434,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,0,NA
+L-Arginine,240926_Smp_RC104_HomFate_T6_A_posDDA,49665096,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,6,NA
+L-Arginine,240926_Smp_RC104_HomFate_T6_B_posDDA,15598582,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,6,NA
+L-Arginine,240926_Smp_RC104_HomFate_T6_C_posDDA,28618906,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,6,NA
+L-Arginine,240926_Smp_RC104_HomFate_T12_A_posDDA,36408972,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,12,NA
+L-Arginine,240926_Smp_RC104_HomFate_T12_B_posDDA,17130984,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,12,NA
+L-Arginine,240926_Smp_RC104_HomFate_T12_C_posDDA,105804864,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,12,NA
+L-Arginine,240926_Smp_RC104_HomFate_T24_A_posDDA,44072032,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,24,NA
+L-Arginine,240926_Smp_RC104_HomFate_T24_B_posDDA,46631720,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,24,NA
+L-Arginine,240926_Smp_RC104_HomFate_T24_C_posDDA,275810368,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,24,NA
+L-Arginine,240926_Smp_RC104_HomFate_T48_A_posDDA,44804652,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,48,NA
+L-Arginine,240926_Smp_RC104_HomFate_T48_B_posDDA,97982080,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,48,NA
+L-Arginine,240926_Smp_RC104_HomFate_T48_C_posDDA,172885952,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,48,NA
+L-Arginine,240926_Smp_RC104_HomFate_T96_A_posDDA,97966048,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,96,NA
+L-Arginine,240926_Smp_RC104_HomFate_T96_B_posDDA,142818224,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,96,NA
+L-Arginine,240926_Smp_RC104_HomFate_T96_C_posDDA,125349104,Particulate,1,Homarine,homarine_fate_1,19.531632653061223,175.119501,96,NA
+L-Asparagine,240926_Smp_RC104_HomFate_Con_A_posDDA,3241724,Particulate,1,Control,homarine_fate_1,11.922857142857143,133.061318,NA,NA
+L-Asparagine,240926_Smp_RC104_HomFate_Con_B_posDDA,2920008,Particulate,1,Control,homarine_fate_1,11.922857142857143,133.061318,NA,NA
+L-Asparagine,240926_Smp_RC104_HomFate_Con_C_posDDA,2497653,Particulate,1,Control,homarine_fate_1,11.922857142857143,133.061318,NA,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T0_A_posDDA,3706032,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,0,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T0_B_posDDA,4967825,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,0,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T0_C_posDDA,3412938,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,0,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T6_A_posDDA,6638667,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,6,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T6_B_posDDA,4216379,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,6,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T6_C_posDDA,5751145,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,6,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T12_A_posDDA,4888445,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,12,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T12_B_posDDA,2569660,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,12,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T12_C_posDDA,7262101,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,12,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T24_A_posDDA,4664782,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,24,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T24_B_posDDA,5724035,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,24,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T24_C_posDDA,15593819,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,24,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T48_A_posDDA,4966474,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,48,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T48_B_posDDA,10156087,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,48,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T48_C_posDDA,12669571,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,48,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T96_A_posDDA,13280271,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,96,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T96_B_posDDA,20498868,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,96,NA
+L-Asparagine,240926_Smp_RC104_HomFate_T96_C_posDDA,17753260,Particulate,1,Homarine,homarine_fate_1,11.922857142857143,133.061318,96,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_Con_A_posDDA,231116400,Particulate,1,Control,homarine_fate_1,12.237551020408164,148.060984,NA,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_Con_B_posDDA,171324608,Particulate,1,Control,homarine_fate_1,12.237551020408164,148.060984,NA,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_Con_C_posDDA,127739240,Particulate,1,Control,homarine_fate_1,12.237551020408164,148.060984,NA,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T0_A_posDDA,185533328,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,0,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T0_B_posDDA,266533488,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,0,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T0_C_posDDA,153850416,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,0,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T6_A_posDDA,229827280,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,6,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T6_B_posDDA,147431552,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,6,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T6_C_posDDA,90356488,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,6,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T12_A_posDDA,245893168,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,12,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T12_B_posDDA,164541744,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,12,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T12_C_posDDA,327687040,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,12,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T24_A_posDDA,281486112,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,24,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T24_B_posDDA,339122560,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,24,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T24_C_posDDA,742921088,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,24,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T48_A_posDDA,225579328,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,48,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T48_B_posDDA,569914112,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,48,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T48_C_posDDA,597241088,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,48,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T96_A_posDDA,710672448,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,96,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T96_B_posDDA,956347776,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,96,NA
+L-Glutamic acid,240926_Smp_RC104_HomFate_T96_C_posDDA,1000910848,Particulate,1,Homarine,homarine_fate_1,12.237551020408164,148.060984,96,NA
+L-Homoserine,240926_Smp_RC104_HomFate_Con_A_posDDA,6336433,Particulate,1,Control,homarine_fate_1,11.741224489795918,120.066069,NA,NA
+L-Homoserine,240926_Smp_RC104_HomFate_Con_B_posDDA,4197646,Particulate,1,Control,homarine_fate_1,11.741224489795918,120.066069,NA,NA
+L-Homoserine,240926_Smp_RC104_HomFate_Con_C_posDDA,4090230,Particulate,1,Control,homarine_fate_1,11.741224489795918,120.066069,NA,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T0_A_posDDA,5187977,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,0,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T0_B_posDDA,7496378,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,0,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T0_C_posDDA,4773560,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,0,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T6_A_posDDA,19077056,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,6,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T6_B_posDDA,5016232,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,6,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T6_C_posDDA,16969282,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,6,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T12_A_posDDA,12660430,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,12,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T12_B_posDDA,6776393,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,12,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T12_C_posDDA,21575730,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,12,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T24_A_posDDA,4776402,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,24,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T24_B_posDDA,4949253,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,24,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T24_C_posDDA,13668226,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,24,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T48_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,48,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T48_B_posDDA,7338758,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,48,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T48_C_posDDA,10076362,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,48,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T96_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,96,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T96_B_posDDA,5819197,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,96,NA
+L-Homoserine,240926_Smp_RC104_HomFate_T96_C_posDDA,4371571,Particulate,1,Homarine,homarine_fate_1,11.741224489795918,120.066069,96,NA
+L-Lysine,240926_Smp_RC104_HomFate_Con_A_posDDA,4924292,Particulate,1,Control,homarine_fate_1,18.65265306122449,147.113353,NA,NA
+L-Lysine,240926_Smp_RC104_HomFate_Con_B_posDDA,4428010,Particulate,1,Control,homarine_fate_1,18.65265306122449,147.113353,NA,NA
+L-Lysine,240926_Smp_RC104_HomFate_Con_C_posDDA,3079624,Particulate,1,Control,homarine_fate_1,18.65265306122449,147.113353,NA,NA
+L-Lysine,240926_Smp_RC104_HomFate_T0_A_posDDA,4666290,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,0,NA
+L-Lysine,240926_Smp_RC104_HomFate_T0_B_posDDA,5799325,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,0,NA
+L-Lysine,240926_Smp_RC104_HomFate_T0_C_posDDA,3851332,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,0,NA
+L-Lysine,240926_Smp_RC104_HomFate_T6_A_posDDA,8787672,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,6,NA
+L-Lysine,240926_Smp_RC104_HomFate_T6_B_posDDA,5135056,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,6,NA
+L-Lysine,240926_Smp_RC104_HomFate_T6_C_posDDA,6042681,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,6,NA
+L-Lysine,240926_Smp_RC104_HomFate_T12_A_posDDA,5129846,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,12,NA
+L-Lysine,240926_Smp_RC104_HomFate_T12_B_posDDA,3041199,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,12,NA
+L-Lysine,240926_Smp_RC104_HomFate_T12_C_posDDA,12782263,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,12,NA
+L-Lysine,240926_Smp_RC104_HomFate_T24_A_posDDA,7615735,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,24,NA
+L-Lysine,240926_Smp_RC104_HomFate_T24_B_posDDA,5588177,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,24,NA
+L-Lysine,240926_Smp_RC104_HomFate_T24_C_posDDA,29647472,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,24,NA
+L-Lysine,240926_Smp_RC104_HomFate_T48_A_posDDA,8964242,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,48,NA
+L-Lysine,240926_Smp_RC104_HomFate_T48_B_posDDA,15512556,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,48,NA
+L-Lysine,240926_Smp_RC104_HomFate_T48_C_posDDA,24685404,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,48,NA
+L-Lysine,240926_Smp_RC104_HomFate_T96_A_posDDA,13048796,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,96,NA
+L-Lysine,240926_Smp_RC104_HomFate_T96_B_posDDA,22599632,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,96,NA
+L-Lysine,240926_Smp_RC104_HomFate_T96_C_posDDA,20585572,Particulate,1,Homarine,homarine_fate_1,18.65265306122449,147.113353,96,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_Con_A_posDDA,48287149.34636332,Particulate,1,Control,homarine_fate_1,6.4348936170212765,NA,NA,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_Con_B_posDDA,35222584.1410085,Particulate,1,Control,homarine_fate_1,6.4348936170212765,NA,NA,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_Con_C_posDDA,26417942.34156816,Particulate,1,Control,homarine_fate_1,6.4348936170212765,NA,NA,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T0_A_posDDA,37042449.53866895,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,0,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T0_B_posDDA,69904447.07684037,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,0,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T0_C_posDDA,38826791.14619943,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,0,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T6_A_posDDA,106553289.58630218,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,6,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T6_B_posDDA,56203779.549263254,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,6,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T6_C_posDDA,94731002.24805328,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,6,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T12_A_posDDA,70777948.66747315,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,12,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T12_B_posDDA,35936007.110181384,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,12,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T12_C_posDDA,114557912.99340454,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,12,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T24_A_posDDA,77842484.37619577,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,24,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T24_B_posDDA,38583657.77991144,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,24,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T24_C_posDDA,320139323.54412407,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,24,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T48_A_posDDA,92179739.84801202,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,48,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T48_B_posDDA,225884007.47298676,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,48,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T48_C_posDDA,395411757.37576973,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,48,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T96_A_posDDA,125332121.3809266,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,96,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T96_B_posDDA,340222163.81161,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,96,NA
+L-Phenylalanine,240926_Smp_RC104_HomFate_T96_C_posDDA,253885854.97243777,Particulate,1,Homarine,homarine_fate_1,6.4348936170212765,NA,96,NA
+L-Proline,240926_Smp_RC104_HomFate_Con_A_posDDA,329975168,Particulate,1,Control,homarine_fate_1,9.540816326530612,116.071154,NA,NA
+L-Proline,240926_Smp_RC104_HomFate_Con_B_posDDA,301233632,Particulate,1,Control,homarine_fate_1,9.540816326530612,116.071154,NA,NA
+L-Proline,240926_Smp_RC104_HomFate_Con_C_posDDA,216131696,Particulate,1,Control,homarine_fate_1,9.540816326530612,116.071154,NA,NA
+L-Proline,240926_Smp_RC104_HomFate_T0_A_posDDA,401994240,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,0,NA
+L-Proline,240926_Smp_RC104_HomFate_T0_B_posDDA,455411264,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,0,NA
+L-Proline,240926_Smp_RC104_HomFate_T0_C_posDDA,357139200,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,0,NA
+L-Proline,240926_Smp_RC104_HomFate_T6_A_posDDA,525398848,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,6,NA
+L-Proline,240926_Smp_RC104_HomFate_T6_B_posDDA,316644128,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,6,NA
+L-Proline,240926_Smp_RC104_HomFate_T6_C_posDDA,474747456,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,6,NA
+L-Proline,240926_Smp_RC104_HomFate_T12_A_posDDA,397994496,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,12,NA
+L-Proline,240926_Smp_RC104_HomFate_T12_B_posDDA,234771024,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,12,NA
+L-Proline,240926_Smp_RC104_HomFate_T12_C_posDDA,647378752,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,12,NA
+L-Proline,240926_Smp_RC104_HomFate_T24_A_posDDA,424999648,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,24,NA
+L-Proline,240926_Smp_RC104_HomFate_T24_B_posDDA,458523456,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,24,NA
+L-Proline,240926_Smp_RC104_HomFate_T24_C_posDDA,970851648,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,24,NA
+L-Proline,240926_Smp_RC104_HomFate_T48_A_posDDA,460387072,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,48,NA
+L-Proline,240926_Smp_RC104_HomFate_T48_B_posDDA,778554112,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,48,NA
+L-Proline,240926_Smp_RC104_HomFate_T48_C_posDDA,1034918208,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,48,NA
+L-Proline,240926_Smp_RC104_HomFate_T96_A_posDDA,1437732224,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,96,NA
+L-Proline,240926_Smp_RC104_HomFate_T96_B_posDDA,1742752640,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,96,NA
+L-Proline,240926_Smp_RC104_HomFate_T96_C_posDDA,1610709888,Particulate,1,Homarine,homarine_fate_1,9.540816326530612,116.071154,96,NA
+L-Serine,240926_Smp_RC104_HomFate_Con_A_posDDA,3360378,Particulate,1,Control,homarine_fate_1,12.18877551020408,106.050419,NA,NA
+L-Serine,240926_Smp_RC104_HomFate_Con_B_posDDA,3272496,Particulate,1,Control,homarine_fate_1,12.18877551020408,106.050419,NA,NA
+L-Serine,240926_Smp_RC104_HomFate_Con_C_posDDA,3200228,Particulate,1,Control,homarine_fate_1,12.18877551020408,106.050419,NA,NA
+L-Serine,240926_Smp_RC104_HomFate_T0_A_posDDA,10361907,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,0,NA
+L-Serine,240926_Smp_RC104_HomFate_T0_B_posDDA,5572320,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,0,NA
+L-Serine,240926_Smp_RC104_HomFate_T0_C_posDDA,5938972,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,0,NA
+L-Serine,240926_Smp_RC104_HomFate_T6_A_posDDA,19043234,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,6,NA
+L-Serine,240926_Smp_RC104_HomFate_T6_B_posDDA,29328824,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,6,NA
+L-Serine,240926_Smp_RC104_HomFate_T6_C_posDDA,18260200,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,6,NA
+L-Serine,240926_Smp_RC104_HomFate_T12_A_posDDA,7086851,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,12,NA
+L-Serine,240926_Smp_RC104_HomFate_T12_B_posDDA,3502884,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,12,NA
+L-Serine,240926_Smp_RC104_HomFate_T12_C_posDDA,7512285,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,12,NA
+L-Serine,240926_Smp_RC104_HomFate_T24_A_posDDA,5589081,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,24,NA
+L-Serine,240926_Smp_RC104_HomFate_T24_B_posDDA,4754384,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,24,NA
+L-Serine,240926_Smp_RC104_HomFate_T24_C_posDDA,13992740,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,24,NA
+L-Serine,240926_Smp_RC104_HomFate_T48_A_posDDA,11156934,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,48,NA
+L-Serine,240926_Smp_RC104_HomFate_T48_B_posDDA,15402212,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,48,NA
+L-Serine,240926_Smp_RC104_HomFate_T48_C_posDDA,22258358,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,48,NA
+L-Serine,240926_Smp_RC104_HomFate_T96_A_posDDA,17292324,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,96,NA
+L-Serine,240926_Smp_RC104_HomFate_T96_B_posDDA,18214878,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,96,NA
+L-Serine,240926_Smp_RC104_HomFate_T96_C_posDDA,24793656,Particulate,1,Homarine,homarine_fate_1,12.18877551020408,106.050419,96,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_Con_A_posDDA,2269853,Particulate,1,Control,homarine_fate_1,8.364468085106383,NA,NA,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_Con_B_posDDA,2481216,Particulate,1,Control,homarine_fate_1,8.364468085106383,NA,NA,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_Con_C_posDDA,1421996,Particulate,1,Control,homarine_fate_1,8.364468085106383,NA,NA,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T0_A_posDDA,1940047,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,0,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T0_B_posDDA,3629708,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,0,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T0_C_posDDA,1225397,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,0,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T6_A_posDDA,4537787,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,6,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T6_B_posDDA,994926,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,6,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T6_C_posDDA,811011,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,6,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T12_A_posDDA,3095877,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,12,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T12_B_posDDA,1692857,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,12,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T12_C_posDDA,5816447,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,12,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T24_A_posDDA,4112184,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,24,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T24_B_posDDA,1758581,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,24,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T24_C_posDDA,16297657,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,24,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T48_A_posDDA,3535653,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,48,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T48_B_posDDA,11049527,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,48,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T48_C_posDDA,15407719,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,48,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T96_A_posDDA,3509991,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,96,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T96_B_posDDA,9277409,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,96,NA
+L-Tryptophan,240926_Smp_RC104_HomFate_T96_C_posDDA,5834805,Particulate,1,Homarine,homarine_fate_1,8.364468085106383,NA,96,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_Con_A_posDDA,17004986,Particulate,1,Control,homarine_fate_1,10.067755102040817,182.081719,NA,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_Con_B_posDDA,16171970,Particulate,1,Control,homarine_fate_1,10.067755102040817,182.081719,NA,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_Con_C_posDDA,8928605,Particulate,1,Control,homarine_fate_1,10.067755102040817,182.081719,NA,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T0_A_posDDA,18132440,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,0,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T0_B_posDDA,21175726,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,0,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T0_C_posDDA,11825397,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,0,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T6_A_posDDA,16610814,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,6,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T6_B_posDDA,12085627,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,6,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T6_C_posDDA,13608955,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,6,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T12_A_posDDA,10511611,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,12,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T12_B_posDDA,6508503,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,12,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T12_C_posDDA,20597748,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,12,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T24_A_posDDA,17874864,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,24,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T24_B_posDDA,11825271,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,24,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T24_C_posDDA,50900464,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,24,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T48_A_posDDA,21429972,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,48,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T48_B_posDDA,52630184,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,48,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T48_C_posDDA,65196152,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,48,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T96_A_posDDA,23295852,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,96,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T96_B_posDDA,46389096,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,96,NA
+L-Tyrosine,240926_Smp_RC104_HomFate_T96_C_posDDA,34919560,Particulate,1,Homarine,homarine_fate_1,10.067755102040817,182.081719,96,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_Con_A_posDDA,22891796,Particulate,1,Control,homarine_fate_1,10.913921568627453,162.076634,NA,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_Con_B_posDDA,23445922,Particulate,1,Control,homarine_fate_1,10.913921568627453,162.076634,NA,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_Con_C_posDDA,14175991,Particulate,1,Control,homarine_fate_1,10.913921568627453,162.076634,NA,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T0_A_posDDA,24828420,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,0,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T0_B_posDDA,36718128,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,0,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T0_C_posDDA,22778976,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,0,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T6_A_posDDA,20235522,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,6,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T6_B_posDDA,11306632,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,6,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T6_C_posDDA,14444931,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,6,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T12_A_posDDA,27127190,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,12,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T12_B_posDDA,7205047,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,12,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T12_C_posDDA,25348784,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,12,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T24_A_posDDA,15847087,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,24,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T24_B_posDDA,22162646,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,24,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T24_C_posDDA,59112880,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,24,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T48_A_posDDA,11727931,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,48,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T48_B_posDDA,51062928,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,48,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T48_C_posDDA,39438344,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,48,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T96_A_posDDA,13627127,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,96,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T96_B_posDDA,20577740,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,96,NA
+N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T96_C_posDDA,11403732,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,96,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_Con_A_posDDA,468111,Particulate,1,Control,homarine_fate_1,6.146595744680851,NA,NA,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_Con_B_posDDA,1656955,Particulate,1,Control,homarine_fate_1,6.146595744680851,NA,NA,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_Con_C_posDDA,138020,Particulate,1,Control,homarine_fate_1,6.146595744680851,NA,NA,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T0_A_posDDA,193787232,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,0,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T0_B_posDDA,385618400,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,0,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T0_C_posDDA,378575008,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,0,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T6_A_posDDA,5037727232,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,6,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T6_B_posDDA,2450482688,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,6,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T6_C_posDDA,5752175616,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,6,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T12_A_posDDA,5171395072,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,12,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T12_B_posDDA,4343264256,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,12,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T12_C_posDDA,7596877824,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,12,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T24_A_posDDA,11860980736,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,24,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T24_B_posDDA,11783908352,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,24,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T24_C_posDDA,12899290112,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,24,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T48_A_posDDA,12286804992,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,48,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T48_B_posDDA,16738979840,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,48,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T48_C_posDDA,11915720704,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,48,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T96_A_posDDA,5323034624,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,96,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T96_B_posDDA,4960471552,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,96,NA
+homarine_13C_15N,240926_Smp_RC104_HomFate_T96_C_posDDA,4711018496,Particulate,1,Homarine,homarine_fate_1,6.146595744680851,NA,96,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_Con_A_posDDA,NA,Particulate,1,Control,homarine_fate_1,10.99421052631579,NA,NA,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_Con_B_posDDA,NA,Particulate,1,Control,homarine_fate_1,10.99421052631579,NA,NA,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_Con_C_posDDA,NA,Particulate,1,Control,homarine_fate_1,10.99421052631579,NA,NA,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T0_A_posDDA,7936199,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,0,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T0_B_posDDA,14628324,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,0,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T0_C_posDDA,10014775,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,0,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T6_A_posDDA,68711344,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,6,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T6_B_posDDA,40002576,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,6,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T6_C_posDDA,32658574,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,6,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T12_A_posDDA,79071208,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,12,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T12_B_posDDA,64007064,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,12,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T12_C_posDDA,95112640,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,12,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T24_A_posDDA,129747792,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,24,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T24_B_posDDA,185618160,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,24,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T24_C_posDDA,247868880,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,24,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T48_A_posDDA,61898968,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,48,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T48_B_posDDA,136128832,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,48,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T48_C_posDDA,81336024,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,48,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T96_A_posDDA,2036118,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,96,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T96_B_posDDA,5461728,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,96,NA
+n-methyl glutamic acid_13C_15N,240926_Smp_RC104_HomFate_T96_C_posDDA,3181033,Particulate,1,Homarine,homarine_fate_1,10.99421052631579,NA,96,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_Con_A_posDDA,10923832,Particulate,1,Control,homarine_fate_1,9.376,NA,NA,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_Con_B_posDDA,11560118,Particulate,1,Control,homarine_fate_1,9.376,NA,NA,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_Con_C_posDDA,4103614,Particulate,1,Control,homarine_fate_1,9.376,NA,NA,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T0_A_posDDA,6726185,Particulate,1,Homarine,homarine_fate_1,9.376,NA,0,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T0_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,0,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T0_C_posDDA,12285374,Particulate,1,Homarine,homarine_fate_1,9.376,NA,0,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T6_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,6,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T6_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,6,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T6_C_posDDA,4760998,Particulate,1,Homarine,homarine_fate_1,9.376,NA,6,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T12_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,12,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T12_B_posDDA,633951,Particulate,1,Homarine,homarine_fate_1,9.376,NA,12,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T12_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,12,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T24_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,24,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T24_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,24,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T24_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,24,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T48_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,48,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T48_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,48,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T48_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,48,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T96_A_posDDA,24945624,Particulate,1,Homarine,homarine_fate_1,9.376,NA,96,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T96_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,96,NA
+n-methyl glutamine,240926_Smp_RC104_HomFate_T96_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,9.376,NA,96,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_Con_A_posDDA,NA,Particulate,1,Control,homarine_fate_1,10.195,NA,NA,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_Con_B_posDDA,NA,Particulate,1,Control,homarine_fate_1,10.195,NA,NA,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_Con_C_posDDA,NA,Particulate,1,Control,homarine_fate_1,10.195,NA,NA,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T0_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,10.195,NA,0,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T0_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,10.195,NA,0,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T0_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,10.195,NA,0,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T6_A_posDDA,261396,Particulate,1,Homarine,homarine_fate_1,10.195,NA,6,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T6_B_posDDA,285002,Particulate,1,Homarine,homarine_fate_1,10.195,NA,6,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T6_C_posDDA,391441,Particulate,1,Homarine,homarine_fate_1,10.195,NA,6,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T12_A_posDDA,788233,Particulate,1,Homarine,homarine_fate_1,10.195,NA,12,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T12_B_posDDA,568550,Particulate,1,Homarine,homarine_fate_1,10.195,NA,12,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T12_C_posDDA,1019863,Particulate,1,Homarine,homarine_fate_1,10.195,NA,12,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T24_A_posDDA,3942288,Particulate,1,Homarine,homarine_fate_1,10.195,NA,24,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T24_B_posDDA,4947222,Particulate,1,Homarine,homarine_fate_1,10.195,NA,24,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T24_C_posDDA,4424420,Particulate,1,Homarine,homarine_fate_1,10.195,NA,24,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T48_A_posDDA,1563048,Particulate,1,Homarine,homarine_fate_1,10.195,NA,48,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T48_B_posDDA,1209343,Particulate,1,Homarine,homarine_fate_1,10.195,NA,48,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T48_C_posDDA,626060,Particulate,1,Homarine,homarine_fate_1,10.195,NA,48,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T96_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,10.195,NA,96,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T96_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,10.195,NA,96,NA
+n-methyl glutamine_13C_15N,240926_Smp_RC104_HomFate_T96_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,10.195,NA,96,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_Con_A_posDDA,174183.20613873014,Particulate,1,Control,homarine_fate_1,11.8965625,NA,NA,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_Con_B_posDDA,148110.91093947217,Particulate,1,Control,homarine_fate_1,11.8965625,NA,NA,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_Con_C_posDDA,NA,Particulate,1,Control,homarine_fate_1,11.8965625,NA,NA,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T0_A_posDDA,137128.281186599,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,0,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T0_B_posDDA,236573.94182588297,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,0,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T0_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,0,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T6_A_posDDA,183171.99099109732,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,6,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T6_B_posDDA,115660.24769539144,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,6,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T6_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,6,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T12_A_posDDA,99501.65565969348,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,12,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T12_B_posDDA,53272.37472754492,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,12,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T12_C_posDDA,257848.14839477817,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,12,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T24_A_posDDA,62554.912208003145,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,24,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T24_B_posDDA,262431.8173895799,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,24,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T24_C_posDDA,440360.808102672,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,24,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T48_A_posDDA,123212.67470392233,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,48,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T48_B_posDDA,451109.1239338774,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,48,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T48_C_posDDA,575308.5708713727,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,48,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T96_A_posDDA,119240.51239880886,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,96,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T96_B_posDDA,146058.97717895443,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,96,NA
+unknown_C6H9NO4_pos,240926_Smp_RC104_HomFate_T96_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.8965625,NA,96,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_Con_A_posDDA,1161318,Particulate,1,Control,homarine_fate_1,5.152558139534884,NA,NA,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_Con_B_posDDA,409722,Particulate,1,Control,homarine_fate_1,5.152558139534884,NA,NA,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_Con_C_posDDA,342994,Particulate,1,Control,homarine_fate_1,5.152558139534884,NA,NA,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T0_A_posDDA,396338,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,0,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T0_B_posDDA,1441364,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,0,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T0_C_posDDA,163806,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,0,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T6_A_posDDA,336371,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,6,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T6_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,6,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T6_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,6,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T12_A_posDDA,412447,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,12,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T12_B_posDDA,85998,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,12,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T12_C_posDDA,752077,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,12,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T24_A_posDDA,1299168,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,24,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T24_B_posDDA,356519,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,24,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T24_C_posDDA,3226476,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,24,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T48_A_posDDA,1511915,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,48,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T48_B_posDDA,2521368,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,48,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T48_C_posDDA,4426528,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,48,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T96_A_posDDA,3367956,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,96,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T96_B_posDDA,4536166,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,96,NA
+unknown_C6H9NO4_pos_early,240926_Smp_RC104_HomFate_T96_C_posDDA,10230666,Particulate,1,Homarine,homarine_fate_1,5.152558139534884,NA,96,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_Con_A_posDDA,15572181,Particulate,1,Control,homarine_fate_1,8.547058823529412,NA,NA,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_Con_B_posDDA,13581260,Particulate,1,Control,homarine_fate_1,8.547058823529412,NA,NA,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_Con_C_posDDA,7934705,Particulate,1,Control,homarine_fate_1,8.547058823529412,NA,NA,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T0_A_posDDA,12872530,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,0,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T0_B_posDDA,16198074,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,0,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T0_C_posDDA,10798026,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,0,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T6_A_posDDA,10055262,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,6,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T6_B_posDDA,7387005,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,6,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T6_C_posDDA,3203521,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,6,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T12_A_posDDA,9720487,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,12,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T12_B_posDDA,3886200,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,12,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T12_C_posDDA,6298864,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,12,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T24_A_posDDA,3410503,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,24,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T24_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,24,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T24_C_posDDA,6550554,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,24,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T48_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,48,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T48_B_posDDA,3905723,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,48,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T48_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,48,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T96_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,96,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T96_B_posDDA,5955663,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,96,NA
+unknown_C7H11NO3_pos,240926_Smp_RC104_HomFate_T96_C_posDDA,8024912,Particulate,1,Homarine,homarine_fate_1,8.547058823529412,NA,96,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_Con_A_posDDA,NA,Particulate,1,Control,homarine_fate_1,11.460238095238095,NA,NA,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_Con_B_posDDA,NA,Particulate,1,Control,homarine_fate_1,11.460238095238095,NA,NA,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_Con_C_posDDA,45896,Particulate,1,Control,homarine_fate_1,11.460238095238095,NA,NA,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T0_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,0,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T0_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,0,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T0_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,0,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T6_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,6,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T6_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,6,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T6_C_posDDA,336272,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,6,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T12_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,12,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T12_B_posDDA,147917,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,12,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T12_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,12,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T24_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,24,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T24_B_posDDA,55750,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,24,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T24_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,24,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T48_A_posDDA,64263,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,48,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T48_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,48,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T48_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,48,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T96_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,96,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T96_B_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,96,NA
+unknown_C7H9NO5_pos_13C_15N,240926_Smp_RC104_HomFate_T96_C_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,11.460238095238095,NA,96,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_Con_A_negDDA,1280282,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_Con_B_negDDA,1970644,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_Con_C_negDDA,1069248,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T0_A_negDDA,1280830,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T0_B_negDDA,1986509,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T0_C_negDDA,227335,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T6_A_negDDA,1370506,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T6_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T6_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T12_A_negDDA,1429309,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T12_B_negDDA,435363,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T12_C_negDDA,2178302,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T24_A_negDDA,1834645,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T24_B_negDDA,984822,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T24_C_negDDA,2118574,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T48_A_negDDA,1043364,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T48_B_negDDA,1720203,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T48_C_negDDA,1738105,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T96_A_negDDA,3564371,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T96_B_negDDA,5185472,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+Adenosine monophosphate,240926_Smp_RC104_HomFate_T96_C_negDDA,4360909,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_Con_A_negDDA,5581100,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_Con_B_negDDA,3173321,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_Con_C_negDDA,2126887,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T0_A_negDDA,3693699,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T0_B_negDDA,4368997,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T0_C_negDDA,2594727,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T6_A_negDDA,2428381,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T6_B_negDDA,1571229,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T6_C_negDDA,1911049,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T12_A_negDDA,3140132,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T12_B_negDDA,1719387,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T12_C_negDDA,4267654,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T24_A_negDDA,4492363,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T24_B_negDDA,4114836,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T24_C_negDDA,11466377,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T48_A_negDDA,4269419,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T48_B_negDDA,8530205,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T48_C_negDDA,8741777,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T96_A_negDDA,14691083,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T96_B_negDDA,17350050,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+L-Cysteic acid,240926_Smp_RC104_HomFate_T96_C_negDDA,18812582,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_Con_A_negDDA,120952,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_Con_B_negDDA,183604,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_Con_C_negDDA,61747,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T0_A_negDDA,248814,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T0_B_negDDA,324969,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T0_C_negDDA,298272,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T6_A_negDDA,401820,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T6_B_negDDA,155732,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T6_C_negDDA,209903,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T12_A_negDDA,509821,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T12_B_negDDA,146054,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T12_C_negDDA,747754,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T24_A_negDDA,273549,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T24_B_negDDA,558037,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T24_C_negDDA,794027,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T48_A_negDDA,78650,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T48_B_negDDA,831804,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T48_C_negDDA,567163,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T96_A_negDDA,2466944,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T96_B_negDDA,2749468,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+UDP-N-acetylglucosamine,240926_Smp_RC104_HomFate_T96_C_negDDA,3227518,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_Con_A_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_Con_B_negDDA,201147,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_Con_C_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T0_A_negDDA,78512,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T0_B_negDDA,248630,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T0_C_negDDA,48490,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T6_A_negDDA,478037,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T6_B_negDDA,98726,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T6_C_negDDA,92272,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T12_A_negDDA,72706,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T12_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T12_C_negDDA,357159,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T24_A_negDDA,183902,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T24_B_negDDA,219997,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T24_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T48_A_negDDA,170020,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T48_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T48_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T96_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T96_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_1_neg,240926_Smp_RC104_HomFate_T96_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_Con_A_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_Con_B_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_Con_C_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T0_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T0_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T0_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T6_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T6_B_negDDA,66635,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T6_C_negDDA,55462,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T12_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T12_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T12_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T24_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T24_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T24_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T48_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T48_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T48_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T96_A_negDDA,42479,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T96_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_1_neg_13C_15N,240926_Smp_RC104_HomFate_T96_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_Con_A_negDDA,653273.98640736,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_Con_B_negDDA,199493.72739590445,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_Con_C_negDDA,208751.98018064012,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T0_A_negDDA,413120.4488548638,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T0_B_negDDA,746132.9294172202,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T0_C_negDDA,314865.1059972998,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T6_A_negDDA,796909.6557678817,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T6_B_negDDA,511893.5221261288,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T6_C_negDDA,436530.99526415113,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T12_A_negDDA,383939.5130101928,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T12_B_negDDA,124901.09437226653,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T12_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T24_A_negDDA,352417.8037938079,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T24_B_negDDA,770350.8153639287,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T24_C_negDDA,1524596.220713087,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T48_A_negDDA,1235145.8411473176,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T48_B_negDDA,3074098.6021801815,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T48_C_negDDA,1786644.6827262198,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T96_A_negDDA,989906.8940354558,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T96_B_negDDA,3205543.014113658,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_2_neg,240926_Smp_RC104_HomFate_T96_C_negDDA,3816399.796849667,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_Con_A_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_Con_B_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_Con_C_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T0_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T0_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T0_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T6_A_negDDA,1027878.0256252548,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T6_B_negDDA,210535.30499036983,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T6_C_negDDA,153916.2424678737,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T12_A_negDDA,1249196.9862057427,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T12_B_negDDA,872153.8059614302,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T12_C_negDDA,1984279.1259353564,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T24_A_negDDA,2416826.322129212,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T24_B_negDDA,3501930.8303702357,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T24_C_negDDA,5805463.178632505,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T48_A_negDDA,1860524.0005523944,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T48_B_negDDA,3887032.231077733,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T48_C_negDDA,2431025.330115778,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T96_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T96_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO3_2_neg_13C_15N,240926_Smp_RC104_HomFate_T96_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_Con_A_negDDA,125266,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_Con_B_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_Con_C_negDDA,NA,Particulate,1,Control,homarine_fate_1,NA,NA,NA,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T0_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T0_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T0_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,0,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T6_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T6_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T6_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,6,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T12_A_negDDA,43126,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T12_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T12_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,12,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T24_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T24_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T24_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,24,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T48_A_negDDA,41534,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T48_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T48_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,48,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T96_A_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T96_B_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
+unknown_C6H9NO4_neg,240926_Smp_RC104_HomFate_T96_C_negDDA,NA,Particulate,1,Homarine,homarine_fate_1,NA,NA,96,NA
