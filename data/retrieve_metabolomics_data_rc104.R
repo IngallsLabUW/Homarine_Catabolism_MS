@@ -15,8 +15,8 @@ source("R_functions/google_drive_functions.R")
 #    shared_drive = "Ingalls Lab"
 #)
 # query = paste('"', dir$id, '"',  ' in parents', sep='')
-# query = "\"1-xt3TXKEtClt5WUEIHc5nMgfhNoompuo\" in parents"
-#files = drive_ls(q=query, shared_drive = "Ingalls Lab", recursive = TRUE)
+query = "\"1-xt3TXKEtClt5WUEIHc5nMgfhNoompuo\" in parents"
+files = drive_ls(q=query, shared_drive = "Ingalls Lab", recursive = TRUE)
 
 # Copy RPom Metabolomics data from Google Drive -----
 ## mzml data -----
@@ -36,3 +36,8 @@ drive_download_daughters(gfolder, export_folder)
 gfile <- drive_get(as_id("10kEQgpEJONqSQqg0m7OCwnSn-SUsxtDR"), shared_drive = "Ingalls Lab")
 drive_download(gfile,
                path = here("data", "raw", "metabolomics", "RC104", "sample_key.csv"))
+
+## grab internal standard names file ----
+gfile <- drive_get(as_id("1b-DmN87sWI5Lf8xJgNrWSoOInZ-rNGln"), shared_drive = "Ingalls Lab")
+drive_download(gfile,
+               path = here("data", "raw", "metabolomics", "RC104", "is_names_particulate.csv"))

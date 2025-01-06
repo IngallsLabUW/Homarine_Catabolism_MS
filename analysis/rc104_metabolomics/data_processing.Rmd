@@ -4,6 +4,8 @@ author: "Katherine Heal"
 date: "`r Sys.Date()`"
 ---
 
+homarine_experiment_1 are station 2
+
 ```{r setup, include=FALSE}
 library(here)
 print(here())
