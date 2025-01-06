@@ -3,24 +3,27 @@
 
 # History:
 # Date	     Remarks
-# 20240415   K Heal started script for G5
+# 20250108   K Heal started script for rc104
 
 # PACKAGES ----
 library(tidyverse)
 library(here)
 
 # Read in file  -----
-qc_data_loc <- here("data", "intermediate", "metabolomics", "g5", "targeted")
-meta_data_loc <- here("data", "raw", "metabolomics", "g5")
+qc_data_loc <- here("data", "intermediate", "metabolomics", "rc104", "targeted")
+meta_data_loc <- here("data", "raw", "metabolomics", "RC104")
 
-dat_part_filename <- here(qc_data_loc, "BMISd_HILIC_Particulate.csv")
+dat_part_filename_pos <- here(qc_data_loc, "BMISd_Pos_HILIC_Particulate.csv")
+dat_part_filename_neg <- here(qc_data_loc, "BMISd_Neg_HILIC_Particulate.csv")
 sample_key_filename <- here(meta_data_loc, "sample_key.csv")
 
-dat_part <- read_csv(dat_part_filename, show_col_types = FALSE)
+dat_part_pos <- read_csv(dat_part_filename_pos, show_col_types = FALSE)
+dat_part_neg <- read_csv(dat_part_filename_neg, show_col_types = FALSE)
 sample_key <- read_csv(sample_key_filename, show_col_types = FALSE)
 
 # Combine all data ----
-dat_combined <- dat_part %>%
+dat_combined <- dat_part_pos %>%
+  bind_rows(dat_part_neg) %>%
   select(mass_feature, replicate_name, adjusted_area, fraction) %>%
   mutate(sample_fraction = "Particulate") %>%
   mutate(z = case_when(
@@ -35,7 +38,8 @@ dat_combined2 <- dat_combined %>%
     sample_key %>%
       select(
         replicate_name,
-        treatment
+        treatment,
+        sample_set
       ),
     by = "replicate_name"
   ) %>%
@@ -43,6 +47,10 @@ dat_combined2 <- dat_combined %>%
          !str_detect(treatment, "blank"),
          !str_detect(treatment, "media"),
          !str_detect(treatment, "in ASW"))
+
+# Remove sample_set where "homarine_fate_2"
+dat_combined2 <- dat_combined2 %>%
+  filter(!str_detect(sample_set, "homarine_fate_2"))
 
 # Add mf data to long data
 mf_data <- read_csv(
@@ -64,6 +72,7 @@ dat_combined3 <- dat_combined2 %>%
 
 # pivot wider
 dat_combined_wide <- dat_combined3 %>%
+    mutate(replicate_name = replicate_name %>% str_replace("_...DDA$", "")) %>%
   pivot_wider(
     id_cols = c("replicate_name", "treatment", "sample_fraction", "timepoint", "experiment_id"),
     names_from = mass_feature,
