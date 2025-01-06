@@ -33,6 +33,6 @@ gfolder <- "16oCaT5FE4dnn6FY9qqbJhBQ6TF5hollC"
 drive_download_daughters(gfolder, export_folder)
 
 ## grab sample key -----
-#gfile <- drive_get(as_id("15AMo5diyaLdvJIeagqATJQOYt_6WVyY3"), shared_drive = "Ingalls Lab")
-#drive_download(gfile,
-#               path = here("data", "raw", "metabolomics", "RC104", "sample_key.csv"))
+gfile <- drive_get(as_id("10kEQgpEJONqSQqg0m7OCwnSn-SUsxtDR"), shared_drive = "Ingalls Lab")
+drive_download(gfile,
+               path = here("data", "raw", "metabolomics", "RC104", "sample_key.csv"))
