@@ -64,5 +64,3 @@ Writes out the summarized results into here("data", "intermediate", "metabolomic
 source(here("analysis", "g4_metabolomics", "0302_summarize_D2D3results.R"))
 remove(list = ls())
 ```
-
-```{r, message=FALSE, error=FALSE, warning=FALSE}
