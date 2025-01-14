@@ -15,16 +15,16 @@ all.iso.dat <- g5.iso.dat
 # Load world map
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
-# Plot the data with different colors for each cruise and adjusted station labels
+# Plot the data with a reduced map extent
 ggplot(data = world) +
   geom_sf() +
-  coord_sf(xlim = c(-160, -50), ylim = c(-10, 55)) +
-  geom_point(data = all.iso.dat, aes(x = lon, y = lat, fill = cruise), size = 3, shape = 21) +
+  coord_sf(xlim = c(-160, -100), ylim = c(-10, 55)) + # Restrict map to the west of 100°W
+  geom_point(data = all.iso.dat, aes(x = lon, y = lat, fill = cruise), size = 5, shape = 21) + # Larger circles
   geom_text(data = all.iso.dat, aes(x = lon, y = lat, label = station), 
-            nudge_x = 2, nudge_y = 0.5, size = 3, color = "black") +
-  scale_fill_viridis_d(option = "C") + # Use a colorblind-friendly palette
+            nudge_x = 3, nudge_y = 0.5, size = 3, color = "black") +
+  scale_fill_manual(values = c("#86C6E5", "#9467BD", "#FF9896")) + # Use custom colors
   theme_bw() +
   labs(fill = "Cruise", # Add legend label
-       title = "Isolate Distribution by Cruise",
+       title = "Homarine Fate Experiments",
        x = "Longitude",
        y = "Latitude")
