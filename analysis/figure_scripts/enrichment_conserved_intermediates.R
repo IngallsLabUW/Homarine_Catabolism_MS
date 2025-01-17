@@ -134,9 +134,10 @@ dat_long_core <- dat_long %>%
 dat_long2 <- pivot_longer(
   dat_sub %>%
     select(
-        mass_feature,
-        mass_feature_short,
-        mass_feature_oi, core_metabolite, data_origin, sample_fraction, med_pvalue_h, med_pvalue_hNH4, experiment_id, timepoint),
+      mass_feature,
+      mass_feature_short,
+      mass_feature_oi, core_metabolite, data_origin, sample_fraction, med_pvalue_h, med_pvalue_hNH4, experiment_id, timepoint
+    ),
   cols = contains("med_pvalue"),
   names_to = "treatment",
   values_to = "q_value",
@@ -156,13 +157,13 @@ dat_long_plot <- dat_long %>%
   mutate(enrichment = ifelse(enrichment > 2^15, 2^15, enrichment)) %>%
   filter(core_metabolite != "core") %>%
   bind_rows(dat_long_core) %>%
-# if mass_feature_short is na, fill in with mass_feature_oi
+  # if mass_feature_short is na, fill in with mass_feature_oi
   mutate(
-      mass_feature_short = case_when(
-          str_detect(mass_feature, "core") ~  mass_feature,
-          is.na(mass_feature_short) & !is.na(mass_feature_oi) ~ mass_feature_oi,
-          TRUE ~ mass_feature_short
-  )
+    mass_feature_short = case_when(
+      str_detect(mass_feature, "core") ~ mass_feature,
+      is.na(mass_feature_short) & !is.na(mass_feature_oi) ~ mass_feature_oi,
+      TRUE ~ mass_feature_short
+    )
   )
 
 ## Modify treatment and experiment_id columns for plotting =====
@@ -202,8 +203,8 @@ dat_long_plot <- dat_long_plot %>%
 dat_long_plot2 <- dat_long_plot %>%
   filter(mass_feature_short != "unknown_C6H9NO3_3_neg") %>%
   mutate(
-      mass_feature_short = factor(
-        mass_feature_short,
+    mass_feature_short = factor(
+      mass_feature_short,
       levels = c(
         "homarine",
         "n-methyl glutamic acid",
@@ -243,7 +244,7 @@ my_fill_scale <- scale_fill_gradient2(
   low = "#005F99",
   mid = "white",
   high = "#FF9896",
-  midpoint = .08,
+  midpoint = 0,
   limits = c(-3.5, 15),
   na.value = "grey80",
   breaks = c(-3, 0, 5, 10, 15)
@@ -259,7 +260,7 @@ my_theme <- theme_bw() +
   )
 
 ## Function to plot tile enrichment data -----
-plot_tiles <- function(data_input){
+plot_tiles <- function(data_input) {
   ggplot(data = data_input) +
     geom_tile(
       aes(
@@ -282,9 +283,9 @@ plot_tiles <- function(data_input){
       color = "black",
       size = 5
     ) +
-        facet_wrap(
-            facets = vars(experiment_id_to_plot)
-        ) +
+    facet_wrap(
+      facets = vars(experiment_id_to_plot)
+    ) +
     my_fill_scale +
     my_theme +
     # Add thick horizontal line above "Core metabs" group
@@ -296,133 +297,37 @@ plot_tiles <- function(data_input){
 }
 
 ## Plot for RPom and Obi1 data  -----
-# TODO KRH: Clean up treatment, colors
 g_orgs <- plot_tiles(
   data_input = dat_long_plot2 %>%
     filter(data_origin %in% c("rpom", "obi1"))
+)
+
+## Plot for G4 data -----
+# TODO:Why do these start at 2 hr and the other start at 0?
+g4 <- plot_tiles(
+  data_input = dat_long_plot2 %>%
+    filter(data_origin == "g4")
 ) +
-    theme(legend.position = "none")
-g_orgs
-
-g_orgs <- ggplot() +
-  geom_tile(
-    data = dat_long_plot2 %>%
-      filter(data_origin %in% c("rpom", "obi1")),
-    aes(
-      fill = log2(enrichment),
-      y = mass_feature_short,
-      x = treatment
-    ),
-    color = "black",
-    width = 0.9,
-    height = 0.9
-  ) +
-  geom_text(
-    data = dat_long_plot2 %>%
-      filter(p_value_flag == "significant") %>%
-      filter(data_origin %in% c("rpom", "obi1")),
-    aes(
-      y = mass_feature_short,
-      x = treatment,
-      label = "*"
-    ),
-    color = "black",
-    size = 5
-  ) +
-  facet_wrap(
-    facets = vars(experiment_id_to_plot)
-  ) +
-  # Add thick horizontal line above "Core metabs" group
-  geom_hline(yintercept = 3.5, color = "black", linewidth = 1) +
-  scale_y_discrete(limits = rev) +
-  my_fill_scale +
-  my_theme +
   theme(legend.position = "none")
-g_orgs
 
-g4 <- ggplot() +
-  geom_tile(
-    data = dat_long_plot %>%
-      filter(data_origin %in% c("g4")) %>%
-      filter(treatment == "h") %>%
-      filter(!(mass_feature %in% c(
-        "unknown_C6H9NO3_3_neg",
-        "unknown_C6H9NO3_1_neg",
-        "n-methyl glutamine",
-        "n-methyl glutamic acid"
-      ))),
-    aes(
-      fill = log2(enrichment),
-      y = mass_feature,
-      x = factor(timepoint)
-    ),
-    color = "black",
-    width = 0.9,
-    height = 0.9
-  ) +
-  facet_wrap(facets = vars(experiment_id)) +
-  my_fill_scale +
-  theme_bw()
+## Plot for RC104 and G5 data -----
+g5 <- plot_tiles(
+  data_input = dat_long_plot2 %>%
+    filter(data_origin %in% c("rc104", "g5"))
+) +
+  theme(legend.position = "none")
 
-g5 <- ggplot() +
-  geom_tile(
-    data = dat_long_plot %>%
-      filter(data_origin %in% c("g5")) %>%
-      filter(treatment == "h") %>%
-      filter(!(mass_feature %in% c(
-        "unknown_C6H9NO3_3_neg",
-        "unknown_C6H9NO3_1_neg",
-        "n-methyl glutamine",
-        "n-methyl glutamic acid"
-      ))),
-    aes(
-      fill = log2(enrichment),
-      y = mass_feature,
-      x = factor(timepoint)
-    ),
-    color = "black",
-    width = 0.9,
-    height = 0.9
-  ) +
-  facet_wrap(facets = vars(experiment_id)) +
-  my_fill_scale +
-  theme_bw()
 
-g_rc104 <- ggplot() +
-  geom_tile(
-    data = dat_long_plot %>%
-      filter(data_origin %in% c("rc104")) %>%
-      filter(treatment == "h") %>%
-      filter(!(mass_feature %in% c(
-        "unknown_C6H9NO4_pos_early",
-        "unknown_C6H9NO4_pos",
-        "unknown_C6H9NO4_neg",
-        "unknown_C6H9NO3_3_neg",
-        "unknown_C6H9NO3_2_neg",
-        "unknown_C6H9NO3_1_neg",
-        "n-methyl glutamine",
-        "n-methyl glutamic acid"
-      ))),
-    aes(
-      fill = log2(enrichment),
-      y = mass_feature,
-      x = factor(timepoint)
-    ),
-    color = "black",
-    width = 0.9,
-    height = 0.9
-  ) +
-  facet_wrap(facets = vars(experiment_id)) +
-  my_fill_scale +
-  theme_bw()
-
-g_cmb <- g_orgs + g4 + g5 + g_rc104 +
+## Combine plots -----
+g_cmb <- g_orgs + g4 + g5 +
   plot_layout(
     guides = "collect",
-    axis_title = "collect",
-    ncol = 4,
-    widths = c(1, 1, 1, 1)
-  )
+    axis_title = "collect"
+  ) +
+  plot_annotation(tag_levels = 'A')
 
 g_cmb
+
+
+
 ggsave(here(output_dir, "intermediates_tiles.pdf"), g_cmb, width = 16, height = 4)
