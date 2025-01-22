@@ -252,7 +252,7 @@ my_theme <- theme_bw() +
   # remove x- and y-axis labels
   theme(
     axis.title.x = element_blank(),
-    axis.text = element_text(size = 7),
+    axis.text = element_text(size = 6),
     axis.title.y = element_blank(),
     panel.grid.major = element_blank(),
     strip.background = element_blank(),
@@ -274,7 +274,7 @@ plot_tiles <- function(data_input) {
       width = 0.9,
       height = 0.9
     ) +
-    geom_text(
+    geom_point(
       data = data_input %>%
         filter(p_value_flag == "significant"),
       aes(
@@ -283,7 +283,8 @@ plot_tiles <- function(data_input) {
         label = "*"
       ),
       color = "black",
-      size = 5
+      shape = 8,
+      size = 0.7
     ) +
     facet_wrap(
       facets = vars(experiment_id_to_plot)
@@ -304,9 +305,9 @@ g_orgs <- plot_tiles(
   data_input = dat_long_plot2 %>%
     filter(data_origin %in% c("rpom", "obi1"))
 ) +
-  theme(legend.position = "right",
+  theme(legend.position = "bottom",
         legend.margin=margin(0,0,0,0),
-        legend.box.margin=margin(0,0,0,-50, unit = "pt"),
+        legend.box.margin=margin(0,0,0,0, unit = "pt"),
         legend.title = element_text(size = 7),
         legend.text = element_text(size = 7),
         # rotate the x axis labels 45 degrees
@@ -332,24 +333,29 @@ g5 <- plot_tiles(
 # this adds the object "hom_fate_map' to the environment
 source(here("figures", "maps", "homarine_fate_experiments_map.R"))
 
+## Structures ----
+#TODO: replace plot_spacer with structures once we have the structures
+#structures <- png::readPNG(structures_file, native = TRUE)
 ## Chromatogram for obi1 and rpom homarine control v +homarine -----
-# TODO KRH: add this
-p_chrom <- ggplot() +
-  my_theme
-
+source(here("figures", "metabolomics", "chromats_subplot.R"))
 
 ## Combine plots -----
 layout <- "
-AABBCCC
-AABBCCC
-DDDEEEE
-DDDEEEE
+AABBBCCC
+AABBBCCC
+AABBBCCC
+AABBBCCC
+DDEEEEEE
+DDEEEEEE
+DDEEEEEE
 "
-g_cmb <- g_orgs + p_chrom + hom_fate_map + g4 + g5 +
+g_map_and_structures <- free(hom_fate_map) / plot_spacer()
+
+g_cmb <- free(g_orgs) + g_map_and_structures + g_chromat  + g4 + free(g5) +
   plot_layout(design = layout) +
-  plot_annotation(tag_levels = "A")
+  plot_annotation(tag_levels = list(c("A", "B", "C", "D", "E", "F")))
 
 g_cmb
 
 #TODO: save figure at appropriate size
-
+ggsave(here("figures", "metabolomics", "homarine_fate_experiments.pdf"), width = 8, height = 6.5, dpi = 300)
