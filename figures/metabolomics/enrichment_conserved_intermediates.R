@@ -170,11 +170,11 @@ dat_long_plot <- dat_long_plot %>%
   mutate(experiment_id_to_plot = case_when(
     data_origin == "rpom" ~ "RPom",
     data_origin == "obi1" ~ "Obi1",
-    data_origin == "rc104" ~ "RC104",
-    experiment_id == "G4_1" ~ "G4 (1)",
-    experiment_id == "G4_2" ~ "G4 (2)",
-    experiment_id == "G51" ~ "G5 (1)",
-    experiment_id == "G52" ~ "G5 (2)"
+    data_origin == "rc104" ~ "RC104 St2",
+    experiment_id == "G4_1" ~ "TN397 St2",
+    experiment_id == "G4_2" ~ "TN397 St13",
+    experiment_id == "G51" ~ "TN412 St2",
+    experiment_id == "G52" ~ "TN412 St7"
   )) %>%
   mutate(
     mass_feature_oi = ifelse(is.na(mass_feature_oi), mass_feature, mass_feature_oi)
@@ -252,11 +252,14 @@ my_theme <- theme_bw() +
   # remove x- and y-axis labels
   theme(
     axis.title.x = element_blank(),
+    axis.text = element_text(size = 7),
     axis.title.y = element_blank(),
     panel.grid.major = element_blank(),
     strip.background = element_blank(),
-    strip.text = element_text(size = 12)
-  )
+    strip.text = element_text(size = 8)
+  ) +
+    # Make all margins 0
+    theme(plot.margin = margin(0, 0, 0, 0))
 
 ## Function to plot tile enrichment data -----
 plot_tiles <- function(data_input) {
@@ -285,13 +288,15 @@ plot_tiles <- function(data_input) {
     facet_wrap(
       facets = vars(experiment_id_to_plot)
     ) +
+
+        coord_equal() +
     my_fill_scale +
     my_theme +
     # Add thick horizontal line above "Core metabs" group
     geom_hline(yintercept = 3.5, color = "black", linewidth = 1) +
     scale_y_discrete(limits = rev) +
     theme(
-      legend.position = "right"
+      legend.position = "none"
     )
 }
 
@@ -318,21 +323,24 @@ g5 <- plot_tiles(
 
 ## Map for homarine fate experiments -----
 # this adds the object "hom_fate_map' to the environment
-#TODO KRH: fix this script - it's a placeholder right now
 source(here("figures", "maps", "homarine_fate_experiments_map.R"))
 
-## Chromatogram for obi1 and rpom n-methyl glutamic acid control v +homarine -----
-#TODO KRH: add this script
+## Chromatogram for obi1 and rpom homarine control v +homarine -----
+# TODO KRH: add this
+p_chrom <- ggplot() +
+  my_theme
+
 
 ## Combine plots -----
-g_cmb <- g_orgs + hom_fate_map + g4 + g5 +
-  plot_layout(
-    guides = "collect",
-    axis_title = "collect",
-    ncol = 2
-  ) +
-  plot_annotation(tag_levels = 'A')
+layout <- "
+AABBCCC
+AABBCCC
+DDDEEEE
+DDDEEEE
+"
+g_cmb <- g_orgs + p_chrom + hom_fate_map + g4 + g5 +
+  plot_layout(design = layout) +
+  plot_annotation(tag_levels = "A")
 
 g_cmb
 
-ggsave(here(output_dir, "intermediates_tiles.pdf"), g_cmb, width = 16, height = 4)
