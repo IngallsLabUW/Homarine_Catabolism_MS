@@ -5,7 +5,6 @@
 library(tidyverse)
 library(here)
 library(patchwork)
-library(scico)
 
 # SET FILE LOCATIONS  -----
 output_dir <- here("figures", "exploratory", "metabolomics")
@@ -243,7 +242,7 @@ dat_long_plot2 <- dat_long_plot %>%
 my_fill_scale <- scale_fill_gradient2(
   low = "#005F99",
   mid = "white",
-  high = "#FF9896",
+  high = "#FF7876",
   midpoint = 0,
   limits = c(-3.5, 15),
   na.value = "grey80",
@@ -317,17 +316,23 @@ g5 <- plot_tiles(
 ) +
   theme(legend.position = "none")
 
+## Map for homarine fate experiments -----
+# this adds the object "hom_fate_map' to the environment
+#TODO KRH: fix this script - it's a placeholder right now
+source(here("figures", "maps", "homarine_fate_experiments_map.R"))
+
+## Chromatogram for obi1 and rpom n-methyl glutamic acid control v +homarine -----
+#TODO KRH: add this script
 
 ## Combine plots -----
-g_cmb <- g_orgs + g4 + g5 +
+g_cmb <- g_orgs + hom_fate_map + g4 + g5 +
   plot_layout(
     guides = "collect",
-    axis_title = "collect"
+    axis_title = "collect",
+    ncol = 2
   ) +
   plot_annotation(tag_levels = 'A')
 
 g_cmb
-
-
 
 ggsave(here(output_dir, "intermediates_tiles.pdf"), g_cmb, width = 16, height = 4)
