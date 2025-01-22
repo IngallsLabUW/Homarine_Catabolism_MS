@@ -5,6 +5,7 @@
 library(tidyverse)
 library(here)
 library(patchwork)
+library(ggtext)
 
 # SET FILE LOCATIONS  -----
 output_dir <- here("figures", "exploratory", "metabolomics")
@@ -191,9 +192,9 @@ dat_long_plot <- dat_long_plot %>%
         ),
         labels = c(
           "+homarine",
-          "+homarine, \nNH4, and glucose",
-          # TODO KRH: Check this
-          "0hr", "2hr", "6hr", "12hr", "24hr", "48hr", "96hr"
+          #TODO: Check these treatments
+          "+homarine & glucose",
+          "<1hr", "2hr", "6hr", "12hr", "24hr", "48hr", "96hr"
         )
       )
   )
@@ -221,13 +222,12 @@ dat_long_plot2 <- dat_long_plot %>%
         "Homarine",
         "n-Methyl Glutamic Acid",
         "n-Methyl Glutamine",
-        # TODO KRH: double check - are these ion or molecular formula?
-        # TODO KRH: fix the retention times
-        "C6H9NO3 (-@rt = 3.5)",
-        "C6H9NO3 (-@rt = 4.5)",
-        "C6H9NO4 (-@rt = 5.5)",
-        "C6H9NO4 (+@rt = 5.5)",
-        "C7H9NO5 (+@rt = 6.5)",
+        #TODO: write this is markdown with subscripts
+        "C<sub>6</sub>H<sub>9</sub>NO<sub>3</sub> (-@rt10)",
+        "C<sub>6</sub>H<sub>9</sub>NO<sub>3</sub> (-@rt11)",
+        "C<sub>6</sub>H<sub>9</sub>NO<sub>4</sub> (-@rt3.5)",
+        "C<sub>6</sub>H<sub>9</sub>NO<sub>4</sub> (+@rt12)",
+        "C<sub>7</sub>H<sub>9</sub>NO<sub>5</sub> (+@rt12)",
         "Core metabs (max)",
         "Core metabs (med)",
         "Core metabs (min)"
@@ -295,19 +295,26 @@ plot_tiles <- function(data_input) {
     # Add thick horizontal line above "Core metabs" group
     geom_hline(yintercept = 3.5, color = "black", linewidth = 1) +
     scale_y_discrete(limits = rev) +
-    theme(
-      legend.position = "none"
-    )
+        theme(        axis.text.y = element_markdown(size = 7)
+)
 }
 
 ## Plot for RPom and Obi1 data  -----
 g_orgs <- plot_tiles(
   data_input = dat_long_plot2 %>%
     filter(data_origin %in% c("rpom", "obi1"))
-)
+) +
+  theme(legend.position = "right",
+        legend.margin=margin(0,0,0,0),
+        legend.box.margin=margin(0,0,0,-50, unit = "pt"),
+        legend.title = element_text(size = 7),
+        legend.text = element_text(size = 7),
+        # rotate the x axis labels 45 degrees
+        axis.text.x = element_text(angle = 30, hjust = 1),
+        )+
+    labs(fill = "enrichment \n factor \n (log2)")
 
 ## Plot for G4 data -----
-# TODO:Why do these start at 2 hr and the other start at 0?
 g4 <- plot_tiles(
   data_input = dat_long_plot2 %>%
     filter(data_origin == "g4")
@@ -343,4 +350,6 @@ g_cmb <- g_orgs + p_chrom + hom_fate_map + g4 + g5 +
   plot_annotation(tag_levels = "A")
 
 g_cmb
+
+#TODO: save figure at appropriate size
 
