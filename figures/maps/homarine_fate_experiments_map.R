@@ -3,10 +3,12 @@ library(rstatix)
 library(rnaturalearthdata)
 library(rnaturalearth)
 
+#TODO KRH: Use this as starting point for map for homarine experiment
+
 # Load data
 g5.isolate.file <- "figures/maps/Isolation_Locations_01142025.csv"
 
-g5.iso.dat <- read_csv(g5.isolate.file) %>%
+g5.iso.dat <- read_csv(g5.isolate.file, show_col_types = FALSE) %>%
   select(isolate, group, Lat, Lon, Depth_m)
 
 all.iso.dat <- g5.iso.dat
@@ -43,7 +45,7 @@ semi_circle_data <- overlapping_points %>%
   unnest(data)
 
 # Plot the map with semi-circles
-p <- ggplot(data = world) +
+hom_fate_map <- ggplot(data = world) +
   geom_sf() +
   coord_sf(xlim = c(-155, -55), ylim = c(-5, 50)) + # Restrict map to the west of 100°W
   geom_point(data = all.iso.dat %>% filter(!group %in% c("RW", "PS")), aes(x = Lon, y = Lat, fill = group), size = 5, shape = 21) +
@@ -58,4 +60,5 @@ p <- ggplot(data = world) +
        x = "Longitude",
        y = "Latitude")
 
-print(p)
+# remove everything but p
+rm(all.iso.dat, g5.iso.dat, g5.isolate.file, overlapping_points, semi_circle_data, world)
