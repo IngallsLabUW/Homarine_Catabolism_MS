@@ -46,7 +46,7 @@ hom_fate_map <- ggplot(data = world) +
   theme(
     legend.position = "none",
     legend.background = element_rect(fill = "white", color = "black"),
-    axis.title = element_text(size = 7),
+    axis.title = element_blank(),
     axis.text = element_text(size = 7)
   )
 hom_fate_map
