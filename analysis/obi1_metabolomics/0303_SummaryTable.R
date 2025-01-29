@@ -24,7 +24,7 @@ mf_info <- here(output_loc, "combined_MF_info.csv") %>%
   read_csv(show_col_types = FALSE)
 sample_key <- read_csv(sample_key, show_col_types = FALSE)
 
-
+i = 5
 for (sample_fraction_oi in c("Particulate", "Dissolved")) {
   # SUMMARIZE DATA ----
   # Prepare raw data (pivot to wide)
@@ -118,6 +118,7 @@ for (sample_fraction_oi in c("Particulate", "Dissolved")) {
 
 
   # Save the workbook
-  save_path <- here(save_loc, paste0("Obi1_", sample_fraction_oi, "_metab_results.xlsx"))
+  save_path <- here(save_loc, paste0("Table_SX", i, "_Obi1_", sample_fraction_oi, "_metab_results.xlsx"))
   wb$save(save_path)
+  i = i + 1
 }
