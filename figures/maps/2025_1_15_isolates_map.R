@@ -1,11 +1,10 @@
 library(tidyverse)
 library(rstatix)
-library(sf)
 library(rnaturalearthdata)
 library(rnaturalearth)
 
 # Load data
-g5.isolate.file <- "C:/SynologyDrive/GITHUB/Homarine/Homarine_Catabolism_MS/figures/maps/Isolation_Locations_01142025.csv"
+g5.isolate.file <- "figures/maps/Isolation_Locations_01142025.csv"
 
 g5.iso.dat <- read_csv(g5.isolate.file) %>%
   select(isolate, group, Lat, Lon, Depth_m)
@@ -49,7 +48,7 @@ p <- ggplot(data = world) +
   coord_sf(xlim = c(-155, -55), ylim = c(-5, 50)) + # Restrict map to the west of 100°W
   geom_point(data = all.iso.dat %>% filter(!group %in% c("RW", "PS")), aes(x = Lon, y = Lat, fill = group), size = 5, shape = 21) +
   geom_polygon(data = semi_circle_data, aes(x = x, y = y, fill = fill), alpha = 0.8, color = "black", size = 0.3) +
-  # geom_text(data = all.iso.dat, aes(x = Lon, y = Lat, label = Depth_m), 
+  # geom_text(data = all.iso.dat, aes(x = Lon, y = Lat, label = Depth_m),
   #           nudge_x = 5, nudge_y = 0.5, size = 3, color = "black") +
   scale_fill_manual(values = c("#86C6E5", "lightpink", "#9467BD", "#FF9896", "#8DCA8D", "#7FDBFF", "#FFDC00")) +
   guides(fill = guide_legend(override.aes = list(shape = 21, size = 5, color = "black", stroke = 0.5))) + # Ensure legend symbols are circular
