@@ -1,5 +1,6 @@
 # PURPOSE: make tile plots of the enrichment of core metabolites and conserved intermediates
 # 20240528  KRH Making a tile plot of the enrichment of core metabolites and conserved intermediates
+# TODO: species names should be R. pomeroyi and Cobetia sp. OBi1
 
 # PACKAGES & SPECIAL FUNCTIONS ----
 library(tidyverse)
@@ -192,7 +193,7 @@ dat_long_plot <- dat_long_plot %>%
         ),
         labels = c(
           "+homarine",
-          #TODO: Check these treatments
+          # TODO: Check these treatments
           "+homarine & glucose",
           "<1hr", "2hr", "6hr", "12hr", "24hr", "48hr", "96hr"
         )
@@ -222,7 +223,7 @@ dat_long_plot2 <- dat_long_plot %>%
         "Homarine",
         "n-Methyl Glutamic Acid",
         "n-Methyl Glutamine",
-        #TODO: write this is markdown with subscripts
+        # TODO: write this is markdown with subscripts
         "C<sub>6</sub>H<sub>9</sub>NO<sub>3</sub> (-@rt10)",
         "C<sub>6</sub>H<sub>9</sub>NO<sub>3</sub> (-@rt11)",
         "C<sub>6</sub>H<sub>9</sub>NO<sub>4</sub> (-@rt3.5)",
@@ -258,8 +259,8 @@ my_theme <- theme_bw() +
     strip.background = element_blank(),
     strip.text = element_text(size = 8)
   ) +
-    # Make all margins 0
-    theme(plot.margin = margin(0, 0, 0, 0))
+  # Make all margins 0
+  theme(plot.margin = margin(0, 0, 0, 0))
 
 ## Function to plot tile enrichment data -----
 plot_tiles <- function(data_input) {
@@ -289,15 +290,13 @@ plot_tiles <- function(data_input) {
     facet_wrap(
       facets = vars(experiment_id_to_plot)
     ) +
-
-        coord_equal() +
+    coord_equal() +
     my_fill_scale +
     my_theme +
     # Add thick horizontal line above "Core metabs" group
     geom_hline(yintercept = 3.5, color = "black", linewidth = 1) +
     scale_y_discrete(limits = rev) +
-        theme(        axis.text.y = element_markdown(size = 7)
-)
+    theme(axis.text.y = element_markdown(size = 7))
 }
 
 ## Plot for RPom and Obi1 data  -----
@@ -305,15 +304,16 @@ g_orgs <- plot_tiles(
   data_input = dat_long_plot2 %>%
     filter(data_origin %in% c("rpom", "obi1"))
 ) +
-  theme(legend.position = "bottom",
-        legend.margin=margin(0,0,0,0),
-        legend.box.margin=margin(0,0,0,0, unit = "pt"),
-        legend.title = element_text(size = 7),
-        legend.text = element_text(size = 7),
-        # rotate the x axis labels 45 degrees
-        axis.text.x = element_text(angle = 30, hjust = 1),
-        )+
-    labs(fill = "enrichment \n factor \n (log2)")
+  theme(
+    legend.position = "bottom",
+    legend.margin = margin(0, 0, 0, 0),
+    legend.box.margin = margin(0, 0, 0, 0, unit = "pt"),
+    legend.title = element_text(size = 7),
+    legend.text = element_text(size = 7),
+    # rotate the x axis labels 45 degrees
+    axis.text.x = element_text(angle = 30, hjust = 1),
+  ) +
+  labs(fill = "enrichment \n factor \n (log2)")
 
 ## Plot for G4 data -----
 g4 <- plot_tiles(
@@ -332,12 +332,24 @@ g5 <- plot_tiles(
 ## Map for homarine fate experiments -----
 # this adds the object "hom_fate_map' to the environment
 source(here("figures", "maps", "homarine_fate_experiments_map.R"))
+hom_fate_map <- hom_fate_map
 
 ## Structures ----
-#TODO: replace plot_spacer with structures once we have the structures
-#structures <- png::readPNG(structures_file, native = TRUE)
+structures_file <- list(
+  here("figures", "structures", "homarine.png"),
+  here("figures", "structures", "n_methyl_glutamatic_acid.png"),
+  here("figures", "structures", "n_methyl_glutamine.png")
+)
+library(figpatch)
+homarine <- fig(structures_file[[1]])
+n_methyl_glutamatic_acid <- fig(structures_file[[2]])
+n_methyl_glutamine <- fig(structures_file[[3]])
+
+structures <- homarine / n_methyl_glutamatic_acid / n_methyl_glutamine
+
 ## Chromatogram for obi1 and rpom homarine control v +homarine -----
 source(here("figures", "metabolomics", "chromats_subplot.R"))
+
 
 ## Combine plots -----
 layout <- "
@@ -349,13 +361,24 @@ DDEEEEEE
 DDEEEEEE
 DDEEEEEE
 "
-g_map_and_structures <- free(hom_fate_map) / plot_spacer()
+g_map_and_structures <- structures / hom_fate_map +
+    plot_layout(nrow = 1,
+                heights = c(1, 1.5),
 
-g_cmb <- free(g_orgs) + g_map_and_structures + g_chromat  + g4 + free(g5) +
-  plot_layout(design = layout) +
-  plot_annotation(tag_levels = list(c("A", "B", "C", "D", "E", "F")))
+g_cmb <- free(g_orgs) +
+  g_chromat +
+  g_map_and_structures +
+  g4 +
+  free(g5) +
+  plot_layout(design = layout)
 
 g_cmb
 
-#TODO: save figure at appropriate size
-ggsave(here("figures", "metabolomics", "homarine_fate_experiments.pdf"), width = 8, height = 6.5, dpi = 300)
+#### Save plot -----
+ggsave(
+  here(
+    "figures",
+    "metabolomics", "homarine_fate_experiments.pdf"
+  ),
+  width = 8, height = 6.5, dpi = 300
+)
