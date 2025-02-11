@@ -95,11 +95,13 @@ export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "msd
 dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
 gfolder <- "1rg16L01jW2FHSGzd6_PHNB_kzgpFZ58J"
 drive_download_daughters(gfolder, export_folder)
+
 ### particulate HILIC Pos -----
 export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "msdial", "HILIC_positive")
 dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
 gfolder <- "1rKMrjGk_5KBoip1hDViwcKPJ5vaMbSDt"
 drive_download_daughters(gfolder, export_folder)
+
 ### particulate RP -----
 export_folder <- here("data", "raw", "metabolomics", "obi1", "particulate", "msdial", "RP_positive")
 dir.create(export_folder, showWarnings = FALSE, recursive = TRUE)
@@ -126,3 +128,39 @@ gfile <- drive_get(as_id("1KL7-kJOZrlDtV5wToq_ejkLNtBiGNC5Y"), shared_drive = "I
 drive_download(gfile,
   path = here("data", "raw", "metabolomics", "obi1", "sample_key.csv")
 )
+
+## standards data -----
+export_folder <- here("data", "raw", "metabolomics", "obi1", "nmga_standard")
+dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
+gfolder <- "11YYzHf8SNG0TcO97MG7phwp9Dz1GgND1"
+drive_download_daughters(gfolder, export_folder)
+
+### convert standard data to mzml -----
+library(msconverteR)
+get_pwiz_container()
+positive_path <- here(export_folder, "positive")
+negative_path <- here(export_folder, "negative")
+dir.create(positive_path, showWarnings = FALSE, recursive = TRUE)
+dir.create(negative_path, showWarnings = FALSE, recursive = TRUE)
+
+# Get list of raw files
+raw_files <- list.files(export_folder, pattern = ".raw$", full.names = TRUE)
+
+for (raw_file in raw_files){
+    # Convert to mzml, perform peak picking and separate by polarity
+    ## Positive
+    convert_files(
+        raw_file, 
+        outpath =  positive_path, 
+        msconvert_args = c('peakPicking true 1-', 'polarity positive'),
+        docker_args = c()
+    )
+    
+    ## Negative
+    convert_files(
+        raw_file, 
+        outpath =  negative_path, 
+        msconvert_args = c('peakPicking true 1-', 'polarity negative'),
+        docker_args = c()
+    )
+}
