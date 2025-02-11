@@ -52,4 +52,4 @@ biosample_dfs <- future_lapply(files, get_biosample_df)
 final_df <- bind_rows(biosample_dfs)
 
 # Save the data
-write_csv(final_df, here("data", "processed", "ncbi_metadata_biosample_info.csv"))
+write_csv(final_df, here("data", "intermediate", "ncbi_metadata_biosample_info.csv"))
