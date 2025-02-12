@@ -16,10 +16,12 @@ get_biosample_df <- function(file) {
   # from each of the items in dat, grab the biosample info, which is in the assemblyInfo attribute, add the taxon_id as we go
   biosamples <- list()
   for (i in 1:length(dat)) {
-    if (!is.null(dat[[i]]$assemblyInfo$biosample$attributes)) {
-      biosamples[[i]] <- dat[[i]]$assemblyInfo$biosample$attributes
-      biosamples[[i]]$taxon_id <- dat[[i]]$taxId
-      biosamples[[i]]$assembly_accession <- dat[[i]]$assemblyInfo$assemblyAccession
+    if (is_list(dat[[i]]$assemblyInfo$biosample)) {
+      if (!is.null(dat[[i]]$assemblyInfo$biosample$attributes)) {
+        biosamples[[i]] <- dat[[i]]$assemblyInfo$biosample$attributes
+        biosamples[[i]]$taxon_id <- dat[[i]]$taxId
+        biosamples[[i]]$assembly_accession <- dat[[i]]$assemblyInfo$assemblyAccession
+      }
     }
   }
 
