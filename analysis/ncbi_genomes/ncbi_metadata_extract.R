@@ -16,10 +16,12 @@ get_biosample_df <- function(file) {
   # from each of the items in dat, grab the biosample info, which is in the assemblyInfo attribute, add the taxon_id as we go
   biosamples <- list()
   for (i in 1:length(dat)) {
-    if (!is.null(dat[[i]]$assemblyInfo$biosample$attributes)) {
-      biosamples[[i]] <- dat[[i]]$assemblyInfo$biosample$attributes
-      biosamples[[i]]$taxon_id <- dat[[i]]$taxId
-      biosamples[[i]]$assembly_accession <- dat[[i]]$assemblyInfo$assemblyAccession
+    if (is_list(dat[[i]]$assemblyInfo$biosample)) {
+      if (!is.null(dat[[i]]$assemblyInfo$biosample$attributes)) {
+        biosamples[[i]] <- dat[[i]]$assemblyInfo$biosample$attributes
+        biosamples[[i]]$taxon_id <- dat[[i]]$taxId
+        biosamples[[i]]$assembly_accession <- dat[[i]]$assemblyInfo$assemblyAccession
+      }
     }
   }
 
@@ -52,4 +54,4 @@ biosample_dfs <- future_lapply(files, get_biosample_df)
 final_df <- bind_rows(biosample_dfs)
 
 # Save the data
-write_csv(final_df, here("data", "processed", "ncbi_metadata_biosample_info.csv"))
+write_csv(final_df, here("data", "intermediate", "ncbi_metadata_biosample_info.csv"))
