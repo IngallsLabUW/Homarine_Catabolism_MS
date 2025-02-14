@@ -42,7 +42,7 @@ dat_plot2 <- dat %>%
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
 ncbi_map <- ggplot(data = world) +
-    geom_sf(fill = "grey80", color = "grey80") +
+    geom_sf(fill = "grey85", color = "grey85") +
     coord_sf() + 
     geom_point(
         data = dat_plot2, aes(x = lon, y = lat, color = environmental_source_mapped), size = 0.5
@@ -53,7 +53,7 @@ ncbi_map <- ggplot(data = world) +
         y = "Latitude"
     ) +
     guides(color = guide_legend(override.aes = list(size = 5)))+
-    scale_color_manual(values = c("blue", "green", "orange", "red", "purple")) +
+    scale_color_manual(values = c("#1F77B4", "#17BECF", "#613613", "#F28E2B", "grey50")) +
     theme_bw() +
     theme(
         panel.border = element_blank(),
