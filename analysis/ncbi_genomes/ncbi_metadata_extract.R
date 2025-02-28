@@ -12,7 +12,8 @@ library(future.apply)
 get_biosample_df <- function(file) {
     attributes_oi <- c(
         "env_broad_scale", "env_local_scale", "env_medium", "geo_loc_name", "isolation_source", "lat_lon",
-        "geographic location (latitude)", "geographic location (longitude)", "geographic location (region and locality)"
+        "geographic location (latitude)", "geographic location (longitude)", "geographic location (region and locality)", 
+        "env_package"
     )
     
     if (!file.exists(file)) {
@@ -59,7 +60,7 @@ get_biosample_df <- function(file) {
 }
 
 # Locate the dataset directories containing the JSONL files----
-dat_loc <- normalizePath("C:/Bio/NCBI_datasets/data/taxon_downloads")
+dat_loc <- normalizePath("data/raw/genomes/ncbi_metadata/100_first_taxons/")
 dataset_dirs <- list.dirs(dat_loc, recursive = FALSE)
 dataset_dirs <- dataset_dirs[grepl("dataset_\\d+$", dataset_dirs)]  # Keep only dataset directories
 files <- file.path(dataset_dirs, "ncbi_dataset", "data", "assembly_data_report.jsonl")
