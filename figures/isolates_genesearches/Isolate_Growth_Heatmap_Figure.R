@@ -22,7 +22,8 @@ iso.gene.info <- read_csv(isolate.gene.file) %>%
   pivot_longer(names_to = "var", values_to = "presence", cols = `IEKGNDPE_02314`:`SPO3192/IEKGNDPE_02320`) %>%
   mutate(presence = replace_na(presence, 0)) %>%
   mutate(type = "gene") %>%
-  rename("isolate" = Isolate)
+  rename("isolate" = Isolate) %>%
+  filter(!isolate == "G4i35")
 
 
 
@@ -38,11 +39,13 @@ gene.iso.growth.class <- read_csv(growth.class.file) %>%
   mutate(isolate = case_when(isolate == "DSS-3" ~ "DSS3",
                              TRUE ~ isolate)) %>%
   filter(isolate %in% iso.gene.info$isolate) %>%
-  mutate(var = "growth")
+  mutate(var = "growth") %>%
+  mutate(hom_growth_status = case_when(hom_growth_status == "maybe_grower" ~ "non_grower",
+                                       TRUE ~ hom_growth_status))
 
 growth.plot <- ggplot(gene.iso.growth.class, aes(x = "Growth", y = reorder(isolate, -as.numeric(as.factor(hom_growth_status))), fill = hom_growth_status)) +
   geom_tile(color = "black", width = 1) +
-  scale_fill_manual(values = c("#f8b767", "#fcdcb5", "#fffcf9")) +
+  scale_fill_manual(values = c("#f8b767", "#fffcf9")) +
   theme_minimal() +
   ylab("Isolate") +
   theme(plot.margin = margin(t = 0,  # Top margin
@@ -52,7 +55,8 @@ growth.plot <- ggplot(gene.iso.growth.class, aes(x = "Growth", y = reorder(isola
         panel.grid.major = element_blank(),
         axis.text.x = element_text(angle = 45, vjust = 0.8),
         axis.title.x = element_blank()) +
-  coord_fixed()
+  coord_fixed() +
+  labs(fill = "Homarine Growth")
 growth.plot
 
 
@@ -75,7 +79,8 @@ gene.plot.dat <- iso.gene.info %>%
                          var == "SPO3189/IEKGNDPE_02316" ~ "homB",
                          var == "SPO3190/IEKGNDPE_02318" ~ "homC",
                          var == "SPO3191/IEKGNDPE_02319" ~ "homD",
-                         var == "SPO3192/IEKGNDPE_02320" ~ "homR"))
+                         var == "SPO3192/IEKGNDPE_02320" ~ "homR")) %>%
+    filter(!var == "DddT")
 
 
 
@@ -99,7 +104,8 @@ gene.plot <- ggplot(gene.plot.dat, aes(x = var, y = reorder(isolate, -as.numeric
                              l = 0),
         panel.grid.major = element_blank(),
         axis.text.x = element_text(angle = 45, vjust = 0.8)) +
-  coord_fixed()
+  coord_fixed() +
+  labs(fill = "Gene Presence")
 gene.plot
 
 
@@ -162,6 +168,10 @@ combined.plot <- (growth.plot | plot_spacer() | gene.plot | plot_spacer() | clas
 
 combined.plot
 
+
+#save
+ggsave(combined.plot, filename = "figures/isolates_genesearches/outputs/isolate_growth_gene_hm.png", 
+       dpi = 600, height = 7, width = 7, scale = 1.1)
 
 
 
