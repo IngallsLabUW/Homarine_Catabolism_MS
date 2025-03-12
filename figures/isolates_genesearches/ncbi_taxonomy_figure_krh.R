@@ -62,6 +62,9 @@ core.catab <- gene.pa.dat %>%
                                        TRUE ~ "No")) %>%
     select(assembly, core.catab.path)
 
+write_csv(core.catab, file = "figures/isolates_genesearches/outputs/assemblies_core4.csv")
+
+
 
 ###combine presence/absence, core 4, and total ncbi genomes data:
 final.pa.dat <- left_join(gene.pa.dat, core.catab, by = join_by(assembly)) %>%
@@ -85,7 +88,8 @@ gamma.groups <- final.pa.dat %>%
     select(assembly, core.catab.path, order, genomes) %>%
     distinct() %>%
     filter(!is.na(order)) %>%
-    group_by(order) %>%
+    filter(core.catab.path == "Yes") %>%
+    group_by(order, core.catab.path) %>%
     reframe(order.count = n(),
             genomes = genomes, 
             percent = order.count/genomes*100) %>%
@@ -101,6 +105,8 @@ gamma.fig.dat <- final.pa.dat %>%
     filter(gene.status == 1) %>%
     filter(class == "Gammaproteobacteria") %>%
     left_join(., gamma.groups) %>%
+    mutate(fig.group = case_when(is.na(fig.group) ~ "Other_Gammas",
+                                 TRUE ~ fig.group)) %>%
     group_by(gene, order, fig.group, genomes) %>%
     reframe(group.count = n()) %>%
     group_by(gene, fig.group) %>%
@@ -115,7 +121,8 @@ gamma.fig.dat <- final.pa.dat %>%
                                              sum(tot.genomes[!fig.group == "Other_Gammas"]),
                                          TRUE ~ tot.genomes)) %>%
     group_by(gene, fig.group, tot.count, fig.group.genomes) %>%
-    reframe(percent = tot.count/fig.group.genomes*100)
+    reframe(percent = tot.count/fig.group.genomes*100) %>%
+    mutate(class.fig = "Gammaproteobacteria")
 
     
 #Alphas:
@@ -124,6 +131,7 @@ alpha.groups <- final.pa.dat %>%
     filter(class == "Alphaproteobacteria") %>%
     select(assembly, core.catab.path, order, genomes) %>%
     distinct() %>%
+    filter(core.catab.path == "Yes") %>%
     filter(!is.na(order)) %>%
     group_by(order) %>%
     reframe(order.count = n(),
@@ -141,6 +149,8 @@ alpha.fig.dat <- final.pa.dat %>%
     filter(gene.status == 1) %>%
     filter(class == "Alphaproteobacteria") %>%
     left_join(., alpha.groups) %>%
+    mutate(fig.group = case_when(is.na(fig.group) ~ "Other_Alphas",
+                                 TRUE ~ fig.group)) %>%
     group_by(gene, order, fig.group, genomes) %>%
     reframe(group.count = n()) %>%
     group_by(gene, fig.group) %>%
@@ -155,23 +165,25 @@ alpha.fig.dat <- final.pa.dat %>%
                                              sum(tot.genomes[!fig.group == "Other_Alphas"]),
                                          TRUE ~ tot.genomes)) %>%
     group_by(gene, fig.group, tot.count, fig.group.genomes) %>%
-    reframe(percent = tot.count/fig.group.genomes*100)
+    reframe(percent = tot.count/fig.group.genomes*100) %>%
+    mutate(class.fig = "Alphaproteobacteria")
 
 
 ##All Others:
 
 #identify groups
 other.groups <- final.pa.dat %>%
-    filter(!class %in% c("Gammaproteobacteria", "Alphaproteobacteria")) %>%
-    filter(gene.status == 1) %>%
-    filter(gene == "homB") %>%
+    filter(!class %in% c("Gammaproteobacteria", "Alphaproteobacteria"))  %>%
+    select(assembly, core.catab.path, order, genomes) %>%
+    distinct() %>%
     filter(!is.na(order)) %>%
-    group_by(order) %>%
+    filter(core.catab.path == "Yes") %>%
+    group_by(order, core.catab.path) %>%
     reframe(order.count = n(),
             genomes = genomes, 
             percent = order.count/genomes*100) %>%
     unique() %>%
-    mutate(fig.group = case_when(percent > 1 & order.count > 20 ~ order,
+    mutate(fig.group = case_when(order.count > 20 ~ order,
                                  TRUE ~ "Other")) %>%
     select(order, fig.group) %>%
     unique()
@@ -198,7 +210,8 @@ other.fig.dat <- final.pa.dat %>%
                                          TRUE ~ tot.genomes)) %>%
     group_by(gene, fig.group, tot.count, fig.group.genomes) %>%
     reframe(percent = tot.count/fig.group.genomes*100) %>%
-    unique()
+    unique() %>%
+    mutate(class.fig = "Other")
 
 
 
@@ -222,111 +235,156 @@ group.hm <- ggplot(all.fig.dat, aes(x = gene, y = reorder(fig.group, percent), f
 group.hm
 
 
+#group_hm_count:
+group.hm <- ggplot(all.fig.dat, aes(x = gene, y = reorder(fig.group, percent), fill = tot.count)) +
+    geom_tile(color = "black") +
+    scale_fill_viridis() +
+    # scale_fill_gradient(low = "white", high = "darkblue") +
+    labs(fill = "Counts") +
+    ylab("Order") +
+    theme_test() +
+    coord_fixed()
+group.hm
 
-#
 
 
 
 
+
+
+#Heatmaps for Frank's Talk
+
+#Heatmap of total counts of alphas, gammas, and other (AGO)
+ago.fig.dat <- all.fig.dat %>%
+    group_by(gene, class.fig) %>%
+    reframe(count = sum(tot.count))
+
+ago.hm <- ggplot(ago.fig.dat, aes(x = gene, y = reorder(class.fig, count), fill = count)) +
+    geom_tile(color = "black") +
+  #  scale_fill_viridis() +
+    scale_fill_gradient(low = "white", high = "darkblue") +
+    labs(fill = "Counts") +
+    ylab("Class") +
+    theme_test() +
+    coord_fixed()
+ago.hm
+
+ggsave(ago.hm, filename = "figures/isolates_genesearches/outputs/class_heatmap_03122025.png", dpi = 600, 
+       height = 3, width = 5, scale = 1)
+
+library(scales)
+#heatmap of alphas:
+alpha.hm <- ggplot(alpha.fig.dat, aes(x = gene, y = reorder(fig.group, percent), fill = tot.count)) +
+    geom_tile(color = "black") +
+    #scale_fill_viridis() +
+    scale_fill_gradient(low = "white", high = "darkblue", limits = c(0, 300), oob = squish) +
+    labs(fill = "Counts") +
+    ylab("Order") +
+    theme_test() +
+    coord_fixed()
+alpha.hm
+
+ggsave(alpha.hm, filename = "figures/isolates_genesearches/outputs/alphas_heatmap_03122025.png", dpi = 600, 
+       height = 3.5, width = 5, scale = 1)
 
 
 
 
  
     
-    
-alphas.select.dat <- final.pa.dat %>%
-    filter(class == "Alphaproteobacteria") %>%
-    filter(gene == "homB") %>%
-    filter(!is.na(order)) %>%
-    group_by(order) %>%
-    reframe(order.count = n(),
-            genomes = genomes, 
-            percent = order.count/genomes*100) %>%
-    unique() %>%
-    mutate(fig.group = case_when(percent > 1 & order.count > 10 ~ order,
-                                 TRUE ~ "Other_Alphas"))%>%
-    group_by(fig.group) %>%
-    reframe(tot.count = sum(order.count),
-            tot.genomes = sum(genomes)) %>%
-    cross_join(class.counts %>%
-                   filter(class == "Alphaproteobacteria") %>% 
-                   select(genomes) %>% 
-                   rename(tot.gamma.genomes = genomes)) %>%
-    mutate(fig.group.genomes = case_when(fig.group == "Other_Alphas" ~ tot.gamma.genomes - 
-                                             sum(tot.genomes[!fig.group == "Other_Alphas"]),
-                                         TRUE ~ tot.genomes)) %>%
-    group_by(fig.group, tot.count, fig.group.genomes) %>%
-    reframe(percent = tot.count/fig.group.genomes*100)
-
-
-#Alphas
-
-
-
-gamma.fig.dat <- final.pa.dat %>%
-    filter(!is.na(order)) %>%
-    filter(gene.status == 1) %>%
-    filter(class == "Gammaproteobacteria") %>%
-    left_join(., gamma.groups) %>%
-    group_by(gene, order, fig.group, genomes) %>%
-    reframe(group.count = n()) %>%
-    group_by(gene, fig.group) %>%
-    reframe(tot.count = sum(group.count),
-            tot.genomes = sum(genomes)) %>%
-    cross_join(class.counts %>%
-                   filter(class == "Gammaproteobacteria") %>% 
-                   select(genomes) %>% 
-                   rename(tot.gamma.genomes = genomes)) %>%
-    group_by(gene) %>%
-    mutate(fig.group.genomes = case_when(fig.group == "Other_Gammas" ~ tot.gamma.genomes - 
-                                             sum(tot.genomes[!fig.group == "Other_Gammas"]),
-                                         TRUE ~ tot.genomes)) %>%
-    group_by(gene, fig.group, tot.count, fig.group.genomes) %>%
-    reframe(percent = tot.count/fig.group.genomes*100)
-
-
-
-
-
-
-
-
-
-
-
-others.select.dat <- final.pa.dat %>%
-    filter(!class %in% c("Gammaproteobacteria", "Alphaproteobacteria")) %>%
-    filter(gene == "homB")  %>%
-    filter(!is.na(order)) %>%
-    group_by(order) %>%
-    reframe(order.count = n(),
-            genomes = genomes, 
-            percent = order.count/genomes*100) %>%
-    unique() %>%
-    mutate(fig.group = case_when(percent > 1 & order.count > 10 ~ order,
-                                 TRUE ~ "Other")) %>%
-    group_by(fig.group) %>%
-    reframe(tot.count = sum(order.count),
-            tot.genomes = sum(genomes)) %>%
-    cross_join(class.counts %>%
-                   filter(!class %in% c("Gammaproteobacteria", "Alphaproteobacteria")) %>% 
-                   select(genomes) %>% 
-                   rename(tot.group.genomes = genomes)) %>%
-    mutate(fig.group.genomes = case_when(fig.group == "Other" ~ sum(tot.group.genomes) - 
-                                             sum(tot.genomes[!fig.group == "Other"]),
-                                         TRUE ~ tot.genomes)) %>%
-    group_by(fig.group, tot.count, fig.group.genomes) %>%
-    reframe(percent = tot.count/fig.group.genomes*100) %>%
-    unique()
-        
-
-
-
-full.fig.dat<- rbind(gamma.select.dat, alphas.select.dat, others.select.dat) %>%
-    filter(!is.na(fig.group))
-
-
+#     
+# alphas.select.dat <- final.pa.dat %>%
+#     filter(class == "Alphaproteobacteria") %>%
+#     filter(gene == "homB") %>%
+#     filter(!is.na(order)) %>%
+#     group_by(order) %>%
+#     reframe(order.count = n(),
+#             genomes = genomes, 
+#             percent = order.count/genomes*100) %>%
+#     unique() %>%
+#     mutate(fig.group = case_when(percent > 1 & order.count > 10 ~ order,
+#                                  TRUE ~ "Other_Alphas"))%>%
+#     group_by(fig.group) %>%
+#     reframe(tot.count = sum(order.count),
+#             tot.genomes = sum(genomes)) %>%
+#     cross_join(class.counts %>%
+#                    filter(class == "Alphaproteobacteria") %>% 
+#                    select(genomes) %>% 
+#                    rename(tot.gamma.genomes = genomes)) %>%
+#     mutate(fig.group.genomes = case_when(fig.group == "Other_Alphas" ~ tot.gamma.genomes - 
+#                                              sum(tot.genomes[!fig.group == "Other_Alphas"]),
+#                                          TRUE ~ tot.genomes)) %>%
+#     group_by(fig.group, tot.count, fig.group.genomes) %>%
+#     reframe(percent = tot.count/fig.group.genomes*100)
+# 
+# 
+# #Alphas
+# 
+# 
+# 
+# gamma.fig.dat <- final.pa.dat %>%
+#     filter(!is.na(order)) %>%
+#     filter(gene.status == 1) %>%
+#     filter(class == "Gammaproteobacteria") %>%
+#     left_join(., gamma.groups) %>%
+#     group_by(gene, order, fig.group, genomes) %>%
+#     reframe(group.count = n()) %>%
+#     group_by(gene, fig.group) %>%
+#     reframe(tot.count = sum(group.count),
+#             tot.genomes = sum(genomes)) %>%
+#     cross_join(class.counts %>%
+#                    filter(class == "Gammaproteobacteria") %>% 
+#                    select(genomes) %>% 
+#                    rename(tot.gamma.genomes = genomes)) %>%
+#     group_by(gene) %>%
+#     mutate(fig.group.genomes = case_when(fig.group == "Other_Gammas" ~ tot.gamma.genomes - 
+#                                              sum(tot.genomes[!fig.group == "Other_Gammas"]),
+#                                          TRUE ~ tot.genomes)) %>%
+#     group_by(gene, fig.group, tot.count, fig.group.genomes) %>%
+#     reframe(percent = tot.count/fig.group.genomes*100)
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# others.select.dat <- final.pa.dat %>%
+#     filter(!class %in% c("Gammaproteobacteria", "Alphaproteobacteria")) %>%
+#     filter(gene == "homB")  %>%
+#     filter(!is.na(order)) %>%
+#     group_by(order) %>%
+#     reframe(order.count = n(),
+#             genomes = genomes, 
+#             percent = order.count/genomes*100) %>%
+#     unique() %>%
+#     mutate(fig.group = case_when(percent > 1 & order.count > 10 ~ order,
+#                                  TRUE ~ "Other")) %>%
+#     group_by(fig.group) %>%
+#     reframe(tot.count = sum(order.count),
+#             tot.genomes = sum(genomes)) %>%
+#     cross_join(class.counts %>%
+#                    filter(!class %in% c("Gammaproteobacteria", "Alphaproteobacteria")) %>% 
+#                    select(genomes) %>% 
+#                    rename(tot.group.genomes = genomes)) %>%
+#     mutate(fig.group.genomes = case_when(fig.group == "Other" ~ sum(tot.group.genomes) - 
+#                                              sum(tot.genomes[!fig.group == "Other"]),
+#                                          TRUE ~ tot.genomes)) %>%
+#     group_by(fig.group, tot.count, fig.group.genomes) %>%
+#     reframe(percent = tot.count/fig.group.genomes*100) %>%
+#     unique()
+#         
+# 
+# 
+# 
+# full.fig.dat<- rbind(gamma.select.dat, alphas.select.dat, others.select.dat) %>%
+#     filter(!is.na(fig.group))
+# 
+# 
 
 
 
