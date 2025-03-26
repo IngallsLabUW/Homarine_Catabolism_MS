@@ -78,7 +78,9 @@ genomes_oi <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "ncb
 
 ## filter data to only those in genomes_oi
 dat <- dat %>%
-  filter(assembly_accession %in% genomes_oi$Assembly)
+  filter(assembly_accession %in% genomes_oi$Assembly) %>%
+    select(-dataset, -file, -taxon_id) %>%
+    distinct()
 
 # get unique isolation_source with counts
 unique_isolation_source <- dat %>%
@@ -256,42 +258,24 @@ dat4 <- dat3 %>%
     filter(!is.na(lat) | !is.na(lon)) %>%
     bind_rows(dat3_no_lat_lon)
 
-## Summarize data -----
-dat_summary <- dat4 %>%
-  group_by(isolation_source_mapped, environmental_source_mapped) %>%
-  summarize(n = n(),
-            n_with_lat_lon = sum(!is.na(lat) & !is.na(lon)),
-            n_with_lat_lon_pct = n_with_lat_lon / n(),
-            ) %>%
-  arrange(desc(n))
-
-# Get a df of just the environmental samples -----
-#only about 30% of these have lat_lon data :(
+## Clean up data for export -----
 dat5 <- dat4 %>%
-    filter(isolation_source_mapped == "environmental")
+  select(assembly_accession, biosample_id, bioproject_accession,
+         geo_loc_name, isolation_source, 
+         `geographic location (latitude)`, `geographic location (longitude)`,
+         lat_lon,
+         isolation_source_mapped, environmental_source_mapped,
+         lat, lon, location_qual
+         ) 
 
-# Make a plot of dat4, colored by environmental_source_mapped
-dat5 %>%
-    ggplot(aes(x = lon, y = lat, color = environmental_source_mapped)) +
-    geom_point() +
-    theme_minimal()
-dat4 %>%
-    ggplot(aes(x = lon, y = lat, color = environmental_source_mapped)) +
-    geom_point() +
-    theme_minimal()
+## Summarize data -----
+dat_summary <- dat5 %>%
+    group_by(isolation_source_mapped, environmental_source_mapped) %>%
+    summarize(n_genomes = n(),
+              n_with_lat_lon = sum(!is.na(lat) & !is.na(lon)),
+              n_percent_with_lat_lon = n_with_lat_lon / n_genomes) %>%
+    arrange(desc(n_genomes))
 
-
-# PROJECT NUMBERS OF INTEREST: 
-#PRJNA596592, n = 642 "Genomic analysis of coral associated bacteria in Hong Kong waters" Assign lat long from Hong Kong: Wong Wan Chau, with note "Hong Kong waters, lat long derived from biopackage information"
-#PRJNA391943 (tara, metagenome assembled genomes); PRJNA417962 (metagenome-assembled genomed (marine atlas project))
-
-
-
-#%>%
-#    select(
-#        taxon_id, assembly_accession, isolation_source, lat_lon, 
-#        isolation_source_mapped, environmental_source_mapped, lat, lon
-#        )
 
 # Save the data -----
-write_csv(dat3, here("data", "intermediate", "ncbi_metadata_clean.csv"))
+write_csv(dat4, here("data", "intermediate", "ncbi_metadata_clean.csv"))
