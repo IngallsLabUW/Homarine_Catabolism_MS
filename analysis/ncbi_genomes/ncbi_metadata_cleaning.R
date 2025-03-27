@@ -5,8 +5,6 @@
 # Libraries -----
 library(tidyverse)
 library(here)
-library(httr)
-library(jsonlite)
 
 # Special Functions-----
 ## function to parse lat_lon into lat and lon for plotting
@@ -172,6 +170,9 @@ iso_source_mapped <- unique_isolation_source %>%
   )) %>%
   mutate(environmental_source_mapped = case_when(
       !str_detect(isolation_source_mapped, "environmental") ~ NA_character_,
+      # Small fixes for inland fresh seas
+      str_detect(isolation_source, "aral") ~ "freshwater",
+      str_detect(isolation_source, "caspian sea") ~ "freshwater",
     str_detect(isolation_source, paste(marine_islation_source, collapse = "|")) ~ "marine",
     str_detect(isolation_source, paste(freshwater_isolation_source, collapse = "|")) ~ "freshwater",
     str_detect(isolation_source, paste(soil_isolation_source, collapse = "|")) ~ "soil",
@@ -196,8 +197,8 @@ bioproject_lookup <- read_csv(here("data",
                               show_col_types = FALSE)
 
 # update records with bioproject-level annotations of interest
-dat2 <- dat2 %>%
-    rows_update(bioproject_lookup, by = "bioproject_accession")
+test <- dat2 %>%
+    rows_patch(bioproject_lookup, by = "bioproject_accession")
   
 # Add lat_lon for environmental samples -----
 ## Generate lat lon lookup table -----
