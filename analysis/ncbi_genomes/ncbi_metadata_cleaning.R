@@ -253,6 +253,8 @@ dat3_no_lat_lon <- dat3 %>%
     select(-lat, -lon) %>%
     left_join(geo_loc_lookup, by = "geo_loc_name")
 
+#TODO: Check if the marine samples are over the ocean
+
 # nearly 80% coverage for lat lon!
 dat4 <- dat3 %>%
     filter(!is.na(lat) | !is.na(lon)) %>%
@@ -279,3 +281,4 @@ dat_summary <- dat5 %>%
 
 # Save the data -----
 write_csv(dat4, here("data", "intermediate", "ncbi_metadata_clean.csv"))
+write_csv(dat_summary, here("data", "intermediate", "ncbi_metadata_summary.csv"))
