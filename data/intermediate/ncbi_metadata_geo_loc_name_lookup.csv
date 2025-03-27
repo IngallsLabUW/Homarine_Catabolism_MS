@@ -3,7 +3,7 @@ Hong Kong: Wong Wan Chau,537,N 22¡ 30_ 47'',E 114¡ 18_ 39'',537
 Hong Kong: Ngo Mei Chau,261,N 22¡ 31_ 37'',E 114¡ 18_ 57'',798
 Hong Kong: Chek Chau,68,N 22¡ 30_ 0'',E 114¡ 21_ 31'',866
 "USA:California, Leo Carillo",57,,,923
-China,28,N 35¡ 0_ 0'',E 105¡ 0_ 0'',951
+China,28,,,951
 South Korea,27,N 36¡ 30_ 0'',E 127¡ 45_ 0'',978
 Ireland: Lough Hyne,25,N 51¡ 30_ 3'',W 9¡ 18_ 15'',1003
 "USA:California, Channel Islands",24,N 32¡ 49_ 0'',W 118¡ 27_ 3'',1027
@@ -15,7 +15,7 @@ China:Tibet,15,N 33¡ 12_ 40'',E 86¡ 7_ 58'',1116
 USA,15,N 39¡ 45_ 36'',W 98¡ 30_ 0'',1131
 China:Jiangxi,14,N 27¡ 40_ 0'',E 115¡ 40_ 0'',1145
 NA,12,,,1157
-Antarctica,11,S 78¡ 9_ 30'',E 16¡ 24_ 22'',1168
+Antarctica,11,,,1168
 Arctic Ocean,11,N 85¡ 0_ 0'',E 0¡ 0_ 0'',1179
 Pacific Ocean,11,N 3¡ 30_ 48'',W 132¡ 11_ 15'',1190
 USA: Massachusetts,11,N 42¡ 21_ 56'',W 71¡ 6_ 29'',1201
@@ -45,7 +45,7 @@ Mediterranean Sea,5,N 35¡ 0_ 0'',E 20¡ 0_ 0'',1360
 Pacific Ocean: South Pacific Ocean,5,S 45¡ 0_ 0'',W 130¡ 0_ 0'',1365
 "USA: Massachusetts, Nahant, Canoe Beach",5,,,1370
 "USA: Maunalua Bay, Oahu, Hawaii",5,N 21¡ 16_ 20'',W 157¡ 43_ 44'',1375
-Australia,4,S 25¡ 0_ 0'',E 135¡ 0_ 0'',1379
+Australia,4,,,1379
 "China: Fujian, Xiamen",4,N 24¡ 28_ 47'',E 118¡ 4_ 54'',1383
 China: Linyi,4,N 35¡ 3_ 47'',E 118¡ 20_ 34'',1387
 "China: Shantou, Guangdong",4,N 23¡ 21_ 17'',E 116¡ 40_ 43'',1391
@@ -62,7 +62,7 @@ South Korea:Namhae-gun,4,N 34¡ 48_ 15'',E 127¡ 55_ 37'',1431
 South Korea:Taean-gun,4,N 36¡ 42_ 1'',E 126¡ 17_ 2'',1435
 "Spain:Murcia,Rambla Salada",4,N 38¡ 7_ 0'',W 1¡ 7_ 0'',1439
 Taiwan,4,N 24¡ 0_ 0'',E 121¡ 0_ 0'',1443
-Turkey,4,N 39¡ 0_ 0'',E 35¡ 0_ 0'',1447
+Turkey,4,,,1447
 Turkey:Bandirma,4,N 40¡ 21_ 8'',E 27¡ 58_ 36'',1451
 "USA: Oak Ridge, TN",4,N 35¡ 57_ 50'',W 84¡ 17_ 37'',1455
 USA: Rhode Island,4,N 41¡ 45_ 1'',W 71¡ 29_ 59'',1459

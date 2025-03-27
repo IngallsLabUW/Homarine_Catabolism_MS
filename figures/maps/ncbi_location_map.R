@@ -79,6 +79,8 @@ dat_pie %>%
 dat_plot2 <- dat %>%
     filter(assembly %in% genomes_oi$Assembly) %>%
     filter(isolation_source_mapped == "environmental") %>% # Only keep environmental sources
+    # round lat and lon to 3 decimal places for plotting
+    mutate(lat = round(lat, 3), lon = round(lon, 3)) %>%
     group_by(lat, lon) %>%
     summarise(
         n = n(),
