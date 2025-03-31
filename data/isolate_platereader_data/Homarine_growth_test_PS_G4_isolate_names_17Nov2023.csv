@@ -1,0 +1,193 @@
+﻿isolate,plate,well,position,taxonomy,environment
+OBi1,1,A1,1,Cobetia marina,Puget Sound
+DSS-3,1,A2,2,Ruegeria pomeroyi,
+RWi1,1,A3,3,Cobetia,Puget Sound
+RWi2,1,A4,4,Rhodobacteraceae,Puget Sound
+RWi3,1,A5,5,Pseudoalteromonas,Puget Sound
+RWi4,1,A6,6,Rhodobacteraceae,Puget Sound
+RWi5,1,A7,7,Cobetia,Puget Sound
+RWi6,1,A8,8,Cobetia,Puget Sound
+RWi7,1,A9,9,Cobetia,Puget Sound
+RWi8,1,A10,10,Vibrio,Puget Sound
+RWi9,1,A11,11,,Puget Sound
+RWi10,1,A12,12,,Puget Sound
+RWi11,1,B1,13,,Puget Sound
+RWi12,1,B2,14,,Puget Sound
+RWi13,1,B3,15,,Puget Sound
+PSi01,1,B4,16,Vibrio,Puget Sound
+PSi02,1,B5,17,Rhodobacteraceae,Puget Sound
+PSi03,1,B6,18,Vibrio,Puget Sound
+PSi04,1,B7,19,,Puget Sound
+PSi05,1,B8,20,Vibrio,Puget Sound
+PSi06,1,B9,21,Paenarthrobacter,Puget Sound
+PSi07,1,B10,22,,Puget Sound
+PSi08,1,B11,23,Micrococcus,Puget Sound
+PSi09,1,B12,24,Pseudoalteromonas,Puget Sound
+PSi10,1,C1,25,,Puget Sound
+PSi11,1,C2,26,Vibrio,Puget Sound
+PSi12,1,C3,27,Vibrio,Puget Sound
+PSi13,1,C4,28,Vibrio,Puget Sound
+PSi14,1,C5,29,Vibrio,Puget Sound
+PSi15,1,C6,30,,Puget Sound
+PSi16,1,C7,31,,Puget Sound
+PSi17,1,C8,32,Pseudoalteromonas,Puget Sound
+PSi18,1,C9,33,Vibrio,Puget Sound
+PSi19,1,C10,34,Vibrio,Puget Sound
+PSi20,1,C11,35,Psychrobacter,Puget Sound
+PSi21,1,C12,36,Psychrobacter,Puget Sound
+PSi22,1,D1,37,Enterovirbio,Puget Sound
+PSi23,1,D2,38,,Puget Sound
+PSi24,1,D3,39,Pseudoalteromonas,Puget Sound
+PSi25,1,D4,40,,Puget Sound
+PSi26,1,D5,41,PseudoalteromonasG,Puget Sound
+PSi27,1,D6,42,Halomonas,Puget Sound
+PSi28,1,D7,43,Pseudoalteromonas,Puget Sound
+PSi29,1,D8,44,Vibrio,Puget Sound
+PSi30,1,D9,45,Cobetia,Puget Sound
+PSi31,1,D10,46,Vibrio,Puget Sound
+PSi32,1,D11,47,,Puget Sound
+PSi33,1,D12,48,Micrococcus,Puget Sound
+PSi34,1,E1,49,,Puget Sound
+PSi35,1,E2,50,Pseudoalteromonas,Puget Sound
+PSi36,1,E3,51,Vibrio,Puget Sound
+PSi37,1,E4,52,Vibrio,Puget Sound
+PSi38,1,E5,53,Ponticoccus,Puget Sound
+PSi39,1,E6,54,,Puget Sound
+G4i01,1,E7,55,Marinobacter,ENP
+G4i02,1,E8,56,Roseovarius,ENP
+G4i03,1,E9,57,Roseovarius,ENP
+G4i04,1,E10,58,Alteromonas,ENP
+G4i05,1,E11,59,,ENP
+G4i08,1,E12,60,Roseovarius,ENP
+G4i09,1,F1,61,Roseovarius,ENP
+G4i12,1,F2,62,Pseudomonas,ENP
+G4i10,1,F3,63,Rhodobacteraceae,ENP
+G4i14,1,F4,64,Roseovarius,ENP
+G4i17,1,F5,65,,ENP
+G4i18,1,F6,66,Pseudomonas,ENP
+G4i21,1,F7,67,Alteromonas,ENP
+G4i22,1,F8,68,Acinetobacter,ENP
+G4i23,1,F9,69,Roseovarius,ENP
+G4i28,1,F10,70,Rhodobacteraceae,ENP
+G4i30,1,F11,71,Acinetobacter,ENP
+G4i31,1,F12,72,Rhodobacteraceae,ENP
+G4i33,1,G1,73,Alteromonas,ENP
+G4i34,1,G2,74,Roseovarius,ENP
+G4i36,1,G3,75,Roseovarius,ENP
+G4i38,1,G4,76,Acinetobacter,ENP
+G4i40,1,G5,77,Alteromonas,ENP
+G4i44,1,G6,78,Rhodobacteraceae,ENP
+G4i50,1,G7,79,Acinetobacter,ENP
+G4i57,1,G8,80,Rhodobacteraceae,ENP
+G4i63,1,G9,81,,ENP
+G4i66,1,G10,82,,ENP
+G4i68,1,G11,83,,ENP
+G4i69,1,G12,84,,ENP
+G4i71,1,H1,85,,ENP
+G4i72,1,H2,86,,ENP
+BHi05,1,H3,87,,Sargasso Sea
+BHi07,1,H4,88,,Sargasso Sea
+BHi08,1,H5,89,,Sargasso Sea
+BHi10,1,H6,90,,Sargasso Sea
+control,1,H7,91,,
+control,1,H8,92,,
+control,1,H9,93,,
+control,1,H10,94,,
+control,1,H11,95,,
+control,1,H12,96,,
+G4I07,2,A1,1,,ENP
+G4i11,2,A2,2,,ENP
+G4i13,2,A3,3,,ENP
+G4i15,2,A4,4,,ENP
+G4i16,2,A5,5,,ENP
+G4i19,2,A6,6,,ENP
+G4i20,2,A7,7,,ENP
+G4i24,2,A8,8,,ENP
+G4i25,2,A9,9,,ENP
+G4i26,2,A10,10,,ENP
+G4i27,2,A11,11,,ENP
+G4i29,2,A12,12,,ENP
+G4i32,2,B1,13,,ENP
+G4i35,2,B2,14,,ENP
+G4i37,2,B3,15,,ENP
+G4i39,2,B4,16,,ENP
+G4i42,2,B5,17,,ENP
+G4i43,2,B6,18,,ENP
+G4i45,2,B7,19,,ENP
+G4i47,2,B8,20,,ENP
+G4i49,2,B9,21,,ENP
+G4i51,2,B10,22,,ENP
+G4i52,2,B11,23,,ENP
+G4i53,2,B12,24,,ENP
+G4i54,2,C1,25,,ENP
+G4i55,2,C2,26,,ENP
+G4i56,2,C3,27,,ENP
+G4i58,2,C4,28,,ENP
+G4i59,2,C5,29,,ENP
+G4i60,2,C6,30,,ENP
+G4i61,2,C7,31,,ENP
+G4i62,2,C8,32,,ENP
+G4i64,2,C9,33,,ENP
+G4i67,2,C10,34,,ENP
+G4i70,2,C11,35,,ENP
+control,2,C12,36,,
+control,2,D1,37,,
+control,2,D2,38,,
+control,2,D3,39,,
+control,2,D4,40,,
+control,2,D5,41,,
+control,2,D6,42,,
+control,2,D7,43,,
+control,2,D8,44,,
+control,2,D9,45,,
+control,2,D10,46,,
+control,2,D11,47,,
+control,2,D12,48,,
+empty,2,E1,49,,
+empty,2,E2,50,,
+empty,2,E3,51,,
+empty,2,E4,52,,
+empty,2,E5,53,,
+empty,2,E6,54,,
+empty,2,E7,55,,
+empty,2,E8,56,,
+empty,2,E9,57,,
+empty,2,E10,58,,
+empty,2,E11,59,,
+empty,2,E12,60,,
+empty,2,F1,61,,
+empty,2,F2,62,,
+empty,2,F3,63,,
+empty,2,F4,64,,
+empty,2,F5,65,,
+empty,2,F6,66,,
+empty,2,F7,67,,
+empty,2,F8,68,,
+empty,2,F9,69,,
+empty,2,F10,70,,
+empty,2,F11,71,,
+empty,2,F12,72,,
+empty,2,G1,73,,
+empty,2,G2,74,,
+empty,2,G3,75,,
+empty,2,G4,76,,
+empty,2,G5,77,,
+empty,2,G6,78,,
+empty,2,G7,79,,
+empty,2,G8,80,,
+empty,2,G9,81,,
+empty,2,G10,82,,
+empty,2,G11,83,,
+empty,2,G12,84,,
+empty,2,H1,85,,
+empty,2,H2,86,,
+empty,2,H3,87,,
+empty,2,H4,88,,
+empty,2,H5,89,,
+empty,2,H6,90,,
+empty,2,H7,91,,
+empty,2,H8,92,,
+empty,2,H9,93,,
+empty,2,H10,94,,
+empty,2,H11,95,,
+empty,2,H12,96,,

@@ -1,0 +1,8 @@
+isolation_source_mapped,environmental_source_mapped,n_genomes,n_with_lat_lon,n_percent_with_lat_lon
+unknown,NA,981,665,0.6778797145769623
+environmental,marine,420,335,0.7976190476190477
+non-environmental,other,386,274,0.7098445595854922
+environmental,other,138,112,0.8115942028985508
+environmental,soil,110,101,0.9181818181818182
+environmental,sediment,93,85,0.9139784946236559
+environmental,freshwater,34,32,0.9411764705882353
