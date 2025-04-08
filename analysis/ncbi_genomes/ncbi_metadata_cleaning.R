@@ -45,7 +45,10 @@ convert_lat_lon <- function(lat) {
 }
  
 # Read in and parse lookup -------
-geo_loc_lookup <- read_csv(here("data", "intermediate", "ncbi_metadata_geo_loc_name_lookup.csv"),
+geo_loc_lookup <- read_csv(
+    here(
+        "data", "intermediate", "ncbi_metadata_geo_loc_name_lookup.csv"
+        ),
   show_col_types = FALSE
 ) %>%
     filter(!is.na(lat) & !is.na(lon)) %>%
@@ -65,20 +68,32 @@ geo_loc_lookup <- geo_loc_lookup %>%
     mutate(location_qual = "derived from geo_loc_name")
 
 # Get Data -----
+## Read in metadata that was queried from NCBI from Frank
 dat <- read_csv(here("data", "intermediate", "ncbi_metadata_biosample_info.csv"),
   show_col_types = FALSE
 ) %>%
     mutate(isolation_source = tolower(isolation_source))
 
-genomes_oi <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "ncbi_complete_homarine_operons_loci_with_taxonomy.txt"), delim = "\t",
-  show_col_types = FALSE
-)
+## Read in genomes from Oscar that have been identified with the "full homarine operon"
+genomes_oi <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "complete_homarine_catabolism_operons_genome_metadata.tsv"), delim = "\t",
+  show_col_types = FALSE) %>%
+    rename(assembly_accession = Assembly.Accession,
+           biosample_id = BioSample)
 
 ## filter data to only those in genomes_oi
 dat <- dat %>%
-  filter(assembly_accession %in% genomes_oi$Assembly) %>%
+  filter(biosample_id %in% genomes_oi$biosample_id) %>%
     select(-dataset, -file, -taxon_id) %>%
     distinct()
+
+# print warning if there are any biosample_ids in genomes_oi that are not in dat
+if (any(!genomes_oi$biosample_id %in% dat$biosample_id)) {
+  warning("There are biosample_ids in genomes_oi that are not in dat")
+    
+    missing_biosample_ids <- genomes_oi %>%
+    filter(!biosample_id %in% dat$biosample_id) 
+    missing_accessions <- genomes_oi$assembly_accession[!genomes_oi$assembly_accession %in% dat$assembly_accession]
+}
 
 # get unique isolation_source with counts
 unique_isolation_source <- dat %>%
