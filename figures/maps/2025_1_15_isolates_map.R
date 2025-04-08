@@ -45,7 +45,7 @@ semi_circle_data <- overlapping_points %>%
 # Plot the map with semi-circles
 p <- ggplot(data = world) +
   geom_sf() +
-  coord_sf(xlim = c(-155, -55), ylim = c(-5, 50)) + # Restrict map to the west of 100°W
+  coord_sf(xlim = c(-155, -100), ylim = c(-5, 50)) + # Restrict map to the west of 100°W
   geom_point(data = all.iso.dat %>% filter(!group %in% c("RW", "PS")), aes(x = Lon, y = Lat, fill = group), size = 5, shape = 21) +
   geom_polygon(data = semi_circle_data, aes(x = x, y = y, fill = fill), alpha = 0.8, color = "black", size = 0.3) +
   # geom_text(data = all.iso.dat, aes(x = Lon, y = Lat, label = Depth_m),
@@ -57,5 +57,13 @@ p <- ggplot(data = world) +
        title = "Isolates grown in Homarine",
        x = "Longitude",
        y = "Latitude")
+
+p <- p + theme(
+    axis.text.x = element_text(size = 12),  # Increase X-axis text size
+    axis.text.y = element_text(size = 12),  # Increase Y-axis text size
+    axis.title.x = element_text(size = 14), # Increase X-axis title size
+    axis.title.y = element_text(size = 14)  # Increase Y-axis title size
+)
+
 
 print(p)
