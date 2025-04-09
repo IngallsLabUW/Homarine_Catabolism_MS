@@ -1,0 +1,154 @@
+---
+title: "NCBI_massive_downloads"
+author: "Frank X. Ferrer Gonzalez"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+Taxon ID Lookup and Geographic Location Extraction
+```python
+#taxa_minning_2.py
+import os
+import json
+import pandas as pd
+import subprocess
+import zipfile
+import multiprocessing
+
+# Define paths
+input_file = "/mnt/c/Bio/NCBI_datasets/ncbi_homarine_operons_loci_with_taxonomy.txt"
+output_file = "/mnt/c/Bio/NCBI_datasets/taxon_geographic_locations.csv"
+download_dir = "/mnt/c/Bio/NCBI_datasets/data/taxon_downloads"
+datasets_program = "/mnt/c/Bio/NCBI_datasets/datasets"  # Path to datasets program
+
+# Ensure download directory exists
+os.makedirs(download_dir, exist_ok=True)
+
+# Read taxon IDs from the file
+df = pd.read_csv(input_file, sep="\t")
+taxon_ids = df["ncbi.taxid"].unique()
+
+# Function to extract geographic metadata from JSONL
+def extract_geo_metadata(jsonl_path, taxon_id):
+    try:
+        with open(jsonl_path, "r") as f:
+            for line in f:
+                data = json.loads(line)
+
+                # Extract biosample attributes
+                if "assemblyInfo" in data and "biosample" in data["assemblyInfo"]:
+                    biosample = data["assemblyInfo"]["biosample"]
+                    attributes = biosample.get("attributes", [])
+
+                    # Extract relevant fields from attributes list
+                    geo_loc_name = latitude = longitude = region = "NA"
+
+                    for attr in attributes:
+                        if attr["name"] == "geo_loc_name":
+                            geo_loc_name = attr["value"]
+                        elif attr["name"] == "geographic location (latitude)":
+                            latitude = attr["value"]
+                        elif attr["name"] == "geographic location (longitude)":
+                            longitude = attr["value"]
+                        elif attr["name"] == "geographic location (region and locality)":
+                            region = attr["value"]
+
+                    return {
+                        "taxon_id": taxon_id,
+                        "geo_loc_name": geo_loc_name,
+                        "latitude": latitude,
+                        "longitude": longitude,
+                        "region": region,
+                    }
+    except Exception as e:
+        print(f"Error extracting metadata for taxon {taxon_id}: {e}")
+
+    return {"taxon_id": taxon_id, "geo_loc_name": "NA", "latitude": "NA", "longitude": "NA", "region": "NA"}
+
+# Function to download and process taxon data
+def process_taxon(taxon_id):
+    try:
+        print(f"Processing taxon: {taxon_id}")
+
+        # Define paths
+        taxon_zip = os.path.join(download_dir, f"ncbi_dataset_{taxon_id}.zip")
+        taxon_extract_dir = os.path.join(download_dir, f"dataset_{taxon_id}")
+
+        # Download taxon data
+        cmd = f"{datasets_program} download genome taxon {taxon_id} --dehydrated --filename {taxon_zip}"
+        subprocess.run(cmd, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+        # Check if the ZIP file is valid
+        if not os.path.exists(taxon_zip) or os.path.getsize(taxon_zip) == 0:
+            print(f"Warning: No data found for taxon {taxon_id}. Skipping.")
+            return {"taxon_id": taxon_id, "geo_loc_name": "NA", "latitude": "NA", "longitude": "NA", "region": "NA"}
+
+        try:
+            with zipfile.ZipFile(taxon_zip, 'r') as zip_ref:
+                zip_ref.extractall(taxon_extract_dir)
+        except zipfile.BadZipFile:
+            print(f"Error: Taxon {taxon_id} does not have a valid ZIP file. Skipping.")
+            return {"taxon_id": taxon_id, "geo_loc_name": "NA", "latitude": "NA", "longitude": "NA", "region": "NA"}
+
+        # Locate and parse the JSONL file
+        jsonl_path = os.path.join(taxon_extract_dir, "ncbi_dataset", "data", "assembly_data_report.jsonl")
+
+        if not os.path.exists(jsonl_path) or os.path.getsize(jsonl_path) == 0:
+            print(f"Warning: No geographic metadata found for taxon {taxon_id}. Skipping.")
+            return {"taxon_id": taxon_id, "geo_loc_name": "NA", "latitude": "NA", "longitude": "NA", "region": "NA"}
+
+        # Extract geographic metadata
+        return extract_geo_metadata(jsonl_path, taxon_id)
+
+    except Exception as e:
+        print(f"Error processing taxon {taxon_id}: {e}")
+        return {"taxon_id": taxon_id, "geo_loc_name": "NA", "latitude": "NA", "longitude": "NA", "region": "NA"}
+
+# Parallel processing
+with multiprocessing.Pool(processes=8) as pool:  # Adjust for system capabilities
+    location_data = pool.map(process_taxon, taxon_ids)
+
+# Save results to CSV
+location_df = pd.DataFrame(location_data)
+location_df.sort_values(by=["taxon_id"], inplace=True)
+location_df.to_csv(output_file, index=False)
+
+print(f"Completed! Geographic location data saved to {output_file}.")
+```
+
+Sort files without a result
+```python
+import pandas as pd
+
+# Define file paths
+input_file = "taxon_geographic_locations.csv"
+no_results_file = "taxon_no_results.csv"
+valid_results_file = "taxon_valid_results.csv"
+
+# Load the CSV file
+df = pd.read_csv(input_file)
+
+# Convert to lowercase for consistent filtering
+df["geo_loc_name"] = df["geo_loc_name"].astype(str).str.lower()
+
+# Define problematic terms
+problematic_terms = {"missing", "not applicable", "not collected", "not provided", "nan"}
+
+# Filter taxon IDs with **no results** (all "NA" values or containing problematic terms)
+no_results_df = df[
+    ((df["geo_loc_name"] == "NA") & (df["latitude"] == "NA") & 
+     (df["longitude"] == "NA") & (df["region"] == "NA")) |
+    (df["geo_loc_name"].isin(problematic_terms))
+]
+
+# Save to a new CSV file
+no_results_df.to_csv(no_results_file, index=False)
+
+# Filter taxon IDs that have at least one valid value and are **not in the problematic list**
+valid_results_df = df[~df.index.isin(no_results_df.index)]
+
+# Save to another CSV file
+valid_results_df.to_csv(valid_results_file, index=False)
+
+print(f"Filtered taxon data successfully saved:\n - No results: {no_results_file}\n - Valid results: {valid_results_file}")
+```
