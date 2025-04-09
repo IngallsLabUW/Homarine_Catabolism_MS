@@ -40,6 +40,9 @@ g4_metadata <- read_csv(
     distinct() %>%
     left_join(cruise_info, by = join_by(experiment_id)) %>%
     select(cruise, experiment_id, station, lat, lon, date, replicate_name, sample_fraction, treatment, timepoint) %>%
+    mutate(treatment = case_when(
+        treatment == "Homarine" ~ "+Homarine (3H3-labelled)",
+        TRUE ~ treatment)) %>%
     filter(!is.na(cruise))
 
 g5_metadata <- read_csv(
@@ -49,6 +52,10 @@ g5_metadata <- read_csv(
     distinct() %>%
     left_join(cruise_info, by = join_by(experiment_id)) %>%
     select(cruise, experiment_id, station, lat, lon, date, replicate_name, sample_fraction, treatment, timepoint) %>%
+    # change Homarine treatment to + D3-labelled homarine
+    mutate(treatment = case_when(
+        treatment == "Homarine" ~ "+Homarine (13C7,15N-labelled)",
+        TRUE ~ treatment)) %>%
     filter(!is.na(cruise))
 
 rc104_metadata <- read_csv(
@@ -59,6 +66,9 @@ rc104_metadata <- read_csv(
     distinct() %>%
     left_join(cruise_info, by = join_by(experiment_id)) %>%
     select(cruise, experiment_id, station, lat, lon, date, replicate_name, sample_fraction, treatment, timepoint) %>%
+    mutate(treatment = case_when(
+        treatment == "Homarine" ~ "+Homarine (13C7,15N-labelled)",
+        TRUE ~ treatment)) %>%
     filter(!is.na(cruise))
 
 obi1_metadata <- read_csv(
@@ -66,7 +76,11 @@ obi1_metadata <- read_csv(
     show_col_types = FALSE) %>%
     filter(sample_set == "OBi1_set2") %>%
     select(replicate_name, sample_fraction, treatment) %>%
-    mutate(isolate_id = "Rpom DSS3") %>%
+    mutate(isolate_id = "OBi1") %>%
+    mutate(treatment = case_when(
+        treatment == "Glucose + NH4" ~ "Glucose",
+        treatment == "Glucose + NH4 + Homarine" ~ "Glucose and homarine",
+        TRUE ~ treatment)) %>%
     distinct()
     
 rpom_metadata <- read_csv(
@@ -74,4 +88,19 @@ rpom_metadata <- read_csv(
     show_col_types = FALSE) %>%
     select(replicate_name, sample_fraction, treatment) %>%
     mutate(isolate_id = "Rpom DSS3") %>%
+    filter(treatment %in% c("Glucose", "Homarine", "Glucose and homarine")) %>%
+    filter(sample_fraction == "Particulate") %>%
     distinct()
+
+# Combine all metadata into one dataframe
+dat_cmb <- obi1_metadata %>%
+    bind_rows(rpom_metadata) %>%
+    bind_rows(g4_metadata) %>%
+    bind_rows(g5_metadata) %>%
+    bind_rows(rc104_metadata) %>%
+    rename(sample_id = replicate_name) %>%
+    select(sample_id, sample_fraction, isolate_id, cruise, experiment_id, treatment, timepoint, station, lat, lon, date)
+
+# Save the combined metadata as an xcel file
+write_csv(dat_cmb, here("tables", "metabolomics_experimental_metadata.csv"))
+
