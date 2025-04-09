@@ -1,0 +1,57 @@
+mass_feature,retention_time,mz,z,core
+"AMP, 15N5",NA,NA,NA,non-core
+Adenine,5.2470350060528,136.06232,1,core
+Adenosine,5.038961415279195,268.10458,1,core
+Adenosine monophosphate,NA,NA,NA,core
+Citrulline,12.433028140778141,176.103517,1,core
+Cytosine,7.5661415969496995,112.051087,1,core
+"DL-Alanine, 2H3",11.186,NA,1,non-core
+"DL-Proline, 2H7",9.518076923076922,NA,1,non-core
+"DL-Valine, 2H8",8.809076923076923,NA,1,non-core
+Deoxyadenosine,3.8478079307493087,252.109665,1,core
+"GMP, 15N5",NA,NA,NA,non-core
+Glutathione disulfide,14.70605575980392,613.159793,1,core
+Guanosine,9.654544422332986,284.099495,1,core
+Homarine,6.25380533219549,138.055503,1,non-core
+L-Arginine,19.776543818150962,175.119501,1,core
+L-Asparagine,11.659966713923746,133.061318,1,non-core
+L-Cysteic acid,NA,NA,NA,core
+L-Glutamic acid,12.178111550366882,148.060984,1,core
+L-Homoserine,11.584712155560606,120.066069,1,core
+L-Lysine,18.90331819706791,147.113353,1,core
+L-Phenylalanine,5.942170059841805,NA,1,non-core
+L-Proline,9.58330875820608,116.071154,1,core
+L-Serine,11.998697009835404,106.050419,1,core
+L-Tryptophan,8.188088948561024,NA,1,non-core
+L-Tyrosine,9.829156984014535,182.081719,1,core
+N-Methyl-L-glutamic acid,10.651107269155833,162.076634,1,non-core
+"Sucrose, 13C",NA,NA,NA,non-core
+"Trehalose, 13C",NA,NA,NA,non-core
+UDP-N-acetylglucosamine,NA,NA,NA,non-core
+homarine_13C_15N,6.252945759664369,146.07542,1,non-core
+homarine_D2,6.305365853658537,140.0674535,1,non-core
+homarine_D3,6.311860465116279,141.0737302,1,non-core
+n-methyl glutamic acid_13C_15N,11.060340557275543,169.093065,1,non-core
+n-methyl glutamic acid_D2,10.604482758620687,164.08845350000001,1,non-core
+n-methyl glutamic acid_D3,10.60530612244898,165.0947302,1,non-core
+n-methyl glutamine,9.845817407306434,161.0921,1,non-core
+n-methyl glutamine_13C_15N,10.295368852459017,168.109265,1,non-core
+n-methyl glutamine_D3,10.0240625,164.1109302,1,non-core
+unknown_C6H11NO2_pos,10.943142771259446,130.0868,1,non-core
+unknown_C6H9NO3_1_neg,NA,142.0504,NA,non-core
+unknown_C6H9NO3_1_neg_13C_15N,NA,149.067565,NA,non-core
+unknown_C6H9NO3_1_neg_D3,NA,145.0692302,NA,non-core
+unknown_C6H9NO3_2_neg,NA,142.0504,NA,non-core
+unknown_C6H9NO3_2_neg_13C_15N,NA,149.067565,NA,non-core
+unknown_C6H9NO3_2_neg_D3,NA,145.0692302,NA,non-core
+unknown_C6H9NO3_3_neg,NA,142.0504,NA,non-core
+unknown_C6H9NO3_3_neg_D3,NA,145.0692302,NA,non-core
+unknown_C6H9NO4_neg,NA,158.0453,NA,non-core
+unknown_C6H9NO4_neg_D3,NA,161.0641302,NA,non-core
+unknown_C6H9NO4_pos,12.042702302631579,160.061,1,non-core
+unknown_C6H9NO4_pos_13C_15N,12.813400000000001,167.078165,1,non-core
+unknown_C6H9NO4_pos_early,4.429445736434109,160.061,1,non-core
+unknown_C7H11NO3_pos,8.401425844758622,158.0817,1,non-core
+unknown_C7H9NO5_pos,12.357062801932367,188.055899,1,non-core
+unknown_C7H9NO5_pos_13C_15N,12.251519047619048,196.076419,1,non-core
+unknown_C7H9NO5_pos_D3,12.438,191.0747292,1,non-core
