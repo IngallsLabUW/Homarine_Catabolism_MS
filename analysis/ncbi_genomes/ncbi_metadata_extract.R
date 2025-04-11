@@ -98,14 +98,12 @@ get_biosample_df <- function(file) {
 }
 
 # Locate the dataset directories containing the JSONL files----
-dat_loc <- normalizePath("data/raw/genomes/ncbi_metadata/downloaded_taxons/")
+dat_loc <- normalizePath("data/raw/genomes/ncbi_metadata/taxon_downloads_2/")
 dataset_dirs <- list.dirs(dat_loc, recursive = FALSE)
 dataset_dirs <- dataset_dirs[grepl("dataset_\\d+$", dataset_dirs)] # Keep only dataset directories
 
 files <- file.path(dataset_dirs, "ncbi_dataset", "data", "assembly_data_report.jsonl")
 files <- files[file.exists(files)]
-file <- "/Users/heal742/LOCAL/07_UW/Homarine_Catabolism_MS/data/raw/genomes/ncbi_metadata/downloaded_taxons/dataset_1486246/ncbi_dataset/data/assembly_data_report.jsonl"
-
 
 # Process the JSONL files using parallel processing ----
 plan(multisession)
