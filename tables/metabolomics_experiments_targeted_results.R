@@ -23,7 +23,7 @@ inter_dir_list <- lapply(raw_dir_list, function(x) {
 
 # grab mass feature data
 mf_info <- read_csv(
-    here("data", "intermediate", "metabolomics", "intermediates_mf_info2.csv"),
+    here("data", "intermediate", "metabolomics", "mf_info_curated.csv"),
     show_col_types = FALSE) 
 
 core_metabs <- read_csv(
@@ -74,26 +74,23 @@ rpom_area_data <- read_csv(
 #Combine all area data
 area_data <- bind_rows(g4_area_data, g5_area_data, rc104_area_data, rpom_area_data) %>%
     pivot_wider(names_from = replicate_name, values_from = adjusted_area)
-mf_data <- area_data %>%
-    select(mass_feature) %>%
-    left_join( bind_rows(g4_mf_info, g5_mf_info, rc104_mf_info, rpom_mf_info), by = "mass_feature") %>%
-    filter(mass_feature %in% area_data$mass_feature) %>%
-    group_by(mass_feature) %>%
-    summarise(
-        retention_time = mean(retention_time, na.rm = TRUE),
-        mz = mean(mz, na.rm = TRUE),
-        z = mean(z, na.rm = TRUE)
-    ) %>%
-    ungroup()
-## Fill in missing m/z from mf_data
-mf_data2 <- mf_data %>%
-    rows_patch(
-        mf_info %>% 
-            rename(mass_feature = name) %>%
-            select(mass_feature, mz) %>%
-            distinct(),
-        by = c("mass_feature"),
-        unmatched = "ignore",
-    ) %>%
-    mutate(core = ifelse(mass_feature %in% core_metabs$core_metabolites_fMsystem, "core", "non-core"))
-write_csv(mf_data2, here("data", "intermediate", "metabolomics", "mf_info_curated.csv"))
+
+
+# Prepare final data frame --------
+final_df <- mf_info %>%
+    filter(is.na(remove)) %>%
+    filter(is.na(internal_standard)) %>%
+    filter(stable_isotope_version != "3H2") %>%
+    select(mass_feature, molecule_id, stable_isotope_version, retention_time, mz, z, core) %>%
+    left_join(area_data, by = "mass_feature") %>%
+    arrange(core, molecule_id, stable_isotope_version) %>%
+    mutate(retention_time = round(retention_time, 2),
+           mz = round(mz, 4))
+
+# Write final data frame to CSV --------
+write_csv(
+    final_df,
+    here("tables", "metabolomics_experiments_targeted_results.csv"),
+    na = ""
+)
+
