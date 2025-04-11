@@ -20,22 +20,36 @@ get_biosample_df <- function(file) {
     message("File not found: ", file)
     return(NULL)
   }
+  taxon_id <- parse_number(basename(dirname(dirname(dirname(file)))))
 
   print(paste("Processing:", file))
 
   dat <- lapply(readLines(file), fromJSON)
-
   biosamples <- list()
   for (i in seq_along(dat)) {
     if (is.list(dat[[i]]$assemblyInfo$biosample)) {
+        # First get attributes 
       if (!is.null(dat[[i]]$assemblyInfo$biosample$attributes)) {
         biosamples[[i]] <- dat[[i]]$assemblyInfo$biosample$attributes
-      }else{
-          biosamples[[i]] <- list()
+      } else {
+        biosamples[[i]] <- data.frame(
+          name = NA,
+          value = NA
+        )
       }
+        # Next gather metadata about the assembly
         biosamples[[i]]$file <- file
-        biosamples[[i]]$taxon_id <- dat[[i]]$taxId
-        biosamples[[i]]$assembly_accession <- dat[[i]]$assemblyInfo$assemblyAccession
+        biosamples[[i]]$taxon_id <- taxon_id
+        #browser()
+        if (!is.null(dat[[i]]$accession)) {
+            biosamples[[i]]$assembly_accession <- dat[[i]]$accession
+        } else if (!is.null(dat[[i]]$assemblyInfo$assemblyAccession)){
+            biosamples[[i]]$assembly_accession <- dat[[i]]$assemblyInfo$assemblyAccession
+        } else {
+            biosamples[[i]]$assembly_accession <- NA
+            warning("No assembly accession found for file: ", file)
+        }
+
         biosamples[[i]]$biosample_id <- dat[[i]]$assemblyInfo$biosample$accession
       # Include bioproject information if available
         if (!is.null(dat[[i]]$assemblyInfo$bioprojectLineage$bioprojects)) {
@@ -64,18 +78,21 @@ get_biosample_df <- function(file) {
       }
     }
   }
-
   if (length(biosamples) == 0) {
     message("No biosample data found in file: ", file)
     return(NULL)
   }
-   # browser()
   biosample_df <- bind_rows(biosamples)
-
   # Filter only for the attributes of interest
+    biosample_attributes <- biosample_df %>%
+        select(name, value, assembly_accession) %>%
+        filter(name %in% attributes_oi)%>%
+        pivot_wider(names_from = name, values_from = value, values_fn = list)
+
   biosample_filtered <- biosample_df %>%
-    filter(name %in% attributes_oi) %>%
-    pivot_wider(names_from = name, values_from = value, values_fn = list)
+      select(-name, -value) %>%
+      distinct() %>%
+      left_join(biosample_attributes, by = "assembly_accession")
 
   # Ensure all attributes are of uniform length (convert to single-value per cell)
   cols <- colnames(biosample_filtered)
@@ -117,3 +134,4 @@ write_csv(biosample_data, here("data", "intermediate", "ncbi_metadata_biosample_
 
 # Show completion message
 print(paste("Processing complete. Output saved to:", here("data", "intermediate", "ncbi_metadata_biosample_info.csv")))
+

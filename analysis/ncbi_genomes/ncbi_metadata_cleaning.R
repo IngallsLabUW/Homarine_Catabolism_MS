@@ -88,8 +88,7 @@ dat <- dat %>%
 
 # print warning if there are any biosample_ids in genomes_oi that are not in dat
 if (any(!genomes_oi$biosample_id %in% dat$biosample_id)) {
-  warning("There are biosample_ids in genomes_oi that are not in dat")
-    
+  warning("There are biosample_ids in genomes_oi that are not in dat!")
     missing_biosample_ids <- genomes_oi %>%
     filter(!biosample_id %in% dat$biosample_id) 
     missing_accessions <- genomes_oi$assembly_accession[!genomes_oi$assembly_accession %in% dat$assembly_accession]
@@ -212,7 +211,7 @@ bioproject_lookup <- read_csv(here("data",
                               show_col_types = FALSE)
 
 # update records with bioproject-level annotations of interest
-test <- dat2 %>%
+dat2 <- dat2 %>%
     rows_patch(bioproject_lookup, by = "bioproject_accession")
   
 # Add lat_lon for environmental samples -----
@@ -284,7 +283,8 @@ dat5 <- dat4 %>%
          lat_lon,
          isolation_source_mapped, environmental_source_mapped,
          lat, lon, location_qual
-         ) 
+         )  %>%
+    distinct()
 
 ## Summarize data -----
 dat_summary <- dat5 %>%
