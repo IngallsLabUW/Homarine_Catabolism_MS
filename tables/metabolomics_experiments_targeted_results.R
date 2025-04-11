@@ -80,7 +80,7 @@ area_data <- bind_rows(g4_area_data, g5_area_data, rc104_area_data, rpom_area_da
 final_df <- mf_info %>%
     filter(is.na(remove)) %>%
     filter(is.na(internal_standard)) %>%
-    filter(stable_isotope_version != "3H2") %>%
+    filter(stable_isotope_version != "3H2" | is.na(stable_isotope_version)) %>%
     select(mass_feature, molecule_id, stable_isotope_version, retention_time, mz, z, core) %>%
     left_join(area_data, by = "mass_feature") %>%
     arrange(core, molecule_id, stable_isotope_version) %>%
