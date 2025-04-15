@@ -11,7 +11,7 @@
 
 <meta name="author" content="Frank X. Ferrer Gonzalez" />
 
-<meta name="date" content="2025-04-11" />
+<meta name="date" content="2025-04-15" />
 
 <title>NCBI_genome_finder</title>
 
@@ -352,12 +352,12 @@ display: none;
 
 <h1 class="title toc-ignore">NCBI_genome_finder</h1>
 <h4 class="author">Frank X. Ferrer Gonzalez</h4>
-<h4 class="date">2025-04-11</h4>
+<h4 class="date">2025-04-15</h4>
 
 </div>
 
 
-<p>Retrieves unique IDs from both taxonomy input files</p>
+<p>Retrieves unique IDs from both taxonomy files</p>
 <pre class="python"><code>import pandas as pd
 
 # Load both files
@@ -386,9 +386,9 @@ import zipfile
 import multiprocessing
 
 # Define paths
-input_file = &quot;/mnt/c/Bio/NCBI_datasets/all_unique_taxids.txt&quot;
+input_file = &quot;/mnt/c/Bio/NCBI_datasets/ncbi_homarine_operons_loci_with_taxonomy.txt&quot;
 output_file = &quot;/mnt/c/Bio/NCBI_datasets/taxon_geographic_locations.csv&quot;
-download_dir = &quot;/mnt/c/Bio/NCBI_datasets/taxon_downloads&quot;
+download_dir = &quot;/mnt/c/Bio/NCBI_datasets/data/taxon_downloads&quot;
 datasets_program = &quot;/mnt/c/Bio/NCBI_datasets/datasets&quot;  # Path to datasets program
 
 # Ensure download directory exists
@@ -398,41 +398,44 @@ os.makedirs(download_dir, exist_ok=True)
 df = pd.read_csv(input_file, sep=&quot;\t&quot;)
 taxon_ids = df[&quot;ncbi.taxid&quot;].unique()
 
-# Define relevant attributes (same as R script)
-attributes_oi = [
-    &quot;env_broad_scale&quot;, &quot;env_local_scale&quot;, &quot;env_medium&quot;, &quot;geo_loc_name&quot;,
-    &quot;isolation_source&quot;, &quot;lat_lon&quot;, &quot;geographic location (latitude)&quot;,
-    &quot;geographic location (longitude)&quot;, &quot;geographic location (region and locality)&quot;
-]
-
-# Function to extract biosample metadata
-def extract_biosample_metadata(jsonl_path, taxon_id):
+# Function to extract geographic metadata from JSONL
+def extract_geo_metadata(jsonl_path, taxon_id):
     try:
         with open(jsonl_path, &quot;r&quot;) as f:
             for line in f:
                 data = json.loads(line)
 
+                # Extract biosample attributes
                 if &quot;assemblyInfo&quot; in data and &quot;biosample&quot; in data[&quot;assemblyInfo&quot;]:
                     biosample = data[&quot;assemblyInfo&quot;][&quot;biosample&quot;]
                     attributes = biosample.get(&quot;attributes&quot;, [])
 
-                    # Extract attributes
-                    extracted_data = {&quot;taxon_id&quot;: taxon_id}
+                    # Extract relevant fields from attributes list
+                    geo_loc_name = latitude = longitude = region = &quot;NA&quot;
+
                     for attr in attributes:
-                        if attr[&quot;name&quot;] in attributes_oi:
-                            extracted_data[attr[&quot;name&quot;]] = attr[&quot;value&quot;]
+                        if attr[&quot;name&quot;] == &quot;geo_loc_name&quot;:
+                            geo_loc_name = attr[&quot;value&quot;]
+                        elif attr[&quot;name&quot;] == &quot;geographic location (latitude)&quot;:
+                            latitude = attr[&quot;value&quot;]
+                        elif attr[&quot;name&quot;] == &quot;geographic location (longitude)&quot;:
+                            longitude = attr[&quot;value&quot;]
+                        elif attr[&quot;name&quot;] == &quot;geographic location (region and locality)&quot;:
+                            region = attr[&quot;value&quot;]
 
-                    # Add additional metadata
-                    extracted_data[&quot;assembly_accession&quot;] = data[&quot;assemblyInfo&quot;].get(&quot;assemblyAccession&quot;, &quot;NA&quot;)
-
-                    return extracted_data
-
+                    return {
+                        &quot;taxon_id&quot;: taxon_id,
+                        &quot;geo_loc_name&quot;: geo_loc_name,
+                        &quot;latitude&quot;: latitude,
+                        &quot;longitude&quot;: longitude,
+                        &quot;region&quot;: region,
+                    }
     except Exception as e:
         print(f&quot;Error extracting metadata for taxon {taxon_id}: {e}&quot;)
 
-    return {&quot;taxon_id&quot;: taxon_id, &quot;assembly_accession&quot;: &quot;NA&quot;, **{attr: &quot;NA&quot; for attr in attributes_oi}}
+    return {&quot;taxon_id&quot;: taxon_id, &quot;geo_loc_name&quot;: &quot;NA&quot;, &quot;latitude&quot;: &quot;NA&quot;, &quot;longitude&quot;: &quot;NA&quot;, &quot;region&quot;: &quot;NA&quot;}
 
-# Function to process taxon data
+# Function to download and process taxon data
 def process_taxon(taxon_id):
     try:
         print(f&quot;Processing taxon: {taxon_id}&quot;)
@@ -445,49 +448,87 @@ def process_taxon(taxon_id):
         cmd = f&quot;{datasets_program} download genome taxon {taxon_id} --dehydrated --filename {taxon_zip}&quot;
         subprocess.run(cmd, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-        # Check ZIP file
+        # Check if the ZIP file is valid
         if not os.path.exists(taxon_zip) or os.path.getsize(taxon_zip) == 0:
             print(f&quot;Warning: No data found for taxon {taxon_id}. Skipping.&quot;)
-            return extract_biosample_metadata(&quot;&quot;, taxon_id)
+            return {&quot;taxon_id&quot;: taxon_id, &quot;geo_loc_name&quot;: &quot;NA&quot;, &quot;latitude&quot;: &quot;NA&quot;, &quot;longitude&quot;: &quot;NA&quot;, &quot;region&quot;: &quot;NA&quot;}
 
         try:
             with zipfile.ZipFile(taxon_zip, &#39;r&#39;) as zip_ref:
                 zip_ref.extractall(taxon_extract_dir)
         except zipfile.BadZipFile:
             print(f&quot;Error: Taxon {taxon_id} does not have a valid ZIP file. Skipping.&quot;)
-            return extract_biosample_metadata(&quot;&quot;, taxon_id)
+            return {&quot;taxon_id&quot;: taxon_id, &quot;geo_loc_name&quot;: &quot;NA&quot;, &quot;latitude&quot;: &quot;NA&quot;, &quot;longitude&quot;: &quot;NA&quot;, &quot;region&quot;: &quot;NA&quot;}
 
         # Locate and parse the JSONL file
         jsonl_path = os.path.join(taxon_extract_dir, &quot;ncbi_dataset&quot;, &quot;data&quot;, &quot;assembly_data_report.jsonl&quot;)
 
         if not os.path.exists(jsonl_path) or os.path.getsize(jsonl_path) == 0:
             print(f&quot;Warning: No geographic metadata found for taxon {taxon_id}. Skipping.&quot;)
-            return extract_biosample_metadata(&quot;&quot;, taxon_id)
+            return {&quot;taxon_id&quot;: taxon_id, &quot;geo_loc_name&quot;: &quot;NA&quot;, &quot;latitude&quot;: &quot;NA&quot;, &quot;longitude&quot;: &quot;NA&quot;, &quot;region&quot;: &quot;NA&quot;}
 
-        # Extract biosample metadata
-        return extract_biosample_metadata(jsonl_path, taxon_id)
+        # Extract geographic metadata
+        return extract_geo_metadata(jsonl_path, taxon_id)
 
     except Exception as e:
         print(f&quot;Error processing taxon {taxon_id}: {e}&quot;)
-        return extract_biosample_metadata(&quot;&quot;, taxon_id)
+        return {&quot;taxon_id&quot;: taxon_id, &quot;geo_loc_name&quot;: &quot;NA&quot;, &quot;latitude&quot;: &quot;NA&quot;, &quot;longitude&quot;: &quot;NA&quot;, &quot;region&quot;: &quot;NA&quot;}
 
 # Parallel processing
 with multiprocessing.Pool(processes=8) as pool:  # Adjust for system capabilities
-    metadata_records = pool.map(process_taxon, taxon_ids)
+    location_data = pool.map(process_taxon, taxon_ids)
 
-# Convert to DataFrame
-metadata_df = pd.DataFrame(metadata_records)
+# Save results to CSV
+location_df = pd.DataFrame(location_data)
+location_df.sort_values(by=[&quot;taxon_id&quot;], inplace=True)
+location_df.to_csv(output_file, index=False)
 
-# Mimic `unnest` behavior from R by exploding lists
-for col in attributes_oi:
-    if col in metadata_df.columns:
-        metadata_df[col] = metadata_df[col].apply(lambda x: x if isinstance(x, list) else [x])
-        metadata_df = metadata_df.explode(col)
+print(f&quot;Completed! Geographic location data saved to {output_file}.&quot;)</code></pre>
+<pre class="python"><code>#download_missing_ncbi_metadata_by_accession.py
+import os
+import pandas as pd
+import subprocess
+import zipfile
+import multiprocessing
 
-# Save to CSV
-metadata_df.to_csv(output_file, index=False)
+# === Define paths ===
+input_file = &quot;/mnt/c/Bio/NCBI_datasets/missing_genome_metadata.csv&quot;
+download_dir = &quot;/mnt/c/Bio/NCBI_datasets/data/missing_accession_downloads&quot;
+datasets_program = &quot;/mnt/c/Bio/NCBI_datasets/datasets&quot;
 
-print(f&quot;Completed! Biosample metadata saved to {output_file}.&quot;)</code></pre>
+# === Ensure download directory exists ===
+os.makedirs(download_dir, exist_ok=True)
+
+# === Read assembly accessions ===
+df = pd.read_csv(input_file)
+accessions = df[&quot;assembly_accession&quot;].unique()
+
+# === Download and extract each assembly ===
+def process_accession(accession):
+    try:
+        print(f&quot;Downloading: {accession}&quot;)
+        accession_zip = os.path.join(download_dir, f&quot;{accession}.zip&quot;)
+        extract_dir = os.path.join(download_dir, accession)
+
+        # Run datasets CLI
+        cmd = f&quot;{datasets_program} download genome accession {accession} --dehydrated --filename {accession_zip}&quot;
+        subprocess.run(cmd, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+        # Extract ZIP
+        if os.path.exists(accession_zip):
+            with zipfile.ZipFile(accession_zip, &#39;r&#39;) as zip_ref:
+                zip_ref.extractall(extract_dir)
+        else:
+            print(f&quot;Warning: No ZIP file for {accession}&quot;)
+
+    except Exception as e:
+        print(f&quot;Error processing {accession}: {e}&quot;)
+
+# === Run in parallel ===
+with multiprocessing.Pool(processes=8) as pool:
+    pool.map(process_accession, accessions)
+
+print(&quot;Download and extraction complete.&quot;)</code></pre>
 
 
 
