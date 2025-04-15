@@ -119,6 +119,9 @@ dat_loc <- normalizePath("data/raw/genomes/ncbi_metadata/taxon_downloads_2/")
 dataset_dirs <- list.dirs(dat_loc, recursive = FALSE)
 dataset_dirs <- dataset_dirs[grepl("dataset_\\d+$", dataset_dirs)] # Keep only dataset directories
 
+#file <- "/Users/heal742/LOCAL/07_UW/Homarine_Catabolism_MS/data/raw/genomes/ncbi_metadata/taxon_downloads_2/ncbi_dataset_303/ncbi_dataset/data/assembly_data_report.jsonl"
+#test_df <- get_biosample_df(file)
+
 files <- file.path(dataset_dirs, "ncbi_dataset", "data", "assembly_data_report.jsonl")
 files <- files[file.exists(files)]
 
@@ -128,6 +131,15 @@ biosample_dfs <- future_lapply(files, get_biosample_df)
 
 # Combine results into a single data frame ----
 biosample_data <- bind_rows(biosample_dfs, .id = "dataset")
+
+# Read in the genomes of interest and filter out on accession id
+genomes_oi <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "complete_homarine_catabolic_operons_second_round_genome_metadata_and_taxonomy.tsv"), delim = "\t",
+                         show_col_types = FALSE) %>%
+    rename(assembly_accession = Assembly,
+           biosample_id = BioSample)
+
+biosample_data <- biosample_data %>%
+    filter(assembly_accession %in% genomes_oi$assembly_accession) 
 
 # Save the output ----
 write_csv(biosample_data, here("data", "intermediate", "ncbi_metadata_biosample_info.csv"))

@@ -75,14 +75,14 @@ dat <- read_csv(here("data", "intermediate", "ncbi_metadata_biosample_info.csv")
     mutate(isolation_source = tolower(isolation_source))
 
 ## Read in genomes from Oscar that have been identified with the "full homarine operon"
-genomes_oi <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "complete_homarine_catabolism_operons_genome_metadata.tsv"), delim = "\t",
+genomes_oi <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "complete_homarine_catabolic_operons_second_round_genome_metadata_and_taxonomy.tsv"), delim = "\t",
   show_col_types = FALSE) %>%
-    rename(assembly_accession = Assembly.Accession,
+    rename(assembly_accession = Assembly,
            biosample_id = BioSample)
 
 ## filter data to only those in genomes_oi
 dat <- dat %>%
-  filter(biosample_id %in% genomes_oi$biosample_id) %>%
+  filter(assembly_accession %in% genomes_oi$assembly_accession) %>%
     select(-dataset, -file, -taxon_id) %>%
     distinct()
 
@@ -90,8 +90,9 @@ dat <- dat %>%
 if (any(!genomes_oi$biosample_id %in% dat$biosample_id)) {
   warning("There are biosample_ids in genomes_oi that are not in dat!")
     missing_biosample_ids <- genomes_oi %>%
-    filter(!biosample_id %in% dat$biosample_id) 
-    missing_accessions <- genomes_oi$assembly_accession[!genomes_oi$assembly_accession %in% dat$assembly_accession]
+        filter(!assembly_accession %in% dat$assembly_accession) %>%
+        select(biosample_id, assembly_accession, ncbi.taxid) %>%
+        distinct()
 }
 
 # get unique isolation_source with counts
