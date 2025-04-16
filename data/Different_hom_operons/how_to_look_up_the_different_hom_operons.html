@@ -11,7 +11,7 @@
 
 <meta name="author" content="Frank X. Ferrer Gonzalez" />
 
-<meta name="date" content="2025-04-15" />
+<meta name="date" content="2025-04-16" />
 
 <title>Sorting_the_different_hom_operons</title>
 
@@ -352,7 +352,7 @@ display: none;
 
 <h1 class="title toc-ignore">Sorting_the_different_hom_operons</h1>
 <h4 class="author">Frank X. Ferrer Gonzalez</h4>
-<h4 class="date">2025-04-15</h4>
+<h4 class="date">2025-04-16</h4>
 
 </div>
 
@@ -438,6 +438,32 @@ summary_df_sorted.to_csv(&quot;homarine_operon_cluster_summary_by_assembly_corre
 
 # Done!
 print(&quot;✅ Finished. Summary saved as &#39;homarine_operon_cluster_summary_by_assembly.csv&#39;&quot;)</code></pre>
+<p>Sort genes lexicographically to get the canonical cluster (eg. ABCD
+and DCBA are the same)</p>
+<pre class="python"><code>#hom_genes_lexicographically.py
+import pandas as pd
+
+# Load your CSV file
+df = pd.read_csv(&quot;/mnt/c/SynologyDrive/UW/UW_Anitra_Ingalls/Homarine_project/Data/metadata_extract/homarine_operon_cluster_summary_by_assembly_corrected_mod.csv&quot;)
+
+# Function to get canonical cluster (same for forward/reverse)
+def canonical_cluster(cluster_str):
+    reverse_str = cluster_str[::-1]
+    return min(cluster_str, reverse_str)
+
+# Apply function to create new column
+df[&#39;canonical_cluster&#39;] = df[&#39;gene_cluster&#39;].apply(canonical_cluster)
+
+# Optional: group and view unique canonical clusters
+grouped = df.groupby(&#39;canonical_cluster&#39;)
+
+# Save the updated dataframe with canonical cluster column
+df.to_csv(&quot;/mnt/c/SynologyDrive/UW/UW_Anitra_Ingalls/Homarine_project/Data/metadata_extract/homarine_operon_cluster_summary_with_canonical_1.csv&quot;, index=False)
+
+print(&quot;Done! File saved with canonical clusters.&quot;)
+
+# Display some results
+df[[&quot;gene_cluster&quot;, &quot;canonical_cluster&quot;]].drop_duplicates().head(10)</code></pre>
 <p>Finally, we created a figure with the different operons and their
 respective taxons in order and class</p>
 <pre class="python"><code>import pandas as pd
@@ -445,7 +471,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # === Load the data ===
-summary_df = pd.read_csv(&quot;homarine_operon_cluster_summary_by_assembly_corrected.csv&quot;)
+summary_df = pd.read_csv(&quot;homarine_operon_cluster_summary_with_canonical_1.csv&quot;)
 
 # === Prepare count data ===
 class_counts = summary_df.groupby([&quot;gene_cluster&quot;, &quot;class&quot;]).size().reset_index(name=&quot;count&quot;)
@@ -459,11 +485,11 @@ plt.figure(figsize=(20, 10), constrained_layout=True)
 sns.barplot(data=class_counts, x=&quot;gene_cluster&quot;, y=&quot;count&quot;, hue=&quot;class&quot;, dodge=False)
 plt.yscale(&quot;log&quot;)
 plt.xticks(rotation=90)
-plt.xlabel(&quot;Gene Cluster&quot;)
+plt.xlabel(&quot;Gene Cluster (hom)&quot;)
 plt.ylabel(&quot;Count (log scale)&quot;)
-plt.title(&quot;Gene Cluster Distribution by Class&quot;)
+plt.title(&quot;Homarine Gene Cluster Distribution by Class&quot;)
 plt.legend(bbox_to_anchor=(1.01, 1), loc=&#39;upper left&#39;, borderaxespad=0)
-plt.savefig(&quot;gene_cluster_by_class.pdf&quot;)
+plt.savefig(&quot;gene_cluster_by_class_canonicaly.pdf&quot;)
 plt.close()
 
 # === Plot 2: Gene Cluster by Order (log y-scale) ===
@@ -471,13 +497,12 @@ plt.figure(figsize=(20, 10), constrained_layout=True)
 sns.barplot(data=order_counts, x=&quot;gene_cluster&quot;, y=&quot;count&quot;, hue=&quot;order&quot;, dodge=False)
 plt.yscale(&quot;log&quot;)
 plt.xticks(rotation=90)
-plt.xlabel(&quot;Gene Cluster&quot;)
+plt.xlabel(&quot;Gene Cluster (hom)&quot;)
 plt.ylabel(&quot;Count (log scale)&quot;)
-plt.title(&quot;Gene Cluster Distribution by Order&quot;)
+plt.title(&quot;Homarine Gene Cluster Distribution by Order&quot;)
 plt.legend(bbox_to_anchor=(1.01, 1), loc=&#39;upper left&#39;, borderaxespad=0)
-plt.savefig(&quot;gene_cluster_by_order.pdf&quot;)
+plt.savefig(&quot;gene_cluster_by_order_canonicaly.pdf&quot;)
 plt.close()</code></pre>
-<p>```python</p>
 
 
 
