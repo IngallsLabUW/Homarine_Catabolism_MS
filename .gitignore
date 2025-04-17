@@ -1,5 +1,7 @@
 venv/*
 
+venv/*
+
 # Temp word docs
 ~$*
 
@@ -60,3 +62,7 @@ __pycache__/
 
 # all folders that end in .corems and their content
 *.corems/
+
+#this file is too big  
+data/intermediate/ncbi_metadata_biosample_info.csv
+data/intermediate/ncbi_metadata_biosample_info.csv

@@ -24,6 +24,7 @@ get_taxon_id <- function(name, taxon_level) {
 }
 
 # Function to get number of assemblies from NCBI Datasets API
+#https://www.ncbi.nlm.nih.gov/datasets/docs/v2/api/rest-api/#get-/genome/biosample/-biosample_ids-/dataset_report
 get_assemblies_count <- function(taxon_id) {
   url <- paste0("https://api.ncbi.nlm.nih.gov/datasets/v2alpha/taxonomy/taxon/", taxon_id)
   response <- GET(url)
