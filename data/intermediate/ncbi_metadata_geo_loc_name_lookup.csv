@@ -1,183 +1,183 @@
 geo_loc_name,n,lat,lon,
-Hong Kong: Wong Wan Chau,537,N 22¡ 30_ 47'',E 114¡ 18_ 39'',537
-Hong Kong: Ngo Mei Chau,261,N 22¡ 31_ 37'',E 114¡ 18_ 57'',798
-Hong Kong: Chek Chau,68,N 22¡ 30_ 0'',E 114¡ 21_ 31'',866
-"USA:California, Leo Carillo",57,,,923
-China,28,,,951
-South Korea,27,N 36¡ 30_ 0'',E 127¡ 45_ 0'',978
-Ireland: Lough Hyne,25,N 51¡ 30_ 3'',W 9¡ 18_ 15'',1003
-"USA:California, Channel Islands",24,N 32¡ 49_ 0'',W 118¡ 27_ 3'',1027
-Hong Kong: Kiu Tsui Chau,21,N 22¡ 21_ 53'',E 114¡ 17_ 38'',1048
-Greece,19,N 39¡ 0_ 0'',E 22¡ 0_ 0'',1067
-Atlantic Ocean,17,N 10¡ 0_ 0'',W 25¡ 0_ 0'',1084
-Denmark,17,N 56¡ 0_ 0'',E 10¡ 0_ 0'',1101
-China:Tibet,15,N 33¡ 12_ 40'',E 86¡ 7_ 58'',1116
-USA,15,N 39¡ 45_ 36'',W 98¡ 30_ 0'',1131
-China:Jiangxi,14,N 27¡ 40_ 0'',E 115¡ 40_ 0'',1145
-NA,12,,,1157
 Antarctica,11,,,1168
-Arctic Ocean,11,N 85¡ 0_ 0'',E 0¡ 0_ 0'',1179
-Pacific Ocean,11,N 3¡ 30_ 48'',W 132¡ 11_ 15'',1190
-USA: Massachusetts,11,N 42¡ 21_ 56'',W 71¡ 6_ 29'',1201
-Brazil: Rio de Janeiro,10,S 22¡ 54_ 23'',W 43¡ 10_ 56'',1211
-Indian Ocean,10,S 10¡ 0_ 0'',E 70¡ 0_ 0'',1221
-Germany,9,N 51¡ 30_ 0'',E 10¡ 30_ 0'',1230
-Norway,9,N 62¡ 0_ 0'',E 10¡ 0_ 0'',1239
-"Antarctica: Terra Nova Bay, Victoria Land",8,S 74¡ 50_ 0'',E 164¡ 30_ 0'',1247
-China: Weihai,8,N 37¡ 30_ 32'',E 122¡ 6_ 48'',1255
-Saudi Arabia: Red Sea,8,N 20¡ 16_ 2'',E 38¡ 32_ 4'',1263
-"USA: Massachusetts, Nahant, Canoe Cove",8,,,1271
-"USA:California, Camp Pendleton",8,N 33¡ 18_ 4'',W 117¡ 21_ 18'',1279
-Peru: Oxygen minimum zone,7,,,1286
-Spain,7,N 40¡ 0_ 0'',W 4¡ 0_ 0'',1293
-"USA:California, Arroyo Quemado",7,N 34¡ 28_ 12'',W 120¡ 7_ 8'',1300
-China:Guangxi,6,N 24¡ 0_ 0'',E 109¡ 0_ 0'',1306
-China:Hangzhou,6,N 30¡ 0_ 0'',E 119¡ 36_ 0'',1312
-NULL,6,,,1318
-USA: New York,6,N 43¡ 0_ 1'',W 75¡ 29_ 59'',1324
-"USA: Rutgers, NJ",6,N 40¡ 29_ 17'',W 74¡ 24_ 38'',1330
-Australia: Torrens River,5,S 34¡ 56_ 0'',E 138¡ 30_ 0'',1335
-China: Guangxi,5,N 24¡ 0_ 0'',E 109¡ 0_ 0'',1340
-China: seagrass sediment of the South China Sea,5,,,1345
-China:Weihai,5,N 37¡ 30_ 32'',E 122¡ 6_ 48'',1350
-China:Xinjiang,5,N 41¡ 30_ 0'',E 85¡ 30_ 0'',1355
-Mediterranean Sea,5,N 35¡ 0_ 0'',E 20¡ 0_ 0'',1360
-Pacific Ocean: South Pacific Ocean,5,S 45¡ 0_ 0'',W 130¡ 0_ 0'',1365
-"USA: Massachusetts, Nahant, Canoe Beach",5,,,1370
-"USA: Maunalua Bay, Oahu, Hawaii",5,N 21¡ 16_ 20'',W 157¡ 43_ 44'',1375
+Antarctica: Larsemann Hills,2,S 69ï¿½ 24_ 0'',E 76ï¿½ 13_ 0'',1511
+"Antarctica: Terra Nova Bay, Victoria Land",8,S 74ï¿½ 50_ 0'',E 164ï¿½ 30_ 0'',1247
+Arctic Ocean,11,N 85ï¿½ 0_ 0'',E 0ï¿½ 0_ 0'',1179
+Arctic Ocean: Canadian Basin,2,N 85ï¿½ 0_ 0'',E 0ï¿½ 0_ 0'',1513
+Atlantic Ocean,17,N 10ï¿½ 0_ 0'',W 25ï¿½ 0_ 0'',1084
+Atlantic Ocean: North Pond,1,,,1640
+Atlantic Ocean: South Atlantic Ocean,1,S 45ï¿½ 0_ 0'',W 15ï¿½ 0_ 0'',1641
 Australia,4,,,1379
-"China: Fujian, Xiamen",4,N 24¡ 28_ 47'',E 118¡ 4_ 54'',1383
-China: Linyi,4,N 35¡ 3_ 47'',E 118¡ 20_ 34'',1387
-"China: Shantou, Guangdong",4,N 23¡ 21_ 17'',E 116¡ 40_ 43'',1391
-China: coastal region of Qingdao,4,N 36¡ 3_ 53'',E 120¡ 22_ 49'',1395
-"Ethiopia: Tigray, West Tigray",4,N 13¡ 51_ 24'',E 37¡ 6_ 25'',1399
-France: Saint Malo,4,N 48¡ 38_ 50'',W 2¡ 0_ 31'',1403
-France: Vosges mountain,4,,,1407
-"Japan:Hyogo, Harima Bay",4,N 35¡ 2_ 0'',E 134¡ 49_ 0'',1411
-Malaysia,4,N 2¡ 30_ 0'',E 112¡ 30_ 0'',1415
-Russia:Uryupinsk,4,N 50¡ 48_ 21'',E 42¡ 0_ 33'',1419
-South Korea: Incheon,4,N 37¡ 27_ 23'',E 126¡ 42_ 18'',1423
-South Korea: the southern coast in Korea,4,,,1427
-South Korea:Namhae-gun,4,N 34¡ 48_ 15'',E 127¡ 55_ 37'',1431
-South Korea:Taean-gun,4,N 36¡ 42_ 1'',E 126¡ 17_ 2'',1435
-"Spain:Murcia,Rambla Salada",4,N 38¡ 7_ 0'',W 1¡ 7_ 0'',1439
-Taiwan,4,N 24¡ 0_ 0'',E 121¡ 0_ 0'',1443
-Turkey,4,,,1447
-Turkey:Bandirma,4,N 40¡ 21_ 8'',E 27¡ 58_ 36'',1451
-"USA: Oak Ridge, TN",4,N 35¡ 57_ 50'',W 84¡ 17_ 37'',1455
-USA: Rhode Island,4,N 41¡ 45_ 1'',W 71¡ 29_ 59'',1459
-"USA: Tennessee, Oak Ridge Field Research Center",4,N 35¡ 57_ 50'',W 84¡ 17_ 37'',1463
-USA:California,4,N 37¡ 15_ 0'',W 119¡ 45_ 4'',1467
+"Australia: Port Phillip Bay, Heron Island and Pacific Ocean, Munida Microbial Observatory Time Series",1,S 38ï¿½ 3_ 39'',E 144ï¿½ 51_ 12'',1642
+Australia: Torrens River,5,S 34ï¿½ 56_ 0'',E 138ï¿½ 30_ 0'',1335
+Belgium,2,N 50ï¿½ 45_ 0'',E 4ï¿½ 30_ 0'',1515
+Brazil,2,S 10ï¿½ 0_ 0'',W 55ï¿½ 0_ 0'',1517
+Brazil: Rio de Janeiro,10,S 22ï¿½ 54_ 23'',W 43ï¿½ 10_ 56'',1211
+Brazil: Sao Paulo,2,S 23ï¿½ 32_ 51'',W 46ï¿½ 38_ 10'',1519
+Canada,2,N 60ï¿½ 6_ 31'',W 113ï¿½ 38_ 33'',1521
+Canada: Alberta,1,N 52ï¿½ 17_ 0'',W 117ï¿½ 28_ 8'',1643
+China,28,,,951
+China: Beijing,1,N 39ï¿½ 54_ 27'',E 116ï¿½ 23_ 50'',1644
+China: Bohai Gulf,1,N 38ï¿½ 52_ 26'',E 119ï¿½ 48_ 21'',1645
+China: Bohai Sea,1,N 38ï¿½ 52_ 26'',E 119ï¿½ 48_ 21'',1646
+China: coastal region of Qingdao,4,N 36ï¿½ 3_ 53'',E 120ï¿½ 22_ 49'',1395
+China: East China Sea,2,N 29ï¿½ 0_ 0'',E 125ï¿½ 0_ 0'',1523
+China: eastern marginal seas,1,,,1651
+China: Fu Zhou,2,N 26ï¿½ 3_ 41'',E 119ï¿½ 18_ 22'',1525
+"China: Fujian, Xiamen",4,N 24ï¿½ 28_ 47'',E 118ï¿½ 4_ 54'',1383
+"China: Guangdong, Zhanjiang",2,N 21ï¿½ 14_ 2'',E 110ï¿½ 23_ 15'',1527
+China: Guangxi,5,N 24ï¿½ 0_ 0'',E 109ï¿½ 0_ 0'',1340
+"China: Guangxi, Beihai",2,N 21ï¿½ 29_ 0'',E 109ï¿½ 6_ 55'',1529
+"China: Hainan, Wenchang",2,N 19ï¿½ 33_ 5'',E 110ï¿½ 48_ 10'',1531
 "China: Haizhou Bay Resort, Haitou Town, Ganyu District, Lianyungang City, Jiangsu Province",3,,,1470
-China: Shenzhen,3,N 22¡ 32_ 43'',E 114¡ 4_ 5'',1473
-China:Black Soil,3,,,1476
-"Colombia: Manaure Solar Salter, La Guajira",3,,,1479
-France,3,N 46¡ 0_ 0'',E 2¡ 0_ 0'',1482
-Korea,3,,,1485
-Not Collected,3,,,1488
-South Korea: East Sea,3,,,1491
-"South Korea: South Sea, Boseong area",3,,,1494
-South Korea: Yellow sea,3,N 36¡ 0_ 0'',E 124¡ 0_ 0'',1497
-South Korea: Yeongjong-do,3,,,1500
-Taiwan: Kueishan Island,3,N 24¡ 50_ 31'',E 121¡ 57_ 7'',1503
-USA: Chattahoochee River,3,N 30¡ 42_ 31'',W 84¡ 51_ 49'',1506
-USA: San Diego,3,N 32¡ 42_ 56'',W 117¡ 9_ 53'',1509
-Antarctica: Larsemann Hills,2,S 69¡ 24_ 0'',E 76¡ 13_ 0'',1511
-Arctic Ocean: Canadian Basin,2,N 85¡ 0_ 0'',E 0¡ 0_ 0'',1513
-Belgium,2,N 50¡ 45_ 0'',E 4¡ 30_ 0'',1515
-Brazil,2,S 10¡ 0_ 0'',W 55¡ 0_ 0'',1517
-Brazil: Sao Paulo,2,S 23¡ 32_ 51'',W 46¡ 38_ 10'',1519
-Canada,2,N 60¡ 6_ 31'',W 113¡ 38_ 33'',1521
-China: East China Sea,2,N 29¡ 0_ 0'',E 125¡ 0_ 0'',1523
-China: Fu Zhou,2,N 26¡ 3_ 41'',E 119¡ 18_ 22'',1525
-"China: Guangdong, Zhanjiang",2,N 21¡ 14_ 2'',E 110¡ 23_ 15'',1527
-"China: Guangxi, Beihai",2,N 21¡ 29_ 0'',E 109¡ 6_ 55'',1529
-"China: Hainan, Wenchang",2,N 19¡ 33_ 5'',E 110¡ 48_ 10'',1531
-China: Hong Kong SAR,2,N 22¡ 15_ 0'',E 114¡ 10_ 0'',1533
-"China: Jiangsu Province, Yancheng City",2,N 33¡ 21_ 27'',E 120¡ 9_ 26'',1535
-China: Jilin,2,N 43¡ 50_ 47'',E 126¡ 33_ 38'',1537
-China: Kunshan,2,N 31¡ 22_ 39'',E 120¡ 57_ 15'',1539
-"China: Laizhou Bay, Bohai Sea",2,N 37¡ 18_ 38'',E 119¡ 21_ 36'',1541
-China: Nanjing,2,N 32¡ 3_ 42'',E 118¡ 46_ 40'',1543
+"China: Hebei, Qinhuangdao",1,N 39ï¿½ 56_ 27'',E 119ï¿½ 35_ 21'',1647
+China: Hong Kong SAR,2,N 22ï¿½ 15_ 0'',E 114ï¿½ 10_ 0'',1533
+China: Huizhou,1,N 23ï¿½ 6_ 41'',E 114ï¿½ 24_ 54'',1648
+"China: Jiangsu Province, Yancheng City",2,N 33ï¿½ 21_ 27'',E 120ï¿½ 9_ 26'',1535
+China: Jilin,2,N 43ï¿½ 50_ 47'',E 126ï¿½ 33_ 38'',1537
+China: Kunshan,2,N 31ï¿½ 22_ 39'',E 120ï¿½ 57_ 15'',1539
+"China: Laizhou Bay, Bohai Sea",2,N 37ï¿½ 18_ 38'',E 119ï¿½ 21_ 36'',1541
+China: Linyi,4,N 35ï¿½ 3_ 47'',E 118ï¿½ 20_ 34'',1387
+China: Nanjing,2,N 32ï¿½ 3_ 42'',E 118ï¿½ 46_ 40'',1543
 "China: North Linhai Port, Taizhou City, Zhejiang Province",2,,,1545
 "China: Port of Yangkou, Rudong County, Nantong City, Jiangsu Province",2,,,1547
-China: Qingdao,2,N 36¡ 3_ 53'',E 120¡ 22_ 49'',1549
-China: Shandong Province,2,N 36¡ 20_ 0'',E 118¡ 15_ 0'',1551
-China: Shanghai,2,N 31¡ 13_ 20'',E 121¡ 27_ 29'',1553
-China: South China Sea,2,N 15¡ 0_ 0'',E 115¡ 0_ 0'',1555
+China: Qingdao,2,N 36ï¿½ 3_ 53'',E 120ï¿½ 22_ 49'',1549
+China: seagrass sediment of the South China Sea,5,,,1345
+China: Shandong Province,2,N 36ï¿½ 20_ 0'',E 118ï¿½ 15_ 0'',1551
+China: Shanghai,2,N 31ï¿½ 13_ 20'',E 121ï¿½ 27_ 29'',1553
+"China: Shantou, Guangdong",4,N 23ï¿½ 21_ 17'',E 116ï¿½ 40_ 43'',1391
+China: Shanxi Province,1,N 37ï¿½ 40_ 0'',E 112ï¿½ 15_ 0'',1649
+China: Shenzhen,3,N 22ï¿½ 32_ 43'',E 114ï¿½ 4_ 5'',1473
+China: South China Sea,2,N 15ï¿½ 0_ 0'',E 115ï¿½ 0_ 0'',1555
+China: South China sea,1,N 15ï¿½ 0_ 0'',E 115ï¿½ 0_ 0'',1650
 China: The Jiulong River,2,,,1557
-China: Xiamen,2,N 24¡ 28_ 47'',E 118¡ 4_ 54',1559
-China: Yellow Sea,2,N 36¡ 0_ 0'',E 124¡ 0_ 0'',1561
-China:Bohai Sea,2,N 38¡ 52_ 26'',E 119¡ 48_ 21'',1563
-China:Chongqing,2,N 29¡ 33_ 36'',E 106¡ 33_ 27'',1565
-China:Heilongjiang,2,N 29¡ 33_ 36'',E 106¡ 33_ 27'',1567
-China:Inner Mongolia,2,N 43¡ 30_ 0'',E 114¡ 45_ 0'',1569
-"China:Shandong, Weihai",2,N 37¡ 30_ 32'',E 122¡ 6_ 48'',1571
-"China:Weifang, Shandong",2,N 36¡ 42_ 36'',E 119¡ 6_ 7'',1573
-Denmark: Hellerup,2,N 55¡ 43_ 55'',E 12¡ 34_ 15'',1575
-"Denmark: Kgs Lyngby, Dyrehaven",2,N 55¡ 40_ 6'',E 10¡ 55_ 54'',1577
-Germany: North Sea,2,N 55¡ 20_ 0'',E 3¡ 0_ 0'',1579
+China: wastewater treatment plant,1,,,1652
+China: Weihai,8,N 37ï¿½ 30_ 32'',E 122ï¿½ 6_ 48'',1255
+China: Xiamen,2,N 24ï¿½ 28_ 47'',E 118ï¿½ 4_ 54',1559
+China: Yellow Sea,2,N 36ï¿½ 0_ 0'',E 124ï¿½ 0_ 0'',1561
+China:Black Soil,3,,,1476
+China:Bohai Sea,2,N 38ï¿½ 52_ 26'',E 119ï¿½ 48_ 21'',1563
+China:Chongqing,2,N 29ï¿½ 33_ 36'',E 106ï¿½ 33_ 27'',1565
+China:Guangxi,6,N 24ï¿½ 0_ 0'',E 109ï¿½ 0_ 0'',1306
+China:Haikou,1,N 20ï¿½ 2_ 3'',E 110ï¿½ 20_ 47'',1653
+China:Hangzhou,6,N 30ï¿½ 0_ 0'',E 119ï¿½ 36_ 0'',1312
+China:Heilongjiang,2,N 29ï¿½ 33_ 36'',E 106ï¿½ 33_ 27'',1567
+China:Inner Mongolia,2,N 43ï¿½ 30_ 0'',E 114ï¿½ 45_ 0'',1569
+China:Jiangxi,14,N 27ï¿½ 40_ 0'',E 115ï¿½ 40_ 0'',1145
+China:Qingdao,1,N 36ï¿½ 3_ 53'',E 120ï¿½ 22_ 49'',1654
+"China:Shandong, Weihai",2,N 37ï¿½ 30_ 32'',E 122ï¿½ 6_ 48'',1571
+China:Tibet,15,N 33ï¿½ 12_ 40'',E 86ï¿½ 7_ 58'',1116
+"China:Weifang, Shandong",2,N 36ï¿½ 42_ 36'',E 119ï¿½ 6_ 7'',1573
+China:Weihai,5,N 37ï¿½ 30_ 32'',E 122ï¿½ 6_ 48'',1350
+China:Wuhan,1,N 30ï¿½ 35_ 0'',E 114ï¿½ 16_ 0'',1655
+China:Xinjiang,5,N 41ï¿½ 30_ 0'',E 85ï¿½ 30_ 0'',1355
+"Colombia: Manaure Solar Salter, La Guajira",3,,,1479
+Czech Republic,1,N 49ï¿½ 45_ 0'',E 15ï¿½ 0_ 0'',1656
+Denmark,17,N 56ï¿½ 0_ 0'',E 10ï¿½ 0_ 0'',1101
+Denmark: Hellerup,2,N 55ï¿½ 43_ 55'',E 12ï¿½ 34_ 15'',1575
+"Denmark: Kgs Lyngby, Dyrehaven",2,N 55ï¿½ 40_ 6'',E 10ï¿½ 55_ 54'',1577
+"Ethiopia: Tigray, West Tigray",4,N 13ï¿½ 51_ 24'',E 37ï¿½ 6_ 25'',1399
+France,3,N 46ï¿½ 0_ 0'',E 2ï¿½ 0_ 0'',1482
+France: Saint Malo,4,N 48ï¿½ 38_ 50'',W 2ï¿½ 0_ 31'',1403
+France: Vosges mountain,4,,,1407
+Germany,9,N 51ï¿½ 30_ 0'',E 10ï¿½ 30_ 0'',1230
+Germany: North Sea,2,N 55ï¿½ 20_ 0'',E 3ï¿½ 0_ 0'',1579
 Germany: River Elbe downstream from Hamburg habour,2,,,1581
-India,2,N 22¡ 0_ 0'',E 79¡ 0_ 0'',1583
-"India: Kakinada, Andhra",2,N 17¡ 7_ 8'',E 82¡ 11_ 24'',1585
-India: Odisha,2,N 20¡ 30_ 0'',E 84¡ 25_ 0'',1587
-India:Palampur,2,N 32¡ 9_ 28'',E 76¡ 31_ 46'',1589
+Germany: St. Peter Ording,1,N 54ï¿½ 18_ 13'',E 8ï¿½ 38_ 29'',1657
+Greece,19,N 39ï¿½ 0_ 0'',E 22ï¿½ 0_ 0'',1067
+Hong Kong: Chek Chau,68,N 22ï¿½ 30_ 0'',E 114ï¿½ 21_ 31'',866
+Hong Kong: Kiu Tsui Chau,21,N 22ï¿½ 21_ 53'',E 114ï¿½ 17_ 38'',1048
+Hong Kong: Ngo Mei Chau,261,N 22ï¿½ 31_ 37'',E 114ï¿½ 18_ 57'',798
+Hong Kong: Wong Wan Chau,537,N 22ï¿½ 30_ 47'',E 114ï¿½ 18_ 39'',537
+India,2,N 22ï¿½ 0_ 0'',E 79ï¿½ 0_ 0'',1583
+"India: Kakinada, Andhra",2,N 17ï¿½ 7_ 8'',E 82ï¿½ 11_ 24'',1585
+India: Lalkaun Village Uttarakhand,1,N 30ï¿½ 15_ 0'',E 79ï¿½ 15_ 0'',1658
+India: Odisha,2,N 20ï¿½ 30_ 0'',E 84ï¿½ 25_ 0'',1587
+India:Palampur,2,N 32ï¿½ 9_ 28'',E 76ï¿½ 31_ 46'',1589
+Indian Ocean,10,S 10ï¿½ 0_ 0'',E 70ï¿½ 0_ 0'',1221
 Indian Ocean: Eastern Africa Coastal Province,2,,,1591
-Japan: Tokyo Bay,2,N 35¡ 25_ 0'',E 139¡ 47_ 12'',1593
-Mexico: Cuatro Cienegas,2,N 26¡ 59_ 7'',W 102¡ 3_ 49'',1595
-Peru,2,S 10¡ 0_ 0'',W 75¡ 15_ 0'',1597
-Portugal:Praia da Memoria,2,N 41¡ 13_ 53'',W 8¡ 43_ 21'',1599
+Iran: East Azerbaijan,1,N 38ï¿½ 0_ 0'',E 46ï¿½ 45_ 0'',1659
+Iran: Salmas,1,N 38ï¿½ 11_ 50'',E 44ï¿½ 45_ 55'',1660
+Iran: Shiraz,1,N 29ï¿½ 36_ 37'',E 52ï¿½ 31_ 52'',1661
+Ireland,1,N 53ï¿½ 0_ 0'',W 8ï¿½ 0_ 0'',1662
+Ireland: Lough Hyne,25,N 51ï¿½ 30_ 3'',W 9ï¿½ 18_ 15'',1003
+Japan,1,N 35ï¿½ 41_ 7'',E 139ï¿½ 45_ 11'',1663
+Japan: Tokyo Bay,2,N 35ï¿½ 25_ 0'',E 139ï¿½ 47_ 12'',1593
+"Japan:Hyogo, Harima Bay",4,N 35ï¿½ 2_ 0'',E 134ï¿½ 49_ 0'',1411
+Korea,3,,,1485
+Malaysia,4,N 2ï¿½ 30_ 0'',E 112ï¿½ 30_ 0'',1415
+Mediterranean Sea,5,N 35ï¿½ 0_ 0'',E 20ï¿½ 0_ 0'',1360
+Mexico: Cuatro Cienegas,2,N 26ï¿½ 59_ 7'',W 102ï¿½ 3_ 49'',1595
+NA,12,,,1157
+Norway,9,N 62ï¿½ 0_ 0'',E 10ï¿½ 0_ 0'',1239
+Not Collected,3,,,1488
+not collected,2,,,1639
+NULL,6,,,1318
+Pacific Ocean,11,N 3ï¿½ 30_ 48'',W 132ï¿½ 11_ 15'',1190
+Pacific Ocean: South Pacific Gyre,1,S 45ï¿½ 0_ 0'',W 130ï¿½ 0_ 0'',1664
+Pacific Ocean: South Pacific Ocean,5,S 45ï¿½ 0_ 0'',W 130ï¿½ 0_ 0'',1365
+Pacific Ocean:Eastern Tropical North Pacific ODZ,1,,,1665
+Peru,2,,,1597
+Peru: Oxygen minimum zone,7,,,1286
+Portugal: Algarve,1,N 37ï¿½ 5_ 1'',W 8ï¿½ 14_ 56'',1666
+Portugal:Praia da Memoria,2,N 41ï¿½ 13_ 53'',W 8ï¿½ 43_ 21'',1599
 Puerto Rico: near crystallizers from saltern,2,,,1601
+"Russia: Bashkortostan, Ufa",1,N 54ï¿½ 44_ 35'',E 55ï¿½ 58_ 4'',1667
+Russia: The Sea of Japan,1,N 43ï¿½ 30_ 0'',E 135ï¿½ 45_ 0'',1668
+Russia:Uryupinsk,4,N 50ï¿½ 48_ 21'',E 42ï¿½ 0_ 33'',1419
+"Saudi Arabia: Dawhat al-Musallamiya, Jubail",1,N 27ï¿½ 1_ 2'',E 49ï¿½ 37_ 21'',1669
+Saudi Arabia: Red Sea,8,N 20ï¿½ 16_ 2'',E 38ï¿½ 32_ 4'',1263
 Saudi Arabia: Red Sea coast,2,,,1603
+South Korea,27,N 36ï¿½ 30_ 0'',E 127ï¿½ 45_ 0'',978
 South Korea: Boryung,2,,,1605
-South Korea: Gunsan,2,N 35¡ 58_ 43'',E 126¡ 42_ 41'',1607
-South Korea: Suncheon-si,2,N 34¡ 58_ 17'',E 127¡ 27_ 39'',1609
+South Korea: East Sea,3,,,1491
+South Korea: Gunsan,2,N 35ï¿½ 58_ 43'',E 126ï¿½ 42_ 41'',1607
+South Korea: Incheon,4,N 37ï¿½ 27_ 23'',E 126ï¿½ 42_ 18'',1423
+South Korea: Oido,1,N 37ï¿½ 20_ 24'',E 126ï¿½ 41_ 34'',1670
+"South Korea: South Sea, Boseong area",3,,,1494
+South Korea: Suncheon-si,2,N 34ï¿½ 58_ 17'',E 127ï¿½ 27_ 39'',1609
+South Korea: Taean beach,1,,,1671
 South Korea: Taean coastal area,2,,,1611
-South Korea: Wanju,2,N 35¡ 50_ 42'',E 127¡ 8_ 51'',1613
+South Korea: the southern coast in Korea,4,,,1427
+South Korea: Uljin County,1,N 36ï¿½ 55_ 10'',E 129ï¿½ 19_ 10'',1672
+South Korea: Wanju,2,N 35ï¿½ 50_ 42'',E 127ï¿½ 8_ 51'',1613
+South Korea: Yellow sea,3,N 36ï¿½ 0_ 0'',E 124ï¿½ 0_ 0'',1497
+South Korea: Yeongjong-do,3,,,1500
 South Korea:East Sea,2,,,1615
 "South Korea:Gangwha Island, Incheon",2,,,1617
-Spain:Gava,2,N 41¡ 18_ 21'',E 2¡ 0_ 4'',1619
-Svalbard:Spitsbergen,2,N 78¡ 3_ 10'',E 17¡ 42_ 35'',1621
-"Taiwan: Keelung, National Taiwan Ocean University",2,N 25¡ 8_ 58'',E 121¡ 46_ 25'',1623
-Turkey:Istanbul,2,N 41¡ 0_ 49'',E 28¡ 56_ 58'',1625
-"USA: Aiken, SC",2,N 33¡ 33_ 37'',W 81¡ 43_ 10'',1627
-USA: GA,2,N 32¡ 45_ 1'',W 83¡ 30_ 0'',1629
-"USA: Georgia, Sapelo Island",2,N 31¡ 28_ 38'',W 81¡ 14_ 30'',1631
-USA: HI,2,N 20¡ 47_ 16'',W 156¡ 23_ 10'',1633
-"USA: Meadowbrook Park, Urbana, IL",2,N 40¡ 4_ 54'',W 88¡ 12_ 20'',1635
-USA:CA,2,N 37¡ 15_ 0'',W 119¡ 45_ 4'',1637
-not collected,2,,,1639
-Atlantic Ocean: North Pond,1,,,1640
-Atlantic Ocean: South Atlantic Ocean,1,S 45¡ 0_ 0'',W 15¡ 0_ 0'',1641
-"Australia: Port Phillip Bay, Heron Island and Pacific Ocean, Munida Microbial Observatory Time Series",1,S 38¡ 3_ 39'',E 144¡ 51_ 12'',1642
-Canada: Alberta,1,N 52¡ 17_ 0'',W 117¡ 28_ 8'',1643
-China: Beijing,1,N 39¡ 54_ 27'',E 116¡ 23_ 50'',1644
-China: Bohai Gulf,1,N 38¡ 52_ 26'',E 119¡ 48_ 21'',1645
-China: Bohai Sea,1,N 38¡ 52_ 26'',E 119¡ 48_ 21'',1646
-"China: Hebei, Qinhuangdao",1,N 39¡ 56_ 27'',E 119¡ 35_ 21'',1647
-China: Huizhou,1,N 23¡ 6_ 41'',E 114¡ 24_ 54'',1648
-China: Shanxi Province,1,N 37¡ 40_ 0'',E 112¡ 15_ 0'',1649
-China: South China sea,1,N 15¡ 0_ 0'',E 115¡ 0_ 0'',1650
-China: eastern marginal seas,1,,,1651
-China: wastewater treatment plant,1,,,1652
-China:Haikou,1,N 20¡ 2_ 3'',E 110¡ 20_ 47'',1653
-China:Qingdao,1,N 36¡ 3_ 53'',E 120¡ 22_ 49'',1654
-China:Wuhan,1,N 30¡ 35_ 0'',E 114¡ 16_ 0'',1655
-Czech Republic,1,N 49¡ 45_ 0'',E 15¡ 0_ 0'',1656
-Germany: St. Peter Ording,1,N 54¡ 18_ 13'',E 8¡ 38_ 29'',1657
-India: Lalkaun Village Uttarakhand,1,N 30¡ 15_ 0'',E 79¡ 15_ 0'',1658
-Iran: East Azerbaijan,1,N 38¡ 0_ 0'',E 46¡ 45_ 0'',1659
-Iran: Salmas,1,N 38¡ 11_ 50'',E 44¡ 45_ 55'',1660
-Iran: Shiraz,1,N 29¡ 36_ 37'',E 52¡ 31_ 52'',1661
-Ireland,1,N 53¡ 0_ 0'',W 8¡ 0_ 0'',1662
-Japan,1,N 35¡ 41_ 7'',E 139¡ 45_ 11'',1663
-Pacific Ocean: South Pacific Gyre,1,S 45¡ 0_ 0'',W 130¡ 0_ 0'',1664
-Pacific Ocean:Eastern Tropical North Pacific ODZ,1,,,1665
-Portugal: Algarve,1,N 37¡ 5_ 1'',W 8¡ 14_ 56'',1666
-"Russia: Bashkortostan, Ufa",1,N 54¡ 44_ 35'',E 55¡ 58_ 4'',1667
-Russia: The Sea of Japan,1,N 43¡ 30_ 0'',E 135¡ 45_ 0'',1668
-"Saudi Arabia: Dawhat al-Musallamiya, Jubail",1,N 27¡ 1_ 2'',E 49¡ 37_ 21'',1669
-South Korea: Oido,1,N 37¡ 20_ 24'',E 126¡ 41_ 34'',1670
-South Korea: Taean beach,1,,,1671
-South Korea: Uljin County,1,N 36¡ 55_ 10'',E 129¡ 19_ 10'',1672
-United Kingdom: University of Surrey,1,N 51¡ 14_ 33'',W 0¡ 35_ 22'',1673
+South Korea:Namhae-gun,4,N 34ï¿½ 48_ 15'',E 127ï¿½ 55_ 37'',1431
+South Korea:Taean-gun,4,N 36ï¿½ 42_ 1'',E 126ï¿½ 17_ 2'',1435
+Spain,7,,,1293
+Spain:Gava,2,N 41ï¿½ 18_ 21'',E 2ï¿½ 0_ 4'',1619
+"Spain:Murcia,Rambla Salada",4,N 38ï¿½ 7_ 0'',W 1ï¿½ 7_ 0'',1439
+Svalbard:Spitsbergen,2,N 78ï¿½ 3_ 10'',E 17ï¿½ 42_ 35'',1621
+Taiwan,4,N 24ï¿½ 0_ 0'',E 121ï¿½ 0_ 0'',1443
+"Taiwan: Keelung, National Taiwan Ocean University",2,N 25ï¿½ 8_ 58'',E 121ï¿½ 46_ 25'',1623
+Taiwan: Kueishan Island,3,N 24ï¿½ 50_ 31'',E 121ï¿½ 57_ 7'',1503
+Turkey,4,,,1447
+Turkey:Bandirma,4,N 40ï¿½ 21_ 8'',E 27ï¿½ 58_ 36'',1451
+Turkey:Istanbul,2,N 41ï¿½ 0_ 49'',E 28ï¿½ 56_ 58'',1625
+United Kingdom: University of Surrey,1,N 51ï¿½ 14_ 33'',W 0ï¿½ 35_ 22'',1673
+USA,15,,,1131
+"USA: Aiken, SC",2,N 33ï¿½ 33_ 37'',W 81ï¿½ 43_ 10'',1627
+USA: Chattahoochee River,3,N 30ï¿½ 42_ 31'',W 84ï¿½ 51_ 49'',1506
+USA: GA,2,N 32ï¿½ 45_ 1'',W 83ï¿½ 30_ 0'',1629
+"USA: Georgia, Sapelo Island",2,N 31ï¿½ 28_ 38'',W 81ï¿½ 14_ 30'',1631
+USA: HI,2,N 20ï¿½ 47_ 16'',W 156ï¿½ 23_ 10'',1633
+USA: Massachusetts,11,N 42ï¿½ 21_ 56'',W 71ï¿½ 6_ 29'',1201
+"USA: Massachusetts, Nahant, Canoe Beach",5,,,1370
+"USA: Massachusetts, Nahant, Canoe Cove",8,,,1271
+"USA: Maunalua Bay, Oahu, Hawaii",5,N 21ï¿½ 16_ 20'',W 157ï¿½ 43_ 44'',1375
+"USA: Meadowbrook Park, Urbana, IL",2,N 40ï¿½ 4_ 54'',W 88ï¿½ 12_ 20'',1635
+USA: New York,6,N 43ï¿½ 0_ 1'',W 75ï¿½ 29_ 59'',1324
+"USA: Oak Ridge, TN",4,N 35ï¿½ 57_ 50'',W 84ï¿½ 17_ 37'',1455
+USA: Rhode Island,4,N 41ï¿½ 45_ 1'',W 71ï¿½ 29_ 59'',1459
+"USA: Rutgers, NJ",6,N 40ï¿½ 29_ 17'',W 74ï¿½ 24_ 38'',1330
+USA: San Diego,3,N 32ï¿½ 42_ 56'',W 117ï¿½ 9_ 53'',1509
+"USA: Tennessee, Oak Ridge Field Research Center",4,N 35ï¿½ 57_ 50'',W 84ï¿½ 17_ 37'',1463
+USA:CA,2,N 37ï¿½ 15_ 0'',W 119ï¿½ 45_ 4'',1637
+USA:California,4,N 37ï¿½ 15_ 0'',W 119ï¿½ 45_ 4'',1467
+"USA:California, Arroyo Quemado",7,N 34ï¿½ 28_ 12'',W 120ï¿½ 7_ 8'',1300
+"USA:California, Camp Pendleton",8,N 33ï¿½ 18_ 4'',W 117ï¿½ 21_ 18'',1279
+"USA:California, Channel Islands",24,N 32ï¿½ 49_ 0'',W 118ï¿½ 27_ 3'',1027
+"USA:California, Leo Carillo",57,,,923
