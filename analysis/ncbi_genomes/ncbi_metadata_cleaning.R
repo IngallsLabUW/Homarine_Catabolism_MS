@@ -71,8 +71,10 @@ geo_loc_lookup <- geo_loc_lookup %>%
 ## Read in metadata that was queried from NCBI from Frank
 dat <- read_csv(here("data", "intermediate", "ncbi_metadata_biosample_info.csv"),
   show_col_types = FALSE
-) %>%
+) %>% bind_rows(read_csv(here("data", "intermediate", "ncbi_metadata_biosample_info_missing_assemblies.csv"),
+                         show_col_types = FALSE))  %>%
     mutate(isolation_source = tolower(isolation_source))
+
 
 ## Read in genomes from Oscar that have been identified with the "full homarine operon"
 genomes_oi <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "complete_homarine_catabolic_operons_second_round_genome_metadata_and_taxonomy.tsv"), delim = "\t",
@@ -87,9 +89,9 @@ dat <- dat %>%
     distinct()
 
 # print warning if there are any biosample_ids in genomes_oi that are not in dat
-if (any(!genomes_oi$biosample_id %in% dat$biosample_id)) {
-  warning("There are biosample_ids in genomes_oi that are not in dat!")
-    missing_biosample_ids <- genomes_oi %>%
+if (any(!genomes_oi$assembly_accession %in% dat$assembly_accession)) {
+  warning("There are assemblies that are not in the metadata dat!")
+    missing_samples <- genomes_oi %>%
         filter(!assembly_accession %in% dat$assembly_accession) %>%
         select(biosample_id, assembly_accession, ncbi.taxid) %>%
         distinct()
@@ -201,7 +203,8 @@ dat2 <- dat %>%
         iso_source_mapped %>%
             select(isolation_source, isolation_source_mapped, environmental_source_mapped),
         by = "isolation_source"
-    )
+    ) %>%
+    mutate(notes = NA_character_)
 
 # Map bioproject to categories ----
 ## Read in bioproject lookup table -----
@@ -209,15 +212,16 @@ bioproject_lookup <- read_csv(here("data",
                                    "intermediate",
                                    "ncbi_genome_counts",
                                    "ncbi_bioproject_lookup.csv"),
-                              show_col_types = FALSE)
+                              show_col_types = FALSE) %>%
+    mutate(notes = "isolation source derived from bioproject information")
 
 # update records with bioproject-level annotations of interest
-dat2 <- dat2 %>%
-    rows_patch(bioproject_lookup, by = "bioproject_accession")
+dat2b <- dat2 %>%
+    rows_update(bioproject_lookup, by = "bioproject_accession") 
   
 # Add lat_lon for environmental samples -----
 ## Generate lat lon lookup table -----
-lat_lon_lookup <- dat2 %>%
+lat_lon_lookup <- dat2b %>%
   select(lat_lon) %>%
   filter(!is.na(lat_lon)) %>%
   filter(str_detect(lat_lon, " N| S| W| E")) %>%
@@ -232,12 +236,11 @@ for (i in 1:nrow(lat_lon_lookup)) {
 }
 
 ## Apply lat lon lookup  -----
-dat3 <- dat2 %>%
+dat3 <- dat2b %>%
   left_join(lat_lon_lookup, by = "lat_lon")
 
 ## Use and apply `geographic location (latitude)`, `geographic location (longitude)`
 # if lat_lon is missing
-# Go from ~30% coverage to 37% coverage
 dat3 <- dat3 %>%
   mutate(lat = case_when(
     !is.na(lat) ~ lat,
@@ -269,9 +272,7 @@ dat3_no_lat_lon <- dat3 %>%
     select(-lat, -lon) %>%
     left_join(geo_loc_lookup, by = "geo_loc_name")
 
-#TODO: Check if the marine samples are over the ocean
-
-# nearly 80% coverage for lat lon!
+# over 50% coverage for lat/lon
 dat4 <- dat3 %>%
     filter(!is.na(lat) | !is.na(lon)) %>%
     bind_rows(dat3_no_lat_lon)
@@ -283,9 +284,22 @@ dat5 <- dat4 %>%
          `geographic location (latitude)`, `geographic location (longitude)`,
          lat_lon,
          isolation_source_mapped, environmental_source_mapped,
-         lat, lon, location_qual
+         lat, lon, location_qual, notes
          )  %>%
-    distinct()
+    distinct() %>%
+    # combine location_qual and notes into notes column, separated by ;
+    mutate(
+        notes = if_else(
+            is.na(location_qual),
+            notes,
+            if_else(
+                is.na(notes),
+                location_qual,
+                paste(location_qual, notes, sep = "; ")
+            )
+        )
+    ) %>%
+    select(-location_qual)
 
 ## Summarize data -----
 dat_summary <- dat5 %>%
@@ -297,5 +311,5 @@ dat_summary <- dat5 %>%
 
 
 # Save the data -----
-write_csv(dat4, here("data", "intermediate", "ncbi_metadata_clean.csv"))
+write_csv(dat5, here("data", "intermediate", "ncbi_metadata_clean.csv"))
 write_csv(dat_summary, here("data", "intermediate", "ncbi_metadata_summary.csv"))

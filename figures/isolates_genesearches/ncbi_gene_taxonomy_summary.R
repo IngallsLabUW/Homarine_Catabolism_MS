@@ -1,0 +1,102 @@
+# Load required libraries ----
+library(here)
+library(tidyverse)
+library(ggplot2)
+library(janitor)
+
+closest_distance <- function (start_x, end_x, start_y, end_y) {
+
+    # Calculate the distance between the start and end of x and y
+    distance_start = abs(start_x - start_y)
+    distance_end = abs(end_x - start_y)
+    distance_start_end = abs(start_x - end_y)
+    distance_end_start = abs(end_x - start_y)
+    
+    # Return the minimum distance
+    return(min(distance_start, distance_end, distance_start_end, distance_end_start))
+}
+
+# Load the data from Oscar of ncbi genomes with full pathway and assocaited taxonomy
+dat <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "complete_homarine_catabolic_operons_second_round_genome_metadata_and_taxonomy.tsv"), delim = "\t",
+                         show_col_types = FALSE) %>%
+    clean_names()
+
+# Filter the data to only keep one nucleotide_accession per assembly
+dat2 <- dat %>%
+    group_by(assembly) %>%
+    filter(nucleotide_accession == first(nucleotide_accession)) %>%
+    ungroup() 
+
+# Clean up data for next steps
+dat3 <- dat2 %>%
+    select(assembly, nucleotide_accession, gene_name, start, end, gene_length, 
+           group_name, kingdom, phylum, class, order, family, genus, species) %>%
+    filter(!gene_name %in% c("BCCT"))
+
+# Calculate the distance from homA for each nucleotide_accession
+dat4 <- dat3 %>%
+    group_by(nucleotide_accession) %>%
+    mutate(start_homA = start[gene_name == "homA"],
+           end_homA = end[gene_name == "homA"]) %>%
+    ungroup() %>%
+    mutate(distance_from_homA = NA)
+for (i in 1:nrow(dat4)) {
+    # Calculate the distance from homA for each gene
+    dat4$distance_from_homA[i] <- closest_distance(dat4$start[i], dat4$end[i], dat4$start_homA[i], dat4$end_homA[i])
+}
+
+# Pull out just the alphas and gammas, factor the order level by the number of genomes with > 10 count of assembly, all other as "other"
+dat5 <- dat4 %>%
+    filter(class %in% c("Alphaproteobacteria", "Gammaproteobacteria")) %>%
+    group_by(order) %>%
+    mutate(count = n_distinct(assembly)) %>%
+    ungroup() %>%
+    mutate(grouped_order = case_when(
+        is.na(order) ~ "All others",
+        count >119 ~ order,
+        TRUE ~ "All others")) %>%
+    mutate(grouped_order = factor(grouped_order, levels = c(unique(order), "All others"))) %>%
+    filter(gene_name != "homA") %>%
+    filter(distance_from_homA < 10000) 
+
+dat_count <- dat5 %>%
+    group_by(grouped_order) %>%
+    summarise(count = n_distinct(assembly)) %>%
+    ungroup() %>%
+    arrange(desc(count))
+
+counts <- dat5 %>%
+    group_by(class, grouped_order) %>%
+    summarise(n = n()) %>%
+    ungroup() 
+
+labels <- counts %>%
+    # first add gamma or alpha symbol after order name, then add count
+    mutate(label = case_when(
+        grouped_order == "All others" ~ paste0("All others\n(n = ", n, ")"),
+        class == "Alphaproteobacteria" ~ paste0(grouped_order, "\n(α, n = ", n, ")"),
+        class == "Gammaproteobacteria" ~ paste0(grouped_order, "\n(γ, n = ", n, ")"))) %>%
+    select(grouped_order, label) %>%
+    deframe()
+
+# Plot box plot, with x-axis is gene_name, y-axis is distance_from_homA, and facet is group_name
+g <- ggplot(dat5 %>%
+                filter(class %in%
+                           c("Alphaproteobacteria",
+                             "Gammaproteobacteria")), 
+            aes(x = gene_name, y = distance_from_homA)) +
+    geom_boxplot(outliers = TRUE, outlier.size = 0.5) +
+    facet_wrap(~ grouped_order, ncol = 5, labeller = labeller(grouped_order = labels)) +
+    # Add count as n = n() to each facet title
+    theme_bw() +
+    labs(y = "Distance from homA (bp)") +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 7),
+          axis.text.y = element_text(size = 7),
+          axis.title.y = element_text(size = 7),
+          axis.title.x = element_blank(),
+          strip.background = element_rect(fill = "lightgrey"),
+          strip.text = element_text(size = 7),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          legend.position = "none") 
+

@@ -138,11 +138,11 @@ genomes_oi <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "com
     rename(assembly_accession = Assembly,
            biosample_id = BioSample)
 
-biosample_data <- biosample_data %>%
+biosample_data_sub <- biosample_data %>%
     filter(assembly_accession %in% genomes_oi$assembly_accession) 
 
 # Save the output ----
-write_csv(biosample_data, here("data", "intermediate", "ncbi_metadata_biosample_info.csv"))
+write_csv(biosample_data_sub, here("data", "intermediate", "ncbi_metadata_biosample_info.csv"))
 
 # Show completion message
 print(paste("Processing complete. Output saved to:", here("data", "intermediate", "ncbi_metadata_biosample_info.csv")))
