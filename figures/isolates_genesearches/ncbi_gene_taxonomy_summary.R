@@ -67,36 +67,35 @@ dat_count <- dat5 %>%
 
 counts <- dat5 %>%
     group_by(class, grouped_order) %>%
-    summarise(n = n()) %>%
+    summarise(n = n_distinct(assembly),
+              per_homeE = sum(gene_name == "homE")/n*100)%>%
     ungroup() 
 
-labels <- counts %>%
+facet_labels <- counts %>%
     # first add gamma or alpha symbol after order name, then add count
     mutate(label = case_when(
-        grouped_order == "All others" ~ paste0("All others\n(n = ", n, ")"),
-        class == "Alphaproteobacteria" ~ paste0(grouped_order, "\n(α, n = ", n, ")"),
-        class == "Gammaproteobacteria" ~ paste0(grouped_order, "\n(γ, n = ", n, ")"))) %>%
+        grouped_order == "All others" ~ paste0("All others\n(n = ", n, ", ", round(per_homeE, 0), "% w/homE)"),
+        class == "Alphaproteobacteria" ~ paste0(grouped_order, "\n(α, n = ", n,  ", ", round(per_homeE, 0), "% w/homE)"),
+        class == "Gammaproteobacteria" ~ paste0(grouped_order, "\n(γ, n = ", n, ", ", round(per_homeE, 0), "% w/homE)"))) %>%
     select(grouped_order, label) %>%
     deframe()
 
-# Plot box plot, with x-axis is gene_name, y-axis is distance_from_homA, and facet is group_name
+
+# Plot box plot, with x-axis as gene_name, y-axis as distance_from_homA, and facet as group_name
 g <- ggplot(dat5 %>%
-                filter(class %in%
-                           c("Alphaproteobacteria",
-                             "Gammaproteobacteria")), 
+                filter(class %in% c("Alphaproteobacteria", "Gammaproteobacteria")), 
             aes(x = gene_name, y = distance_from_homA)) +
-    geom_boxplot(outliers = TRUE, outlier.size = 0.5) +
-    facet_wrap(~ grouped_order, ncol = 5, labeller = labeller(grouped_order = labels)) +
-    # Add count as n = n() to each facet title
+    geom_boxplot(outliers = TRUE, outlier.size = 0.1, width = 0.5) +
+    facet_wrap(~ grouped_order, ncol = 5, 
+               labeller = labeller(grouped_order = facet_labels)) +
     theme_bw() +
     labs(y = "Distance from homA (bp)") +
     theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 7),
           axis.text.y = element_text(size = 7),
           axis.title.y = element_text(size = 7),
           axis.title.x = element_blank(),
-          strip.background = element_rect(fill = "lightgrey"),
+          strip.background = element_blank(),
           strip.text = element_text(size = 7),
           panel.grid.major = element_blank(),
           panel.grid.minor = element_blank(),
           legend.position = "none") 
-
