@@ -67,36 +67,122 @@ dat_count <- dat5 %>%
 
 counts <- dat5 %>%
     group_by(class, grouped_order) %>%
-    summarise(n = n()) %>%
+    summarise(n = n_distinct(assembly),
+              per_homeE = sum(gene_name == "homE")/n*100)%>%
     ungroup() 
 
-labels <- counts %>%
+facet_labels <- counts %>%
     # first add gamma or alpha symbol after order name, then add count
     mutate(label = case_when(
-        grouped_order == "All others" ~ paste0("All others\n(n = ", n, ")"),
-        class == "Alphaproteobacteria" ~ paste0(grouped_order, "\n(α, n = ", n, ")"),
-        class == "Gammaproteobacteria" ~ paste0(grouped_order, "\n(γ, n = ", n, ")"))) %>%
+        grouped_order == "All others" ~ paste0("All others\n(n = ", n, ", ", round(per_homeE, 0), "% w/homE)"),
+        class == "Alphaproteobacteria" ~ paste0(grouped_order, "\n(α, n = ", n,  ", ", round(per_homeE, 0), "% w/homE)"),
+        class == "Gammaproteobacteria" ~ paste0(grouped_order, "\n(γ, n = ", n, ", ", round(per_homeE, 0), "% w/homE)"))) %>%
     select(grouped_order, label) %>%
     deframe()
 
-# Plot box plot, with x-axis is gene_name, y-axis is distance_from_homA, and facet is group_name
+
+# Plot box plot, with x-axis as gene_name, y-axis as distance_from_homA, and facet as group_name
 g <- ggplot(dat5 %>%
-                filter(class %in%
-                           c("Alphaproteobacteria",
-                             "Gammaproteobacteria")), 
+                filter(class %in% c("Alphaproteobacteria", "Gammaproteobacteria")), 
             aes(x = gene_name, y = distance_from_homA)) +
-    geom_boxplot(outliers = TRUE, outlier.size = 0.5) +
-    facet_wrap(~ grouped_order, ncol = 5, labeller = labeller(grouped_order = labels)) +
-    # Add count as n = n() to each facet title
+    geom_boxplot(outliers = TRUE, outlier.size = 0.1, width = 0.5) +
+    facet_wrap(~ grouped_order, ncol = 5, 
+               labeller = labeller(grouped_order = facet_labels)) +
     theme_bw() +
     labs(y = "Distance from homA (bp)") +
     theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 7),
           axis.text.y = element_text(size = 7),
           axis.title.y = element_text(size = 7),
           axis.title.x = element_blank(),
-          strip.background = element_rect(fill = "lightgrey"),
+          strip.background = element_blank(),
           strip.text = element_text(size = 7),
           panel.grid.major = element_blank(),
           panel.grid.minor = element_blank(),
           legend.position = "none") 
+g
 
+# Sunburst plot?
+df <- "name  type    value
+    foo   all     444
+    foo   type1   123
+    foo   type2   321
+    bar   all     111
+    bar   type3   111
+    baz   all     999
+    baz   type1   456
+    baz   type3   543" %>% 
+    read_table2() %>%
+    filter(type != "all") %>%
+    mutate(name = as.factor(name) %>% fct_reorder(value, sum)) %>%
+    arrange(name, value) %>%
+    mutate(type = as.factor(type) %>% fct_reorder2(name, value))
+
+df2 <- dat4 %>%
+    filter(!is.na(phylum)) %>%
+    group_by(phylum, class, order) %>%
+    summarise(value = n_distinct(assembly)) %>%
+    ungroup() %>%
+    mutate(class = case_when(
+        phylum != "Pseudomonadota" ~ "Non-proteobacteria",
+        TRUE ~ class)) 
+    
+# Fill all NAs with "Unclassified"
+df2[is.na(df2)] <- "Unclassified"
+
+lvl0 <- tibble(name = "Parent", value = 0, level = 0, fill = "test")
+
+lvl1 <- df2 %>%
+    group_by(class) %>%
+    summarise(value = sum(value)) %>%
+    ungroup() %>%
+    mutate(level = 1) %>%
+    mutate(fill = class) %>%
+    rename(name = class)
+
+lvl2 <- df2 %>%
+    group_by(class, order) %>%
+    summarise(value = sum(value)) %>%
+    ungroup() %>%
+    mutate(fill = class) %>%
+    select(name = order, value, fill) %>%
+    mutate(level = 2)
+
+final_df <- bind_rows(lvl1, lvl2) %>%
+    mutate(name = as.factor(name) %>% fct_reorder2(fill, value))%>%
+    arrange(fill, name) %>%
+    mutate(level = as.factor(level))
+
+#TODO make points and labels separate than the columns?
+library(ggrepel)
+g <- final_df %>%
+    ggplot(aes(x = level, y = value, fill = fill, alpha = level)) +
+    geom_col(
+        width = 1, color = "gray90", size = 0.25, position = position_stack()
+        ) +
+    geom_point(
+        data = . %>% filter(level == 2), size = 0.5, position = position_stack(vjust = 0.5),
+        alpha = 1,
+    ) +
+    geom_text(
+        data = . %>% filter(level == 2),
+        aes(label = name), size = 2.5, position = position_stack(vjust = 0.5),
+                    alpha = 1,
+                    ) +
+    coord_polar(theta = "y") +
+    scale_alpha_manual(values = c("0" = 0, "1" = 1, "2" = 0.7), guide = F) +
+    scale_x_discrete(breaks = NULL) +
+    scale_y_continuous(breaks = NULL) +
+    #scale_fill_brewer(palette = "Dark2", na.translate = F) +
+    labs(x = NULL, y = NULL) +
+    theme_minimal() +
+    # Take out the ring around the plot
+    theme(
+        panel.grid = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_blank(),
+        legend.title = element_blank(),
+        plot.margin = unit(rep(-0.5, 4), "cm"),
+        plot.background = element_rect(fill = "white", color = NA),
+        panel.background = element_rect(fill = "white", color = NA)
+    ) 
+g
