@@ -1,0 +1,19 @@
+isolate,hom_growth_status,Kingdom,Phylum,Class,Order,Family,Genus,Species,homE,homA,homB,homC,homD,homR,mgdD,mgdC,mgdB,mgdA,soxG,soxA,soxD,soxB
+RWi2,grower,Bacteria, Pseudomonadota,Alphaproteobacteria, Rhodobacterales,Roseobacteraceae, Leisingera,NA,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+G4i57,grower,Bacteria, Pseudomonadota,Alphaproteobacteria, Rhodobacterales,Roseobacteraceae, Phaeobacter,NA,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+G4i09,grower,Bacteria,Pseudomonadota,Alphaproteobacteria,Rhodobacterales,Roseobacteraceae,Roseovarius,NA,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+G4i52,grower,Bacteria, Pseudomonadota,Alphaproteobacteria, Rhodobacterales,Roseobacteraceae, Roseovarius,NA,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+DSS3,grower,Bacteria, Pseudomonadota,Alphaproteobacteria, Rhodobacterales,Roseobacteraceae, Ruegeria, Ruegeria pomeroyi,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+OBi1,grower,Bacteria, Pseudomonadota,Gammaproteobacteria, Oceanospirillales,Halomonadaceae, Cobetia,Cobetia,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+G4i12,grower,Bacteria, Pseudomonadota,Gammaproteobacteria, Pseudomonadales,Pseudomonadaceae, Pseudomonas, Pseudomonas putida group,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+PSi23,grower,Bacteria, Pseudomonadota,Gammaproteobacteria, Vibrionales,Vibrionaceae, Enterovibrio, Enterovibrio calviensis,1,1,1,1,1,1,1,1,1,1,0,1,1,1
+PSi01,grower,Bacteria, Pseudomonadota,Gammaproteobacteria, Vibrionales,Vibrionaceae, Vibrio,NA,1,1,1,1,1,1,0,0,0,0,0,0,0,0
+RWi8,grower,Bacteria, Pseudomonadota,Gammaproteobacteria, Vibrionales,Vibrionaceae, Vibrio,NA,1,1,1,1,1,1,0,0,0,0,0,0,0,0
+PSi08,non_grower,Bacteria, Bacillati,Actinomycetota, Actinomycetes,Micrococcales, Micrococcaceae, Micrococcus,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PSi16,non_grower,Bacteria, Bacillati,Actinomycetota, Actinomycetes,Micrococcales, Micrococcaceae, Paenarthrobacter,0,0,0,0,0,0,0,0,0,0,1,1,1,1
+PSi06,non_grower,Bacteria, Bacillati,Actinomycetota, Actinomycetes,Mycobacteriales, Nocardiaceae, Rhodococcoides fascians,0,0,0,0,0,0,0,0,0,0,1,1,1,1
+G4i25,non_grower,Bacteria, Pseudomonadota,Alphaproteobacteria, Hyphomicrobiales,Phyllobacteriaceae, Nitratireductor, unclassified Nitratireductor,0,0,0,0,0,0,0,1,1,1,1,1,1,1
+G4i21,non_grower,Bacteria, Pseudomonadota,Gammaproteobacteria, Alteromonadales,Alteromonadaceae, Alteromonas/Salinimonas group, Alteromonas,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PSi21,non_grower,Bacteria, Pseudomonadota,Gammaproteobacteria, Moraxellales,Moraxellaceae, Psychrobacter,NA,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+RWi3,non_grower,Bacteria, Pseudomonadota,Gammaproteobacteria, Alteromonadales,Pseudoalteromonadaceae, Pseudoalteromonas,NA,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+PSi26,non_grower,Bacteria, Pseudomonadota,Gammaproteobacteria, Alteromonadales,Pseudoalteromonadaceae, Pseudoalteromonas, unclassified Pseudoalteromonas,0,0,0,0,0,0,0,0,0,0,0,0,0,0

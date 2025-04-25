@@ -1,0 +1,19 @@
+﻿Isolate,Gene,homE,homA,homB,homC,homD,homR,mgdD,mgdC,mgdB,mgdA,soxG,soxA,soxD,soxB,Nearest genome,Kingdom,Phylum,Class,Order,Family,Genus,Species
+G4i21,ACFI5P,,,,,,,,,,,,,,,Alteromonas marina,Bacteria, Pseudomonadota, Gammaproteobacteria, Alteromonadales, Alteromonadaceae, Alteromonas/Salinimonas group, Alteromonas
+OBi1,ACFLL8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,Cobetia sp.,Bacteria, Pseudomonadota, Gammaproteobacteria, Oceanospirillales, Halomonadaceae, Cobetia, Cobetia
+PSi23,ACFI7D,1,1,1,1,1,1,1,1,1,1,,1,1,1,Enterovibrio calviensis,Bacteria, Pseudomonadota, Gammaproteobacteria, Vibrionales, Vibrionaceae, Enterovibrio, Enterovibrio calviensis
+RWi2,ACFI6U,1,1,1,1,1,1,1,1,1,1,1,1,1,1,Leisingera caerulea,Bacteria, Pseudomonadota, Alphaproteobacteria, Rhodobacterales, Roseobacteraceae, Leisingera,
+PSi08,ACFI33,,,,,,,,,,,,,,,Micrococcus aloeverae,Bacteria, Bacillati, Actinomycetota, Actinomycetes, Micrococcales, Micrococcaceae, Micrococcus
+G4i25,ACFI8U,,,,,,,,1,1,1,1,1,1,1,Nitratireductor sp.,Bacteria, Pseudomonadota, Alphaproteobacteria, Hyphomicrobiales, Phyllobacteriaceae, Nitratireductor, unclassified Nitratireductor
+PSi16,ACFI6K,,,,,,,,,,,1,1,1,1,Paenarthrobacter ilicis,Bacteria, Bacillati, Actinomycetota, Actinomycetes, Micrococcales, Micrococcaceae, Paenarthrobacter
+G4i57,ACFI4X,1,1,1,1,1,1,1,1,1,1,1,1,1,1,Phaeobacter italicus,Bacteria, Pseudomonadota, Alphaproteobacteria, Rhodobacterales, Roseobacteraceae, Phaeobacter,
+RWi3,ACFI4Z,,,,,,,,,,,,,,,Pseudoalteromonas neustonica,Bacteria, Pseudomonadota, Gammaproteobacteria, Alteromonadales, Pseudoalteromonadaceae, Pseudoalteromonas,
+PSi26,ACFI34,,,,,,,,,,,,,,,Pseudoalteromonas sp. ,Bacteria, Pseudomonadota, Gammaproteobacteria, Alteromonadales, Pseudoalteromonadaceae, Pseudoalteromonas, unclassified Pseudoalteromonas
+G4i12,ACFJAB,1,1,1,1,1,1,1,1,1,1,1,1,1,1,Pseudomonas alloputida,Bacteria, Pseudomonadota, Gammaproteobacteria, Pseudomonadales, Pseudomonadaceae, Pseudomonas, Pseudomonas putida group
+PSi21,ACFI32,,,,1,,,,,,,,,,,Psychrobacter pacificensis,Bacteria, Pseudomonadota, Gammaproteobacteria, Moraxellales, Moraxellaceae, Psychrobacter,
+PSi06,ACFI9K,,,,,,,,,,,1,1,1,1,Rhodococcoides fascians,Bacteria, Bacillati, Actinomycetota, Actinomycetes, Mycobacteriales, Nocardiaceae, Rhodococcoides fascians
+G4i09,ACFI4U,,1,1,1,1,1,1,1,1,1,1,1,1,1,Roseovarius confluentis,Bacteria, Pseudomonadota, Alphaproteobacteria, Rhodobacterales, Roseobacteraceae, Roseovarius,
+G4i52,ACFI4Y,,1,1,1,1,1,1,1,1,1,1,1,1,1,Roseovarius nubinhibens,Bacteria, Pseudomonadota, Alphaproteobacteria, Rhodobacterales, Roseobacteraceae, Roseovarius,
+DSS3,SPO,,1,1,1,1,1,1,1,1,1,1,1,1,1,Ruegeria pomeroyi DSS-3,Bacteria, Pseudomonadota, Alphaproteobacteria, Rhodobacterales, Roseobacteraceae, Ruegeria, Ruegeria pomeroyi
+PSi01,ACFI6G,1,1,1,1,1,1,,,,,,,,,Vibrio cyclitrophicus,Bacteria, Pseudomonadota, Gammaproteobacteria, Vibrionales, Vibrionaceae, Vibrio,
+RWi8,ACFI7E,1,1,1,1,1,1,,,,,,,,,Vibrio cyclitrophicus,Bacteria, Pseudomonadota, Gammaproteobacteria, Vibrionales, Vibrionaceae, Vibrio,
