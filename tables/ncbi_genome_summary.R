@@ -49,6 +49,15 @@ dat_joined <- dat_hom %>%
     left_join(dat_taxa, by = join_by(assembly, nucleotide_accession)) %>%
     left_join(dat_iso, by = join_by(assembly)) 
 
+# Print out the % of alphaprotoeobacteria with homE
+dat_joined %>%
+    group_by(class) %>%
+    summarise(homE = sum(!is.na(homE)),
+              assembly_n = n_distinct(assembly)) %>%
+    ungroup() %>%
+    mutate(homE_per = homE / assembly_n*100)
+
+
 # Rename the columns to be more informative
 dat_joined <- dat_joined %>%
     rename(
