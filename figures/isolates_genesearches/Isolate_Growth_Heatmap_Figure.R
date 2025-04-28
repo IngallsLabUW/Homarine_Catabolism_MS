@@ -1,6 +1,9 @@
 library(tidyverse)
 library(patchwork)
 
+# Set font size
+fnt_size <- 6
+
 # Read in data ------
 growth.class.file <- "data/intermediate/isolategrowth/Isolates_hom_growth_classification.csv"
 isolate.gene.file <- "data/isolate_platereader_data/Homarine_isolate_gene_info_042525.csv"
@@ -58,9 +61,7 @@ hom.growth.hm.dat <- gene.plot.dat.order %>%
 
 growth.plot <- ggplot(hom.growth.hm.dat, aes(x = "Growth", y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill = "white") +
-    # Add + sign to indicate growth
     geom_text(aes(label = ifelse(hom_growth_status == "grower", "+", "")), size = 5, color = "black") +
-  #scale_fill_manual(values = c("#f8b767", "#fffcf9")) +
   theme_minimal() +
   ylab("Isolate") +
   theme(
@@ -71,7 +72,9 @@ growth.plot <- ggplot(hom.growth.hm.dat, aes(x = "Growth", y = reorder(isolate, 
       l = 0
     ),
     panel.grid.major = element_blank(),
-    axis.text.x = element_text(angle = 45, vjust = 0.8),
+    axis.text.x = element_text(angle = 45, vjust = 0.8, size = fnt_size),
+    axis.text.y = element_text(size = fnt_size),
+    axis.title.y = element_text(size = fnt_size+1),
     axis.title.x = element_blank()
   ) +
   coord_fixed() +
@@ -91,7 +94,6 @@ gene.plot.dat.order.hom <- gene.plot.dat.order %>%
 hom.gene.plot <- ggplot(gene.plot.dat.order.hom, aes(x = gene, y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill="white") +
     geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 5, color = "black") +
-  #scale_fill_manual(values = c("white", "#b0a5cc")) +
   theme_minimal() +
   ylab("Isolate") +
   xlab("Gene") +
@@ -105,7 +107,7 @@ hom.gene.plot <- ggplot(gene.plot.dat.order.hom, aes(x = gene, y = reorder(isola
       l = 0
     ),
     panel.grid.major = element_blank(),
-    axis.text.x = element_text(angle = 45, vjust = 0.8),
+    axis.text.x = element_text(angle = 45, vjust = 0.8, size = fnt_size, face = "italic"),
     axis.title.x = element_blank()
   ) +
   coord_fixed() +
@@ -135,7 +137,7 @@ mgd.gene.plot <- ggplot(gene.plot.dat.order.mgd, aes(x = gene, y = reorder(isola
       l = 0
     ),
     panel.grid.major = element_blank(),
-    axis.text.x = element_text(angle = 45, vjust = 0.8)
+    axis.text.x = element_text(angle = 45, vjust = 0.8, size = fnt_size, face = "italic")
   ) +
   coord_fixed() +
   labs(fill = "Gene Presence")
@@ -165,7 +167,7 @@ sox.gene.plot <- ggplot(gene.plot.dat.order.sox, aes(x = gene, y = reorder(isola
       l = 0
     ),
     panel.grid.major = element_blank(),
-    axis.text.x = element_text(angle = 45, vjust = 0.8)
+    axis.text.x = element_text(angle = 45, vjust = 0.8, size = fnt_size, face = "italic")
   ) +
   coord_fixed() +
   labs(fill = "Gene Presence")
@@ -197,14 +199,16 @@ class.plot <- ggplot(gene.plot.dat.order, aes(x = "Class", y = reorder(isolate, 
       l = 0
     ),
     panel.grid.major = element_blank(),
-    axis.text.x = element_text(angle = 45, vjust = 0.8),
-    axis.title.x = element_blank()
+    axis.text.x = element_text(angle = 45, vjust = 0.8, size = fnt_size),
+    axis.title.x = element_blank(),
+    legend.title = element_text(size = fnt_size+1),
+    legend.text = element_text(size = fnt_size)
   ) +
   coord_fixed()
 class.plot
 
-# Genus data:
-genus.plot <- ggplot(gene.plot.dat.order, aes(x = "Genus", y = reorder(isolate, -order), fill = Family)) +
+# Family data:
+genus.plot <- ggplot(gene.plot.dat.order, aes(x = "Family", y = reorder(isolate, -order), fill = Family)) +
   geom_tile(color = "black", width = 1) +
   scale_fill_manual(values = c(
     "#f8b767", "#fcdcb5", "#dd8fb9", "#f5d6e5", "#16afca",
@@ -225,8 +229,10 @@ genus.plot <- ggplot(gene.plot.dat.order, aes(x = "Genus", y = reorder(isolate, 
       l = 0
     ),
     panel.grid.major = element_blank(),
-    axis.text.x = element_text(angle = 45, vjust = 0.8),
-    axis.title.x = element_blank()
+    axis.text.x = element_text(angle = 45, vjust = 0.8, size = 6),
+    axis.title.x = element_blank(),
+    legend.title = element_text(size = fnt_size+1),
+    legend.text = element_text(size = fnt_size)
   ) +
   coord_fixed()
 

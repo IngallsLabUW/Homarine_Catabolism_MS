@@ -24,5 +24,6 @@ rm(list = ls()[!ls() %in% c("ncbi_map", "isolate_plot")])
 # Combine figures -----
 isolate_plot_legend <- wrap_elements(panel = isolate_plot + theme(legend.position = "right"))
 ncbi_map_layout <- wrap_elements(panel = ncbi_map + theme(legend.position = "bottom"))
-combined_fig <- isolate_plot_legend + ncbi_map_layout
+combined_fig <- isolate_plot_legend + ncbi_map_layout +
+    plot_annotation(tag_levels = "A")
 combined_fig
