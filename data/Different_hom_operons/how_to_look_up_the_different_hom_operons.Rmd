@@ -1,0 +1,164 @@
+---
+title: "Sorting_the_different_hom_operons"
+author: "Frank X. Ferrer Gonzalez"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+First thing is we removed duplicate nucleotide accessions from the assemblies
+```python
+import pandas as pd
+import re
+
+# === Load your data ===
+file_path = "complete_homarine_catabolic_operons_second_round_genome_metadata_and_taxonomy.tsv"
+df = pd.read_csv(file_path, sep="\t")
+
+# === Function to extract numeric portion from Nucleotide Accession ===
+def extract_numeric_part(accession):
+    match = re.search(r'(\d+)\.\d+$', str(accession))
+    return int(match.group(1)) if match else -1
+
+# Add a column with extracted number for sorting
+df["accession_num"] = df["Nucleotide.Accession"].apply(extract_numeric_part)
+
+# Find the max accession for each Assembly
+max_accession_per_assembly = df.loc[
+    df.groupby("Assembly")["accession_num"].idxmax()
+][["Assembly", "Nucleotide.Accession"]]
+
+# Keep all rows for the max accession of each Assembly
+main_df = df.merge(max_accession_per_assembly, on=["Assembly", "Nucleotide.Accession"], how="inner")
+
+# Filter out all others
+filtered_df = df[~df.index.isin(main_df.index)]
+
+# === Optional: Count assemblies ===
+print("Unique Assemblies in main:", main_df["Assembly"].nunique())
+print("Unique Assemblies in filtered:", filtered_df["Assembly"].nunique())
+
+# === Save outputs ===
+main_df.drop(columns=["accession_num"]).to_csv("main_filtered_accessions_corrected.tsv", sep="\t", index=False)
+filtered_df.drop(columns=["accession_num"]).to_csv("removed_accessions_corrected.tsv", sep="\t", index=False)
+```
+
+Then we searched for the different operons in the assemblies
+```python
+import pandas as pd
+
+# === Load your data ===
+df = pd.read_csv("main_filtered_accessions_corrected.tsv", sep="\t")
+
+# === Keep only necessary columns for speed ===
+cols_needed = ["Assembly", "organism.name", "gene.name", "start", "subject",
+               "phylum", "class", "order", "family", "genus", "species"]
+
+df_trimmed = df[cols_needed]
+
+# === Filter only 'hom' genes and sort by genome position ===
+hom_df = df_trimmed[df_trimmed["gene.name"].str.startswith("hom", na=False)]
+hom_sorted = hom_df.sort_values(by=["Assembly", "start"])
+
+# === Group by Assembly and extract gene cluster + metadata ===
+summary_data = []
+grouped = hom_sorted.groupby("Assembly")
+
+for assembly, group in grouped:
+    gene_cluster = "".join(group["gene.name"].dropna())
+    first_row = group.iloc[0]
+    subject_ids = ";".join(sorted(set(group["subject"].dropna().astype(str))))
+    summary_data.append({
+        "Assembly": assembly,
+        "organism": first_row["organism.name"],
+        "gene_cluster": gene_cluster,
+        "subject": subject_ids,
+        "phylum": first_row["phylum"],
+        "class": first_row["class"],
+        "order": first_row["order"],
+        "family": first_row["family"],
+        "genus": first_row["genus"],
+        "species": first_row["species"]
+    })
+
+# === Create final dataframe and sort ===
+summary_df = pd.DataFrame(summary_data)
+summary_df_sorted = summary_df.sort_values(by=["class", "gene_cluster"])
+
+# === Save to file ===
+summary_df_sorted.to_csv("homarine_operon_cluster_summary_by_assembly_corrected.csv", index=False)
+
+# Done!
+print("✅ Finished. Summary saved as 'homarine_operon_cluster_summary_by_assembly.csv'")
+```
+
+Sort genes lexicographically to get the canonical cluster (eg. ABCD and DCBA are the same)
+```python
+#hom_genes_lexicographically.py
+import pandas as pd
+
+# Load the CSV file
+input_path = "/mnt/c/SynologyDrive/UW/UW_Anitra_Ingalls/Homarine_project/Data/metadata_extract/homarine_operon_cluster_summary_by_assembly_corrected_mod.csv"
+
+df = pd.read_csv(input_path)
+
+# Function to generate canonical form of gene clusters
+def true_canonical_cluster(cluster_str):
+    genes = list(cluster_str)  # assumes each gene is a single character
+    forward = ''.join(genes)
+    reverse = ''.join(genes[::-1])
+    return min(forward, reverse)
+
+# Apply canonical cluster transformation
+df["canonical_cluster"] = df["gene_cluster"].apply(true_canonical_cluster)
+
+# Save updated file
+output_path = "/mnt/c/SynologyDrive/UW/UW_Anitra_Ingalls/Homarine_project/Data/metadata_extract/homarine_operon_cluster_summary_with_true_canonical.csv"
+df.to_csv(output_path, index=False)
+
+print("Canonical cluster column added. Output saved to:")
+print(output_path)
+```
+
+
+Finally, we created a figure with the different operons and their respective taxons in order and class
+```python
+#plot_sorted_hom_genes_canonical.py
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# === Load the data ===
+summary_df = pd.read_csv("homarine_operon_cluster_summary_with_true_canonical.csv")
+
+# === Prepare count data ===
+class_counts = summary_df.groupby(["canonical_cluster", "class"]).size().reset_index(name="count")
+order_counts = summary_df.groupby(["canonical_cluster", "order"]).size().reset_index(name="count")
+
+# === Plot style ===
+sns.set(style="whitegrid")
+
+# === Plot 1: Gene Cluster by Class (log y-scale) ===
+plt.figure(figsize=(20, 10), constrained_layout=True)
+sns.barplot(data=class_counts, x="canonical_cluster", y="count", hue="class", dodge=False)
+plt.yscale("log")
+plt.xticks(rotation=90)
+plt.xlabel("Gene Cluster (hom)")
+plt.ylabel("Count (log scale)")
+plt.title("Homarine Gene Cluster Distribution by Class")
+plt.legend(bbox_to_anchor=(1.01, 1), loc='upper left', borderaxespad=0)
+plt.savefig("gene_cluster_by_class_canonical.pdf")
+plt.close()
+
+# === Plot 2: Gene Cluster by Order (log y-scale) ===
+plt.figure(figsize=(20, 10), constrained_layout=True)
+sns.barplot(data=order_counts, x="canonical_cluster", y="count", hue="order", dodge=False)
+plt.yscale("log")
+plt.xticks(rotation=90)
+plt.xlabel("Gene Cluster (hom)")
+plt.ylabel("Count (log scale)")
+plt.title("Homarine Gene Cluster Distribution by Order")
+plt.legend(bbox_to_anchor=(1.01, 1), loc='upper left', borderaxespad=0)
+plt.savefig("gene_cluster_by_order_canonical.pdf")
+plt.close()
+```

@@ -1,0 +1,573 @@
+---
+title: "Bacterial growth curves"
+author: "Frank X. Ferrer Gonzalez"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+Growth of WT Rpom
+```{R}
+library(tidyverse)
+library(ggpubr)
+library(data.table)
+library(lubridate)
+
+# Load OD600 values from Gen5 plate reader
+OD600 <- fread('2022_12_12_Plate_2_DSS3_homarine_mutants.csv', header=T)
+
+# Convert time to seconds and hours
+OD600$TimeS <- period_to_seconds(lubridate::hms(OD600$Time))
+OD600$TimeH <- OD600$TimeS / 3600
+
+# Define the blank/control well
+control_col <- "C1"  # Background control well
+
+# List of sample wells
+sample_wells <- c("B2", "B3", "B4", "B5", "B6")
+
+# Ensure the control column exists
+if (control_col %in% colnames(OD600)) {
+  # Subtract the background OD600 from each sample well, ensuring non-negative values
+  OD600[, (sample_wells) := lapply(.SD, function(x) pmax(x - get(control_col), 0)), .SDcols = sample_wells]
+} else {
+  stop("Control well (C1) not found in the dataset.")
+}
+
+# Convert to long format for ggplot
+OD600_long <- OD600 %>%
+  select(TimeH, all_of(sample_wells)) %>%
+  pivot_longer(cols = -TimeH, names_to = "Sample", values_to = "OD600")
+
+# Compute summary statistics (mean & standard deviation)
+OD600_summary <- OD600_long %>%
+  group_by(TimeH) %>%
+  summarise(mean_OD = mean(OD600, na.rm = TRUE),
+            sd_OD = sd(OD600, na.rm = TRUE))
+
+# Create the plot
+p <- ggplot(OD600_summary, aes(x = TimeH, y = mean_OD)) +
+  geom_ribbon(aes(ymin = mean_OD - sd_OD, ymax = mean_OD + sd_OD), 
+              fill = "#E87D94", alpha = 0.3) +  # Shaded area
+  geom_line(color = "#017F75", size = 1) +  # Main line
+  labs(x = "", y = "Growth (OD600)", title = "DSS-3 WT") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 0.5)) +  # Set the same Y-axis scale for all plots
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    axis.line = element_line(color = "black"),
+    axis.text = element_text(size = 16),
+    axis.title.y = element_text(size = 14),
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.1)
+  )
+
+# Display the plot
+print(p)
+# 
+# # Save the plot
+# ggsave("Growth_WT_plot.png", plot = p, width = 3, height = 2, dpi = 300)
+```
+
+Growth of WT Rpom in Kan50
+```{R}
+# List of sample wells
+sample_wells <- c("B12", "C12", "D12", "E12", "F12")
+
+# Ensure the control column exists
+if (control_col %in% colnames(OD600)) {
+  # Subtract the background OD600 from each sample well, ensuring non-negative values
+  OD600[, (sample_wells) := lapply(.SD, function(x) pmax(x - get(control_col), 0)), .SDcols = sample_wells]
+} else {
+  stop("Control well (C1) not found in the dataset.")
+}
+
+# Convert to long format for ggplot
+OD600_long <- OD600 %>%
+  select(TimeH, all_of(sample_wells)) %>%
+  pivot_longer(cols = -TimeH, names_to = "Sample", values_to = "OD600")
+
+# Compute summary statistics (mean & standard deviation)
+OD600_summary <- OD600_long %>%
+  group_by(TimeH) %>%
+  summarise(mean_OD = mean(OD600, na.rm = TRUE),
+            sd_OD = sd(OD600, na.rm = TRUE))
+
+# Create the plot
+p <- ggplot(OD600_summary, aes(x = TimeH, y = mean_OD)) +
+  geom_ribbon(aes(ymin = mean_OD - sd_OD, ymax = mean_OD + sd_OD), 
+              fill = "#E87D94", alpha = 0.3) +  # Shaded area
+  geom_line(color = "#017F75", size = 1) +  # Main line
+  labs(x = "", y = "Growth (OD600)", title = "DSS-3 Kan50") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 0.5)) +  # Set the same Y-axis scale for all plots
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    axis.line = element_line(color = "black"),
+    axis.text = element_text(size = 16),
+    axis.title.y = element_text(size = 14),
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.1)
+  )
+
+# Display the plot
+print(p)
+# 
+# # Save the plot
+# ggsave("Growth_WT_Kan50_plot.png", plot = p, width = 3, height = 2, dpi = 300)
+```
+
+Growth of homB
+```{R}
+# List of sample wells
+sample_wells <- c("C6", "D6", "E6", "F6", "G6")
+
+# Ensure the control column exists
+if (control_col %in% colnames(OD600)) {
+  # Subtract the background OD600 from each sample well, ensuring non-negative values
+  OD600[, (sample_wells) := lapply(.SD, function(x) pmax(x - get(control_col), 0)), .SDcols = sample_wells]
+} else {
+  stop("Control well (C1) not found in the dataset.")
+}
+
+# Convert to long format for ggplot
+OD600_long <- OD600 %>%
+  select(TimeH, all_of(sample_wells)) %>%
+  pivot_longer(cols = -TimeH, names_to = "Sample", values_to = "OD600")
+
+# Compute summary statistics (mean & standard deviation)
+OD600_summary <- OD600_long %>%
+  group_by(TimeH) %>%
+  summarise(mean_OD = mean(OD600, na.rm = TRUE),
+            sd_OD = sd(OD600, na.rm = TRUE))
+
+# Create the plot
+# Create the plot with a fixed Y-axis
+p <- ggplot(OD600_summary, aes(x = TimeH, y = mean_OD)) +
+  geom_ribbon(aes(ymin = mean_OD - sd_OD, ymax = mean_OD + sd_OD), 
+              fill = "#E87D94", alpha = 0.3) +  # Shaded area
+  geom_line(color = "#017F75", size = 1) +  # Main line
+  labs(x = "", y = "Growth (OD600)", title = "homB") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 0.5)) +  # Set the same Y-axis scale for all plots
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    axis.line = element_line(color = "black"),
+    axis.text = element_text(size = 16),
+    axis.title.y = element_text(size = 14),
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.1)
+  )
+
+# Display the plot
+print(p)
+
+# Save the plot
+# ggsave("Growth_homB_plot.png", plot = p, width = 3, height = 2, dpi = 300)
+```
+
+Growth of homC
+```{R}
+# List of sample wells
+sample_wells <- c("C7", "D7", "E7", "F7", "G7")
+
+# Ensure the control column exists
+if (control_col %in% colnames(OD600)) {
+  # Subtract the background OD600 from each sample well, ensuring non-negative values
+  OD600[, (sample_wells) := lapply(.SD, function(x) pmax(x - get(control_col), 0)), .SDcols = sample_wells]
+} else {
+  stop("Control well (C1) not found in the dataset.")
+}
+
+# Convert to long format for ggplot
+OD600_long <- OD600 %>%
+  select(TimeH, all_of(sample_wells)) %>%
+  pivot_longer(cols = -TimeH, names_to = "Sample", values_to = "OD600")
+
+# Compute summary statistics (mean & standard deviation)
+OD600_summary <- OD600_long %>%
+  group_by(TimeH) %>%
+  summarise(mean_OD = mean(OD600, na.rm = TRUE),
+            sd_OD = sd(OD600, na.rm = TRUE))
+
+# Create the plot
+# Create the plot with a fixed Y-axis
+p <- ggplot(OD600_summary, aes(x = TimeH, y = mean_OD)) +
+  geom_ribbon(aes(ymin = mean_OD - sd_OD, ymax = mean_OD + sd_OD), 
+              fill = "#E87D94", alpha = 0.3) +  # Shaded area
+  geom_line(color = "#017F75", size = 1) +  # Main line
+  labs(x = "", y = "Growth (OD600)", title = "homC") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 0.5)) +  # Set the same Y-axis scale for all plots
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    axis.line = element_line(color = "black"),
+    axis.text = element_text(size = 16),
+    axis.title.y = element_text(size = 14),
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.1)
+  )
+
+# Display the plot
+print(p)
+
+# Save the plot
+# ggsave("Growth_homC_plot.png", plot = p, width = 3, height = 2, dpi = 300)
+```
+
+Growth of homD
+```{R}
+# List of sample wells
+sample_wells <- c("B1", "C1", "D1", "E1", "F1", "G1")
+
+# Ensure the control column exists
+if (control_col %in% colnames(OD600)) {
+  # Subtract the background OD600 from each sample well, ensuring non-negative values
+  OD600[, (sample_wells) := lapply(.SD, function(x) pmax(x - get(control_col), 0)), .SDcols = sample_wells]
+} else {
+  stop("Control well (C1) not found in the dataset.")
+}
+
+# Convert to long format for ggplot
+OD600_long <- OD600 %>%
+  select(TimeH, all_of(sample_wells)) %>%
+  pivot_longer(cols = -TimeH, names_to = "Sample", values_to = "OD600")
+
+# Compute summary statistics (mean & standard deviation)
+OD600_summary <- OD600_long %>%
+  group_by(TimeH) %>%
+  summarise(mean_OD = mean(OD600, na.rm = TRUE),
+            sd_OD = sd(OD600, na.rm = TRUE))
+
+# Create the plot
+p <- ggplot(OD600_summary, aes(x = TimeH, y = mean_OD)) +
+  geom_ribbon(aes(ymin = mean_OD - sd_OD, ymax = mean_OD + sd_OD), 
+              fill = "#E87D94", alpha = 0.3) +  # Shaded area
+  geom_line(color = "#017F75", size = 1) +  # Main line
+  labs(x = "", y = "Growth (OD600)", title = "homD") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 0.5)) +  # Set the same Y-axis scale for all plots
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    axis.line = element_line(color = "black"),
+    axis.text = element_text(size = 16),
+    axis.title.y = element_text(size = 14),
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.1)
+  )
+
+# Display the plot
+print(p)
+# 
+# # Save the plot
+# ggsave("Growth_homD_plot.png", plot = p, width = 3, height = 2, dpi = 300)
+```
+
+Growth of homR
+```{R}
+# List of sample wells
+sample_wells <- c("C10", "D10", "E10", "F10", "G10")
+
+# Ensure the control column exists
+if (control_col %in% colnames(OD600)) {
+  # Subtract the background OD600 from each sample well, ensuring non-negative values
+  OD600[, (sample_wells) := lapply(.SD, function(x) pmax(x - get(control_col), 0)), .SDcols = sample_wells]
+} else {
+  stop("Control well (C1) not found in the dataset.")
+}
+
+# Convert to long format for ggplot
+OD600_long <- OD600 %>%
+  select(TimeH, all_of(sample_wells)) %>%
+  pivot_longer(cols = -TimeH, names_to = "Sample", values_to = "OD600")
+
+# Compute summary statistics (mean & standard deviation)
+OD600_summary <- OD600_long %>%
+  group_by(TimeH) %>%
+  summarise(mean_OD = mean(OD600, na.rm = TRUE),
+            sd_OD = sd(OD600, na.rm = TRUE))
+
+# Create the plot
+# Create the plot with a fixed Y-axis
+p <- ggplot(OD600_summary, aes(x = TimeH, y = mean_OD)) +
+  geom_ribbon(aes(ymin = mean_OD - sd_OD, ymax = mean_OD + sd_OD), 
+              fill = "#E87D94", alpha = 0.3) +  # Shaded area
+  geom_line(color = "#017F75", size = 1) +  # Main line
+  labs(x = "", y = "Growth (OD600)", title = "homR") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 0.5)) +  # Set the same Y-axis scale for all plots
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    axis.line = element_line(color = "black"),
+    axis.text = element_text(size = 16),
+    axis.title.y = element_text(size = 14),
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.1)
+  )
+
+# Display the plot
+print(p)
+
+# Save the plot
+# ggsave("Growth_homR_plot.png", plot = p, width = 3, height = 2, dpi = 300)
+```
+
+Growth of 2R-3-sulfolactate-dehydrogenase
+```{R}
+# List of sample wells
+sample_wells <- c("C4", "D4", "E4", "F4", "G4")
+
+# Ensure the control column exists
+if (control_col %in% colnames(OD600)) {
+  # Subtract the background OD600 from each sample well, ensuring non-negative values
+  OD600[, (sample_wells) := lapply(.SD, function(x) pmax(x - get(control_col), 0)), .SDcols = sample_wells]
+} else {
+  stop("Control well (C1) not found in the dataset.")
+}
+
+# Convert to long format for ggplot
+OD600_long <- OD600 %>%
+  select(TimeH, all_of(sample_wells)) %>%
+  pivot_longer(cols = -TimeH, names_to = "Sample", values_to = "OD600")
+
+# Compute summary statistics (mean & standard deviation)
+OD600_summary <- OD600_long %>%
+  group_by(TimeH) %>%
+  summarise(mean_OD = mean(OD600, na.rm = TRUE),
+            sd_OD = sd(OD600, na.rm = TRUE))
+
+# Create the plot
+# Create the plot with a fixed Y-axis
+p <- ggplot(OD600_summary, aes(x = TimeH, y = mean_OD)) +
+  geom_ribbon(aes(ymin = mean_OD - sd_OD, ymax = mean_OD + sd_OD), 
+              fill = "#E87D94", alpha = 0.3) +  # Shaded area
+  geom_line(color = "#017F75", size = 1) +  # Main line
+  labs(x = "", y = "Growth (OD600)", title = "(2R)-3-sulfolactate dehydrogenase") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 0.5)) +  # Set the same Y-axis scale for all plots
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    axis.line = element_line(color = "black"),
+    axis.text = element_text(size = 16),
+    axis.title.y = element_text(size = 14),
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.1)
+  )
+
+# Display the plot
+print(p)
+
+# Save the plot
+# ggsave("Growth_sulf_dehydr_plot.png", plot = p, width = 3, height = 2, dpi = 300)
+```
+
+Growth of SPO3186 (dmdT/GBT like transporter)
+```{R}
+# List of sample wells
+sample_wells <- c("C2", "D2", "E2", "F2", "G2")
+
+# Ensure the control column exists
+if (control_col %in% colnames(OD600)) {
+  # Subtract the background OD600 from each sample well, ensuring non-negative values
+  OD600[, (sample_wells) := lapply(.SD, function(x) pmax(x - get(control_col), 0)), .SDcols = sample_wells]
+} else {
+  stop("Control well (C1) not found in the dataset.")
+}
+
+# Convert to long format for ggplot
+OD600_long <- OD600 %>%
+  select(TimeH, all_of(sample_wells)) %>%
+  pivot_longer(cols = -TimeH, names_to = "Sample", values_to = "OD600")
+
+# Compute summary statistics (mean & standard deviation)
+OD600_summary <- OD600_long %>%
+  group_by(TimeH) %>%
+  summarise(mean_OD = mean(OD600, na.rm = TRUE),
+            sd_OD = sd(OD600, na.rm = TRUE))
+
+# Create the plot
+p <- ggplot(OD600_summary, aes(x = TimeH, y = mean_OD)) +
+  geom_ribbon(aes(ymin = mean_OD - sd_OD, ymax = mean_OD + sd_OD), 
+              fill = "#E87D94", alpha = 0.3) +  # Shaded area
+  geom_line(color = "#017F75", size = 1) +  # Main line
+  labs(x = "", y = "Growth (OD600)", title = "GBT like transporter") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 0.5)) +  # Set the same Y-axis scale for all plots
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.background = element_blank(),
+    axis.line = element_line(color = "black"),
+    axis.text = element_text(size = 16),
+    axis.title.y = element_text(size = 14),
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.1)
+  )
+
+# Display the plot
+print(p)
+# 
+# # Save the plot
+# ggsave("Growth_SPO3186_plot.png", plot = p, width = 3, height = 2, dpi = 300)
+```
+
+N-methyl-glutamate dehydrogenase mutants
+```{R}
+library(tidyverse)
+library(ggplot2)
+library(data.table)
+library(lubridate)
+library(dplyr)
+library(ggpubr)
+
+# Read the dataset
+OD600 <- fread('2024_4_12_growth_curves_NMGAD_SPO3191_Homi_NMGA.csv', header = TRUE)
+
+# Convert Time column to seconds and then to hours
+OD600$Time <- period_to_seconds(hms(OD600$Time)) / 3600
+
+# Function to subtract the lowest value from each column
+subtract_min <- function(data) {
+  min_values <- apply(data, 2, min, na.rm = TRUE)  # Calculate the minimum value for each column
+  data <- data - min_values  # Subtract the minimum value from each element in the column
+  return(data)
+}
+
+# Identify numeric columns except columns 1 and 2
+numeric_cols <- names(OD600)[sapply(OD600, is.numeric) & !(names(OD600) %in% c("TimeS", "Time"))]
+
+# Subtract the lowest value from each column
+OD600[, (numeric_cols) := lapply(.SD, function(x) {
+  if(length(x) > 1) {
+    x - min(x, na.rm = TRUE)
+  } else {
+    x
+  }
+}), .SDcols = numeric_cols]
+
+
+SPO1588_Hom4 <-
+  ggplot() +
+  geom_line(data = OD600, aes(x = Time, y = B6, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = C6, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = D6, 
+                              group=1,), color = "#E87D94") +
+  geom_line(data = OD600, aes(x = Time, y = E6, 
+                              group=1), color = "#E87D94") +
+  geom_line(data = OD600, aes(x = Time, y = F6, 
+                              group=1), color = "#E87D94") +  
+  geom_line(data = OD600, aes(x = Time, y = G6, 
+                              group=1), color = "#E87D94") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(x=" ", y=" ") +  
+  ggtitle('SPO1588 HOM4') + scale_x_continuous(expand = c(0, 0)) + 
+  scale_y_continuous(expand = c(0, 0)) + theme(legend.position = "none") + ylim(0,0.05)
+
+SPO1585_Hom4 <-
+  ggplot() +
+  geom_line(data = OD600, aes(x = Time, y = B7, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = C7, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = D7, 
+                              group=1,), color = "#E87D94") +
+  geom_line(data = OD600, aes(x = Time, y = E7, 
+                              group=1), color = "#E87D94") +
+  geom_line(data = OD600, aes(x = Time, y = F7, 
+                              group=1), color = "#E87D94") +  
+  geom_line(data = OD600, aes(x = Time, y = G7, 
+                              group=1), color = "#E87D94") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(x=" ", y=" ") +  
+  ggtitle('SPO1585 HOM4') + scale_x_continuous(expand = c(0, 0)) + 
+  scale_y_continuous(expand = c(0, 0)) + theme(legend.position = "none") + ylim(0,0.05)
+
+SPO1588_NMGA <-
+  ggplot() +
+  geom_line(data = OD600, aes(x = Time, y = B10, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = C10, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = D10, 
+                              group=1,), color = "#E87D94") +
+  geom_line(data = OD600, aes(x = Time, y = E10, 
+                              group=1), color = "#E87D94") +
+  geom_line(data = OD600, aes(x = Time, y = F10, 
+                              group=1), color = "#E87D94") +  
+  geom_line(data = OD600, aes(x = Time, y = G10, 
+                              group=1), color = "#E87D94") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(x="Time (h)", y=" ") +  
+  ggtitle('SPO1588 NMGA') + scale_x_continuous(expand = c(0, 0)) + 
+  scale_y_continuous(expand = c(0, 0)) + theme(legend.position = "none") + ylim(0,0.05)
+
+SPO1585_NMGA <-
+  ggplot() +
+  geom_line(data = OD600, aes(x = Time, y = B11, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = C11, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = D11, 
+                              group=1,), color = "#E87D94") +
+  geom_line(data = OD600, aes(x = Time, y = E11, 
+                              group=1), color = "#E87D94") +
+  geom_line(data = OD600, aes(x = Time, y = F11, 
+                              group=1), color = "#E87D94") +  
+  geom_line(data = OD600, aes(x = Time, y = G11, 
+                              group=1), color = "#E87D94") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(x="Time (h)", y="OD600") +  
+  ggtitle('SPO1585 NMGA') + scale_x_continuous(expand = c(0, 0)) + 
+  scale_y_continuous(expand = c(0, 0)) + theme(legend.position = "none") + ylim(0,0.05)
+
+DSS3_NMGA<-
+  
+  ggplot() +
+  geom_line(data = OD600, aes(x = Time, y = B12, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = C12, 
+                              group=1,), color = "#E87D94") +
+  geom_line(data = OD600, aes(x = Time, y = D12, 
+                              group=1), color = "#E87D94") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(x="Time (h)", y="OD600") +  
+  ggtitle('DSS3 NMGA') + scale_x_continuous(expand = c(0, 0)) + 
+  scale_y_continuous(expand = c(0, 0)) + theme(legend.position = "none") + ylim(0,0.05)
+
+DSS3_Hom4 <-
+  ggplot() +
+  geom_line(data = OD600, aes(x = Time, y = B8, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = C8, 
+                              group = 1, color = "#E87D94")) +
+  geom_line(data = OD600, aes(x = Time, y = D8, 
+                              group=1,), color = "#E87D94") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black")) +
+  labs(x=" ", y=" ") +  
+  ggtitle('DSS3 HOM4') + scale_x_continuous(expand = c(0, 0)) + 
+  scale_y_continuous(expand = c(0, 0)) + theme(legend.position = "none") + ylim(0,0.05)
+
+Gplot <- ggarrange(SPO1588_Hom4,SPO1585_Hom4,
+                   SPO1588_NMGA, SPO1585_NMGA, 
+                   DSS3_NMGA, DSS3_Hom4,
+                   ncol =2, nrow =3) 
+
+annotate_figure(Gplot,
+                top = text_grob("Growth of mgd mutants", 
+                                face ='bold', size = 14))
+
+
+```

@@ -1,0 +1,1026 @@
+---
+title: "Finding and making HMM profiles for Homarine Catabolic Genes"
+author: "Frank Xavier Ferrer Gonzalez"
+date: "`r Sys.Date()`"
+output: html_document
+---
+  
+###############################################################################
+#Part1. Finding homarine genes in isolate genomes
+###############################################################################
+
+Homarine genes in Ruegeria pomeroyi DSS-3
+
+>SPO3188 (homA)
+MSFSLNEIEATAKRATRGAGYPWGLAEEAAKATRWLAAHDLDACAELAGLLTRIDGVPLADLAPEPKGTTWVASGGTMCPLAAGAALSDRAAQLRDTGIRLEQLARPALLMPFAALIAQQ IGRPVTLRWEGGSAVTDGVALDLSGTAPDLAAWVEVSPGGQIDAATPIRSRARPAPEAWVTLNRLAHRTYAPATEESRLKGAGAGLSDND
+
+>SPO3189 (homB)
+MDTAPNRQIQRRDPATVMRLSRLGSLHQCRLSFMRILTRRMARENWSFSRPVFRIDAAGVGHAVYTAQGPERAYSLVAFAHDLPPEMRSDRVIATAWDATFTLFDGIPTEDDIARLSQNV PLQEAGRVSECEISVSRANRSVRLWAHVVDALASGQQPDRAEIDKVGYLMRTTAVYGSGKLGAADREQIADRPEMQVPFQAEMLSVYLTRVFVRDLVQHMARAKGGESAVDLDPALARRM GIGNSTGLGMAPYIVNHPVLFNNWVMAREEAIARVRSVATASPDAAAQFRRMLRRSEVSLGQWRSEHPIQLEKLGDLRRDMEVLSRHVAGDDLLNDHPWDRLMRWAEGALSEEGQELVAS LILEPYPDLVDGLDSCMADGNPGAFRIEGAMAISELRGLIAASYAWAFDLDWSAPENCARAWYVSEEKLEPRLGERFDEPVAEYEQPLAPARDAAAAHAALADWDGARLVAEFLLAHPEH RHTVRRAQMSRLAPYGEIHDNTISASVLPIDMLRAKLAFFGAIHFDPRSDRWVRICMYSGAPYPEELSPETADDWVYPEVPA
+
+>SPO3190 (homC)
+MSYRIDGLQYANWSEKIFRQLRAGNVDAVHVTIAYHESFRETVLNFEKWNRWFEQYPDLIMKGQWASDIDTARETGRTAIFFGFQNPSPIEDDIGLVEILHTLGARFMQLTYNNQSLLAT GCYEAEDAGITRMGRQVIKEMNRVGLVVDMSHSADRSTIEAAEISERPIAITHANPHDWAPALRNKRDDVIRAVTENGGMLGFSVYPHHLKDKSDCTLDSFCEMIARTAERYGVDHLGIG TDLCQDQPDSVVEWMRTGRWSKEIDFGEGSASAPGLPPMPHWFEDNRDFGNIENGLRATGLNKDEVAGIMGGNWYRFFAQNFVPQG
+
+>SPO3191 (homD)
+MSDTKLNLIAGEWLAGEAEIENRNPSDLSDLVGMFAQASADQLDATLHQARRAQAEWAAYGMERKQAVLMAIGTELMARAEELGTLLSREEGKPLAEGKGEVYRAGQFFTYYAAECLRQL GENADSVRPGVEVDVRREAVGVVAVISPWNFPTATASWKIAPALCYGNAVVWKPANITPASAVALTEIIARQDIPKGLFSLAMGSGRSIGQRLVESPLVNAISFTGSVPVGKGIASAAIQ NLTKVQMEMGSKNALAVMDDADLDLAVTLALGGAFGGTGQKCTASSRLVVHAAIHDAFVEKLVAGTQAMKVGHALAEGTQMGPVVSQQQLSENLAYVDLGKSEGAELACGGQRLEMPQEG YYMSPGVFLNTTNTMRINREEMFAPLTSVIKVGSYDEALSVVNDTNFGLTSGIVTKSLARATHFRRNARTGVVTVNLPTAGTDYHVPFGGRGDSSYGPREQGKAAAEFYTTVKTAYISA
+APQ
+
+>SPO3192 (homR)
+MIKIEMLRCFSTVAQTGNLADAAMRMGRTQSALSMTLKQLEEHLGQRLFENERKNRLTPLGQEVFRFAQQQLRQFDDTIQAIEAAARAPQGLLRVASIPSASGLALPGAIETMMQRHPAL ELELRDMDTGRVVDALLQGQADLGIVSGQPVLNGVESETLFEDAFGLLCATGHPLAQQAQLPDVDAVFASGFIRNSLCALIEAPEIRAALPRARITVHNTHSLLAMVRTGKWVTILPRSV AQVQPKELVFRPIAGLEEQRSVSMLIHTRAQFPQLVAEFADILRHSPWTG
+
+Homarine genes in Cobetia sp. OBi1
+
+>OBi1_ACFLL8_11490 (homE)
+MVHPVKTDLFASRAPLSWASVGNGILFTAQIPIDANGNVVEGGIAAQTRQTLDNLIHTLE
+CAGGDASSLTQVLIYVTEREHLATVNGIYAEYVREPYPNRAAIIVSGFAREEMLVEMVAY
+AALEVDA*
+
+>OBi1_ACFLL8_11495 (homA)
+MKVSYNELHGLCRKAFQAMGFEDGDAGDAADMVAWMQLYELEGLAALNRGLRFLLEDTDE
+RPPEIVYADGDLAVLDSHGHSVLKSSSLALELGFAKARARGLAVIKIQHCHNRQLIMGYL
+ARLAGRGMNVTAFWRNAQDVDEAVGCPMIEQVVGFRANSSVPEIRVYAVREVPEENEPND
+GITLVMANHVDLLPSLRSDYDVDLLACHEESKLLACRQRAMQEGIEVDDELWSRLKALST
+RLLVEATEDSRSGAGAGSTDND*
+  
+>OBi1_ACFLL8_11500 (homB)
+MSRNHQGARLSSTEQRLRLRAPDDVMQLERLGSLHASRLSFVRSLVRQMAHEKWKITTTR
+FELDALGHGVAIYCLQTPSKRYHGVIFSQALEDSARSDRVIAEAWDVTFGVVEGDVDDAL
+LEQMAANVPLQEAGRQHPRLLVLSRANRSLRNFASFLEALSAGQQPDPEWLTRVGYLYRT
+TAVYGNGKFGIADYDRLKDNADFHRPFSAQMLGVYLLRHFSIQQIEHMARAQAPETAAPL
+ATSLKRYLGIGNSTGLGMAPFLINHPQLVQRWVESRELALAEVTAQVPGEQERSRLLALL
+QRAETHLRQTVTDDHEQTLRNQATVASLPELMTWLELVPLSPELWQELIDWSYQQHGLEA
+QELVNTLLLELYPSIVDRYEDLMAVEESLELTPDMPLVHLKQVIETHYDWALRFDFSLAE
+NRHWFWYRSVEKEEPRLGVRDTEAGADKEMKLAIAPRVADTHAAISQYLDDHPRALVVEF
+LIHCPRHKDIVRRIQSMASTSFGEIRANLWARDMKPMHLLRTKLSFFGASRFDPKSDRWV
+RITLFQGAPLVEELNAEPEDPVALDDWSFPLAPQLARAARPEMTSDPRQGNTTTVGGMS*
+  
+>OBi1_ACFLL8_11505 (Transporter)
+MPSSRKTTTSATPDALPKGQYRFGDPVVLTCSIGFILLFVGLSLFDLEGVAQAISTGFAW
+TARTLGSYFQILLLLTFFIALGLTATPAASARIGGTRTPELSTFKWVSIIMCTLLAGGGV
+FFAAGEPVYHFLVTPPAFDTEPGTANAIAPALAQSFMHWGFLAWAILGSLTAIVLAHAHY
+DKGQPLQPRTLLYPVFGEKIMKGKLGGVVDAMCVIAVVAGTVGPIGFLATQVSFGLHELF
+GVTNDYSTQLSVLVVLGVIYVTSAVTGIDKGIQIMSRFNVFLALGVAAVIFVFGPTLFMV
+NAFTQGFGEYLSSFFTMSTMTAQSAPDWWMQWWTVFFFAWFLGYGPLMAIFVARISKGRT
+IRQMILTVAVLAPLATAVWFTLLGGAGIFYQFTGVIDLTEALNNFQFDVATLTVAQALPG
+GTAMAAAILTLTTIFVATTGDSMSYAIAVVSAGHDDPSPLVRAFWGISMALMAAILLYMG
+AGQISALQQFIVITAIPVSLVLLPSLWTGPQSAFAMARAQGITSQRPAMPAPEDAGER*
+  
+>OBi1_ACFLL8_11510 (homC)
+MSKTMLTIDGLQYSNWSREIFEQMREGGLDAVHATLVYHETTRETLSRLGEWNRRFEAWP
+DLIMPVHVPKDIAVAQASGRVGIILGAQNCSPIEDDIDMVEVMRDLGLMIMQLTYNNQSL
+LACGCYEAEDSGITRFGRQVIREMNRVGMVIDMSHSAERSTLEAIEISERPVIISHANPK
+SFHPAKRNKPDRVLKAIAESDGLLGFSAYPFHLRNGSDCTLTEYCEMIARTADLMGVEHL
+GIGTDLCQNQPVSTLEWMRNGRWSKDMDYGEGSASNADWPRPLPWLRDSRDFPNLIAGLR
+KVGMSEDEVAGIMGKNWVALLERAATRQEIAPA*
+  
+>OBi1_ACFLL8_11515 (homD)
+MSHHTTTATHAAAHDLYIDGQWVAGQGSIANLNPSDTRDVIGHYAQASVGQVADAIQAAK
+RGQIQWATSGLEQRYSVLMAIGDELIARKAELGELLAREEGKTLAEGVGEVHRSGQFFHY
+YGAEVLRQIDERADSVRPGVEIEVRREPVGVVGVISPWNFPMATAVWKIAPALAFGNSVV
+FKPANLVPASAWALTEIIHRQSLPAGTFNLVMGPGSSIGDALISSPDIHALSFTGSLEVG
+RRVAAATAANLVKCQLEMGSKNALIIADDADMELAVEAAFNGAYSGTGQKCTASSRLIVM
+ESVHDEFVEKLAARLSQVRVGHALEEGVHMGPAVDARQLESNLSWVQRAQEEGATLVCGG
+ERVECATDGYFMSPALLVGTSNDMAINREEIFGPIACVIKVSDAEEAINVLNDTHFGLTA
+GIITNSLKLASSFKARAETGCVMVNLPTAGTDYHVPFGGRKASSFGPREQGRYAREFYTI
+VKTCYIKA*
+
+>OBi1_ACFLL8_11520 (homR)
+MVHPVKTDLFASRAPLSWASVGNGILFTAQIPIDANGNVVEGGIAAQTRQTLDNLIHTLECAGGDASSLTQVLIYVTEREHLATVNGIYAEYVREPYPNRAAIIVSGFAREEMLVEMVAYAALEVDA
+
+Retrieve sequences from isolates genomes
+```python
+#protein_seq_retreive.py
+import os
+import shutil
+
+# Define the directories
+main_directory = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/'
+gene_calls_dir = os.path.join(main_directory, 'homarine_gene_calls')
+output_directory = os.path.join(main_directory, 'protein_sequences_for_isolates')
+
+# Create the output directory if it doesn't exist
+os.makedirs(output_directory, exist_ok=True)
+
+# Function to copy and rename only .faa files into the same subdirectory
+def copy_and_rename_faa_files(src_directory, dest_directory):
+  for subdir in os.listdir(src_directory):
+  subdir_path = os.path.join(src_directory, subdir)
+if os.path.isdir(subdir_path):
+  for filename in os.listdir(subdir_path):
+  if filename.endswith('.faa'):
+  old_filepath = os.path.join(subdir_path, filename)
+new_filename = f"{subdir}_{filename}"  # Rename the file to include the subdir name
+new_filepath = os.path.join(dest_directory, new_filename)
+
+# Copy the .faa file to the common destination directory
+shutil.copy2(old_filepath, new_filepath)
+print(f"Copied: {old_filepath} to {new_filepath}")
+
+# Copy and rename only .faa files in both directories
+copy_and_rename_faa_files(gene_calls_dir, output_directory)
+
+print("Only .faa files have been copied, renamed, and organized into a single directory successfully.")
+```
+
+Make blastp databases for each isolate (MPI)
+```python
+#isolates_all_vs_all_blast_MPI.py
+import os
+import subprocess
+from multiprocessing import Pool
+
+# Define directories
+faa_dir = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/protein_sequences_for_isolates/"  # Directory with .faa files
+db_dir = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/"  # Directory with BLAST databases
+output_dir = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/"  # Output directory for results
+
+# Create the output directory if it doesn't exist
+os.makedirs(output_dir, exist_ok=True)
+
+# Get list of .faa files
+faa_files = [f for f in os.listdir(faa_dir) if f.endswith(".faa")]
+
+def run_blast(args):
+  """Function to run BLASTP with given query and database."""
+query_file, db_file = args
+
+if query_file == db_file:  # Skip self-alignments
+  return
+
+# Define input query and database paths
+query_path = os.path.join(faa_dir, query_file)
+db_base = os.path.splitext(db_file)[0] + "_db"  # Retain the '_db' suffix
+db_path = os.path.join(db_dir, db_base)  # Full path to the database
+
+# Construct output filename
+output_file = os.path.join(output_dir, f"{os.path.splitext(query_file)[0]}_vs_{db_base}.txt")
+
+# Command to run blastp
+cmd = [
+  "blastp",
+  "-query", query_path,
+  "-db", db_path,
+  "-out", output_file,
+  "-evalue", "1e-5",
+  "-outfmt", "6 qseqid sseqid qlen slen qcovs evalue pident bitscore length"
+]
+
+# Run the command
+print(f"Running: {' '.join(cmd)}")
+subprocess.run(cmd, check=True)
+
+# Create a list of all combinations of query and database pairs
+blast_tasks = [(faa_file, db_file) for faa_file in faa_files for db_file in faa_files if faa_file != db_file]
+
+# Number of parallel processes (set to the number of available cores or customize)
+num_cores = 24 #check top and free -h before submitting this job, to see number of cores in system write nproc or lscpu
+
+# Run BLAST in parallel
+with Pool(processes=num_cores) as pool:
+  pool.map(run_blast, blast_tasks)
+
+print("All BLAST alignments have been completed.")
+```
+
+
+Creates RBH files for each paired combination (careful, overwhelmeness coming your way)
+```python
+#RBH_finder_multi.py
+import os
+import pandas as pd
+
+# Output directory with BLAST results
+blast_input_dir = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/"
+output_dir = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/RBH/"
+
+# Get list of all BLAST result files from the input directory
+blast_files = [f for f in os.listdir(blast_input_dir) if f.endswith(".txt")]
+
+# Update paths to save RBH results to the new output directory
+rbh_output_file = os.path.join(rbh_output_dir, "reciprocal_best_hits.txt")
+
+# Dictionary to store top hits for each query from each file
+top_hits = {}
+
+# Function to read the BLAST file and extract top hits
+def get_top_hits(blast_file):
+  df = pd.read_csv(blast_file, sep="\t", header=None,
+                   names=['qseqid', 'sseqid', 'qlen', 'slen', 'qcovs', 'evalue', 'pident', 'bitscore', 'length'])
+# Group by query sequence and get the best hit for each based on bitscore
+best_hits = df.sort_values('bitscore', ascending=False).groupby('qseqid').first().reset_index()
+return best_hits
+
+# Read each BLAST output file and store the top hits
+for file in blast_files:
+  file_path = os.path.join(output_dir, file)
+top_hits[file] = get_top_hits(file_path)
+
+# Function to shorten file names for pairwise output
+def shorten_filename(filename):
+  # Remove redundant parts like 'assembly_prokka_output'
+  shortened_name = filename.replace("assembly_prokka_output_", "").replace("_PROKKA_", "")
+# Limit to a reasonable length if necessary
+return shortened_name[:50]  # Adjust the length as needed
+
+# Function to find Reciprocal Best Hits (RBH) and save them per file pair
+def find_rbh_and_save(top_hits, output_dir):
+  rbh_pairs = []
+
+# Loop over each file and compare its top hits to others
+for file1, hits1 in top_hits.items():
+  for file2, hits2 in top_hits.items():
+  if file1 == file2:
+  continue
+
+# Create dictionaries for quick lookup
+hits1_dict = dict(zip(hits1['qseqid'], hits1['sseqid']))
+hits2_dict = dict(zip(hits2['qseqid'], hits2['sseqid']))
+
+# List to store RBH for the current pair
+current_rbh_pairs = []
+
+# Check for RBH
+for query, target in hits1_dict.items():
+  if target in hits2_dict and hits2_dict[target] == query:
+  rbh_pair = [query, target, file1, file2]
+rbh_pairs.append(rbh_pair)
+current_rbh_pairs.append(rbh_pair)
+
+# Save RBH results for the current pair if any are found
+if current_rbh_pairs:
+  # Shorten filenames for output
+  short_file1 = shorten_filename(os.path.basename(file1))
+short_file2 = shorten_filename(os.path.basename(file2))
+
+# Create output file path
+pairwise_output_file = os.path.join(output_dir, f"{short_file1}_vs_{short_file2}_rbh.txt")
+
+# Save the RBH results
+pairwise_df = pd.DataFrame(current_rbh_pairs, columns=['Query', 'Target', 'File 1', 'File 2'])
+pairwise_df.to_csv(pairwise_output_file, sep='\t', index=False)
+print(f"RBH for {short_file1} vs {short_file2} saved to {pairwise_output_file}.")
+
+return rbh_pairs
+
+# Find Reciprocal Best Hits across all files and save per pair
+rbh_results = find_rbh_and_save(top_hits, output_dir)
+
+# Save the compiled RBH results to a main output file
+if rbh_results:
+  # Convert the results to a DataFrame for easy saving
+  rbh_df = pd.DataFrame(rbh_results, columns=['Query', 'Target', 'File 1', 'File 2'])
+rbh_df.to_csv(rbh_output_file, sep='\t', index=False)
+print(f"Reciprocal Best Hits compiled and saved to {rbh_output_file}.")
+else:
+  print("No Reciprocal Best Hits found.")
+```
+
+
+Find homarine gene alignments based on Ruegeria pomeroyi and Cobetia sp. OBi1
+```python
+#gene_finder.py
+import os
+import pandas as pd
+
+# List of genes to search for
+genes_of_interest = [
+    "gene-SPO3186", "gene-SPO3188",
+    "gene-SPO3189", "gene-SPO3190", "gene-SPO3191", "gene-SPO3192", "ACFLL8_11495",
+    "ACFLL8_11490", "ACFLL8_11500", "ACFLL8_11505", "ACFLL8_11510", "ACFLL8_11515",
+    "ACFLL8_11520", "ACFLL8_07295", "ACFLL8_07290", "ACFLL8_07300", "ACFLL8_07305",
+    "ACFLL8_07310", "ACFLL8_07315", "gene-SPO1587", "gene-SPO1585", "gene-SPO1586", "gene-SPO1588", "WP_008064110.1"]
+
+# Directory containing the files
+input_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/RBH/"
+output_file = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/RBH/Homi_genes_master_file.txt"
+
+# Initialize an empty list to store the data
+combined_data = []
+
+# Loop through all files in the directory
+for filename in os.listdir(input_directory):
+  if filename.endswith(".txt"):  # Assuming the files are text files
+  file_path = os.path.join(input_directory, filename)
+
+try:
+  # Read the file into a DataFrame, skip empty files
+  df = pd.read_csv(file_path, sep='\t', header=None)
+
+if df.empty:
+  print(f"Skipping empty file: {filename}")
+continue
+
+# Filter the DataFrame for rows containing the genes of interest
+filtered_df = df[df[0].isin(genes_of_interest)]
+
+# Append the filtered data to the combined_data list
+combined_data.append(filtered_df)
+
+except pd.errors.EmptyDataError:
+  print(f"Skipping file with no data: {filename}")
+except Exception as e:
+  print(f"Error processing {filename}: {e}")
+
+# Concatenate all the filtered data into a single DataFrame
+if combined_data:
+  master_df = pd.concat(combined_data)
+# Save the result to a CSV file
+master_df.to_csv(output_file, sep='\t', index=False, header=False)
+print(f"Data successfully combined into {output_file}")
+else:
+  print("No valid data to combine.")
+```
+
+
+Filters for unique RBHs amongst the master file
+```python
+#unique_entries.py
+import pandas as pd
+
+# Load the file into a pandas DataFrame
+file_path = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/RBH/Homi_genes_master_file.txt'
+df = pd.read_csv(file_path, sep='\t', header=None, names=['Gene', 'Code', 'DB1', 'DB2'])
+
+# Find unique entries based on the 'Code' column
+unique_entries = df.drop_duplicates(subset='Code')
+
+# Save unique entries to a new file
+unique_file_path = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/RBH/RBH_unique_codes.txt'
+unique_entries.to_csv(unique_file_path, sep='\t', index=False)
+
+print(f"Unique entries based on the second column (Code) have been saved to {unique_file_path}.")
+```
+
+Find homarine genes in isolate genomes and generate a fasta file
+```python
+#find_homi_faas.py
+import os
+import pandas as pd
+from Bio import SeqIO
+
+# Load the list of gene IDs from the CSV file
+gene_ids_file = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/2024_10_23_RBH_homi_genes_isolate_genomes.csv'
+gene_df = pd.read_csv(gene_ids_file)
+
+# Column name that contains the gene IDs
+gene_column = 'Gene_Id'  # actual column name
+
+# List of gene IDs to search for
+gene_ids = gene_df[gene_column].tolist()
+
+# Directory containing the genome sequence files
+genome_dir = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/protein_sequences_for_isolates'
+
+# Find all genome files with a .faa extension in the specified directory
+genome_files = [f for f in os.listdir(genome_dir) if f.endswith('.faa')]
+
+# Output file to save matched sequences
+output_file = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/RBH/matched_gene_sequences.fasta'
+
+# Initialize a list to hold matched sequences
+matched_sequences = []
+
+# Search through each genome file for the gene IDs
+for genome_file in genome_files:
+  genome_path = os.path.join(genome_dir, genome_file)
+
+# Parse the genome file
+for record in SeqIO.parse(genome_path, 'fasta'):
+  # Check if the gene ID is in the sequence ID
+  if any(gene_id in record.id for gene_id in gene_ids):
+  matched_sequences.append(record)
+
+# Save the matched sequences to a new FASTA file
+with open(output_file, 'w') as output_handle:
+  SeqIO.write(matched_sequences, output_handle, 'fasta')
+
+print(f"Matched gene sequences have been saved to {output_file}.")
+```
+
+
+Separate fasta files by gene
+```python
+#separate_homi_genes.py
+import os
+import pandas as pd
+from Bio import SeqIO
+
+# Load the key file to map gene IDs to their respective SPO IDs
+key_file = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/2024_10_23_RBH_homi_genes_isolate_genomes_SPO_key.csv'
+key_df = pd.read_csv(key_file)
+
+# Column names from the key file (adjust as needed)
+gene_column = 'Gene_ID'  # The actual gene column in your key file
+spo_column = 'SPO_ID'    # The actual SPO ID column in your key file
+
+# Directory containing the matched sequences
+input_fasta_file = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/RBH/DSS3_matched_gene_sequences_to_isolates.fasta'
+
+# Directory where the separated files will be saved
+output_dir = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/genome_protein_database/All_vs_all_blast/RBH/split_sequences/'
+
+# Ensure the output directory exists
+os.makedirs(output_dir, exist_ok=True)
+
+# Dictionary to hold sequences for each SPO ID
+spo_sequences = {}
+
+# Initialize dictionary to store sequences per SPO ID
+for spo_id in key_df[spo_column].unique():
+  spo_sequences[spo_id] = []
+
+# Parse the input FASTA file and map sequences to their corresponding SPO IDs
+for record in SeqIO.parse(input_fasta_file, 'fasta'):
+  # Extract the gene ID from the sequence record
+  gene_id = record.id
+
+# Find the corresponding SPO ID from the key file
+spo_id_row = key_df[key_df[gene_column] == gene_id]
+if not spo_id_row.empty:
+  spo_id = spo_id_row[spo_column].values[0]
+spo_sequences[spo_id].append(record)
+
+# Write the sequences to separate files based on their SPO IDs
+for spo_id, sequences in spo_sequences.items():
+  output_file = os.path.join(output_dir, f'{spo_id}_sequences.fasta')
+
+# Save the sequences for the current SPO ID into a new FASTA file
+with open(output_file, 'w') as output_handle:
+  SeqIO.write(sequences, output_handle, 'fasta')
+
+print(f"Sequences have been split and saved into separate files in {output_dir}.")
+```
+
+
+Match Ruegeria pomeroyi and Cobetia sp. OBi1 genes to the file
+```python
+#match_gene_ids_to_genomes.py
+import os
+import csv
+
+# Define the base directory containing the subdirectories
+base_dir = '/mnt/nfs/home/xaquatic/homarine_genome_assemblies/homarine_gene_calls'
+output_file = 'matched_gene_ids.csv'
+
+# Open the output file for writing
+with open(output_file, 'w', newline='') as csvfile:
+  writer = csv.writer(csvfile)
+# Write header row
+writer.writerow(['Subdirectory', 'Gene_ID'])
+ 
+# Walk through each subdirectory
+for subdir, dirs, files in os.walk(base_dir):
+  for file in files:
+  if file.endswith('.faa'):
+  # Extract subdirectory name (e.g., G4i02)
+  subdir_name = os.path.basename(subdir).split('_')[0]
+
+# Open and read the .faa file
+file_path = os.path.join(subdir, file)
+with open(file_path, 'r') as f:
+  for line in f:
+  # Check if the line starts with '>', indicating a FASTA header
+  if line.startswith('>'):
+  # Extract only the ID part (first word after '>')
+  gene_id = line[1:].strip().split()[0]
+# Write the subdirectory name and gene ID to the output file
+writer.writerow([subdir_name, gene_id])
+
+print(f"Gene IDs have been matched and saved to {output_file}.")
+```
+
+###############################################################################
+#Part2. HMMER profiles for homarine genes
+###############################################################################
+
+For hmmer profiles,
+#1)Aligned genes using mafft in geneious with a blosum62 matrix. 2) Trimmed unconserved ends at N and C terminals. 3) Removed gaps in concensus sequence.
+
+Build HMMER profile
+#path: /mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/sequence_alignments
+
+#template
+hmmbuild output_hmmprofile.hmm input_aa_aln.fasta
+
+#SPO3188
+#hmmbuild
+hmmbuild SPO3188_hmm.hmm Protein_alignment_02315_SPO3188.fasta
+
+#SPO3189
+hmmbuild SPO3189_hmm.hmm Protein_alignment_02316_SPO3189.fasta
+
+#SPO3190
+hmmbuild SPO3190_hmm.hmm Protein_alignment_02318_SPO3190.fasta
+
+#SPO319, note: Re-did this profile with a cleaner alignment (22/11/24)1
+hmmbuild SPO3191_hmm.hmm Protein_alignment_02319_SPO3191.fasta
+
+
+Test specificity of homA in isolate genomes
+```python
+#test_hmm_SPO3188.py
+import os
+import subprocess
+
+# Directories and file paths
+fasta_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/protein_sequences_for_isolates"
+output_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/test/SPO3188"
+hmm_profile = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/sequence_alignments/SPO3188_hmm.hmm"
+
+# Ensure the output directory exists
+os.makedirs(output_directory, exist_ok=True)
+
+# Iterate over FASTA files in the directory
+for fasta_file in os.listdir(fasta_directory):
+  if fasta_file.endswith(".faa"):
+  fasta_path = os.path.join(fasta_directory, fasta_file)
+
+# Generate output file name based on the FASTA file name
+output_tab = os.path.join(output_directory, f"{os.path.splitext(fasta_file)[0]}.tab")
+
+# Construct the hmmsearch command
+command = [
+  "hmmsearch",
+  "--cpu", "4",
+  "-T", "30",
+  "--incT", "30",
+  "--domtblout", output_tab,
+  hmm_profile,
+  fasta_path
+]
+
+# Run the command
+print(f"Running hmmsearch for {fasta_file}...")
+subprocess.run(command, check=True)
+
+print("All hmmsearch operations are complete.")
+```
+
+Test specificity of homB in isolate genomes
+```python
+#test_hmm_SPO3189.py
+import os
+import subprocess
+
+# Directories and file paths
+fasta_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/protein_sequences_for_isolates"
+output_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/test/SPO3189"
+hmm_profile = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/sequence_alignments/SPO3189_hmm.hmm"
+
+# Ensure the output directory exists
+os.makedirs(output_directory, exist_ok=True)
+
+# Iterate over FASTA files in the directory
+for fasta_file in os.listdir(fasta_directory):
+  if fasta_file.endswith(".faa"):
+  fasta_path = os.path.join(fasta_directory, fasta_file)
+
+# Generate output file name based on the FASTA file name
+output_tab = os.path.join(output_directory, f"{os.path.splitext(fasta_file)[0]}.tab")
+
+# Construct the hmmsearch command
+command = [
+  "hmmsearch",
+  "--cpu", "4",
+  "-T", "30",
+  "--incT", "30",
+  "--domtblout", output_tab,
+  hmm_profile,
+  fasta_path
+]
+
+# Run the command
+print(f"Running hmmsearch for {fasta_file}...")
+subprocess.run(command, check=True)
+
+print("All hmmsearch operations are complete.")
+```
+
+Test specificity of homC in isolate genomes
+```python
+#test_hmm_SPO3190.py
+import os
+import subprocess
+
+# Directories and file paths
+fasta_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/protein_sequences_for_isolates"
+output_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/test/SPO3190"
+hmm_profile = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/sequence_alignments/SPO3190_hmm.hmm"
+
+# Ensure the output directory exists
+os.makedirs(output_directory, exist_ok=True)
+
+# Iterate over FASTA files in the directory
+for fasta_file in os.listdir(fasta_directory):
+  if fasta_file.endswith(".faa"):
+  fasta_path = os.path.join(fasta_directory, fasta_file)
+
+# Generate output file name based on the FASTA file name
+output_tab = os.path.join(output_directory, f"{os.path.splitext(fasta_file)[0]}.tab")
+
+# Construct the hmmsearch command
+command = [
+  "hmmsearch",
+  "--cpu", "4",
+  "-T", "30",
+  "--incT", "30",
+  "--domtblout", output_tab,
+  hmm_profile,
+  fasta_path
+]
+
+# Run the command
+print(f"Running hmmsearch for {fasta_file}...")
+subprocess.run(command, check=True)
+
+print("All hmmsearch operations are complete.")
+```
+
+Test specificity of homD in isolate genomes
+```python
+#test_hmm_SPO3191.py
+import os
+import subprocess
+
+# Directories and file paths
+fasta_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/protein_sequences_for_isolates"
+output_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/test/SPO3191"
+hmm_profile = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/sequence_alignments/SPO3191_hmm.hmm"
+
+# Ensure the output directory exists
+os.makedirs(output_directory, exist_ok=True)
+
+# Iterate over FASTA files in the directory
+for fasta_file in os.listdir(fasta_directory):
+  if fasta_file.endswith(".faa"):
+  fasta_path = os.path.join(fasta_directory, fasta_file)
+
+# Generate output file name based on the FASTA file name
+output_tab = os.path.join(output_directory, f"{os.path.splitext(fasta_file)[0]}.tab")
+
+# Construct the hmmsearch command
+command = [
+  "hmmsearch",
+  "--cpu", "4",
+  "-T", "30",
+  "--incT", "30",
+  "--domtblout", output_tab,
+  hmm_profile,
+  fasta_path
+]
+
+# Run the command
+print(f"Running hmmsearch for {fasta_file}...")
+subprocess.run(command, check=True)
+
+print("All hmmsearch operations are complete.")
+```
+
+When testing, homA and homB seem like good genes for searching, homC is okay with false hits and homD is useless (too many hits).
+
+
+Search for homA in Gradients 3 transcriptomes
+```python
+#hmm_SPO3188_search_G3.py
+import os
+import subprocess
+
+# Directories and file paths
+fasta_directory = "/mnt/nfs/projects/armbrust-metat/gradients3/g3_uw_ns_metat/assemblies/6tr/bf100/bf100_unique"
+output_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3188"
+hmm_profile = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/sequence_alignments/SPO3188_hmm.hmm"
+
+# Ensure the output directory exists
+os.makedirs(output_directory, exist_ok=True)
+
+# Iterate over FASTA files in the directory
+for fasta_file in os.listdir(fasta_directory):
+  if fasta_file.endswith(".fasta"):
+  fasta_path = os.path.join(fasta_directory, fasta_file)
+
+# Generate output file name based on the FASTA file name
+output_tab = os.path.join(output_directory, f"{os.path.splitext(fasta_file)[0]}.tab")
+
+# Construct the hmmsearch command
+command = [
+  "hmmsearch",
+  "--cpu", "4",
+  "-T", "30",
+  "--incT", "30",
+  "--domtblout", output_tab,
+  hmm_profile,
+  fasta_path
+]
+
+# Run the command
+print(f"Running hmmsearch for {fasta_file}...")
+subprocess.run(command, check=True)
+
+print("All hmmsearch operations are complete.")
+```
+Search for homB in Gradients 3 transcriptomes
+```python
+#hmm_SPO3189_search_G3.py
+import os
+import subprocess
+
+# Directories and file paths
+fasta_directory = "/mnt/nfs/projects/armbrust-metat/gradients3/g3_uw_ns_metat/assemblies/6tr/bf100/bf100_unique"
+output_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3189"
+hmm_profile = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/sequence_alignments/SPO3189_hmm.hmm"
+
+# Ensure the output directory exists
+os.makedirs(output_directory, exist_ok=True)
+
+# Iterate over FASTA files in the directory
+for fasta_file in os.listdir(fasta_directory):
+  if fasta_file.endswith(".fasta"):
+  fasta_path = os.path.join(fasta_directory, fasta_file)
+
+# Generate output file name based on the FASTA file name
+output_tab = os.path.join(output_directory, f"{os.path.splitext(fasta_file)[0]}.tab")
+
+# Construct the hmmsearch command
+command = [
+  "hmmsearch",
+  "--cpu", "4",
+  "-T", "30",
+  "--incT", "30",
+  "--domtblout", output_tab,
+  hmm_profile,
+  fasta_path
+]
+
+# Run the command
+print(f"Running hmmsearch for {fasta_file}...")
+subprocess.run(command, check=True)
+
+print("All hmmsearch operations are complete.")
+```
+
+Merge Gradients 3 metadata to hmmer search results for homA
+```python
+#Merge_Gradients_3_data_to_SPO3188_hmm.py
+import pandas as pd
+import os
+
+# Set file paths
+hmm_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3188/G3_SPO3188_parsed_hmm_output.csv"
+big_table_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/BigTable_G3_NS_ALL.csv.gz"
+
+# Read in BigTable G1 NS
+G1 = pd.read_csv(big_table_path, compression='gzip')
+
+# Drop unnecessary column if it exists
+if 'X' in G1.columns:
+  G1.drop(columns=['X'], inplace=True)
+
+# Read the hmm output table
+hmm = pd.read_csv(hmm_path)
+
+# Drop unnecessary column if it exists
+if 'X' in hmm.columns:
+  hmm.drop(columns=['X'], inplace=True)
+
+# Subset big table for only those contigs that have a hmm hit
+G1_hmm = pd.merge(hmm, G1, left_on="contig", right_on="nt_id", how="left")
+
+# Get correct contig ID
+if "nt_id_sample" in G1_hmm.columns:
+  G1_hmm["contig"] = G1_hmm["nt_id_sample"]
+G1_hmm.drop(columns=["nt_id_sample"], inplace=True)
+
+# Reorder columns with `contig` as the first column
+columns = ["contig"] + [col for col in G1_hmm.columns if col != "contig"]
+G1_hmm = G1_hmm[columns]
+
+# Write the updated table to a file
+output_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3188/G3_SPO3188_hmm_merged_output.csv"
+G1_hmm.to_csv(output_path, index=False)
+```
+
+
+Merge Gradients 3 metadata to hmmer search results for homB
+```python
+#Merge_Gradients_3_data_to_SPO3189_hmm.py
+import pandas as pd
+import os
+
+# Set file paths
+hmm_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3189/G3_SPO3189_parsed_hmm_output.csv"
+big_table_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/BigTable_G3_NS_ALL.csv.gz"
+
+# Read in BigTable G1 NS
+G1 = pd.read_csv(big_table_path, compression='gzip')
+
+# Drop unnecessary column if it exists
+if 'X' in G1.columns:
+  G1.drop(columns=['X'], inplace=True)
+
+# Read the hmm output table
+hmm = pd.read_csv(hmm_path)
+
+# Drop unnecessary column if it exists
+if 'X' in hmm.columns:
+  hmm.drop(columns=['X'], inplace=True)
+
+# Subset big table for only those contigs that have a hmm hit
+G1_hmm = pd.merge(hmm, G1, left_on="contig", right_on="nt_id", how="left")
+
+# Get correct contig ID
+if "nt_id_sample" in G1_hmm.columns:
+  G1_hmm["contig"] = G1_hmm["nt_id_sample"]
+G1_hmm.drop(columns=["nt_id_sample"], inplace=True)
+
+# Reorder columns with `contig` as the first column
+columns = ["contig"] + [col for col in G1_hmm.columns if col != "contig"]
+G1_hmm = G1_hmm[columns]
+
+# Write the updated table to a file
+output_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3189/G3_SPO3189_hmm_merged_output.csv"
+G1_hmm.to_csv(output_path, index=False)
+```
+
+Retreive and sort hmmr profiles homA and homB fasta sequences from Gradients 3
+```python
+#search_for_hmm_and_sort_fasta.py
+import os
+import csv
+from Bio import SeqIO
+
+# File paths
+csv_file = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3188_SPO3189_combined_G3_with_metadata.csv"
+fasta_directory = "/mnt/nfs/projects/armbrust-metat/gradients3/g3_uw_ns_metat/assemblies/6tr/bf100/bf100_unique"  
+output_directory = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/fasta_hits/"   
+
+# Read nt_ids and hmm_profiles from the CSV file
+hmm_profiles = {}
+with open(csv_file, "r") as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        if "hmm_profile" in row and "nt_id" in row:  # Ensure the column names match your CSV
+            profile = row["hmm_profile"].strip()
+            nt_id = row["nt_id"].strip()
+            if profile not in hmm_profiles:
+                hmm_profiles[profile] = set()
+            hmm_profiles[profile].add(nt_id)
+
+# Search for nt_ids in fasta files and extract sequences for each hmm_profile
+for profile, nt_ids in hmm_profiles.items():
+    matching_sequences = []
+    for fasta_file in os.listdir(fasta_directory):
+        if fasta_file.endswith(".fasta"):
+            fasta_path = os.path.join(fasta_directory, fasta_file)
+            for record in SeqIO.parse(fasta_path, "fasta"):
+                if record.id in nt_ids:
+                    matching_sequences.append(record)
+
+    # Write matching sequences to an output FASTA file for the current hmm_profile
+    output_fasta = os.path.join(output_directory, f"{profile}_sequences.fasta")
+    with open(output_fasta, "w") as output:
+        SeqIO.write(matching_sequences, output, "fasta")
+    print(f"Extracted {len(matching_sequences)} sequences for HMM profile '{profile}' to {output_fasta}.")
+```
+
+In geneious;
+Part 1: 1) Align Gradients sequences with hmm sequences, 2) Cut off flanking regions not present in hmm's, 3) Remove sequences shorter than hmm's length, 4) make a tree
+
+Part 2: Search Gradients for counts of new sequences, homA
+```python
+#select_clean_parsed_hmm_SPO3188.py
+import pandas as pd
+
+# File paths
+parsed_hmm_file = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3188/G3_SPO3188_parsed_hmm_output.csv"
+clean_hmms_file = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/fasta_hits/clean_sequences/SPO3188_Grazer_clean_hmms.txt"
+output_file = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/fasta_hits/clean_sequences/parsed/SPO3188_parsed_clean_ids_output.csv"
+
+# Load the parsed HMM file and treat the first column as the index
+parsed_hmm_df = pd.read_csv(parsed_hmm_file, index_col=0)
+
+# Extract IDs from the clean HMMs file (lines before ':' delimiter)
+with open(clean_hmms_file, "r") as f:
+    clean_hmms_lines = f.readlines()
+
+clean_ids = {line.split(":")[0].strip() for line in clean_hmms_lines if ":" in line}
+
+# Filter the parsed HMM DataFrame for matching IDs
+matched_data = parsed_hmm_df[parsed_hmm_df['contig'].isin(clean_ids)]
+
+# Save the full matched rows to a new CSV file, keeping the original index intact
+matched_data.to_csv(output_file, index=True, quoting=1)
+
+print(f"Matched data saved to: {output_file}")
+```
+
+Search Gradients for counts of new sequences, homB
+```python
+#select_clean_parsed_hmm_SPO3189.py
+import pandas as pd
+
+# File paths
+parsed_hmm_file = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3189/G3_SPO3189_parsed_hmm_output.csv"
+clean_hmms_file = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/fasta_hits/clean_sequences/SPO3189_Grazer_clean_hmms.txt"
+output_file = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/fasta_hits/clean_sequences/parsed/SPO3189_parsed_clean_ids_output.csv"
+
+# Load the parsed HMM file and treat the first column as the index
+parsed_hmm_df = pd.read_csv(parsed_hmm_file, index_col=0)
+
+# Extract IDs from the clean HMMs file (lines before ':' delimiter)
+with open(clean_hmms_file, "r") as f:
+    clean_hmms_lines = f.readlines()
+
+clean_ids = {line.split(":")[0].strip() for line in clean_hmms_lines if ":" in line}
+
+# Filter the parsed HMM DataFrame for matching IDs
+matched_data = parsed_hmm_df[parsed_hmm_df['contig'].isin(clean_ids)]
+
+# Save the full matched rows to a new CSV file, keeping the original index intact
+matched_data.to_csv(output_file, index=True, quoting=1)
+
+print(f"Matched data saved to: {output_file}")
+```
+
+
+Parse clean homA hmm sequences
+```python
+#Merge_Gradients_3_data_to_SPO3188_hmm_clean.py
+import pandas as pd
+import os
+
+# Set file paths
+hmm_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/fasta_hits/clean_sequences/parsed/SPO3188_parsed_clean_ids_output.csv"
+big_table_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/BigTable_G3_NS_ALL.csv.gz"
+
+# Read in BigTable G1 NS
+G1 = pd.read_csv(big_table_path, compression='gzip')
+
+# Drop unnecessary column if it exists
+if 'X' in G1.columns:
+    G1.drop(columns=['X'], inplace=True)
+
+# Read the hmm output table
+hmm = pd.read_csv(hmm_path)
+
+# Drop unnecessary column if it exists
+if 'X' in hmm.columns:
+    hmm.drop(columns=['X'], inplace=True)
+
+# Subset big table for only those contigs that have a hmm hit
+G1_hmm = pd.merge(hmm, G1, left_on="contig", right_on="nt_id", how="left")
+
+# Get correct contig ID
+if "nt_id_sample" in G1_hmm.columns:
+    G1_hmm["contig"] = G1_hmm["nt_id_sample"]
+    G1_hmm.drop(columns=["nt_id_sample"], inplace=True)
+
+# Reorder columns with `contig` as the first column
+columns = ["contig"] + [col for col in G1_hmm.columns if col != "contig"]
+G1_hmm = G1_hmm[columns]
+
+# Write the updated table to a file
+output_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3188/G3_SPO3188_hmm_merged_output_clean.csv"
+G1_hmm.to_csv(output_path, index=False)
+```
+
+
+Parse clean homB hmmer sequences
+```python
+#Merge_Gradients_3_data_to_SPO3189_hmm_clean.py
+import pandas as pd
+import os
+
+# Set file paths
+hmm_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/fasta_hits/clean_sequences/parsed/SPO3189_parsed_clean_ids_output.csv"
+big_table_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/BigTable_G3_NS_ALL.csv.gz"
+
+# Read in BigTable G1 NS
+G1 = pd.read_csv(big_table_path, compression='gzip')
+
+# Drop unnecessary column if it exists
+if 'X' in G1.columns:
+G1.drop(columns=['X'], inplace=True)
+
+# Read the hmm output table
+hmm = pd.read_csv(hmm_path)
+
+# Drop unnecessary column if it exists
+if 'X' in hmm.columns:
+hmm.drop(columns=['X'], inplace=True)
+
+# Subset big table for only those contigs that have a hmm hit
+G1_hmm = pd.merge(hmm, G1, left_on="contig", right_on="nt_id", how="left")
+
+# Get correct contig ID
+if "nt_id_sample" in G1_hmm.columns:
+G1_hmm["contig"] = G1_hmm["nt_id_sample"]
+G1_hmm.drop(columns=["nt_id_sample"], inplace=True)
+
+# Reorder columns with `contig` as the first column
+columns = ["contig"] + [col for col in G1_hmm.columns if col != "contig"]
+G1_hmm = G1_hmm[columns]
+
+# Write the updated table to a file
+output_path = "/mnt/nfs/home/xaquatic/homarine_genome_assemblies/Oscar_RefSeq_Orthologs/hmmer_searches/Gradients_3/SPO3189/G3_SPO3189_hmm_merged_output_clean.csv"
+G1_hmm.to_csv(output_path, index=False)
+```
+
