@@ -6,7 +6,8 @@ library(tidyverse)
 library(rnaturalearthdata)
 library(rnaturalearth)
 library(ggplot2)
-
+library(ggstar)
+fnt_size <- 5
 # Define a function to return the mode value from a vector of values ------
 get_mode <- function(x) {
     ux <- unique(x)
@@ -17,6 +18,11 @@ get_mode <- function(x) {
 dat <- read_csv(here("data", "intermediate", "ncbi_metadata_clean.csv"),
                      show_col_types = FALSE) %>%
     rename(assembly = assembly_accession)
+dat_isolates <- read_csv(here("figures", "maps", "Isolation_Locations_01142025.csv"),
+                     show_col_types = FALSE) %>%
+    filter(group != "BH")%>%
+    select(Lat, Lon) %>%
+    distinct() 
 
 # Summarize data by isolation_source_mapped and environmental_source_mapped and make a pie plot
 dat_pie <- dat %>%
@@ -81,27 +87,49 @@ ncbi_map_2 <- ggplot(data = world) +
     coord_sf() + 
     geom_point(
         data = dat_plot2, 
-        aes(x = lon, y = lat, fill = environmental_source_mapped, size = n), shape = 21, stroke = 0.15) +
+        aes(x = lon, y = lat, fill = environmental_source_mapped, size = n), 
+        shape = 21, 
+        stroke = 0.15
+        # No fixed size here since size is mapped to 'n'
+    ) +
+    geom_star(
+        data = dat_isolates, 
+        aes(x = Lon, y = Lat), 
+        color = "black",
+        starstroke = 0.1,
+        fill = "#9467BD", 
+        size = 1 # Adjusting star size to be smaller
+    ) +
     labs(
-        fill = "Environmental Type", # Add legend label
+        fill = "Environmental Type", 
         size = "# of Genomes",
         x = "Longitude",
         y = "Latitude"
     ) +
     guides(
-        fill = guide_legend(override.aes = list(size = 4), title.position = "top", title.hjust = 0.5),
-        size = guide_legend(title.position = "top", title.hjust = 0.5)
-    ) +    scale_fill_manual(values = c("#1F77B4", "#17BECF", "#613613", "#F28E2B", "grey40")) +
-    scale_size_continuous(transform = "log10", range = c(1,5.5)) +
+        fill = guide_legend(
+            override.aes = list(size = 3),  # Make the legend key smaller
+            title.position = "top", 
+            title.hjust = 0.5, 
+            nrow = 2
+        ),
+        size = guide_legend(
+            title.position = "top", 
+            title.hjust = 0.5
+        )
+    ) +    
+    scale_fill_manual(values = c("#1F77B4", "#17BECF", "#613613", "#F28E2B", "grey40")) +
+    scale_size_continuous(transform = "log10", range = c(0.5, 3)) +  # Adjust range to control size scaling
     theme_bw() +
     theme(
         panel.border = element_blank(),
         legend.position = "bottom",
         axis.title = element_blank(),
-        axis.text = element_text(size = 7),
-        legend.title = element_text(size = 7),
-        legend.text = element_text(size = 7),
+        axis.text = element_text(size = fnt_size),
+        legend.title = element_text(size = fnt_size),
+        legend.text = element_text(size = fnt_size),
         legend.spacing.y = unit(0.1, 'cm'),
+        legend.key.size = unit(0.1, 'cm'),  # Smaller key size
         legend.margin = margin(-15, 0, 0, 0)
     )
 ncbi_map_2
