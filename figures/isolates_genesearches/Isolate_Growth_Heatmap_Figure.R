@@ -2,7 +2,7 @@ library(tidyverse)
 library(patchwork)
 
 # Set font size
-fnt_size <- 6
+fnt_size <- 5
 
 # Read in data ------
 growth.class.file <- "data/intermediate/isolategrowth/Isolates_hom_growth_classification.csv"
@@ -61,7 +61,7 @@ hom.growth.hm.dat <- gene.plot.dat.order %>%
 
 growth.plot <- ggplot(hom.growth.hm.dat, aes(x = "Growth", y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill = "white") +
-    geom_text(aes(label = ifelse(hom_growth_status == "grower", "+", "")), size = 5, color = "black") +
+    geom_text(aes(label = ifelse(hom_growth_status == "grower", "+", "")), size = 3, color = "black") +
   theme_minimal() +
   ylab("Isolate") +
   theme(
@@ -69,12 +69,12 @@ growth.plot <- ggplot(hom.growth.hm.dat, aes(x = "Growth", y = reorder(isolate, 
       t = 0, # Top margin
       r = 0, # Right margin
       b = 0, # Bottom margin
-      l = 0
+      l = -20
     ),
     panel.grid.major = element_blank(),
     axis.text.x = element_text(angle = 45, vjust = 0.8, size = fnt_size),
     axis.text.y = element_text(size = fnt_size),
-    axis.title.y = element_text(size = fnt_size+1),
+    axis.title.y = element_text(size = fnt_size),
     axis.title.x = element_blank()
   ) +
   coord_fixed() +
@@ -93,7 +93,7 @@ gene.plot.dat.order.hom <- gene.plot.dat.order %>%
 
 hom.gene.plot <- ggplot(gene.plot.dat.order.hom, aes(x = gene, y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill="white") +
-    geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 5, color = "black") +
+    geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 3, color = "black") +
   theme_minimal() +
   ylab("Isolate") +
   xlab("Gene") +
@@ -121,7 +121,7 @@ gene.plot.dat.order.mgd <- gene.plot.dat.order %>%
 
 mgd.gene.plot <- ggplot(gene.plot.dat.order.mgd, aes(x = gene, y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill = "white") +
-    geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 5, color = "black") +
+    geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 3, color = "black") +
   scale_fill_manual(values = c("white", "#b0a5cc")) +
   theme_minimal() +
   ylab("Isolate") +
@@ -151,7 +151,7 @@ gene.plot.dat.order.sox <- gene.plot.dat.order %>%
 
 sox.gene.plot <- ggplot(gene.plot.dat.order.sox, aes(x = gene, y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill="white") +
-    geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 5, color = "black") +
+    geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 3, color = "black") +
   scale_fill_manual(values = c("white", "#b0a5cc")) +
   theme_minimal() +
   ylab("Isolate") +
@@ -186,7 +186,7 @@ sox.gene.plot
 class.plot <- ggplot(gene.plot.dat.order, aes(x = "Class", y = reorder(isolate, -order), fill = Class)) +
   geom_tile(color = "black", width = 1) +
   #  scale_fill_continuous(low = "white", high = "gray40") +
-  scale_fill_manual(values = c("#f9c482", "#ecb1cf", "#6cccdc")) +
+  scale_fill_manual(values = c("#f8b767", "#dd8fb9", "#16afca")) +
   theme_minimal() +
   ylab("Isolate") +
   theme(
@@ -201,17 +201,25 @@ class.plot <- ggplot(gene.plot.dat.order, aes(x = "Class", y = reorder(isolate, 
     panel.grid.major = element_blank(),
     axis.text.x = element_text(angle = 45, vjust = 0.8, size = fnt_size),
     axis.title.x = element_blank(),
-    legend.title = element_text(size = fnt_size+1),
-    legend.text = element_text(size = fnt_size)
+    legend.position = "bottom",  # Position legend at the bottom
+    legend.title = element_text(size = fnt_size, hjust = 0.5),  # Center legend title
+    legend.text = element_text(size = fnt_size - 1),
+    legend.key.size = unit(0.2, "cm"),  # Key size modification
+    legend.margin = margin(0, 10, 0, 10),  # Ensure consistent margin around legend items
+    legend.spacing.x = unit(0.02, 'cm'),  # Horizontal spacing between legend items
+    legend.spacing.y = unit(0.02, 'cm'),  # Vertical spacing between legend elements
+    legend.background = element_blank(),  # No background to interfere
+    legend.box.background = element_rect(color = "grey60", fill = NULL, size = 0.5)  # Box and fill to encompass items
   ) +
-  coord_fixed()
+    guides(fill = guide_legend(title.position = "top", title.hjust = 0.5, nrow=3)) +  # Position title at the top of the legend
+    coord_fixed()
 class.plot
 
 # Family data:
 genus.plot <- ggplot(gene.plot.dat.order, aes(x = "Family", y = reorder(isolate, -order), fill = Family)) +
   geom_tile(color = "black", width = 1) +
   scale_fill_manual(values = c(
-    "#f8b767", "#fcdcb5", "#dd8fb9", "#f5d6e5", "#16afca",
+    "#f9c482", "#fcdcb5", "#ecb1cf", "#f5d6e5", "#6cccdc",
     "#26a6f3", "#42c7da", "#71caf8", "#a5dffb", "#d9f5f9"
   )) +
   #  scale_fill_tableau(palette = "Tableau 20") +
@@ -229,13 +237,20 @@ genus.plot <- ggplot(gene.plot.dat.order, aes(x = "Family", y = reorder(isolate,
       l = 0
     ),
     panel.grid.major = element_blank(),
-    axis.text.x = element_text(angle = 45, vjust = 0.8, size = 6),
+    axis.text.x = element_text(angle = 45, vjust = 0.8, size = fnt_size),
     axis.title.x = element_blank(),
-    legend.title = element_text(size = fnt_size+1),
-    legend.text = element_text(size = fnt_size)
-  ) +
-  coord_fixed()
-
+    legend.position = "bottom",  # Position legend at the bottom
+    legend.title = element_text(size = fnt_size, hjust = 0.5),  # Center legend title
+    legend.text = element_text(size = fnt_size - 1),
+    legend.key.size = unit(0.2, "cm"),  # Key size modification
+    legend.margin = margin(0, 10, 0, 10),  # Ensure consistent margin around legend items
+    legend.spacing.x = unit(0.02, 'cm'),  # Horizontal spacing between legend items
+    legend.spacing.y = unit(0.02, 'cm'),  # Vertical spacing between legend elements
+    legend.background = element_blank(),  # No background to interfere
+    legend.box.background = element_rect(color = "grey60", fill = NULL, size = 0.5)  #
+  )+
+    guides(fill = guide_legend(title.position = "top", title.hjust = 0.5, nrow=5)) +  # Position title at the top of the legend
+    coord_fixed()
 genus.plot
 
 ####
@@ -243,7 +258,7 @@ genus.plot
 # combine plots
 combined.plot <-   (growth.plot | hom.gene.plot | mgd.gene.plot | sox.gene.plot | class.plot | genus.plot) +
     plot_layout(guides = "collect") &
-    theme(legend.position = "right")
+    theme(legend.position = "bottom")
 # widths = c(1,-1 , 4, -1.5, 4,-1.5,
 #                                4,-1.5 ,1, -0.8,1))
 
