@@ -3,6 +3,7 @@ library(here)
 library(tidyverse)
 library(ggplot2)
 library(janitor)
+library(patchwork)
 
 closest_distance <- function (start_x, end_x, start_y, end_y) {
 
@@ -20,6 +21,13 @@ closest_distance <- function (start_x, end_x, start_y, end_y) {
 dat <- read_delim(here("data", "intermediate", "ncbi_genome_counts", "complete_homarine_catabolic_operons_second_round_genome_metadata_and_taxonomy.tsv"), delim = "\t",
                          show_col_types = FALSE) %>%
     clean_names()
+# Load data with genome size
+dat_genome_size <- read_csv(here("analysis/ncbi_genomes/genome_sizes_datasets.csv"),
+                         show_col_types = FALSE) %>%
+    clean_names() %>%
+    select(assembly_accession, genome_size_bp) %>%
+    rename(assembly = assembly_accession) %>%
+    distinct()
 
 # Filter the data to only keep one nucleotide_accession per assembly
 dat2 <- dat %>%
@@ -100,3 +108,54 @@ g <- ggplot(dat5 %>%
           panel.grid.minor = element_blank(),
           legend.position = "none") 
 g
+
+# Plot a box plot of genome size and presence/absense of homE by genome
+dat_genome_homE <- dat5 %>%
+    select(assembly, nucleotide_accession, gene_name) %>%
+    group_by(assembly, nucleotide_accession) %>%
+    summarise(homE = sum(gene_name == "homE")) %>%
+    ungroup() %>%
+    mutate(homE = case_when(homE > 0 ~ "homE present",
+                             homE == 0 ~ "homE absent") %>%
+               factor(levels = c("homE present", "homE absent"))) %>%
+    left_join(dat_genome_size, by = c("assembly"))
+
+t_test_result <- t.test(genome_size_bp ~ homE, data = dat_genome_homE)
+
+g2 <- ggplot(dat_genome_homE, aes(x = factor(homE), y = genome_size_bp/1000000)) +
+    geom_boxplot(outliers = FALSE, outlier.size = 0.1, width = 0.5) +
+    geom_jitter(size = 0.1, alpha = 0.1, width = 0.2) +
+    # Add annotation of number of genomes in each group
+    geom_text(data = dat_genome_homE %>%
+                  group_by(homE) %>%
+                  summarise(n = n_distinct(assembly)) %>%
+                  ungroup() %>%
+                  mutate(label = paste0("n = ", n)),
+              aes(label = label, y = 10.0, x = factor(homE)), 
+              size = 2.5, hjust = 0.5) +
+    # Add annotaiton of results of t-test
+    geom_text(data = data.frame(x = 1.5, y = 10.5, label = 
+                                    ifelse(t_test_result$p.value < 0.001, 
+                                           "t-test: p < 0.001",
+                                        paste0("t-test: p = ", round(t_test_result$p.value, 5)))),
+              aes(x = x, y = y, label = label), 
+              size = 2.5, hjust = 0.5) +
+    theme_bw() +
+    labs(y = "Genome size (Mb)") +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 7),
+          axis.text.y = element_text(size = 7),
+          axis.title.y = element_text(size = 7),
+          axis.title.x = element_blank(),
+          strip.background = element_blank(),
+          strip.text = element_text(size = 7),
+          panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),
+          legend.position = "none")    
+# Combine the two plots
+g_combined <- g + g2 + plot_layout(ncol = 2, widths = c(3, 1)) +
+    plot_annotation(tag_levels = 'A') & 
+    theme(plot.tag = element_text(size = 7))
+g_combined
+
+# Save the plot
+ggsave("figures/figure_3.png", g_combined, width = 8, height = 4, dpi = 300)
