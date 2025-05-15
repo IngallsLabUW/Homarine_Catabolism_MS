@@ -158,6 +158,7 @@ g_combined <- g + g2 + plot_layout(ncol = 2, widths = c(3, 1)) +
 g_combined
 
 # Save the plot
-ggsave("figures/homE/Figure_SX8_combined_boxplots.png", 
+ggsave("figures/homE/Figure_SX8_combined_boxplots.pdf", 
        g_combined, 
-       width = 10, height = 4, units = "in", dpi = 300)
+       width = 10, height = 4, units = "in", dpi = 300,
+       device = cairo_pdf)

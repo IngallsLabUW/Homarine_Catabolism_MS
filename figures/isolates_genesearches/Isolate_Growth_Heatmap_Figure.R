@@ -1,5 +1,7 @@
 library(tidyverse)
 library(patchwork)
+library(grid)
+
 
 # Set font size
 fnt_size <- 5
@@ -8,7 +10,7 @@ fnt_size <- 5
 growth.class.file <- "data/intermediate/isolategrowth/Isolates_hom_growth_classification.csv"
 isolate.gene.file <- "data/isolate_platereader_data/Homarine_isolate_gene_info_042525.csv"
 
-######## Pull in homarine catabolism gene information
+######## Pull in homarine catabolism gene information -----
 iso.gene.info <- read_csv(isolate.gene.file) %>%
   select(-Gene) %>%
   pivot_longer(names_to = "gene", values_to = "presence", cols = `homE`:`soxB`) %>%
@@ -61,7 +63,7 @@ hom.growth.hm.dat <- gene.plot.dat.order %>%
 
 growth.plot <- ggplot(hom.growth.hm.dat, aes(x = "Growth", y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill = "white") +
-    geom_text(aes(label = ifelse(hom_growth_status == "grower", "+", "")), size = 3, color = "black") +
+geom_text(aes(label = ifelse(hom_growth_status == "grower", "+", "")), size = 3, color = "black") +
   theme_minimal() +
   ylab("Isolate") +
   theme(
@@ -93,7 +95,7 @@ gene.plot.dat.order.hom <- gene.plot.dat.order %>%
 
 hom.gene.plot <- ggplot(gene.plot.dat.order.hom, aes(x = gene, y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill="white") +
-    geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 3, color = "black") +
+    geom_text(aes(label = ifelse(presence == 1, "\u2713", "")), size = 3, color = "black") +
   theme_minimal() +
   ylab("Isolate") +
   xlab("Gene") +
@@ -121,7 +123,7 @@ gene.plot.dat.order.mgd <- gene.plot.dat.order %>%
 
 mgd.gene.plot <- ggplot(gene.plot.dat.order.mgd, aes(x = gene, y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill = "white") +
-    geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 3, color = "black") +
+    geom_text(aes(label = ifelse(presence == 1, "\u2713", "")), size = 3, color = "black") +
   scale_fill_manual(values = c("white", "#b0a5cc")) +
   theme_minimal() +
   ylab("Isolate") +
@@ -151,7 +153,7 @@ gene.plot.dat.order.sox <- gene.plot.dat.order %>%
 
 sox.gene.plot <- ggplot(gene.plot.dat.order.sox, aes(x = gene, y = reorder(isolate, -order))) +
   geom_tile(color = "black", width = 1, fill="white") +
-    geom_text(aes(label = ifelse(presence == 1, "+", "")), size = 3, color = "black") +
+    geom_text(aes(label = ifelse(presence == 1, "\u2713", "")), size = 3, color = "black") +
   scale_fill_manual(values = c("white", "#b0a5cc")) +
   theme_minimal() +
   ylab("Isolate") +
@@ -282,7 +284,7 @@ iso.supp.table <- gene.plot.dat.order %>%
   ) %>%
   arrange(hom_growth_status, Class, Family)
 
-write_csv(iso.supp.table, file = "tables/isolate_homarinegrowthstatus_and_genes.csv")
+#write_csv(iso.supp.table, file = "tables/isolate_homarinegrowthstatus_and_genes.csv")
 
 
 ## Old Code:
