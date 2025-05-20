@@ -311,14 +311,17 @@ g_orgs <- plot_tiles(
 ) +
   theme(
     legend.position = "bottom",
+    legend.justification = "left", 
     legend.margin = margin(0, 0, 0, 0),
     legend.box.margin = margin(0, 0, 0, 0, unit = "pt"),
-    legend.title = element_text(size = 7),
-    legend.text = element_text(size = 7),
+    legend.title = element_text(size = 6),
+    legend.text = element_text(size = 6),
     # rotate the x axis labels 45 degrees
     axis.text.x = element_text(angle = 30, hjust = 1),
+    legend.key.size = unit(0.4, "cm"),  # Reduces size of legend keys
+    legend.spacing = unit(0.1, "cm")    # Reduces spacing between legend items
   ) +
-  labs(fill = "enrichment \n factor \n (log2)")
+  labs(fill = "enrichment \n factor (log2)")
 
 ## Plot for G4 data -----
 g4 <- plot_tiles(
@@ -380,18 +383,19 @@ DDEEEEEE
 "
 g_map_and_structures <-  hom_fate_map +
     inset_element(homarine, 
-                  left = 0.23, bottom = 0.23, 
-                  right = 0.73, top = 0.73)
+                  left = 0.1, bottom = 0.55, 
+                  right = 0.44, top = 0.85)
+
     
 g_cmb <- (free(g_orgs) +
-    hom_fate_map +
+    g_map_and_structures +
     g_chromat +
     g4 +
     free(g5) +
     plot_layout(design = layout) & 
     theme(plot.margin = unit(c(0, 0, 0, 0), "cm"), 
           panel.spacing = unit(0.5, "cm"))) +
-    plot_annotation(tag_levels=list(c("     A", "     B", "     C", "", "     D", "", "     E", "     F")))
+    plot_annotation(tag_levels=list(c("     A", "     B","", "     C", "", "     D", "", "     E", "     F")))
 
 
 g_cmb
@@ -403,4 +407,11 @@ ggsave(
     "metabolomics", "homarine_fate_experiments.pdf"
   ),
   width = 8, height = 6.5, dpi = 300
+)
+ggsave(
+    here(
+        "figures",
+        "metabolomics", "homarine_fate_experiments.png"
+    ),
+    width = 8, height = 6.5, dpi = 300
 )

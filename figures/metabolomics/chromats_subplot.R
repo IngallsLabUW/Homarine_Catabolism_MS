@@ -10,7 +10,7 @@ source(here("analysis", "obi1_metabolomics", "functions", "plotting.R"))
 my_chromat_theme <- theme_bw() +
     theme(
         plot.title = element_text(
-            size = 8,
+            size = 7,
             margin=margin(b=-30),
             hjust = 0.5,
             face = "bold"
@@ -45,6 +45,7 @@ plot_combined_EICs <- function(mz_oi, rt_oi, name_oi, label_expected, mol_formul
   ) +
     colScale +
     labs(title = paste0(name_oi, "\n(m/z ", mz_oi, ")")) +
+      
   my_chromat_theme
 
   return(g_ms1)
