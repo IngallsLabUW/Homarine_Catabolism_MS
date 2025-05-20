@@ -170,14 +170,21 @@ dat_long_plot <- dat_long %>%
 ## Modify treatment and experiment_id columns for plotting =====
 dat_long_plot <- dat_long_plot %>%
   mutate(experiment_id_to_plot = case_when(
-    data_origin == "rpom" ~ "RPom",
-    data_origin == "obi1" ~ "Obi1",
+    data_origin == "rpom" ~ "DSS-3",
+    data_origin == "obi1" ~ "OBi1",
     data_origin == "rc104" ~ "RC104 St2",
     experiment_id == "G4_1" ~ "TN397 St2",
     experiment_id == "G4_2" ~ "TN397 St13",
     experiment_id == "G51" ~ "TN412 St2",
     experiment_id == "G52" ~ "TN412 St7"
-  )) %>%
+  ) %>%
+    factor(
+      levels = c( "OBi1", "DSS-3","RC104 St2", "TN397 St2", "TN397 St13", "TN412 St2", "TN412 St7"),
+      labels = c("OBi1", "DSS-3", "RC104 St2", "TN397 St2", "TN397 St13", "TN412 St2", "TN412 St7")
+    ),
+    mass_feature_oi = ifelse(is.na(mass_feature_oi), mass_feature_short, mass_feature_oi),
+    mass_feature_oi = ifelse(mass_feature_oi == "", mass_feature_short, mass_feature_oi)
+  ) %>%
   mutate(
     mass_feature_oi = ifelse(is.na(mass_feature_oi), mass_feature, mass_feature_oi)
   ) %>%
@@ -221,9 +228,8 @@ dat_long_plot2 <- dat_long_plot %>%
       ),
       labels = c(
         "Homarine",
-        "n-Methyl Glutamic Acid",
-        "n-Methyl Glutamine",
-        # TODO: write this is markdown with subscripts
+        "N-methylglutamic Acid",
+        "N-methylglutamine",
         "C<sub>6</sub>H<sub>9</sub>NO<sub>3</sub> (-@rt10)",
         "C<sub>6</sub>H<sub>9</sub>NO<sub>3</sub> (-@rt11)",
         "C<sub>6</sub>H<sub>9</sub>NO<sub>4</sub> (-@rt3.5)",
@@ -281,7 +287,6 @@ plot_tiles <- function(data_input) {
       aes(
         y = mass_feature_short,
         x = treatment,
-        label = "*"
       ),
       color = "black",
       shape = 8,
@@ -348,7 +353,19 @@ n_methyl_glutamine <- fig(structures_file[[3]])
 structures <- homarine / n_methyl_glutamatic_acid / n_methyl_glutamine
 
 ## Chromatogram for obi1 and rpom homarine control v +homarine -----
+# this sources eic_acid and eic_amine
 source(here("figures", "metabolomics", "chromats_subplot.R"))
+eic_acid_structure <- eic_acid + 
+    inset_element(n_methyl_glutamatic_acid, 
+                  left = 0.23, bottom = 0.23, 
+                  right = 0.73, top = 0.73)
+eic_amine_structure <- eic_amine +
+    inset_element(n_methyl_glutamine, 
+                  left = 0.23, bottom = 0.23, 
+                  right = 0.73, top = 0.73)
+g_chromat <- eic_acid_structure / eic_amine_structure +
+    plot_layout(axis = "collect") +
+    plot_annotation(tag_levels = list(c("B", "", "C")))
 
 
 ## Combine plots -----
@@ -361,16 +378,21 @@ DDEEEEEE
 DDEEEEEE
 DDEEEEEE
 "
-g_map_and_structures <- structures / hom_fate_map +
-    plot_layout(nrow = 1,
-                heights = c(1, 1.5),
+g_map_and_structures <-  hom_fate_map +
+    inset_element(homarine, 
+                  left = 0.23, bottom = 0.23, 
+                  right = 0.73, top = 0.73)
+    
+g_cmb <- (free(g_orgs) +
+    hom_fate_map +
+    g_chromat +
+    g4 +
+    free(g5) +
+    plot_layout(design = layout) & 
+    theme(plot.margin = unit(c(0, 0, 0, 0), "cm"), 
+          panel.spacing = unit(0.5, "cm"))) +
+    plot_annotation(tag_levels=list(c("     A", "     B", "     C", "", "     D", "", "     E", "     F")))
 
-g_cmb <- free(g_orgs) +
-  g_chromat +
-  g_map_and_structures +
-  g4 +
-  free(g5) +
-  plot_layout(design = layout)
 
 g_cmb
 
