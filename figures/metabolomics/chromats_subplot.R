@@ -10,7 +10,7 @@ source(here("analysis", "obi1_metabolomics", "functions", "plotting.R"))
 my_chromat_theme <- theme_bw() +
     theme(
         plot.title = element_text(
-            size = 8,
+            size = 7,
             margin=margin(b=-30),
             hjust = 0.5,
             face = "bold"
@@ -44,7 +44,8 @@ plot_combined_EICs <- function(mz_oi, rt_oi, name_oi, label_expected, mol_formul
     samples_oi = sample_key
   ) +
     colScale +
-    labs(title = paste0(name_oi, " (m/z ", mz_oi, ")")) +
+    labs(title = paste0(name_oi, "\n(m/z ", mz_oi, ")")) +
+      
   my_chromat_theme
 
   return(g_ms1)
@@ -119,37 +120,37 @@ sample_key <- obi1_sample_key %>%
   # cast treatment_short as factor
   mutate(treatment_short = factor(treatment_short, levels = c("control", "+homarine"))) %>%
   filter(treatment_short != "NA") %>%
-  mutate(experiment = factor(experiment, levels = c("obi1", "rpom"), labels = c("Obi1", "RPom"))) %>%
+  mutate(experiment = factor(experiment, levels = c("obi1", "rpom"), labels = c("OBi1", "DSS-3"))) %>%
   distinct()
 
 # Make plots ------
 ms1data <- grabMSdata(files = smps_to_plot, grab_what = c("MS1"))
-myColors <- c("grey50", "#17BECF")
+myColors <- c("grey80", "black")
 names(myColors) <- levels(sample_key$treatment_short)
 colScale <- scale_colour_manual(name = "Treatment", values = myColors, drop = FALSE)
 ### N-methyl glutamic acid figure ----
-g1 <- plot_combined_EICs(
+eic_acid <- plot_combined_EICs(
     mz_oi = 162.0759,
-    rt_oi = 11,
-    name_oi = "N-methyl glutamic acid",
+    rt_oi = 10,
+    name_oi = "N-methlyglutamic acid",
     label_expected = T,
     mol_formula = "C6H11NO4") +
     theme(legend.position = "none",
           axis.title.x = element_blank())
 
 ### N-methyl glutamine figure ----
-g2 <- plot_combined_EICs(
+eic_amine <- plot_combined_EICs(
     mz_oi = 161.0921,
-    rt_oi = 10,
-    name_oi = "N-methyl glutamine",
+    rt_oi = 9.5,
+    name_oi = "N-methylglutamine",
     label_expected = T,
     mol_formula = "C6H12N2O3") +
     theme(legend.position = "bottom")
 
 
 ### Combine plots ----
-g_chromat <- g1 / g2 +
-    # collect legends and axes titles
-    plot_layout(axis = "collect") +
-    plot_annotation(tag_levels = list(c("B", "C")))
+#g_chromat <- eic_acid / eic_amine +
+#    # collect legends and axes titles
+#    plot_layout(axis = "collect") +
+#    plot_annotation(tag_levels = list(c("B", "C")))
 
