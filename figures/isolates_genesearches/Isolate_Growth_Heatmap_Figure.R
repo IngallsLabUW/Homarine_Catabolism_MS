@@ -17,12 +17,17 @@ iso.gene.info <- read_csv(isolate.gene.file) %>%
   mutate(presence = replace_na(presence, 0)) %>%
   mutate(type = "gene") %>%
   rename("isolate" = Isolate) %>%
-  filter(!isolate == "G4i35")
+  filter(!isolate == "G4i35") %>%
+    # Change DSS3 to DSS-3
+  mutate(isolate = case_when(
+    isolate == "DSS3" ~ "DSS-3",
+    TRUE ~ isolate
+  ))
 
 ### Pull in isolate growth data:
 gene.iso.growth.class <- read_csv(growth.class.file) %>%
   mutate(isolate = case_when(
-    isolate == "DSS-3" ~ "DSS3",
+    isolate == "DSS-3" ~ "DSS-3",
     TRUE ~ isolate
   )) %>%
   filter(isolate %in% iso.gene.info$isolate) %>%
