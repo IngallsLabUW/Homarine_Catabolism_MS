@@ -50,15 +50,18 @@ gene.plot.dat <- iso.gene.info %>%
     "Alteromonadaceae", "Halomonadaceae",
     "Moraxellaceae", "Pseudoalteromonadaceae",
     "Pseudomonadaceae", "Vibrionaceae"
-  )))
+  ))) %>%
+    filter(isolate != "RWi8")
 
 iso.order <- gene.plot.dat %>%
   select(isolate, hom_growth_status, Class, Family) %>%
   unique() %>%
   arrange(hom_growth_status, Class, Family) %>%
-  mutate(order = row_number())
+  mutate(order = row_number()) %>%
+    filter(isolate != "RWi8")
 
-gene.plot.dat.order <- left_join(gene.plot.dat, iso.order)
+gene.plot.dat.order <- left_join(gene.plot.dat, iso.order) %>%
+    filter(isolate != "RWi8")
 
 # Growth Classification Heatmap --------------------------------------
 
