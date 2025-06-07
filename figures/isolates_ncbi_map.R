@@ -37,8 +37,8 @@ isolate_plot_legend <- wrap_elements(panel = isolate_plot + theme(
   plot.margin = margin(0, 0, 0, 0)
 ))
 ncbi_map_layout <- wrap_elements(panel = ncbi_map + theme(legend.position = "bottom"))
-sunburst_layout <- wrap_elements(panel = sunburst + theme_void() + theme(
-    plot.margin = margin(5, 5, 5, 5) # Minimal margins
+sunburst_layout <- wrap_elements(panel = sunburst + theme(
+    plot.margin = margin(-20, -20, -20, -20)  # Adjust margins as needed
 ))
 ncbi_sunburst_layout <- sunburst_layout / ncbi_map_layout +
   plot_layout(ncol = 1, heights = c(1, 3))
