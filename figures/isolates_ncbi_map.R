@@ -12,28 +12,42 @@ isolate_plot <- combined.plot
 # remove everything except isolate_plot
 
 
-##NCBI Sunburst plot -----
-source(here("figures", "isolates_genesearches", "ncbi_genome_taxonomy_summary_sunburst.R"))
+## NCBI Sunburst plot -----
+# the code below makes the figure, but we've moved some of the annotations in illustartor
+# source(here("figures", "isolates_genesearches", "ncbi_genome_taxonomy_summary_sunburst.R"))
+sun_burst_file <- list(
+  here("figures", "isolates_genesearches", "outputs", "class_pie_with_annotes.png")
+)
+library(figpatch)
+sunburst <- fig(sun_burst_file[[1]])
+# reduce white space around the figure
+sunburst <- sunburst + theme(plot.margin = margin(-0.5, -0.5, -0.5, -0.5))
+
 
 ## NCBI Map Figure -----
 source(here("figures", "maps", "ncbi_location_map.R"))
-ncbi_map <- ncbi_map_2 
+ncbi_map <- ncbi_map_2
 # remove everything except ncbi_map
 rm(list = ls()[!ls() %in% c("ncbi_map", "isolate_plot", "sunburst")])
 
 
 # Combine figures -----
-isolate_plot_legend <- wrap_elements(panel = isolate_plot + theme(legend.position = "bottom",
-                                                                  plot.margin = margin(0, 0, 0, 0) ))
+isolate_plot_legend <- wrap_elements(panel = isolate_plot + theme(
+  legend.position = "bottom",
+  plot.margin = margin(0, 0, 0, 0)
+))
 ncbi_map_layout <- wrap_elements(panel = ncbi_map + theme(legend.position = "bottom"))
-sunburst_layout <- wrap_elements(panel = sunburst + theme(legend.position = "right"))
+sunburst_layout <- wrap_elements(panel = sunburst + theme_void() + theme(
+    plot.margin = margin(5, 5, 5, 5) # Minimal margins
+))
 ncbi_sunburst_layout <- sunburst_layout / ncbi_map_layout +
-   plot_layout(ncol = 1, heights = c(1, 3)) 
+  plot_layout(ncol = 1, heights = c(1, 3))
 combined_fig <- isolate_plot_legend + ncbi_sunburst_layout +
   plot_layout(ncol = 2, widths = c(1, 1.3)) +
-    plot_annotation(tag_levels = "A")
+  plot_annotation(tag_levels = "A")
 combined_fig
 ggsave(here("figures", "figure_3_combined.pdf"),
-       plot = combined_fig,
-       width =7, height = 4, dpi = 300,
-       device = cairo_pdf)
+  plot = combined_fig,
+  width = 7, height = 4, dpi = 300,
+  device = cairo_pdf
+)
