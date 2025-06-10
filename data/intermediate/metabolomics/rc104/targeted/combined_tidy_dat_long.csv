@@ -377,6 +377,27 @@ N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T48_C_posDDA,39438344,Particul
 N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T96_A_posDDA,13627127,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,96,NA
 N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T96_B_posDDA,20577740,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,96,NA
 N-Methyl-L-glutamic acid,240926_Smp_RC104_HomFate_T96_C_posDDA,11403732,Particulate,1,Homarine,homarine_fate_1,10.913921568627453,162.076634,96,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_Con_A_posDDA,NA,Particulate,1,Control,homarine_fate_1,12.247428571428571,NA,NA,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_Con_B_posDDA,NA,Particulate,1,Control,homarine_fate_1,12.247428571428571,NA,NA,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_Con_C_posDDA,NA,Particulate,1,Control,homarine_fate_1,12.247428571428571,NA,NA,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T0_A_posDDA,2036748,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,0,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T0_B_posDDA,4358174,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,0,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T0_C_posDDA,2548540,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,0,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T6_A_posDDA,42649072,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,6,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T6_B_posDDA,21933872,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,6,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T6_C_posDDA,20375994,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,6,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T12_A_posDDA,34031348,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,12,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T12_B_posDDA,39159580,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,12,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T12_C_posDDA,56446748,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,12,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T24_A_posDDA,78077920,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,24,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T24_B_posDDA,102402312,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,24,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T24_C_posDDA,73534056,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,24,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T48_A_posDDA,19118380,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,48,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T48_B_posDDA,21508956,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,48,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T48_C_posDDA,18295256,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,48,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T96_A_posDDA,NA,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,96,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T96_B_posDDA,88714,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,96,NA
+glutamic_acid_13C_15N,240926_Smp_RC104_HomFate_T96_C_posDDA,53003,Particulate,1,Homarine,homarine_fate_1,12.247428571428571,NA,96,NA
 homarine_13C_15N,240926_Smp_RC104_HomFate_Con_A_posDDA,468111,Particulate,1,Control,homarine_fate_1,6.146595744680851,NA,NA,NA
 homarine_13C_15N,240926_Smp_RC104_HomFate_Con_B_posDDA,1656955,Particulate,1,Control,homarine_fate_1,6.146595744680851,NA,NA,NA
 homarine_13C_15N,240926_Smp_RC104_HomFate_Con_C_posDDA,138020,Particulate,1,Control,homarine_fate_1,6.146595744680851,NA,NA,NA
