@@ -1,91 +1,91 @@
-Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-05-28 10:43:10.70149. 
+Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2025-06-09 17:10:12.294019. 
 "","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","flags","QC_area"
-"1","230717_Std_4uMStdsMix1InH2O_1","Homarine",NA,NA,NA,NA,NA,"",NA
-"2","230717_Std_4uMStdsMix1InH2O_2","Homarine",NA,NA,NA,NA,NA,"",NA
-"3","230717_Std_4uMStdsMix1InH2O_3","Homarine",NA,NA,NA,NA,NA,"",NA
-"4","230717_Std_4uMStdsMix1InH2O_4","Homarine",NA,NA,NA,NA,NA,"",NA
-"5","230717_Std_4uMStdsMix1InH2O_5","Homarine",NA,NA,NA,NA,NA,"",NA
-"6","230717_Std_4uMStdsMix1InH2O_6","Homarine",NA,NA,NA,NA,NA,"",NA
-"7","230717_Std_4uMStdsMix1InMatrix1_1","Homarine",6.38,118915272,1053042,5560810,1,"",118915272
-"8","230717_Std_4uMStdsMix1InMatrix1_2","Homarine",6.39,82992936,0,3792024,0.8,"",82992936
-"9","230717_Std_4uMStdsMix1InMatrix1_3","Homarine",6.39,90979304,771112,4645676,1.7,"",90979304
-"10","230717_Std_4uMStdsMix1InMatrix2_4","Homarine",6.37,499228000,6012064,24552062,1.3,"",499228000
-"11","230717_Std_4uMStdsMix1InMatrix2_5","Homarine",6.37,530899520,6224681,26199876,0.9,"",530899520
-"12","230717_Std_4uMStdsMix1InMatrix2_6","Homarine",6.35,601439808,6454026,29800730,0,"",601439808
-"13","230717_Std_4uMStdsMix2InH2O_1","Homarine",6.39,2186813952,28683688,99714104,0.7,"",2186813952
-"14","230717_Std_4uMStdsMix2InH2O_2","Homarine",6.37,1758304000,17752446,80564208,0.4,"",1758304000
-"15","230717_Std_4uMStdsMix2InH2O_3","Homarine",6.39,1834466560,20143672,86993544,0.9,"",1834466560
-"16","230717_Std_4uMStdsMix2InH2O_4","Homarine",6.39,1881538432,21165822,93510752,0.9,"",1881538432
-"17","230717_Std_4uMStdsMix2InH2O_5","Homarine",6.33,2002429440,22303366,88596552,0.4,"",2002429440
-"18","230717_Std_4uMStdsMix2InH2O_6","Homarine",6.34,2185014016,25030004,106247912,-0.2,"",2185014016
-"19","230717_Std_4uMStdsMix2InMatrix1_1","Homarine",6.36,1922111232,23764508,93488336,0.8,"",1922111232
-"20","230717_Std_4uMStdsMix2InMatrix1_2","Homarine",6.37,1832812544,24691108,87236672,0.7,"",1832812544
-"21","230717_Std_4uMStdsMix2InMatrix1_3","Homarine",6.32,1894330880,19298232,88529432,1.2,"",1894330880
-"22","230717_Std_4uMStdsMix2InMatrix2_4","Homarine",6.33,2384132608,18443182,106785968,1.1,"",2384132608
-"23","230717_Std_4uMStdsMix2InMatrix2_5","Homarine",6.37,2492448512,29768928,118046392,0.7,"",2492448512
-"24","230717_Std_4uMStdsMix2InMatrix2_6","Homarine",6.32,2720179200,32200110,130389512,0.1,"",2720179200
-"25","230717_Std_H2OinMatrix1_1","Homarine",6.36,135332624,1659364,6577206,1.8,"",135332624
-"26","230717_Std_H2OinMatrix1_2","Homarine",6.39,90982984,728678,4689351,0.8,"",90982984
-"27","230717_Std_H2OinMatrix1_3","Homarine",6.4,91879616,1114502,4212124,1.3,"",91879616
-"28","230717_Std_H2OinMatrix2_4","Homarine",6.31,527793408,5952130,25019950,1.3,"",527793408
-"29","230717_Std_H2OinMatrix2_5","Homarine",6.38,566869568,7377062,26131594,1,"",566869568
-"30","230717_Std_H2OinMatrix2_6","Homarine",6.38,624433216,5282505,29626654,0.3,"",624433216
-"31","230717_Poo_G5-HomFate1_Full1","Homarine",6.37,183719360,1750506,9114323,1.1,"",183719360
-"32","230717_Poo_G5-HomFate1_Full2","Homarine",6.37,182039392,2085875,8547789,1.1,"",182039392
-"33","230717_Poo_G5-HomFate1_Full3","Homarine",6.4,172995024,1600271,8366270,1.2,"",172995024
-"34","230717_Poo_G5-HomFate1_Full4","Homarine",6.4,178900704,1929471,8352874,2.1,"",178900704
-"35","230717_Poo_G5-HomFate1_Full5","Homarine",6.33,159950224,1393420,7805914,0.7,"",159950224
-"36","230717_Poo_G5-HomFate1_Full6","Homarine",6.37,164592464,1253226,7867978,1.3,"",164592464
-"37","230717_Poo_G5-HomFate1_Full7","Homarine",6.3,160046016,769275,8047392,0.6,"",160046016
-"38","230717_Poo_G5-HomFate2_Full1","Homarine",6.37,982452480,11304167,49116020,1,"",982452480
-"39","230717_Poo_G5-HomFate2_Full2","Homarine",6.3,931560064,11687520,44846604,0.8,"",931560064
-"40","230717_Poo_G5-HomFate2_Full3","Homarine",6.3,912624960,8786592,43043320,0.9,"",912624960
-"41","230717_Poo_G5-HomFate2_Full4","Homarine",6.41,962986112,11899597,45571152,1,"",962986112
-"42","230717_Poo_G5-HomFate2_Full5","Homarine",6.33,1065644864,16183742,51853296,1.2,"",1065644864
-"43","230717_Poo_G5-HomFate2_Full6","Homarine",6.33,943638528,10683378,45054812,0.1,"",943638528
-"44","230717_Poo_G5-HomFate2_Full7","Homarine",6.32,987309824,10434449,46517084,1.2,"",987309824
-"45","230717_Smp_G5_Hom1_C_A","Homarine",6.39,205742848,1524653,9453263,1.1,"",205742848
-"46","230717_Smp_G5_Hom1_C_B","Homarine",6.37,129522384,7160,6040146,1,"",129522384
-"47","230717_Smp_G5_Hom1_C_C","Homarine",6.39,193331216,1525520,9215844,1,"",193331216
-"48","230717_Smp_G5_Hom1_T0_A","Homarine",6.4,196043104,1936705,9556151,1.6,"",196043104
-"49","230717_Smp_G5_Hom1_T0_B","Homarine",6.39,178916192,2436697,8659079,1.3,"",178916192
-"50","230717_Smp_G5_Hom1_T0_C","Homarine",6.39,193754512,2171590,9517927,0.5,"",193754512
-"51","230717_Smp_G5_Hom1_T6_A","Homarine",6.36,187151920,2072770,9020444,0.8,"",187151920
-"52","230717_Smp_G5_Hom1_T6_B","Homarine",6.33,184699088,2328200,8816245,1,"",184699088
-"53","230717_Smp_G5_Hom1_T6_C","Homarine",6.36,160107040,1695248,8133822,0.9,"",160107040
-"54","230717_Smp_G5_Hom1_T12_A","Homarine",6.35,171916160,1909740,8454471,1.2,"",171916160
-"55","230717_Smp_G5_Hom1_T12_B","Homarine",6.37,183176416,1888180,8542591,0.6,"",183176416
-"56","230717_Smp_G5_Hom1_T12_C","Homarine",6.34,163119728,2035126,8886264,1.4,"",163119728
-"57","230717_Smp_G5_Hom1_T24_A","Homarine",6.36,109146008,1319840,5384257,-0.1,"",109146008
-"58","230717_Smp_G5_Hom1_T24_B","Homarine",6.36,113241120,2335641,5261198,1.2,"",113241120
-"59","230717_Smp_G5_Hom1_T24_C","Homarine",6.37,100326344,1239737,4863324,1,"",100326344
-"60","230717_Smp_G5_Hom1_T48_A","Homarine",6.32,168046224,1990505,8307987,2,"",168046224
-"61","230717_Smp_G5_Hom1_T48_B","Homarine",6.39,152317472,39030,7448644,1.1,"",152317472
-"62","230717_Smp_G5_Hom1_T48_C","Homarine",6.42,180210464,1405241,8479025,1.3,"",180210464
-"63","230717_Smp_G5_Hom1_T96_A","Homarine",6.39,216292432,2327165,10855367,1.4,"",216292432
-"64","230717_Smp_G5_Hom1_T96_B","Homarine",6.31,175730176,1870257,8606172,1.8,"",175730176
-"65","230717_Smp_G5_Hom1_T96_C","Homarine",6.34,151153328,1505028,7416796,1.1,"",151153328
-"66","230717_Smp_G5_Hom2_C_A","Homarine",6.35,854116992,11724621,42632112,0.8,"",854116992
-"67","230717_Smp_G5_Hom2_C_B","Homarine",6.34,768935808,7736113,37531236,1.1,"",768935808
-"68","230717_Smp_G5_Hom2_C_C","Homarine",6.34,896721152,9450953,42078392,0.9,"",896721152
-"69","230717_Smp_G5_Hom2_T0_A","Homarine",6.34,1011701696,12184422,46477388,1,"",1011701696
-"70","230717_Smp_G5_Hom2_T0_B","Homarine",6.39,851870336,7787115,40562600,0.5,"",851870336
-"71","230717_Smp_G5_Hom2_T0_C","Homarine",6.38,954352640,10131473,44533888,0.5,"",954352640
-"72","230717_Smp_G5_Hom2_T6_A","Homarine",6.33,990476352,9115655,48219268,1.2,"",990476352
-"73","230717_Smp_G5_Hom2_T6_B","Homarine",6.35,924247296,8797623,44529148,1.1,"",924247296
-"74","230717_Smp_G5_Hom2_T6_C","Homarine",6.33,933901888,8637917,41995872,0.7,"",933901888
-"75","230717_Smp_G5_Hom2_T12_A","Homarine",6.33,939065024,10759057,45658952,0.9,"",939065024
-"76","230717_Smp_G5_Hom2_T12_B","Homarine",6.37,783092608,8070804,37179372,1.1,"",783092608
-"77","230717_Smp_G5_Hom2_T12_C","Homarine",6.39,938424000,8558727,47220032,1.4,"",938424000
-"78","230717_Smp_G5_Hom2_T24_A","Homarine",6.37,1035738496,13930693,47677452,0.6,"",1035738496
-"79","230717_Smp_G5_Hom2_T24_B","Homarine",6.35,1216227968,16376633,59446904,1,"",1216227968
-"80","230717_Smp_G5_Hom2_T24_C","Homarine",6.3,870915264,11735705,41422624,1.1,"",870915264
-"81","230717_Smp_G5_Hom2_T48_A","Homarine",6.35,1018527424,11212061,47699688,1.1,"",1018527424
-"82","230717_Smp_G5_Hom2_T48_B","Homarine",6.37,1231875328,14914246,58641980,1.1,"",1231875328
-"83","230717_Smp_G5_Hom2_T48_C","Homarine",6.39,1110661120,13297711,51357264,0.9,"",1110661120
-"84","230717_Smp_G5_Hom2_T96_A","Homarine",6.38,968812160,11680097,45268188,0.7,"",968812160
-"85","230717_Smp_G5_Hom2_T96_B","Homarine",6.35,719591360,6537987,33983364,0.8,"",719591360
-"86","230717_Smp_G5_Hom2_T96_C","Homarine",6.29,1149455104,15616656,54552572,0.9,"",1149455104
+"1","230717_Std_4uMStdsMix1InH2O_1","Homarine",5.52,0,0,0,NA,"areamin_flag, ",NA
+"2","230717_Std_4uMStdsMix1InH2O_2","Homarine",6.72,31171,0,12790,1.6,"areamin_flag, ",NA
+"3","230717_Std_4uMStdsMix1InH2O_3","Homarine",5.54,43231,0,13056,1,"",43231
+"4","230717_Std_4uMStdsMix1InH2O_4","Homarine",6.95,65214,0,16929,1,"",65214
+"5","230717_Std_4uMStdsMix1InH2O_5","Homarine",6.86,92670,0,16789,0.8,"",92670
+"6","230717_Std_4uMStdsMix1InH2O_6","Homarine",6.58,262696,0,18303,1.2,"",262696
+"7","230717_Std_4uMStdsMix1InMatrix1_1","Homarine",6.38,120127256,2149876,5551090,1,"",120127256
+"8","230717_Std_4uMStdsMix1InMatrix1_2","Homarine",6.39,83460920,626487,3783161,0.8,"",83460920
+"9","230717_Std_4uMStdsMix1InMatrix1_3","Homarine",6.39,93334728,0,4659676,1.7,"",93334728
+"10","230717_Std_4uMStdsMix1InMatrix2_4","Homarine",6.37,511397504,839050,24644852,1.3,"",511397504
+"11","230717_Std_4uMStdsMix1InMatrix2_5","Homarine",6.37,541981568,746788,26293896,0.9,"",541981568
+"12","230717_Std_4uMStdsMix1InMatrix2_6","Homarine",6.35,617759680,0,29915236,0,"",617759680
+"13","230717_Std_4uMStdsMix2InH2O_1","Homarine",6.39,2239165440,0,100193800,0.7,"",2239165440
+"14","230717_Std_4uMStdsMix2InH2O_2","Homarine",6.37,1805799168,0,80886512,0.4,"",1805799168
+"15","230717_Std_4uMStdsMix2InH2O_3","Homarine",6.39,1881351168,0,87336400,0.9,"",1881351168
+"16","230717_Std_4uMStdsMix2InH2O_4","Homarine",6.39,1923472640,0,93862400,0.9,"",1923472640
+"17","230717_Std_4uMStdsMix2InH2O_5","Homarine",6.33,2059182080,0,88992256,0.4,"",2059182080
+"18","230717_Std_4uMStdsMix2InH2O_6","Homarine",6.34,2240780544,179597,106674576,-0.2,"",2240780544
+"19","230717_Std_4uMStdsMix2InMatrix1_1","Homarine",6.36,1966930304,1611311,93876072,0.8,"",1966930304
+"20","230717_Std_4uMStdsMix2InMatrix1_2","Homarine",6.37,1869439872,611109,87624800,0.7,"",1869439872
+"21","230717_Std_4uMStdsMix2InMatrix1_3","Homarine",6.32,1939194240,1141221,88852608,1.2,"",1939194240
+"22","230717_Std_4uMStdsMix2InMatrix2_4","Homarine",6.33,2429749504,1357085,107076920,1.1,"",2429749504
+"23","230717_Std_4uMStdsMix2InMatrix2_5","Homarine",6.37,2548553984,1776382,118520464,0.7,"",2548553984
+"24","230717_Std_4uMStdsMix2InMatrix2_6","Homarine",6.32,2787059968,2061876,130917896,0.1,"",2787059968
+"25","230717_Std_H2OinMatrix1_1","Homarine",6.36,136173264,1942181,6578477,1.8,"",136173264
+"26","230717_Std_H2OinMatrix1_2","Homarine",6.39,93132160,11475,4703119,0.8,"",93132160
+"27","230717_Std_H2OinMatrix1_3","Homarine",6.4,94128168,0,4230970,1.3,"",94128168
+"28","230717_Std_H2OinMatrix2_4","Homarine",6.31,543987328,0,25130566,1.3,"",543987328
+"29","230717_Std_H2OinMatrix2_5","Homarine",6.38,578628416,108101,26246950,1,"",578628416
+"30","230717_Std_H2OinMatrix2_6","Homarine",6.38,638644224,1499332,29701906,0.3,"",638644224
+"31","230717_Poo_G5-HomFate1_Full1","Homarine",6.37,185338928,1588525,9123125,1.1,"",185338928
+"32","230717_Poo_G5-HomFate1_Full2","Homarine",6.37,183549952,1141143,8565053,1.1,"",183549952
+"33","230717_Poo_G5-HomFate1_Full3","Homarine",6.4,173568784,2095677,8363772,1.2,"",173568784
+"34","230717_Poo_G5-HomFate1_Full4","Homarine",6.4,182461824,515196,8380584,2.1,"",182461824
+"35","230717_Poo_G5-HomFate1_Full5","Homarine",6.33,160842608,1758129,7805202,0.7,"",160842608
+"36","230717_Poo_G5-HomFate1_Full6","Homarine",6.37,165337424,1345132,7870104,1.3,"",165337424
+"37","230717_Poo_G5-HomFate1_Full7","Homarine",6.3,161078208,1896564,8035589,0.5,"",161078208
+"38","230717_Poo_G5-HomFate2_Full1","Homarine",6.37,1003001152,1571858,49291488,1,"",1003001152
+"39","230717_Poo_G5-HomFate2_Full2","Homarine",6.3,955499712,2118208,45035940,0.8,"",955499712
+"40","230717_Poo_G5-HomFate2_Full3","Homarine",6.3,935739520,40212,43200324,0.9,"",935739520
+"41","230717_Poo_G5-HomFate2_Full4","Homarine",6.41,982451712,2599557,45739348,1,"",982451712
+"42","230717_Poo_G5-HomFate2_Full5","Homarine",6.33,1083571584,2462522,52071312,1.2,"",1083571584
+"43","230717_Poo_G5-HomFate2_Full6","Homarine",6.33,963931712,1671663,45220600,0.1,"",963931712
+"44","230717_Poo_G5-HomFate2_Full7","Homarine",6.32,1006459328,2250538,46666844,1.2,"",1006459328
+"45","230717_Smp_G5_Hom1_C_A","Homarine",6.39,208495488,124823,9475951,1.1,"",208495488
+"46","230717_Smp_G5_Hom1_C_B","Homarine",6.37,130643480,0,6040263,1,"",130643480
+"47","230717_Smp_G5_Hom1_C_C","Homarine",6.39,197218192,0,9242395,1,"",197218192
+"48","230717_Smp_G5_Hom1_T0_A","Homarine",6.4,200439664,0,9590071,1.6,"",200439664
+"49","230717_Smp_G5_Hom1_T0_B","Homarine",6.39,181948928,0,8696464,1.3,"",181948928
+"50","230717_Smp_G5_Hom1_T0_C","Homarine",6.39,196602688,0,9551465,0.5,"",196602688
+"51","230717_Smp_G5_Hom1_T6_A","Homarine",6.36,191311904,0,9056521,0.8,"",191311904
+"52","230717_Smp_G5_Hom1_T6_B","Homarine",6.33,188089824,0,8853788,1,"",188089824
+"53","230717_Smp_G5_Hom1_T6_C","Homarine",6.36,163952720,0,8164803,0.9,"",163952720
+"54","230717_Smp_G5_Hom1_T12_A","Homarine",6.35,175571952,491993,8483827,1.2,"",175571952
+"55","230717_Smp_G5_Hom1_T12_B","Homarine",6.37,186076464,172763,8570842,0.6,"",186076464
+"56","230717_Smp_G5_Hom1_T12_C","Homarine",6.34,167902768,0,8925413,1.4,"",167902768
+"57","230717_Smp_G5_Hom1_T24_A","Homarine",6.36,109731848,1377295,5387600,-0.1,"",109731848
+"58","230717_Smp_G5_Hom1_T24_B","Homarine",6.36,116066792,1909963,5281834,1.2,"",116066792
+"59","230717_Smp_G5_Hom1_T24_C","Homarine",6.37,102699248,0,4884901,1,"",102699248
+"60","230717_Smp_G5_Hom1_T48_A","Homarine",6.32,169668032,2867544,8307513,2,"",169668032
+"61","230717_Smp_G5_Hom1_T48_B","Homarine",6.39,152810976,1900843,7425008,1.1,"",152810976
+"62","230717_Smp_G5_Hom1_T48_C","Homarine",6.42,180639840,2892674,8465550,1.3,"",180639840
+"63","230717_Smp_G5_Hom1_T96_A","Homarine",6.39,212622160,8697191,10779243,1.4,"",212622160
+"64","230717_Smp_G5_Hom1_T96_B","Homarine",6.31,175468240,4614487,8577499,1.8,"",175468240
+"65","230717_Smp_G5_Hom1_T96_C","Homarine",6.34,149473952,4730369,7378809,1.1,"",149473952
+"66","230717_Smp_G5_Hom2_C_A","Homarine",6.35,875957824,935607,42824004,0.8,"",875957824
+"67","230717_Smp_G5_Hom2_C_B","Homarine",6.34,788524928,0,37667604,1.1,"",788524928
+"68","230717_Smp_G5_Hom2_C_C","Homarine",6.34,913994944,0,42232364,0.9,"",913994944
+"69","230717_Smp_G5_Hom2_T0_A","Homarine",6.34,1035398976,0,46684772,1,"",1035398976
+"70","230717_Smp_G5_Hom2_T0_B","Homarine",6.39,872205056,0,40701660,0.5,"",872205056
+"71","230717_Smp_G5_Hom2_T0_C","Homarine",6.38,969653696,0,44692800,0.5,"",969653696
+"72","230717_Smp_G5_Hom2_T6_A","Homarine",6.33,1017383808,0,48391228,1.2,"",1017383808
+"73","230717_Smp_G5_Hom2_T6_B","Homarine",6.35,947174848,1044385,44677508,1.1,"",947174848
+"74","230717_Smp_G5_Hom2_T6_C","Homarine",6.33,944957568,0,42123932,0.7,"",944957568
+"75","230717_Smp_G5_Hom2_T12_A","Homarine",6.33,957644160,791830,45827540,0.9,"",957644160
+"76","230717_Smp_G5_Hom2_T12_B","Homarine",6.37,802645184,131910,37323328,1.1,"",802645184
+"77","230717_Smp_G5_Hom2_T12_C","Homarine",6.39,962429056,0,47376012,1.4,"",962429056
+"78","230717_Smp_G5_Hom2_T24_A","Homarine",6.37,1052854208,1538455,47873100,0.6,"",1052854208
+"79","230717_Smp_G5_Hom2_T24_B","Homarine",6.35,1240693376,3578897,59675932,1,"",1240693376
+"80","230717_Smp_G5_Hom2_T24_C","Homarine",6.3,887574016,1307859,41596468,1.1,"",887574016
+"81","230717_Smp_G5_Hom2_T48_A","Homarine",6.35,1027940032,9069907,47764412,1.1,"",1027940032
+"82","230717_Smp_G5_Hom2_T48_B","Homarine",6.37,1250793984,2952268,58838728,1.1,"",1250793984
+"83","230717_Smp_G5_Hom2_T48_C","Homarine",6.39,1133116544,6656769,51509748,0.9,"",1133116544
+"84","230717_Smp_G5_Hom2_T96_A","Homarine",6.38,981003968,5257851,45386072,0.7,"",981003968
+"85","230717_Smp_G5_Hom2_T96_B","Homarine",6.35,735428864,3296073,34060872,0.8,"",735428864
+"86","230717_Smp_G5_Hom2_T96_C","Homarine",6.29,1176353664,535594,54810560,1,"",1176353664
 "87","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO4_pos",NA,NA,NA,NA,NA,"",NA
 "88","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO4_pos",NA,NA,NA,NA,NA,"",NA
 "89","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO4_pos",NA,NA,NA,NA,NA,"",NA
@@ -172,92 +172,92 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "170","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO4_pos",NA,NA,NA,NA,NA,"",NA
 "171","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO4_pos",NA,NA,NA,NA,NA,"",NA
 "172","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO4_pos",NA,NA,NA,NA,NA,"",NA
-"173","230717_Std_4uMStdsMix1InH2O_1","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"174","230717_Std_4uMStdsMix1InH2O_2","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"175","230717_Std_4uMStdsMix1InH2O_3","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"176","230717_Std_4uMStdsMix1InH2O_4","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"177","230717_Std_4uMStdsMix1InH2O_5","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"178","230717_Std_4uMStdsMix1InH2O_6","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"179","230717_Std_4uMStdsMix1InMatrix1_1","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"180","230717_Std_4uMStdsMix1InMatrix1_2","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"181","230717_Std_4uMStdsMix1InMatrix1_3","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"182","230717_Std_4uMStdsMix1InMatrix2_4","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"183","230717_Std_4uMStdsMix1InMatrix2_5","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"184","230717_Std_4uMStdsMix1InMatrix2_6","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"185","230717_Std_4uMStdsMix2InH2O_1","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"186","230717_Std_4uMStdsMix2InH2O_2","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"187","230717_Std_4uMStdsMix2InH2O_3","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"188","230717_Std_4uMStdsMix2InH2O_4","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"189","230717_Std_4uMStdsMix2InH2O_5","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"190","230717_Std_4uMStdsMix2InH2O_6","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"191","230717_Std_4uMStdsMix2InMatrix1_1","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"192","230717_Std_4uMStdsMix2InMatrix1_2","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"193","230717_Std_4uMStdsMix2InMatrix1_3","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"194","230717_Std_4uMStdsMix2InMatrix2_4","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"195","230717_Std_4uMStdsMix2InMatrix2_5","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"196","230717_Std_4uMStdsMix2InMatrix2_6","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"197","230717_Std_H2OinMatrix1_1","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"198","230717_Std_H2OinMatrix1_2","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"199","230717_Std_H2OinMatrix1_3","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"200","230717_Std_H2OinMatrix2_4","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"201","230717_Std_H2OinMatrix2_5","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"202","230717_Std_H2OinMatrix2_6","n-methyl glutamine",NA,NA,NA,NA,NA,"",NA
-"203","230717_Poo_G5-HomFate1_Full1","n-methyl glutamine",10.45,842216,0,84585,0.6,"",842216
-"204","230717_Poo_G5-HomFate1_Full2","n-methyl glutamine",10.53,846247,0,70803,0.6,"",846247
-"205","230717_Poo_G5-HomFate1_Full3","n-methyl glutamine",10.46,674708,0,56373,1.1,"",674708
-"206","230717_Poo_G5-HomFate1_Full4","n-methyl glutamine",10.43,731790,0,68610,1.2,"",731790
-"207","230717_Poo_G5-HomFate1_Full5","n-methyl glutamine",10.43,459340,0,46705,0.4,"",459340
-"208","230717_Poo_G5-HomFate1_Full6","n-methyl glutamine",10.48,508551,0,48373,0.6,"",508551
-"209","230717_Poo_G5-HomFate1_Full7","n-methyl glutamine",10.45,422683,0,44225,0,"",422683
-"210","230717_Poo_G5-HomFate2_Full1","n-methyl glutamine",10.39,1060437,0,95142,0.8,"",1060437
-"211","230717_Poo_G5-HomFate2_Full2","n-methyl glutamine",10.4,1013283,0,89292,0.8,"",1013283
-"212","230717_Poo_G5-HomFate2_Full3","n-methyl glutamine",10.37,1217986,0,82580,0.4,"",1217986
-"213","230717_Poo_G5-HomFate2_Full4","n-methyl glutamine",10.36,1152460,0,89266,0.6,"",1152460
-"214","230717_Poo_G5-HomFate2_Full5","n-methyl glutamine",10.35,859840,0,61160,0.9,"",859840
-"215","230717_Poo_G5-HomFate2_Full6","n-methyl glutamine",10.39,956431,0,82889,-0.4,"",956431
-"216","230717_Poo_G5-HomFate2_Full7","n-methyl glutamine",10.34,881148,0,69285,0.3,"",881148
-"217","230717_Smp_G5_Hom1_C_A","n-methyl glutamine",10.49,896476,0,72997,0.9,"",896476
-"218","230717_Smp_G5_Hom1_C_B","n-methyl glutamine",10.46,710890,0,67552,0.6,"",710890
-"219","230717_Smp_G5_Hom1_C_C","n-methyl glutamine",10.46,870678,0,73301,0.7,"",870678
-"220","230717_Smp_G5_Hom1_T0_A","n-methyl glutamine",10.49,1019247,0,76250,1.4,"",1019247
-"221","230717_Smp_G5_Hom1_T0_B","n-methyl glutamine",10.46,920121,0,85223,1.2,"",920121
-"222","230717_Smp_G5_Hom1_T0_C","n-methyl glutamine",10.42,751861,0,59562,0.2,"",751861
-"223","230717_Smp_G5_Hom1_T6_A","n-methyl glutamine",10.43,447178,0,34145,0.6,"",447178
-"224","230717_Smp_G5_Hom1_T6_B","n-methyl glutamine",10.43,416721,0,38533,0.8,"",416721
-"225","230717_Smp_G5_Hom1_T6_C","n-methyl glutamine",10.46,395359,0,35899,0.5,"",395359
-"226","230717_Smp_G5_Hom1_T12_A","n-methyl glutamine",10.5,615075,0,61648,0.9,"",615075
-"227","230717_Smp_G5_Hom1_T12_B","n-methyl glutamine",10.48,224553,0,28408,0.6,"",224553
-"228","230717_Smp_G5_Hom1_T12_C","n-methyl glutamine",10.4,384350,0,45400,1.2,"",384350
-"229","230717_Smp_G5_Hom1_T24_A","n-methyl glutamine",10.49,339758,0,31274,0,"",339758
-"230","230717_Smp_G5_Hom1_T24_B","n-methyl glutamine",10.49,356521,0,34033,1.2,"",356521
-"231","230717_Smp_G5_Hom1_T24_C","n-methyl glutamine",10.45,369161,0,35197,1,"",369161
-"232","230717_Smp_G5_Hom1_T48_A","n-methyl glutamine",10.5,677728,0,67607,0.9,"",677728
-"233","230717_Smp_G5_Hom1_T48_B","n-methyl glutamine",10.43,664466,0,79640,0.6,"",664466
-"234","230717_Smp_G5_Hom1_T48_C","n-methyl glutamine",10.45,696700,0,68074,0.3,"",696700
-"235","230717_Smp_G5_Hom1_T96_A","n-methyl glutamine",10.45,1107895,0,68515,0.7,"",1107895
-"236","230717_Smp_G5_Hom1_T96_B","n-methyl glutamine",10.48,764931,0,62898,1.1,"",764931
-"237","230717_Smp_G5_Hom1_T96_C","n-methyl glutamine",10.46,849653,0,79460,0.5,"",849653
-"238","230717_Smp_G5_Hom2_C_A","n-methyl glutamine",10.36,674656,0,68027,0.5,"",674656
-"239","230717_Smp_G5_Hom2_C_B","n-methyl glutamine",10.37,1012416,0,91044,1,"",1012416
-"240","230717_Smp_G5_Hom2_C_C","n-methyl glutamine",10.37,883354,0,101897,0.4,"",883354
-"241","230717_Smp_G5_Hom2_T0_A","n-methyl glutamine",10.35,805038,0,66415,0.9,"",805038
-"242","230717_Smp_G5_Hom2_T0_B","n-methyl glutamine",10.42,768120,0,69788,0.2,"",768120
-"243","230717_Smp_G5_Hom2_T0_C","n-methyl glutamine",10.39,691901,0,64004,1,"",691901
-"244","230717_Smp_G5_Hom2_T6_A","n-methyl glutamine",10.41,329904,0,42559,1.5,"",329904
-"245","230717_Smp_G5_Hom2_T6_B","n-methyl glutamine",10.46,412608,0,52186,0.7,"",412608
-"246","230717_Smp_G5_Hom2_T6_C","n-methyl glutamine",10.39,234640,0,28574,0.7,"",234640
-"247","230717_Smp_G5_Hom2_T12_A","n-methyl glutamine",10.41,438505,0,46005,0.3,"",438505
-"248","230717_Smp_G5_Hom2_T12_B","n-methyl glutamine",10.35,391104,0,42465,0.6,"",391104
-"249","230717_Smp_G5_Hom2_T12_C","n-methyl glutamine",10.39,490284,0,45870,0.6,"",490284
-"250","230717_Smp_G5_Hom2_T24_A","n-methyl glutamine",10.35,229920,0,26423,0.7,"",229920
-"251","230717_Smp_G5_Hom2_T24_B","n-methyl glutamine",10.34,592422,0,66670,0.4,"",592422
-"252","230717_Smp_G5_Hom2_T24_C","n-methyl glutamine",10.43,455355,0,39160,1,"",455355
-"253","230717_Smp_G5_Hom2_T48_A","n-methyl glutamine",10.42,1274819,0,91888,0.8,"",1274819
-"254","230717_Smp_G5_Hom2_T48_B","n-methyl glutamine",10.37,883457,0,91651,0.9,"",883457
-"255","230717_Smp_G5_Hom2_T48_C","n-methyl glutamine",10.37,663322,0,55398,0.5,"",663322
-"256","230717_Smp_G5_Hom2_T96_A","n-methyl glutamine",10.42,2847647,0,155058,0.4,"",2847647
-"257","230717_Smp_G5_Hom2_T96_B","n-methyl glutamine",10.35,3227945,0,216135,0.2,"",3227945
-"258","230717_Smp_G5_Hom2_T96_C","n-methyl glutamine",10.43,3236032,0,210242,0.6,"",3236032
+"173","230717_Std_4uMStdsMix1InH2O_1","n-methyl glutamine",11.71,792132,0,71282,0.6,"",792132
+"174","230717_Std_4uMStdsMix1InH2O_2","n-methyl glutamine",11.72,151523,0,23862,1.1,"",151523
+"175","230717_Std_4uMStdsMix1InH2O_3","n-methyl glutamine",11.65,363561,0,50487,1,"",363561
+"176","230717_Std_4uMStdsMix1InH2O_4","n-methyl glutamine",11.62,156721,0,41426,1.3,"",156721
+"177","230717_Std_4uMStdsMix1InH2O_5","n-methyl glutamine",11.46,553548,0,77565,0.9,"",553548
+"178","230717_Std_4uMStdsMix1InH2O_6","n-methyl glutamine",11.42,326828,0,33046,1.3,"",326828
+"179","230717_Std_4uMStdsMix1InMatrix1_1","n-methyl glutamine",11.27,2245717,0,167835,0.4,"",2245717
+"180","230717_Std_4uMStdsMix1InMatrix1_2","n-methyl glutamine",11.28,1122049,0,101468,0.6,"",1122049
+"181","230717_Std_4uMStdsMix1InMatrix1_3","n-methyl glutamine",11.24,1248073,0,96849,0.6,"",1248073
+"182","230717_Std_4uMStdsMix1InMatrix2_4","n-methyl glutamine",11.23,1698046,0,118000,0.8,"",1698046
+"183","230717_Std_4uMStdsMix1InMatrix2_5","n-methyl glutamine",11.23,1853536,0,116463,0.5,"",1853536
+"184","230717_Std_4uMStdsMix1InMatrix2_6","n-methyl glutamine",11.12,850324,1166265,92263,-0.1,"sn_flag, ",NA
+"185","230717_Std_4uMStdsMix2InH2O_1","n-methyl glutamine",10.26,43834,0,15921,1,"",43834
+"186","230717_Std_4uMStdsMix2InH2O_2","n-methyl glutamine",10.15,0,0,0,NA,"areamin_flag, ",NA
+"187","230717_Std_4uMStdsMix2InH2O_3","n-methyl glutamine",11.24,43360,0,23831,0.2,"",43360
+"188","230717_Std_4uMStdsMix2InH2O_4","n-methyl glutamine",11.13,139458,0,36363,1,"",139458
+"189","230717_Std_4uMStdsMix2InH2O_5","n-methyl glutamine",11.77,90537,0,22820,1.2,"",90537
+"190","230717_Std_4uMStdsMix2InH2O_6","n-methyl glutamine",11.69,265923,0,24731,0.9,"",265923
+"191","230717_Std_4uMStdsMix2InMatrix1_1","n-methyl glutamine",11.28,1876960,0,143520,0.8,"",1876960
+"192","230717_Std_4uMStdsMix2InMatrix1_2","n-methyl glutamine",11.28,1069548,0,106087,0.4,"",1069548
+"193","230717_Std_4uMStdsMix2InMatrix1_3","n-methyl glutamine",11.25,1182466,0,110140,1.3,"",1182466
+"194","230717_Std_4uMStdsMix2InMatrix2_4","n-methyl glutamine",11.25,1704728,0,109056,0.5,"",1704728
+"195","230717_Std_4uMStdsMix2InMatrix2_5","n-methyl glutamine",11.19,1650497,0,115758,0.4,"",1650497
+"196","230717_Std_4uMStdsMix2InMatrix2_6","n-methyl glutamine",11.16,1750393,0,126077,-0.3,"",1750393
+"197","230717_Std_H2OinMatrix1_1","n-methyl glutamine",11.33,2304848,0,167485,0.8,"",2304848
+"198","230717_Std_H2OinMatrix1_2","n-methyl glutamine",11.31,1063287,0,95317,0.6,"",1063287
+"199","230717_Std_H2OinMatrix1_3","n-methyl glutamine",11.29,1238758,0,97700,0.9,"",1238758
+"200","230717_Std_H2OinMatrix2_4","n-methyl glutamine",11.24,1766071,0,119269,0.7,"",1766071
+"201","230717_Std_H2OinMatrix2_5","n-methyl glutamine",11.21,1910434,0,129796,0.5,"",1910434
+"202","230717_Std_H2OinMatrix2_6","n-methyl glutamine",11.17,792350,797004,97252,0,"sn_flag, ",NA
+"203","230717_Poo_G5-HomFate1_Full1","n-methyl glutamine",11.36,1757566,0,117704,0.6,"",1757566
+"204","230717_Poo_G5-HomFate1_Full2","n-methyl glutamine",11.4,1927800,0,130070,0.6,"",1927800
+"205","230717_Poo_G5-HomFate1_Full3","n-methyl glutamine",11.38,1419189,0,74198,0.9,"",1419189
+"206","230717_Poo_G5-HomFate1_Full4","n-methyl glutamine",11.42,1455241,0,71265,1.1,"",1455241
+"207","230717_Poo_G5-HomFate1_Full5","n-methyl glutamine",11.36,1043612,0,65285,0.2,"",1043612
+"208","230717_Poo_G5-HomFate1_Full6","n-methyl glutamine",11.39,1136315,0,74660,0.4,"",1136315
+"209","230717_Poo_G5-HomFate1_Full7","n-methyl glutamine",11.33,1023711,0,69437,0.1,"",1023711
+"210","230717_Poo_G5-HomFate2_Full1","n-methyl glutamine",11.34,1931565,0,134609,0.8,"",1931565
+"211","230717_Poo_G5-HomFate2_Full2","n-methyl glutamine",11.31,1998675,0,128331,0.7,"",1998675
+"212","230717_Poo_G5-HomFate2_Full3","n-methyl glutamine",11.27,1899831,250813,101870,0.3,"",1899831
+"213","230717_Poo_G5-HomFate2_Full4","n-methyl glutamine",11.32,1881636,275761,103616,0.7,"",1881636
+"214","230717_Poo_G5-HomFate2_Full5","n-methyl glutamine",11.32,1736019,0,94522,0.9,"",1736019
+"215","230717_Poo_G5-HomFate2_Full6","n-methyl glutamine",11.31,1666734,0,83740,-0.3,"",1666734
+"216","230717_Poo_G5-HomFate2_Full7","n-methyl glutamine",11.28,1762282,0,96209,0.4,"",1762282
+"217","230717_Smp_G5_Hom1_C_A","n-methyl glutamine",11.41,2706347,0,179451,0.7,"",2706347
+"218","230717_Smp_G5_Hom1_C_B","n-methyl glutamine",11.39,1519520,0,93876,0.5,"",1519520
+"219","230717_Smp_G5_Hom1_C_C","n-methyl glutamine",10.46,1279748,0,73301,0.6,"",1279748
+"220","230717_Smp_G5_Hom1_T0_A","n-methyl glutamine",10.49,1254927,0,76250,1.4,"",1254927
+"221","230717_Smp_G5_Hom1_T0_B","n-methyl glutamine",10.46,1168085,0,85223,1.4,"",1168085
+"222","230717_Smp_G5_Hom1_T0_C","n-methyl glutamine",10.42,813123,0,59562,0.2,"",813123
+"223","230717_Smp_G5_Hom1_T6_A","n-methyl glutamine",11.33,1323116,0,92001,0.2,"",1323116
+"224","230717_Smp_G5_Hom1_T6_B","n-methyl glutamine",11.41,834067,0,44763,0.6,"",834067
+"225","230717_Smp_G5_Hom1_T6_C","n-methyl glutamine",11.33,1062120,0,67053,0.4,"",1062120
+"226","230717_Smp_G5_Hom1_T12_A","n-methyl glutamine",11.36,2338517,0,137188,0.5,"",2338517
+"227","230717_Smp_G5_Hom1_T12_B","n-methyl glutamine",11.31,835312,0,55707,0.4,"",835312
+"228","230717_Smp_G5_Hom1_T12_C","n-methyl glutamine",11.39,751500,0,47580,1,"",751500
+"229","230717_Smp_G5_Hom1_T24_A","n-methyl glutamine",11.38,1066428,0,89079,-0.2,"",1066428
+"230","230717_Smp_G5_Hom1_T24_B","n-methyl glutamine",11.42,1270899,0,88194,1,"",1270899
+"231","230717_Smp_G5_Hom1_T24_C","n-methyl glutamine",11.36,701406,0,36694,0.7,"",701406
+"232","230717_Smp_G5_Hom1_T48_A","n-methyl glutamine",11.38,1743798,0,96380,0.9,"",1743798
+"233","230717_Smp_G5_Hom1_T48_B","n-methyl glutamine",10.43,1066846,0,79640,0.5,"",1066846
+"234","230717_Smp_G5_Hom1_T48_C","n-methyl glutamine",11.36,1698640,0,112787,0.5,"",1698640
+"235","230717_Smp_G5_Hom1_T96_A","n-methyl glutamine",10.45,1246020,0,68515,0.7,"",1246020
+"236","230717_Smp_G5_Hom1_T96_B","n-methyl glutamine",10.48,1010279,178993,59138,1.2,"",1010279
+"237","230717_Smp_G5_Hom1_T96_C","n-methyl glutamine",10.46,1286092,0,79460,0.5,"",1286092
+"238","230717_Smp_G5_Hom2_C_A","n-methyl glutamine",10.36,750801,0,68027,0.6,"",750801
+"239","230717_Smp_G5_Hom2_C_B","n-methyl glutamine",11.3,3728000,0,293040,0.9,"",3728000
+"240","230717_Smp_G5_Hom2_C_C","n-methyl glutamine",10.37,1115749,58263,100744,0.6,"",1115749
+"241","230717_Smp_G5_Hom2_T0_A","n-methyl glutamine",10.35,955384,0,66415,1.1,"",955384
+"242","230717_Smp_G5_Hom2_T0_B","n-methyl glutamine",10.42,805889,0,69788,0.3,"",805889
+"243","230717_Smp_G5_Hom2_T0_C","n-methyl glutamine",10.39,822003,0,64004,1,"",822003
+"244","230717_Smp_G5_Hom2_T6_A","n-methyl glutamine",11.3,2084163,0,183257,1.2,"",2084163
+"245","230717_Smp_G5_Hom2_T6_B","n-methyl glutamine",11.29,3613501,0,366043,0.8,"",3613501
+"246","230717_Smp_G5_Hom2_T6_C","n-methyl glutamine",11.26,743130,0,69916,0.4,"",743130
+"247","230717_Smp_G5_Hom2_T12_A","n-methyl glutamine",10.41,592194,0,46005,0.3,"",592194
+"248","230717_Smp_G5_Hom2_T12_B","n-methyl glutamine",10.35,486507,0,42465,0.4,"",486507
+"249","230717_Smp_G5_Hom2_T12_C","n-methyl glutamine",10.39,542306,0,45870,0.6,"",542306
+"250","230717_Smp_G5_Hom2_T24_A","n-methyl glutamine",11.24,701354,0,69477,0.5,"",701354
+"251","230717_Smp_G5_Hom2_T24_B","n-methyl glutamine",10.34,951428,0,66670,0.3,"",951428
+"252","230717_Smp_G5_Hom2_T24_C","n-methyl glutamine",10.43,647092,0,39160,1,"",647092
+"253","230717_Smp_G5_Hom2_T48_A","n-methyl glutamine",11.34,3293678,0,245501,0.7,"",3293678
+"254","230717_Smp_G5_Hom2_T48_B","n-methyl glutamine",10.37,1403884,0,91651,0.8,"",1403884
+"255","230717_Smp_G5_Hom2_T48_C","n-methyl glutamine",11.3,1824583,0,144372,0.6,"",1824583
+"256","230717_Smp_G5_Hom2_T96_A","n-methyl glutamine",10.42,1985823,962038,134488,0.3,"sn_flag, ",NA
+"257","230717_Smp_G5_Hom2_T96_B","n-methyl glutamine",11.22,3599538,1384659,214733,0.4,"sn_flag, ",NA
+"258","230717_Smp_G5_Hom2_T96_C","n-methyl glutamine",10.43,5196944,0,210242,0.5,"",5196944
 "259","230717_Std_4uMStdsMix1InH2O_1","unknown_C7H9NO5_pos",NA,NA,NA,NA,NA,"",NA
 "260","230717_Std_4uMStdsMix1InH2O_2","unknown_C7H9NO5_pos",NA,NA,NA,NA,NA,"",NA
 "261","230717_Std_4uMStdsMix1InH2O_3","unknown_C7H9NO5_pos",NA,NA,NA,NA,NA,"",NA
@@ -344,92 +344,92 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "342","230717_Smp_G5_Hom2_T96_A","unknown_C7H9NO5_pos",NA,NA,NA,NA,NA,"",NA
 "343","230717_Smp_G5_Hom2_T96_B","unknown_C7H9NO5_pos",NA,NA,NA,NA,NA,"",NA
 "344","230717_Smp_G5_Hom2_T96_C","unknown_C7H9NO5_pos",NA,NA,NA,NA,NA,"",NA
-"345","230717_Std_4uMStdsMix1InH2O_1","N-Methyl-L-glutamic acid",10.96,516177568,5978801,46234352,1.1,"",516177568
-"346","230717_Std_4uMStdsMix1InH2O_2","N-Methyl-L-glutamic acid",10.99,355624960,5733836,36468460,1.7,"",355624960
-"347","230717_Std_4uMStdsMix1InH2O_3","N-Methyl-L-glutamic acid",10.9,453729184,8390198,46195260,1.7,"",453729184
-"348","230717_Std_4uMStdsMix1InH2O_4","N-Methyl-L-glutamic acid",10.88,420787456,5266569,43621540,1.3,"",420787456
-"349","230717_Std_4uMStdsMix1InH2O_5","N-Methyl-L-glutamic acid",10.8,482369280,4925962,49088420,1.2,"",482369280
-"350","230717_Std_4uMStdsMix1InH2O_6","N-Methyl-L-glutamic acid",10.71,460643744,8219180,43202104,1.1,"",460643744
-"351","230717_Std_4uMStdsMix1InMatrix1_1","N-Methyl-L-glutamic acid",11.16,83925568,1881466,7183343,1.4,"",83925568
-"352","230717_Std_4uMStdsMix1InMatrix1_2","N-Methyl-L-glutamic acid",11.13,166962128,0,14915590,1.5,"",166962128
-"353","230717_Std_4uMStdsMix1InMatrix1_3","N-Methyl-L-glutamic acid",11.04,171315424,3006231,14446598,1.7,"",171315424
-"354","230717_Std_4uMStdsMix1InMatrix2_4","N-Methyl-L-glutamic acid",11.05,209586096,2532885,20643578,1.9,"",209586096
-"355","230717_Std_4uMStdsMix1InMatrix2_5","N-Methyl-L-glutamic acid",10.97,216699312,4111838,18916246,1.3,"",216699312
-"356","230717_Std_4uMStdsMix1InMatrix2_6","N-Methyl-L-glutamic acid",10.88,188826736,3877544,17803998,0.9,"",188826736
-"357","230717_Std_4uMStdsMix2InH2O_1","N-Methyl-L-glutamic acid",10.95,582696960,3504165,57996044,1.2,"",582696960
-"358","230717_Std_4uMStdsMix2InH2O_2","N-Methyl-L-glutamic acid",10.96,455661856,4121482,47253800,0.8,"",455661856
-"359","230717_Std_4uMStdsMix2InH2O_3","N-Methyl-L-glutamic acid",10.9,488705760,8927898,52120628,1.4,"",488705760
-"360","230717_Std_4uMStdsMix2InH2O_4","N-Methyl-L-glutamic acid",10.87,509477248,5052990,52764424,1.6,"",509477248
-"361","230717_Std_4uMStdsMix2InH2O_5","N-Methyl-L-glutamic acid",10.79,555791680,4855113,57273152,1.1,"",555791680
-"362","230717_Std_4uMStdsMix2InH2O_6","N-Methyl-L-glutamic acid",10.69,519793344,6121491,57872000,1,"",519793344
-"363","230717_Std_4uMStdsMix2InMatrix1_1","N-Methyl-L-glutamic acid",11.16,181331216,546806,15026748,1.7,"",181331216
-"364","230717_Std_4uMStdsMix2InMatrix1_2","N-Methyl-L-glutamic acid",11.16,171135056,0,15665738,1.4,"",171135056
-"365","230717_Std_4uMStdsMix2InMatrix1_3","N-Methyl-L-glutamic acid",11.03,182378112,80953,17627266,2,"",182378112
-"366","230717_Std_4uMStdsMix2InMatrix2_4","N-Methyl-L-glutamic acid",11.06,236936704,1085172,24054004,1.3,"",236936704
-"367","230717_Std_4uMStdsMix2InMatrix2_5","N-Methyl-L-glutamic acid",10.99,239743600,3347253,21920218,1.3,"",239743600
-"368","230717_Std_4uMStdsMix2InMatrix2_6","N-Methyl-L-glutamic acid",10.91,196767520,2637594,19410294,0.6,"",196767520
-"369","230717_Std_H2OinMatrix1_1","N-Methyl-L-glutamic acid",11.19,1544537,0,110957,1.8,"",1544537
-"370","230717_Std_H2OinMatrix1_2","N-Methyl-L-glutamic acid",11.14,785225,0,63823,1.5,"",785225
-"371","230717_Std_H2OinMatrix1_3","N-Methyl-L-glutamic acid",11.08,634188,166461,69337,2.3,"",634188
-"372","230717_Std_H2OinMatrix2_4","N-Methyl-L-glutamic acid",11.1,2878329,0,210094,1.9,"",2878329
-"373","230717_Std_H2OinMatrix2_5","N-Methyl-L-glutamic acid",11.01,2961248,0,220750,1.7,"",2961248
-"374","230717_Std_H2OinMatrix2_6","N-Methyl-L-glutamic acid",10.92,2075441,0,154916,1,"",2075441
-"375","230717_Poo_G5-HomFate1_Full1","N-Methyl-L-glutamic acid",11.16,1311088,0,108091,1.5,"",1311088
-"376","230717_Poo_G5-HomFate1_Full2","N-Methyl-L-glutamic acid",11.24,1304445,933758,82404,1.9,"sn_flag, ",NA
-"377","230717_Poo_G5-HomFate1_Full3","N-Methyl-L-glutamic acid",11.21,1215542,0,88115,2.1,"",1215542
-"378","230717_Poo_G5-HomFate1_Full4","N-Methyl-L-glutamic acid",11.16,939388,199223,79732,2,"",939388
-"379","230717_Poo_G5-HomFate1_Full5","N-Methyl-L-glutamic acid",11.15,465817,209609,57694,1.2,"sn_flag, ",NA
-"380","230717_Poo_G5-HomFate1_Full6","N-Methyl-L-glutamic acid",11.15,850885,0,71142,1.8,"",850885
-"381","230717_Poo_G5-HomFate1_Full7","N-Methyl-L-glutamic acid",11.15,880926,0,76370,1.3,"",880926
-"382","230717_Poo_G5-HomFate2_Full1","N-Methyl-L-glutamic acid",11.14,2456482,0,177523,2,"",2456482
-"383","230717_Poo_G5-HomFate2_Full2","N-Methyl-L-glutamic acid",11.08,2621516,0,222611,1.7,"",2621516
-"384","230717_Poo_G5-HomFate2_Full3","N-Methyl-L-glutamic acid",11.06,2869176,0,261124,1.7,"",2869176
-"385","230717_Poo_G5-HomFate2_Full4","N-Methyl-L-glutamic acid",11.07,2911664,0,250424,1.8,"",2911664
-"386","230717_Poo_G5-HomFate2_Full5","N-Methyl-L-glutamic acid",11.03,1847879,346935,174986,2.1,"",1847879
-"387","230717_Poo_G5-HomFate2_Full6","N-Methyl-L-glutamic acid",11.06,2369515,0,191103,0.8,"",2369515
-"388","230717_Poo_G5-HomFate2_Full7","N-Methyl-L-glutamic acid",11.05,2938047,0,243254,1.7,"",2938047
-"389","230717_Smp_G5_Hom1_C_A","N-Methyl-L-glutamic acid",11.12,852935,0,68446,1.8,"",852935
-"390","230717_Smp_G5_Hom1_C_B","N-Methyl-L-glutamic acid",11.22,838731,0,79165,1.6,"",838731
-"391","230717_Smp_G5_Hom1_C_C","N-Methyl-L-glutamic acid",11.16,1216400,0,104833,1.7,"",1216400
-"392","230717_Smp_G5_Hom1_T0_A","N-Methyl-L-glutamic acid",11.16,1716519,0,122474,2,"",1716519
-"393","230717_Smp_G5_Hom1_T0_B","N-Methyl-L-glutamic acid",11.19,1610606,1273629,117924,1.9,"sn_flag, ",NA
-"394","230717_Smp_G5_Hom1_T0_C","N-Methyl-L-glutamic acid",11.15,1440587,0,129984,1,"",1440587
-"395","230717_Smp_G5_Hom1_T6_A","N-Methyl-L-glutamic acid",11.18,735514,0,62875,1.4,"",735514
-"396","230717_Smp_G5_Hom1_T6_B","N-Methyl-L-glutamic acid",11.16,813348,590395,117066,1.6,"sn_flag, ",NA
-"397","230717_Smp_G5_Hom1_T6_C","N-Methyl-L-glutamic acid",11.18,525127,0,63035,1.4,"",525127
-"398","230717_Smp_G5_Hom1_T12_A","N-Methyl-L-glutamic acid",11.28,1005730,0,94403,1.6,"",1005730
-"399","230717_Smp_G5_Hom1_T12_B","N-Methyl-L-glutamic acid",11.18,494557,0,43425,1.7,"",494557
-"400","230717_Smp_G5_Hom1_T12_C","N-Methyl-L-glutamic acid",11.16,459812,0,45353,2,"",459812
-"401","230717_Smp_G5_Hom1_T24_A","N-Methyl-L-glutamic acid",11.16,351427,0,31990,0.6,"",351427
-"402","230717_Smp_G5_Hom1_T24_B","N-Methyl-L-glutamic acid",11.25,490424,1331358,44521,1.7,"sn_flag, ",NA
-"403","230717_Smp_G5_Hom1_T24_C","N-Methyl-L-glutamic acid",11.15,813290,0,41638,1.6,"",813290
-"404","230717_Smp_G5_Hom1_T48_A","N-Methyl-L-glutamic acid",11.21,676414,0,53941,2.1,"",676414
-"405","230717_Smp_G5_Hom1_T48_B","N-Methyl-L-glutamic acid",11.16,992476,0,66543,1.8,"",992476
-"406","230717_Smp_G5_Hom1_T48_C","N-Methyl-L-glutamic acid",11.15,940528,0,56380,1.7,"",940528
-"407","230717_Smp_G5_Hom1_T96_A","N-Methyl-L-glutamic acid",11.15,2022642,0,176407,1.5,"",2022642
-"408","230717_Smp_G5_Hom1_T96_B","N-Methyl-L-glutamic acid",11.19,1849632,0,161731,2.7,"",1849632
-"409","230717_Smp_G5_Hom1_T96_C","N-Methyl-L-glutamic acid",11.18,2224896,0,171552,1.9,"",2224896
-"410","230717_Smp_G5_Hom2_C_A","N-Methyl-L-glutamic acid",11.07,1745857,0,143197,1.4,"",1745857
-"411","230717_Smp_G5_Hom2_C_B","N-Methyl-L-glutamic acid",11.04,1855595,0,164266,1.9,"",1855595
-"412","230717_Smp_G5_Hom2_C_C","N-Methyl-L-glutamic acid",11.07,2804590,0,239199,1.7,"",2804590
-"413","230717_Smp_G5_Hom2_T0_A","N-Methyl-L-glutamic acid",11.1,2639296,0,200740,1.8,"",2639296
-"414","230717_Smp_G5_Hom2_T0_B","N-Methyl-L-glutamic acid",11.11,2468839,0,210967,1.2,"",2468839
-"415","230717_Smp_G5_Hom2_T0_C","N-Methyl-L-glutamic acid",11.06,2677041,0,230169,1.9,"",2677041
-"416","230717_Smp_G5_Hom2_T6_A","N-Methyl-L-glutamic acid",11.1,1924686,0,156874,2.6,"",1924686
-"417","230717_Smp_G5_Hom2_T6_B","N-Methyl-L-glutamic acid",11.12,1935521,0,143609,1.9,"",1935521
-"418","230717_Smp_G5_Hom2_T6_C","N-Methyl-L-glutamic acid",11.03,1540131,0,141900,1.4,"",1540131
-"419","230717_Smp_G5_Hom2_T12_A","N-Methyl-L-glutamic acid",11.06,1642340,0,99570,1.4,"",1642340
-"420","230717_Smp_G5_Hom2_T12_B","N-Methyl-L-glutamic acid",11.08,1333764,0,123659,1.6,"",1333764
-"421","230717_Smp_G5_Hom2_T12_C","N-Methyl-L-glutamic acid",11.06,1792326,0,154340,1.6,"",1792326
-"422","230717_Smp_G5_Hom2_T24_A","N-Methyl-L-glutamic acid",10.99,1524339,0,130776,1.4,"",1524339
-"423","230717_Smp_G5_Hom2_T24_B","N-Methyl-L-glutamic acid",11.02,2877280,0,247471,1.7,"",2877280
-"424","230717_Smp_G5_Hom2_T24_C","N-Methyl-L-glutamic acid",11.06,1077359,0,98044,2.1,"",1077359
-"425","230717_Smp_G5_Hom2_T48_A","N-Methyl-L-glutamic acid",11.11,3809500,0,307293,2,"",3809500
-"426","230717_Smp_G5_Hom2_T48_B","N-Methyl-L-glutamic acid",11.06,1955983,0,208609,1.8,"",1955983
-"427","230717_Smp_G5_Hom2_T48_C","N-Methyl-L-glutamic acid",11.06,4434933,0,421289,1.7,"",4434933
-"428","230717_Smp_G5_Hom2_T96_A","N-Methyl-L-glutamic acid",10.99,3590516,0,365896,1.7,"",3590516
-"429","230717_Smp_G5_Hom2_T96_B","N-Methyl-L-glutamic acid",10.99,6308375,0,619666,1.5,"",6308375
-"430","230717_Smp_G5_Hom2_T96_C","N-Methyl-L-glutamic acid",11.12,4575618,259712,362998,1.6,"",4575618
+"345","230717_Std_4uMStdsMix1InH2O_1","N-Methyl-L-glutamic acid",10.96,526841888,0,46399192,1.1,"",526841888
+"346","230717_Std_4uMStdsMix1InH2O_2","N-Methyl-L-glutamic acid",10.99,364587360,0,36645760,1.7,"",364587360
+"347","230717_Std_4uMStdsMix1InH2O_3","N-Methyl-L-glutamic acid",10.9,466970272,0,46456396,1.7,"",466970272
+"348","230717_Std_4uMStdsMix1InH2O_4","N-Methyl-L-glutamic acid",10.88,430322208,0,43775588,1.3,"",430322208
+"349","230717_Std_4uMStdsMix1InH2O_5","N-Methyl-L-glutamic acid",10.8,492032096,966993,49220856,1.2,"",492032096
+"350","230717_Std_4uMStdsMix1InH2O_6","N-Methyl-L-glutamic acid",10.71,474416832,0,43413896,1.1,"",474416832
+"351","230717_Std_4uMStdsMix1InMatrix1_1","N-Methyl-L-glutamic acid",11.16,88836904,682775,7219770,1.4,"",88836904
+"352","230717_Std_4uMStdsMix1InMatrix1_2","N-Methyl-L-glutamic acid",11.13,168879056,0,14915590,1.5,"",168879056
+"353","230717_Std_4uMStdsMix1InMatrix1_3","N-Methyl-L-glutamic acid",11.04,177023600,566852,14504717,1.7,"",177023600
+"354","230717_Std_4uMStdsMix1InMatrix2_4","N-Methyl-L-glutamic acid",11.05,213228480,3029175,20675200,1.9,"",213228480
+"355","230717_Std_4uMStdsMix1InMatrix2_5","N-Methyl-L-glutamic acid",10.97,226378592,0,19024784,1.3,"",226378592
+"356","230717_Std_4uMStdsMix1InMatrix2_6","N-Methyl-L-glutamic acid",10.88,199026144,0,17906352,0.9,"",199026144
+"357","230717_Std_4uMStdsMix2InH2O_1","N-Methyl-L-glutamic acid",10.95,590278464,0,58103484,1.2,"",590278464
+"358","230717_Std_4uMStdsMix2InH2O_2","N-Methyl-L-glutamic acid",10.96,461407584,0,47382076,0.8,"",461407584
+"359","230717_Std_4uMStdsMix2InH2O_3","N-Methyl-L-glutamic acid",10.9,501021408,0,52398484,1.4,"",501021408
+"360","230717_Std_4uMStdsMix2InH2O_4","N-Methyl-L-glutamic acid",10.87,519154112,0,52922728,1.6,"",519154112
+"361","230717_Std_4uMStdsMix2InH2O_5","N-Methyl-L-glutamic acid",10.79,562581184,1869612,57399948,1.1,"",562581184
+"362","230717_Std_4uMStdsMix2InH2O_6","N-Methyl-L-glutamic acid",10.69,532539168,0,58063780,1,"",532539168
+"363","230717_Std_4uMStdsMix2InMatrix1_1","N-Methyl-L-glutamic acid",11.16,184964000,0,15039782,1.7,"",184964000
+"364","230717_Std_4uMStdsMix2InMatrix1_2","N-Methyl-L-glutamic acid",11.16,172915376,0,15665738,1.4,"",172915376
+"365","230717_Std_4uMStdsMix2InMatrix1_3","N-Methyl-L-glutamic acid",11.03,186253728,0,17629456,2,"",186253728
+"366","230717_Std_4uMStdsMix2InMatrix2_4","N-Methyl-L-glutamic acid",11.06,240462144,683993,24073940,1.3,"",240462144
+"367","230717_Std_4uMStdsMix2InMatrix2_5","N-Methyl-L-glutamic acid",10.99,247603504,0,22023720,1.3,"",247603504
+"368","230717_Std_4uMStdsMix2InMatrix2_6","N-Methyl-L-glutamic acid",10.91,205003136,0,19496796,0.6,"",205003136
+"369","230717_Std_H2OinMatrix1_1","N-Methyl-L-glutamic acid",11.19,4084247,12766,110862,1.9,"",4084247
+"370","230717_Std_H2OinMatrix1_2","N-Methyl-L-glutamic acid",11.14,954776,314635,59408,1.5,"",954776
+"371","230717_Std_H2OinMatrix1_3","N-Methyl-L-glutamic acid",10.08,2055927,0,112761,2.7,"",2055927
+"372","230717_Std_H2OinMatrix2_4","N-Methyl-L-glutamic acid",11.1,3721172,0,210094,2,"",3721172
+"373","230717_Std_H2OinMatrix2_5","N-Methyl-L-glutamic acid",11.01,3918164,0,220750,1.8,"",3918164
+"374","230717_Std_H2OinMatrix2_6","N-Methyl-L-glutamic acid",10.92,2988894,0,154916,1.3,"",2988894
+"375","230717_Poo_G5-HomFate1_Full1","N-Methyl-L-glutamic acid",11.16,2047501,1912693,93550,1.6,"sn_flag, ",NA
+"376","230717_Poo_G5-HomFate1_Full2","N-Methyl-L-glutamic acid",11.24,2972621,3643106,79033,1.8,"sn_flag, ",NA
+"377","230717_Poo_G5-HomFate1_Full3","N-Methyl-L-glutamic acid",11.21,1739040,1584589,73138,2.1,"sn_flag, ",NA
+"378","230717_Poo_G5-HomFate1_Full4","N-Methyl-L-glutamic acid",11.16,1059878,1955655,65407,2.2,"sn_flag, ",NA
+"379","230717_Poo_G5-HomFate1_Full5","N-Methyl-L-glutamic acid",11.15,1826640,0,69942,2.4,"",1826640
+"380","230717_Poo_G5-HomFate1_Full6","N-Methyl-L-glutamic acid",11.15,1682067,0,71142,2,"",1682067
+"381","230717_Poo_G5-HomFate1_Full7","N-Methyl-L-glutamic acid",11.15,2220369,0,76370,1.5,"",2220369
+"382","230717_Poo_G5-HomFate2_Full1","N-Methyl-L-glutamic acid",11.14,3671686,0,177523,2.1,"",3671686
+"383","230717_Poo_G5-HomFate2_Full2","N-Methyl-L-glutamic acid",11.08,3867230,0,222611,1.9,"",3867230
+"384","230717_Poo_G5-HomFate2_Full3","N-Methyl-L-glutamic acid",11.06,3945465,0,261124,1.8,"",3945465
+"385","230717_Poo_G5-HomFate2_Full4","N-Methyl-L-glutamic acid",11.07,4080024,0,250424,2,"",4080024
+"386","230717_Poo_G5-HomFate2_Full5","N-Methyl-L-glutamic acid",11.03,3440513,0,186667,2.3,"",3440513
+"387","230717_Poo_G5-HomFate2_Full6","N-Methyl-L-glutamic acid",11.06,3196363,0,191103,0.9,"",3196363
+"388","230717_Poo_G5-HomFate2_Full7","N-Methyl-L-glutamic acid",11.05,4446253,0,243254,1.7,"",4446253
+"389","230717_Smp_G5_Hom1_C_A","N-Methyl-L-glutamic acid",11.69,2452172,1892871,187776,2,"sn_flag, ",NA
+"390","230717_Smp_G5_Hom1_C_B","N-Methyl-L-glutamic acid",11.72,2766868,0,117965,2,"",2766868
+"391","230717_Smp_G5_Hom1_C_C","N-Methyl-L-glutamic acid",11.16,1491705,1673695,90116,1.7,"sn_flag, ",NA
+"392","230717_Smp_G5_Hom1_T0_A","N-Methyl-L-glutamic acid",11.75,2132443,3011733,158774,2.3,"sn_flag, ",NA
+"393","230717_Smp_G5_Hom1_T0_B","N-Methyl-L-glutamic acid",11.19,2150095,5064811,106958,2,"sn_flag, ",NA
+"394","230717_Smp_G5_Hom1_T0_C","N-Methyl-L-glutamic acid",11.15,2123216,574274,123642,1.4,"",2123216
+"395","230717_Smp_G5_Hom1_T6_A","N-Methyl-L-glutamic acid",11.18,1730334,0,62875,1.5,"",1730334
+"396","230717_Smp_G5_Hom1_T6_B","N-Methyl-L-glutamic acid",11.16,2199473,2657717,117485,1.6,"sn_flag, ",NA
+"397","230717_Smp_G5_Hom1_T6_C","N-Methyl-L-glutamic acid",11.18,1382846,0,63035,1.5,"",1382846
+"398","230717_Smp_G5_Hom1_T12_A","N-Methyl-L-glutamic acid",11.77,2175865,3770079,183229,1.7,"sn_flag, ",NA
+"399","230717_Smp_G5_Hom1_T12_B","N-Methyl-L-glutamic acid",11.18,1329764,0,43425,2.2,"",1329764
+"400","230717_Smp_G5_Hom1_T12_C","N-Methyl-L-glutamic acid",10.42,1198105,0,60194,3.4,"",1198105
+"401","230717_Smp_G5_Hom1_T24_A","N-Methyl-L-glutamic acid",11.72,1048744,0,50760,0.9,"",1048744
+"402","230717_Smp_G5_Hom1_T24_B","N-Methyl-L-glutamic acid",11.78,3462632,3512085,78319,2,"sn_flag, ",NA
+"403","230717_Smp_G5_Hom1_T24_C","N-Methyl-L-glutamic acid",10.14,1832310,1281311,49966,1.8,"sn_flag, ",NA
+"404","230717_Smp_G5_Hom1_T48_A","N-Methyl-L-glutamic acid",11.72,887781,1659042,60035,2.4,"sn_flag, ",NA
+"405","230717_Smp_G5_Hom1_T48_B","N-Methyl-L-glutamic acid",11.16,1258593,1205580,54842,1.8,"sn_flag, ",NA
+"406","230717_Smp_G5_Hom1_T48_C","N-Methyl-L-glutamic acid",11.71,1264360,2439849,91051,1.7,"sn_flag, ",NA
+"407","230717_Smp_G5_Hom1_T96_A","N-Methyl-L-glutamic acid",11.15,2793800,0,176407,1.5,"",2793800
+"408","230717_Smp_G5_Hom1_T96_B","N-Methyl-L-glutamic acid",11.19,2475922,1899892,147506,2.6,"sn_flag, ",NA
+"409","230717_Smp_G5_Hom1_T96_C","N-Methyl-L-glutamic acid",11.18,3142485,486459,167539,2.2,"",3142485
+"410","230717_Smp_G5_Hom2_C_A","N-Methyl-L-glutamic acid",11.07,2185931,498935,136925,1.6,"",2185931
+"411","230717_Smp_G5_Hom2_C_B","N-Methyl-L-glutamic acid",11.04,3742130,0,164266,2.1,"",3742130
+"412","230717_Smp_G5_Hom2_C_C","N-Methyl-L-glutamic acid",11.07,4121459,0,239199,1.8,"",4121459
+"413","230717_Smp_G5_Hom2_T0_A","N-Methyl-L-glutamic acid",11.1,3606875,0,200740,1.9,"",3606875
+"414","230717_Smp_G5_Hom2_T0_B","N-Methyl-L-glutamic acid",11.11,2998532,661926,204149,1.3,"",2998532
+"415","230717_Smp_G5_Hom2_T0_C","N-Methyl-L-glutamic acid",11.06,3805356,0,230169,2,"",3805356
+"416","230717_Smp_G5_Hom2_T6_A","N-Methyl-L-glutamic acid",11.1,3108657,0,156874,2.6,"",3108657
+"417","230717_Smp_G5_Hom2_T6_B","N-Methyl-L-glutamic acid",11.12,2911775,0,143609,2,"",2911775
+"418","230717_Smp_G5_Hom2_T6_C","N-Methyl-L-glutamic acid",11.03,2022955,0,141900,1.4,"",2022955
+"419","230717_Smp_G5_Hom2_T12_A","N-Methyl-L-glutamic acid",11.06,2451040,0,99570,1.6,"",2451040
+"420","230717_Smp_G5_Hom2_T12_B","N-Methyl-L-glutamic acid",11.08,1879646,0,123659,1.7,"",1879646
+"421","230717_Smp_G5_Hom2_T12_C","N-Methyl-L-glutamic acid",11.06,2611140,0,154340,1.7,"",2611140
+"422","230717_Smp_G5_Hom2_T24_A","N-Methyl-L-glutamic acid",10.99,1880690,0,130776,1.6,"",1880690
+"423","230717_Smp_G5_Hom2_T24_B","N-Methyl-L-glutamic acid",11.02,3464922,0,247471,1.8,"",3464922
+"424","230717_Smp_G5_Hom2_T24_C","N-Methyl-L-glutamic acid",11.06,1347093,0,98044,2.1,"",1347093
+"425","230717_Smp_G5_Hom2_T48_A","N-Methyl-L-glutamic acid",11.11,5006079,0,307293,2,"",5006079
+"426","230717_Smp_G5_Hom2_T48_B","N-Methyl-L-glutamic acid",11.06,2289197,0,208609,1.9,"",2289197
+"427","230717_Smp_G5_Hom2_T48_C","N-Methyl-L-glutamic acid",11.06,5678663,0,421289,1.9,"",5678663
+"428","230717_Smp_G5_Hom2_T96_A","N-Methyl-L-glutamic acid",10.99,4543130,560714,360037,1.8,"",4543130
+"429","230717_Smp_G5_Hom2_T96_B","N-Methyl-L-glutamic acid",10.99,8361744,0,619666,1.6,"",8361744
+"430","230717_Smp_G5_Hom2_T96_C","N-Methyl-L-glutamic acid",11.12,7755006,0,369244,1.8,"",7755006
 "431","230717_Std_4uMStdsMix1InH2O_1","Adenine",NA,NA,NA,NA,NA,"",NA
 "432","230717_Std_4uMStdsMix1InH2O_2","Adenine",NA,NA,NA,NA,NA,"",NA
 "433","230717_Std_4uMStdsMix1InH2O_3","Adenine",NA,NA,NA,NA,NA,"",NA
@@ -1080,7 +1080,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "1078","230717_Smp_G5_Hom1_C_B","L-Glutamic acid",12.77,39195940,1232200,4203523,-3.5,"",39195940
 "1079","230717_Smp_G5_Hom1_C_C","L-Glutamic acid",12.74,108818608,3725946,11542778,-3.5,"",108818608
 "1080","230717_Smp_G5_Hom1_T0_A","L-Glutamic acid",12.78,110374336,2672816,11615519,-2.9,"",110374336
-"1081","230717_Smp_G5_Hom1_T0_B","L-Glutamic acid",12.77,129654064,4594901,13433696,-3,"",129654064
+"1081","230717_Smp_G5_Hom1_T0_B","L-Glutamic acid",12.77,129654064,4594901,13433696,-3.1,"",129654064
 "1082","230717_Smp_G5_Hom1_T0_C","L-Glutamic acid",12.73,69432936,2220833,7387825,-4.2,"",69432936
 "1083","230717_Smp_G5_Hom1_T6_A","L-Glutamic acid",12.74,81464640,2264838,8999004,-3.9,"",81464640
 "1084","230717_Smp_G5_Hom1_T6_B","L-Glutamic acid",12.71,152191376,4334403,15794242,-3.6,"",152191376
@@ -1362,7 +1362,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "1360","230717_Smp_G5_Hom2_T0_B","L-Homoserine",11.85,1163245,516105,105908,-2.6,"sn_flag, ",NA
 "1361","230717_Smp_G5_Hom2_T0_C","L-Homoserine",11.85,1284857,546719,109236,-1.7,"sn_flag, ",NA
 "1362","230717_Smp_G5_Hom2_T6_A","L-Homoserine",11.85,1994147,1022198,200780,-1.4,"sn_flag, ",NA
-"1363","230717_Smp_G5_Hom2_T6_B","L-Homoserine",11.86,2775666,131478,211384,-1.8,"",2775666
+"1363","230717_Smp_G5_Hom2_T6_B","L-Homoserine",11.86,2775666,131478,211384,-1.9,"",2775666
 "1364","230717_Smp_G5_Hom2_T6_C","L-Homoserine",11.77,1942433,502339,171640,-2.5,"",1942433
 "1365","230717_Smp_G5_Hom2_T12_A","L-Homoserine",11.85,4477121,906963,401002,-2.1,"",4477121
 "1366","230717_Smp_G5_Hom2_T12_B","L-Homoserine",11.82,2275671,424606,173248,-2.2,"",2275671
@@ -2113,7 +2113,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "2111","230717_Smp_G5_Hom1_C_C","unknown_C6H11NO2_pos",11.38,1001747,0,84817,-2.6,"",1001747
 "2112","230717_Smp_G5_Hom1_T0_A","unknown_C6H11NO2_pos",11.39,873094,0,81840,-1.8,"",873094
 "2113","230717_Smp_G5_Hom1_T0_B","unknown_C6H11NO2_pos",11.39,1096894,0,110480,-2.3,"",1096894
-"2114","230717_Smp_G5_Hom1_T0_C","unknown_C6H11NO2_pos",11.39,651909,0,76794,-3.6,"",651909
+"2114","230717_Smp_G5_Hom1_T0_C","unknown_C6H11NO2_pos",11.39,651909,0,76794,-3.7,"",651909
 "2115","230717_Smp_G5_Hom1_T6_A","unknown_C6H11NO2_pos",11.41,520223,0,44521,-2.8,"",520223
 "2116","230717_Smp_G5_Hom1_T6_B","unknown_C6H11NO2_pos",11.41,1140274,0,90894,-2.9,"",1140274
 "2117","230717_Smp_G5_Hom1_T6_C","unknown_C6H11NO2_pos",11.42,462597,0,46720,-3.1,"",462597
@@ -2236,92 +2236,92 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "2234","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO4_pos_early",NA,NA,NA,NA,NA,"",NA
 "2235","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO4_pos_early",NA,NA,NA,NA,NA,"",NA
 "2236","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO4_pos_early",NA,NA,NA,NA,NA,"",NA
-"2237","230717_Std_4uMStdsMix1InH2O_1","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2238","230717_Std_4uMStdsMix1InH2O_2","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2239","230717_Std_4uMStdsMix1InH2O_3","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2240","230717_Std_4uMStdsMix1InH2O_4","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2241","230717_Std_4uMStdsMix1InH2O_5","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2242","230717_Std_4uMStdsMix1InH2O_6","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2243","230717_Std_4uMStdsMix1InMatrix1_1","homarine_13C_15N",6.36,647634432,6924054,30156564,0.5,"",647634432
-"2244","230717_Std_4uMStdsMix1InMatrix1_2","homarine_13C_15N",6.39,450541504,5259421,21048348,0.3,"",450541504
-"2245","230717_Std_4uMStdsMix1InMatrix1_3","homarine_13C_15N",6.39,490426496,5189764,25407218,1.3,"",490426496
-"2246","230717_Std_4uMStdsMix1InMatrix2_4","homarine_13C_15N",6.37,716023168,7992469,35243340,1.1,"",716023168
-"2247","230717_Std_4uMStdsMix1InMatrix2_5","homarine_13C_15N",6.37,752620288,9009104,37064188,0.7,"",752620288
-"2248","230717_Std_4uMStdsMix1InMatrix2_6","homarine_13C_15N",6.35,853148928,11399869,42037284,-0.3,"",853148928
-"2249","230717_Std_4uMStdsMix2InH2O_1","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2250","230717_Std_4uMStdsMix2InH2O_2","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2251","230717_Std_4uMStdsMix2InH2O_3","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2252","230717_Std_4uMStdsMix2InH2O_4","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2253","230717_Std_4uMStdsMix2InH2O_5","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2254","230717_Std_4uMStdsMix2InH2O_6","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2255","230717_Std_4uMStdsMix2InMatrix1_1","homarine_13C_15N",6.36,680530752,8505594,33590144,0.7,"",680530752
-"2256","230717_Std_4uMStdsMix2InMatrix1_2","homarine_13C_15N",6.37,483285120,5211057,22502600,0.6,"",483285120
-"2257","230717_Std_4uMStdsMix2InMatrix1_3","homarine_13C_15N",6.38,501486656,5554505,23340276,1.2,"",501486656
-"2258","230717_Std_4uMStdsMix2InMatrix2_4","homarine_13C_15N",6.33,764704832,8783280,34153752,1.1,"",764704832
-"2259","230717_Std_4uMStdsMix2InMatrix2_5","homarine_13C_15N",6.37,799122496,8208424,38555416,0.6,"",799122496
-"2260","230717_Std_4uMStdsMix2InMatrix2_6","homarine_13C_15N",6.32,881474496,9660111,42434832,0.1,"",881474496
-"2261","230717_Std_H2OinMatrix1_1","homarine_13C_15N",6.36,731276032,8279377,34287376,1.3,"",731276032
-"2262","230717_Std_H2OinMatrix1_2","homarine_13C_15N",6.39,488332448,6039931,25327316,0.3,"",488332448
-"2263","230717_Std_H2OinMatrix1_3","homarine_13C_15N",6.4,500755744,6726222,23526974,0.9,"",500755744
-"2264","230717_Std_H2OinMatrix2_4","homarine_13C_15N",6.31,750798784,6951631,34805992,1,"",750798784
-"2265","230717_Std_H2OinMatrix2_5","homarine_13C_15N",6.38,811761792,7943087,37061436,0.7,"",811761792
-"2266","230717_Std_H2OinMatrix2_6","homarine_13C_15N",6.38,878848640,10206496,42110776,0,"",878848640
-"2267","230717_Poo_G5-HomFate1_Full1","homarine_13C_15N",6.37,978501504,11886972,47682808,0.6,"",978501504
-"2268","230717_Poo_G5-HomFate1_Full2","homarine_13C_15N",6.37,978139328,10132013,45032724,0.6,"",978139328
-"2269","230717_Poo_G5-HomFate1_Full3","homarine_13C_15N",6.36,918850624,12020991,44164320,0.8,"",918850624
-"2270","230717_Poo_G5-HomFate1_Full4","homarine_13C_15N",6.39,960709760,6863506,44998964,1.5,"",960709760
-"2271","230717_Poo_G5-HomFate1_Full5","homarine_13C_15N",6.33,859302784,9229377,40744864,0.2,"",859302784
-"2272","230717_Poo_G5-HomFate1_Full6","homarine_13C_15N",6.37,876873664,11595455,41856728,0.8,"",876873664
-"2273","230717_Poo_G5-HomFate1_Full7","homarine_13C_15N",6.34,857368640,11294885,42660776,0,"",857368640
-"2274","230717_Poo_G5-HomFate2_Full1","homarine_13C_15N",6.37,1395383424,16878766,69616816,0.6,"",1395383424
-"2275","230717_Poo_G5-HomFate2_Full2","homarine_13C_15N",6.3,1324504960,12666702,63070388,0.4,"",1324504960
-"2276","230717_Poo_G5-HomFate2_Full3","homarine_13C_15N",6.38,1300808064,14147655,60313568,0.5,"",1300808064
-"2277","230717_Poo_G5-HomFate2_Full4","homarine_13C_15N",6.41,1363344128,14763761,65051284,0.6,"",1363344128
-"2278","230717_Poo_G5-HomFate2_Full5","homarine_13C_15N",6.33,1514667776,19121524,73810912,0.9,"",1514667776
-"2279","230717_Poo_G5-HomFate2_Full6","homarine_13C_15N",6.33,1336908928,18786538,63326620,-0.3,"",1336908928
-"2280","230717_Poo_G5-HomFate2_Full7","homarine_13C_15N",6.32,1407594752,18172688,65970580,0.9,"",1407594752
-"2281","230717_Smp_G5_Hom1_C_A","homarine_13C_15N",6.39,8435050,0,417562,1.2,"",8435050
-"2282","230717_Smp_G5_Hom1_C_B","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2283","230717_Smp_G5_Hom1_C_C","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2284","230717_Smp_G5_Hom1_T0_A","homarine_13C_15N",6.4,112266968,590687,5593443,1.4,"",112266968
-"2285","230717_Smp_G5_Hom1_T0_B","homarine_13C_15N",6.39,121676976,1671529,5935542,1.1,"",121676976
-"2286","230717_Smp_G5_Hom1_T0_C","homarine_13C_15N",6.39,102295272,895552,5097464,0.4,"",102295272
-"2287","230717_Smp_G5_Hom1_T6_A","homarine_13C_15N",6.36,917541248,10992065,42881748,0.3,"",917541248
-"2288","230717_Smp_G5_Hom1_T6_B","homarine_13C_15N",6.42,557341312,6108645,25744972,0.6,"",557341312
-"2289","230717_Smp_G5_Hom1_T6_C","homarine_13C_15N",6.33,703537600,9779977,35032540,0.4,"",703537600
-"2290","230717_Smp_G5_Hom1_T12_A","homarine_13C_15N",6.37,865017536,8809971,41724852,0.7,"",865017536
-"2291","230717_Smp_G5_Hom1_T12_B","homarine_13C_15N",6.37,916106688,9063896,41987236,0.1,"",916106688
-"2292","230717_Smp_G5_Hom1_T12_C","homarine_13C_15N",6.34,880880256,11128063,47118232,1,"",880880256
-"2293","230717_Smp_G5_Hom1_T24_A","homarine_13C_15N",6.36,963837696,11940238,48262996,-0.7,"",963837696
-"2294","230717_Smp_G5_Hom1_T24_B","homarine_13C_15N",6.33,805238016,8629534,36790492,0.8,"",805238016
-"2295","230717_Smp_G5_Hom1_T24_C","homarine_13C_15N",6.37,880846080,9755643,43144704,0.5,"",880846080
-"2296","230717_Smp_G5_Hom1_T48_A","homarine_13C_15N",6.32,1940080512,23888074,92177200,1.3,"",1940080512
-"2297","230717_Smp_G5_Hom1_T48_B","homarine_13C_15N",6.39,1698592512,22964778,84392512,0.4,"",1698592512
-"2298","230717_Smp_G5_Hom1_T48_C","homarine_13C_15N",6.42,2394924288,29442016,114037720,0.6,"",2394924288
-"2299","230717_Smp_G5_Hom1_T96_A","homarine_13C_15N",6.39,1496144640,16907686,74932672,0.9,"",1496144640
-"2300","230717_Smp_G5_Hom1_T96_B","homarine_13C_15N",6.31,1958903424,15572795,93410168,1.2,"",1958903424
-"2301","230717_Smp_G5_Hom1_T96_C","homarine_13C_15N",6.36,1437296512,18208476,68909144,0.5,"",1437296512
-"2302","230717_Smp_G5_Hom2_C_A","homarine_13C_15N",6.31,61691,0,22910,0.8,"",61691
-"2303","230717_Smp_G5_Hom2_C_B","homarine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2304","230717_Smp_G5_Hom2_C_C","homarine_13C_15N",6.31,243568,0,24028,1,"",243568
-"2305","230717_Smp_G5_Hom2_T0_A","homarine_13C_15N",6.34,216791424,2599495,9952790,1,"",216791424
-"2306","230717_Smp_G5_Hom2_T0_B","homarine_13C_15N",6.39,169504288,1635922,8376276,0.4,"",169504288
-"2307","230717_Smp_G5_Hom2_T0_C","homarine_13C_15N",6.38,176231808,1156373,8369230,0.6,"",176231808
-"2308","230717_Smp_G5_Hom2_T6_A","homarine_13C_15N",6.33,1588265216,16099361,76899080,0.9,"",1588265216
-"2309","230717_Smp_G5_Hom2_T6_B","homarine_13C_15N",6.35,1302972032,14907615,62405036,0.8,"",1302972032
-"2310","230717_Smp_G5_Hom2_T6_C","homarine_13C_15N",6.33,1284121088,15040824,56303384,0.3,"",1284121088
-"2311","230717_Smp_G5_Hom2_T12_A","homarine_13C_15N",6.33,2199946496,25519030,107598544,0.3,"",2199946496
-"2312","230717_Smp_G5_Hom2_T12_B","homarine_13C_15N",6.37,974202624,13271315,46050664,0.8,"",974202624
-"2313","230717_Smp_G5_Hom2_T12_C","homarine_13C_15N",6.39,2163184128,26015692,110673696,0.9,"",2163184128
-"2314","230717_Smp_G5_Hom2_T24_A","homarine_13C_15N",6.37,2723382016,34318112,124090216,0,"",2723382016
-"2315","230717_Smp_G5_Hom2_T24_B","homarine_13C_15N",6.35,3963985664,48971992,190148336,0.3,"",3963985664
-"2316","230717_Smp_G5_Hom2_T24_C","homarine_13C_15N",6.3,2252744192,30299464,104985808,0.5,"",2252744192
-"2317","230717_Smp_G5_Hom2_T48_A","homarine_13C_15N",6.35,2719169536,27583312,126969624,0.5,"",2719169536
-"2318","230717_Smp_G5_Hom2_T48_B","homarine_13C_15N",6.37,1116712064,14895577,53202420,0.8,"",1116712064
-"2319","230717_Smp_G5_Hom2_T48_C","homarine_13C_15N",6.39,3600766720,39096588,167610560,0.3,"",3600766720
-"2320","230717_Smp_G5_Hom2_T96_A","homarine_13C_15N",6.37,668909376,7446490,31375570,0.5,"",668909376
-"2321","230717_Smp_G5_Hom2_T96_B","homarine_13C_15N",6.33,516460224,6403992,24368702,0.7,"",516460224
-"2322","230717_Smp_G5_Hom2_T96_C","homarine_13C_15N",6.29,876786752,10911371,41221612,0.7,"",876786752
+"2237","230717_Std_4uMStdsMix1InH2O_1","homarine_13C_15N",5.76,0,0,0,NA,"areamin_flag, ",NA
+"2238","230717_Std_4uMStdsMix1InH2O_2","homarine_13C_15N",5.77,0,0,0,NA,"areamin_flag, ",NA
+"2239","230717_Std_4uMStdsMix1InH2O_3","homarine_13C_15N",5.76,0,0,0,NA,"areamin_flag, ",NA
+"2240","230717_Std_4uMStdsMix1InH2O_4","homarine_13C_15N",5.77,0,0,0,NA,"areamin_flag, ",NA
+"2241","230717_Std_4uMStdsMix1InH2O_5","homarine_13C_15N",5.77,0,0,0,NA,"areamin_flag, ",NA
+"2242","230717_Std_4uMStdsMix1InH2O_6","homarine_13C_15N",6.41,167969,0,25395,1.5,"",167969
+"2243","230717_Std_4uMStdsMix1InMatrix1_1","homarine_13C_15N",6.36,672276672,0,30277872,0.5,"",672276672
+"2244","230717_Std_4uMStdsMix1InMatrix1_2","homarine_13C_15N",6.39,466195680,0,21136490,0.3,"",466195680
+"2245","230717_Std_4uMStdsMix1InMatrix1_3","homarine_13C_15N",6.39,509872096,0,25501442,1.3,"",509872096
+"2246","230717_Std_4uMStdsMix1InMatrix2_4","homarine_13C_15N",6.37,734672256,2433122,35338296,1.1,"",734672256
+"2247","230717_Std_4uMStdsMix1InMatrix2_5","homarine_13C_15N",6.37,777172736,2233832,37189524,0.7,"",777172736
+"2248","230717_Std_4uMStdsMix1InMatrix2_6","homarine_13C_15N",6.35,883961344,5839434,42181864,-0.2,"",883961344
+"2249","230717_Std_4uMStdsMix2InH2O_1","homarine_13C_15N",5.76,0,0,0,NA,"areamin_flag, ",NA
+"2250","230717_Std_4uMStdsMix2InH2O_2","homarine_13C_15N",5.76,0,0,0,NA,"areamin_flag, ",NA
+"2251","230717_Std_4uMStdsMix2InH2O_3","homarine_13C_15N",5.76,0,0,0,NA,"areamin_flag, ",NA
+"2252","230717_Std_4uMStdsMix2InH2O_4","homarine_13C_15N",5.77,0,0,0,NA,"areamin_flag, ",NA
+"2253","230717_Std_4uMStdsMix2InH2O_5","homarine_13C_15N",6.4,32444,0,21102,0.6,"areamin_flag, ",NA
+"2254","230717_Std_4uMStdsMix2InH2O_6","homarine_13C_15N",7,32251,0,18032,1.4,"areamin_flag, ",NA
+"2255","230717_Std_4uMStdsMix2InMatrix1_1","homarine_13C_15N",6.36,707482496,1184450,33732592,0.8,"",707482496
+"2256","230717_Std_4uMStdsMix2InMatrix1_2","homarine_13C_15N",6.37,501295328,864705,22589390,0.6,"",501295328
+"2257","230717_Std_4uMStdsMix2InMatrix1_3","homarine_13C_15N",6.38,518847104,1813261,23420284,1.2,"",518847104
+"2258","230717_Std_4uMStdsMix2InMatrix2_4","homarine_13C_15N",6.33,789983104,2399208,34278140,1.1,"",789983104
+"2259","230717_Std_4uMStdsMix2InMatrix2_5","homarine_13C_15N",6.37,822887744,3593772,38654536,0.7,"",822887744
+"2260","230717_Std_4uMStdsMix2InMatrix2_6","homarine_13C_15N",6.32,910367104,3377535,42563480,0.1,"",910367104
+"2261","230717_Std_H2OinMatrix1_1","homarine_13C_15N",6.36,751904192,1136022,34410400,1.3,"",751904192
+"2262","230717_Std_H2OinMatrix1_2","homarine_13C_15N",6.39,505880160,1431283,25423086,0.3,"",505880160
+"2263","230717_Std_H2OinMatrix1_3","homarine_13C_15N",6.4,518857056,631310,23635550,0.9,"",518857056
+"2264","230717_Std_H2OinMatrix2_4","homarine_13C_15N",6.31,775729280,3272181,34893052,1,"",775729280
+"2265","230717_Std_H2OinMatrix2_5","homarine_13C_15N",6.38,833932928,2388707,37162704,0.7,"",833932928
+"2266","230717_Std_H2OinMatrix2_6","homarine_13C_15N",6.38,911339712,3830701,42252572,0,"",911339712
+"2267","230717_Poo_G5-HomFate1_Full1","homarine_13C_15N",6.37,1008202880,0,47880292,0.6,"",1008202880
+"2268","230717_Poo_G5-HomFate1_Full2","homarine_13C_15N",6.37,1003899968,1747620,45180800,0.6,"",1003899968
+"2269","230717_Poo_G5-HomFate1_Full3","homarine_13C_15N",6.36,945797184,0,44358156,0.8,"",945797184
+"2270","230717_Poo_G5-HomFate1_Full4","homarine_13C_15N",6.39,989468800,1059897,45110720,1.5,"",989468800
+"2271","230717_Poo_G5-HomFate1_Full5","homarine_13C_15N",6.33,882265792,3255603,40864788,0.2,"",882265792
+"2272","230717_Poo_G5-HomFate1_Full6","homarine_13C_15N",6.37,904162240,2523729,42027684,0.8,"",904162240
+"2273","230717_Poo_G5-HomFate1_Full7","homarine_13C_15N",6.34,882553216,518156,42834584,0,"",882553216
+"2274","230717_Poo_G5-HomFate2_Full1","homarine_13C_15N",6.37,1439572608,2872510,69879728,0.6,"",1439572608
+"2275","230717_Poo_G5-HomFate2_Full2","homarine_13C_15N",6.3,1368029056,2014929,63276612,0.4,"",1368029056
+"2276","230717_Poo_G5-HomFate2_Full3","homarine_13C_15N",6.38,1336927872,2528563,60516324,0.5,"",1336927872
+"2277","230717_Poo_G5-HomFate2_Full4","homarine_13C_15N",6.41,1404625152,2837165,65268200,0.6,"",1404625152
+"2278","230717_Poo_G5-HomFate2_Full5","homarine_13C_15N",6.33,1552054144,4385360,74049896,0.9,"",1552054144
+"2279","230717_Poo_G5-HomFate2_Full6","homarine_13C_15N",6.33,1376008704,2425505,63598832,-0.3,"",1376008704
+"2280","230717_Poo_G5-HomFate2_Full7","homarine_13C_15N",6.32,1447263872,4613833,66213172,0.9,"",1447263872
+"2281","230717_Smp_G5_Hom1_C_A","homarine_13C_15N",6.39,8490910,0,417562,1.2,"",8490910
+"2282","230717_Smp_G5_Hom1_C_B","homarine_13C_15N",5.77,0,0,0,NA,"areamin_flag, ",NA
+"2283","230717_Smp_G5_Hom1_C_C","homarine_13C_15N",5.77,0,0,0,NA,"areamin_flag, ",NA
+"2284","230717_Smp_G5_Hom1_T0_A","homarine_13C_15N",6.4,114934216,767188,5595498,1.4,"",114934216
+"2285","230717_Smp_G5_Hom1_T0_B","homarine_13C_15N",6.39,125538288,0,5964910,1.1,"",125538288
+"2286","230717_Smp_G5_Hom1_T0_C","homarine_13C_15N",6.39,105662200,0,5114108,0.4,"",105662200
+"2287","230717_Smp_G5_Hom1_T6_A","homarine_13C_15N",6.36,951118912,736309,43081480,0.3,"",951118912
+"2288","230717_Smp_G5_Hom1_T6_B","homarine_13C_15N",6.42,572529664,0,25843472,0.6,"",572529664
+"2289","230717_Smp_G5_Hom1_T6_C","homarine_13C_15N",6.33,727581504,0,35202756,0.4,"",727581504
+"2290","230717_Smp_G5_Hom1_T12_A","homarine_13C_15N",6.37,893356288,0,41884796,0.7,"",893356288
+"2291","230717_Smp_G5_Hom1_T12_B","homarine_13C_15N",6.37,949035648,1235798,42139324,0.1,"",949035648
+"2292","230717_Smp_G5_Hom1_T12_C","homarine_13C_15N",6.34,911627520,1771384,47305616,1,"",911627520
+"2293","230717_Smp_G5_Hom1_T24_A","homarine_13C_15N",6.36,994476032,2383215,48448028,-0.7,"",994476032
+"2294","230717_Smp_G5_Hom1_T24_B","homarine_13C_15N",6.33,835787008,2189985,36929864,0.8,"",835787008
+"2295","230717_Smp_G5_Hom1_T24_C","homarine_13C_15N",6.37,904355968,2479652,43282084,0.5,"",904355968
+"2296","230717_Smp_G5_Hom1_T48_A","homarine_13C_15N",6.32,2002135296,3094283,92568488,1.3,"",2002135296
+"2297","230717_Smp_G5_Hom1_T48_B","homarine_13C_15N",6.39,1745496704,2112051,84729080,0.4,"",1745496704
+"2298","230717_Smp_G5_Hom1_T48_C","homarine_13C_15N",6.42,2463703552,3750204,114485728,0.6,"",2463703552
+"2299","230717_Smp_G5_Hom1_T96_A","homarine_13C_15N",6.39,1554125568,2063286,75235296,0.9,"",1554125568
+"2300","230717_Smp_G5_Hom1_T96_B","homarine_13C_15N",6.31,2018855552,3324401,93653632,1.2,"",2018855552
+"2301","230717_Smp_G5_Hom1_T96_C","homarine_13C_15N",6.36,1479175680,4768076,69159368,0.5,"",1479175680
+"2302","230717_Smp_G5_Hom2_C_A","homarine_13C_15N",6.31,85745,0,22910,0.6,"",85745
+"2303","230717_Smp_G5_Hom2_C_B","homarine_13C_15N",5.76,0,0,0,NA,"areamin_flag, ",NA
+"2304","230717_Smp_G5_Hom2_C_C","homarine_13C_15N",6.31,243576,0,24028,1,"",243576
+"2305","230717_Smp_G5_Hom2_T0_A","homarine_13C_15N",6.34,224095312,0,9997034,1,"",224095312
+"2306","230717_Smp_G5_Hom2_T0_B","homarine_13C_15N",6.39,176013920,0,8407001,0.4,"",176013920
+"2307","230717_Smp_G5_Hom2_T0_C","homarine_13C_15N",6.38,181082944,0,8388784,0.6,"",181082944
+"2308","230717_Smp_G5_Hom2_T6_A","homarine_13C_15N",6.33,1634899456,3562054,77134776,0.9,"",1634899456
+"2309","230717_Smp_G5_Hom2_T6_B","homarine_13C_15N",6.35,1340978944,3586468,62613640,0.8,"",1340978944
+"2310","230717_Smp_G5_Hom2_T6_C","homarine_13C_15N",6.33,1312004352,3818415,56484204,0.3,"",1312004352
+"2311","230717_Smp_G5_Hom2_T12_A","homarine_13C_15N",6.33,2267847936,3112625,107986544,0.3,"",2267847936
+"2312","230717_Smp_G5_Hom2_T12_B","homarine_13C_15N",6.37,1006268224,2483356,46251216,0.8,"",1006268224
+"2313","230717_Smp_G5_Hom2_T12_C","homarine_13C_15N",6.39,2236252928,3534657,111093496,0.9,"",2236252928
+"2314","230717_Smp_G5_Hom2_T24_A","homarine_13C_15N",6.37,2802908416,8843519,124535664,0,"",2802908416
+"2315","230717_Smp_G5_Hom2_T24_B","homarine_13C_15N",6.35,4063924224,12132349,190760832,0.3,"",4063924224
+"2316","230717_Smp_G5_Hom2_T24_C","homarine_13C_15N",6.3,2317533440,7692542,105383088,0.5,"",2317533440
+"2317","230717_Smp_G5_Hom2_T48_A","homarine_13C_15N",6.35,2819837696,8997955,127384952,0.5,"",2819837696
+"2318","230717_Smp_G5_Hom2_T48_B","homarine_13C_15N",6.37,1144292480,4083002,53384380,0.8,"",1144292480
+"2319","230717_Smp_G5_Hom2_T48_C","homarine_13C_15N",6.39,3689140736,7737341,168126224,0.3,"",3689140736
+"2320","230717_Smp_G5_Hom2_T96_A","homarine_13C_15N",6.37,682783680,3850557,31446554,0.5,"",682783680
+"2321","230717_Smp_G5_Hom2_T96_B","homarine_13C_15N",6.33,535988928,363170,24478310,0.7,"",535988928
+"2322","230717_Smp_G5_Hom2_T96_C","homarine_13C_15N",6.29,904234496,2404241,41385528,0.7,"",904234496
 "2323","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO4_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2324","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO4_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2325","230717_Std_4uMStdsMix1InH2O_3","unknown_C6H9NO4_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
@@ -2408,92 +2408,92 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "2406","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO4_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2407","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO4_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2408","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO4_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2409","230717_Std_4uMStdsMix1InH2O_1","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2410","230717_Std_4uMStdsMix1InH2O_2","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2411","230717_Std_4uMStdsMix1InH2O_3","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2412","230717_Std_4uMStdsMix1InH2O_4","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2413","230717_Std_4uMStdsMix1InH2O_5","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2414","230717_Std_4uMStdsMix1InH2O_6","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2415","230717_Std_4uMStdsMix1InMatrix1_1","n-methyl glutamine_13C_15N",10.39,448137,0,73748,-0.2,"",448137
+"2409","230717_Std_4uMStdsMix1InH2O_1","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2410","230717_Std_4uMStdsMix1InH2O_2","n-methyl glutamine_13C_15N",9.54,11841,0,6878,3.6,"areamin_flag, ",NA
+"2411","230717_Std_4uMStdsMix1InH2O_3","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2412","230717_Std_4uMStdsMix1InH2O_4","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2413","230717_Std_4uMStdsMix1InH2O_5","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2414","230717_Std_4uMStdsMix1InH2O_6","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2415","230717_Std_4uMStdsMix1InMatrix1_1","n-methyl glutamine_13C_15N",10.39,448185,0,73748,-0.2,"",448185
 "2416","230717_Std_4uMStdsMix1InMatrix1_2","n-methyl glutamine_13C_15N",10.36,356135,0,46638,-0.2,"",356135
 "2417","230717_Std_4uMStdsMix1InMatrix1_3","n-methyl glutamine_13C_15N",10.35,221167,0,51351,0,"",221167
 "2418","230717_Std_4uMStdsMix1InMatrix2_4","n-methyl glutamine_13C_15N",10.31,410190,0,69319,0.5,"",410190
 "2419","230717_Std_4uMStdsMix1InMatrix2_5","n-methyl glutamine_13C_15N",10.25,366221,0,71749,-0.2,"",366221
-"2420","230717_Std_4uMStdsMix1InMatrix2_6","n-methyl glutamine_13C_15N",10.22,235839,0,34927,0.1,"",235839
-"2421","230717_Std_4uMStdsMix2InH2O_1","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2422","230717_Std_4uMStdsMix2InH2O_2","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2423","230717_Std_4uMStdsMix2InH2O_3","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2424","230717_Std_4uMStdsMix2InH2O_4","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2425","230717_Std_4uMStdsMix2InH2O_5","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2426","230717_Std_4uMStdsMix2InH2O_6","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2427","230717_Std_4uMStdsMix2InMatrix1_1","n-methyl glutamine_13C_15N",10.42,617074,0,73762,0.7,"",617074
-"2428","230717_Std_4uMStdsMix2InMatrix1_2","n-methyl glutamine_13C_15N",10.38,315349,0,51419,-0.1,"",315349
-"2429","230717_Std_4uMStdsMix2InMatrix1_3","n-methyl glutamine_13C_15N",10.37,346529,0,38182,0.6,"",346529
+"2420","230717_Std_4uMStdsMix1InMatrix2_6","n-methyl glutamine_13C_15N",10.22,235825,0,34927,0.1,"",235825
+"2421","230717_Std_4uMStdsMix2InH2O_1","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2422","230717_Std_4uMStdsMix2InH2O_2","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2423","230717_Std_4uMStdsMix2InH2O_3","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2424","230717_Std_4uMStdsMix2InH2O_4","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2425","230717_Std_4uMStdsMix2InH2O_5","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2426","230717_Std_4uMStdsMix2InH2O_6","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2427","230717_Std_4uMStdsMix2InMatrix1_1","n-methyl glutamine_13C_15N",10.42,617035,0,73762,0.7,"",617035
+"2428","230717_Std_4uMStdsMix2InMatrix1_2","n-methyl glutamine_13C_15N",10.38,325119,0,51419,0,"",325119
+"2429","230717_Std_4uMStdsMix2InMatrix1_3","n-methyl glutamine_13C_15N",10.37,346508,0,38182,0.6,"",346508
 "2430","230717_Std_4uMStdsMix2InMatrix2_4","n-methyl glutamine_13C_15N",10.37,467334,0,49001,0.7,"",467334
 "2431","230717_Std_4uMStdsMix2InMatrix2_5","n-methyl glutamine_13C_15N",10.29,392034,0,56761,0.1,"",392034
-"2432","230717_Std_4uMStdsMix2InMatrix2_6","n-methyl glutamine_13C_15N",10.28,196343,0,39767,-0.2,"",196343
-"2433","230717_Std_H2OinMatrix1_1","n-methyl glutamine_13C_15N",10.4,610766,0,64700,0.6,"",610766
+"2432","230717_Std_4uMStdsMix2InMatrix2_6","n-methyl glutamine_13C_15N",10.28,196343,0,39767,-0.1,"",196343
+"2433","230717_Std_H2OinMatrix1_1","n-methyl glutamine_13C_15N",10.4,623593,0,64700,0.6,"",623593
 "2434","230717_Std_H2OinMatrix1_2","n-methyl glutamine_13C_15N",10.39,282778,0,47472,0.8,"",282778
-"2435","230717_Std_H2OinMatrix1_3","n-methyl glutamine_13C_15N",10.35,305540,0,41467,0.7,"",305540
-"2436","230717_Std_H2OinMatrix2_4","n-methyl glutamine_13C_15N",10.31,521544,0,56553,0.7,"",521544
+"2435","230717_Std_H2OinMatrix1_3","n-methyl glutamine_13C_15N",10.35,305805,0,41467,0.7,"",305805
+"2436","230717_Std_H2OinMatrix2_4","n-methyl glutamine_13C_15N",10.31,521576,0,56553,0.7,"",521576
 "2437","230717_Std_H2OinMatrix2_5","n-methyl glutamine_13C_15N",10.31,507004,0,56407,0.5,"",507004
-"2438","230717_Std_H2OinMatrix2_6","n-methyl glutamine_13C_15N",10.22,346349,0,42958,0.2,"",346349
-"2439","230717_Poo_G5-HomFate1_Full1","n-methyl glutamine_13C_15N",10.48,824512,0,80857,0.4,"",824512
-"2440","230717_Poo_G5-HomFate1_Full2","n-methyl glutamine_13C_15N",10.53,805167,0,87374,0.2,"",805167
-"2441","230717_Poo_G5-HomFate1_Full3","n-methyl glutamine_13C_15N",10.46,750923,0,85181,0.8,"",750923
-"2442","230717_Poo_G5-HomFate1_Full4","n-methyl glutamine_13C_15N",10.43,673413,0,76684,1.1,"",673413
-"2443","230717_Poo_G5-HomFate1_Full5","n-methyl glutamine_13C_15N",10.46,498106,0,64099,0.2,"",498106
-"2444","230717_Poo_G5-HomFate1_Full6","n-methyl glutamine_13C_15N",10.48,543580,0,56888,0.6,"",543580
-"2445","230717_Poo_G5-HomFate1_Full7","n-methyl glutamine_13C_15N",10.48,548982,0,55574,0,"",548982
+"2438","230717_Std_H2OinMatrix2_6","n-methyl glutamine_13C_15N",10.22,361858,0,42958,0.2,"",361858
+"2439","230717_Poo_G5-HomFate1_Full1","n-methyl glutamine_13C_15N",10.48,816709,0,80857,0.4,"",816709
+"2440","230717_Poo_G5-HomFate1_Full2","n-methyl glutamine_13C_15N",10.53,742082,0,87374,0.2,"",742082
+"2441","230717_Poo_G5-HomFate1_Full3","n-methyl glutamine_13C_15N",10.46,754110,0,85181,0.8,"",754110
+"2442","230717_Poo_G5-HomFate1_Full4","n-methyl glutamine_13C_15N",10.43,652834,0,76684,1.1,"",652834
+"2443","230717_Poo_G5-HomFate1_Full5","n-methyl glutamine_13C_15N",10.46,509840,0,64099,0.2,"",509840
+"2444","230717_Poo_G5-HomFate1_Full6","n-methyl glutamine_13C_15N",10.48,543614,0,56888,0.6,"",543614
+"2445","230717_Poo_G5-HomFate1_Full7","n-methyl glutamine_13C_15N",10.48,549016,0,55574,0,"",549016
 "2446","230717_Poo_G5-HomFate2_Full1","n-methyl glutamine_13C_15N",10.4,733774,0,81312,0.4,"",733774
 "2447","230717_Poo_G5-HomFate2_Full2","n-methyl glutamine_13C_15N",10.4,638569,0,64528,0.7,"",638569
 "2448","230717_Poo_G5-HomFate2_Full3","n-methyl glutamine_13C_15N",10.37,715932,0,77674,0.2,"",715932
 "2449","230717_Poo_G5-HomFate2_Full4","n-methyl glutamine_13C_15N",10.41,725752,0,87609,0.4,"",725752
-"2450","230717_Poo_G5-HomFate2_Full5","n-methyl glutamine_13C_15N",10.37,472554,0,68985,0.7,"",472554
+"2450","230717_Poo_G5-HomFate2_Full5","n-methyl glutamine_13C_15N",10.37,538155,0,68985,0.6,"",538155
 "2451","230717_Poo_G5-HomFate2_Full6","n-methyl glutamine_13C_15N",10.37,685064,0,78648,-0.8,"",685064
-"2452","230717_Poo_G5-HomFate2_Full7","n-methyl glutamine_13C_15N",10.37,601427,0,55633,0.5,"",601427
-"2453","230717_Smp_G5_Hom1_C_A","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2454","230717_Smp_G5_Hom1_C_B","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2455","230717_Smp_G5_Hom1_C_C","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2456","230717_Smp_G5_Hom1_T0_A","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2457","230717_Smp_G5_Hom1_T0_B","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2458","230717_Smp_G5_Hom1_T0_C","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2459","230717_Smp_G5_Hom1_T6_A","n-methyl glutamine_13C_15N",10.46,522195,0,76160,0.1,"",522195
+"2452","230717_Poo_G5-HomFate2_Full7","n-methyl glutamine_13C_15N",10.37,640246,0,55633,0.5,"",640246
+"2453","230717_Smp_G5_Hom1_C_A","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2454","230717_Smp_G5_Hom1_C_B","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2455","230717_Smp_G5_Hom1_C_C","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2456","230717_Smp_G5_Hom1_T0_A","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2457","230717_Smp_G5_Hom1_T0_B","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2458","230717_Smp_G5_Hom1_T0_C","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2459","230717_Smp_G5_Hom1_T6_A","n-methyl glutamine_13C_15N",10.46,515226,0,76160,0.1,"",515226
 "2460","230717_Smp_G5_Hom1_T6_B","n-methyl glutamine_13C_15N",10.46,381998,0,42869,0.2,"",381998
-"2461","230717_Smp_G5_Hom1_T6_C","n-methyl glutamine_13C_15N",10.49,404299,0,41556,0.2,"",404299
-"2462","230717_Smp_G5_Hom1_T12_A","n-methyl glutamine_13C_15N",10.52,406082,0,49758,0.3,"",406082
-"2463","230717_Smp_G5_Hom1_T12_B","n-methyl glutamine_13C_15N",10.4,511464,0,52283,0.5,"",511464
-"2464","230717_Smp_G5_Hom1_T12_C","n-methyl glutamine_13C_15N",10.45,540682,0,65797,1,"",540682
-"2465","230717_Smp_G5_Hom1_T24_A","n-methyl glutamine_13C_15N",10.46,982390,0,93221,-0.6,"",982390
-"2466","230717_Smp_G5_Hom1_T24_B","n-methyl glutamine_13C_15N",10.51,1063545,0,104335,0.4,"",1063545
-"2467","230717_Smp_G5_Hom1_T24_C","n-methyl glutamine_13C_15N",10.45,1087935,0,98842,0.2,"",1087935
-"2468","230717_Smp_G5_Hom1_T48_A","n-methyl glutamine_13C_15N",10.52,474127,0,51595,1,"",474127
+"2461","230717_Smp_G5_Hom1_T6_C","n-methyl glutamine_13C_15N",10.49,377245,0,41556,0.2,"",377245
+"2462","230717_Smp_G5_Hom1_T12_A","n-methyl glutamine_13C_15N",10.52,334890,0,49758,0.2,"",334890
+"2463","230717_Smp_G5_Hom1_T12_B","n-methyl glutamine_13C_15N",10.4,511431,0,52283,0.5,"",511431
+"2464","230717_Smp_G5_Hom1_T12_C","n-methyl glutamine_13C_15N",10.45,524104,0,65797,1,"",524104
+"2465","230717_Smp_G5_Hom1_T24_A","n-methyl glutamine_13C_15N",10.46,962806,0,93221,-0.6,"",962806
+"2466","230717_Smp_G5_Hom1_T24_B","n-methyl glutamine_13C_15N",10.51,1002726,0,104335,0.4,"",1002726
+"2467","230717_Smp_G5_Hom1_T24_C","n-methyl glutamine_13C_15N",10.45,1088003,0,98842,0.2,"",1088003
+"2468","230717_Smp_G5_Hom1_T48_A","n-methyl glutamine_13C_15N",10.52,460213,0,51595,1,"",460213
 "2469","230717_Smp_G5_Hom1_T48_B","n-methyl glutamine_13C_15N",10.43,700073,0,75792,0.3,"",700073
-"2470","230717_Smp_G5_Hom1_T48_C","n-methyl glutamine_13C_15N",10.43,576484,0,62289,0.2,"",576484
-"2471","230717_Smp_G5_Hom1_T96_A","n-methyl glutamine_13C_15N",10.4,2204512,0,206535,0.5,"",2204512
-"2472","230717_Smp_G5_Hom1_T96_B","n-methyl glutamine_13C_15N",10.46,1760916,0,155702,0.8,"",1760916
-"2473","230717_Smp_G5_Hom1_T96_C","n-methyl glutamine_13C_15N",10.42,2474362,0,240787,0.5,"",2474362
-"2474","230717_Smp_G5_Hom2_C_A","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2475","230717_Smp_G5_Hom2_C_B","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2476","230717_Smp_G5_Hom2_C_C","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2470","230717_Smp_G5_Hom1_T48_C","n-methyl glutamine_13C_15N",10.43,559333,0,62289,0.2,"",559333
+"2471","230717_Smp_G5_Hom1_T96_A","n-methyl glutamine_13C_15N",10.4,2189225,0,206535,0.5,"",2189225
+"2472","230717_Smp_G5_Hom1_T96_B","n-methyl glutamine_13C_15N",10.46,1694596,0,155702,0.8,"",1694596
+"2473","230717_Smp_G5_Hom1_T96_C","n-methyl glutamine_13C_15N",10.42,2412722,0,240787,0.5,"",2412722
+"2474","230717_Smp_G5_Hom2_C_A","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2475","230717_Smp_G5_Hom2_C_B","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2476","230717_Smp_G5_Hom2_C_C","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
 "2477","230717_Smp_G5_Hom2_T0_A","n-methyl glutamine_13C_15N",10.35,14661,0,11318,-0.4,"areamin_flag, ",NA
-"2478","230717_Smp_G5_Hom2_T0_B","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2479","230717_Smp_G5_Hom2_T0_C","n-methyl glutamine_13C_15N",10.39,13877,0,12634,-0.5,"areamin_flag, ",NA
+"2478","230717_Smp_G5_Hom2_T0_B","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2479","230717_Smp_G5_Hom2_T0_C","n-methyl glutamine_13C_15N",10.39,13876,0,12634,-0.5,"areamin_flag, ",NA
 "2480","230717_Smp_G5_Hom2_T6_A","n-methyl glutamine_13C_15N",10.41,617254,0,51706,1,"",617254
 "2481","230717_Smp_G5_Hom2_T6_B","n-methyl glutamine_13C_15N",10.4,765176,0,73658,1,"",765176
-"2482","230717_Smp_G5_Hom2_T6_C","n-methyl glutamine_13C_15N",10.34,533988,0,51725,0.2,"",533988
+"2482","230717_Smp_G5_Hom2_T6_C","n-methyl glutamine_13C_15N",10.34,575504,0,51725,0.2,"",575504
 "2483","230717_Smp_G5_Hom2_T12_A","n-methyl glutamine_13C_15N",10.37,710066,0,83459,0.1,"",710066
 "2484","230717_Smp_G5_Hom2_T12_B","n-methyl glutamine_13C_15N",10.42,477168,0,43702,0.3,"",477168
 "2485","230717_Smp_G5_Hom2_T12_C","n-methyl glutamine_13C_15N",10.37,694313,0,65664,0.5,"",694313
-"2486","230717_Smp_G5_Hom2_T24_A","n-methyl glutamine_13C_15N",10.32,765917,0,74011,-0.1,"",765917
+"2486","230717_Smp_G5_Hom2_T24_A","n-methyl glutamine_13C_15N",10.32,799096,0,74011,-0.1,"",799096
 "2487","230717_Smp_G5_Hom2_T24_B","n-methyl glutamine_13C_15N",10.32,2463085,0,179019,0.2,"",2463085
 "2488","230717_Smp_G5_Hom2_T24_C","n-methyl glutamine_13C_15N",10.39,1256119,0,110823,0.6,"",1256119
-"2489","230717_Smp_G5_Hom2_T48_A","n-methyl glutamine_13C_15N",10.46,1507255,0,131339,0.5,"",1507255
-"2490","230717_Smp_G5_Hom2_T48_B","n-methyl glutamine_13C_15N",10.37,2058615,0,186085,0.5,"",2058615
-"2491","230717_Smp_G5_Hom2_T48_C","n-methyl glutamine_13C_15N",10.39,2888874,0,236857,0.1,"",2888874
-"2492","230717_Smp_G5_Hom2_T96_A","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2493","230717_Smp_G5_Hom2_T96_B","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2494","230717_Smp_G5_Hom2_T96_C","n-methyl glutamine_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2489","230717_Smp_G5_Hom2_T48_A","n-methyl glutamine_13C_15N",10.46,1472405,0,131339,0.5,"",1472405
+"2490","230717_Smp_G5_Hom2_T48_B","n-methyl glutamine_13C_15N",10.37,2132534,0,186085,0.5,"",2132534
+"2491","230717_Smp_G5_Hom2_T48_C","n-methyl glutamine_13C_15N",10.39,2876230,0,236857,0.1,"",2876230
+"2492","230717_Smp_G5_Hom2_T96_A","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2493","230717_Smp_G5_Hom2_T96_B","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
+"2494","230717_Smp_G5_Hom2_T96_C","n-methyl glutamine_13C_15N",9.43,0,0,0,NA,"areamin_flag, ",NA
 "2495","230717_Std_4uMStdsMix1InH2O_1","unknown_C7H9NO5_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2496","230717_Std_4uMStdsMix1InH2O_2","unknown_C7H9NO5_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2497","230717_Std_4uMStdsMix1InH2O_3","unknown_C7H9NO5_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
@@ -2580,89 +2580,89 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "2578","230717_Smp_G5_Hom2_T96_A","unknown_C7H9NO5_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2579","230717_Smp_G5_Hom2_T96_B","unknown_C7H9NO5_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2580","230717_Smp_G5_Hom2_T96_C","unknown_C7H9NO5_pos_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2581","230717_Std_4uMStdsMix1InH2O_1","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2582","230717_Std_4uMStdsMix1InH2O_2","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2583","230717_Std_4uMStdsMix1InH2O_3","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2584","230717_Std_4uMStdsMix1InH2O_4","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2585","230717_Std_4uMStdsMix1InH2O_5","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2586","230717_Std_4uMStdsMix1InH2O_6","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2587","230717_Std_4uMStdsMix1InMatrix1_1","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2588","230717_Std_4uMStdsMix1InMatrix1_2","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2589","230717_Std_4uMStdsMix1InMatrix1_3","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2590","230717_Std_4uMStdsMix1InMatrix2_4","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2591","230717_Std_4uMStdsMix1InMatrix2_5","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2592","230717_Std_4uMStdsMix1InMatrix2_6","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2593","230717_Std_4uMStdsMix2InH2O_1","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2594","230717_Std_4uMStdsMix2InH2O_2","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2595","230717_Std_4uMStdsMix2InH2O_3","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2596","230717_Std_4uMStdsMix2InH2O_4","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2597","230717_Std_4uMStdsMix2InH2O_5","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2598","230717_Std_4uMStdsMix2InH2O_6","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2599","230717_Std_4uMStdsMix2InMatrix1_1","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2600","230717_Std_4uMStdsMix2InMatrix1_2","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2601","230717_Std_4uMStdsMix2InMatrix1_3","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2602","230717_Std_4uMStdsMix2InMatrix2_4","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2603","230717_Std_4uMStdsMix2InMatrix2_5","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2604","230717_Std_4uMStdsMix2InMatrix2_6","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2605","230717_Std_H2OinMatrix1_1","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2606","230717_Std_H2OinMatrix1_2","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2607","230717_Std_H2OinMatrix1_3","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2608","230717_Std_H2OinMatrix2_4","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2609","230717_Std_H2OinMatrix2_5","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2610","230717_Std_H2OinMatrix2_6","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2611","230717_Poo_G5-HomFate1_Full1","n-methyl glutamic acid_13C_15N",11.18,9017458,0,980358,1.4,"",9017458
-"2612","230717_Poo_G5-HomFate1_Full2","n-methyl glutamic acid_13C_15N",11.24,9745748,0,888236,1.6,"",9745748
-"2613","230717_Poo_G5-HomFate1_Full3","n-methyl glutamic acid_13C_15N",11.16,9127642,197643,1036567,2,"",9127642
-"2614","230717_Poo_G5-HomFate1_Full4","n-methyl glutamic acid_13C_15N",11.19,8126533,0,900265,2.1,"",8126533
-"2615","230717_Poo_G5-HomFate1_Full5","n-methyl glutamic acid_13C_15N",11.15,6657182,0,748528,1,"",6657182
+"2581","230717_Std_4uMStdsMix1InH2O_1","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2582","230717_Std_4uMStdsMix1InH2O_2","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2583","230717_Std_4uMStdsMix1InH2O_3","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2584","230717_Std_4uMStdsMix1InH2O_4","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2585","230717_Std_4uMStdsMix1InH2O_5","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2586","230717_Std_4uMStdsMix1InH2O_6","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2587","230717_Std_4uMStdsMix1InMatrix1_1","n-methyl glutamic acid_13C_15N",11.16,10620424,0,971441,1.4,"",10620424
+"2588","230717_Std_4uMStdsMix1InMatrix1_2","n-methyl glutamic acid_13C_15N",11.13,6644738,0,685685,1.6,"",6644738
+"2589","230717_Std_4uMStdsMix1InMatrix1_3","n-methyl glutamic acid_13C_15N",11.04,7038831,0,655108,1.8,"",7038831
+"2590","230717_Std_4uMStdsMix1InMatrix2_4","n-methyl glutamic acid_13C_15N",11.05,8101246,0,881324,2.1,"",8101246
+"2591","230717_Std_4uMStdsMix1InMatrix2_5","n-methyl glutamic acid_13C_15N",10.97,8418962,0,816701,1.4,"",8418962
+"2592","230717_Std_4uMStdsMix1InMatrix2_6","n-methyl glutamic acid_13C_15N",10.88,7054527,0,729419,1,"",7054527
+"2593","230717_Std_4uMStdsMix2InH2O_1","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2594","230717_Std_4uMStdsMix2InH2O_2","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2595","230717_Std_4uMStdsMix2InH2O_3","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2596","230717_Std_4uMStdsMix2InH2O_4","n-methyl glutamic acid_13C_15N",9.99,0,0,0,NA,"areamin_flag, ",NA
+"2597","230717_Std_4uMStdsMix2InH2O_5","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2598","230717_Std_4uMStdsMix2InH2O_6","n-methyl glutamic acid_13C_15N",9.99,0,0,0,NA,"areamin_flag, ",NA
+"2599","230717_Std_4uMStdsMix2InMatrix1_1","n-methyl glutamic acid_13C_15N",11.16,11046213,0,910893,1.8,"",11046213
+"2600","230717_Std_4uMStdsMix2InMatrix1_2","n-methyl glutamic acid_13C_15N",11.16,7329560,0,697225,1.5,"",7329560
+"2601","230717_Std_4uMStdsMix2InMatrix1_3","n-methyl glutamic acid_13C_15N",11.03,7482423,0,766960,2.1,"",7482423
+"2602","230717_Std_4uMStdsMix2InMatrix2_4","n-methyl glutamic acid_13C_15N",11.06,9306172,0,951861,1.4,"",9306172
+"2603","230717_Std_4uMStdsMix2InMatrix2_5","n-methyl glutamic acid_13C_15N",10.99,9459051,0,869121,1.4,"",9459051
+"2604","230717_Std_4uMStdsMix2InMatrix2_6","n-methyl glutamic acid_13C_15N",10.89,7754309,0,794466,0.7,"",7754309
+"2605","230717_Std_H2OinMatrix1_1","n-methyl glutamic acid_13C_15N",11.21,12639338,0,1036117,1.7,"",12639338
+"2606","230717_Std_H2OinMatrix1_2","n-methyl glutamic acid_13C_15N",11.17,6203174,0,597822,1.5,"",6203174
+"2607","230717_Std_H2OinMatrix1_3","n-methyl glutamic acid_13C_15N",11.06,7219893,0,712517,1.9,"",7219893
+"2608","230717_Std_H2OinMatrix2_4","n-methyl glutamic acid_13C_15N",11.07,9477598,0,873044,1.8,"",9477598
+"2609","230717_Std_H2OinMatrix2_5","n-methyl glutamic acid_13C_15N",11.01,9209919,0,862565,1.6,"",9209919
+"2610","230717_Std_H2OinMatrix2_6","n-methyl glutamic acid_13C_15N",10.92,6658087,0,622487,1,"",6658087
+"2611","230717_Poo_G5-HomFate1_Full1","n-methyl glutamic acid_13C_15N",11.18,9017957,0,980358,1.4,"",9017957
+"2612","230717_Poo_G5-HomFate1_Full2","n-methyl glutamic acid_13C_15N",11.24,9795559,0,888236,1.6,"",9795559
+"2613","230717_Poo_G5-HomFate1_Full3","n-methyl glutamic acid_13C_15N",11.16,9397091,0,1043339,2,"",9397091
+"2614","230717_Poo_G5-HomFate1_Full4","n-methyl glutamic acid_13C_15N",11.19,8207124,0,900265,2.1,"",8207124
+"2615","230717_Poo_G5-HomFate1_Full5","n-methyl glutamic acid_13C_15N",11.15,6659489,0,748528,1,"",6659489
 "2616","230717_Poo_G5-HomFate1_Full6","n-methyl glutamic acid_13C_15N",11.19,6693769,0,704260,1.5,"",6693769
-"2617","230717_Poo_G5-HomFate1_Full7","n-methyl glutamic acid_13C_15N",11.13,7723779,0,954739,1.3,"",7723779
-"2618","230717_Poo_G5-HomFate2_Full1","n-methyl glutamic acid_13C_15N",11.12,7327269,0,819410,1.9,"",7327269
-"2619","230717_Poo_G5-HomFate2_Full2","n-methyl glutamic acid_13C_15N",11.08,8379719,0,953208,1.6,"",8379719
-"2620","230717_Poo_G5-HomFate2_Full3","n-methyl glutamic acid_13C_15N",11.06,8653066,0,1013474,1.5,"",8653066
+"2617","230717_Poo_G5-HomFate1_Full7","n-methyl glutamic acid_13C_15N",11.13,7764748,0,954739,1.3,"",7764748
+"2618","230717_Poo_G5-HomFate2_Full1","n-methyl glutamic acid_13C_15N",11.12,7356904,0,819410,1.9,"",7356904
+"2619","230717_Poo_G5-HomFate2_Full2","n-methyl glutamic acid_13C_15N",11.08,8380238,0,953208,1.6,"",8380238
+"2620","230717_Poo_G5-HomFate2_Full3","n-methyl glutamic acid_13C_15N",11.06,8656949,0,1013474,1.5,"",8656949
 "2621","230717_Poo_G5-HomFate2_Full4","n-methyl glutamic acid_13C_15N",11.09,8780269,0,1021309,1.7,"",8780269
-"2622","230717_Poo_G5-HomFate2_Full5","n-methyl glutamic acid_13C_15N",11.08,6523012,0,807248,1.9,"",6523012
-"2623","230717_Poo_G5-HomFate2_Full6","n-methyl glutamic acid_13C_15N",11.06,7390394,0,873502,0.6,"",7390394
-"2624","230717_Poo_G5-HomFate2_Full7","n-methyl glutamic acid_13C_15N",11.02,9058366,0,1007344,1.6,"",9058366
-"2625","230717_Smp_G5_Hom1_C_A","n-methyl glutamic acid_13C_15N",11.3,15364,0,15213,-1.4,"areamin_flag, ",NA
-"2626","230717_Smp_G5_Hom1_C_B","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2627","230717_Smp_G5_Hom1_C_C","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2622","230717_Poo_G5-HomFate2_Full5","n-methyl glutamic acid_13C_15N",11.08,6555749,0,807248,1.9,"",6555749
+"2623","230717_Poo_G5-HomFate2_Full6","n-methyl glutamic acid_13C_15N",11.06,7405298,0,873502,0.6,"",7405298
+"2624","230717_Poo_G5-HomFate2_Full7","n-methyl glutamic acid_13C_15N",11.02,9076109,0,1007344,1.6,"",9076109
+"2625","230717_Smp_G5_Hom1_C_A","n-methyl glutamic acid_13C_15N",11.3,15363,0,15213,-1.4,"areamin_flag, ",NA
+"2626","230717_Smp_G5_Hom1_C_B","n-methyl glutamic acid_13C_15N",9.99,0,0,0,NA,"areamin_flag, ",NA
+"2627","230717_Smp_G5_Hom1_C_C","n-methyl glutamic acid_13C_15N",9.99,0,0,0,NA,"areamin_flag, ",NA
 "2628","230717_Smp_G5_Hom1_T0_A","n-methyl glutamic acid_13C_15N",11.21,450684,0,60391,2.1,"",450684
 "2629","230717_Smp_G5_Hom1_T0_B","n-methyl glutamic acid_13C_15N",11.16,550037,0,63486,2.1,"",550037
-"2630","230717_Smp_G5_Hom1_T0_C","n-methyl glutamic acid_13C_15N",11.13,482088,0,68743,0.8,"",482088
-"2631","230717_Smp_G5_Hom1_T6_A","n-methyl glutamic acid_13C_15N",11.18,1955656,0,248060,1.1,"",1955656
+"2630","230717_Smp_G5_Hom1_T0_C","n-methyl glutamic acid_13C_15N",11.13,482118,0,68743,0.8,"",482118
+"2631","230717_Smp_G5_Hom1_T6_A","n-methyl glutamic acid_13C_15N",11.18,1955778,0,248060,1.1,"",1955778
 "2632","230717_Smp_G5_Hom1_T6_B","n-methyl glutamic acid_13C_15N",11.19,2425342,0,294229,1.2,"",2425342
 "2633","230717_Smp_G5_Hom1_T6_C","n-methyl glutamic acid_13C_15N",11.15,1940601,0,237718,1.3,"",1940601
-"2634","230717_Smp_G5_Hom1_T12_A","n-methyl glutamic acid_13C_15N",11.27,3007596,0,352146,1.4,"",3007596
+"2634","230717_Smp_G5_Hom1_T12_A","n-methyl glutamic acid_13C_15N",11.27,3021542,0,352146,1.4,"",3021542
 "2635","230717_Smp_G5_Hom1_T12_B","n-methyl glutamic acid_13C_15N",11.16,3963389,0,487291,1.4,"",3963389
 "2636","230717_Smp_G5_Hom1_T12_C","n-methyl glutamic acid_13C_15N",11.18,4277912,0,494866,1.9,"",4277912
-"2637","230717_Smp_G5_Hom1_T24_A","n-methyl glutamic acid_13C_15N",11.16,8876483,0,892388,0.7,"",8876483
-"2638","230717_Smp_G5_Hom1_T24_B","n-methyl glutamic acid_13C_15N",11.23,7821116,0,715455,1.7,"",7821116
-"2639","230717_Smp_G5_Hom1_T24_C","n-methyl glutamic acid_13C_15N",11.16,9699027,0,1116213,1.5,"",9699027
-"2640","230717_Smp_G5_Hom1_T48_A","n-methyl glutamic acid_13C_15N",11.21,12628575,0,1364014,2.2,"",12628575
-"2641","230717_Smp_G5_Hom1_T48_B","n-methyl glutamic acid_13C_15N",11.16,16128415,0,1707893,1.5,"",16128415
-"2642","230717_Smp_G5_Hom1_T48_C","n-methyl glutamic acid_13C_15N",11.19,13199229,0,1513070,1.6,"",13199229
-"2643","230717_Smp_G5_Hom1_T96_A","n-methyl glutamic acid_13C_15N",11.12,26546438,0,2835587,1.4,"",26546438
+"2637","230717_Smp_G5_Hom1_T24_A","n-methyl glutamic acid_13C_15N",11.16,8887519,0,892388,0.7,"",8887519
+"2638","230717_Smp_G5_Hom1_T24_B","n-methyl glutamic acid_13C_15N",11.23,7855404,0,715455,1.7,"",7855404
+"2639","230717_Smp_G5_Hom1_T24_C","n-methyl glutamic acid_13C_15N",11.16,9725887,0,1116213,1.5,"",9725887
+"2640","230717_Smp_G5_Hom1_T48_A","n-methyl glutamic acid_13C_15N",11.21,12714739,0,1364014,2.2,"",12714739
+"2641","230717_Smp_G5_Hom1_T48_B","n-methyl glutamic acid_13C_15N",11.16,16203984,0,1707893,1.5,"",16203984
+"2642","230717_Smp_G5_Hom1_T48_C","n-methyl glutamic acid_13C_15N",11.19,13339756,0,1513070,1.6,"",13339756
+"2643","230717_Smp_G5_Hom1_T96_A","n-methyl glutamic acid_13C_15N",11.12,26715282,0,2835587,1.4,"",26715282
 "2644","230717_Smp_G5_Hom1_T96_B","n-methyl glutamic acid_13C_15N",11.19,29232114,0,2842140,2.4,"",29232114
-"2645","230717_Smp_G5_Hom1_T96_C","n-methyl glutamic acid_13C_15N",11.18,35927916,0,3555991,1.7,"",35927916
-"2646","230717_Smp_G5_Hom2_C_A","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2647","230717_Smp_G5_Hom2_C_B","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2648","230717_Smp_G5_Hom2_C_C","n-methyl glutamic acid_13C_15N",NA,NA,NA,NA,NA,"",NA
-"2649","230717_Smp_G5_Hom2_T0_A","n-methyl glutamic acid_13C_15N",11.08,1801058,0,213758,1.7,"",1801058
-"2650","230717_Smp_G5_Hom2_T0_B","n-methyl glutamic acid_13C_15N",11.1,1897663,0,246767,1.2,"",1897663
+"2645","230717_Smp_G5_Hom1_T96_C","n-methyl glutamic acid_13C_15N",11.18,36078112,0,3555991,1.7,"",36078112
+"2646","230717_Smp_G5_Hom2_C_A","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2647","230717_Smp_G5_Hom2_C_B","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2648","230717_Smp_G5_Hom2_C_C","n-methyl glutamic acid_13C_15N",10,0,0,0,NA,"areamin_flag, ",NA
+"2649","230717_Smp_G5_Hom2_T0_A","n-methyl glutamic acid_13C_15N",11.08,1822010,0,213758,1.7,"",1822010
+"2650","230717_Smp_G5_Hom2_T0_B","n-methyl glutamic acid_13C_15N",11.1,1913591,0,246767,1.2,"",1913591
 "2651","230717_Smp_G5_Hom2_T0_C","n-methyl glutamic acid_13C_15N",11.08,2076642,0,253876,1.8,"",2076642
-"2652","230717_Smp_G5_Hom2_T6_A","n-methyl glutamic acid_13C_15N",11.1,6016162,0,715015,2.4,"",6016162
-"2653","230717_Smp_G5_Hom2_T6_B","n-methyl glutamic acid_13C_15N",11.09,6276165,0,648469,1.6,"",6276165
-"2654","230717_Smp_G5_Hom2_T6_C","n-methyl glutamic acid_13C_15N",11.02,4761291,0,579392,1.3,"",4761291
+"2652","230717_Smp_G5_Hom2_T6_A","n-methyl glutamic acid_13C_15N",11.1,6028249,0,715015,2.4,"",6028249
+"2653","230717_Smp_G5_Hom2_T6_B","n-methyl glutamic acid_13C_15N",11.09,6291662,0,648469,1.6,"",6291662
+"2654","230717_Smp_G5_Hom2_T6_C","n-methyl glutamic acid_13C_15N",11.02,4789742,0,579392,1.3,"",4789742
 "2655","230717_Smp_G5_Hom2_T12_A","n-methyl glutamic acid_13C_15N",11.07,2690001,0,300342,1.4,"",2690001
 "2656","230717_Smp_G5_Hom2_T12_B","n-methyl glutamic acid_13C_15N",11.08,3019026,0,379004,1.4,"",3019026
 "2657","230717_Smp_G5_Hom2_T12_C","n-methyl glutamic acid_13C_15N",11.09,6203895,0,739721,1.6,"",6203895
-"2658","230717_Smp_G5_Hom2_T24_A","n-methyl glutamic acid_13C_15N",11.01,7667185,0,913597,1.3,"",7667185
-"2659","230717_Smp_G5_Hom2_T24_B","n-methyl glutamic acid_13C_15N",10.99,20564468,0,2226668,1.6,"",20564468
-"2660","230717_Smp_G5_Hom2_T24_C","n-methyl glutamic acid_13C_15N",11.06,8668858,0,876832,1.8,"",8668858
-"2661","230717_Smp_G5_Hom2_T48_A","n-methyl glutamic acid_13C_15N",11.12,22118714,0,2395060,1.9,"",22118714
-"2662","230717_Smp_G5_Hom2_T48_B","n-methyl glutamic acid_13C_15N",11.05,13435775,0,1472337,1.7,"",13435775
-"2663","230717_Smp_G5_Hom2_T48_C","n-methyl glutamic acid_13C_15N",11.07,48113288,0,5510966,1.6,"",48113288
+"2658","230717_Smp_G5_Hom2_T24_A","n-methyl glutamic acid_13C_15N",11.01,7685582,0,913597,1.3,"",7685582
+"2659","230717_Smp_G5_Hom2_T24_B","n-methyl glutamic acid_13C_15N",10.99,20740288,0,2226668,1.6,"",20740288
+"2660","230717_Smp_G5_Hom2_T24_C","n-methyl glutamic acid_13C_15N",11.06,8685031,0,876832,1.8,"",8685031
+"2661","230717_Smp_G5_Hom2_T48_A","n-methyl glutamic acid_13C_15N",11.12,22371832,0,2395060,1.9,"",22371832
+"2662","230717_Smp_G5_Hom2_T48_B","n-methyl glutamic acid_13C_15N",11.05,13497198,0,1472337,1.7,"",13497198
+"2663","230717_Smp_G5_Hom2_T48_C","n-methyl glutamic acid_13C_15N",11.07,48585888,0,5510966,1.6,"",48585888
 "2664","230717_Smp_G5_Hom2_T96_A","n-methyl glutamic acid_13C_15N",11,1904589,0,257486,1.8,"",1904589
 "2665","230717_Smp_G5_Hom2_T96_B","n-methyl glutamic acid_13C_15N",11.02,2921130,0,326718,1.6,"",2921130
 "2666","230717_Smp_G5_Hom2_T96_C","n-methyl glutamic acid_13C_15N",11.14,2632441,0,293417,1.6,"",2632441
@@ -2924,3 +2924,89 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "2922","230717_Smp_G5_Hom2_T96_A","unknown_C6H9NO4_pos_early_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2923","230717_Smp_G5_Hom2_T96_B","unknown_C6H9NO4_pos_early_13C_15N",NA,NA,NA,NA,NA,"",NA
 "2924","230717_Smp_G5_Hom2_T96_C","unknown_C6H9NO4_pos_early_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2925","230717_Std_4uMStdsMix1InH2O_1","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2926","230717_Std_4uMStdsMix1InH2O_2","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2927","230717_Std_4uMStdsMix1InH2O_3","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2928","230717_Std_4uMStdsMix1InH2O_4","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2929","230717_Std_4uMStdsMix1InH2O_5","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2930","230717_Std_4uMStdsMix1InH2O_6","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2931","230717_Std_4uMStdsMix1InMatrix1_1","glutamic_acid_13C_15N",12.69,12466891,0,1299601,-3,"",12466891
+"2932","230717_Std_4uMStdsMix1InMatrix1_2","glutamic_acid_13C_15N",12.72,3924746,0,447523,-3,"",3924746
+"2933","230717_Std_4uMStdsMix1InMatrix1_3","glutamic_acid_13C_15N",12.66,4658403,0,511011,-2.9,"",4658403
+"2934","230717_Std_4uMStdsMix1InMatrix2_4","glutamic_acid_13C_15N",12.63,5141594,0,582971,-2.7,"",5141594
+"2935","230717_Std_4uMStdsMix1InMatrix2_5","glutamic_acid_13C_15N",12.57,6000599,0,600491,-3,"",6000599
+"2936","230717_Std_4uMStdsMix1InMatrix2_6","glutamic_acid_13C_15N",12.53,5719499,0,601255,-3.5,"",5719499
+"2937","230717_Std_4uMStdsMix2InH2O_1","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2938","230717_Std_4uMStdsMix2InH2O_2","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2939","230717_Std_4uMStdsMix2InH2O_3","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2940","230717_Std_4uMStdsMix2InH2O_4","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2941","230717_Std_4uMStdsMix2InH2O_5","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2942","230717_Std_4uMStdsMix2InH2O_6","glutamic_acid_13C_15N",NA,NA,NA,NA,NA,"",NA
+"2943","230717_Std_4uMStdsMix2InMatrix1_1","glutamic_acid_13C_15N",12.7,10568737,0,1087701,-2.8,"",10568737
+"2944","230717_Std_4uMStdsMix2InMatrix1_2","glutamic_acid_13C_15N",12.72,4034718,0,427433,-2.8,"",4034718
+"2945","230717_Std_4uMStdsMix2InMatrix1_3","glutamic_acid_13C_15N",12.66,4237212,0,486349,-2.3,"",4237212
+"2946","230717_Std_4uMStdsMix2InMatrix2_4","glutamic_acid_13C_15N",12.65,5353743,0,573508,-3.3,"",5353743
+"2947","230717_Std_4uMStdsMix2InMatrix2_5","glutamic_acid_13C_15N",12.6,6215381,0,631022,-3,"",6215381
+"2948","230717_Std_4uMStdsMix2InMatrix2_6","glutamic_acid_13C_15N",12.51,6153547,0,612088,-3.6,"",6153547
+"2949","230717_Std_H2OinMatrix1_1","glutamic_acid_13C_15N",12.68,16569746,118942,1631765,-2.9,"",16569746
+"2950","230717_Std_H2OinMatrix1_2","glutamic_acid_13C_15N",12.74,4241418,0,467842,-3.1,"",4241418
+"2951","230717_Std_H2OinMatrix1_3","glutamic_acid_13C_15N",12.7,5025897,0,549426,-2.8,"",5025897
+"2952","230717_Std_H2OinMatrix2_4","glutamic_acid_13C_15N",12.67,5723275,0,610208,-2.9,"",5723275
+"2953","230717_Std_H2OinMatrix2_5","glutamic_acid_13C_15N",12.59,7126308,0,750742,-3.2,"",7126308
+"2954","230717_Std_H2OinMatrix2_6","glutamic_acid_13C_15N",12.54,6444138,7744,695257,-3.7,"",6444138
+"2955","230717_Poo_G5-HomFate1_Full1","glutamic_acid_13C_15N",12.74,13584424,0,1363594,-3.1,"",13584424
+"2956","230717_Poo_G5-HomFate1_Full2","glutamic_acid_13C_15N",12.83,16759687,132068,1655413,-3.1,"",16759687
+"2957","230717_Poo_G5-HomFate1_Full3","glutamic_acid_13C_15N",12.73,15618670,134720,1507701,-2.8,"",15618670
+"2958","230717_Poo_G5-HomFate1_Full4","glutamic_acid_13C_15N",12.79,13167373,0,1360540,-2.7,"",13167373
+"2959","230717_Poo_G5-HomFate1_Full5","glutamic_acid_13C_15N",12.73,6123718,0,610561,-3.3,"",6123718
+"2960","230717_Poo_G5-HomFate1_Full6","glutamic_acid_13C_15N",12.76,6694570,0,702912,-2.8,"",6694570
+"2961","230717_Poo_G5-HomFate1_Full7","glutamic_acid_13C_15N",12.71,8548230,0,913707,-3.5,"",8548230
+"2962","230717_Poo_G5-HomFate2_Full1","glutamic_acid_13C_15N",12.7,8605575,5201,884579,-2.6,"",8605575
+"2963","230717_Poo_G5-HomFate2_Full2","glutamic_acid_13C_15N",12.65,8223831,0,788010,-2.7,"",8223831
+"2964","230717_Poo_G5-HomFate2_Full3","glutamic_acid_13C_15N",12.67,9307088,0,947909,-3,"",9307088
+"2965","230717_Poo_G5-HomFate2_Full4","glutamic_acid_13C_15N",12.67,9068521,0,902304,-3,"",9068521
+"2966","230717_Poo_G5-HomFate2_Full5","glutamic_acid_13C_15N",12.63,8020035,19918,863936,-2.5,"",8020035
+"2967","230717_Poo_G5-HomFate2_Full6","glutamic_acid_13C_15N",12.63,7387102,0,836274,-3.9,"",7387102
+"2968","230717_Poo_G5-HomFate2_Full7","glutamic_acid_13C_15N",12.59,10181013,0,1003596,-3.1,"",10181013
+"2969","230717_Smp_G5_Hom1_C_A","glutamic_acid_13C_15N",12.35,0,0,0,NA,"areamin_flag, ",NA
+"2970","230717_Smp_G5_Hom1_C_B","glutamic_acid_13C_15N",12.24,0,0,0,NA,"areamin_flag, ",NA
+"2971","230717_Smp_G5_Hom1_C_C","glutamic_acid_13C_15N",12.33,0,0,0,NA,"areamin_flag, ",NA
+"2972","230717_Smp_G5_Hom1_T0_A","glutamic_acid_13C_15N",12.75,965451,0,110541,-2.3,"",965451
+"2973","230717_Smp_G5_Hom1_T0_B","glutamic_acid_13C_15N",12.77,1368026,0,165442,-2.5,"",1368026
+"2974","230717_Smp_G5_Hom1_T0_C","glutamic_acid_13C_15N",12.71,523251,0,63657,-4,"",523251
+"2975","230717_Smp_G5_Hom1_T6_A","glutamic_acid_13C_15N",12.74,14961184,0,1632019,-3.5,"",14961184
+"2976","230717_Smp_G5_Hom1_T6_B","glutamic_acid_13C_15N",12.71,25018592,292926,2578965,-3.2,"",25018592
+"2977","230717_Smp_G5_Hom1_T6_C","glutamic_acid_13C_15N",12.71,12825548,0,1374741,-3.3,"",12825548
+"2978","230717_Smp_G5_Hom1_T12_A","glutamic_acid_13C_15N",12.83,13329762,204348,1453361,-3.1,"",13329762
+"2979","230717_Smp_G5_Hom1_T12_B","glutamic_acid_13C_15N",12.71,8200938,0,820928,-3,"",8200938
+"2980","230717_Smp_G5_Hom1_T12_C","glutamic_acid_13C_15N",12.74,9046668,0,966833,-2.7,"",9046668
+"2981","230717_Smp_G5_Hom1_T24_A","glutamic_acid_13C_15N",12.74,11481889,0,1234823,-4,"",11481889
+"2982","230717_Smp_G5_Hom1_T24_B","glutamic_acid_13C_15N",12.79,19616210,18481,1966933,-3,"",19616210
+"2983","230717_Smp_G5_Hom1_T24_C","glutamic_acid_13C_15N",12.76,20056354,0,2023275,-3.2,"",20056354
+"2984","230717_Smp_G5_Hom1_T48_A","glutamic_acid_13C_15N",12.77,5038223,0,520323,-2.3,"",5038223
+"2985","230717_Smp_G5_Hom1_T48_B","glutamic_acid_13C_15N",12.74,6560118,0,696115,-3.2,"",6560118
+"2986","230717_Smp_G5_Hom1_T48_C","glutamic_acid_13C_15N",12.73,5934143,0,632469,-3.1,"",5934143
+"2987","230717_Smp_G5_Hom1_T96_A","glutamic_acid_13C_15N",12.73,31962428,180333,3389466,-3.4,"",31962428
+"2988","230717_Smp_G5_Hom1_T96_B","glutamic_acid_13C_15N",12.77,19576852,0,1952871,-2.3,"",19576852
+"2989","230717_Smp_G5_Hom1_T96_C","glutamic_acid_13C_15N",12.76,21757026,0,2291786,-2.6,"",21757026
+"2990","230717_Smp_G5_Hom2_C_A","glutamic_acid_13C_15N",12.28,0,0,0,NA,"areamin_flag, ",NA
+"2991","230717_Smp_G5_Hom2_C_B","glutamic_acid_13C_15N",12.23,0,0,0,NA,"areamin_flag, ",NA
+"2992","230717_Smp_G5_Hom2_C_C","glutamic_acid_13C_15N",12.34,0,0,0,NA,"areamin_flag, ",NA
+"2993","230717_Smp_G5_Hom2_T0_A","glutamic_acid_13C_15N",12.66,979377,0,120688,-2.6,"",979377
+"2994","230717_Smp_G5_Hom2_T0_B","glutamic_acid_13C_15N",12.67,1348418,0,162960,-3.5,"",1348418
+"2995","230717_Smp_G5_Hom2_T0_C","glutamic_acid_13C_15N",12.66,1393020,0,156847,-2.3,"",1393020
+"2996","230717_Smp_G5_Hom2_T6_A","glutamic_acid_13C_15N",12.65,17134536,0,1756958,-2.3,"",17134536
+"2997","230717_Smp_G5_Hom2_T6_B","glutamic_acid_13C_15N",12.68,17687178,0,1795675,-2.9,"",17687178
+"2998","230717_Smp_G5_Hom2_T6_C","glutamic_acid_13C_15N",12.59,13334154,189531,1317180,-3,"",13334154
+"2999","230717_Smp_G5_Hom2_T12_A","glutamic_acid_13C_15N",12.62,18637512,0,1932368,-3.1,"",18637512
+"3000","230717_Smp_G5_Hom2_T12_B","glutamic_acid_13C_15N",12.62,7872134,0,784055,-3.3,"",7872134
+"3001","230717_Smp_G5_Hom2_T12_C","glutamic_acid_13C_15N",12.64,15942486,0,1560198,-3,"",15942486
+"3002","230717_Smp_G5_Hom2_T24_A","glutamic_acid_13C_15N",12.57,7495191,0,809533,-3.4,"",7495191
+"3003","230717_Smp_G5_Hom2_T24_B","glutamic_acid_13C_15N",12.57,16705866,180911,1676001,-3.1,"",16705866
+"3004","230717_Smp_G5_Hom2_T24_C","glutamic_acid_13C_15N",12.66,7731486,4378,784251,-2.8,"",7731486
+"3005","230717_Smp_G5_Hom2_T48_A","glutamic_acid_13C_15N",12.71,14244977,0,1423052,-2.9,"",14244977
+"3006","230717_Smp_G5_Hom2_T48_B","glutamic_acid_13C_15N",12.65,9989857,0,977358,-3,"",9989857
+"3007","230717_Smp_G5_Hom2_T48_C","glutamic_acid_13C_15N",12.67,28414640,125332,2776701,-3.1,"",28414640
+"3008","230717_Smp_G5_Hom2_T96_A","glutamic_acid_13C_15N",12.63,542194,0,66066,-3.1,"",542194
+"3009","230717_Smp_G5_Hom2_T96_B","glutamic_acid_13C_15N",12.62,406847,0,47133,-3.2,"",406847
+"3010","230717_Smp_G5_Hom2_T96_C","glutamic_acid_13C_15N",12.71,1321278,0,142199,-2.9,"",1321278

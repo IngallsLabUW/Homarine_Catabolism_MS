@@ -46,6 +46,6 @@ remove(list = ls())
 Calculates enrichment factors
 Writes out the calculated enrichment factors here("data", "intermediate", "metabolomics", "g4")
 ```{r, message=FALSE, error=FALSE, warning=FALSE}
-source(here("analysis", "g4_metabolomics", "0201_EnrichmentCalcs.R"))
+source(here("analysis", "g5_metabolomics", "0201_EnrichmentCalcs.R"))
 remove(list = ls())
 ```
