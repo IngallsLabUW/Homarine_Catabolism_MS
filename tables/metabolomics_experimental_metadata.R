@@ -41,7 +41,7 @@ g4_metadata <- read_csv(
     left_join(cruise_info, by = join_by(experiment_id)) %>%
     select(cruise, experiment_id, station, lat, lon, date, replicate_name, sample_fraction, treatment, timepoint) %>%
     mutate(treatment = case_when(
-        treatment == "Homarine" ~ "+Homarine (3H3-labelled)",
+        treatment == "Homarine" ~ "Homarine (2H3-labelled)",
         TRUE ~ treatment)) %>%
     filter(!is.na(cruise))
 
@@ -54,7 +54,7 @@ g5_metadata <- read_csv(
     select(cruise, experiment_id, station, lat, lon, date, replicate_name, sample_fraction, treatment, timepoint) %>%
     # change Homarine treatment to + D3-labelled homarine
     mutate(treatment = case_when(
-        treatment == "Homarine" ~ "+Homarine (13C7,15N-labelled)",
+        treatment == "Homarine" ~ "Homarine (13C7,15N-labelled)",
         TRUE ~ treatment)) %>%
     filter(!is.na(cruise))
 
@@ -67,7 +67,7 @@ rc104_metadata <- read_csv(
     left_join(cruise_info, by = join_by(experiment_id)) %>%
     select(cruise, experiment_id, station, lat, lon, date, replicate_name, sample_fraction, treatment, timepoint) %>%
     mutate(treatment = case_when(
-        treatment == "Homarine" ~ "+Homarine (13C7,15N-labelled)",
+        treatment == "Homarine" ~ "Homarine (13C7,15N-labelled)",
         TRUE ~ treatment)) %>%
     filter(!is.na(cruise))
 
@@ -79,7 +79,7 @@ obi1_metadata <- read_csv(
     mutate(isolate_id = "OBi1") %>%
     mutate(treatment = case_when(
         treatment == "Glucose + NH4" ~ "Glucose",
-        treatment == "Glucose + NH4 + Homarine" ~ "Glucose and homarine",
+        treatment == "Glucose + NH4 + Homarine" ~ "Glucose + homarine",
         TRUE ~ treatment)) %>%
     distinct()
     
@@ -88,7 +88,7 @@ rpom_metadata <- read_csv(
     show_col_types = FALSE) %>%
     select(replicate_name, sample_fraction, treatment) %>%
     mutate(isolate_id = "Rpom DSS3") %>%
-    filter(treatment %in% c("Glucose", "Homarine", "Glucose and homarine")) %>%
+    filter(treatment %in% c("Glucose", "Homarine", "Glucose + homarine")) %>%
     filter(sample_fraction == "Particulate") %>%
     distinct()
 
