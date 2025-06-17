@@ -1,5 +1,5 @@
 library(RaMS)
-library(Rdisop)
+#library(Rdisop)
 library(tidyverse)
 library(here)
 library(patchwork)
@@ -234,7 +234,7 @@ input_dir <- here("data", "intermediate", "metabolomics", "g4")
 ## Read in data ------
 g4_detected_features <- read_csv(
   here(
-    input_dir, "grouped_iso_results_matched.csv"
+    input_dir, "grouped_iso_results.csv"
   ),
   show_col_types = FALSE
 )
@@ -286,12 +286,8 @@ colScale <- scale_colour_manual(name = "Treatment", values = myColors, drop = FA
 
 # get unique compounds from g4_detected_features, grabbing name, mz, and rt
 compounds_to_plot <- g4_detected_features %>%
-  select(compound_name, mz_expected, rt_expected, mode, ionization_form, empirical_formula) %>%
+  select(id, isotopologue_type, mz_round, scan_time_med, mode, monoisotopic_mass) %>%
   distinct()
-
-# drop Trigonelline
-compounds_to_plot <- compounds_to_plot %>%
-  filter(compound_name != "Trigonelline")
 
 # Note these are all positive so no need to get data for negative mode data
 for (i in 1:nrow(compounds_to_plot)) {
