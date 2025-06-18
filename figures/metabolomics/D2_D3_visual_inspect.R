@@ -1,5 +1,5 @@
+# This script is used to visualize the chromatograms of detected features in the G4 dataset.
 library(RaMS)
-# library(Rdisop)
 library(tidyverse)
 library(here)
 library(patchwork)
@@ -9,91 +9,9 @@ gc()
 rm(list = ls())
 source(here("analysis", "obi1_metabolomics", "functions", "plotting.R"))
 
-# Function to plot D2 or D3 chromats
-plot_expected_iso <- function(
-        mz_iso,
-        rt_iso,
-        mz_mono,
-        sample_key
-        ) {
-    ppm = 5
-  my_y_scale <- scale_y_continuous(
-    expand = c(0, 0), limits = c(0, NA), labels = function(x) format(x, scientific = TRUE)
-  )
-  my_theme <- theme(strip.text = element_blank())
-
-  ## plot unlabeled compound ----
-  mz_min <- mz_mono - mz_mono * ppm / 1e6
-  mz_max <- mz_mono + mz_mono * ppm / 1e6
-  g_ms1_og <- plot_EIC2(
-      ms1data = ms1data$MS1 %>%
-          filter(
-              filename %in% c(
-                  basename(g4_c_samples),
-                  basename(g4_h_samples)
-              )
-          ),
-      m_z = mz_mono,
-      mz_ppm = ppm,
-      r_t = rt_iso,
-      rt_buffer = 2.5,
-      samples_oi = sample_key
-  )   +
-      annotate("text",
-               x = -Inf,
-               y = Inf,
-               hjust = 0,
-               vjust = 2,
-               label = paste0(
-                   "Monoisotopic (m/z = ", round(mz_min, 5),
-                   " - ", round(mz_max, 5), ")"
-               )
-      ) +
-      colScale +
-      my_y_scale +
-      my_theme
-  
-  # Plot labeled version
-  mz_min <- mz_iso - mz_iso * ppm / 1e6
-  mz_max <- mz_iso + mz_iso * ppm / 1e6
-  g_ms1_og_label <- plot_EIC2(
-      ms1data = ms1data$MS1 %>%
-          filter(
-              filename %in% c(
-                  basename(g4_c_samples),
-                  basename(g4_h_samples)
-              )
-          ),
-      m_z = mz_iso,
-      mz_ppm = ppm,
-      r_t = rt_iso,
-      rt_buffer = 2.5,
-      samples_oi = sample_key
-  )   +
-      annotate("text",
-               x = -Inf,
-               y = Inf,
-               hjust = 0,
-               vjust = 2,
-               label = paste0(
-                   "Labeled (m/z = ", round(mz_min, 5),
-                   " - ", round(mz_max, 5), ")"
-               )
-      ) +
-      colScale +
-      my_y_scale +
-      my_theme
-  
-  # Combine them
-  g_out = g_ms1_og / g_ms1_og_label
-  
-  return(g_out)
-  
-}
-
 # GET FILES ------
 ## Set dirs ------
-output_dir <- here("figures", "exploratory", "metabolomics", "combined_chromat_figs", "g4_chromats")
+output_dir <- here("figures", "metabolomics", "exploratory", "g4_chromats_inspect")
 g4_meta_data_dir <- here("data", "raw", "metabolomics", "G4")
 g4_raw_dat_dir <- here("data", "raw", "metabolomics", "G4", "particulate", "mzml_skyline")
 input_dir <- here("data", "intermediate", "metabolomics", "g4")
@@ -105,88 +23,99 @@ g4_detected_features <- read_csv(
   ),
   show_col_types = FALSE
 )
-
-## Read in sample keys and combine -------
 g4_sample_key <- read_csv(
-  here(
-    g4_meta_data_dir, "sample_key.csv"
-  ),
-  show_col_types = FALSE
+    here(
+        g4_meta_data_dir, "sample_key.csv"
+    ),
+    show_col_types = FALSE
 ) %>%
-  rename(filename = replicate_name) %>%
-  select(filename, treatment) %>%
-  mutate(experiment = "g4") %>%
-  mutate(filename = paste0(filename, ".mzML"))
+    rename(filename = replicate_name) %>%
+    select(filename, treatment) %>%
+    mutate(experiment = "g4") %>%
+    mutate(filename = paste0(filename, ".mzML"))
 
-## Set individual example samples ----
-g4_h_samples <- c(
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_2_H_t2_A.mzML"),
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_2_H_t2_B.mzML"),
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_2_H_t2_C.mzML"),
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_1_H_t2_A.mzML"),
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_1_H_t2_B.mzML"),
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_1_H_t2_C.mzML")
+## LOOP FOR EACH FEATURE
+for (i in 1:nrow(g4_detected_features)){
+feature_df <- g4_detected_features %>% 
+    filter(id == i)
+samples <- feature_df$samples %>%
+    str_split(",") %>%
+    unlist() %>%
+    str_trim() %>%
+    unique() %>%
+    paste0(".mzML")
+data_dir <- here(g4_raw_dat_dir, feature_df$mode)
+file_paths <- here(data_dir, samples)
+
+ms1data <- grabMSdata(files = file_paths, grab_what = c("MS1"))$MS1
+
+samples_oi <- g4_sample_key %>%
+    filter(filename %in% samples)
+
+# Set parameters for plotting ------
+r_t <- feature_df$scan_time_med
+rt_buffer <- 2.5 # minutes
+m_z_iso <- feature_df$mz_med
+m_z_mono <- feature_df$monoisotopic_mass
+mz_ppm <- 5
+
+
+rt_dat <- ms1data %>%
+    select(rt, filename) %>%
+    distinct() %>%
+    filter(rt %between% c(r_t - rt_buffer, r_t + rt_buffer))
+
+ms1_data_iso <- ms1data[mz %between% pmppm(m_z_iso, mz_ppm) & rt %between% c(r_t - rt_buffer, r_t + rt_buffer)] %>%
+    full_join(rt_dat, by = join_by(rt, filename)) %>%
+    left_join(
+        samples_oi %>%
+            select(filename, experiment),
+        by = join_by(filename)
+    ) %>%
+    mutate(int = ifelse(is.na(int), 0, int)) %>%
+    mutate(label = feature_df$isotopologue_type)
+
+ms1_data_mono <- ms1data[mz %between% pmppm(m_z_mono, mz_ppm) & rt %between% c(r_t - rt_buffer, r_t + rt_buffer)] %>%
+    full_join(rt_dat, by = join_by(rt, filename)) %>%
+    left_join(
+        samples_oi %>%
+            select(filename, experiment),
+        by = join_by(filename)
+    ) %>%
+    mutate(int = ifelse(is.na(int), 0, int)) %>%
+    mutate(label = "monoisotopic")
+
+# Plotting ------
+# start pdf
+pdf(
+    file = here(output_dir, paste0("feature_", feature_df$id, ".pdf")),
+    width = 8,
+    height = 5
 )
-g4_c_samples <- c(
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_2_C-H_t2_A.mzML"),
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_2_C-H_t2_B.mzML"),
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_2_C-H_t2_C.mzML"),
-  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_1_C-H_t2_A.mzML")
-#  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_1_C-H_t2_B.mzML")
-#  here(g4_raw_dat_dir, "positive", "230724_Smp_G4_1_C-H_t2_C.mzML")
-)
+for (j in 1:length(file_paths)){
+    g <- ggplot(
+        data = bind_rows(ms1_data_iso, ms1_data_mono) %>%
+            filter(filename == samples[j]),
+        aes(x = rt, y = int)
+    ) +
+        geom_line() +
+        geom_vline(
+            xintercept = r_t,
+            linetype = "dashed",
+            color = "red"
+        ) +
+        facet_wrap(~label, scales = "free_y", ncol = 1) +
+        theme_minimal() +
+        labs(
+            title = paste0("Feature ID: ", feature_df$id, " monoisotopic mass: ", round(m_z_mono, 4), " isotopologue type: ", feature_df$isotopologue_type, " mode: ", feature_df$mode),
+            subtitle = paste0("Sample: ", samples[j]),
+            x = "Retention Time (min)",
+            y = "Intensity"
+        ) 
+    # add to pdf
+    print(g)
 
-smps_to_plot <- c(g4_h_samples, g4_c_samples)
-
-sample_key <- g4_sample_key %>%
-  mutate(treatment_short = case_when(
-    filename %in% basename(g4_h_samples) ~ "Plus Homarine",
-    filename %in% basename(g4_c_samples) ~ "Control",
-    TRUE ~ "NA"
-  )) %>%
-  # cast treatment_short as factor
-  mutate(treatment_short = factor(treatment_short, levels = c("Control", "Plus Homarine"))) %>%
-  filter(treatment_short != "NA") %>%
-  distinct()
-
-# PLOT POSITIVE MASS FEATURES Read in MS1 data ------
-ms1data <- grabMSdata(files = smps_to_plot, grab_what = c("MS1"))
-
-### Prep color scale to share between plots
-myColors <- brewer.pal(3, "Set1")
-names(myColors) <- levels(sample_key$treatment_short)
-colScale <- scale_colour_manual(name = "Treatment", values = myColors, drop = FALSE)
-
-# get unique compounds from g4_detected_features, grabbing name, mz, and rt
-compounds_to_plot <- g4_detected_features %>%
-  select(id, isotopologue_type, mz_med, scan_time_med, mode, monoisotopic_mass) %>%
-  distinct()
-
-# PLOT EACH POTENTIAL HIT -----        
-
-# Note these are all positive so no need to get data for negative mode data
-for (i in 1:nrow(compounds_to_plot)) {
-  compound <- compounds_to_plot[i, ]
-  # check if compound is positive, if so plot
-  if (compound$mode == "positive") {
-    g <- plot_expected_iso(
-        mz_iso = compounds_to_plot$mz_med[i],
-        rt_iso = compounds_to_plot$scan_time_med[i],
-        mz_mono = compounds_to_plot$monoisotopic_mass[i],
-        sample_key = sample_key
-    )
-    filename <- paste0(
-        "for_inspection_D3_D2_ID",
-        compounds_to_plot$id[i],
-        ".pdf"
-    )
-    ggsave(
-      here(output_dir, filename),
-      g,
-      width = 12,
-      height = 10,
-      units = "in",
-      dpi = 300
-    )
-  }
+    }
+# end pdf
+dev.off()
 }

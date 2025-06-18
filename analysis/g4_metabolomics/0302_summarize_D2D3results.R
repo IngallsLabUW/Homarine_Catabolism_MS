@@ -119,6 +119,16 @@ grouped_summary2 <- grouped_summary2 %>%
 ## Save the results ----
 write_csv(grouped_summary2, here(output_dir, "grouped_iso_results.csv"))
 
+## Run the visual inspection and annotated the grouped_iso_results
+grouped_summary_annot <- read_csv(
+    here(output_dir, "grouped_iso_results_annotated.csv"), 
+    show_col_types = FALSE)
+
+# Keep only good quality peaks without any notes
+grouped_summary_annot <- grouped_summary_annot %>%
+    filter(quality_peaks == "y") %>%
+    filter(is.na(notes))
+
 # MATCH TO INGALLS STANDARDS ----
 ## Pull in Ingalls standards to try to match ----
 ingalls_standards <- read_csv(here(meta_data_loc, "Ingalls_Lab_Standards.csv"), show_col_types = FALSE) %>%
@@ -139,7 +149,7 @@ ingalls_standards2 <- ingalls_standards %>%
 
 
 ## Match the features to the Ingalls standards ----
-grouped_summary_matched <- grouped_summary2 %>%
+grouped_summary_matched <- grouped_summary_annot %>%
     left_join(ingalls_standards2, by = c("mode"), relationship = "many-to-many") %>%
     filter(
         abs(mz_expected - monoisotopic_mass) < 0.01,
@@ -156,7 +166,16 @@ grouped_summary_matched <- grouped_summary2 %>%
             TRUE ~ compound_name
         )
     ) %>%
-    select(id, n, mode, mz_med, scan_time_med, isotopologue_type, samples, compound_name, ionization_form, empirical_formula, rt_expected, mz_expected)
+    select(
+        mz_med, scan_time_med, mode, monoisotopic_mass, isotopologue_type,
+        n, samples,
+        compound_name, ionization_form, empirical_formula) %>%
+    rename(
+        mz_observed_isotopologue = mz_med,
+        mz_monoisotopic = monoisotopic_mass,
+        scan_time_observed = scan_time_med,
+        n_samples = n)
+        
 
 ## Save the results ----
 write_csv(grouped_summary_matched, here(output_dir, "grouped_iso_results_matched.csv"))
