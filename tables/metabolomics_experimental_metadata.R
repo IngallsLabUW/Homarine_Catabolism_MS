@@ -88,7 +88,10 @@ rpom_metadata <- read_csv(
     show_col_types = FALSE) %>%
     select(replicate_name, sample_fraction, treatment) %>%
     mutate(isolate_id = "Rpom DSS3") %>%
-    filter(treatment %in% c("Glucose", "Homarine", "Glucose + homarine")) %>%
+    filter(treatment %in% c("Glucose", "Homarine", "Glucose and homarine")) %>%
+    mutate(treatment = case_when(
+        treatment == "Glucose and homarine" ~ "Glucose + homarine",
+        TRUE ~ treatment)) %>%
     filter(sample_fraction == "Particulate") %>%
     distinct()
 

@@ -23,6 +23,9 @@ sample_id,sample_fraction,isolate_id,cruise,experiment_id,treatment,timepoint,st
 240304_Smp_WT_Hom_A,Particulate,Rpom DSS3,NA,NA,Homarine,NA,NA,NA,NA,NA
 240304_Smp_WT_Hom_B,Particulate,Rpom DSS3,NA,NA,Homarine,NA,NA,NA,NA,NA
 240304_Smp_WT_Hom_C,Particulate,Rpom DSS3,NA,NA,Homarine,NA,NA,NA,NA,NA
+240304_Smp_WT_Mix_A,Particulate,Rpom DSS3,NA,NA,Glucose + homarine,NA,NA,NA,NA,NA
+240304_Smp_WT_Mix_B,Particulate,Rpom DSS3,NA,NA,Glucose + homarine,NA,NA,NA,NA,NA
+240304_Smp_WT_Mix_C,Particulate,Rpom DSS3,NA,NA,Glucose + homarine,NA,NA,NA,NA,NA
 230724_Smp_G4_1_C-H_t0_A,Particulate,NA,TN397,G4_1,Control,0,2,27.0673,-126.6739,20211123
 230724_Smp_G4_1_C-H_t0_B,Particulate,NA,TN397,G4_1,Control,0,2,27.0673,-126.6739,20211123
 230724_Smp_G4_1_C-H_t0_C,Particulate,NA,TN397,G4_1,Control,0,2,27.0673,-126.6739,20211123
