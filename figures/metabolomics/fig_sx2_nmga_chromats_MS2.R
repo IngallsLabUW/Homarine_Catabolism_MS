@@ -28,7 +28,7 @@ sample_names <- data.frame(
       ),
   sample_name = c(
       "Cobetia sp. OBi1", 
-      "n-Methyl Glutamic Acid Standard",
+      "N-methylglutamic Acid Standard",
       "Cobetia sp. OBi1")
 )
 

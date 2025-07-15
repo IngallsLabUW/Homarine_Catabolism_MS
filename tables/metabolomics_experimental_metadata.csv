@@ -5,27 +5,24 @@ sample_id,sample_fraction,isolate_id,cruise,experiment_id,treatment,timepoint,st
 211202_Smp_OBi1_4,Particulate,OBi1,NA,NA,Homarine,NA,NA,NA,NA,NA
 211202_Smp_OBi1_5,Particulate,OBi1,NA,NA,Homarine,NA,NA,NA,NA,NA
 211202_Smp_OBi1_6,Particulate,OBi1,NA,NA,Homarine,NA,NA,NA,NA,NA
-211202_Smp_OBi1_7,Particulate,OBi1,NA,NA,Glucose and homarine,NA,NA,NA,NA,NA
-211202_Smp_OBi1_8,Particulate,OBi1,NA,NA,Glucose and homarine,NA,NA,NA,NA,NA
-211202_Smp_OBi1_9,Particulate,OBi1,NA,NA,Glucose and homarine,NA,NA,NA,NA,NA
+211202_Smp_OBi1_7,Particulate,OBi1,NA,NA,Glucose + homarine,NA,NA,NA,NA,NA
+211202_Smp_OBi1_8,Particulate,OBi1,NA,NA,Glucose + homarine,NA,NA,NA,NA,NA
+211202_Smp_OBi1_9,Particulate,OBi1,NA,NA,Glucose + homarine,NA,NA,NA,NA,NA
 220302_Smp_OBi1_1,Dissolved,OBi1,NA,NA,Glucose,NA,NA,NA,NA,NA
 220302_Smp_OBi1_2,Dissolved,OBi1,NA,NA,Glucose,NA,NA,NA,NA,NA
 220302_Smp_OBi1_3,Dissolved,OBi1,NA,NA,Glucose,NA,NA,NA,NA,NA
 220302_Smp_OBi1_4,Dissolved,OBi1,NA,NA,Homarine,NA,NA,NA,NA,NA
 220302_Smp_OBi1_5,Dissolved,OBi1,NA,NA,Homarine,NA,NA,NA,NA,NA
 220302_Smp_OBi1_6,Dissolved,OBi1,NA,NA,Homarine,NA,NA,NA,NA,NA
-220302_Smp_OBi1_7,Dissolved,OBi1,NA,NA,Glucose and homarine,NA,NA,NA,NA,NA
-220302_Smp_OBi1_8,Dissolved,OBi1,NA,NA,Glucose and homarine,NA,NA,NA,NA,NA
-220302_Smp_OBi1_9,Dissolved,OBi1,NA,NA,Glucose and homarine,NA,NA,NA,NA,NA
+220302_Smp_OBi1_7,Dissolved,OBi1,NA,NA,Glucose + homarine,NA,NA,NA,NA,NA
+220302_Smp_OBi1_8,Dissolved,OBi1,NA,NA,Glucose + homarine,NA,NA,NA,NA,NA
+220302_Smp_OBi1_9,Dissolved,OBi1,NA,NA,Glucose + homarine,NA,NA,NA,NA,NA
 240304_Smp_WT_Gluc_A,Particulate,Rpom DSS3,NA,NA,Glucose,NA,NA,NA,NA,NA
 240304_Smp_WT_Gluc_B,Particulate,Rpom DSS3,NA,NA,Glucose,NA,NA,NA,NA,NA
 240304_Smp_WT_Gluc_C,Particulate,Rpom DSS3,NA,NA,Glucose,NA,NA,NA,NA,NA
 240304_Smp_WT_Hom_A,Particulate,Rpom DSS3,NA,NA,Homarine,NA,NA,NA,NA,NA
 240304_Smp_WT_Hom_B,Particulate,Rpom DSS3,NA,NA,Homarine,NA,NA,NA,NA,NA
 240304_Smp_WT_Hom_C,Particulate,Rpom DSS3,NA,NA,Homarine,NA,NA,NA,NA,NA
-240304_Smp_WT_Mix_A,Particulate,Rpom DSS3,NA,NA,Glucose and homarine,NA,NA,NA,NA,NA
-240304_Smp_WT_Mix_B,Particulate,Rpom DSS3,NA,NA,Glucose and homarine,NA,NA,NA,NA,NA
-240304_Smp_WT_Mix_C,Particulate,Rpom DSS3,NA,NA,Glucose and homarine,NA,NA,NA,NA,NA
 230724_Smp_G4_1_C-H_t0_A,Particulate,NA,TN397,G4_1,Control,0,2,27.0673,-126.6739,20211123
 230724_Smp_G4_1_C-H_t0_B,Particulate,NA,TN397,G4_1,Control,0,2,27.0673,-126.6739,20211123
 230724_Smp_G4_1_C-H_t0_C,Particulate,NA,TN397,G4_1,Control,0,2,27.0673,-126.6739,20211123
@@ -38,15 +35,15 @@ sample_id,sample_fraction,isolate_id,cruise,experiment_id,treatment,timepoint,st
 230724_Smp_G4_1_C-H_t48_A,Particulate,NA,TN397,G4_1,Control,48,2,27.0673,-126.6739,20211123
 230724_Smp_G4_1_C-H_t48_B,Particulate,NA,TN397,G4_1,Control,48,2,27.0673,-126.6739,20211123
 230724_Smp_G4_1_C-H_t48_C,Particulate,NA,TN397,G4_1,Control,48,2,27.0673,-126.6739,20211123
-230724_Smp_G4_1_H_t2_A,Particulate,NA,TN397,G4_1,Homarine (3H3-labelled),2,2,27.0673,-126.6739,20211123
-230724_Smp_G4_1_H_t2_B,Particulate,NA,TN397,G4_1,Homarine (3H3-labelled),2,2,27.0673,-126.6739,20211123
-230724_Smp_G4_1_H_t2_C,Particulate,NA,TN397,G4_1,Homarine (3H3-labelled),2,2,27.0673,-126.6739,20211123
-230724_Smp_G4_1_H_t24_A,Particulate,NA,TN397,G4_1,Homarine (3H3-labelled),24,2,27.0673,-126.6739,20211123
-230724_Smp_G4_1_H_t24_B,Particulate,NA,TN397,G4_1,Homarine (3H3-labelled),24,2,27.0673,-126.6739,20211123
-230724_Smp_G4_1_H_t24_C,Particulate,NA,TN397,G4_1,Homarine (3H3-labelled),24,2,27.0673,-126.6739,20211123
-230724_Smp_G4_1_H_t48_A,Particulate,NA,TN397,G4_1,Homarine (3H3-labelled),48,2,27.0673,-126.6739,20211123
-230724_Smp_G4_1_H_t48_B,Particulate,NA,TN397,G4_1,Homarine (3H3-labelled),48,2,27.0673,-126.6739,20211123
-230724_Smp_G4_1_H_t48_C,Particulate,NA,TN397,G4_1,Homarine (3H3-labelled),48,2,27.0673,-126.6739,20211123
+230724_Smp_G4_1_H_t2_A,Particulate,NA,TN397,G4_1,Homarine (2H3-labelled),2,2,27.0673,-126.6739,20211123
+230724_Smp_G4_1_H_t2_B,Particulate,NA,TN397,G4_1,Homarine (2H3-labelled),2,2,27.0673,-126.6739,20211123
+230724_Smp_G4_1_H_t2_C,Particulate,NA,TN397,G4_1,Homarine (2H3-labelled),2,2,27.0673,-126.6739,20211123
+230724_Smp_G4_1_H_t24_A,Particulate,NA,TN397,G4_1,Homarine (2H3-labelled),24,2,27.0673,-126.6739,20211123
+230724_Smp_G4_1_H_t24_B,Particulate,NA,TN397,G4_1,Homarine (2H3-labelled),24,2,27.0673,-126.6739,20211123
+230724_Smp_G4_1_H_t24_C,Particulate,NA,TN397,G4_1,Homarine (2H3-labelled),24,2,27.0673,-126.6739,20211123
+230724_Smp_G4_1_H_t48_A,Particulate,NA,TN397,G4_1,Homarine (2H3-labelled),48,2,27.0673,-126.6739,20211123
+230724_Smp_G4_1_H_t48_B,Particulate,NA,TN397,G4_1,Homarine (2H3-labelled),48,2,27.0673,-126.6739,20211123
+230724_Smp_G4_1_H_t48_C,Particulate,NA,TN397,G4_1,Homarine (2H3-labelled),48,2,27.0673,-126.6739,20211123
 230724_Smp_G4_2_C-H_t0_A,Particulate,NA,TN397,G4_2,Control,0,13,0.1812,-141.9465,20211208
 230724_Smp_G4_2_C-H_t0_B,Particulate,NA,TN397,G4_2,Control,0,13,0.1812,-141.9465,20211208
 230724_Smp_G4_2_C-H_t0_C,Particulate,NA,TN397,G4_2,Control,0,13,0.1812,-141.9465,20211208
@@ -59,15 +56,15 @@ sample_id,sample_fraction,isolate_id,cruise,experiment_id,treatment,timepoint,st
 230724_Smp_G4_2_C-H_t48_A,Particulate,NA,TN397,G4_2,Control,48,13,0.1812,-141.9465,20211208
 230724_Smp_G4_2_C-H_t48_B,Particulate,NA,TN397,G4_2,Control,48,13,0.1812,-141.9465,20211208
 230724_Smp_G4_2_C-H_t48_C,Particulate,NA,TN397,G4_2,Control,48,13,0.1812,-141.9465,20211208
-230724_Smp_G4_2_H_t2_A,Particulate,NA,TN397,G4_2,Homarine (3H3-labelled),2,13,0.1812,-141.9465,20211208
-230724_Smp_G4_2_H_t2_B,Particulate,NA,TN397,G4_2,Homarine (3H3-labelled),2,13,0.1812,-141.9465,20211208
-230724_Smp_G4_2_H_t2_C,Particulate,NA,TN397,G4_2,Homarine (3H3-labelled),2,13,0.1812,-141.9465,20211208
-230724_Smp_G4_2_H_t24_A,Particulate,NA,TN397,G4_2,Homarine (3H3-labelled),24,13,0.1812,-141.9465,20211208
-230724_Smp_G4_2_H_t24_B,Particulate,NA,TN397,G4_2,Homarine (3H3-labelled),24,13,0.1812,-141.9465,20211208
-230724_Smp_G4_2_H_t24_C,Particulate,NA,TN397,G4_2,Homarine (3H3-labelled),24,13,0.1812,-141.9465,20211208
-230724_Smp_G4_2_H_t48_A,Particulate,NA,TN397,G4_2,Homarine (3H3-labelled),48,13,0.1812,-141.9465,20211208
-230724_Smp_G4_2_H_t48_B,Particulate,NA,TN397,G4_2,Homarine (3H3-labelled),48,13,0.1812,-141.9465,20211208
-230724_Smp_G4_2_H_t48_C,Particulate,NA,TN397,G4_2,Homarine (3H3-labelled),48,13,0.1812,-141.9465,20211208
+230724_Smp_G4_2_H_t2_A,Particulate,NA,TN397,G4_2,Homarine (2H3-labelled),2,13,0.1812,-141.9465,20211208
+230724_Smp_G4_2_H_t2_B,Particulate,NA,TN397,G4_2,Homarine (2H3-labelled),2,13,0.1812,-141.9465,20211208
+230724_Smp_G4_2_H_t2_C,Particulate,NA,TN397,G4_2,Homarine (2H3-labelled),2,13,0.1812,-141.9465,20211208
+230724_Smp_G4_2_H_t24_A,Particulate,NA,TN397,G4_2,Homarine (2H3-labelled),24,13,0.1812,-141.9465,20211208
+230724_Smp_G4_2_H_t24_B,Particulate,NA,TN397,G4_2,Homarine (2H3-labelled),24,13,0.1812,-141.9465,20211208
+230724_Smp_G4_2_H_t24_C,Particulate,NA,TN397,G4_2,Homarine (2H3-labelled),24,13,0.1812,-141.9465,20211208
+230724_Smp_G4_2_H_t48_A,Particulate,NA,TN397,G4_2,Homarine (2H3-labelled),48,13,0.1812,-141.9465,20211208
+230724_Smp_G4_2_H_t48_B,Particulate,NA,TN397,G4_2,Homarine (2H3-labelled),48,13,0.1812,-141.9465,20211208
+230724_Smp_G4_2_H_t48_C,Particulate,NA,TN397,G4_2,Homarine (2H3-labelled),48,13,0.1812,-141.9465,20211208
 230717_Smp_G5_Hom1_C_A,Particulate,NA,TN412,G51,Control,NA,2,19.3316,-138.71,20230128
 230717_Smp_G5_Hom1_C_B,Particulate,NA,TN412,G51,Control,NA,2,19.3316,-138.71,20230128
 230717_Smp_G5_Hom1_C_C,Particulate,NA,TN412,G51,Control,NA,2,19.3316,-138.71,20230128

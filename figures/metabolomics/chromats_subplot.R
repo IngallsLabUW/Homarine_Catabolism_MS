@@ -44,7 +44,7 @@ plot_combined_EICs <- function(mz_oi, rt_oi, name_oi, label_expected, mol_formul
     samples_oi = sample_key
   ) +
     colScale +
-    labs(title = paste0(name_oi, "\n(m/z ", mz_oi, ")")) +
+    labs(title = paste0(name_oi)) +
       
   my_chromat_theme
 
@@ -113,12 +113,12 @@ smps_to_plot <- c(plus_h_smps, c_smps)
 sample_key <- obi1_sample_key %>%
   bind_rows(rpom_sample_key) %>%
   mutate(treatment_short = case_when(
-    filename %in% basename(plus_h_smps) ~ "+homarine",
-    filename %in% basename(c_smps) ~ "control",
+    filename %in% basename(plus_h_smps) ~ "homarine",
+    filename %in% basename(c_smps) ~ "glucose",
     TRUE ~ "NA"
   )) %>%
   # cast treatment_short as factor
-  mutate(treatment_short = factor(treatment_short, levels = c("control", "+homarine"))) %>%
+  mutate(treatment_short = factor(treatment_short, levels = c("glucose", "homarine"))) %>%
   filter(treatment_short != "NA") %>%
   mutate(experiment = factor(experiment, levels = c("obi1", "rpom"), labels = c("OBi1", "DSS-3"))) %>%
   distinct()

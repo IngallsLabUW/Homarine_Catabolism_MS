@@ -1,4 +1,4 @@
-Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2024-05-28 10:41:23.314761. 
+Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2025-06-09 17:10:12.187986. 
 "","molecule_list_name","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","molecule_list","flags","QC_area"
 "1","Neg_Standards","230717_Std_4uMStdsMix1InH2O_1","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA
 "2","Neg_Standards","230717_Std_4uMStdsMix1InH2O_2","unknown_C6H9NO4_neg",NA,NA,NA,NA,NA,"Neg_Standards","",NA

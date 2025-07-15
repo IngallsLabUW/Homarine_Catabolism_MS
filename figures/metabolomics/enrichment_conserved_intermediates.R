@@ -82,7 +82,8 @@ dat_cmb <- bind_rows(rpom_dat, obi1_dat) %>%
 dat_cmb <- dat_cmb %>%
   mutate(
     mass_feature = ifelse(mass_feature == "N-Methyl-L-glutamic acid", "n-methyl glutamic acid", mass_feature),
-    mass_feature = ifelse(mass_feature == "Homarine", "homarine", mass_feature)
+    mass_feature = ifelse(mass_feature == "Homarine", "homarine", mass_feature),
+    mass_feature = ifelse(mass_feature == "L-Glutamic acid", "glutamic_acid", mass_feature),
   ) %>%
   mutate(
     mass_feature_short = case_when(
@@ -156,6 +157,13 @@ dat_long_plot <- dat_long %>%
   ) %>%
   mutate(p_value_flag = ifelse(q_value < 0.05, "significant", "not significant")) %>%
   mutate(enrichment = ifelse(enrichment > 2^15, 2^15, enrichment)) %>%
+  # Convert glutamic_acid to non-core for plotting
+  mutate(
+    core_metabolite = case_when(
+      mass_feature == "glutamic_acid" & data_origin %in% c("rpom", "obi1") ~ "non-core",
+      TRUE ~ core_metabolite
+    )
+  ) %>%
   filter(core_metabolite != "core") %>%
   bind_rows(dat_long_core) %>%
   # if mass_feature_short is na, fill in with mass_feature_oi
@@ -169,19 +177,20 @@ dat_long_plot <- dat_long %>%
 
 ## Modify treatment and experiment_id columns for plotting =====
 dat_long_plot <- dat_long_plot %>%
-  mutate(experiment_id_to_plot = case_when(
-    data_origin == "rpom" ~ "DSS-3",
-    data_origin == "obi1" ~ "OBi1",
-    data_origin == "rc104" ~ "RC104 St2",
-    experiment_id == "G4_1" ~ "TN397 St2",
-    experiment_id == "G4_2" ~ "TN397 St13",
-    experiment_id == "G51" ~ "TN412 St2",
-    experiment_id == "G52" ~ "TN412 St7"
-  ) %>%
-    factor(
-      levels = c( "OBi1", "DSS-3","RC104 St2", "TN397 St2", "TN397 St13", "TN412 St2", "TN412 St7"),
-      labels = c("OBi1", "DSS-3", "RC104 St2", "TN397 St2", "TN397 St13", "TN412 St2", "TN412 St7")
-    ),
+  mutate(
+    experiment_id_to_plot = case_when(
+      data_origin == "rpom" ~ "DSS-3",
+      data_origin == "obi1" ~ "OBi1",
+      data_origin == "rc104" ~ "RC104 St2",
+      experiment_id == "G4_1" ~ "TN397 St2",
+      experiment_id == "G4_2" ~ "TN397 St13",
+      experiment_id == "G51" ~ "TN412 St2",
+      experiment_id == "G52" ~ "TN412 St7"
+    ) %>%
+      factor(
+        levels = c("OBi1", "DSS-3", "RC104 St2", "TN397 St2", "TN397 St13", "TN412 St2", "TN412 St7"),
+        labels = c("OBi1", "DSS-3", "RC104 St2", "TN397 St2", "TN397 St13", "TN412 St2", "TN412 St7")
+      ),
     mass_feature_oi = ifelse(is.na(mass_feature_oi), mass_feature_short, mass_feature_oi),
     mass_feature_oi = ifelse(mass_feature_oi == "", mass_feature_short, mass_feature_oi)
   ) %>%
@@ -199,9 +208,8 @@ dat_long_plot <- dat_long_plot %>%
           "h", "hNH4", "0hr", "2hr", "6hr", "12hr", "24hr", "48hr", "96hr"
         ),
         labels = c(
-          "+homarine",
-          # TODO: Check these treatments
-          "+homarine & glucose",
+          "homarine",
+          "glucose + homarine",
           "<1hr", "2hr", "6hr", "12hr", "24hr", "48hr", "96hr"
         )
       )
@@ -217,6 +225,7 @@ dat_long_plot2 <- dat_long_plot %>%
         "homarine",
         "n-methyl glutamic acid",
         "n-methyl glutamine",
+        "glutamic_acid",
         "unknown_C6H9NO3_1_neg",
         "unknown_C6H9NO3_2_neg",
         "unknown_C6H9NO4_neg",
@@ -230,6 +239,7 @@ dat_long_plot2 <- dat_long_plot %>%
         "Homarine",
         "N-methylglutamic Acid",
         "N-methylglutamine",
+        "Glutamic Acid",
         "C<sub>6</sub>H<sub>9</sub>NO<sub>3</sub> (-@rt10)",
         "C<sub>6</sub>H<sub>9</sub>NO<sub>3</sub> (-@rt11)",
         "C<sub>6</sub>H<sub>9</sub>NO<sub>4</sub> (-@rt3.5)",
@@ -260,7 +270,7 @@ my_theme <- theme_bw() +
   theme(
     axis.title.x = element_blank(),
     axis.text = element_text(size = 6),
-    axis.title.y = element_blank(),
+    #  axis.title.y = element_blank(),
     panel.grid.major = element_blank(),
     strip.background = element_blank(),
     strip.text = element_text(size = 8)
@@ -305,37 +315,75 @@ plot_tiles <- function(data_input) {
 }
 
 ## Plot for RPom and Obi1 data  -----
+dat_long_plot2_org <- dat_long_plot2 %>%
+  filter(data_origin %in% c("rpom", "obi1")) 
+levels(dat_long_plot2_org$mass_feature_short)[
+  levels(dat_long_plot2_org$mass_feature_short) == "Homarine"
+] <-
+  "Homarine (C<sub>7</sub>H<sub>7</sub>NO<sub>3</sub>)"
+levels(dat_long_plot2_org$mass_feature_short)[
+    levels(dat_long_plot2_org$mass_feature_short) == "N-methylglutamic Acid"
+] <-
+    "N-methylglutamic Acid (C<sub>6</sub>H<sub>11</sub>NO<sub>4</sub>)"
+levels(dat_long_plot2_org$mass_feature_short)[
+    levels(dat_long_plot2_org$mass_feature_short) == "N-methylglutamine"
+] <-
+    "N-methylglutamine (C<sub>6</sub>H<sub>12</sub>N<sub>2</sub>O<sub>3</sub>)"
+levels(dat_long_plot2_org$mass_feature_short)[
+    levels(dat_long_plot2_org$mass_feature_short) == "Glutamic Acid"
+] <-
+    "Glutamic Acid (C<sub>5</sub>H<sub>9</sub>NO<sub>4</sub>)"
+
 g_orgs <- plot_tiles(
-  data_input = dat_long_plot2 %>%
-    filter(data_origin %in% c("rpom", "obi1"))
+  data_input = dat_long_plot2_org
 ) +
+  # Fix the caption in the manuscript
   theme(
-    legend.position = "bottom",
-    legend.justification = "left", 
+      legend.position = "bottom",  # Keeps the legend at the bottom
+      legend.justification = "left",
+      legend.direction = "horizontal", 
     legend.margin = margin(0, 0, 0, 0),
-    legend.box.margin = margin(0, 0, 0, 0, unit = "pt"),
+    legend.box.margin = margin(-10, 0, 0, -60, unit = "pt"), # Adjusts the position
     legend.title = element_text(size = 6),
     legend.text = element_text(size = 6),
     # rotate the x axis labels 45 degrees
     axis.text.x = element_text(angle = 30, hjust = 1),
-    legend.key.size = unit(0.4, "cm"),  # Reduces size of legend keys
-    legend.spacing = unit(0.1, "cm")    # Reduces spacing between legend items
+    legend.key.size = unit(0.4, "cm"), # Reduces size of legend keys
+    legend.spacing = unit(0.1, "cm") # Reduces spacing between legend items
   ) +
-  labs(fill = "enrichment \n factor (log2)")
-
+  labs(fill = "enrichment \n factor (log2)") +
+  theme(axis.title.y = element_blank())
+g_orgs
 ## Plot for G4 data -----
 g4 <- plot_tiles(
   data_input = dat_long_plot2 %>%
     filter(data_origin == "g4")
 ) +
-  theme(legend.position = "none")
+  theme(
+    legend.position = "none",
+    axis.title.y = element_markdown(
+      margin = margin(t = -200),
+      size = 8
+    )
+  ) +
+  ylab("<sup>2</sup>H<sub>3</sub> isotopologues")
+
 
 ## Plot for RC104 and G5 data -----
 g5 <- plot_tiles(
   data_input = dat_long_plot2 %>%
     filter(data_origin %in% c("rc104", "g5"))
 ) +
-  theme(legend.position = "none")
+  theme(
+    legend.position = "none",
+    axis.title.y = element_markdown(
+      margin = margin(t = -50),
+      size = 8
+    )
+  ) +
+  # Add y axis label of "3H2 isotopologues" to the left of the plot
+  ylab("<sup>13</sup>C<sub>5-7</sub>,<sup>15</sup>N isotopologues")
+theme(legend.position = "none")
 
 ## Map for homarine fate experiments -----
 # this adds the object "hom_fate_map' to the environment
@@ -358,17 +406,19 @@ structures <- homarine / n_methyl_glutamatic_acid / n_methyl_glutamine
 ## Chromatogram for obi1 and rpom homarine control v +homarine -----
 # this sources eic_acid and eic_amine
 source(here("figures", "metabolomics", "chromats_subplot.R"))
-eic_acid_structure <- eic_acid + 
-    inset_element(n_methyl_glutamatic_acid, 
-                  left = 0.23, bottom = 0.23, 
-                  right = 0.73, top = 0.73)
+eic_acid_structure <- eic_acid +
+  inset_element(n_methyl_glutamatic_acid,
+    left = 0.23, bottom = 0.23,
+    right = 0.73, top = 0.73
+  )
 eic_amine_structure <- eic_amine +
-    inset_element(n_methyl_glutamine, 
-                  left = 0.23, bottom = 0.23, 
-                  right = 0.73, top = 0.73)
+  inset_element(n_methyl_glutamine,
+    left = 0.23, bottom = 0.23,
+    right = 0.73, top = 0.73
+  )
 g_chromat <- eic_acid_structure / eic_amine_structure +
-    plot_layout(axis = "collect") +
-    plot_annotation(tag_levels = list(c("B", "", "C")))
+  plot_layout(axis = "collect") +
+  plot_annotation(tag_levels = list(c("B", "", "C")))
 
 
 ## Combine plots -----
@@ -381,21 +431,34 @@ DDEEEEEE
 DDEEEEEE
 DDEEEEEE
 "
-g_map_and_structures <-  hom_fate_map +
-    inset_element(homarine, 
-                  left = 0.1, bottom = 0.55, 
-                  right = 0.44, top = 0.85)
+g_map_and_structures <- hom_fate_map +
+  theme(
+    plot.margin = unit(c(0, 0, 0, 0), "cm") # Adjust the margins as needed
+  ) +
+  # Add "homarine" annotation
+  annotate(
+    "text",
+    x = -145, y = 47, label = "Homarine",
+    size = 2.5, hjust = 0.5, vjust = 1,
+    fontface = "bold",
+  ) +
+  inset_element(homarine,
+    left = 0.1, bottom = 0.55,
+    right = 0.44, top = 0.85
+  )
 
-    
+
 g_cmb <- (free(g_orgs) +
-    g_map_and_structures +
-    g_chromat +
-    g4 +
-    free(g5) +
-    plot_layout(design = layout) & 
-    theme(plot.margin = unit(c(0, 0, 0, 0), "cm"), 
-          panel.spacing = unit(0.5, "cm"))) +
-    plot_annotation(tag_levels=list(c("     A", "     B","", "     C", "", "     D", "", "     E", "     F")))
+  g_map_and_structures +
+  g_chromat +
+  g4 +
+  free(g5) +
+  plot_layout(design = layout) &
+  theme(
+    plot.margin = unit(c(0, 0, 0, 0), "cm"),
+    panel.spacing = unit(0.3, "cm")
+  )) +
+  plot_annotation(tag_levels = list(c("     A", "     B", "", "     C", "", "     D", "", "     E", "     F")))
 
 
 g_cmb
@@ -409,9 +472,9 @@ ggsave(
   width = 8, height = 6.5, dpi = 300
 )
 ggsave(
-    here(
-        "figures",
-        "metabolomics", "homarine_fate_experiments.png"
-    ),
-    width = 8, height = 6.5, dpi = 300
+  here(
+    "figures",
+    "metabolomics", "homarine_fate_experiments.png"
+  ),
+  width = 8, height = 6.5, dpi = 300
 )

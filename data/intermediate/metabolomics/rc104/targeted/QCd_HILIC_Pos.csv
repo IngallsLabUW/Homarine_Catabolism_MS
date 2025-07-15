@@ -1,4 +1,4 @@
-Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2025-01-06 10:33:18.288496. 
+Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes. Blank can be this fraction of a sample: 2. S/N ratio: 3. Parts per million flexibility: 6. Processed on: 2025-06-09 17:26:53.073398. 
 "","replicate_name","precursor_ion_name","retention_time","area","background","height","mass_error_ppm","flags","QC_area"
 "1","240926_Std_4uMStdsMix1InH2O-1_posDDA","Homarine",NA,NA,NA,NA,NA,"",NA
 "2","240926_Std_4uMStdsMix1InH2O-2_posDDA","Homarine",NA,NA,NA,NA,NA,"",NA
@@ -241,7 +241,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "239","240926_Smp_RC104_HomFate_T12_B_posDDA","N-Methyl-L-glutamic acid",10.9,7205047,863055,319404,0.4,"",7205047
 "240","240926_Smp_RC104_HomFate_T12_C_posDDA","N-Methyl-L-glutamic acid",10.99,25348784,2412702,1136725,1.4,"",25348784
 "241","240926_Smp_RC104_HomFate_T24_A_posDDA","N-Methyl-L-glutamic acid",10.88,15847087,1383711,515256,0.2,"",15847087
-"242","240926_Smp_RC104_HomFate_T24_B_posDDA","N-Methyl-L-glutamic acid",10.92,22162646,917756,1010241,0.7,"",22162646
+"242","240926_Smp_RC104_HomFate_T24_B_posDDA","N-Methyl-L-glutamic acid",10.92,22162646,917756,1010241,0.8,"",22162646
 "243","240926_Smp_RC104_HomFate_T24_C_posDDA","N-Methyl-L-glutamic acid",10.99,59112880,2269232,2651295,0.9,"",59112880
 "244","240926_Smp_RC104_HomFate_T48_A_posDDA","N-Methyl-L-glutamic acid",11.36,11727931,1804108,290147,0.4,"",11727931
 "245","240926_Smp_RC104_HomFate_T48_B_posDDA","N-Methyl-L-glutamic acid",11.02,51062928,6131314,1545257,-0.1,"",51062928
@@ -793,7 +793,7 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "791","240926_Smp_RC104_HomFate_Con_B_posDDA","L-Homoserine",11.59,4197646,156550,265231,-3.4,"",4197646
 "792","240926_Smp_RC104_HomFate_Con_C_posDDA","L-Homoserine",11.64,4090230,36566,233989,-3.5,"",4090230
 "793","240926_Smp_RC104_HomFate_T0_A_posDDA","L-Homoserine",11.71,5187977,43484,280810,-3.3,"",5187977
-"794","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Homoserine",11.64,7496378,675089,478442,-3.1,"",7496378
+"794","240926_Smp_RC104_HomFate_T0_B_posDDA","L-Homoserine",11.64,7496378,675089,478442,-3.2,"",7496378
 "795","240926_Smp_RC104_HomFate_T0_C_posDDA","L-Homoserine",11.71,4773560,52894,317675,-3,"",4773560
 "796","240926_Smp_RC104_HomFate_T6_A_posDDA","L-Homoserine",11.74,19077056,1393191,1224992,-2.2,"",19077056
 "797","240926_Smp_RC104_HomFate_T6_B_posDDA","L-Homoserine",11.76,5016232,538485,293959,-3.5,"",5016232
@@ -1734,3 +1734,54 @@ Hello! Here are the QC parameters Minimum area for a real peak: 40000.  minutes.
 "1732","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.97,80958,0,8537,2.9,"",80958
 "1733","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.8,76447,0,12469,3.6,"",76447
 "1734","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","unknown_C6H9NO4_pos_early_13C_15N",3.65,34767,0,6877,2.2,"areamin_flag, ",NA
+"1735","240926_Std_4uMStdsMix1InH2O-1_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1736","240926_Std_4uMStdsMix1InH2O-2_posDDA","glutamic_acid_13C_15N",11.92,22454,0,10559,-1.4,"areamin_flag, ",NA
+"1737","240926_Std_4uMStdsMix1InMatrix-1_posDDA","glutamic_acid_13C_15N",12.41,11338320,0,802627,-3.6,"",11338320
+"1738","240926_Std_4uMStdsMix1InMatrix-2_posDDA","glutamic_acid_13C_15N",11.88,14593580,0,944325,-3.5,"",14593580
+"1739","240926_Std_4uMStdsMix2InH2O-1_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1740","240926_Std_4uMStdsMix2InH2O-2_posDDA","glutamic_acid_13C_15N",11.73,0,0,0,NA,"areamin_flag, ",NA
+"1741","240926_Std_4uMStdsMix2InMatrix-1_posDDA","glutamic_acid_13C_15N",12.39,9516124,0,613856,-3.4,"",9516124
+"1742","240926_Std_4uMStdsMix2InMatrix-2_posDDA","glutamic_acid_13C_15N",11.9,12226714,0,764654,-3.8,"",12226714
+"1743","240926_Std_H2OinMatrix1_posDDA","glutamic_acid_13C_15N",12.43,10283325,0,729949,-4.4,"",10283325
+"1744","240926_Std_H2OinMatrix2_posDDA","glutamic_acid_13C_15N",12.02,13341166,0,786771,-4.7,"",13341166
+"1745","240926_Blk_RC104_HomFate_T6_Blk_A_posDDA","glutamic_acid_13C_15N",12.17,51527,0,16785,-4,"",51527
+"1746","240926_Blk_RC104_HomFate_T6_Blk_B_posDDA","glutamic_acid_13C_15N",12.52,170700,0,13142,-4,"",170700
+"1747","240926_Blk_RC104_HomFate_T6_Blk_C_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1748","240926_Blk_RC104_HomFate_T48_Blk_A_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1749","240926_Blk_RC104_HomFate_T48_Blk_B_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1750","240926_Blk_RC104_HomFate_T48_Blk_C_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1751","240926_Blk_RC104_HomFate_T96_Blk_A_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1752","240926_Blk_RC104_HomFate_T96_Blk_B_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1753","240926_Blk_RC104_HomFate_T96_Blk_C_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1754","240926_Poo_RC104_HomFate_Full1_posDDA","glutamic_acid_13C_15N",12.39,18141180,0,1212436,-3.3,"",18141180
+"1755","240926_Poo_RC104_HomFate_Full2_posDDA","glutamic_acid_13C_15N",12.36,14428462,0,835195,-4.4,"",14428462
+"1756","240926_Poo_RC104_HomFate_Full3_posDDA","glutamic_acid_13C_15N",12.33,14964357,0,824644,-4.1,"",14964357
+"1757","240926_Poo_RC104_HomFate_Full4_posDDA","glutamic_acid_13C_15N",12.19,15635086,0,927686,-4.2,"",15635086
+"1758","240926_Poo_RC104_HomFate_Full5_posDDA","glutamic_acid_13C_15N",12.14,17398050,0,873110,-4.6,"",17398050
+"1759","240926_Smp_RC104_HomFate_Con_A_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1760","240926_Smp_RC104_HomFate_Con_B_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1761","240926_Smp_RC104_HomFate_Con_C_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
+"1762","240926_Smp_RC104_HomFate_T0_A_posDDA","glutamic_acid_13C_15N",12.31,2036748,0,107325,-4,"",2036748
+"1763","240926_Smp_RC104_HomFate_T0_B_posDDA","glutamic_acid_13C_15N",12.19,4358174,0,268593,-4,"",4358174
+"1764","240926_Smp_RC104_HomFate_T0_C_posDDA","glutamic_acid_13C_15N",12.3,2548540,0,178768,-4.3,"",2548540
+"1765","240926_Smp_RC104_HomFate_T6_A_posDDA","glutamic_acid_13C_15N",12.41,42649072,144149,2763978,-3.4,"",42649072
+"1766","240926_Smp_RC104_HomFate_T6_B_posDDA","glutamic_acid_13C_15N",12.39,21933872,0,1131124,-4.4,"",21933872
+"1767","240926_Smp_RC104_HomFate_T6_C_posDDA","glutamic_acid_13C_15N",12.34,20375994,0,990616,-3.9,"",20375994
+"1768","240926_Smp_RC104_HomFate_T12_A_posDDA","glutamic_acid_13C_15N",12.24,34031348,0,1981872,-4.2,"",34031348
+"1769","240926_Smp_RC104_HomFate_T12_B_posDDA","glutamic_acid_13C_15N",12.24,39159580,383214,2318197,-4.2,"",39159580
+"1770","240926_Smp_RC104_HomFate_T12_C_posDDA","glutamic_acid_13C_15N",12.39,56446748,735136,3312310,-3.4,"",56446748
+"1771","240926_Smp_RC104_HomFate_T24_A_posDDA","glutamic_acid_13C_15N",12.09,78077920,0,3901479,-4.3,"",78077920
+"1772","240926_Smp_RC104_HomFate_T24_B_posDDA","glutamic_acid_13C_15N",12.37,102402312,0,6361631,-4,"",102402312
+"1773","240926_Smp_RC104_HomFate_T24_C_posDDA","glutamic_acid_13C_15N",12.37,73534056,0,4446202,-4,"",73534056
+"1774","240926_Smp_RC104_HomFate_T48_A_posDDA","glutamic_acid_13C_15N",12.38,19118380,0,861734,-4,"",19118380
+"1775","240926_Smp_RC104_HomFate_T48_B_posDDA","glutamic_acid_13C_15N",12.17,21508956,0,1054568,-4.8,"",21508956
+"1776","240926_Smp_RC104_HomFate_T48_C_posDDA","glutamic_acid_13C_15N",12.36,18295256,0,952643,-4.3,"",18295256
+"1777","240926_Smp_RC104_HomFate_T96_A_posDDA","glutamic_acid_13C_15N",12.28,30707,0,20641,-0.2,"areamin_flag, ",NA
+"1778","240926_Smp_RC104_HomFate_T96_B_posDDA","glutamic_acid_13C_15N",12.19,88714,0,18347,-3.5,"",88714
+"1779","240926_Smp_RC104_HomFate_T96_C_posDDA","glutamic_acid_13C_15N",12.48,53003,0,17399,-2.5,"",53003
+"1780","240926_Smp_RC104_HomFate2_T12_L_A_posDDA","glutamic_acid_13C_15N",12.07,25016208,0,1177310,-4.6,"",25016208
+"1781","240926_Smp_RC104_HomFate2_T12_L_B_posDDA","glutamic_acid_13C_15N",12.02,49744564,0,2437541,-4.7,"",49744564
+"1782","240926_Smp_RC104_HomFate2_T12_L_C_posDDA","glutamic_acid_13C_15N",12.02,35504576,0,1721751,-4.4,"",35504576
+"1783","240926_Smp_RC104_HomFate2_T12_UL_A_posDDA","glutamic_acid_13C_15N",11.73,0,0,0,NA,"areamin_flag, ",NA
+"1784","240926_Smp_RC104_HomFate2_T12_UL_B_posDDA","glutamic_acid_13C_15N",11.73,0,0,0,NA,"areamin_flag, ",NA
+"1785","240926_Smp_RC104_HomFate2_T12_UL_C_posDDA","glutamic_acid_13C_15N",11.74,0,0,0,NA,"areamin_flag, ",NA
