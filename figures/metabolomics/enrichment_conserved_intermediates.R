@@ -408,13 +408,13 @@ structures <- homarine / n_methyl_glutamatic_acid / n_methyl_glutamine
 source(here("figures", "metabolomics", "chromats_subplot.R"))
 eic_acid_structure <- eic_acid +
   inset_element(n_methyl_glutamatic_acid,
-    left = 0.23, bottom = 0.23,
-    right = 0.73, top = 0.73
+    left = 0.3, bottom = 0.23,
+    right = 0.71, top = 0.73
   )
 eic_amine_structure <- eic_amine +
   inset_element(n_methyl_glutamine,
-    left = 0.23, bottom = 0.23,
-    right = 0.73, top = 0.73
+    left = 0.3, bottom = 0.23,
+    right = 0.71, top = 0.73
   )
 g_chromat <- eic_acid_structure / eic_amine_structure +
   plot_layout(axis = "collect") +
@@ -432,9 +432,9 @@ DDEEEEEE
 DDEEEEEE
 "
 g_map_and_structures <- hom_fate_map +
-  theme(
-    plot.margin = unit(c(0, 0, 0, 0), "cm") # Adjust the margins as needed
-  ) +
+    theme(
+        plot.margin = unit(c(0, 0, 0, 0), "cm") # Adjust only the right margin (second value)
+    ) +
   # Add "homarine" annotation
   annotate(
     "text",
@@ -443,19 +443,20 @@ g_map_and_structures <- hom_fate_map +
     fontface = "bold",
   ) +
   inset_element(homarine,
-    left = 0.1, bottom = 0.55,
-    right = 0.44, top = 0.85
+    left = 0.12, bottom = 0.55,
+    right = 0.5, top = 0.85
   )
 
 
 g_cmb <- (free(g_orgs) +
+              g_chromat +
+              
   g_map_and_structures +
-  g_chromat +
   g4 +
   free(g5) +
   plot_layout(design = layout) &
   theme(
-    plot.margin = unit(c(0, 0, 0, 0), "cm"),
+    plot.margin = unit(c(0, 0.1, 0, -0.6), "cm"),
     panel.spacing = unit(0.3, "cm")
   )) +
   plot_annotation(tag_levels = list(c("     A", "     B", "", "     C", "", "     D", "", "     E", "     F")))

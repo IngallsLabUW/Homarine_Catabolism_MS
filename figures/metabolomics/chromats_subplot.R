@@ -125,7 +125,7 @@ sample_key <- obi1_sample_key %>%
 
 # Make plots ------
 ms1data <- grabMSdata(files = smps_to_plot, grab_what = c("MS1"))
-myColors <- c("grey80", "black")
+myColors <- c("#9467BD", "black")
 names(myColors) <- levels(sample_key$treatment_short)
 colScale <- scale_colour_manual(name = "Treatment", values = myColors, drop = FALSE)
 ### N-methyl glutamic acid figure ----
