@@ -58,7 +58,7 @@ plot_EIC2 <- function(ms1data, m_z, r_t, samples_oi, mz_ppm = 5, rt_buffer = 2.5
     ms1_data <- ms1_data %>% mutate(int = int * scaler)
   }
   suppressWarnings(g_ms1 <- ggplot(ms1_data) +
-    geom_line(aes(x = rt, y = int, group = filename, color = treatment_short)) +
+    geom_line(aes(x = rt, y = int, group = filename, color = treatment_short), linewidth=0.3) +
     facet_wrap(~experiment, scales = "free_y") +
     theme_bw() +
     # theme(legend.position = "none") +

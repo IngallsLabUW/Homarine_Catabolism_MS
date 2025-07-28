@@ -449,8 +449,9 @@ g_map_and_structures <- hom_fate_map +
 
 
 g_cmb <- (free(g_orgs) +
+              g_chromat +
+              
   g_map_and_structures +
-  g_chromat +
   g4 +
   free(g5) +
   plot_layout(design = layout) &
