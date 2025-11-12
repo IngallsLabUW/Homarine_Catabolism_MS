@@ -1,0 +1,37 @@
+mass_feature	mz	rt_minute	ionization_form	kegg_code	pub_chem_code
+2-Hydroxy-4-(methylthio)butyric acid	149.027242	2.69	[M-H]	NA	11427
+Adenosine diphosphate	426.021596	12.09	[M-H]	cpd:C00008	NA
+Adenosine monophosphate	346.055262	11.585	[M-H]	cpd:C00020	6083
+Adenosine triphosphate	505.987929	15.35	[M-H]	cpd:C00002	NA
+D-Glucose 6-phosphate	259.021897	14.12	[M-H]	cpd:C00092	99058
+Glycerophosphoric acid	171.005853	13.065	[M-H]	cpd:C00093	754
+Guanosine monophosphate	362.050178	13.85	[M-H]	cpd:C00144	NA
+Inosine	267.072946	7.57	[M-H]	cpd:C00294	135398641
+L-Cysteic acid	167.996671	12.15	[M-H]	cpd:C00506	72886
+Malic acid	133.0137	11.97	[M-H]	cpd:C00149	525
+N-Acetyl-L-glutamic acid	188.055899	11.84	[M-H]	cpd:C00624	70914
+NAD	662.101304	10.6	[M-H]	cpd:C00003	NA
+NADH	664.116954	11.26	[M-H]	cpd:C00004	NA
+NADP	742.067637	12.74	[M-2H]	cpd:C00006	129893609
+NADPH	744.083287	13.345	[M]	cpd:C00005	5884
+Phosphoenolpyruvic acid	166.974553	13.865	[M-H]	cpd:C00074	NA
+Propionylglycine	130.050419	3.3	[M-H]	NA	NA
+Taurine	124.006841	10	[M-H]	cpd:C00245	1123
+UDP-N-acetylglucosamine	606.073753	12.75	[M-H]	cpd:C00043	NA
+UDP-glucose	565.047204	13.59	[M-H]	cpd:C00029	NA
+cis-Aconitic acid	173.008615	14.21	[M-H]	cpd:C00417	643757
+Thymidine	241.082448	3.27	[M-H]	cpd:C00214	5789
+Uracil	111.019453	3.73	[M-H]	cpd:C00106	1174
+Fumaric acid	115.003135	12.7	[M-H]	cpd:C00122	444972
+Succinic acid	117.018785	11.9	[M-H]	cpd:C00042	1110
+Thymine	125.035103	3.06	[M-H]	cpd:C00178	1135
+5-Oxoproline	128.034768	7.97	[M-H]	cpd:C01879	NA
+2-Ketoglutaric acid	145.0137	10.845	[M-H]	cpd:C00026	NA
+Orotic acid	155.009283	4.195	[M-H]	cpd:C00295	967
+Dihydroxyacetone phosphate	168.990203	12.86	[M-H]	cpd:C00111	668
+3-Phosphoglycerate	184.985118	14.755	[M-H]	cpd:C00597	724
+Citric acid	191.01918	15.65	[M-H]	cpd:C00158	311
+D-Gluconic acid	195.05048	10.79	[M-H]	cpd:C00257	NA
+D-Ribose 5-phosphate	229.011333	13.29	[M-H]	cpd:C00117	NA
+Uridine	243.061713	6.02	[M-H]	cpd:C00299	6029
+D-Fructose 6-phosphate	259.021897	13.51	[M-H]	cpd:C00085	NA

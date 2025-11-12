@@ -19,13 +19,13 @@ source("R_functions/google_drive_functions.R")
 
 # Copy RPom Metabolomics data from Google Drive -----
 ## mzml data -----
-### dissolved HILIC Neg mzml-----
+### particulate HILIC Neg mzml-----
 export_folder <- here("data", "raw", "metabolomics", "G5", "particulate","mzml", "HILIC_negative")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "18mIQvL16R-KuWay6-2QogVW03ZCab5TK"
 drive_download_daughters(gfolder, export_folder)
 
-### dissolved HILIC Pos mzml-----
+### particulate HILIC Pos mzml-----
 export_folder <- here("data", "raw", "metabolomics", "G5", "particulate","mzml", "HILIC_positive")
 dir.create(export_folder, recursive = TRUE, showWarnings = FALSE)
 gfolder <- "12gwnpFB8uqzw7AVs11pPkikv3vkbK0lf"

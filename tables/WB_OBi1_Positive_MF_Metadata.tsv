@@ -1,0 +1,51 @@
+mass_feature	mz	rt_minute	ionization_form	kegg_code	pub_chem_code
+5-Hydroxyectoine	159.076968	11.07	[M+H]	cpd:C16432	NA
+Adenine	136.06232	4.64	[M+H]	cpd:C00147	190
+Creatine	132.077302	11.34	[M+H]	cpd:C00300	586
+Dimethylsulfoniopropionate	135.047977	9.325	[M+H]	cpd:C04022	NA
+Ectoine	143.082053	9.25	[M+H]	cpd:C06231	126041
+Glucosamine	180.087199	9.97	[M+H]	NA	NA
+Glutamylphenylalanine	295.129398	9.55	[M+H]	NA	558649
+Glutathione	308.091634	12	[M+H]	cpd:C00051	124886
+Glycerophosphocholine	258.110652	10.86	[M]	cpd:C00670	NA
+Glycine	76.039854	11.9	[M+H]	cpd:C00037	750
+Gonyol	179.074191	10.74	[M+H]	NA	NA
+Hydroxyproline	132.066069	10.07	[M+H]	cpd:C01157	5810
+L-Alanine	90.055504	11.3	[M+H]	cpd:C00041	NA
+L-Arginosuccinic acid	291.13046	13.69	[M+H]	cpd:C03406	NA
+L-Aspartic acid	134.045334	12.86	[M+H]	cpd:C00049	NA
+L-Cystathionine	223.075255	13.14	[M+H]	cpd:C02291	439258
+L-Glutamine	147.076968	11.7	[M+H]	cpd:C00064	NA
+L-Methionine	150.058876	7.96	[M+H]	cpd:C00073	NA
+L-Methionine S-oxide	166.053791	9.73	[M+H]	cpd:C02989	NA
+L-Serine	106.050419	11.86	[M+H]	cpd:C00065	NA
+N-Acetyl-D-glucosamine	222.097764	8.55	[M+H]	cpd:C00140	NA
+N-Acetylmuramic acid	294.118894	3.35	[M+H]	cpd:C02713	NA
+N6-Methyladenine	150.07797	3.97	[M+H]	cpd:C08434	NA
+Pipecolic acid	130.086804	10.79	[M+H]	cpd:C00408	849
+Thiamine diphosphate	425.044974	13.765	[M]	cpd:C00068	1132
+Hypoxanthine	137.046336	6.2	[M+H]	cpd:C00262	135398638
+Cytosine	112.051087	6.82	[M+H]	cpd:C00380	597
+L-Proline	116.071154	9.49	[M+H]	cpd:C00148	NA
+L-Threonine	120.066069	10.92	[M+H]	cpd:C00188	NA
+L-Homoserine	120.066069	11.32	[M+H]	cpd:C00263	12647
+L-Isoleucine	132.102454	8.17	[M+H]	cpd:C00407	NA
+L-Ornithine	133.097703	16.79	[M+H]	cpd:C00077	6262
+Homarine	138.055503	6.19	[M+H]	NA	3620
+(3-Carboxypropyl)trimethylammonium	146.118104	9.91	[M]	cpd:C01181	NA
+L-Lysine	147.113353	17.5	[M+H]	cpd:C00047	NA
+L-Glutamic acid	148.060984	12.41	[M+H]	cpd:C00025	NA
+Guanine	152.057235	8.18	[M+H]	cpd:C00242	135398634
+L-Histidine	156.077302	11.45	[M+H]	cpd:C00135	NA
+n-methyl glutamic acid	162.076634	8.69	[M+H]	cpd:C01046 	439377
+L-Arginine	175.119501	18.24	[M+H]	cpd:C00062	NA
+Citrulline	176.103517	12.21	[M+H]	cpd:C00327	9750
+L-Tyrosine	182.081719	9.76	[M+H]	cpd:C00082	NA
+L-Cystine	241.031677	13.1	[M+H]	cpd:C00491	67678
+Cytidine	244.093347	8.55	[M+H]	cpd:C00475	6175
+Deoxyadenosine	252.109665	3.44	[M+H]	cpd:C00559	NA
+Adenosine	268.10458	4.46	[M+H]	cpd:C00212	60961
+Guanosine	284.099495	9.06	[M+H]	cpd:C00387	135398635
+Ophthalmic acid	290.135212	10.73	[M+H]	cpd:C21016	7018721
+Cys-Gly, oxidized	355.074605	11.85	[M+H]	cpd:C01419	NA
+Glutathione disulfide	613.159793	14.98	[M+H]	cpd:C00127	NA
