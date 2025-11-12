@@ -89,6 +89,14 @@ dat_enrich_summary <- dat_enrich_summary %>%
             str_detect(plot_label, "n-methyl glutamine") ~ "N-methylglutamine",
             TRUE ~ plot_label ) )
 
+#Remove leading L- and D- from mass feature names for plotting
+dat_enrich_summary <- dat_enrich_summary %>%
+  mutate(
+    plot_label = str_replace_all(plot_label, "L-", ""),
+    plot_label = str_replace_all(plot_label, "D-", "")
+  )
+
+
 set.seed(123)
 g4 <- ggplot(
   data = dat_enrich_summary,
@@ -126,4 +134,4 @@ g4 <- ggplot(
 plot(g4)
 
 # SAVE OUTPUTS -----
-ggsave(here(figure_dir, "Figure_SX1_Obi1_EnrichmentFactors_scatter.pdf"), plot = g4, height = 6, width = 8, units = "in")
+ggsave(here(figure_dir, "Figure_S3_Obi1_EnrichmentFactors_scatter.pdf"), plot = g4, height = 6, width = 8, units = "in")
