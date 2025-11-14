@@ -55,7 +55,8 @@ draw_options.explicitMethyl = True  # Show methyl carbons
 # Set oxygen (atomic number 8) to black for label and bonds using updateAtomPalette
 draw_options.updateAtomPalette({8: (0.0, 0.0, 0.0)})
 draw_options.updateAtomPalette({7: (0.0, 0.0, 0.0)})
-
+# Set options to reduce whitespace
+draw_options.padding = 0
 # Force all carbons to be explicitly labeled
 # Also set explicit labels for oxygens
 for atom in mol.GetAtoms():

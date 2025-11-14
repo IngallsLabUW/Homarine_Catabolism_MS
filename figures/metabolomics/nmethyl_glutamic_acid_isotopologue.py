@@ -34,6 +34,7 @@ for i in range(mol.GetNumAtoms()):
 # Create drawer
 drawer = rdMolDraw2D.MolDraw2DCairo(800, 600)
 
+
 # Identify the methyl carbon (C attached to N that only has H neighbors besides N)
 methyl_carbon_idx = None
 for atom in mol.GetAtoms():
@@ -54,6 +55,9 @@ draw_options.explicitMethyl = True  # Show methyl carbons
 
 # Set oxygen (atomic number 8) to black for label and bonds using updateAtomPalette
 draw_options.updateAtomPalette({8: (0.0, 0.0, 0.0)})
+
+# Set options to reduce whitespace
+draw_options.padding = 0
 
 # Force all carbons to be explicitly labeled
 # Also set explicit labels for oxygens

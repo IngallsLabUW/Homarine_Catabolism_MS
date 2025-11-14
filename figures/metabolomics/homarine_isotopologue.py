@@ -125,6 +125,9 @@ draw_options.fillHighlights = False
 draw_options.highlightRadius = 0.3
 draw_options.setHighlightColour = False
 
+# Set options to reduce whitespace
+draw_options.padding = 0
+
 # Draw molecule with atom colors only
 drawer.DrawMolecule(
     mol,

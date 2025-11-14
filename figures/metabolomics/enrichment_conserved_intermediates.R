@@ -269,10 +269,10 @@ my_theme <- theme_bw() +
     # remove x- and y-axis labels
     theme(
         axis.title.x = element_blank(),
-        axis.text = element_text(size = 8),
+        axis.text = element_text(size = 6),
         panel.grid.major = element_blank(),
         strip.background = element_blank(),
-        strip.text = element_text(size = 10)
+        strip.text = element_text(size = 8)
     ) +
     # Make all margins 0
     theme(plot.margin = margin(0, 0, 0, 0))
@@ -310,7 +310,7 @@ plot_tiles <- function(data_input) {
         # Add thick horizontal line above "Core metabs" group
         geom_hline(yintercept = 3.5, color = "black", linewidth = 1) +
         scale_y_discrete(limits = rev) +
-        theme(axis.text.y = element_markdown(size = 8))
+        theme(axis.text.y = element_markdown(size = 7))
 }
 
 ## Plot for RPom and Obi1 data  -----
@@ -343,8 +343,8 @@ g_orgs <- plot_tiles(
         legend.direction = "horizontal", 
         legend.margin = margin(0, 0, 0, 0),
         legend.box.margin = margin(-10, 0, 0, -60, unit = "pt"), # Adjusts the position
-        legend.title = element_text(size = 7),
-        legend.text = element_text(size = 7),
+        legend.title = element_text(size = 6),
+        legend.text = element_text(size = 6),
         # rotate the x axis labels 45 degrees
         axis.text.x = element_text(angle = 30, hjust = 1),
         legend.key.size = unit(0.4, "cm"), # Reduces size of legend keys
@@ -352,7 +352,7 @@ g_orgs <- plot_tiles(
     ) +
     labs(fill = "enrichment \n factor (log2)") +
     theme(axis.title.y = element_blank())
-g_orgs
+
 ## Plot for G4 data -----
 g4 <- plot_tiles(
     data_input = dat_long_plot2 %>%
@@ -361,8 +361,8 @@ g4 <- plot_tiles(
     theme(
         legend.position = "none",
         axis.title.y = element_markdown(
-            margin = margin(t = 0),
-            size = 9
+           # margin = margin(t = -50),
+            size = 8
         )
     ) +
     ylab("<sup>2</sup>H<sub>3</sub> isotopologues")
@@ -371,18 +371,16 @@ g4 <- plot_tiles(
 ## Plot for RC104 and G5 data -----
 g5 <- plot_tiles(
     data_input = dat_long_plot2 %>%
-        filter(data_origin %in% c("rc104", "g5"))
-) +
+        filter(data_origin %in% c("rc104", "g5"))) +
     theme(
-        legend.position = "none",
+      legend.position = "none",
         axis.title.y = element_markdown(
-            margin = margin(t = 0),
-            size = 9
+        #    margin = margin(t = -1500),
+            size = 8
         )
-    ) +
+  ) +
     # Add y axis label of "3H2 isotopologues" to the left of the plot
-    ylab("<sup>13</sup>C<sub>5-7</sub>,<sup>15</sup>N isotopologues")
-theme(legend.position = "none")
+    ylab("<sup>13</sup>C<sub>5-7</sub>,<sup>15</sup>N isotopologues") 
 
 ## Map for homarine fate experiments -----
 # this adds the object "hom_fate_map' to the environment
@@ -396,23 +394,30 @@ structures_file <- list(
     here("figures", "structures", "nmethyl_glutamine_isotopologue.png")
 )
 library(figpatch)
+# Annotate titles directly onto the homarine figure
 homarine <- fig(structures_file[[1]])
-n_methyl_glutamatic_acid <- fig(structures_file[[2]])
-n_methyl_glutamine <- fig(structures_file[[3]])
+homarine <- fig_tag(homarine, "Homarine", fontsize = 6)
 
-# Create structures panel with labels - use wrap_elements to ensure they're plotted
-structures <- wrap_elements(homarine) + 
-    wrap_elements(n_methyl_glutamatic_acid) + 
-    wrap_elements(n_methyl_glutamine) + 
-    plot_layout(ncol = 3) +
-    plot_annotation(
-        title = "Homarine                                      N-methylglutamic Acid                                      N-methylglutamine",
-        theme = theme(
-            plot.title = element_text(size = 10, hjust = 0.5, face = "bold"),
-            plot.background = element_rect(color = "grey50", fill = NA, linewidth = 2),
-            plot.margin = margin(10, 10, 10, 10)
-        )
+n_methyl_glutamatic_acid <- fig(structures_file[[2]]) 
+n_methyl_glutamatic_acid <- fig_tag(n_methyl_glutamatic_acid, "N-methylglutamic acid", fontsize = 6)
+
+n_methyl_glutamine <- fig(structures_file[[3]])
+n_methyl_glutamine <- fig_tag(n_methyl_glutamine, "N-methylglutamine", fontsize = 6)
+
+# Combine figures side-by-side in one row
+structures <- wrap_plots(homarine,  n_methyl_glutamatic_acid, n_methyl_glutamine) +
+    plot_layout(ncol = 3, widths = c(1,1,1)) # Combine everything into one row
+
+# Add border around the entire combined plot
+structured_with_border <- wrap_elements(plot = structures) +
+    theme(
+        plot.background = element_rect(
+            color = "grey",  # Border color
+            linewidth = 1       # Border thickness
+        ),
+        plot.margin = margin(2, 2, 2, 2, "pt")  # Add small margin to prevent border clipping
     )
+structured_with_border
 
 ## Chromatogram for obi1 and rpom homarine control v +homarine -----
 # this sources eic_acid and eic_amine
@@ -428,23 +433,27 @@ AABBBCCC
 AABBBCCC
 AABBBCCC
 AABBBCCC
-DDDDDDDD
-DDDDDDDD
-EEEEFFFF
-EEEEFFFF
-EEEEFFFF
+DEEEEEFF
+DEEEEEFF
+GGHHHHHH
+GGHHHHHH
+GGHHHHHH
 "
 
 g_cmb <- (free(g_orgs) +
               g_chromat +
               hom_fate_map +
-              structures +
+              plot_spacer() + structured_with_border + plot_spacer() + 
               g4 +
               free(g5) +
               plot_layout(design = layout)) +
-    plot_annotation(tag_levels = list(c("     A", "     B", "     C", "     D", "     E", "", "", "     F", "     G"))) &
+    plot_annotation(
+        tag_levels = 
+            list(c("     A", "     B", "     C", "     D", "     E", "     F", "     G"))) &
     theme(
-        plot.margin = unit(c(0, 0.1, 0, -0.6), "cm"),
+        #plot.margin = unit(c(0, 0.1, 0, -0.6), "cm"),
+        plot.margin = unit(c(0.05, 0.05, 0.05, -0.5), "cm"), #top, right, bottom, left
+        
         panel.spacing = unit(0.3, "cm")
     )
 
