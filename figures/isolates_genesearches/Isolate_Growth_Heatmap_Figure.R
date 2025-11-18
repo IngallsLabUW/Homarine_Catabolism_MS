@@ -225,16 +225,34 @@ class.plot <- ggplot(gene.plot.dat.order, aes(x = "Class", y = reorder(isolate, 
     coord_fixed()
 class.plot
 
-# Family data:
-genus.plot <- ggplot(gene.plot.dat.order, aes(x = "Family", y = reorder(isolate, -order), fill = Family)) +
+# Family data with symbols:
+# First create a mapping of families to symbols
+family_shapes <- c(
+    "Micrococcales" = 21,      # circle
+    "Mycobacteriales" = 22,    # square
+    "Roseobacteraceae" = 23,   # diamond
+    "Phyllobacteriaceae" = 24, # triangle up
+    "Alteromonadaceae" = 25,   # triangle down
+    "Halomonadaceae" = 21,     # circle (different color family)
+    "Moraxellaceae" = 22,      # square (different color family)
+    "Pseudoalteromonadaceae" = 23, # diamond (different color family)
+    "Pseudomonadaceae" = 24,   # triangle up (different color family)
+    "Vibrionaceae" = 25        # triangle down (different color family)
+)
+
+# Add shape mapping to your data
+gene.plot.dat.order <- gene.plot.dat.order %>%
+    mutate(shape = family_shapes[Family])
+
+genus.plot <- ggplot(gene.plot.dat.order, aes(x = "Family", y = reorder(isolate, -order), fill = Family, shape = Family)) +
   geom_tile(color = "black", width = 1) +
+    geom_point(size = 0.8, color = "black") + 
   scale_fill_manual(values = c(
     "#f9c482", "#fcdcb5", "#ecb1cf", "#f5d6e5", "#6cccdc",
     "#26a6f3", "#42c7da", "#71caf8", "#a5dffb", "#d9f5f9"
   )) +
-  #  scale_fill_tableau(palette = "Tableau 20") +
-  #  scale_fill_continuous(low = "white", high = "gray40") +
-  # scale_fill_manual(values = c("gray20", "white")) +
+    scale_shape_manual(values = family_shapes) +
+    
   theme_minimal() +
   ylab("Isolate") +
   theme(
