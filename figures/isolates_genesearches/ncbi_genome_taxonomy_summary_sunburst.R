@@ -88,7 +88,7 @@ sunburst <- ggplot(
         alpha = 1
     ) +
     coord_polar(theta = "y") +
-    scale_alpha_manual(values = c("0" = 0, "1" = 1, "2" = 0.7), guide = FALSE) +
+    scale_alpha_manual(values = c("0" = 0, "1" = 1, "2" = 1), guide = FALSE) +
     scale_x_discrete(breaks = NULL) +
     scale_y_continuous(breaks = NULL) +
     labs(x = NULL, y = NULL) +

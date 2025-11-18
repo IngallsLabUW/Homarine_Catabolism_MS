@@ -46,7 +46,7 @@ combined_fig <- isolate_plot_legend + ncbi_sunburst_layout +
   plot_layout(ncol = 2, widths = c(1, 1.3)) +
   plot_annotation(tag_levels = "A")
 combined_fig
-ggsave(here("figures", "figure_3_combined.pdf"),
+ggsave(here("figures", "Figure_3_isolates_NCBI.pdf"),
   plot = combined_fig,
   width = 7, height = 4, dpi = 300,
   device = cairo_pdf
