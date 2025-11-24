@@ -43,7 +43,9 @@ g4_metadata <- read_csv(
     mutate(treatment = case_when(
         treatment == "Homarine" ~ "Homarine (2H3-labelled)",
         TRUE ~ treatment)) %>%
-    filter(!is.na(cruise))
+    filter(!is.na(cruise)) %>%
+    mutate(analytical_batch_id = "TN397") %>%
+    mutate(metabolomics_workbench_id = "ST004352")
 
 g5_metadata <- read_csv(
     here(inter_dir_list[["g5"]], "targeted/combined_tidy_dat_long.csv"),
@@ -56,7 +58,9 @@ g5_metadata <- read_csv(
     mutate(treatment = case_when(
         treatment == "Homarine" ~ "Homarine (13C7,15N-labelled)",
         TRUE ~ treatment)) %>%
-    filter(!is.na(cruise))
+    filter(!is.na(cruise)) %>%
+    mutate(analytical_batch_id = "TN412") %>%
+    mutate(metabolomics_workbench_id = "ST004353")
 
 rc104_metadata <- read_csv(
     here(inter_dir_list[["rc104"]], "targeted/combined_tidy_dat_long.csv"),
@@ -69,7 +73,9 @@ rc104_metadata <- read_csv(
     mutate(treatment = case_when(
         treatment == "Homarine" ~ "Homarine (13C7,15N-labelled)",
         TRUE ~ treatment)) %>%
-    filter(!is.na(cruise))
+    filter(!is.na(cruise)) %>%
+    mutate(analytical_batch_id = "RC104") %>%
+    mutate(metabolomics_workbench_id = "ST004354")
 
 obi1_metadata <- read_csv(
     here(inter_dir_list[["obi1"]], "targeted/combined_tidy_dat_long.csv"),
@@ -81,7 +87,9 @@ obi1_metadata <- read_csv(
         treatment == "Glucose + NH4" ~ "Glucose",
         treatment == "Glucose + NH4 + Homarine" ~ "Glucose + homarine",
         TRUE ~ treatment)) %>%
-    distinct()
+    distinct() %>%
+    mutate(analytical_batch_id = "OBi1") %>%
+    mutate(metabolomics_workbench_id = "ST004324")
     
 rpom_metadata <- read_csv(
     here(inter_dir_list[["rpom"]], "targeted/combined_tidy_dat_long.csv"),
@@ -93,7 +101,9 @@ rpom_metadata <- read_csv(
         treatment == "Glucose and homarine" ~ "Glucose + homarine",
         TRUE ~ treatment)) %>%
     filter(sample_fraction == "Particulate") %>%
-    distinct()
+    distinct() %>%
+    mutate(analytical_batch_id = "DSS3") %>%
+    mutate(metabolomics_workbench_id = "ST004337")
 
 # Combine all metadata into one dataframe
 dat_cmb <- obi1_metadata %>%
@@ -102,7 +112,7 @@ dat_cmb <- obi1_metadata %>%
     bind_rows(g5_metadata) %>%
     bind_rows(rc104_metadata) %>%
     rename(sample_id = replicate_name) %>%
-    select(sample_id, sample_fraction, isolate_id, cruise, experiment_id, treatment, timepoint, station, lat, lon, date)
+    select(sample_id, sample_fraction, analytical_batch_id, metabolomics_workbench_id, isolate_id, cruise, experiment_id, treatment, timepoint, station, lat, lon, date)
 
 # Save the combined metadata as an xcel file
 write_csv(dat_cmb, here("tables", "metabolomics_experimental_metadata.csv"))
