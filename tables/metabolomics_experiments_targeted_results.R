@@ -11,6 +11,7 @@ metadat <- read_csv(here("tables", "metabolomics_experimental_metadata.csv"))
 # Set up data directories --------
 ## Sample key files are in the raw data directories --------
 sub_dirs <- c("rpom", "obi1", "g4", "g5", "rc104")
+analytical_batch_ids <- c("DSS3", "OBi1", "TN397", "TN412", "RC104")
 raw_dir_list <- lapply(sub_dirs, function(x) {
     here("data", "raw", "metabolomics", x)
 })
@@ -44,6 +45,10 @@ g4_area_data <- read_csv(
 g5_mf_info <- read_csv(
     here(inter_dir_list[["g5"]], "targeted/mf_info.csv"),
     show_col_types = FALSE)
+g5_coremetabs <- read_csv(
+    here(inter_dir_list[["g5"]], "core_metabs_quality.csv"),
+    show_col_types = FALSE) %>%
+    pull(core_metab)
 g5_area_data <- read_csv(
     here(inter_dir_list[["g5"]], "targeted/combined_tidy_dat_long.csv"),
     show_col_types = FALSE) %>%
@@ -77,6 +82,30 @@ area_data <- bind_rows(g4_area_data, g5_area_data, rc104_area_data, rpom_area_da
 
 
 # Prepare final data frame --------
+## Prepare column of core metab info --------
+core_info <- mf_info %>%
+    filter(core == "core") %>%
+    select(mass_feature) %>%
+    mutate(studies_used = "")
+
+# For each of the studies, add its study ID to the studies_used column if the mass feature is a core metab in that study
+for (i in 1:length(sub_dirs)) {
+    study_id <- analytical_batch_ids[i]
+    exp_dir <- raw_dir_list[[i]]
+    core_metabs_file <- here(inter_dir_list[[i]], "core_metabs_quality.csv")
+    study_core_metabs <- read_csv(core_metabs_file, show_col_types = FALSE) %>%
+        pull(core_metab)
+    core_info <- core_info %>%
+            mutate(studies_used = if_else(
+                mass_feature %in% study_core_metabs,
+                paste0(studies_used, study_id, "; "),
+                studies_used
+            ))
+}
+# Remove trailing semicolon and space
+core_info <- core_info %>%
+    mutate(studies_used = str_remove(studies_used, "; $"))
+
 final_df <- mf_info %>%
     filter(is.na(remove)) %>%
     filter(is.na(internal_standard)) %>%
@@ -86,6 +115,16 @@ final_df <- mf_info %>%
     arrange(core, molecule_id, stable_isotope_version) %>%
     mutate(retention_time = round(retention_time, 2),
            mz = round(mz, 4))
+
+# Add column that notes if this core metab was used in G5 calculations
+final_df <- final_df %>%
+    left_join(
+        core_info %>%
+            select(mass_feature, studies_used),
+        by = "mass_feature"
+    ) %>%
+    select(mass_feature, molecule_id, stable_isotope_version, retention_time, mz, z, core, studies_used, everything()) %>%
+    filter(studies_used != "" | core != "core")
 
 # Write final data frame to CSV --------
 write_csv(
