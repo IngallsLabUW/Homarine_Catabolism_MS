@@ -134,7 +134,7 @@ g2 <- ggplot(dat_genome_homE, aes(x = factor(homE), y = genome_size_bp/1000000))
               aes(label = label, y = 10.0, x = factor(homE)), 
               size = 2.5, hjust = 0.5) +
     # Add annotaiton of results of t-test
-    geom_text(data = data.frame(x = 1.5, y = 10.5, label = 
+    geom_text(data = data.frame(x = 1.5, y = 11, label = 
                                     ifelse(t_test_result$p.value < 0.001, 
                                            "t-test: p < 0.001",
                                         paste0("t-test: p = ", round(t_test_result$p.value, 5)))),
@@ -142,23 +142,24 @@ g2 <- ggplot(dat_genome_homE, aes(x = factor(homE), y = genome_size_bp/1000000))
               size = 2.5, hjust = 0.5) +
     theme_bw() +
     labs(y = "Genome size (Mb)") +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 7),
-          axis.text.y = element_text(size = 7),
+    theme(axis.text.x = element_text(angle = 45, hjust = 1, size = 6),
+          axis.text.y = element_text(size = 6),
           axis.title.y = element_text(size = 7),
           axis.title.x = element_blank(),
           strip.background = element_blank(),
-          strip.text = element_text(size = 7),
+          strip.text = element_text(size = 6),
           panel.grid.major = element_blank(),
           panel.grid.minor = element_blank(),
           legend.position = "none")    
 # Combine the two plots
-g_combined <- g + g2 + plot_layout(ncol = 2, widths = c(3, 1)) +
+g_combined <- g / (plot_spacer() + g2 + plot_spacer() ) +
+    plot_layout(ncol = 1, heights = c(2, 1.3)) +
     plot_annotation(tag_levels = 'A') & 
     theme(plot.tag = element_text(size = 7))
 g_combined
 
 # Save the plot
-ggsave("figures/homE/Figure_SX8_combined_boxplots.pdf", 
+ggsave("figures/isolates_genesearches/outputs/Figure_S10_combined_boxplots.pdf", 
        g_combined, 
-       width = 10, height = 4, units = "in", dpi = 300,
+       width = 8, height = 6, units = "in", dpi = 300,
        device = cairo_pdf)

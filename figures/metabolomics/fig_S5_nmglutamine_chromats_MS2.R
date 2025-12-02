@@ -216,13 +216,13 @@ g_ms2_both <- ggplot() +
     ) +
     labs(y = "Normalized intensity", x = "m/z") +
     theme(
-        axis.text.x = element_text(size = 8),
-        axis.title = element_text(size = 9),
+        axis.text.x = element_text(size = 7),
+        axis.title = element_text(size = 7),
         legend.title = element_blank(),
         legend.position = c(0.6, 0.9),
         legend.box.background = element_rect(colour = "black"),
-        legend.text = element_text(size = 9),
-        plot.caption = element_text(size = 8, hjust = 0))
+        legend.text = element_text(size = 7),
+        plot.caption = element_text(size = 7, hjust = 0))
 
 g_ms2_both
 
@@ -231,5 +231,5 @@ ggsave(
     here(
         "figures", "metabolomics", "Figure_SX5_nmethylglutamine_identification.pdf"
     ), g_ms2_both,
-    width = 8, height = 5, dpi = 300
+    width = 7, height = 5, dpi = 300
 )
