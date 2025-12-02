@@ -134,4 +134,4 @@ g4 <- ggplot(
 plot(g4)
 
 # SAVE OUTPUTS -----
-ggsave(here(figure_dir, "Figure_S3_Obi1_EnrichmentFactors_scatter.pdf"), plot = g4, height = 6, width = 8, units = "in")
+ggsave(here(figure_dir, "Figure_S3_Obi1_EnrichmentFactors_scatter.pdf"), plot = g4, height = 6.5, width = 7, units = "in")
