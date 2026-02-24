@@ -179,7 +179,7 @@ g_ms2_both <- ggplot() +
         hjust = 0.5,
         size = 3,
         fontface = 2,
-        color = "green3"
+        color = "#16afca"
     ) +
     annotate(
         "text",
@@ -189,7 +189,7 @@ g_ms2_both <- ggplot() +
         hjust = 0.5,
         size = 3,
         fontface = 2,
-        color = "red"
+        color = "#FF7876"
     ) +
     annotate(
         "text",
@@ -204,9 +204,9 @@ g_ms2_both <- ggplot() +
     my_theme +
     scale_color_manual(
         values = c(
-            "Observed putative n-methyl glutamine (top)" = "green3", 
+            "Observed putative n-methyl glutamine (top)" = "#16afca", 
             "Observed glutamine standard (bottom)" = "black",
-            "Predicted n-methyl glutamine fragments (bottom)" = "red"
+            "Predicted n-methyl glutamine fragments (bottom)" = "#FF7876"
         ),
         breaks = c(
             "Observed putative n-methyl glutamine (top)",
