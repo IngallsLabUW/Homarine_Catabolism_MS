@@ -1,5 +1,5 @@
 # Homarine_Catabolism
-Data analysis for homarine catabolism manuscript
+Data analysis for homarine catabolism manuscript.  Preprint at https://www.researchsquare.com/article/rs-7359689/v1.
 
 ## Data Retrieval
 
